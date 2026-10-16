@@ -1,0 +1,51 @@
+name: Actualizar series
+
+on:
+  schedule:
+    # Todos los días a las 17:17 de Buenos Aires (20:17 UTC).
+    # INDEC publica a las 16:00, así que el dato del día ya está disponible.
+    - cron: "17 20 * * *"
+  workflow_dispatch:
+    inputs:
+      forzar:
+        description: "Procesar aunque el archivo no haya cambiado"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-series
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Bajar, validar y procesar
+        run: python -m pipeline.actualizar ${{ inputs.forzar && '--forzar' || '' }}
+
+      - name: Guardar cambios en el repositorio
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Sin cambios para guardar."
+          else
+            git commit -m "Datos actualizados $(date -u +%Y-%m-%d)"
+            git push
+          fi

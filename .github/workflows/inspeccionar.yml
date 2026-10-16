@@ -1,0 +1,37 @@
+name: Inspeccionar archivo de origen
+
+# Herramienta para sumar fuentes nuevas: baja uno o más archivos y deja la
+# descripción de su estructura en la rama "inspeccion" (no toca main).
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "URLs separadas por espacio"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  inspeccionar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Describir archivos
+        env:
+          URLS: ${{ inputs.urls }}
+        run: python -m pipeline.inspeccionar $URLS
+      - name: Publicar en la rama inspeccion
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B inspeccion
+          git add -f inspeccion
+          git commit -m "Inspección $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f origin inspeccion

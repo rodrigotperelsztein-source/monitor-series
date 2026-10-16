@@ -8,6 +8,7 @@ actualiza los datos y guarda la versión nueva.
 
 | id | Serie | Fuente | Frecuencia | Desde |
 |---|---|---|---|---|
+| `emae` | EMAE total: índice original, desestacionalizado y tendencia-ciclo (base 2004=100), con la variación interanual de la original y las mensuales de las otras dos | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48) | Mensual | 2004-01 |
 | `emae_letras` | EMAE por sector de actividad (letras A a O e impuestos netos de subsidios), serie original, base 2004=100 | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48) | Mensual | 2004-01 |
 
 El estado de cada serie (último período, fecha de descarga) está en [`data/catalogo.csv`](data/catalogo.csv).
@@ -57,13 +58,19 @@ notificaciones, te avisa por mail. El detalle del error figura en el paso *Bajar
 
 ## Agregar una serie nueva
 
+**Para ver la estructura de un archivo nuevo:** pestaña *Actions* > *Inspeccionar archivo de origen* > *Run workflow*,
+con la URL del archivo. La descripción (hojas, encabezados, primeras y últimas filas) queda en la rama `inspeccion`.
+
 Cada fuente es un módulo en `pipeline/fuentes/` con:
 
 - `ID`, `NOMBRE`, `URL`, `PAGINA`, `EXTENSION`, `FRECUENCIA`, `UNIDAD`
 - `leer(contenido: bytes) -> DataFrame` con la columna `fecha` y una columna por variable
 - `validar(nuevo, anterior) -> list[str]` con los errores encontrados
 
-Después se suma a la lista `FUENTES` de `pipeline/actualizar.py`. `emae_letras.py` sirve de modelo.
+Después se suma a la lista `FUENTES` de `pipeline/actualizar.py`. Para los cuadros mensuales de INDEC,
+`pipeline/fuentes/_indec.py` ya resuelve la lectura y la validación: alcanza con describir las columnas
+(ver `emae.py` y `emae_letras.py`). En las variaciones que publica el organismo, el pipeline las recalcula
+desde los índices y frena si no coinciden.
 
 ## Licencia de los datos
 

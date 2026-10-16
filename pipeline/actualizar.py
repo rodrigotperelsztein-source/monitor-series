@@ -21,9 +21,10 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-from pipeline.fuentes import emae_letras
+from pipeline.fuentes import emae, emae_letras
+from pipeline.fuentes._indec import iguales
 
-FUENTES = {f.ID: f for f in [emae_letras]}
+FUENTES = {f.ID: f for f in [emae, emae_letras]}
 
 RAIZ = Path(__file__).resolve().parent.parent
 DATA = RAIZ / "data"
@@ -61,7 +62,7 @@ def registrar_revisiones(fid: str, nuevo: pd.DataFrame, anterior: pd.DataFrame |
     comunes = nuevo.merge(anterior, on="fecha", suffixes=("", "_ant"))
     filas = []
     for c in cols:
-        cambio = (comunes[c] - comunes[f"{c}_ant"]).abs() > 1e-6
+        cambio = ~iguales(comunes[c], comunes[f"{c}_ant"])
         for _, r in comunes[cambio].iterrows():
             filas.append({"detectado": ahora, "periodo": f"{r['fecha']:%Y-%m}", "serie": c,
                           "valor_anterior": r[f"{c}_ant"], "valor_nuevo": r[c]})
@@ -75,7 +76,7 @@ def registrar_revisiones(fid: str, nuevo: pd.DataFrame, anterior: pd.DataFrame |
 def escribir_excel(fuente, df: pd.DataFrame, meta: dict) -> None:
     p = DATA / "excel" / f"{fuente.ID}.xlsx"
     p.parent.mkdir(parents=True, exist_ok=True)
-    nombres = {sid: nombre for sid, (_, nombre) in fuente.SECTORES.items()}
+    nombres = {cid: col.nombre for cid, col in fuente.COLUMNAS.items()}
     with pd.ExcelWriter(p, engine="openpyxl") as xw:
         df.rename(columns=nombres).to_excel(xw, sheet_name="Niveles", index=False)
         pd.DataFrame([
@@ -113,7 +114,8 @@ def procesar(fuente, forzar: bool, ahora: str) -> str:
     })
 
     datos_iguales = anterior is not None and nuevo.shape == anterior.shape and \
-        (nuevo.drop(columns="fecha").sub(anterior.drop(columns="fecha")).abs() < 1e-6).all().all()
+        nuevo["fecha"].equals(anterior["fecha"]) and \
+        all(iguales(nuevo[c], anterior[c]).all() for c in nuevo.columns if c != "fecha")
     if datos_iguales:
         p_meta.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         return "archivo distinto pero mismos datos"

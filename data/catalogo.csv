@@ -1,2 +1,3 @@
 id,nombre,frecuencia,unidad,ultimo_periodo,observaciones,descargado,pagina,url
+emae,"EMAE total: original, desestacionalizado y tendencia-ciclo",M,Índice base 2004=100; variaciones en %,2026-07,271,2026-10-16T21:08:21Z,https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48,https://www.indec.gob.ar/ftp/cuadros/economia/sh_emae_mensual_base2004.xls
 emae_letras,"EMAE por sector de actividad (letras), serie original",M,Índice base 2004=100,2026-07,271,2026-10-16T20:25:54Z,https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48,https://www.indec.gob.ar/ftp/cuadros/economia/sh_emae_actividad_base2004.xls

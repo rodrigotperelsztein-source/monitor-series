@@ -1,0 +1,13 @@
+{
+  "id": "emae",
+  "nombre": "EMAE total: original, desestacionalizado y tendencia-ciclo",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_emae_mensual_base2004.xls",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48",
+  "frecuencia": "M",
+  "unidad": "Índice base 2004=100; variaciones en %",
+  "sha256": "ab878bfbc76f95a934e57ff5db9b7e6db3c100194d3527e980953a3b71d6a244",
+  "descargado": "2026-10-16T21:08:21Z",
+  "ultimo_periodo": "2026-07",
+  "observaciones": 271,
+  "original_guardado": "data/raw/emae/2026-10-16_ab878bfb.xls"
+}

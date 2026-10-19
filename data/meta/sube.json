@@ -1,0 +1,56 @@
+{
+  "id": "sube",
+  "nombre": "SUBE: transacciones (usos) por día",
+  "url": "https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2020.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2021.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2022.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2023.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2024.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2025.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2026.csv",
+  "pagina": "https://datos.transporte.gob.ar/dataset/sube-cantidad-de-transacciones-usos-por-fecha",
+  "frecuencia": "D",
+  "unidad": "Transacciones por día",
+  "sha256": "d4f4cc1dc442b6eb5603e35f22973d9f4fafe57d12c3ddef7b8a8bc8a0469c54",
+  "columnas": {
+    "total": {
+      "nombre": "SUBE, transacciones por día, total del país",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    },
+    "amba": {
+      "nombre": "SUBE, transacciones por día, AMBA",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    },
+    "interior": {
+      "nombre": "SUBE, transacciones por día, fuera del AMBA",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    },
+    "colectivo": {
+      "nombre": "SUBE, transacciones por día, colectivos (todo el país)",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    },
+    "tren": {
+      "nombre": "SUBE, transacciones por día, trenes",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    },
+    "subte": {
+      "nombre": "SUBE, transacciones por día, subte",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    },
+    "lanchas": {
+      "nombre": "SUBE, transacciones por día, lanchas",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    },
+    "amba_colectivo": {
+      "nombre": "SUBE, transacciones por día, colectivos del AMBA",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    }
+  },
+  "preliminar_desde": "2026-02-01",
+  "descargado": "2026-10-19T20:30:21Z",
+  "ultimo_periodo": "2026-10-17",
+  "observaciones": 2482,
+  "original_guardado": null
+}

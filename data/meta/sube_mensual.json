@@ -1,0 +1,141 @@
+{
+  "id": "sube_mensual",
+  "nombre": "SUBE: transacciones (usos) por mes",
+  "url": "data/sube.csv",
+  "pagina": "https://datos.transporte.gob.ar/dataset/sube-cantidad-de-transacciones-usos-por-fecha",
+  "frecuencia": "M",
+  "unidad": "Transacciones por mes",
+  "sha256": "645631414938afd07834e2147ac116077276f2d994538e77afb1974a2f278470",
+  "derivada_de": [
+    "sube"
+  ],
+  "archivos_de_origen": [
+    "https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2020.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2021.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2022.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2023.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2024.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2025.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2026.csv"
+  ],
+  "columnas": {
+    "total": {
+      "nombre": "SUBE, transacciones del mes, total del país",
+      "tipo": "nivel",
+      "unidad": "Transacciones por mes"
+    },
+    "total_prom_diario": {
+      "nombre": "SUBE, promedio diario del mes, total del país",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    },
+    "total_var_ia": {
+      "nombre": "SUBE, transacciones del mes, total del país, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "amba": {
+      "nombre": "SUBE, transacciones del mes, AMBA",
+      "tipo": "nivel",
+      "unidad": "Transacciones por mes"
+    },
+    "amba_prom_diario": {
+      "nombre": "SUBE, promedio diario del mes, AMBA",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    },
+    "amba_var_ia": {
+      "nombre": "SUBE, transacciones del mes, AMBA, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "interior": {
+      "nombre": "SUBE, transacciones del mes, fuera del AMBA",
+      "tipo": "nivel",
+      "unidad": "Transacciones por mes"
+    },
+    "interior_prom_diario": {
+      "nombre": "SUBE, promedio diario del mes, fuera del AMBA",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    },
+    "interior_var_ia": {
+      "nombre": "SUBE, transacciones del mes, fuera del AMBA, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "colectivo": {
+      "nombre": "SUBE, transacciones del mes, colectivos (todo el país)",
+      "tipo": "nivel",
+      "unidad": "Transacciones por mes"
+    },
+    "colectivo_prom_diario": {
+      "nombre": "SUBE, promedio diario del mes, colectivos (todo el país)",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    },
+    "colectivo_var_ia": {
+      "nombre": "SUBE, transacciones del mes, colectivos (todo el país), var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "tren": {
+      "nombre": "SUBE, transacciones del mes, trenes",
+      "tipo": "nivel",
+      "unidad": "Transacciones por mes"
+    },
+    "tren_prom_diario": {
+      "nombre": "SUBE, promedio diario del mes, trenes",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    },
+    "tren_var_ia": {
+      "nombre": "SUBE, transacciones del mes, trenes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "subte": {
+      "nombre": "SUBE, transacciones del mes, subte",
+      "tipo": "nivel",
+      "unidad": "Transacciones por mes"
+    },
+    "subte_prom_diario": {
+      "nombre": "SUBE, promedio diario del mes, subte",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    },
+    "subte_var_ia": {
+      "nombre": "SUBE, transacciones del mes, subte, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "lanchas": {
+      "nombre": "SUBE, transacciones del mes, lanchas",
+      "tipo": "nivel",
+      "unidad": "Transacciones por mes"
+    },
+    "lanchas_prom_diario": {
+      "nombre": "SUBE, promedio diario del mes, lanchas",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    },
+    "lanchas_var_ia": {
+      "nombre": "SUBE, transacciones del mes, lanchas, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "amba_colectivo": {
+      "nombre": "SUBE, transacciones del mes, colectivos del AMBA",
+      "tipo": "nivel",
+      "unidad": "Transacciones por mes"
+    },
+    "amba_colectivo_prom_diario": {
+      "nombre": "SUBE, promedio diario del mes, colectivos del AMBA",
+      "tipo": "nivel",
+      "unidad": "Transacciones por día"
+    },
+    "amba_colectivo_var_ia": {
+      "nombre": "SUBE, transacciones del mes, colectivos del AMBA, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-10-19T20:30:21Z",
+  "calculado": "2026-10-19T20:30:21Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 81
+}

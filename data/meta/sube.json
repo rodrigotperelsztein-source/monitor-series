@@ -1,11 +1,11 @@
 {
   "id": "sube",
   "nombre": "SUBE: transacciones (usos) por día",
-  "url": "https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2020.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2021.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2022.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2023.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2024.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2025.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2026.csv",
+  "url": "https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2026.csv",
   "pagina": "https://datos.transporte.gob.ar/dataset/sube-cantidad-de-transacciones-usos-por-fecha",
   "frecuencia": "D",
   "unidad": "Transacciones por día",
-  "sha256": "d4f4cc1dc442b6eb5603e35f22973d9f4fafe57d12c3ddef7b8a8bc8a0469c54",
+  "sha256": "f9722052778f1400af658082858f71b17b8b2f63ad5750c1c81b0dde913b647b",
   "columnas": {
     "total": {
       "nombre": "SUBE, transacciones por día, total del país",

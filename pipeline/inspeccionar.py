@@ -57,6 +57,8 @@ def main() -> int:
     for url in sys.argv[1:]:
         nombre = Path(urlparse(url).path).name or "archivo"
         try:
+            (salida / "archivos").mkdir(exist_ok=True)
+            (salida / "archivos" / nombre).write_bytes(descargar(url))
             texto = describir(url)
         except Exception as e:  # noqa: BLE001
             texto = f"URL: {url}\nERROR: {e}"

@@ -1,0 +1,35 @@
+{
+  "id": "ripte",
+  "nombre": "RIPTE: remuneración imponible promedio de los trabajadores estables",
+  "url": "https://www.argentina.gob.ar/sites/default/files/ripte_agosto_2026-mdch.pdf",
+  "pagina": "https://www.argentina.gob.ar/trabajo/seguridadsocial/ripte",
+  "frecuencia": "M",
+  "unidad": "Pesos corrientes",
+  "sha256": "3e87f594ae7a215d6695a9c13a6a9ac256f64cfcd86348cad3a69925e0e361f2",
+  "columnas": {
+    "ripte": {
+      "nombre": "RIPTE, monto en pesos corrientes",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "ripte_var_m": {
+      "nombre": "RIPTE, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "indice": {
+      "nombre": "RIPTE, índice base 07/1994=100",
+      "tipo": "nivel",
+      "unidad": "Índice base 07/1994=100"
+    },
+    "indice_no_decreciente": {
+      "nombre": "RIPTE, índice no decreciente base 07/1994=100 (Res. ex MTEySS 467/2021, riesgos del trabajo)",
+      "tipo": "nivel",
+      "unidad": "Índice base 07/1994=100"
+    }
+  },
+  "descargado": "2026-10-19T18:02:04Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 386,
+  "original_guardado": "data/raw/ripte/2026-10-19_3e87f594.pdf"
+}

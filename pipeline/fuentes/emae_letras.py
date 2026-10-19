@@ -16,6 +16,7 @@ PAGINA = "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48"
 EXTENSION = "xls"
 HOJA = "Tabla Letras"
 FRECUENCIA = "M"
+ORGANISMO = "INDEC"
 UNIDAD = "Índice base 2004=100"
 PRIMER_PERIODO = "2004-01-01"
 

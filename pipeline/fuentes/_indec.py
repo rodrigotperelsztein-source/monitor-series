@@ -38,6 +38,7 @@ class Columna:
     tipo: str = "nivel"
     base: str | None = None
     rezago: int | None = None
+    unidad: str | None = None  # si falta: la de la fuente para niveles, "%" para variaciones
 
 
 def norm(texto) -> str:

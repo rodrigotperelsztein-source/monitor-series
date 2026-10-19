@@ -23,8 +23,85 @@ El estado de cada serie (último período, fecha de descarga) está en [`data/ca
 | `data/revisiones/<id>.csv` | Cada valor que el organismo corrigió hacia atrás: período, serie, valor anterior y nuevo. |
 | `data/raw/<id>/` | El archivo original tal como se bajó, una copia por cada versión con datos distintos. |
 
+| `data/todas/valores.csv` | Todas las series juntas en formato largo: `fecha`, `id_serie`, `valor`. |
+| `data/todas/series.csv` | Una fila por serie: `id_serie`, nombre, tipo (nivel o variación), unidad, frecuencia, fuente, primer y último período. |
+
 > Para abrir los CSV en un Excel configurado en español, usá *Datos > Desde texto/CSV* y elegí el punto
 > como separador decimal; o abrí directamente el archivo de `data/excel/`.
+
+## Conectar Power BI, Excel, Google Sheets o Python
+
+Cada archivo tiene un link fijo que siempre apunta a la última versión:
+
+```
+https://raw.githubusercontent.com/rodrigotperelsztein-source/monitor-series/main/data/<archivo>
+```
+
+Por ejemplo `.../main/data/todas/valores.csv` o `.../main/data/emae.csv`.
+
+### Power BI
+
+Lo más cómodo es usar el formato largo: dos consultas y una relación, y las series nuevas aparecen solas.
+
+1. *Obtener datos > Consulta en blanco > Editor avanzado* y pegar cada consulta:
+
+**Series**
+```
+let
+    Origen = Csv.Document(
+        Web.Contents("https://raw.githubusercontent.com/rodrigotperelsztein-source/monitor-series/main/data/todas/series.csv"),
+        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+    Tabla = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+    Tipos = Table.TransformColumnTypes(Tabla,
+        {{"primer_periodo", type date}, {"ultimo_periodo", type date}}, "en-US")
+in
+    Tipos
+```
+
+**Valores**
+```
+let
+    Origen = Csv.Document(
+        Web.Contents("https://raw.githubusercontent.com/rodrigotperelsztein-source/monitor-series/main/data/todas/valores.csv"),
+        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+    Tabla = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+    Tipos = Table.TransformColumnTypes(Tabla,
+        {{"fecha", type date}, {"id_serie", type text}, {"valor", type number}}, "en-US")
+in
+    Tipos
+```
+
+2. En el modelo, relacionar `Series[id_serie]` (uno) con `Valores[id_serie]` (varios).
+3. Un segmentador con `Series[serie]` elige qué series ver; un gráfico de líneas con `Valores[fecha]` en el eje y `Valores[valor]` como valor.
+4. Al publicar en el servicio de Power BI, configurar la actualización programada con acceso **anónimo**
+   (no hace falta gateway). Conviene programarla a la noche: el pipeline corre a la tarde.
+
+El `"en-US"` del final de cada consulta hace que el punto se lea como separador decimal aunque
+Power BI esté en español.
+
+### Excel
+
+*Datos > Desde la web* y pegar el link del CSV. Al cargar, en *Transformar datos*, cambiar el tipo de las
+columnas numéricas con *Cambiar tipo > Usar configuración regional > Inglés (Estados Unidos)*.
+Después se actualiza con *Datos > Actualizar todo*.
+
+### Google Sheets
+
+```
+=IMPORTDATA("https://raw.githubusercontent.com/rodrigotperelsztein-source/monitor-series/main/data/emae.csv")
+```
+
+Si la hoja está en español y los números aparecen como texto, cambiar la configuración regional de la hoja a
+Estados Unidos (*Archivo > Configuración*).
+
+### Python
+
+```python
+import pandas as pd
+base = "https://raw.githubusercontent.com/rodrigotperelsztein-source/monitor-series/main/data/"
+valores = pd.read_csv(base + "todas/valores.csv", parse_dates=["fecha"])
+tabla = valores.pivot(index="fecha", columns="id_serie", values="valor")
+```
 
 ## Cómo funciona
 
@@ -36,7 +113,8 @@ Para cada fuente, `python -m pipeline.actualizar`:
 4. **Valida** antes de guardar: columnas completas, meses consecutivos, sin vacíos, valores en rango,
    que no se pierda historia, que las revisiones no sean desproporcionadas y que los meses nuevos no tengan
    saltos absurdos contra el mismo mes del año anterior.
-5. Si todo está bien, **guarda** el CSV, el Excel, el original y el registro de revisiones.
+5. Si todo está bien, **guarda** el CSV, el Excel, el original y el registro de revisiones, y regenera
+   los archivos de `data/todas/` con todas las series juntas.
    Si algo falla, **no toca nada de esa fuente** y la tarea termina en error.
 
 ## Uso

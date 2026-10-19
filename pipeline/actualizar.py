@@ -144,6 +144,48 @@ def catalogo() -> None:
         pd.DataFrame(filas).reindex(columns=cols).to_csv(DATA / "catalogo.csv", index=False)
 
 
+def todas() -> None:
+    """Todas las series juntas en formato largo, pensado para Power BI y similares.
+
+    data/todas/series.csv: una fila por serie (id_serie, nombre, unidad, frecuencia, fuente...).
+    data/todas/valores.csv: fecha, id_serie, valor.
+    """
+    series, valores = [], []
+    for fid, fuente in FUENTES.items():
+        p = DATA / f"{fid}.csv"
+        if not p.exists():
+            continue
+        df = pd.read_csv(p, parse_dates=["fecha"])
+        meta = leer_json(DATA / "meta" / f"{fid}.json")
+        for cid, col in fuente.COLUMNAS.items():
+            id_serie = f"{fid}.{cid}"
+            puntos = df[["fecha", cid]].dropna().rename(columns={cid: "valor"})
+            puntos.insert(1, "id_serie", id_serie)
+            valores.append(puntos)
+            series.append({
+                "id_serie": id_serie,
+                "serie": col.nombre,
+                "tipo": col.tipo,
+                "unidad": col.unidad or ("%" if col.tipo == "variacion" else fuente.UNIDAD),
+                "frecuencia": fuente.FRECUENCIA,
+                "fuente": fid,
+                "fuente_nombre": fuente.NOMBRE,
+                "organismo": getattr(fuente, "ORGANISMO", ""),
+                "primer_periodo": f"{puntos['fecha'].min():%Y-%m-%d}",
+                "ultimo_periodo": f"{puntos['fecha'].max():%Y-%m-%d}",
+                "descargado": meta.get("descargado", ""),
+                "pagina": fuente.PAGINA,
+                "url_archivo": fuente.URL,
+            })
+    if not series:
+        return
+    destino = DATA / "todas"
+    destino.mkdir(exist_ok=True)
+    pd.DataFrame(series).to_csv(destino / "series.csv", index=False)
+    pd.concat(valores).sort_values(["id_serie", "fecha"]).to_csv(
+        destino / "valores.csv", index=False, date_format="%Y-%m-%d", float_format="%.6f")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("fuentes", nargs="*", help="ids a procesar (por defecto, todas)")
@@ -162,6 +204,7 @@ def main() -> int:
             fallas += 1
             print(f"  ERROR: {e}")
     catalogo()
+    todas()
     return 1 if fallas else 0
 
 

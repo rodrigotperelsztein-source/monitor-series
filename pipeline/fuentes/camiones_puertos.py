@@ -7,7 +7,9 @@ La página muestra el mes en curso en una tabla HTML que se actualiza cada día 
 anteriores están en un PDF por mes (total_mensual_<mes>_<año>.pdf, con el mes escrito a veces
 completo y a veces abreviado). Se toman desde enero de 2024.
 
-Los días sin actividad o sin informe (domingos, feriados) figuran en cero.
+Los días sin actividad o sin informe (domingos, feriados) figuran en cero; los pocos días que no
+figuran en el informe quedan vacíos. Si el total de un día no coincide con las zonas pero zonas y
+productos sí coinciden entre sí, es un error de tipeo de la fuente y se usa la suma.
 La última columna, vagones, se rotula "total vagones" en los PDF viejos y "vagones en playa" en
 los nuevos.
 """
@@ -95,6 +97,9 @@ def bajar(descargar, hoy: date) -> tuple[str, bytes]:
     return " ".join([PAGINA] + [pdfs[m] for m in sorted(meses)]), buf.getvalue()
 
 
+CORREGIDOS: list[str] = []
+
+
 def _numeros(texto: str) -> list[int]:
     return [0 if x == "-" else int(x.replace(".", "")) for x in texto.split()]
 
@@ -106,7 +111,16 @@ def _filas(texto: str, anio: int, mes: int) -> list[dict]:
         dia = int(m[1])
         if dia > pd.Period(f"{anio}-{mes:02d}", freq="M").days_in_month:
             continue
-        filas.append({"fecha": pd.Timestamp(anio, mes, dia), **dict(zip(ORDEN, _numeros(m[2])))})
+        fila = {"fecha": pd.Timestamp(anio, mes, dia), **dict(zip(ORDEN, _numeros(m[2])))}
+        zonas = sum(fila[k] for k in ZONAS)
+        productos = sum(fila[k] for k in PRODUCTOS)
+        if fila["total"] != zonas and zonas == productos:
+            # Error de tipeo en la fuente (p. ej. 30/4/2024: 31004 en lugar de 3104): vale la suma.
+            print(f"  aviso: {fila['fecha']:%Y-%m-%d}: el total dice {fila['total']}, pero zonas y productos "
+                  f"suman {zonas}; se usa {zonas}.")
+            CORREGIDOS.append(f"{fila['fecha']:%Y-%m-%d}: total {fila['total']} -> {zonas}")
+            fila["total"] = fila["total_productos"] = zonas
+        filas.append(fila)
     t = TOTAL.search(texto)
     if t and filas:
         informado = dict(zip(ORDEN, _numeros(t[1])))["total"]
@@ -126,6 +140,7 @@ def leer(contenido: bytes, columnas=COLUMNAS) -> pd.DataFrame:
     import pdfplumber
 
     filas = []
+    CORREGIDOS.clear()
     with zipfile.ZipFile(io.BytesIO(contenido)) as z:
         for nombre in sorted(z.namelist()):
             if nombre.endswith(".pdf"):
@@ -157,7 +172,8 @@ def leer(contenido: bytes, columnas=COLUMNAS) -> pd.DataFrame:
 
 
 def meta_extra(nuevo: pd.DataFrame) -> dict:
-    return {"dias_sin_dato_en_lo_bajado": nuevo.attrs.get("dias_sin_dato", [])}
+    return {"dias_sin_dato_en_lo_bajado": nuevo.attrs.get("dias_sin_dato", []),
+            "totales_corregidos_en_lo_bajado": list(CORREGIDOS)}
 
 
 def combinar(nuevo: pd.DataFrame, anterior: pd.DataFrame | None) -> pd.DataFrame:

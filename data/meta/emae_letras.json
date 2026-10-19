@@ -9,5 +9,87 @@
   "descargado": "2026-10-16T20:25:54Z",
   "ultimo_periodo": "2026-07",
   "observaciones": 271,
-  "original_guardado": "data/raw/emae_letras/2026-10-16_f5829527.xls"
+  "original_guardado": "data/raw/emae_letras/2026-10-16_f5829527.xls",
+  "columnas": {
+    "a_agro": {
+      "nombre": "A - Agricultura, ganadería, caza y silvicultura",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "b_pesca": {
+      "nombre": "B - Pesca",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "c_mineria": {
+      "nombre": "C - Explotación de minas y canteras",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "d_industria": {
+      "nombre": "D - Industria manufacturera",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "e_electricidad_gas_agua": {
+      "nombre": "E - Electricidad, gas y agua",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "f_construccion": {
+      "nombre": "F - Construcción",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "g_comercio": {
+      "nombre": "G - Comercio mayorista, minorista y reparaciones",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "h_hoteles_restaurantes": {
+      "nombre": "H - Hoteles y restaurantes",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "i_transporte_comunicaciones": {
+      "nombre": "I - Transporte y comunicaciones",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "j_intermediacion_financiera": {
+      "nombre": "J - Intermediación financiera",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "k_inmobiliarias_empresariales": {
+      "nombre": "K - Actividades inmobiliarias, empresariales y de alquiler",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "l_administracion_publica": {
+      "nombre": "L - Administración pública y defensa; seguridad social obligatoria",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "m_ensenanza": {
+      "nombre": "M - Enseñanza",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "n_salud": {
+      "nombre": "N - Servicios sociales y de salud",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "o_otros_servicios": {
+      "nombre": "O - Otras actividades de servicios comunitarios, sociales y personales",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "impuestos_netos": {
+      "nombre": "Impuestos netos de subsidios",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    }
+  }
 }

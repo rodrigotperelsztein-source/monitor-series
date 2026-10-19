@@ -9,5 +9,37 @@
   "descargado": "2026-10-16T21:08:21Z",
   "ultimo_periodo": "2026-07",
   "observaciones": 271,
-  "original_guardado": "data/raw/emae/2026-10-16_ab878bfb.xls"
+  "original_guardado": "data/raw/emae/2026-10-16_ab878bfb.xls",
+  "columnas": {
+    "original": {
+      "nombre": "Índice serie original (2004=100)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "original_var_ia": {
+      "nombre": "Serie original, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest": {
+      "nombre": "Índice serie desestacionalizada (2004=100)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_var_m": {
+      "nombre": "Serie desestacionalizada, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "tendencia": {
+      "nombre": "Índice serie tendencia-ciclo (2004=100)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "tendencia_var_m": {
+      "nombre": "Serie tendencia-ciclo, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  }
 }

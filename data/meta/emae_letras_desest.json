@@ -6,8 +6,12 @@
   "frecuencia": "M",
   "unidad": "Índice base 2004=100",
   "sha256": "363de205816744e9c43ef0354872d421b7895f4ebdc3c956a6423389d8480ad1",
-  "derivada_de": "emae_letras",
-  "archivo_de_origen": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_emae_actividad_base2004.xls",
+  "derivada_de": [
+    "emae_letras"
+  ],
+  "archivos_de_origen": [
+    "https://www.indec.gob.ar/ftp/cuadros/economia/sh_emae_actividad_base2004.xls"
+  ],
   "columnas": {
     "a_agro": {
       "nombre": "A - Agricultura, ganadería, caza y silvicultura, desestacionalizada (propia, X-13)",
@@ -91,7 +95,7 @@
     }
   },
   "descargado": "2026-10-16T20:25:54Z",
-  "calculado": "2026-10-19T17:06:12Z",
+  "calculado": "2026-10-19T18:10:00Z",
   "ultimo_periodo": "2026-07",
   "observaciones": 271,
   "desestacionalizacion": {

@@ -1,0 +1,45 @@
+{
+  "id": "ripte_real",
+  "nombre": "RIPTE real (deflactado por el IPC nacional)",
+  "url": "data/ripte.csv y data/ipc.csv",
+  "pagina": "https://www.argentina.gob.ar/trabajo/seguridadsocial/ripte",
+  "frecuencia": "M",
+  "unidad": "Pesos constantes",
+  "sha256": "886fc11a8aa09d0bf47e41494fc7bf7ab8a026f86d9ea06ad757e27f86329f8b",
+  "derivada_de": [
+    "ripte",
+    "ipc"
+  ],
+  "archivos_de_origen": [
+    "https://www.argentina.gob.ar/sites/default/files/ripte_agosto_2026-mdch.pdf",
+    "https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv"
+  ],
+  "columnas": {
+    "ripte_real": {
+      "nombre": "RIPTE real, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Pesos de dic-2016"
+    },
+    "ripte_real_ultimo_mes": {
+      "nombre": "RIPTE real, a precios del último mes del IPC",
+      "tipo": "nivel",
+      "unidad": "Pesos del último mes"
+    },
+    "ripte_real_var_m": {
+      "nombre": "RIPTE real, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ripte_real_var_ia": {
+      "nombre": "RIPTE real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-10-19T18:02:04Z",
+  "calculado": "2026-10-19T18:10:00Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 117,
+  "deflactor": "IPC nacional, nivel general (ipc.nacional_nivel_general_indice), base dic-2016=100",
+  "precios_del_ultimo_mes": "2026-09"
+}

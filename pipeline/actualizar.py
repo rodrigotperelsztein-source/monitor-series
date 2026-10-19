@@ -27,10 +27,10 @@ import pandas as pd
 import requests
 
 from pipeline import calendario
-from pipeline.fuentes import emae, emae_letras, emae_letras_desest, ipc, ipi, isac, ripte, supermercados
+from pipeline.fuentes import emae, emae_letras, emae_letras_desest, ipc, ipi, isac, ripte, ripte_real, supermercados
 from pipeline.fuentes._indec import iguales
 
-FUENTES = {f.ID: f for f in [emae, emae_letras, emae_letras_desest, ipc, ipi, isac, supermercados, ripte]}
+FUENTES = {f.ID: f for f in [emae, emae_letras, emae_letras_desest, ipc, ipi, isac, supermercados, ripte, ripte_real]}
 # Series calculadas a partir de otra (DERIVADA_DE): no se bajan, se recalculan cuando cambia su base.
 DERIVADAS = {fid: f for fid, f in FUENTES.items() if hasattr(f, "DERIVADA_DE")}
 
@@ -181,40 +181,47 @@ def procesar(fuente, forzar: bool, ahora: str, hoy: date) -> str:
     return f"actualizada: último período {ant} → {meta['ultimo_periodo']}; valores revisados: {revisados}"
 
 
+def bases(fuente) -> tuple[str, ...]:
+    d = fuente.DERIVADA_DE
+    return (d,) if isinstance(d, str) else tuple(d)
+
+
 def procesar_derivada(fuente, forzar: bool, ahora: str) -> str:
-    """Recalcula una serie derivada si cambió su serie de base o la versión del cálculo."""
+    """Recalcula una serie derivada si cambió alguna de sus series de base o la versión del cálculo."""
     fid = fuente.ID
     p_meta = DATA / "meta" / f"{fid}.json"
     p_csv = DATA / f"{fid}.csv"
     meta = leer_json(p_meta)
-    p_base = DATA / f"{fuente.DERIVADA_DE}.csv"
-    if not p_base.exists():
-        raise ValueError(f"falta la serie de base {p_base.name}")
-    huella = hashlib.sha256(p_base.read_bytes() + fuente.VERSION.encode()).hexdigest()
+    rutas = [DATA / f"{b}.csv" for b in bases(fuente)]
+    faltan = [r.name for r in rutas if not r.exists()]
+    if faltan:
+        raise ValueError(f"faltan las series de base {faltan}")
+    huella = hashlib.sha256(b"".join(r.read_bytes() for r in rutas) + fuente.VERSION.encode()).hexdigest()
     if huella == meta.get("sha256") and not forzar:
-        return "sin cambios en la serie de base"
+        return "sin cambios en las series de base"
 
-    original = leer_csv(p_base)
-    nuevo, detalle = fuente.calcular(original)
-    errores = fuente.validar(nuevo, original)
+    originales = [leer_csv(r) for r in rutas]
+    nuevo, detalle = fuente.calcular(*originales)
+    errores = fuente.validar(nuevo, *originales)
     if errores:
         raise ValueError("Validación fallida:\n  - " + "\n  - ".join(errores))
     anterior = leer_csv(p_csv)
 
     nuevo.to_csv(p_csv, index=False, date_format="%Y-%m-%d", float_format="%.6f")
-    base = leer_json(DATA / "meta" / f"{fuente.DERIVADA_DE}.json")
+    metas = [leer_json(DATA / "meta" / f"{b}.json") for b in bases(fuente)]
     meta = {
         "id": fid, "nombre": fuente.NOMBRE, "url": fuente.URL, "pagina": fuente.PAGINA,
         "frecuencia": fuente.FRECUENCIA, "unidad": fuente.UNIDAD, "sha256": huella,
-        "derivada_de": fuente.DERIVADA_DE, "archivo_de_origen": base.get("url", ""),
+        "derivada_de": list(bases(fuente)), "archivos_de_origen": [m.get("url", "") for m in metas],
         "columnas": {cid: {"nombre": c.nombre, "tipo": c.tipo,
                            "unidad": c.unidad or ("%" if c.tipo == "variacion" else fuente.UNIDAD)}
                      for cid, c in fuente.COLUMNAS.items()},
-        # Se toma el momento de descarga de la base: el estado respecto del calendario es el mismo.
-        "descargado": base.get("descargado", ahora), "calculado": ahora,
+        # Se toma la descarga más reciente de las bases: el estado respecto del calendario es el mismo.
+        "descargado": max((m.get("descargado", "") for m in metas), default="") or ahora, "calculado": ahora,
         "ultimo_periodo": f"{nuevo['fecha'].max():%Y-%m}", "observaciones": len(nuevo),
-        "desestacionalizacion": detalle,
     }
+    if detalle:
+        meta.update(detalle)
     p_meta.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     escribir_excel(fuente, nuevo, meta, fuente.COLUMNAS)
     ant = f"{anterior['fecha'].max():%Y-%m}" if anterior is not None else "—"
@@ -357,7 +364,7 @@ def main() -> int:
 
     # Derivadas: se recalculan si cambió su base (es una comparación de huellas, no cuesta nada).
     for fid, fuente in DERIVADAS.items():
-        if args.fuentes and fid not in pedidas and fuente.DERIVADA_DE not in pedidas:
+        if args.fuentes and fid not in pedidas and not set(bases(fuente)) & set(pedidas):
             continue
         try:
             r = procesar_derivada(fuente, args.forzar and fid in pedidas, ahora)

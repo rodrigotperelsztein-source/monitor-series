@@ -76,7 +76,8 @@ def calcular(original: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
         salida[f"{cid}_var_m"] = (sa.pct_change() * 100).values
         diag["advertencias"] = list(dict.fromkeys(diag["advertencias"]))
         detalle[cid] = {"especificacion": esp.describir(), **diag}
-    return salida, {"programa": PROGRAMA, "version_especificaciones": VERSION, "series": detalle}
+    return salida, {"desestacionalizacion": {"programa": PROGRAMA, "version_especificaciones": VERSION,
+                                             "series": detalle}}
 
 
 def validar(nuevo: pd.DataFrame, original: pd.DataFrame) -> list[str]:

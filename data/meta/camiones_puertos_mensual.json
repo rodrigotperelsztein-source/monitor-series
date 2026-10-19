@@ -1,0 +1,141 @@
+{
+  "id": "camiones_puertos_mensual",
+  "nombre": "Entrada de camiones con granos a puertos, fábricas y molinos, por mes",
+  "url": "data/camiones_puertos.csv",
+  "pagina": "https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/logistica/_archivos/000023_Posici%C3%B3n%20de%20Camiones%20y%20Vagones/000020_Entrada%20diaria%20de%20camiones%20y%20vagones%20a%20puertos,%20f%C3%A1bricas%20y%20molinos%20(por%20zona%20portuaria%20y%20por%20producto).php",
+  "frecuencia": "M",
+  "unidad": "Camiones por mes",
+  "sha256": "5012fee434b5296155aa4d12e70e53a9d272f4174954f315c5c56fe4d3a35cbd",
+  "derivada_de": [
+    "camiones_puertos"
+  ],
+  "archivos_de_origen": [
+    "https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/logistica/_archivos/000023_Posici%C3%B3n%20de%20Camiones%20y%20Vagones/000020_Entrada%20diaria%20de%20camiones%20y%20vagones%20a%20puertos,%20f%C3%A1bricas%20y%20molinos%20(por%20zona%20portuaria%20y%20por%20producto).php https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2024/total_mensual_enero_2024.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2024/total_mensual_febrero_2024.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2024/total_mensual_marzo_2024.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2024/total_mensual_abril_2024.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2024/total_mensual_mayo_2024.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2024/total_mensual_junio_2024.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2024/total_mensual_julio_2024.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2024/total_mensual_agosto_2024.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2024/total_mensual_septiembre_2024.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2024/total_mensual_octubre_2024.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2024/total_mensual_noviembre_2024.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2024/total_mensual_diciembre_2024.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2025/total_mensual_enero_2025.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2025/total_mensual_feb_2025.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2025/total_mensual_mar_2025.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2025/total_mensual_abr_2025.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2025/total_mensual_may_2025.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2025/total_mensual_jun_2025.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2025/total_mensual_jul_2025.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2025/total_mensual_ago_2025.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2025/total_mensual_sep_2025.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2025/total_mensual_oct_2025.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2025/total_mensual_nov_2025.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2025/total_mensual_dic_2025.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2026/total_mensual_ene_2026.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2026/total_mensual_feb_2026.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2026/total_mensual_mar_2026.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2026/total_mensual_abr_2026.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2026/total_mensual_may_2026.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2026/total_mensual_jun_2026.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2026/total_mensual_jul_2026.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2026/total_mensual_ago_2026.pdf https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2026/total_mensual_sep_2026.pdf"
+  ],
+  "columnas": {
+    "total": {
+      "nombre": "Camiones descargados en el mes, total",
+      "tipo": "nivel",
+      "unidad": "Camiones por mes"
+    },
+    "total_var_ia": {
+      "nombre": "Camiones descargados en el mes, total, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "rosario": {
+      "nombre": "Camiones descargados en el mes, Rosario y aledaños",
+      "tipo": "nivel",
+      "unidad": "Camiones por mes"
+    },
+    "rosario_var_ia": {
+      "nombre": "Camiones descargados en el mes, Rosario y aledaños, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "darsena_bsas_entre_rios": {
+      "nombre": "Camiones descargados en el mes, Dársena Buenos Aires y Entre Ríos",
+      "tipo": "nivel",
+      "unidad": "Camiones por mes"
+    },
+    "darsena_bsas_entre_rios_var_ia": {
+      "nombre": "Camiones descargados en el mes, Dársena Buenos Aires y Entre Ríos, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "necochea": {
+      "nombre": "Camiones descargados en el mes, Puerto Necochea",
+      "tipo": "nivel",
+      "unidad": "Camiones por mes"
+    },
+    "necochea_var_ia": {
+      "nombre": "Camiones descargados en el mes, Puerto Necochea, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "bahia_blanca": {
+      "nombre": "Camiones descargados en el mes, Puerto Bahía Blanca",
+      "tipo": "nivel",
+      "unidad": "Camiones por mes"
+    },
+    "bahia_blanca_var_ia": {
+      "nombre": "Camiones descargados en el mes, Puerto Bahía Blanca, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "trigo": {
+      "nombre": "Camiones descargados en el mes, trigo",
+      "tipo": "nivel",
+      "unidad": "Camiones por mes"
+    },
+    "trigo_var_ia": {
+      "nombre": "Camiones descargados en el mes, trigo, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "maiz": {
+      "nombre": "Camiones descargados en el mes, maíz",
+      "tipo": "nivel",
+      "unidad": "Camiones por mes"
+    },
+    "maiz_var_ia": {
+      "nombre": "Camiones descargados en el mes, maíz, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "sorgo": {
+      "nombre": "Camiones descargados en el mes, sorgo",
+      "tipo": "nivel",
+      "unidad": "Camiones por mes"
+    },
+    "sorgo_var_ia": {
+      "nombre": "Camiones descargados en el mes, sorgo, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cebada": {
+      "nombre": "Camiones descargados en el mes, cebada",
+      "tipo": "nivel",
+      "unidad": "Camiones por mes"
+    },
+    "cebada_var_ia": {
+      "nombre": "Camiones descargados en el mes, cebada, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "soja": {
+      "nombre": "Camiones descargados en el mes, soja",
+      "tipo": "nivel",
+      "unidad": "Camiones por mes"
+    },
+    "soja_var_ia": {
+      "nombre": "Camiones descargados en el mes, soja, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "girasol": {
+      "nombre": "Camiones descargados en el mes, girasol",
+      "tipo": "nivel",
+      "unidad": "Camiones por mes"
+    },
+    "girasol_var_ia": {
+      "nombre": "Camiones descargados en el mes, girasol, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vagones": {
+      "nombre": "Vagones en el mes",
+      "tipo": "nivel",
+      "unidad": "Vagones por mes"
+    },
+    "vagones_var_ia": {
+      "nombre": "Vagones en el mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-10-19T21:01:37Z",
+  "calculado": "2026-10-19T21:01:37Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 33
+}

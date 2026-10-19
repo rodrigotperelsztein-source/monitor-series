@@ -19,7 +19,9 @@
 [sube]
   sin cambios en el archivo
 [camiones_puertos]
-  ERROR: 2024-04: los días suman 167780 camiones y el total del mes dice 139880.
+  intento 1 falló: HTTPSConnectionPool(host='www.magyp.gob.ar', port=443): Read timed out. (read timeout=60)
+  aviso: 2024-04-30: el total dice 31004, pero zonas y productos suman 3104; se usa 3104.
+  ERROR: 2025-10: los días suman 111920 camiones y el total del mes dice 124070.
 [emae_letras_desest]
   sin cambios en las series de base
 [ripte_real]

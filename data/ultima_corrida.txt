@@ -1,0 +1,35 @@
+[calendario INDEC]
+  2.º sem. 2026: 174 publicaciones; 1.º sem. 2027: todavía no publicado
+[emae]
+  sin cambios en el archivo
+[emae_letras]
+  sin cambios en el archivo
+[ipc]
+  sin cambios en el archivo
+[ipi]
+  sin cambios en el archivo
+[isac]
+  sin cambios en el archivo
+[supermercados]
+  sin cambios en el archivo
+[ripte]
+  sin cambios en el archivo
+[salarios]
+  sin cambios en el archivo
+[sube]
+  sin cambios en el archivo
+[camiones_puertos]
+  aviso: en 1 días la suma por zonas no da el total: ['2024-04-30']
+  aviso: en 2 días la suma por productos no da el total: ['2024-04-30', '2024-09-26']
+  ERROR: Validación fallida:
+  - Faltan 11 días: ['2024-02-29', '2024-07-16', '2024-07-23', '2024-08-31', '2024-10-20']
+[emae_letras_desest]
+  sin cambios en las series de base
+[ripte_real]
+  sin cambios en las series de base
+[salarios_real]
+  sin cambios en las series de base
+[sube_mensual]
+  sin cambios en las series de base
+[camiones_puertos_mensual]
+  ERROR: faltan las series de base ['camiones_puertos.csv']

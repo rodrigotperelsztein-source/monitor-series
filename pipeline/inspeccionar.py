@@ -26,6 +26,14 @@ def describir(url: str) -> str:
     contenido = descargar(url)
     nombre = Path(urlparse(url).path).name
     lineas = [f"URL: {url}", f"Bytes: {len(contenido)}", ""]
+    if nombre.lower().endswith(".pdf"):
+        import pdfplumber
+        with pdfplumber.open(io.BytesIO(contenido)) as pdf:
+            lineas.append(f"Páginas: {len(pdf.pages)}")
+            for n, pagina in enumerate(pdf.pages[:4], 1):
+                lineas.append(f"=== Página {n}")
+                lineas.append(pagina.extract_text() or "(sin texto)")
+        return "\n".join(lineas)
     motor = "xlrd" if nombre.lower().endswith(".xls") else None
     hojas = pd.read_excel(io.BytesIO(contenido), sheet_name=None, header=None, engine=motor)
     for hoja, df in hojas.items():

@@ -5,7 +5,7 @@
   "pagina": "https://www.argentina.gob.ar/trabajo/seguridadsocial/ripte",
   "frecuencia": "M",
   "unidad": "Pesos constantes",
-  "sha256": "886fc11a8aa09d0bf47e41494fc7bf7ab8a026f86d9ea06ad757e27f86329f8b",
+  "sha256": "89d1a3556509b1e720b22d9009e303491e18be88aaeb09d261fab2984e5c9f5b",
   "derivada_de": [
     "ripte",
     "ipc"
@@ -21,9 +21,9 @@
       "unidad": "Pesos de dic-2016"
     },
     "ripte_real_ultimo_mes": {
-      "nombre": "RIPTE real, a precios del último mes del IPC",
+      "nombre": "RIPTE real, a precios del último mes disponible",
       "tipo": "nivel",
-      "unidad": "Pesos del último mes"
+      "unidad": "Pesos del último mes disponible"
     },
     "ripte_real_var_m": {
       "nombre": "RIPTE real, var. % mensual",
@@ -37,9 +37,9 @@
     }
   },
   "descargado": "2026-10-19T18:02:04Z",
-  "calculado": "2026-10-19T18:10:00Z",
+  "calculado": "2026-10-19T18:20:00Z",
   "ultimo_periodo": "2026-08",
   "observaciones": 117,
   "deflactor": "IPC nacional, nivel general (ipc.nacional_nivel_general_indice), base dic-2016=100",
-  "precios_del_ultimo_mes": "2026-09"
+  "precios_del_ultimo_mes": "2026-08"
 }

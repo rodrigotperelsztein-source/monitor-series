@@ -56,8 +56,11 @@ COLUMNAS["vagones"] = Columna("", "Vagones por día", unidad="Vagones por día")
 
 MESES = {m: i for i, m in enumerate(["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct",
                                       "nov", "dic"], 1)}
-NUM = r"\d{1,3}(?:\.\d{3})+|\d+"
-FILA = re.compile(rf"\b(\d{{1,2}})-([a-z]{{3}})[a-z]*\s+((?:(?:{NUM})\s+){{12}}(?:{NUM}))\b")
+# Números con o sin punto de miles; "-" es cero.
+NUM = r"\d{1,3}(?:\.\d{3})+|\d+|-"
+# Día y mes ("1-oct", "29-feb.", a veces con el mes mal escrito: se usa el mes del archivo).
+FILA = re.compile(rf"(?<![\d.])(\d{{1,2}})-[a-z]{{3,}}\.?\s+((?:(?:{NUM})\s+){{12}}(?:{NUM}))(?![\d.])")
+TOTAL = re.compile(rf"(?:total mensual|acumulados)\s+((?:(?:{NUM})\s+){{12}}(?:{NUM}))(?![\d.])")
 
 
 def _sin_tildes(s: str) -> str:
@@ -92,14 +95,24 @@ def bajar(descargar, hoy: date) -> tuple[str, bytes]:
     return " ".join([PAGINA] + [pdfs[m] for m in sorted(meses)]), buf.getvalue()
 
 
-def _filas(texto: str, anio: int, mes: int | None) -> list[dict]:
+def _numeros(texto: str) -> list[int]:
+    return [0 if x == "-" else int(x.replace(".", "")) for x in texto.split()]
+
+
+def _filas(texto: str, anio: int, mes: int) -> list[dict]:
+    """Filas diarias de un mes; controla que sumen lo mismo que la fila de total del mes."""
     filas = []
-    for m in FILA.finditer(_sin_tildes(texto)):
-        mes_fila = MESES.get(m[2])
-        if mes_fila is None or (mes and mes_fila != mes):
+    for m in FILA.finditer(texto):
+        dia = int(m[1])
+        if dia > pd.Period(f"{anio}-{mes:02d}", freq="M").days_in_month:
             continue
-        nums = [int(x.replace(".", "")) for x in m[3].split()]
-        filas.append({"fecha": pd.Timestamp(anio, mes_fila, int(m[1])), **dict(zip(ORDEN, nums))})
+        filas.append({"fecha": pd.Timestamp(anio, mes, dia), **dict(zip(ORDEN, _numeros(m[2])))})
+    t = TOTAL.search(texto)
+    if t and filas:
+        informado = dict(zip(ORDEN, _numeros(t[1])))["total"]
+        suma = sum(f["total"] for f in filas)
+        if abs(suma - informado) > max(2, 0.001 * informado):
+            raise ValueError(f"{anio}-{mes:02d}: los días suman {suma} camiones y el total del mes dice {informado}.")
     return filas
 
 
@@ -119,7 +132,7 @@ def leer(contenido: bytes, columnas=COLUMNAS) -> pd.DataFrame:
                 anio, mes = map(int, nombre[:7].split("-"))
                 with pdfplumber.open(io.BytesIO(z.read(nombre))) as pdf:
                     texto = "\n".join(p.extract_text() or "" for p in pdf.pages)
-                nuevas = _filas(texto, anio, mes)
+                nuevas = _filas(_sin_tildes(texto), anio, mes)
                 if not nuevas:
                     raise ValueError(f"No encontré filas en el PDF de {nombre[:7]}.")
                 filas += nuevas
@@ -136,9 +149,15 @@ def leer(contenido: bytes, columnas=COLUMNAS) -> pd.DataFrame:
         raise ValueError("No encontré datos.")
     # El mes en curso de la página pisa al PDF si se superponen (la página es la versión más nueva).
     df = df.drop_duplicates("fecha", keep="last").sort_values("fecha")
-    df = df[df["fecha"] >= PRIMER_PERIODO]
-    df.attrs["controles"] = df[ORDEN].copy()
-    return df.reset_index(drop=True)[["fecha", *columnas]]
+    df = df[df["fecha"] >= PRIMER_PERIODO].set_index("fecha")
+    # Algunos días no figuran en el informe (p. ej. el 31/8/2024): quedan vacíos.
+    df = df.reindex(pd.date_range(df.index.min(), df.index.max(), name="fecha")).reset_index()
+    df.attrs["dias_sin_dato"] = [f"{x:%Y-%m-%d}" for x in df.loc[df["total"].isna(), "fecha"]]
+    return df[["fecha", *columnas]]
+
+
+def meta_extra(nuevo: pd.DataFrame) -> dict:
+    return {"dias_sin_dato_en_lo_bajado": nuevo.attrs.get("dias_sin_dato", [])}
 
 
 def combinar(nuevo: pd.DataFrame, anterior: pd.DataFrame | None) -> pd.DataFrame:
@@ -156,7 +175,13 @@ def validar(nuevo: pd.DataFrame, anterior: pd.DataFrame | None, columnas=COLUMNA
         errores.append(f"La serie no empieza el {PRIMER_PERIODO}.")
     faltan = sorted(set(pd.date_range(nuevo["fecha"].min(), nuevo["fecha"].max())) - set(nuevo["fecha"]))
     if faltan:
-        errores.append(f"Faltan {len(faltan)} días: {[f'{x:%Y-%m-%d}' for x in faltan[:5]]}")
+        errores.append(f"Faltan {len(faltan)} días en la tabla: {[f'{x:%Y-%m-%d}' for x in faltan[:5]]}")
+    vacios = nuevo.loc[nuevo["total"].isna(), "fecha"]
+    if len(vacios):
+        print(f"  aviso: {len(vacios)} días sin dato en la fuente: {[f'{x:%Y-%m-%d}' for x in vacios[:10]]}")
+    por_mes = vacios.dt.to_period("M").value_counts()
+    if (por_mes > 3).any():
+        errores.append(f"Meses con más de 3 días sin dato (¿cambió el formato?): {por_mes[por_mes > 3].to_dict()}")
     zonas = nuevo[list(ZONAS)].sum(axis=1)
     productos = nuevo[list(PRODUCTOS)].sum(axis=1)
     mal_z = (zonas - nuevo["total"]).abs() > 1

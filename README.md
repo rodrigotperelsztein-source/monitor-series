@@ -10,6 +10,7 @@ actualiza los datos y guarda la versión nueva.
 |---|---|---|---|---|
 | `emae` | EMAE total: índice original, desestacionalizado y tendencia-ciclo (base 2004=100), con la variación interanual de la original y las mensuales de las otras dos | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48) | Mensual | 2004-01 |
 | `emae_letras` | EMAE por sector de actividad (letras A a O e impuestos netos de subsidios), serie original, base 2004=100 | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48) | Mensual | 2004-01 |
+| `emae_letras_desest` | EMAE por sector, **desestacionalización propia** (X-13ARIMA-SEATS con calendario argentino) de las letras A, C, D, E, F, G, I y J, con su variación mensual. INDEC no las publica; ver [Desestacionalización propia](#desestacionalización-propia) | Cálculo propio sobre `emae_letras` | Mensual | 2004-01 |
 | `ipc` | IPC: nivel general, 12 divisiones, núcleo, regulados, estacionales, bienes y servicios, para el total nacional y las 6 regiones; índice (dic-2016=100), variación mensual e interanual (378 series) | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31) | Mensual | 2016-12 |
 | `ipi` | IPI manufacturero: nivel general (original, desestacionalizado y tendencia-ciclo, con variaciones), divisiones y subclases (original) y divisiones (desestacionalizadas, con variación mensual); base 2004=100 | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-6-14) | Mensual | 2016-01 |
 | `isac` | ISAC: indicador sintético de la construcción (original, desestacionalizado y tendencia-ciclo, con variaciones) e insumos para la construcción (original y desestacionalizados); base 2004=100 | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-3-42) | Mensual | 2012-01 |
@@ -121,6 +122,50 @@ Para cada fuente, `python -m pipeline.actualizar`:
 5. Si todo está bien, **guarda** el CSV, el Excel, el original y el registro de revisiones, y regenera
    los archivos de `data/todas/` con todas las series juntas.
    Si algo falla, **no toca nada de esa fuente** y la tarea termina en error.
+
+## Desestacionalización propia
+
+`emae_letras_desest` se recalcula sola cada vez que cambia `emae_letras`, en la misma corrida de GitHub
+Actions. Usa el programa oficial de la Oficina del Censo de EE.UU., X-13ARIMA-SEATS 1.1 (compilación 57),
+que está en `bin/x13as`; el código es `pipeline/desest.py` y las especificaciones,
+`pipeline/fuentes/emae_letras_desest.py`.
+
+**Método** (el mismo que usa Monitor Argy, calibrado contra sus series publicadas):
+
+- modelo regARIMA con especificación fija por letra (orden ARIMA, transformación y outliers);
+- días de la semana: regresores estándar de X-13, que se quitan de la serie;
+- feriados: cantidad de feriados nacionales en días hábiles del mes (con traslados; sin Jueves Santo,
+  puentes turísticos ni feriados únicos), centrada por mes calendario; Pascua: `easter[8]`;
+- el efecto de feriados y Pascua se estima pero **queda en la serie desestacionalizada**, como en Monitor Argy;
+- descomposición X-11 (tabla D11).
+
+**Especificaciones:**
+
+| Letra | Modelo | Transf. | Outliers | Origen |
+|---|---|---|---|---|
+| A agro | (2 0 0)(0 1 1) | log | LS 2009-04, 2009-07, 2018-04, 2018-07, 2023-04, 2023-07 | Monitor Argy |
+| C minería | (0 1 1)(0 1 1) | niveles | AO 2008-05, 2009-08, 2010-12; LS 2011-04, 2020-04 | Monitor Argy |
+| D industria | (3 1 1)(0 1 1) | niveles | LS 2020-03, 2020-06, 2024-07 | Monitor Argy |
+| F construcción | (0 1 2)(0 1 1) | niveles | LS 2020-03, 2020-07, 2020-10, 2024-01; AO 2020-04, 2020-05, 2021-05 | Monitor Argy |
+| E electricidad, gas y agua | (0 1 2)(0 1 1) | log | — | propia |
+| G comercio | (0 1 3)(0 1 1) | log | TC 2020-03, 2020-04; LS 2024-07 | propia |
+| I transporte y comunicaciones | (1 1 0)(0 1 1) | niveles | LS 2020-03, 2020-07; TC 2020-04 | propia |
+| J intermediación financiera | (0 1 0)(0 1 1) | log | AO 2025-09 | propia |
+
+Las propias salen de la selección automática de X-13 (modelo, transformación, outliers y prueba AIC de
+días de la semana y Pascua: en las cuatro, Pascua no resultó significativa) sobre 2004-01 a 2026-07, con
+controles de calidad (M7, Q, estacionalidad residual y autocorrelación de los residuos, Ljung-Box).
+En comercio el modelo automático dejaba autocorrelación y se eligió el de mejor AICc sin ella.
+Quedan fijas; conviene revisarlas una vez por año.
+
+**Diferencia con Monitor Argy** en A, C, D y F (2004-01 a 2026-07): en la variación mensual, entre 0,06 y
+0,2 puntos porcentuales en promedio (minería 0,06; agro 0,16; construcción 0,17; industria 0,20). No es cero:
+Monitor Argy no publica su lista exacta de feriados y la diferencia viene, sobre todo, de ahí.
+
+Como en cualquier desestacionalización, con cada dato nuevo se reestima el modelo y se revisan los meses
+anteriores (no se registran en `data/revisiones/`). El modelo, los coeficientes de feriados, Pascua y días de
+la semana, los outliers y los indicadores de calidad de cada letra quedan en
+[`data/meta/emae_letras_desest.json`](data/meta/emae_letras_desest.json).
 
 ## Cuándo corre
 

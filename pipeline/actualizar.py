@@ -27,10 +27,12 @@ import pandas as pd
 import requests
 
 from pipeline import calendario
-from pipeline.fuentes import emae, emae_letras, ipc, ipi, isac, supermercados
+from pipeline.fuentes import emae, emae_letras, emae_letras_desest, ipc, ipi, isac, supermercados
 from pipeline.fuentes._indec import iguales
 
-FUENTES = {f.ID: f for f in [emae, emae_letras, ipc, ipi, isac, supermercados]}
+FUENTES = {f.ID: f for f in [emae, emae_letras, emae_letras_desest, ipc, ipi, isac, supermercados]}
+# Series calculadas a partir de otra (DERIVADA_DE): no se bajan, se recalculan cuando cambia su base.
+DERIVADAS = {fid: f for fid, f in FUENTES.items() if hasattr(f, "DERIVADA_DE")}
 
 RAIZ = Path(__file__).resolve().parent.parent
 DATA = RAIZ / "data"
@@ -176,6 +178,46 @@ def procesar(fuente, forzar: bool, ahora: str, hoy: date) -> str:
     return f"actualizada: último período {ant} → {meta['ultimo_periodo']}; valores revisados: {revisados}"
 
 
+def procesar_derivada(fuente, forzar: bool, ahora: str) -> str:
+    """Recalcula una serie derivada si cambió su serie de base o la versión del cálculo."""
+    fid = fuente.ID
+    p_meta = DATA / "meta" / f"{fid}.json"
+    p_csv = DATA / f"{fid}.csv"
+    meta = leer_json(p_meta)
+    p_base = DATA / f"{fuente.DERIVADA_DE}.csv"
+    if not p_base.exists():
+        raise ValueError(f"falta la serie de base {p_base.name}")
+    huella = hashlib.sha256(p_base.read_bytes() + fuente.VERSION.encode()).hexdigest()
+    if huella == meta.get("sha256") and not forzar:
+        return "sin cambios en la serie de base"
+
+    original = leer_csv(p_base)
+    nuevo, detalle = fuente.calcular(original)
+    errores = fuente.validar(nuevo, original)
+    if errores:
+        raise ValueError("Validación fallida:\n  - " + "\n  - ".join(errores))
+    anterior = leer_csv(p_csv)
+
+    nuevo.to_csv(p_csv, index=False, date_format="%Y-%m-%d", float_format="%.6f")
+    base = leer_json(DATA / "meta" / f"{fuente.DERIVADA_DE}.json")
+    meta = {
+        "id": fid, "nombre": fuente.NOMBRE, "url": fuente.URL, "pagina": fuente.PAGINA,
+        "frecuencia": fuente.FRECUENCIA, "unidad": fuente.UNIDAD, "sha256": huella,
+        "derivada_de": fuente.DERIVADA_DE, "archivo_de_origen": base.get("url", ""),
+        "columnas": {cid: {"nombre": c.nombre, "tipo": c.tipo,
+                           "unidad": c.unidad or ("%" if c.tipo == "variacion" else fuente.UNIDAD)}
+                     for cid, c in fuente.COLUMNAS.items()},
+        # Se toma el momento de descarga de la base: el estado respecto del calendario es el mismo.
+        "descargado": base.get("descargado", ahora), "calculado": ahora,
+        "ultimo_periodo": f"{nuevo['fecha'].max():%Y-%m}", "observaciones": len(nuevo),
+        "desestacionalizacion": detalle,
+    }
+    p_meta.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    escribir_excel(fuente, nuevo, meta, fuente.COLUMNAS)
+    ant = f"{anterior['fecha'].max():%Y-%m}" if anterior is not None else "—"
+    return f"recalculada: último período {ant} → {meta['ultimo_periodo']}"
+
+
 def fecha_cambio(fid: str) -> date | None:
     """Día (hora de Buenos Aires) en que cambiaron los datos de la fuente por última vez."""
     d = leer_json(DATA / "meta" / f"{fid}.json").get("descargado")
@@ -285,15 +327,16 @@ def main() -> int:
             print(f"  ERROR (se conserva el calendario anterior): {e}")
     cal = calendario.cargar()
 
-    ids = args.fuentes or list(FUENTES)
+    pedidas = args.fuentes or list(FUENTES)
+    ids = [fid for fid in pedidas if fid not in DERIVADAS]
     if args.modo == "calendario":
         ids = [fid for fid in ids
                if hoy in calendario.fechas(getattr(FUENTES[fid], "CALENDARIO", ""), cal)
                and (fecha_cambio(fid) or date.min) < hoy]
-        if not ids:
+        if ids:
+            print(f"Publicaciones previstas hoy y todavía no descargadas: {', '.join(ids)}")
+        else:
             print(f"Hoy ({hoy:%d/%m/%Y}) no hay publicaciones pendientes de INDEC para estas series.")
-            return 0
-        print(f"Publicaciones previstas hoy y todavía no descargadas: {', '.join(ids)}")
 
     for fid in ids:
         print(f"[{fid}]")
@@ -308,6 +351,21 @@ def main() -> int:
         except Exception as e:  # noqa: BLE001
             fallas += 1
             print(f"  ERROR: {e}")
+
+    # Derivadas: se recalculan si cambió su base (es una comparación de huellas, no cuesta nada).
+    for fid, fuente in DERIVADAS.items():
+        if args.fuentes and fid not in pedidas and fuente.DERIVADA_DE not in pedidas:
+            continue
+        try:
+            r = procesar_derivada(fuente, args.forzar and fid in pedidas, ahora)
+            if args.modo == "completo" or not r.startswith("sin cambios"):
+                print(f"[{fid}]\n  {r}")
+        except Exception as e:  # noqa: BLE001
+            fallas += 1
+            print(f"[{fid}]\n  ERROR: {e}")
+
+    if args.modo == "calendario" and not ids and not fallas:
+        return 0
 
     if args.modo == "completo":
         # Aviso: una publicación prevista para hoy o ayer que no entró.

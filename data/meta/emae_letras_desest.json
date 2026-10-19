@@ -1,0 +1,660 @@
+{
+  "id": "emae_letras_desest",
+  "nombre": "EMAE por sector de actividad (letras), desestacionalización propia (X-13)",
+  "url": "data/emae_letras.csv",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48",
+  "frecuencia": "M",
+  "unidad": "Índice base 2004=100",
+  "sha256": "363de205816744e9c43ef0354872d421b7895f4ebdc3c956a6423389d8480ad1",
+  "derivada_de": "emae_letras",
+  "archivo_de_origen": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_emae_actividad_base2004.xls",
+  "columnas": {
+    "a_agro": {
+      "nombre": "A - Agricultura, ganadería, caza y silvicultura, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "a_agro_var_m": {
+      "nombre": "A - Agricultura, ganadería, caza y silvicultura, desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "c_mineria": {
+      "nombre": "C - Explotación de minas y canteras, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "c_mineria_var_m": {
+      "nombre": "C - Explotación de minas y canteras, desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "d_industria": {
+      "nombre": "D - Industria manufacturera, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "d_industria_var_m": {
+      "nombre": "D - Industria manufacturera, desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "e_electricidad_gas_agua": {
+      "nombre": "E - Electricidad, gas y agua, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "e_electricidad_gas_agua_var_m": {
+      "nombre": "E - Electricidad, gas y agua, desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "f_construccion": {
+      "nombre": "F - Construcción, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "f_construccion_var_m": {
+      "nombre": "F - Construcción, desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "g_comercio": {
+      "nombre": "G - Comercio mayorista, minorista y reparaciones, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "g_comercio_var_m": {
+      "nombre": "G - Comercio mayorista, minorista y reparaciones, desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "i_transporte_comunicaciones": {
+      "nombre": "I - Transporte y comunicaciones, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "i_transporte_comunicaciones_var_m": {
+      "nombre": "I - Transporte y comunicaciones, desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "j_intermediacion_financiera": {
+      "nombre": "J - Intermediación financiera, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "j_intermediacion_financiera_var_m": {
+      "nombre": "J - Intermediación financiera, desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-10-16T20:25:54Z",
+  "calculado": "2026-10-19T15:00:00Z",
+  "ultimo_periodo": "2026-07",
+  "observaciones": 271,
+  "desestacionalizacion": {
+    "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+    "version_especificaciones": "2026-10-19",
+    "series": {
+      "a_agro": {
+        "especificacion": {
+          "modelo": "(2 0 0)(0 1 1)",
+          "transformacion": "log",
+          "outliers": [
+            {
+              "tipo": "LS",
+              "fecha": "2009-04"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2009-07"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2018-04"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2018-07"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2023-04"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2023-07"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": "easter[8]",
+          "efectos_feriados_pascua_en_la_serie": true,
+          "origen": "Monitor Argy (emae_agro_desest)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(2 0 0)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 1781.53162023314,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 9.81,
+            "gl": 6,
+            "p": 0.1329
+          },
+          "feriados": {
+            "coef": -0.00849,
+            "t": -2.04
+          },
+          "pascua": {
+            "coef": 0.010202,
+            "t": 1.02
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2009-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2009-07"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2018-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2018-07"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2023-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2023-07"
+          }
+        ],
+        "calidad": {
+          "m7": 0.104,
+          "q": 0.34,
+          "qs_desest_p": 0.86212,
+          "qs_irregular_p": 0.14463,
+          "ljungbox_rezagos_significativos": 10
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant seasonal peak has been found"
+        ]
+      },
+      "c_mineria": {
+        "especificacion": {
+          "modelo": "(0 1 1)(0 1 1)",
+          "transformacion": "niveles",
+          "outliers": [
+            {
+              "tipo": "AO",
+              "fecha": "2008-05"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2009-08"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2010-12"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2011-04"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2020-04"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": "easter[8]",
+          "efectos_feriados_pascua_en_la_serie": true,
+          "origen": "Monitor Argy (emae_mineria_desest)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(0 1 1)(0 1 1)",
+        "transformacion": "No transformation",
+        "aicc": 1136.88153807763,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 30.87,
+            "gl": 7,
+            "p": 0.0001
+          },
+          "feriados": {
+            "coef": -0.270179,
+            "t": -1.61
+          },
+          "pascua": {
+            "coef": -0.427058,
+            "t": -1.01
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "AO",
+            "fecha": "2008-05"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2009-08"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2010-12"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2011-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2020-04"
+          }
+        ],
+        "calidad": {
+          "m7": 0.259,
+          "q": 0.3,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant seasonal peak has been found"
+        ]
+      },
+      "d_industria": {
+        "especificacion": {
+          "modelo": "(3 1 1)(0 1 1)",
+          "transformacion": "niveles",
+          "outliers": [
+            {
+              "tipo": "LS",
+              "fecha": "2020-03"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2020-06"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2024-07"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": "easter[8]",
+          "efectos_feriados_pascua_en_la_serie": true,
+          "origen": "Monitor Argy (emae_industria_desest)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(3 1 1)(0 1 1)",
+        "transformacion": "No transformation",
+        "aicc": 1419.30702116436,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 85.63,
+            "gl": 7,
+            "p": 0.0
+          },
+          "feriados": {
+            "coef": -1.344544,
+            "t": -4.66
+          },
+          "pascua": {
+            "coef": -1.534317,
+            "t": -2.09
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2020-03"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2020-06"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-07"
+          }
+        ],
+        "calidad": {
+          "m7": 0.214,
+          "q": 0.21,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant trading day peak has been"
+        ]
+      },
+      "e_electricidad_gas_agua": {
+        "especificacion": {
+          "modelo": "(0 1 2)(0 1 1)",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": true,
+          "origen": "identificada con X-13 sobre 2004-01 a 2026-07 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(0 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 1534.89830733612,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 18.56,
+            "gl": 6,
+            "p": 0.005
+          },
+          "feriados": {
+            "coef": -0.007952,
+            "t": -2.46
+          },
+          "pascua": null
+        },
+        "outliers": [],
+        "calidad": {
+          "m7": 0.348,
+          "q": 0.8,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": []
+      },
+      "f_construccion": {
+        "especificacion": {
+          "modelo": "(0 1 2)(0 1 1)",
+          "transformacion": "niveles",
+          "outliers": [
+            {
+              "tipo": "LS",
+              "fecha": "2020-03"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2020-04"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2020-05"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2020-07"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2020-10"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2021-05"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2024-01"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": "easter[8]",
+          "efectos_feriados_pascua_en_la_serie": true,
+          "origen": "Monitor Argy (emae_construccion_desest)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(0 1 2)(0 1 1)",
+        "transformacion": "No transformation",
+        "aicc": 1422.82128756335,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 106.86,
+            "gl": 7,
+            "p": 0.0
+          },
+          "feriados": {
+            "coef": -1.03598,
+            "t": -3.98
+          },
+          "pascua": {
+            "coef": 0.270769,
+            "t": 0.4
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2020-03"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2020-05"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2020-07"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2020-10"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2021-05"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.384,
+          "q": 0.32,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 6
+        },
+        "advertencias": []
+      },
+      "g_comercio": {
+        "especificacion": {
+          "modelo": "(0 1 3)(0 1 1)",
+          "transformacion": "log",
+          "outliers": [
+            {
+              "tipo": "TC",
+              "fecha": "2020-03"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2020-04"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2024-07"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": true,
+          "origen": "identificada con X-13 sobre 2004-01 a 2026-07 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(0 1 3)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 1460.06195941052,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 208.89,
+            "gl": 6,
+            "p": 0.0
+          },
+          "feriados": {
+            "coef": -0.011585,
+            "t": -6.0
+          },
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "TC",
+            "fecha": "2020-03"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-07"
+          }
+        ],
+        "calidad": {
+          "m7": 0.265,
+          "q": 0.31,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant seasonal peak has been found",
+          "WARNING: At least one visually significant trading day peak has been"
+        ]
+      },
+      "i_transporte_comunicaciones": {
+        "especificacion": {
+          "modelo": "(1 1 0)(0 1 1)",
+          "transformacion": "niveles",
+          "outliers": [
+            {
+              "tipo": "LS",
+              "fecha": "2020-03"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2020-04"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2020-07"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": true,
+          "origen": "identificada con X-13 sobre 2004-01 a 2026-07 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 0)(0 1 1)",
+        "transformacion": "No transformation",
+        "aicc": 1187.59940803284,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 53.73,
+            "gl": 7,
+            "p": 0.0
+          },
+          "feriados": {
+            "coef": -0.547755,
+            "t": -3.0
+          },
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2020-03"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2020-07"
+          }
+        ],
+        "calidad": {
+          "m7": 0.173,
+          "q": 0.16,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant trading day peak has been"
+        ]
+      },
+      "j_intermediacion_financiera": {
+        "especificacion": {
+          "modelo": "(0 1 0)(0 1 1)",
+          "transformacion": "log",
+          "outliers": [
+            {
+              "tipo": "AO",
+              "fecha": "2025-09"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": true,
+          "origen": "identificada con X-13 sobre 2004-01 a 2026-07 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(0 1 0)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 1469.66766280297,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 80.65,
+            "gl": 6,
+            "p": 0.0
+          },
+          "feriados": {
+            "coef": -0.008611,
+            "t": -5.14
+          },
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "AO",
+            "fecha": "2025-09"
+          }
+        ],
+        "calidad": {
+          "m7": 0.568,
+          "q": 0.45,
+          "qs_desest_p": 0.99131,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 1
+        },
+        "advertencias": []
+      }
+    }
+  }
+}

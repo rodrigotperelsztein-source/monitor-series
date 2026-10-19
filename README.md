@@ -22,7 +22,6 @@ El estado de cada serie (último período, fecha de descarga) está en [`data/ca
 | `data/meta/<id>.json` | Fuente, URL del archivo, huella del archivo, fecha de descarga y último período. |
 | `data/revisiones/<id>.csv` | Cada valor que el organismo corrigió hacia atrás: período, serie, valor anterior y nuevo. |
 | `data/raw/<id>/` | El archivo original tal como se bajó, una copia por cada versión con datos distintos. |
-
 | `data/todas/valores.csv` | Todas las series juntas en formato largo: `fecha`, `id_serie`, `valor`. |
 | `data/todas/series.csv` | Una fila por serie: `id_serie`, nombre, tipo (nivel o variación), unidad, frecuencia, fuente, primer y último período. |
 

@@ -18,6 +18,8 @@ actualiza los datos y guarda la versión nueva.
 | `ripte_real` | RIPTE real, deflactado por el IPC nacional: a precios de diciembre de 2016 (como Monitor Argy) y a precios del último IPC publicado, con variación mensual e interanual | Cálculo propio sobre `ripte` e `ipc` | Mensual | 2016-12 |
 | `salarios` | Índice de salarios: sector privado registrado, público, total registrado, privado no registrado e índice total (base oct-2016=100), con variaciones mensual e interanual calculadas desde los índices | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-31-61) | Mensual | 2015-10 (no registrado y total, 2016-10) |
 | `salarios_real` | Índice de salarios real: cada índice deflactado por el IPC nacional (como Monitor Argy), con variaciones mensual e interanual | Cálculo propio sobre `salarios` e `ipc` | Mensual | 2016-12 |
+| `sube` | SUBE: transacciones (usos) por **día**: total, AMBA, interior, colectivos, trenes, subte, lanchas y colectivos del AMBA. Los últimos meses son preliminares (la fecha desde la que lo son está en `data/meta/sube.json`); la cobertura del interior crece con los años, así que el total y el interior no son del todo comparables entre años | [Secretaría de Transporte](https://datos.transporte.gob.ar/dataset/sube-cantidad-de-transacciones-usos-por-fecha) | Diaria | 2020-01-01 |
+| `sube_mensual` | SUBE por mes (solo meses completos): transacciones del mes, promedio diario y variación interanual de cada serie de `sube` | Cálculo propio sobre `sube` | Mensual | 2020-01 |
 | `supermercados` | Encuesta de supermercados: índice de ventas a precios constantes (original, desestacionalizado y tendencia-ciclo, con variaciones) y ventas totales a precios corrientes y constantes (millones de $) | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-1-34) | Mensual | 2017-01 |
 
 El estado de cada serie está en [`data/catalogo.csv`](data/catalogo.csv): último período, fecha de descarga,
@@ -179,6 +181,9 @@ La programación sigue el calendario de difusión de INDEC, que publica a las 16
 |---|---|
 | Días hábiles 16:40, 17:10, 17:40, 18:10 y 18:40 | **Modo calendario.** Si INDEC prevé publicar ese día alguna de las series, baja solo esas, hasta que entre el dato nuevo. Si no hay nada previsto, termina en segundos. El primer intento es 40 minutos después de las 16 porque a esa hora la página de INDEC suele saturarse; si falla la descarga, no cuenta como error y se reintenta en la siguiente. |
 | Todas las noches 21:47 | **Control completo.** Actualiza el calendario (semestre actual y siguiente, cuando INDEC lo publica), revisa todas las fuentes para atrapar revisiones o publicaciones fuera de calendario, y **termina en error** si una publicación prevista para el día no entró. |
+
+La SUBE se actualiza casi todos los días y entra en el control de cada noche; solo se baja el archivo del
+año en curso (unos 50 MB), y la historia de años anteriores queda en `data/sube.csv`.
 
 El RIPTE no está en el calendario de INDEC: se publica sin fecha fija (en general, unos dos meses después
 del mes de referencia) y entra en el control de cada noche.

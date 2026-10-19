@@ -27,10 +27,10 @@ import pandas as pd
 import requests
 
 from pipeline import calendario
-from pipeline.fuentes import emae, emae_letras, emae_letras_desest, ipc, ipi, isac, ripte, ripte_real, salarios, salarios_real, supermercados
+from pipeline.fuentes import emae, emae_letras, emae_letras_desest, ipc, ipi, isac, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, supermercados
 from pipeline.fuentes._indec import iguales
 
-FUENTES = {f.ID: f for f in [emae, emae_letras, emae_letras_desest, ipc, ipi, isac, supermercados, ripte, ripte_real, salarios, salarios_real]}
+FUENTES = {f.ID: f for f in [emae, emae_letras, emae_letras_desest, ipc, ipi, isac, supermercados, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual]}
 # Series calculadas a partir de otra (DERIVADA_DE): no se bajan, se recalculan cuando cambia su base.
 DERIVADAS = {fid: f for fid, f in FUENTES.items() if hasattr(f, "DERIVADA_DE")}
 
@@ -107,7 +107,7 @@ def escribir_excel(fuente, df: pd.DataFrame, meta: dict, columnas: dict) -> None
         hoja = xw.sheets["Niveles"]
         hoja.column_dimensions["A"].width = 12
         for fila in hoja.iter_rows(min_row=2, max_col=1):
-            fila[0].number_format = "mmm-yyyy"
+            fila[0].number_format = "dd/mm/yyyy" if fuente.FRECUENCIA == "D" else "mmm-yyyy"
 
 
 def bajar_fuente(fuente, hoy: date) -> tuple[str, bytes]:
@@ -145,7 +145,11 @@ def procesar(fuente, forzar: bool, ahora: str, hoy: date) -> str:
 
     columnas = fuente.columnas(contenido) if hasattr(fuente, "columnas") else fuente.COLUMNAS
     nuevo = fuente.leer(contenido, columnas)
+    extra = fuente.meta_extra(nuevo) if hasattr(fuente, "meta_extra") else {}
     anterior = leer_csv(p_csv)
+    if hasattr(fuente, "combinar"):
+        # Fuentes que bajan solo una parte (p. ej. el año en curso) y la suman a la historia guardada.
+        nuevo = fuente.combinar(nuevo, anterior)
     errores = fuente.validar(nuevo, anterior, columnas)
     if errores:
         raise ValueError("Validación fallida:\n  - " + "\n  - ".join(errores))
@@ -156,6 +160,7 @@ def procesar(fuente, forzar: bool, ahora: str, hoy: date) -> str:
         "columnas": {cid: {"nombre": c.nombre, "tipo": c.tipo,
                            "unidad": c.unidad or ("%" if c.tipo == "variacion" else fuente.UNIDAD)}
                      for cid, c in columnas.items()},
+        **extra,
     })
 
     datos_iguales = anterior is not None and list(nuevo.columns) == list(anterior.columns) and \
@@ -165,14 +170,17 @@ def procesar(fuente, forzar: bool, ahora: str, hoy: date) -> str:
         p_meta.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         return "archivo distinto pero mismos datos"
 
-    revisados = registrar_revisiones(fid, nuevo, anterior, ahora)
-    raw = DATA / "raw" / fid / f"{ahora[:10]}_{huella[:8]}.{fuente.EXTENSION}"
-    raw.parent.mkdir(parents=True, exist_ok=True)
-    raw.write_bytes(contenido)
+    revisados = registrar_revisiones(fid, nuevo, anterior, ahora) if getattr(fuente, "REGISTRAR_REVISIONES", True) else 0
+    raw = None
+    if getattr(fuente, "GUARDAR_ORIGINAL", True):
+        raw = DATA / "raw" / fid / f"{ahora[:10]}_{huella[:8]}.{fuente.EXTENSION}"
+        raw.parent.mkdir(parents=True, exist_ok=True)
+        raw.write_bytes(contenido)
 
     nuevo.to_csv(p_csv, index=False, date_format="%Y-%m-%d", float_format="%.6f")
-    meta.update({"descargado": ahora, "ultimo_periodo": f"{nuevo['fecha'].max():%Y-%m}",
-                 "observaciones": len(nuevo), "original_guardado": str(raw.relative_to(RAIZ))})
+    formato = "%Y-%m-%d" if fuente.FRECUENCIA == "D" else "%Y-%m"
+    meta.update({"descargado": ahora, "ultimo_periodo": nuevo["fecha"].max().strftime(formato),
+                 "observaciones": len(nuevo), "original_guardado": str(raw.relative_to(RAIZ)) if raw else None})
     p_meta.parent.mkdir(parents=True, exist_ok=True)
     p_meta.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     escribir_excel(fuente, nuevo, meta, columnas)

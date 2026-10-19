@@ -10,6 +10,10 @@ actualiza los datos y guarda la versión nueva.
 |---|---|---|---|---|
 | `emae` | EMAE total: índice original, desestacionalizado y tendencia-ciclo (base 2004=100), con la variación interanual de la original y las mensuales de las otras dos | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48) | Mensual | 2004-01 |
 | `emae_letras` | EMAE por sector de actividad (letras A a O e impuestos netos de subsidios), serie original, base 2004=100 | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48) | Mensual | 2004-01 |
+| `ipc` | IPC: nivel general, 12 divisiones, núcleo, regulados, estacionales, bienes y servicios, para el total nacional y las 6 regiones; índice (dic-2016=100), variación mensual e interanual (378 series) | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31) | Mensual | 2016-12 |
+| `ipi` | IPI manufacturero: nivel general (original, desestacionalizado y tendencia-ciclo, con variaciones), divisiones y subclases (original) y divisiones (desestacionalizadas, con variación mensual); base 2004=100 | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-6-14) | Mensual | 2016-01 |
+| `isac` | ISAC: indicador sintético de la construcción (original, desestacionalizado y tendencia-ciclo, con variaciones) e insumos para la construcción (original y desestacionalizados); base 2004=100 | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-3-42) | Mensual | 2012-01 |
+| `supermercados` | Encuesta de supermercados: índice de ventas a precios constantes (original, desestacionalizado y tendencia-ciclo, con variaciones) y ventas totales a precios corrientes y constantes (millones de $) | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-1-34) | Mensual | 2017-01 |
 
 El estado de cada serie está en [`data/catalogo.csv`](data/catalogo.csv): último período, fecha de descarga,
 próxima publicación según el calendario de INDEC y si está **al día**, **se publica hoy** o **demorado**.
@@ -157,9 +161,16 @@ con la URL del archivo. La descripción (hojas, encabezados, primeras y últimas
 
 Cada fuente es un módulo en `pipeline/fuentes/` con:
 
-- `ID`, `NOMBRE`, `URL`, `PAGINA`, `EXTENSION`, `FRECUENCIA`, `UNIDAD`
-- `leer(contenido: bytes) -> DataFrame` con la columna `fecha` y una columna por variable
-- `validar(nuevo, anterior) -> list[str]` con los errores encontrados
+- `ID`, `NOMBRE`, `URL`, `PAGINA`, `EXTENSION`, `FRECUENCIA`, `UNIDAD`, `ORGANISMO`, `CALENDARIO`
+- `COLUMNAS` (las series, con `Columna`) o, si dependen del archivo, `columnas(contenido)`
+- `leer(contenido, columnas) -> DataFrame` con la columna `fecha` y una columna por serie
+- `validar(nuevo, anterior, columnas) -> list[str]` con los errores encontrados
+- opcional, `urls(hoy)` si el nombre del archivo cambia (p. ej. lleva el año): se prueba cada URL en orden
+
+Los cuadros de INDEC con varias filas de encabezado se describen por el "camino" de encabezados de cada
+columna, por ejemplo `"Serie original | Variación porcentual | respecto al mismo mes"` (ver `ipi.py`).
+Para cuadros anchos (divisiones, insumos), `columnas_por_encabezado` arma una serie por columna; si INDEC
+agrega, quita o renombra una, la actualización frena.
 
 Después se suma a la lista `FUENTES` de `pipeline/actualizar.py`. Para los cuadros mensuales de INDEC,
 `pipeline/fuentes/_indec.py` ya resuelve la lectura y la validación: alcanza con describir las columnas

@@ -45,9 +45,9 @@ COLUMNAS = {
 SIN_CONTROL_INTERANUAL = {"b_pesca"}
 
 
-def leer(contenido: bytes) -> pd.DataFrame:
-    return leer_tabla_mensual(contenido, HOJA, COLUMNAS)
+def leer(contenido: bytes, columnas=COLUMNAS) -> pd.DataFrame:
+    return leer_tabla_mensual(contenido, HOJA, columnas)
 
 
-def validar(nuevo: pd.DataFrame, anterior: pd.DataFrame | None) -> list[str]:
-    return validar_tabla(nuevo, anterior, COLUMNAS, PRIMER_PERIODO, SIN_CONTROL_INTERANUAL)
+def validar(nuevo: pd.DataFrame, anterior: pd.DataFrame | None, columnas=COLUMNAS) -> list[str]:
+    return validar_tabla(nuevo, anterior, columnas, PRIMER_PERIODO, SIN_CONTROL_INTERANUAL)

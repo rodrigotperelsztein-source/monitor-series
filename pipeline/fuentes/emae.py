@@ -41,13 +41,13 @@ COLUMNAS = {
 }
 
 
-def leer(contenido: bytes) -> pd.DataFrame:
-    df = leer_tabla_mensual(contenido, HOJA, COLUMNAS)
-    for cid, col in COLUMNAS.items():
+def leer(contenido: bytes, columnas=COLUMNAS) -> pd.DataFrame:
+    df = leer_tabla_mensual(contenido, HOJA, columnas)
+    for cid, col in columnas.items():
         if col.tipo == "variacion":
             df.loc[df.index[: col.rezago], cid] = np.nan
     return df
 
 
-def validar(nuevo: pd.DataFrame, anterior: pd.DataFrame | None) -> list[str]:
-    return validar_tabla(nuevo, anterior, COLUMNAS, PRIMER_PERIODO)
+def validar(nuevo: pd.DataFrame, anterior: pd.DataFrame | None, columnas=COLUMNAS) -> list[str]:
+    return validar_tabla(nuevo, anterior, columnas, PRIMER_PERIODO)

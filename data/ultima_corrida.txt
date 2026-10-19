@@ -19,10 +19,7 @@
 [sube]
   sin cambios en el archivo
 [camiones_puertos]
-  aviso: en 1 días la suma por zonas no da el total: ['2024-04-30']
-  aviso: en 2 días la suma por productos no da el total: ['2024-04-30', '2024-09-26']
-  ERROR: Validación fallida:
-  - Faltan 11 días: ['2024-02-29', '2024-07-16', '2024-07-23', '2024-08-31', '2024-10-20']
+  ERROR: 2024-04: los días suman 167780 camiones y el total del mes dice 139880.
 [emae_letras_desest]
   sin cambios en las series de base
 [ripte_real]

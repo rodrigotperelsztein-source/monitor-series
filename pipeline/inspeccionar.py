@@ -26,6 +26,20 @@ def describir(url: str) -> str:
     contenido = descargar(url)
     nombre = Path(urlparse(url).path).name
     lineas = [f"URL: {url}", f"Bytes: {len(contenido)}", ""]
+    if contenido[:200].lstrip().lower().startswith((b"<!doctype html", b"<html")):
+        import re
+        links = sorted(set(re.findall(rb'href=["\']([^"\']+\.(?:xls|xlsx|csv|pdf|zip))["\']', contenido, re.I)))
+        lineas.append(f"Página HTML; links a archivos ({len(links)}):")
+        lineas += ["  " + l.decode("utf-8", "replace") for l in links]
+        return "\n".join(lineas)
+    if nombre.lower().endswith(".csv"):
+        texto = contenido.decode("utf-8", "replace") if not contenido.startswith(b"\xff\xfe") else contenido.decode("utf-16")
+        filas = texto.splitlines()
+        lineas.append(f"CSV: {len(filas)} líneas")
+        lineas += ["  " + f[:300] for f in filas[:15]]
+        lineas.append("  ...")
+        lineas += ["  " + f[:300] for f in filas[-5:]]
+        return "\n".join(lineas)
     if nombre.lower().endswith(".pdf"):
         import pdfplumber
         with pdfplumber.open(io.BytesIO(contenido)) as pdf:

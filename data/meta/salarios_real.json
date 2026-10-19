@@ -1,0 +1,99 @@
+{
+  "id": "salarios_real",
+  "nombre": "Índice de salarios real (deflactado por el IPC nacional)",
+  "url": "data/salarios.csv y data/ipc.csv",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-31-61",
+  "frecuencia": "M",
+  "unidad": "Índice real (salarios oct-2016=100 / IPC dic-2016=100)",
+  "sha256": "05cad2cf6f258c401d9aa3a17567ec34e6ca821d96dcfc82524e4ffe31165de0",
+  "derivada_de": [
+    "salarios",
+    "ipc"
+  ],
+  "archivos_de_origen": [
+    "https://www.indec.gob.ar/ftp/cuadros/sociedad/indice_salarios.csv",
+    "https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv"
+  ],
+  "columnas": {
+    "privado_registrado_real": {
+      "nombre": "Salarios del sector privado registrado, real (deflactado por IPC)",
+      "tipo": "nivel",
+      "unidad": "Índice real (salarios oct-2016=100 / IPC dic-2016=100)"
+    },
+    "privado_registrado_real_var_m": {
+      "nombre": "Salarios del sector privado registrado, real, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "privado_registrado_real_var_ia": {
+      "nombre": "Salarios del sector privado registrado, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "publico_real": {
+      "nombre": "Salarios del sector público, real (deflactado por IPC)",
+      "tipo": "nivel",
+      "unidad": "Índice real (salarios oct-2016=100 / IPC dic-2016=100)"
+    },
+    "publico_real_var_m": {
+      "nombre": "Salarios del sector público, real, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "publico_real_var_ia": {
+      "nombre": "Salarios del sector público, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "total_registrado_real": {
+      "nombre": "Salarios del total registrado, real (deflactado por IPC)",
+      "tipo": "nivel",
+      "unidad": "Índice real (salarios oct-2016=100 / IPC dic-2016=100)"
+    },
+    "total_registrado_real_var_m": {
+      "nombre": "Salarios del total registrado, real, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "total_registrado_real_var_ia": {
+      "nombre": "Salarios del total registrado, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "no_registrado_real": {
+      "nombre": "Salarios del sector privado no registrado, real (deflactado por IPC)",
+      "tipo": "nivel",
+      "unidad": "Índice real (salarios oct-2016=100 / IPC dic-2016=100)"
+    },
+    "no_registrado_real_var_m": {
+      "nombre": "Salarios del sector privado no registrado, real, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "no_registrado_real_var_ia": {
+      "nombre": "Salarios del sector privado no registrado, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "total_real": {
+      "nombre": "Índice de salarios, total, real (deflactado por IPC)",
+      "tipo": "nivel",
+      "unidad": "Índice real (salarios oct-2016=100 / IPC dic-2016=100)"
+    },
+    "total_real_var_m": {
+      "nombre": "Índice de salarios, total, real, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "total_real_var_ia": {
+      "nombre": "Índice de salarios, total, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-10-19T18:11:14Z",
+  "calculado": "2026-10-19T18:11:14Z",
+  "ultimo_periodo": "2026-07",
+  "observaciones": 116,
+  "deflactor": "IPC nacional, nivel general (ipc.nacional_nivel_general_indice), base dic-2016=100"
+}

@@ -1,0 +1,90 @@
+{
+  "id": "salarios",
+  "nombre": "Índice de salarios (INDEC)",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/sociedad/indice_salarios.csv",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-31-61",
+  "frecuencia": "M",
+  "unidad": "Índice base oct-2016=100",
+  "sha256": "1aa57cd93a1afa405f8032769c05672270516d60ee6388f2b0c206e83f4b5d2b",
+  "columnas": {
+    "privado_registrado": {
+      "nombre": "Salarios del sector privado registrado, índice oct-2016=100",
+      "tipo": "nivel",
+      "unidad": "Índice base oct-2016=100"
+    },
+    "privado_registrado_var_m": {
+      "nombre": "Salarios del sector privado registrado, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "privado_registrado_var_ia": {
+      "nombre": "Salarios del sector privado registrado, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "publico": {
+      "nombre": "Salarios del sector público, índice oct-2016=100",
+      "tipo": "nivel",
+      "unidad": "Índice base oct-2016=100"
+    },
+    "publico_var_m": {
+      "nombre": "Salarios del sector público, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "publico_var_ia": {
+      "nombre": "Salarios del sector público, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "total_registrado": {
+      "nombre": "Salarios del total registrado, índice oct-2016=100",
+      "tipo": "nivel",
+      "unidad": "Índice base oct-2016=100"
+    },
+    "total_registrado_var_m": {
+      "nombre": "Salarios del total registrado, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "total_registrado_var_ia": {
+      "nombre": "Salarios del total registrado, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "no_registrado": {
+      "nombre": "Salarios del sector privado no registrado, índice oct-2016=100",
+      "tipo": "nivel",
+      "unidad": "Índice base oct-2016=100"
+    },
+    "no_registrado_var_m": {
+      "nombre": "Salarios del sector privado no registrado, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "no_registrado_var_ia": {
+      "nombre": "Salarios del sector privado no registrado, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "total": {
+      "nombre": "Índice de salarios, total, índice oct-2016=100",
+      "tipo": "nivel",
+      "unidad": "Índice base oct-2016=100"
+    },
+    "total_var_m": {
+      "nombre": "Índice de salarios, total, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "total_var_ia": {
+      "nombre": "Índice de salarios, total, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-10-19T18:11:14Z",
+  "ultimo_periodo": "2026-07",
+  "observaciones": 130,
+  "original_guardado": "data/raw/salarios/2026-10-19_1aa57cd9.csv"
+}

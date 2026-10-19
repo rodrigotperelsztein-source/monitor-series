@@ -27,10 +27,10 @@ import pandas as pd
 import requests
 
 from pipeline import calendario
-from pipeline.fuentes import emae, emae_letras, emae_letras_desest, ipc, ipi, isac, supermercados
+from pipeline.fuentes import emae, emae_letras, emae_letras_desest, ipc, ipi, isac, ripte, supermercados
 from pipeline.fuentes._indec import iguales
 
-FUENTES = {f.ID: f for f in [emae, emae_letras, emae_letras_desest, ipc, ipi, isac, supermercados]}
+FUENTES = {f.ID: f for f in [emae, emae_letras, emae_letras_desest, ipc, ipi, isac, supermercados, ripte]}
 # Series calculadas a partir de otra (DERIVADA_DE): no se bajan, se recalculan cuando cambia su base.
 DERIVADAS = {fid: f for fid, f in FUENTES.items() if hasattr(f, "DERIVADA_DE")}
 
@@ -116,6 +116,9 @@ def bajar_fuente(fuente, hoy: date) -> tuple[str, bytes]:
     Si el nombre del archivo lleva el año (fuente.urls), se prueba cada candidato en orden
     (año actual, después el anterior) y se usa el primero que exista.
     """
+    if hasattr(fuente, "bajar"):
+        # La fuente busca su archivo (p. ej., un PDF cuyo nombre cambia, enlazado desde una página).
+        return fuente.bajar(descargar, hoy)
     candidatos = fuente.urls(hoy) if hasattr(fuente, "urls") else [fuente.URL]
     no_existen = []
     for url in candidatos:

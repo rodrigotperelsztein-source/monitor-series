@@ -14,6 +14,7 @@ actualiza los datos y guarda la versión nueva.
 | `ipc` | IPC: nivel general, 12 divisiones, núcleo, regulados, estacionales, bienes y servicios, para el total nacional y las 6 regiones; índice (dic-2016=100), variación mensual e interanual (378 series) | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31) | Mensual | 2016-12 |
 | `ipi` | IPI manufacturero: nivel general (original, desestacionalizado y tendencia-ciclo, con variaciones), divisiones y subclases (original) y divisiones (desestacionalizadas, con variación mensual); base 2004=100 | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-6-14) | Mensual | 2016-01 |
 | `isac` | ISAC: indicador sintético de la construcción (original, desestacionalizado y tendencia-ciclo, con variaciones) e insumos para la construcción (original y desestacionalizados); base 2004=100 | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-3-42) | Mensual | 2012-01 |
+| `ripte` | RIPTE: remuneración imponible promedio de los trabajadores estables, en pesos corrientes, con su variación mensual, el índice base 07/1994=100 y el índice no decreciente | [Subsecretaría de Seguridad Social](https://www.argentina.gob.ar/trabajo/seguridadsocial/ripte) | Mensual | 1994-07 |
 | `supermercados` | Encuesta de supermercados: índice de ventas a precios constantes (original, desestacionalizado y tendencia-ciclo, con variaciones) y ventas totales a precios corrientes y constantes (millones de $) | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-1-34) | Mensual | 2017-01 |
 
 El estado de cada serie está en [`data/catalogo.csv`](data/catalogo.csv): último período, fecha de descarga,
@@ -175,6 +176,9 @@ La programación sigue el calendario de difusión de INDEC, que publica a las 16
 |---|---|
 | Días hábiles 16:40, 17:10, 17:40, 18:10 y 18:40 | **Modo calendario.** Si INDEC prevé publicar ese día alguna de las series, baja solo esas, hasta que entre el dato nuevo. Si no hay nada previsto, termina en segundos. El primer intento es 40 minutos después de las 16 porque a esa hora la página de INDEC suele saturarse; si falla la descarga, no cuenta como error y se reintenta en la siguiente. |
 | Todas las noches 21:47 | **Control completo.** Actualiza el calendario (semestre actual y siguiente, cuando INDEC lo publica), revisa todas las fuentes para atrapar revisiones o publicaciones fuera de calendario, y **termina en error** si una publicación prevista para el día no entró. |
+
+El RIPTE no está en el calendario de INDEC: se publica sin fecha fija (en general, unos dos meses después
+del mes de referencia) y entra en el control de cada noche.
 
 GitHub puede demorar las tareas programadas, a veces más de una hora, según su carga.
 

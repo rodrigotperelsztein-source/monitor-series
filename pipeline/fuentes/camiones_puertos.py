@@ -60,8 +60,8 @@ MESES = {m: i for i, m in enumerate(["ene", "feb", "mar", "abr", "may", "jun", "
                                       "nov", "dic"], 1)}
 # Números con o sin punto de miles; "-" es cero.
 NUM = r"\d{1,3}(?:\.\d{3})+|\d+|-"
-# Día y mes ("1-oct", "29-feb.", a veces con el mes mal escrito: se usa el mes del archivo).
-FILA = re.compile(rf"(?<![\d.])(\d{{1,2}})-[a-z]{{3,}}\.?\s+((?:(?:{NUM})\s+){{12}}(?:{NUM}))(?![\d.])")
+# Día y mes ("1-oct", "29-feb.", "23-10", a veces con el mes mal escrito: se usa el mes del archivo).
+FILA = re.compile(rf"(?<![\d.])(\d{{1,2}})-(?:[a-z]{{3,}}\.?|\d{{1,2}})\s+((?:(?:{NUM})\s+){{12}}(?:{NUM}))(?![\d.])")
 TOTAL = re.compile(rf"(?:total mensual|acumulados)\s+((?:(?:{NUM})\s+){{12}}(?:{NUM}))(?![\d.])")
 
 

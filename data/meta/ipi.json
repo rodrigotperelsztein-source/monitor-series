@@ -1,0 +1,630 @@
+{
+  "id": "ipi",
+  "nombre": "IPI manufacturero: nivel general, divisiones y subclases",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_ipi_manufacturero_2026.xls",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-6-14",
+  "frecuencia": "M",
+  "unidad": "Índice base 2004=100",
+  "sha256": "0b79f8281bba9a791818cf793ba207c1bcd64b559e871dad2a1a04abfafdf14a",
+  "columnas": {
+    "original": {
+      "nombre": "IPI manufacturero, serie original",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "original_var_ia": {
+      "nombre": "IPI manufacturero, serie original, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "original_var_acum": {
+      "nombre": "IPI manufacturero, serie original, var. % acumulada en el año",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest": {
+      "nombre": "IPI manufacturero, serie desestacionalizada",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_var_m": {
+      "nombre": "IPI manufacturero, desestacionalizada, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "tendencia": {
+      "nombre": "IPI manufacturero, serie tendencia-ciclo",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "tendencia_var_m": {
+      "nombre": "IPI manufacturero, tendencia-ciclo, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "orig_15_alimentos_y_bebidas": {
+      "nombre": "15 - Alimentos y bebidas (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_15111_carne_vacuna": {
+      "nombre": "15111 - Carne vacuna (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_15112_carne_aviar": {
+      "nombre": "15112 - Carne aviar (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_15113_fiambres_y_embutidos": {
+      "nombre": "15113 - Fiambres y embutidos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_15130_preparacion_de_frutas_hortalizas_y_legumbres": {
+      "nombre": "15130 - Preparación de frutas, hortalizas y legumbres (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_15140_molienda_de_oleaginosas": {
+      "nombre": "15140 - Molienda de oleaginosas (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_15200_productos_lacteos": {
+      "nombre": "15200 - Productos lácteos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_15311_12_13_20_molienda_de_cereales": {
+      "nombre": "15311/12/13/20 - Molienda de cereales (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_15411_12_41_42_galletitas_productos_de_panaderia_y_pastas": {
+      "nombre": "15411/12/41/42 - Galletitas, productos de panadería y pastas (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_15420_30_azucar_productos_de_confiteria_y_chocolate": {
+      "nombre": "15420/30 - Azúcar, productos de confitería y chocolate (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_15491_2_3_yerba_mate_te_y_cafe": {
+      "nombre": "15491/2/3 - Yerba mate, té y café (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_15510_29_30_41_42_49_gaseosas_aguas_sodas_cervezas_jugos_para_diluir_sidras_y_bebidas_espirituosas": {
+      "nombre": "15510/29/30/41/42/49 - Gaseosas, aguas, sodas, cervezas, jugos para diluir, sidras y bebidas espirituosas (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_15521_vino": {
+      "nombre": "15521 - Vino (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_15120_330_499_otros_productos_alimenticios": {
+      "nombre": "15120/330/499 - Otros productos alimenticios (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_16_productos_de_tabaco": {
+      "nombre": "16 - Productos de tabaco (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_16001_preparacion_de_hojas_de_tabaco": {
+      "nombre": "16001 - Preparación de hojas de tabaco (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_16009_cigarrillos": {
+      "nombre": "16009 - Cigarrillos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_17_productos_textiles": {
+      "nombre": "17 - Productos textiles (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_17111_2_preparacion_de_fibras_de_uso_textil": {
+      "nombre": "17111/2 - Preparación de fibras de uso textil (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_17113_hilados_de_algodon": {
+      "nombre": "17113 - Hilados de algodón (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_17114_15_20_tejidos_y_acabado_de_productos_textiles": {
+      "nombre": "17114/15/20 - Tejidos y acabado de productos textiles (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_17210_20_30_90_otros_productos_textiles": {
+      "nombre": "17210/20/30/90 - Otros productos textiles (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_18_19_prendas_de_vestir_cuero_y_calzado": {
+      "nombre": "18-19 - Prendas de vestir, cuero y calzado (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_18110_120_401_402_900_prendas_de_vestir": {
+      "nombre": "18110/120/401/402/900 - Prendas de vestir (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_19110_20_curtido_y_articulos_de_cuero_excepto_prendas": {
+      "nombre": "19110/20 - Curtido y artículos de cuero, excepto prendas (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_19201_2_3_4_calzado_y_sus_partes": {
+      "nombre": "19201/2/3/4 - Calzado y sus partes (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_20_22_madera_papel_edicion_e_impresion": {
+      "nombre": "20-22 - Madera, papel, edición e impresión (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_20100_210_220_230_290_madera_y_productos_de_madera_y_corcho_excepto_muebles": {
+      "nombre": "20100/210/220/230/290 - Madera y productos de madera y corcho, excepto muebles (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_21010_20_91_99_papel_y_productos_de_papel": {
+      "nombre": "21010/20/91/99 - Papel y productos de papel (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_22110_120_190_210_220_edicion_e_impresion": {
+      "nombre": "22110/120/190/210/220 - Edición e impresión (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_23_refinacion_del_petroleo_coque_y_combustible_nuclear": {
+      "nombre": "23 - Refinación del petróleo, coque y combustible nuclear (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_23200_naftas": {
+      "nombre": "23200 - Naftas (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_23200_gasoil": {
+      "nombre": "23200 - Gasoil (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_23200_fueloil": {
+      "nombre": "23200 - Fueloil (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_23200_asfaltos": {
+      "nombre": "23200 - Asfaltos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_23100_200_300_otros_productos_de_la_refinacion_del_petroleo_coque_y_combustible_nuclear": {
+      "nombre": "23100/200/300 - Otros productos de la refinación del petróleo, coque y combustible nuclear (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_24_sustancias_y_productos_quimicos": {
+      "nombre": "24 - Sustancias y productos químicos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_24111_gases_industriales": {
+      "nombre": "24111 - Gases industriales (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_2411_excepto_24111_productos_quimicos_basicos": {
+      "nombre": "2411, excepto 24111 - Productos químicos básicos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_24120_210_agroquimicos": {
+      "nombre": "24120/210 - Agroquímicos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_24130_materias_primas_plasticas_y_caucho_sintetico": {
+      "nombre": "24130 - Materias primas plásticas y caucho sintético (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_24220_pinturas": {
+      "nombre": "24220 - Pinturas (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_24231_2_3_9_productos_farmaceuticos": {
+      "nombre": "24231/2/3/9 - Productos farmacéuticos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_24241_9_detergentes_jabones_y_productos_personales": {
+      "nombre": "24241/9 - Detergentes, jabones y productos personales (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_24290_300_otros_productos_quimicos": {
+      "nombre": "24290/300 - Otros productos químicos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_25_productos_de_caucho_y_plastico": {
+      "nombre": "25 - Productos de caucho y plástico (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_25110_neumaticos": {
+      "nombre": "25110 - Neumáticos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_25190_otros_productos_de_caucho": {
+      "nombre": "25190 - Otros productos de caucho (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_25201_9_manufacturas_de_plastico": {
+      "nombre": "25201/9 - Manufacturas de plástico (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_26_productos_minerales_no_metalicos": {
+      "nombre": "26 - Productos minerales no metálicos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_26101_2_9_vidrio_y_productos_de_vidrio": {
+      "nombre": "26101/2/9 - Vidrio y productos de vidrio (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_26910_30_productos_de_arcilla_y_ceramica_no_refractaria": {
+      "nombre": "26910/30 - Productos de arcilla y cerámica no refractaria (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_26941_cemento": {
+      "nombre": "26941 - Cemento (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_26942_cal_y_yeso": {
+      "nombre": "26942 - Cal y yeso (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_26951_9_articulos_de_cemento_y_de_yeso": {
+      "nombre": "26951/9 - Artículos de cemento y de yeso (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_26920_60_90_otros_productos_minerales_no_metalicos": {
+      "nombre": "26920/60/90 - Otros productos minerales no metálicos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_27_industrias_metalicas_basicas": {
+      "nombre": "27 - Industrias metálicas básicas (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_27100_industria_siderurgica": {
+      "nombre": "27100 - Industria siderúrgica (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_27201_9_aluminio_y_otros_metales_no_ferrosos": {
+      "nombre": "27201/9 - Aluminio y otros metales no ferrosos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_27310_20_fundicion_de_metales": {
+      "nombre": "27310/20 - Fundición de metales (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_28_productos_de_metal": {
+      "nombre": "28 - Productos de metal (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_28110_productos_metalicos_para_uso_estructural": {
+      "nombre": "28110 - Productos metálicos para uso estructural (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_28991_envases_metalicos": {
+      "nombre": "28991 - Envases metálicos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_28120_130_910_920_930_999_otros_productos_de_metal_y_servicios_de_trabajo_de_metales": {
+      "nombre": "28120/130/910/920/930/999 - Otros productos de metal y servicios de trabajo de metales (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_29_maquinaria_y_equipo": {
+      "nombre": "29 - Maquinaria y equipo (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_29110_20_30_40_50_90_maquinaria_de_uso_general": {
+      "nombre": "29110/20/30/40/50/90 - Maquinaria de uso general (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_29211_2_3_maquinaria_agropecuaria": {
+      "nombre": "29211/2/3 - Maquinaria agropecuaria (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_292_excepto_2921_otra_maquinaria_de_uso_especial": {
+      "nombre": "292, excepto 2921 - Otra maquinaria de uso especial (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_29300_aparatos_de_uso_domestico": {
+      "nombre": "29300 - Aparatos de uso doméstico (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_30_33_otros_equipos_aparatos_e_instrumentos": {
+      "nombre": "30-33 - Otros equipos, aparatos e instrumentos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_30000_32100_200_300_equipos_y_aparatos_de_informatica_television_y_comunicaciones_y_componentes_electronicos": {
+      "nombre": "30000/32100/200/300 - Equipos y aparatos de informática, televisión y comunicaciones, y componentes electrónicos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_31100_200_300_400_500_900_equipos_y_aparatos_electricos": {
+      "nombre": "31100/200/300/400/500/900 - Equipos y aparatos eléctricos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_33110_120_200_300_400_instrumentos_medicos_opticos_y_de_precision": {
+      "nombre": "33110/120/200/300/400 - Instrumentos médicos, ópticos y de precisión (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_34_vehiculos_automotores_carrocerias_remolques_y_autopartes": {
+      "nombre": "34 - Vehículos automotores, carrocerías, remolques y autopartes (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_34100_vehiculos_automotores": {
+      "nombre": "34100 - Vehículos automotores (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_34200_carrocerias_remolques_y_semirremolques": {
+      "nombre": "34200 - Carrocerías, remolques y semirremolques (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_34300_autopartes": {
+      "nombre": "34300 - Autopartes (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_35_otro_equipo_de_transporte": {
+      "nombre": "35 - Otro equipo de transporte (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_35910_motocicletas": {
+      "nombre": "35910 - Motocicletas (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_35110_120_200_300_990_otro_equipo_de_transporte": {
+      "nombre": "35110/120/200/300/990 - Otro equipo de transporte (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_36_38_muebles_y_colchones_y_otras_industrias_manufactureras": {
+      "nombre": "36-38 - Muebles y colchones, y otras industrias manufactureras (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_36101_2_3_muebles_y_colchones": {
+      "nombre": "36101/2/3 - Muebles y colchones (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_36900_otras_industrias_manufactureras": {
+      "nombre": "36900 - Otras industrias manufactureras (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "orig_37000_38000_reciclamiento_y_reparacion_instalacion_y_mantenimiento": {
+      "nombre": "37000/38000 - Reciclamiento y reparación, instalación y mantenimiento (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_15_alimentos_y_bebidas": {
+      "nombre": "15 - Alimentos y bebidas (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_15_alimentos_y_bebidas_var_m": {
+      "nombre": "15 - Alimentos y bebidas (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest_16_productos_de_tabaco": {
+      "nombre": "16 - Productos de tabaco (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_16_productos_de_tabaco_var_m": {
+      "nombre": "16 - Productos de tabaco (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest_17_productos_textiles": {
+      "nombre": "17 - Productos textiles (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_17_productos_textiles_var_m": {
+      "nombre": "17 - Productos textiles (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest_18_19_prendas_de_vestir_cuero_y_calzado": {
+      "nombre": "18-19 - Prendas de vestir, cuero y calzado (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_18_19_prendas_de_vestir_cuero_y_calzado_var_m": {
+      "nombre": "18-19 - Prendas de vestir, cuero y calzado (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest_20_22_madera_papel_edicion_e_impresion": {
+      "nombre": "20-22 - Madera, papel, edición e impresión (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_20_22_madera_papel_edicion_e_impresion_var_m": {
+      "nombre": "20-22 - Madera, papel, edición e impresión (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest_23_refinacion_del_petroleo_coque_y_combustible_nuclear": {
+      "nombre": "23 - Refinación del petróleo, coque y combustible nuclear (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_23_refinacion_del_petroleo_coque_y_combustible_nuclear_var_m": {
+      "nombre": "23 - Refinación del petróleo, coque y combustible nuclear (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest_24_sustancias_y_productos_quimicos": {
+      "nombre": "24 - Sustancias y productos químicos (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_24_sustancias_y_productos_quimicos_var_m": {
+      "nombre": "24 - Sustancias y productos químicos (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest_25_productos_de_caucho_y_plastico": {
+      "nombre": "25 - Productos de caucho y plástico (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_25_productos_de_caucho_y_plastico_var_m": {
+      "nombre": "25 - Productos de caucho y plástico (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest_26_productos_minerales_no_metalicos": {
+      "nombre": "26 - Productos minerales no metálicos (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_26_productos_minerales_no_metalicos_var_m": {
+      "nombre": "26 - Productos minerales no metálicos (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest_27_industrias_metalicas_basicas": {
+      "nombre": "27 - Industrias metálicas básicas (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_27_industrias_metalicas_basicas_var_m": {
+      "nombre": "27 - Industrias metálicas básicas (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest_28_productos_de_metal": {
+      "nombre": "28 - Productos de metal (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_28_productos_de_metal_var_m": {
+      "nombre": "28 - Productos de metal (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest_29_maquinaria_y_equipo": {
+      "nombre": "29 - Maquinaria y equipo (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_29_maquinaria_y_equipo_var_m": {
+      "nombre": "29 - Maquinaria y equipo (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest_30_33_otros_equipos_aparatos_e_instrumentos": {
+      "nombre": "30-33 - Otros equipos, aparatos e instrumentos (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_30_33_otros_equipos_aparatos_e_instrumentos_var_m": {
+      "nombre": "30-33 - Otros equipos, aparatos e instrumentos (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest_34_vehiculos_automotores_carrocerias_remolques_y_autopartes": {
+      "nombre": "34 - Vehículos automotores, carrocerías, remolques y autopartes (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_34_vehiculos_automotores_carrocerias_remolques_y_autopartes_var_m": {
+      "nombre": "34 - Vehículos automotores, carrocerías, remolques y autopartes (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest_35_otro_equipo_de_transporte": {
+      "nombre": "35 - Otro equipo de transporte (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_35_otro_equipo_de_transporte_var_m": {
+      "nombre": "35 - Otro equipo de transporte (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest_36_38_muebles_y_colchones_y_otras_industrias_manufactureras": {
+      "nombre": "36-38 - Muebles y colchones, y otras industrias manufactureras (serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_36_38_muebles_y_colchones_y_otras_industrias_manufactureras_var_m": {
+      "nombre": "36-38 - Muebles y colchones, y otras industrias manufactureras (serie desestacionalizada), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-10-19T15:37:12Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 128,
+  "original_guardado": "data/raw/ipi/2026-10-19_0b79f828.xls"
+}

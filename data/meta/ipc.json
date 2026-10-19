@@ -1,0 +1,1905 @@
+{
+  "id": "ipc",
+  "nombre": "IPC: nivel general, divisiones y categorías, por región",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
+  "frecuencia": "M",
+  "unidad": "Índice base dic-2016=100",
+  "sha256": "1b1742354bcbcd53e85b15bb76311e5a607f94ab4497ebd3a91f00b426a40e38",
+  "columnas": {
+    "nacional_nivel_general_indice": {
+      "nombre": "IPC Nacional - Nivel general - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_nivel_general_var_m": {
+      "nombre": "IPC Nacional - Nivel general - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_nivel_general_var_ia": {
+      "nombre": "IPC Nacional - Nivel general - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_01_indice": {
+      "nombre": "IPC Nacional - Alimentos y bebidas no alcohólicas - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_div_01_var_m": {
+      "nombre": "IPC Nacional - Alimentos y bebidas no alcohólicas - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_01_var_ia": {
+      "nombre": "IPC Nacional - Alimentos y bebidas no alcohólicas - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_02_indice": {
+      "nombre": "IPC Nacional - Bebidas alcohólicas y tabaco - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_div_02_var_m": {
+      "nombre": "IPC Nacional - Bebidas alcohólicas y tabaco - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_02_var_ia": {
+      "nombre": "IPC Nacional - Bebidas alcohólicas y tabaco - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_03_indice": {
+      "nombre": "IPC Nacional - Prendas de vestir y calzado - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_div_03_var_m": {
+      "nombre": "IPC Nacional - Prendas de vestir y calzado - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_03_var_ia": {
+      "nombre": "IPC Nacional - Prendas de vestir y calzado - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_04_indice": {
+      "nombre": "IPC Nacional - Vivienda, agua, electricidad, gas y otros combustibles - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_div_04_var_m": {
+      "nombre": "IPC Nacional - Vivienda, agua, electricidad, gas y otros combustibles - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_04_var_ia": {
+      "nombre": "IPC Nacional - Vivienda, agua, electricidad, gas y otros combustibles - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_05_indice": {
+      "nombre": "IPC Nacional - Equipamiento y mantenimiento del hogar - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_div_05_var_m": {
+      "nombre": "IPC Nacional - Equipamiento y mantenimiento del hogar - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_05_var_ia": {
+      "nombre": "IPC Nacional - Equipamiento y mantenimiento del hogar - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_06_indice": {
+      "nombre": "IPC Nacional - Salud - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_div_06_var_m": {
+      "nombre": "IPC Nacional - Salud - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_06_var_ia": {
+      "nombre": "IPC Nacional - Salud - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_07_indice": {
+      "nombre": "IPC Nacional - Transporte - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_div_07_var_m": {
+      "nombre": "IPC Nacional - Transporte - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_07_var_ia": {
+      "nombre": "IPC Nacional - Transporte - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_08_indice": {
+      "nombre": "IPC Nacional - Comunicación - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_div_08_var_m": {
+      "nombre": "IPC Nacional - Comunicación - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_08_var_ia": {
+      "nombre": "IPC Nacional - Comunicación - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_09_indice": {
+      "nombre": "IPC Nacional - Recreación y cultura - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_div_09_var_m": {
+      "nombre": "IPC Nacional - Recreación y cultura - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_09_var_ia": {
+      "nombre": "IPC Nacional - Recreación y cultura - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_10_indice": {
+      "nombre": "IPC Nacional - Educación - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_div_10_var_m": {
+      "nombre": "IPC Nacional - Educación - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_10_var_ia": {
+      "nombre": "IPC Nacional - Educación - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_11_indice": {
+      "nombre": "IPC Nacional - Restaurantes y hoteles - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_div_11_var_m": {
+      "nombre": "IPC Nacional - Restaurantes y hoteles - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_11_var_ia": {
+      "nombre": "IPC Nacional - Restaurantes y hoteles - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_12_indice": {
+      "nombre": "IPC Nacional - Bienes y servicios varios - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_div_12_var_m": {
+      "nombre": "IPC Nacional - Bienes y servicios varios - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_div_12_var_ia": {
+      "nombre": "IPC Nacional - Bienes y servicios varios - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_nucleo_indice": {
+      "nombre": "IPC Nacional - Núcleo - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_nucleo_var_m": {
+      "nombre": "IPC Nacional - Núcleo - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_nucleo_var_ia": {
+      "nombre": "IPC Nacional - Núcleo - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_regulados_indice": {
+      "nombre": "IPC Nacional - Regulados - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_regulados_var_m": {
+      "nombre": "IPC Nacional - Regulados - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_regulados_var_ia": {
+      "nombre": "IPC Nacional - Regulados - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_estacionales_indice": {
+      "nombre": "IPC Nacional - Estacionales - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_estacionales_var_m": {
+      "nombre": "IPC Nacional - Estacionales - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_estacionales_var_ia": {
+      "nombre": "IPC Nacional - Estacionales - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_bienes_indice": {
+      "nombre": "IPC Nacional - Bienes - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_bienes_var_m": {
+      "nombre": "IPC Nacional - Bienes - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_bienes_var_ia": {
+      "nombre": "IPC Nacional - Bienes - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_servicios_indice": {
+      "nombre": "IPC Nacional - Servicios - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "nacional_servicios_var_m": {
+      "nombre": "IPC Nacional - Servicios - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nacional_servicios_var_ia": {
+      "nombre": "IPC Nacional - Servicios - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_nivel_general_indice": {
+      "nombre": "IPC GBA - Nivel general - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_nivel_general_var_m": {
+      "nombre": "IPC GBA - Nivel general - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_nivel_general_var_ia": {
+      "nombre": "IPC GBA - Nivel general - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_01_indice": {
+      "nombre": "IPC GBA - Alimentos y bebidas no alcohólicas - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_div_01_var_m": {
+      "nombre": "IPC GBA - Alimentos y bebidas no alcohólicas - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_01_var_ia": {
+      "nombre": "IPC GBA - Alimentos y bebidas no alcohólicas - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_02_indice": {
+      "nombre": "IPC GBA - Bebidas alcohólicas y tabaco - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_div_02_var_m": {
+      "nombre": "IPC GBA - Bebidas alcohólicas y tabaco - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_02_var_ia": {
+      "nombre": "IPC GBA - Bebidas alcohólicas y tabaco - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_03_indice": {
+      "nombre": "IPC GBA - Prendas de vestir y calzado - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_div_03_var_m": {
+      "nombre": "IPC GBA - Prendas de vestir y calzado - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_03_var_ia": {
+      "nombre": "IPC GBA - Prendas de vestir y calzado - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_04_indice": {
+      "nombre": "IPC GBA - Vivienda, agua, electricidad, gas y otros combustibles - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_div_04_var_m": {
+      "nombre": "IPC GBA - Vivienda, agua, electricidad, gas y otros combustibles - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_04_var_ia": {
+      "nombre": "IPC GBA - Vivienda, agua, electricidad, gas y otros combustibles - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_05_indice": {
+      "nombre": "IPC GBA - Equipamiento y mantenimiento del hogar - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_div_05_var_m": {
+      "nombre": "IPC GBA - Equipamiento y mantenimiento del hogar - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_05_var_ia": {
+      "nombre": "IPC GBA - Equipamiento y mantenimiento del hogar - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_06_indice": {
+      "nombre": "IPC GBA - Salud - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_div_06_var_m": {
+      "nombre": "IPC GBA - Salud - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_06_var_ia": {
+      "nombre": "IPC GBA - Salud - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_07_indice": {
+      "nombre": "IPC GBA - Transporte - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_div_07_var_m": {
+      "nombre": "IPC GBA - Transporte - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_07_var_ia": {
+      "nombre": "IPC GBA - Transporte - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_08_indice": {
+      "nombre": "IPC GBA - Comunicación - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_div_08_var_m": {
+      "nombre": "IPC GBA - Comunicación - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_08_var_ia": {
+      "nombre": "IPC GBA - Comunicación - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_09_indice": {
+      "nombre": "IPC GBA - Recreación y cultura - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_div_09_var_m": {
+      "nombre": "IPC GBA - Recreación y cultura - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_09_var_ia": {
+      "nombre": "IPC GBA - Recreación y cultura - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_10_indice": {
+      "nombre": "IPC GBA - Educación - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_div_10_var_m": {
+      "nombre": "IPC GBA - Educación - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_10_var_ia": {
+      "nombre": "IPC GBA - Educación - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_11_indice": {
+      "nombre": "IPC GBA - Restaurantes y hoteles - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_div_11_var_m": {
+      "nombre": "IPC GBA - Restaurantes y hoteles - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_11_var_ia": {
+      "nombre": "IPC GBA - Restaurantes y hoteles - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_12_indice": {
+      "nombre": "IPC GBA - Bienes y servicios varios - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_div_12_var_m": {
+      "nombre": "IPC GBA - Bienes y servicios varios - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_div_12_var_ia": {
+      "nombre": "IPC GBA - Bienes y servicios varios - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_nucleo_indice": {
+      "nombre": "IPC GBA - Núcleo - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_nucleo_var_m": {
+      "nombre": "IPC GBA - Núcleo - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_nucleo_var_ia": {
+      "nombre": "IPC GBA - Núcleo - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_regulados_indice": {
+      "nombre": "IPC GBA - Regulados - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_regulados_var_m": {
+      "nombre": "IPC GBA - Regulados - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_regulados_var_ia": {
+      "nombre": "IPC GBA - Regulados - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_estacionales_indice": {
+      "nombre": "IPC GBA - Estacionales - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_estacionales_var_m": {
+      "nombre": "IPC GBA - Estacionales - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_estacionales_var_ia": {
+      "nombre": "IPC GBA - Estacionales - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_bienes_indice": {
+      "nombre": "IPC GBA - Bienes - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_bienes_var_m": {
+      "nombre": "IPC GBA - Bienes - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_bienes_var_ia": {
+      "nombre": "IPC GBA - Bienes - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_servicios_indice": {
+      "nombre": "IPC GBA - Servicios - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_servicios_var_m": {
+      "nombre": "IPC GBA - Servicios - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_servicios_var_ia": {
+      "nombre": "IPC GBA - Servicios - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_nivel_general_indice": {
+      "nombre": "IPC Pampeana - Nivel general - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_nivel_general_var_m": {
+      "nombre": "IPC Pampeana - Nivel general - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_nivel_general_var_ia": {
+      "nombre": "IPC Pampeana - Nivel general - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_01_indice": {
+      "nombre": "IPC Pampeana - Alimentos y bebidas no alcohólicas - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_div_01_var_m": {
+      "nombre": "IPC Pampeana - Alimentos y bebidas no alcohólicas - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_01_var_ia": {
+      "nombre": "IPC Pampeana - Alimentos y bebidas no alcohólicas - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_02_indice": {
+      "nombre": "IPC Pampeana - Bebidas alcohólicas y tabaco - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_div_02_var_m": {
+      "nombre": "IPC Pampeana - Bebidas alcohólicas y tabaco - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_02_var_ia": {
+      "nombre": "IPC Pampeana - Bebidas alcohólicas y tabaco - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_03_indice": {
+      "nombre": "IPC Pampeana - Prendas de vestir y calzado - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_div_03_var_m": {
+      "nombre": "IPC Pampeana - Prendas de vestir y calzado - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_03_var_ia": {
+      "nombre": "IPC Pampeana - Prendas de vestir y calzado - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_04_indice": {
+      "nombre": "IPC Pampeana - Vivienda, agua, electricidad, gas y otros combustibles - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_div_04_var_m": {
+      "nombre": "IPC Pampeana - Vivienda, agua, electricidad, gas y otros combustibles - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_04_var_ia": {
+      "nombre": "IPC Pampeana - Vivienda, agua, electricidad, gas y otros combustibles - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_05_indice": {
+      "nombre": "IPC Pampeana - Equipamiento y mantenimiento del hogar - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_div_05_var_m": {
+      "nombre": "IPC Pampeana - Equipamiento y mantenimiento del hogar - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_05_var_ia": {
+      "nombre": "IPC Pampeana - Equipamiento y mantenimiento del hogar - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_06_indice": {
+      "nombre": "IPC Pampeana - Salud - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_div_06_var_m": {
+      "nombre": "IPC Pampeana - Salud - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_06_var_ia": {
+      "nombre": "IPC Pampeana - Salud - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_07_indice": {
+      "nombre": "IPC Pampeana - Transporte - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_div_07_var_m": {
+      "nombre": "IPC Pampeana - Transporte - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_07_var_ia": {
+      "nombre": "IPC Pampeana - Transporte - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_08_indice": {
+      "nombre": "IPC Pampeana - Comunicación - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_div_08_var_m": {
+      "nombre": "IPC Pampeana - Comunicación - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_08_var_ia": {
+      "nombre": "IPC Pampeana - Comunicación - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_09_indice": {
+      "nombre": "IPC Pampeana - Recreación y cultura - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_div_09_var_m": {
+      "nombre": "IPC Pampeana - Recreación y cultura - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_09_var_ia": {
+      "nombre": "IPC Pampeana - Recreación y cultura - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_10_indice": {
+      "nombre": "IPC Pampeana - Educación - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_div_10_var_m": {
+      "nombre": "IPC Pampeana - Educación - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_10_var_ia": {
+      "nombre": "IPC Pampeana - Educación - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_11_indice": {
+      "nombre": "IPC Pampeana - Restaurantes y hoteles - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_div_11_var_m": {
+      "nombre": "IPC Pampeana - Restaurantes y hoteles - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_11_var_ia": {
+      "nombre": "IPC Pampeana - Restaurantes y hoteles - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_12_indice": {
+      "nombre": "IPC Pampeana - Bienes y servicios varios - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_div_12_var_m": {
+      "nombre": "IPC Pampeana - Bienes y servicios varios - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_div_12_var_ia": {
+      "nombre": "IPC Pampeana - Bienes y servicios varios - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_nucleo_indice": {
+      "nombre": "IPC Pampeana - Núcleo - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_nucleo_var_m": {
+      "nombre": "IPC Pampeana - Núcleo - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_nucleo_var_ia": {
+      "nombre": "IPC Pampeana - Núcleo - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_regulados_indice": {
+      "nombre": "IPC Pampeana - Regulados - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_regulados_var_m": {
+      "nombre": "IPC Pampeana - Regulados - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_regulados_var_ia": {
+      "nombre": "IPC Pampeana - Regulados - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_estacionales_indice": {
+      "nombre": "IPC Pampeana - Estacionales - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_estacionales_var_m": {
+      "nombre": "IPC Pampeana - Estacionales - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_estacionales_var_ia": {
+      "nombre": "IPC Pampeana - Estacionales - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_bienes_indice": {
+      "nombre": "IPC Pampeana - Bienes - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_bienes_var_m": {
+      "nombre": "IPC Pampeana - Bienes - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_bienes_var_ia": {
+      "nombre": "IPC Pampeana - Bienes - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_servicios_indice": {
+      "nombre": "IPC Pampeana - Servicios - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_servicios_var_m": {
+      "nombre": "IPC Pampeana - Servicios - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_servicios_var_ia": {
+      "nombre": "IPC Pampeana - Servicios - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_nivel_general_indice": {
+      "nombre": "IPC Noreste - Nivel general - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_nivel_general_var_m": {
+      "nombre": "IPC Noreste - Nivel general - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_nivel_general_var_ia": {
+      "nombre": "IPC Noreste - Nivel general - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_01_indice": {
+      "nombre": "IPC Noreste - Alimentos y bebidas no alcohólicas - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_div_01_var_m": {
+      "nombre": "IPC Noreste - Alimentos y bebidas no alcohólicas - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_01_var_ia": {
+      "nombre": "IPC Noreste - Alimentos y bebidas no alcohólicas - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_02_indice": {
+      "nombre": "IPC Noreste - Bebidas alcohólicas y tabaco - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_div_02_var_m": {
+      "nombre": "IPC Noreste - Bebidas alcohólicas y tabaco - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_02_var_ia": {
+      "nombre": "IPC Noreste - Bebidas alcohólicas y tabaco - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_03_indice": {
+      "nombre": "IPC Noreste - Prendas de vestir y calzado - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_div_03_var_m": {
+      "nombre": "IPC Noreste - Prendas de vestir y calzado - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_03_var_ia": {
+      "nombre": "IPC Noreste - Prendas de vestir y calzado - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_04_indice": {
+      "nombre": "IPC Noreste - Vivienda, agua, electricidad, gas y otros combustibles - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_div_04_var_m": {
+      "nombre": "IPC Noreste - Vivienda, agua, electricidad, gas y otros combustibles - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_04_var_ia": {
+      "nombre": "IPC Noreste - Vivienda, agua, electricidad, gas y otros combustibles - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_05_indice": {
+      "nombre": "IPC Noreste - Equipamiento y mantenimiento del hogar - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_div_05_var_m": {
+      "nombre": "IPC Noreste - Equipamiento y mantenimiento del hogar - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_05_var_ia": {
+      "nombre": "IPC Noreste - Equipamiento y mantenimiento del hogar - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_06_indice": {
+      "nombre": "IPC Noreste - Salud - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_div_06_var_m": {
+      "nombre": "IPC Noreste - Salud - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_06_var_ia": {
+      "nombre": "IPC Noreste - Salud - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_07_indice": {
+      "nombre": "IPC Noreste - Transporte - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_div_07_var_m": {
+      "nombre": "IPC Noreste - Transporte - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_07_var_ia": {
+      "nombre": "IPC Noreste - Transporte - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_08_indice": {
+      "nombre": "IPC Noreste - Comunicación - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_div_08_var_m": {
+      "nombre": "IPC Noreste - Comunicación - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_08_var_ia": {
+      "nombre": "IPC Noreste - Comunicación - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_09_indice": {
+      "nombre": "IPC Noreste - Recreación y cultura - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_div_09_var_m": {
+      "nombre": "IPC Noreste - Recreación y cultura - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_09_var_ia": {
+      "nombre": "IPC Noreste - Recreación y cultura - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_10_indice": {
+      "nombre": "IPC Noreste - Educación - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_div_10_var_m": {
+      "nombre": "IPC Noreste - Educación - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_10_var_ia": {
+      "nombre": "IPC Noreste - Educación - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_11_indice": {
+      "nombre": "IPC Noreste - Restaurantes y hoteles - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_div_11_var_m": {
+      "nombre": "IPC Noreste - Restaurantes y hoteles - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_11_var_ia": {
+      "nombre": "IPC Noreste - Restaurantes y hoteles - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_12_indice": {
+      "nombre": "IPC Noreste - Bienes y servicios varios - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_div_12_var_m": {
+      "nombre": "IPC Noreste - Bienes y servicios varios - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_div_12_var_ia": {
+      "nombre": "IPC Noreste - Bienes y servicios varios - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_nucleo_indice": {
+      "nombre": "IPC Noreste - Núcleo - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_nucleo_var_m": {
+      "nombre": "IPC Noreste - Núcleo - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_nucleo_var_ia": {
+      "nombre": "IPC Noreste - Núcleo - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_regulados_indice": {
+      "nombre": "IPC Noreste - Regulados - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_regulados_var_m": {
+      "nombre": "IPC Noreste - Regulados - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_regulados_var_ia": {
+      "nombre": "IPC Noreste - Regulados - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_estacionales_indice": {
+      "nombre": "IPC Noreste - Estacionales - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_estacionales_var_m": {
+      "nombre": "IPC Noreste - Estacionales - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_estacionales_var_ia": {
+      "nombre": "IPC Noreste - Estacionales - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_bienes_indice": {
+      "nombre": "IPC Noreste - Bienes - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_bienes_var_m": {
+      "nombre": "IPC Noreste - Bienes - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_bienes_var_ia": {
+      "nombre": "IPC Noreste - Bienes - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_servicios_indice": {
+      "nombre": "IPC Noreste - Servicios - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_servicios_var_m": {
+      "nombre": "IPC Noreste - Servicios - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_servicios_var_ia": {
+      "nombre": "IPC Noreste - Servicios - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_nivel_general_indice": {
+      "nombre": "IPC Noroeste - Nivel general - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_nivel_general_var_m": {
+      "nombre": "IPC Noroeste - Nivel general - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_nivel_general_var_ia": {
+      "nombre": "IPC Noroeste - Nivel general - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_01_indice": {
+      "nombre": "IPC Noroeste - Alimentos y bebidas no alcohólicas - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_div_01_var_m": {
+      "nombre": "IPC Noroeste - Alimentos y bebidas no alcohólicas - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_01_var_ia": {
+      "nombre": "IPC Noroeste - Alimentos y bebidas no alcohólicas - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_02_indice": {
+      "nombre": "IPC Noroeste - Bebidas alcohólicas y tabaco - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_div_02_var_m": {
+      "nombre": "IPC Noroeste - Bebidas alcohólicas y tabaco - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_02_var_ia": {
+      "nombre": "IPC Noroeste - Bebidas alcohólicas y tabaco - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_03_indice": {
+      "nombre": "IPC Noroeste - Prendas de vestir y calzado - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_div_03_var_m": {
+      "nombre": "IPC Noroeste - Prendas de vestir y calzado - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_03_var_ia": {
+      "nombre": "IPC Noroeste - Prendas de vestir y calzado - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_04_indice": {
+      "nombre": "IPC Noroeste - Vivienda, agua, electricidad, gas y otros combustibles - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_div_04_var_m": {
+      "nombre": "IPC Noroeste - Vivienda, agua, electricidad, gas y otros combustibles - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_04_var_ia": {
+      "nombre": "IPC Noroeste - Vivienda, agua, electricidad, gas y otros combustibles - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_05_indice": {
+      "nombre": "IPC Noroeste - Equipamiento y mantenimiento del hogar - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_div_05_var_m": {
+      "nombre": "IPC Noroeste - Equipamiento y mantenimiento del hogar - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_05_var_ia": {
+      "nombre": "IPC Noroeste - Equipamiento y mantenimiento del hogar - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_06_indice": {
+      "nombre": "IPC Noroeste - Salud - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_div_06_var_m": {
+      "nombre": "IPC Noroeste - Salud - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_06_var_ia": {
+      "nombre": "IPC Noroeste - Salud - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_07_indice": {
+      "nombre": "IPC Noroeste - Transporte - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_div_07_var_m": {
+      "nombre": "IPC Noroeste - Transporte - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_07_var_ia": {
+      "nombre": "IPC Noroeste - Transporte - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_08_indice": {
+      "nombre": "IPC Noroeste - Comunicación - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_div_08_var_m": {
+      "nombre": "IPC Noroeste - Comunicación - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_08_var_ia": {
+      "nombre": "IPC Noroeste - Comunicación - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_09_indice": {
+      "nombre": "IPC Noroeste - Recreación y cultura - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_div_09_var_m": {
+      "nombre": "IPC Noroeste - Recreación y cultura - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_09_var_ia": {
+      "nombre": "IPC Noroeste - Recreación y cultura - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_10_indice": {
+      "nombre": "IPC Noroeste - Educación - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_div_10_var_m": {
+      "nombre": "IPC Noroeste - Educación - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_10_var_ia": {
+      "nombre": "IPC Noroeste - Educación - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_11_indice": {
+      "nombre": "IPC Noroeste - Restaurantes y hoteles - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_div_11_var_m": {
+      "nombre": "IPC Noroeste - Restaurantes y hoteles - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_11_var_ia": {
+      "nombre": "IPC Noroeste - Restaurantes y hoteles - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_12_indice": {
+      "nombre": "IPC Noroeste - Bienes y servicios varios - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_div_12_var_m": {
+      "nombre": "IPC Noroeste - Bienes y servicios varios - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_div_12_var_ia": {
+      "nombre": "IPC Noroeste - Bienes y servicios varios - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_nucleo_indice": {
+      "nombre": "IPC Noroeste - Núcleo - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_nucleo_var_m": {
+      "nombre": "IPC Noroeste - Núcleo - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_nucleo_var_ia": {
+      "nombre": "IPC Noroeste - Núcleo - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_regulados_indice": {
+      "nombre": "IPC Noroeste - Regulados - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_regulados_var_m": {
+      "nombre": "IPC Noroeste - Regulados - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_regulados_var_ia": {
+      "nombre": "IPC Noroeste - Regulados - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_estacionales_indice": {
+      "nombre": "IPC Noroeste - Estacionales - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_estacionales_var_m": {
+      "nombre": "IPC Noroeste - Estacionales - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_estacionales_var_ia": {
+      "nombre": "IPC Noroeste - Estacionales - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_bienes_indice": {
+      "nombre": "IPC Noroeste - Bienes - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_bienes_var_m": {
+      "nombre": "IPC Noroeste - Bienes - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_bienes_var_ia": {
+      "nombre": "IPC Noroeste - Bienes - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_servicios_indice": {
+      "nombre": "IPC Noroeste - Servicios - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_servicios_var_m": {
+      "nombre": "IPC Noroeste - Servicios - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_servicios_var_ia": {
+      "nombre": "IPC Noroeste - Servicios - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_nivel_general_indice": {
+      "nombre": "IPC Cuyo - Nivel general - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_nivel_general_var_m": {
+      "nombre": "IPC Cuyo - Nivel general - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_nivel_general_var_ia": {
+      "nombre": "IPC Cuyo - Nivel general - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_01_indice": {
+      "nombre": "IPC Cuyo - Alimentos y bebidas no alcohólicas - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_div_01_var_m": {
+      "nombre": "IPC Cuyo - Alimentos y bebidas no alcohólicas - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_01_var_ia": {
+      "nombre": "IPC Cuyo - Alimentos y bebidas no alcohólicas - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_02_indice": {
+      "nombre": "IPC Cuyo - Bebidas alcohólicas y tabaco - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_div_02_var_m": {
+      "nombre": "IPC Cuyo - Bebidas alcohólicas y tabaco - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_02_var_ia": {
+      "nombre": "IPC Cuyo - Bebidas alcohólicas y tabaco - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_03_indice": {
+      "nombre": "IPC Cuyo - Prendas de vestir y calzado - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_div_03_var_m": {
+      "nombre": "IPC Cuyo - Prendas de vestir y calzado - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_03_var_ia": {
+      "nombre": "IPC Cuyo - Prendas de vestir y calzado - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_04_indice": {
+      "nombre": "IPC Cuyo - Vivienda, agua, electricidad, gas y otros combustibles - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_div_04_var_m": {
+      "nombre": "IPC Cuyo - Vivienda, agua, electricidad, gas y otros combustibles - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_04_var_ia": {
+      "nombre": "IPC Cuyo - Vivienda, agua, electricidad, gas y otros combustibles - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_05_indice": {
+      "nombre": "IPC Cuyo - Equipamiento y mantenimiento del hogar - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_div_05_var_m": {
+      "nombre": "IPC Cuyo - Equipamiento y mantenimiento del hogar - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_05_var_ia": {
+      "nombre": "IPC Cuyo - Equipamiento y mantenimiento del hogar - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_06_indice": {
+      "nombre": "IPC Cuyo - Salud - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_div_06_var_m": {
+      "nombre": "IPC Cuyo - Salud - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_06_var_ia": {
+      "nombre": "IPC Cuyo - Salud - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_07_indice": {
+      "nombre": "IPC Cuyo - Transporte - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_div_07_var_m": {
+      "nombre": "IPC Cuyo - Transporte - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_07_var_ia": {
+      "nombre": "IPC Cuyo - Transporte - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_08_indice": {
+      "nombre": "IPC Cuyo - Comunicación - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_div_08_var_m": {
+      "nombre": "IPC Cuyo - Comunicación - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_08_var_ia": {
+      "nombre": "IPC Cuyo - Comunicación - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_09_indice": {
+      "nombre": "IPC Cuyo - Recreación y cultura - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_div_09_var_m": {
+      "nombre": "IPC Cuyo - Recreación y cultura - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_09_var_ia": {
+      "nombre": "IPC Cuyo - Recreación y cultura - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_10_indice": {
+      "nombre": "IPC Cuyo - Educación - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_div_10_var_m": {
+      "nombre": "IPC Cuyo - Educación - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_10_var_ia": {
+      "nombre": "IPC Cuyo - Educación - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_11_indice": {
+      "nombre": "IPC Cuyo - Restaurantes y hoteles - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_div_11_var_m": {
+      "nombre": "IPC Cuyo - Restaurantes y hoteles - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_11_var_ia": {
+      "nombre": "IPC Cuyo - Restaurantes y hoteles - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_12_indice": {
+      "nombre": "IPC Cuyo - Bienes y servicios varios - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_div_12_var_m": {
+      "nombre": "IPC Cuyo - Bienes y servicios varios - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_div_12_var_ia": {
+      "nombre": "IPC Cuyo - Bienes y servicios varios - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_nucleo_indice": {
+      "nombre": "IPC Cuyo - Núcleo - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_nucleo_var_m": {
+      "nombre": "IPC Cuyo - Núcleo - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_nucleo_var_ia": {
+      "nombre": "IPC Cuyo - Núcleo - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_regulados_indice": {
+      "nombre": "IPC Cuyo - Regulados - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_regulados_var_m": {
+      "nombre": "IPC Cuyo - Regulados - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_regulados_var_ia": {
+      "nombre": "IPC Cuyo - Regulados - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_estacionales_indice": {
+      "nombre": "IPC Cuyo - Estacionales - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_estacionales_var_m": {
+      "nombre": "IPC Cuyo - Estacionales - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_estacionales_var_ia": {
+      "nombre": "IPC Cuyo - Estacionales - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_bienes_indice": {
+      "nombre": "IPC Cuyo - Bienes - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_bienes_var_m": {
+      "nombre": "IPC Cuyo - Bienes - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_bienes_var_ia": {
+      "nombre": "IPC Cuyo - Bienes - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_servicios_indice": {
+      "nombre": "IPC Cuyo - Servicios - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_servicios_var_m": {
+      "nombre": "IPC Cuyo - Servicios - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_servicios_var_ia": {
+      "nombre": "IPC Cuyo - Servicios - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_nivel_general_indice": {
+      "nombre": "IPC Patagonia - Nivel general - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_nivel_general_var_m": {
+      "nombre": "IPC Patagonia - Nivel general - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_nivel_general_var_ia": {
+      "nombre": "IPC Patagonia - Nivel general - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_01_indice": {
+      "nombre": "IPC Patagonia - Alimentos y bebidas no alcohólicas - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_div_01_var_m": {
+      "nombre": "IPC Patagonia - Alimentos y bebidas no alcohólicas - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_01_var_ia": {
+      "nombre": "IPC Patagonia - Alimentos y bebidas no alcohólicas - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_02_indice": {
+      "nombre": "IPC Patagonia - Bebidas alcohólicas y tabaco - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_div_02_var_m": {
+      "nombre": "IPC Patagonia - Bebidas alcohólicas y tabaco - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_02_var_ia": {
+      "nombre": "IPC Patagonia - Bebidas alcohólicas y tabaco - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_03_indice": {
+      "nombre": "IPC Patagonia - Prendas de vestir y calzado - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_div_03_var_m": {
+      "nombre": "IPC Patagonia - Prendas de vestir y calzado - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_03_var_ia": {
+      "nombre": "IPC Patagonia - Prendas de vestir y calzado - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_04_indice": {
+      "nombre": "IPC Patagonia - Vivienda, agua, electricidad, gas y otros combustibles - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_div_04_var_m": {
+      "nombre": "IPC Patagonia - Vivienda, agua, electricidad, gas y otros combustibles - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_04_var_ia": {
+      "nombre": "IPC Patagonia - Vivienda, agua, electricidad, gas y otros combustibles - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_05_indice": {
+      "nombre": "IPC Patagonia - Equipamiento y mantenimiento del hogar - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_div_05_var_m": {
+      "nombre": "IPC Patagonia - Equipamiento y mantenimiento del hogar - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_05_var_ia": {
+      "nombre": "IPC Patagonia - Equipamiento y mantenimiento del hogar - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_06_indice": {
+      "nombre": "IPC Patagonia - Salud - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_div_06_var_m": {
+      "nombre": "IPC Patagonia - Salud - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_06_var_ia": {
+      "nombre": "IPC Patagonia - Salud - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_07_indice": {
+      "nombre": "IPC Patagonia - Transporte - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_div_07_var_m": {
+      "nombre": "IPC Patagonia - Transporte - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_07_var_ia": {
+      "nombre": "IPC Patagonia - Transporte - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_08_indice": {
+      "nombre": "IPC Patagonia - Comunicación - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_div_08_var_m": {
+      "nombre": "IPC Patagonia - Comunicación - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_08_var_ia": {
+      "nombre": "IPC Patagonia - Comunicación - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_09_indice": {
+      "nombre": "IPC Patagonia - Recreación y cultura - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_div_09_var_m": {
+      "nombre": "IPC Patagonia - Recreación y cultura - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_09_var_ia": {
+      "nombre": "IPC Patagonia - Recreación y cultura - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_10_indice": {
+      "nombre": "IPC Patagonia - Educación - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_div_10_var_m": {
+      "nombre": "IPC Patagonia - Educación - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_10_var_ia": {
+      "nombre": "IPC Patagonia - Educación - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_11_indice": {
+      "nombre": "IPC Patagonia - Restaurantes y hoteles - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_div_11_var_m": {
+      "nombre": "IPC Patagonia - Restaurantes y hoteles - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_11_var_ia": {
+      "nombre": "IPC Patagonia - Restaurantes y hoteles - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_12_indice": {
+      "nombre": "IPC Patagonia - Bienes y servicios varios - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_div_12_var_m": {
+      "nombre": "IPC Patagonia - Bienes y servicios varios - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_div_12_var_ia": {
+      "nombre": "IPC Patagonia - Bienes y servicios varios - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_nucleo_indice": {
+      "nombre": "IPC Patagonia - Núcleo - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_nucleo_var_m": {
+      "nombre": "IPC Patagonia - Núcleo - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_nucleo_var_ia": {
+      "nombre": "IPC Patagonia - Núcleo - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_regulados_indice": {
+      "nombre": "IPC Patagonia - Regulados - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_regulados_var_m": {
+      "nombre": "IPC Patagonia - Regulados - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_regulados_var_ia": {
+      "nombre": "IPC Patagonia - Regulados - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_estacionales_indice": {
+      "nombre": "IPC Patagonia - Estacionales - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_estacionales_var_m": {
+      "nombre": "IPC Patagonia - Estacionales - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_estacionales_var_ia": {
+      "nombre": "IPC Patagonia - Estacionales - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_bienes_indice": {
+      "nombre": "IPC Patagonia - Bienes - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_bienes_var_m": {
+      "nombre": "IPC Patagonia - Bienes - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_bienes_var_ia": {
+      "nombre": "IPC Patagonia - Bienes - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_servicios_indice": {
+      "nombre": "IPC Patagonia - Servicios - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_servicios_var_m": {
+      "nombre": "IPC Patagonia - Servicios - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_servicios_var_ia": {
+      "nombre": "IPC Patagonia - Servicios - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-10-19T15:37:12Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 118,
+  "original_guardado": "data/raw/ipc/2026-10-19_1b174235.csv"
+}

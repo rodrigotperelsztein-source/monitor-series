@@ -1,0 +1,180 @@
+{
+  "id": "isac",
+  "nombre": "ISAC: actividad de la construcción e insumos",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_isac_2026.xls",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-3-42",
+  "frecuencia": "M",
+  "unidad": "Índice base 2004=100",
+  "sha256": "f3a23f28492b55662a46dea2aa4c35678994f2501189e67dc5ca90d5b831dacb",
+  "columnas": {
+    "original": {
+      "nombre": "ISAC, serie original",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "original_var_ia": {
+      "nombre": "ISAC, serie original, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "original_var_acum": {
+      "nombre": "ISAC, serie original, var. % acumulada en el año",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest": {
+      "nombre": "ISAC, serie desestacionalizada",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_var_m": {
+      "nombre": "ISAC, desestacionalizada, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "tendencia": {
+      "nombre": "ISAC, serie tendencia-ciclo",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "tendencia_var_m": {
+      "nombre": "ISAC, tendencia-ciclo, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "insumo_orig_articulos_sanitarios_de_ceramica": {
+      "nombre": "Artículos sanitarios de cerámica (insumo, serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_orig_asfalto": {
+      "nombre": "Asfalto (insumo, serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_orig_cales": {
+      "nombre": "Cales (insumo, serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_orig_cemento_portland": {
+      "nombre": "Cemento portland (insumo, serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_orig_hierro_redondo_y_aceros_para_la_construccion": {
+      "nombre": "Hierro redondo y aceros para la construcción (insumo, serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_orig_hormigon_elaborado": {
+      "nombre": "Hormigón elaborado (insumo, serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_orig_ladrillos_huecos": {
+      "nombre": "Ladrillos huecos (insumo, serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_orig_mosaicos_graniticos_y_calcareos": {
+      "nombre": "Mosaicos graníticos y calcáreos (insumo, serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_orig_pinturas_para_construccion": {
+      "nombre": "Pinturas para construcción (insumo, serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_orig_pisos_y_revestimientos_ceramicos": {
+      "nombre": "Pisos y revestimientos cerámicos (insumo, serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_orig_placas_de_yeso": {
+      "nombre": "Placas de yeso (insumo, serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_orig_yeso": {
+      "nombre": "Yeso (insumo, serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_orig_resto": {
+      "nombre": "Resto (insumo, serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_desest_articulos_sanitarios_de_ceramica": {
+      "nombre": "Artículos sanitarios de cerámica (insumo, serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_desest_asfalto": {
+      "nombre": "Asfalto (insumo, serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_desest_cales": {
+      "nombre": "Cales (insumo, serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_desest_cemento_portland": {
+      "nombre": "Cemento portland (insumo, serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_desest_hierro_redondo_y_aceros_para_la_construccion": {
+      "nombre": "Hierro redondo y aceros para la construcción (insumo, serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_desest_hormigon_elaborado": {
+      "nombre": "Hormigón elaborado (insumo, serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_desest_ladrillos_huecos": {
+      "nombre": "Ladrillos huecos (insumo, serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_desest_mosaicos_graniticos_y_calcareos": {
+      "nombre": "Mosaicos graníticos y calcáreos (insumo, serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_desest_pinturas_para_construccion": {
+      "nombre": "Pinturas para construcción (insumo, serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_desest_pisos_y_revestimientos_ceramicos": {
+      "nombre": "Pisos y revestimientos cerámicos (insumo, serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_desest_placas_de_yeso": {
+      "nombre": "Placas de yeso (insumo, serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_desest_yeso": {
+      "nombre": "Yeso (insumo, serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "insumo_desest_resto": {
+      "nombre": "Resto (insumo, serie desestacionalizada)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    }
+  },
+  "descargado": "2026-10-19T15:37:12Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 176,
+  "original_guardado": "data/raw/isac/2026-10-19_f3a23f28.xls"
+}

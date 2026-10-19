@@ -64,7 +64,9 @@ jobs:
             MODO=calendario
           fi
           echo "Modo: $MODO"
-          python -m pipeline.actualizar --modo "$MODO" $FORZAR
+          # La salida queda también en data/ultima_corrida.txt, para verla sin entrar a Actions.
+          python -m pipeline.actualizar --modo "$MODO" $FORZAR 2>&1 | tee data/ultima_corrida.txt
+          exit "${PIPESTATUS[0]}"
 
       - name: Guardar cambios en el repositorio
         if: always()

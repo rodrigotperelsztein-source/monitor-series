@@ -2,11 +2,26 @@ name: Actualizar series
 
 on:
   schedule:
-    # Todos los días a las 17:17 de Buenos Aires (20:17 UTC).
-    # INDEC publica a las 16:00, así que el dato del día ya está disponible.
-    - cron: "17 20 * * *"
+    # Días hábiles, ventana de publicación de INDEC (horas en UTC; Buenos Aires = UTC-3).
+    # INDEC publica a las 16:00 y a esa hora la página suele saturarse, sobre todo los días
+    # del IPC: el primer intento es a las 16:40 y se reintenta cada media hora hasta las 18:40.
+    # Estas corridas solo bajan las fuentes que el calendario prevé para ese día.
+    - cron: "40 19 * * 1-5"   # 16:40
+    - cron: "10 20 * * 1-5"   # 17:10
+    - cron: "40 20 * * 1-5"   # 17:40
+    - cron: "10 21 * * 1-5"   # 18:10
+    - cron: "40 21 * * 1-5"   # 18:40
+    # Control completo todas las noches a las 21:47: actualiza el calendario, revisa todas
+    # las fuentes (atrapa revisiones y publicaciones fuera de calendario) y termina en error
+    # si una publicación prevista para hoy no entró.
+    - cron: "47 0 * * *"
   workflow_dispatch:
     inputs:
+      modo:
+        description: "completo: calendario y todas las fuentes; calendario: solo lo que se publica hoy"
+        type: choice
+        options: [completo, calendario]
+        default: completo
       forzar:
         description: "Procesar aunque el archivo no haya cambiado"
         type: boolean
@@ -35,7 +50,21 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Bajar, validar y procesar
-        run: python -m pipeline.actualizar ${{ inputs.forzar && '--forzar' || '' }}
+        env:
+          EVENTO: ${{ github.event_name }}
+          HORARIO: ${{ github.event.schedule }}
+          MODO_MANUAL: ${{ inputs.modo }}
+          FORZAR: ${{ inputs.forzar && '--forzar' || '' }}
+        run: |
+          if [ "$EVENTO" = "workflow_dispatch" ]; then
+            MODO="$MODO_MANUAL"
+          elif [ "$HORARIO" = "47 0 * * *" ]; then
+            MODO=completo
+          else
+            MODO=calendario
+          fi
+          echo "Modo: $MODO"
+          python -m pipeline.actualizar --modo "$MODO" $FORZAR
 
       - name: Guardar cambios en el repositorio
         if: always()
@@ -46,6 +75,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Sin cambios para guardar."
           else
-            git commit -m "Datos actualizados $(date -u +%Y-%m-%d)"
+            git commit -m "Datos actualizados $(TZ=America/Argentina/Buenos_Aires date +%Y-%m-%d)"
+            git pull --rebase origin main
             git push
           fi

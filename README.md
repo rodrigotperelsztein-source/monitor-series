@@ -11,7 +11,8 @@ actualiza los datos y guarda la versión nueva.
 | `emae` | EMAE total: índice original, desestacionalizado y tendencia-ciclo (base 2004=100), con la variación interanual de la original y las mensuales de las otras dos | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48) | Mensual | 2004-01 |
 | `emae_letras` | EMAE por sector de actividad (letras A a O e impuestos netos de subsidios), serie original, base 2004=100 | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48) | Mensual | 2004-01 |
 
-El estado de cada serie (último período, fecha de descarga) está en [`data/catalogo.csv`](data/catalogo.csv).
+El estado de cada serie está en [`data/catalogo.csv`](data/catalogo.csv): último período, fecha de descarga,
+próxima publicación según el calendario de INDEC y si está **al día**, **se publica hoy** o **demorado**.
 
 ## Dónde están los datos
 
@@ -23,6 +24,7 @@ El estado de cada serie (último período, fecha de descarga) está en [`data/ca
 | `data/revisiones/<id>.csv` | Cada valor que el organismo corrigió hacia atrás: período, serie, valor anterior y nuevo. |
 | `data/raw/<id>/` | El archivo original tal como se bajó, una copia por cada versión con datos distintos. |
 | `data/todas/valores.csv` | Todas las series juntas en formato largo: `fecha`, `id_serie`, `valor`. |
+| `data/calendario/indec.csv` | Calendario de difusión de INDEC (fecha y título de cada publicación), leído del PDF semestral. |
 | `data/todas/series.csv` | Una fila por serie: `id_serie`, nombre, tipo (nivel o variación), unidad, frecuencia, fuente, primer y último período. |
 
 > Para abrir los CSV en un Excel configurado en español, usá *Datos > Desde texto/CSV* y elegí el punto
@@ -116,16 +118,31 @@ Para cada fuente, `python -m pipeline.actualizar`:
    los archivos de `data/todas/` con todas las series juntas.
    Si algo falla, **no toca nada de esa fuente** y la tarea termina en error.
 
+## Cuándo corre
+
+La programación sigue el calendario de difusión de INDEC, que publica a las 16:00:
+
+| Horario (Buenos Aires) | Qué hace |
+|---|---|
+| Días hábiles 16:40, 17:10, 17:40, 18:10 y 18:40 | **Modo calendario.** Si INDEC prevé publicar ese día alguna de las series, baja solo esas, hasta que entre el dato nuevo. Si no hay nada previsto, termina en segundos. El primer intento es 40 minutos después de las 16 porque a esa hora la página de INDEC suele saturarse; si falla la descarga, no cuenta como error y se reintenta en la siguiente. |
+| Todas las noches 21:47 | **Control completo.** Actualiza el calendario (semestre actual y siguiente, cuando INDEC lo publica), revisa todas las fuentes para atrapar revisiones o publicaciones fuera de calendario, y **termina en error** si una publicación prevista para el día no entró. |
+
+GitHub puede demorar las tareas programadas, a veces más de una hora, según su carga.
+
+Para que una fuente siga el calendario, su módulo define `CALENDARIO` con el comienzo del título con que
+figura en el PDF de INDEC (por ejemplo, `"Estimador mensual de actividad económica"`).
+
 ## Uso
 
 **Correrlo a mano en GitHub:** pestaña *Actions* > *Actualizar series* > *Run workflow*.
-La opción *forzar* procesa el archivo aunque no haya cambiado.
+Se puede elegir el modo (*completo* o *calendario*); la opción *forzar* procesa el archivo aunque no haya cambiado.
 
 **Correrlo en tu computadora:**
 
 ```bash
 pip install -r requirements.txt
-python -m pipeline.actualizar               # todas las fuentes
+python -m pipeline.actualizar               # control completo
+python -m pipeline.actualizar --modo calendario   # solo lo que INDEC publica hoy
 python -m pipeline.actualizar emae_letras   # una sola
 python -m pipeline.actualizar --forzar
 ```

@@ -17,6 +17,8 @@ EXTENSION = "xls"
 HOJA = "Tabla Letras"
 FRECUENCIA = "M"
 ORGANISMO = "INDEC"
+# Comienzo del título en el calendario de difusión de INDEC.
+CALENDARIO = "Estimador mensual de actividad económica"
 UNIDAD = "Índice base 2004=100"
 PRIMER_PERIODO = "2004-01-01"
 

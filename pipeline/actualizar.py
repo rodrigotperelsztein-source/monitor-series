@@ -2,25 +2,31 @@
 valida y guarda los resultados en data/.
 
 Uso (desde la raíz del repositorio):
-    python -m pipeline.actualizar              # todas las fuentes
-    python -m pipeline.actualizar emae_letras  # una sola
-    python -m pipeline.actualizar --forzar     # procesa aunque el archivo no haya cambiado
+    python -m pipeline.actualizar                    # control completo: calendario y todas las fuentes
+    python -m pipeline.actualizar --modo calendario  # solo las fuentes que INDEC publica hoy
+    python -m pipeline.actualizar emae_letras        # una sola fuente
+    python -m pipeline.actualizar --forzar           # procesa aunque el archivo no haya cambiado
 
-Sale con código 1 si alguna fuente falla la descarga, la lectura o la validación;
-en ese caso no se modifica nada de esa fuente.
+Modo completo: sale con código 1 si alguna fuente falla, o si una publicación prevista
+para hoy o ayer no entró. Modo calendario: los errores de descarga no cuentan como falla
+(a las 16 la página de INDEC suele saturarse; se reintenta en la próxima corrida).
+En ningún caso se modifica una fuente que falló.
 """
 
 import argparse
 import hashlib
 import json
+import os
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 import requests
 
+from pipeline import calendario
 from pipeline.fuentes import emae, emae_letras
 from pipeline.fuentes._indec import iguales
 
@@ -28,7 +34,12 @@ FUENTES = {f.ID: f for f in [emae, emae_letras]}
 
 RAIZ = Path(__file__).resolve().parent.parent
 DATA = RAIZ / "data"
+TZ = ZoneInfo("America/Argentina/Buenos_Aires")
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36"
+
+
+class DescargaError(RuntimeError):
+    pass
 
 
 def descargar(url: str, intentos: int = 3) -> bytes:
@@ -43,8 +54,9 @@ def descargar(url: str, intentos: int = 3) -> bytes:
         except Exception as e:  # noqa: BLE001
             ultimo = e
             print(f"  intento {i + 1} falló: {e}")
-            time.sleep(10 * (i + 1))
-    raise RuntimeError(f"No pude descargar {url}: {ultimo}")
+            if i < intentos - 1:
+                time.sleep(15 * (i + 1))
+    raise DescargaError(f"No pude descargar {url}: {ultimo}")
 
 
 def leer_json(p: Path) -> dict:
@@ -136,11 +148,42 @@ def procesar(fuente, forzar: bool, ahora: str) -> str:
     return f"actualizada: último período {ant} → {meta['ultimo_periodo']}; valores revisados: {revisados}"
 
 
-def catalogo() -> None:
-    filas = [leer_json(p) for p in sorted((DATA / "meta").glob("*.json"))]
+def fecha_cambio(fid: str) -> date | None:
+    """Día (hora de Buenos Aires) en que cambiaron los datos de la fuente por última vez."""
+    d = leer_json(DATA / "meta" / f"{fid}.json").get("descargado")
+    return datetime.fromisoformat(d.replace("Z", "+00:00")).astimezone(TZ).date() if d else None
+
+
+def estado(fuente, cal, hoy: date) -> dict:
+    """Estado de una fuente respecto del calendario de difusión."""
+    fechas = calendario.fechas(getattr(fuente, "CALENDARIO", ""), cal)
+    if not fechas:
+        return {"estado": "sin calendario", "ultima_publicacion_prevista": "", "proxima_publicacion": ""}
+    pasadas = [f for f in fechas if f <= hoy]
+    futuras = [f for f in fechas if f > hoy]
+    ultima = pasadas[-1] if pasadas else None
+    cambio = fecha_cambio(fuente.ID)
+    if ultima is None or (cambio and cambio >= ultima):
+        est = "al día"
+    elif ultima == hoy:
+        est = "se publica hoy"
+    else:
+        est = "demorado"
+    proxima = hoy if est == "se publica hoy" else (futuras[0] if futuras else None)
+    return {"estado": est,
+            "ultima_publicacion_prevista": ultima.isoformat() if ultima else "",
+            "proxima_publicacion": f"{proxima.isoformat()} {calendario.HORA}" if proxima else ""}
+
+
+def catalogo(cal, hoy: date) -> None:
+    filas = []
+    for fid, fuente in FUENTES.items():
+        meta = leer_json(DATA / "meta" / f"{fid}.json")
+        if meta:
+            filas.append({**meta, **estado(fuente, cal, hoy)})
     if filas:
-        cols = ["id", "nombre", "frecuencia", "unidad", "ultimo_periodo", "observaciones",
-                "descargado", "pagina", "url"]
+        cols = ["id", "nombre", "frecuencia", "unidad", "ultimo_periodo", "observaciones", "estado",
+                "ultima_publicacion_prevista", "proxima_publicacion", "descargado", "pagina", "url"]
         pd.DataFrame(filas).reindex(columns=cols).to_csv(DATA / "catalogo.csv", index=False)
 
 
@@ -189,21 +232,61 @@ def todas() -> None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("fuentes", nargs="*", help="ids a procesar (por defecto, todas)")
+    ap.add_argument("--modo", choices=["completo", "calendario"], default="completo")
     ap.add_argument("--forzar", action="store_true")
     args = ap.parse_args()
 
-    ahora = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    ids = args.fuentes or list(FUENTES)
+    # MONITOR_AHORA (ISO, UTC) fija el momento actual; sirve solo para pruebas.
+    momento = (datetime.fromisoformat(os.environ["MONITOR_AHORA"]).replace(tzinfo=timezone.utc)
+               if os.environ.get("MONITOR_AHORA") else datetime.now(timezone.utc))
+    ahora = momento.strftime("%Y-%m-%dT%H:%M:%SZ")
+    hoy = momento.astimezone(TZ).date()
     (DATA / "meta").mkdir(parents=True, exist_ok=True)
     fallas = 0
+
+    if args.modo == "completo":
+        print("[calendario INDEC]")
+        try:
+            print("  " + calendario.actualizar(descargar, hoy))
+        except Exception as e:  # noqa: BLE001
+            fallas += 1
+            print(f"  ERROR (se conserva el calendario anterior): {e}")
+    cal = calendario.cargar()
+
+    ids = args.fuentes or list(FUENTES)
+    if args.modo == "calendario":
+        ids = [fid for fid in ids
+               if hoy in calendario.fechas(getattr(FUENTES[fid], "CALENDARIO", ""), cal)
+               and (fecha_cambio(fid) or date.min) < hoy]
+        if not ids:
+            print(f"Hoy ({hoy:%d/%m/%Y}) no hay publicaciones pendientes de INDEC para estas series.")
+            return 0
+        print(f"Publicaciones previstas hoy y todavía no descargadas: {', '.join(ids)}")
+
     for fid in ids:
         print(f"[{fid}]")
         try:
             print("  " + procesar(FUENTES[fid], args.forzar, ahora))
+        except DescargaError as e:
+            print(f"  ERROR de descarga: {e}")
+            if args.modo == "completo":
+                fallas += 1
+            else:
+                print("  (se reintenta en la próxima corrida)")
         except Exception as e:  # noqa: BLE001
             fallas += 1
             print(f"  ERROR: {e}")
-    catalogo()
+
+    if args.modo == "completo":
+        # Aviso: una publicación prevista para hoy o ayer que no entró.
+        for fid, fuente in FUENTES.items():
+            previstas = calendario.fechas(getattr(fuente, "CALENDARIO", ""), cal)
+            recientes = [f for f in previstas if hoy - timedelta(days=1) <= f <= hoy]
+            if recientes and (fecha_cambio(fid) or date.min) < recientes[-1]:
+                fallas += 1
+                print(f"AVISO: INDEC tenía previsto publicar {fid} el {recientes[-1]:%d/%m} y el dato todavía no entró.")
+
+    catalogo(cal, hoy)
     todas()
     return 1 if fallas else 0
 

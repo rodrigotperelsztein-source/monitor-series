@@ -22,8 +22,7 @@ def celda(v, ancho=70) -> str:
     return s if len(s) <= ancho else s[: ancho - 1] + "…"
 
 
-def describir(url: str) -> str:
-    contenido = descargar(url)
+def describir(url: str, contenido: bytes) -> str:
     nombre = Path(urlparse(url).path).name
     lineas = [f"URL: {url}", f"Bytes: {len(contenido)}", ""]
     if contenido[:200].lstrip().lower().startswith((b"<!doctype html", b"<html")):
@@ -48,6 +47,12 @@ def describir(url: str) -> str:
                 lineas.append(f"=== Página {n}")
                 lineas.append(pagina.extract_text() or "(sin texto)")
         return "\n".join(lineas)
+    if not contenido.startswith((b"PK", b"\xd0\xcf")):
+        # Ni Excel (xlsx/zip ni xls/OLE): se muestra como texto (JSON, CSV de una API, etc.).
+        texto = contenido.decode("utf-8", "replace")
+        lineas.append("Texto:")
+        lineas += ["  " + f[:300] for f in texto.splitlines()[:40]]
+        return "\n".join(lineas)
     motor = "xlrd" if nombre.lower().endswith(".xls") else None
     hojas = pd.read_excel(io.BytesIO(contenido), sheet_name=None, header=None, engine=motor)
     for hoja, df in hojas.items():
@@ -69,11 +74,16 @@ def main() -> int:
     salida = RAIZ / "inspeccion"
     salida.mkdir(exist_ok=True)
     for url in sys.argv[1:]:
-        nombre = Path(urlparse(url).path).name or "archivo"
+        u = urlparse(url)
+        nombre = Path(u.path).name or "archivo"
+        if u.query:
+            import hashlib
+            nombre += "_" + hashlib.sha256(u.query.encode()).hexdigest()[:6]
         try:
             (salida / "archivos").mkdir(exist_ok=True)
-            (salida / "archivos" / nombre).write_bytes(descargar(url))
-            texto = describir(url)
+            contenido = descargar(url, minimo=1)
+            (salida / "archivos" / nombre).write_bytes(contenido)
+            texto = describir(url, contenido)
         except Exception as e:  # noqa: BLE001
             texto = f"URL: {url}\nERROR: {e}"
         (salida / f"{nombre}.txt").write_text(texto, encoding="utf-8")

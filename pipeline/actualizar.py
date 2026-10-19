@@ -44,7 +44,7 @@ class DescargaError(RuntimeError):
     pass
 
 
-def descargar(url: str, intentos: int = 3) -> bytes:
+def descargar(url: str, intentos: int = 3, minimo: int = 1000) -> bytes:
     ultimo = None
     for i in range(intentos):
         try:
@@ -52,7 +52,7 @@ def descargar(url: str, intentos: int = 3) -> bytes:
             if r.status_code == 404:
                 raise DescargaError(f"{url}: no existe (404)")
             r.raise_for_status()
-            if len(r.content) < 1000:
+            if len(r.content) < minimo:
                 raise ValueError(f"Respuesta demasiado chica ({len(r.content)} bytes)")
             return r.content
         except DescargaError:

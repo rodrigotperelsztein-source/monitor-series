@@ -23,9 +23,9 @@
 [cammesa_balance]
   sin cambios en el archivo
 [cammesa_diaria]
-  intento 1 falló: HTTPSConnectionPool(host='api.cammesa.com', port=443): Max retries exceeded with url: /demanda-svc/demanda/ObtieneDemandaYTemperaturaRegionByFecha?id_region=1002&fecha=2026-10-01 (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.cammesa.com', port=443) at 0x7fee0fb23d10>, 'Connection to api.cammesa.com timed out. (connect timeout=60)'))
-  intento 1 falló: HTTPSConnectionPool(host='api.cammesa.com', port=443): Max retries exceeded with url: /demanda-svc/demanda/ObtieneDemandaYTemperaturaRegionByFecha?id_region=1002&fecha=2026-09-22 (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.cammesa.com', port=443) at 0x7fee10710620>, 'Connection to api.cammesa.com timed out. (connect timeout=60)'))
-  actualizada: último período — → 2026-10-19; valores revisados: 0
+  archivo distinto pero mismos datos
+[cammesa_sectores]
+  actualizada: último período — → 2026-09; valores revisados: 0
 [emae_letras_desest]
   sin cambios en las series de base
 [ripte_real]
@@ -33,6 +33,6 @@
 [salarios_real]
   sin cambios en las series de base
 [sube_mensual]
-  recalculada: último período 2026-09 → 2026-09
+  sin cambios en las series de base
 [camiones_puertos_mensual]
-  recalculada: último período 2026-09 → 2026-09
+  sin cambios en las series de base

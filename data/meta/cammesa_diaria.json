@@ -5,7 +5,7 @@
   "pagina": "https://cammesaweb.cammesa.com/demanda-diaria/",
   "frecuencia": "D",
   "unidad": "GWh por día",
-  "sha256": "5a029f0a24c52c13ebf7c39e7e0d4db4ac7a6390ffd8fe439d0545c43919fca5",
+  "sha256": "3bdb1a19a88493214fb1c7a39dcaf6b564572601d57fb7479c1ead9e25064ec9",
   "columnas": {
     "energia": {
       "nombre": "Demanda de energía eléctrica del día (SADI)",

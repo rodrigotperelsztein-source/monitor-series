@@ -1,3 +1,5 @@
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Sparkline Group extension is not supported and will be removed
+  warn(msg)
 [calendario INDEC]
   2.º sem. 2026: 174 publicaciones; 1.º sem. 2027: todavía no publicado
 [emae]
@@ -23,9 +25,9 @@
 [cammesa_balance]
   sin cambios en el archivo
 [cammesa_diaria]
-  archivo distinto pero mismos datos
-[cammesa_sectores]
-  actualizada: último período — → 2026-09; valores revisados: 0
+  sin cambios en el archivo
+[cammesa_gu_actividad]
+  actualizada: último período — → 2026-10-14; valores revisados: 0
 [emae_letras_desest]
   sin cambios en las series de base
 [ripte_real]
@@ -36,3 +38,5 @@
   sin cambios en las series de base
 [camiones_puertos_mensual]
   sin cambios en las series de base
+[cammesa_gu_actividad_mensual]
+  recalculada: último período — → 2026-09

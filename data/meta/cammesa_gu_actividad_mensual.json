@@ -1,0 +1,306 @@
+{
+  "id": "cammesa_gu_actividad_mensual",
+  "nombre": "CAMMESA: demanda de grandes usuarios (GUMA) por actividad, por mes",
+  "url": "data/cammesa_gu_actividad.csv",
+  "pagina": "https://cammesaweb.cammesa.com/2026/10/16/covid-19-comportamiento-de-la-demanda-de-energia-electrica-en-el-mem/",
+  "frecuencia": "M",
+  "unidad": "MW (demanda media)",
+  "sha256": "4ed4105a55f18df77582e05231ada63a6a5d590974bbba842d3c3159566548d3",
+  "derivada_de": [
+    "cammesa_gu_actividad"
+  ],
+  "archivos_de_origen": [
+    "https://cammesaweb.cammesa.com/download/base-de-datos-2/?wpdmdl=39428"
+  ],
+  "columnas": {
+    "total": {
+      "nombre": "Demanda de GUMA, total (autogeneradores + GUMAs), media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "total_var_ia": {
+      "nombre": "Demanda de GUMA, total (autogeneradores + GUMAs), media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "total_todos": {
+      "nombre": "Demanda de GUMA, total (autogeneradores + GUMAs), media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "alim_com_serv": {
+      "nombre": "Demanda de GUMA, alimentación, comercios y servicios (total), media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "alim_com_serv_var_ia": {
+      "nombre": "Demanda de GUMA, alimentación, comercios y servicios (total), media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "alim_com_serv_todos": {
+      "nombre": "Demanda de GUMA, alimentación, comercios y servicios (total), media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "cargas_puertos": {
+      "nombre": "Demanda de GUMA, cargas y puertos, media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "cargas_puertos_var_ia": {
+      "nombre": "Demanda de GUMA, cargas y puertos, media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cargas_puertos_todos": {
+      "nombre": "Demanda de GUMA, cargas y puertos, media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "comercio_servicios": {
+      "nombre": "Demanda de GUMA, comercio y servicios, media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "comercio_servicios_var_ia": {
+      "nombre": "Demanda de GUMA, comercio y servicios, media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "comercio_servicios_todos": {
+      "nombre": "Demanda de GUMA, comercio y servicios, media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_alimentacion": {
+      "nombre": "Demanda de GUMA, industria de la alimentación, media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_alimentacion_var_ia": {
+      "nombre": "Demanda de GUMA, industria de la alimentación, media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ind_alimentacion_todos": {
+      "nombre": "Demanda de GUMA, industria de la alimentación, media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "servicios_publicos_transporte": {
+      "nombre": "Demanda de GUMA, servicios públicos y transporte, media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "servicios_publicos_transporte_var_ia": {
+      "nombre": "Demanda de GUMA, servicios públicos y transporte, media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "servicios_publicos_transporte_todos": {
+      "nombre": "Demanda de GUMA, servicios públicos y transporte, media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "industrias": {
+      "nombre": "Demanda de GUMA, industrias (total), media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "industrias_var_ia": {
+      "nombre": "Demanda de GUMA, industrias (total), media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "industrias_todos": {
+      "nombre": "Demanda de GUMA, industrias (total), media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_automotriz": {
+      "nombre": "Demanda de GUMA, industria automotriz, media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_automotriz_var_ia": {
+      "nombre": "Demanda de GUMA, industria automotriz, media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ind_automotriz_todos": {
+      "nombre": "Demanda de GUMA, industria automotriz, media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_derivados_petroleo": {
+      "nombre": "Demanda de GUMA, industria de derivados de petróleo, media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_derivados_petroleo_var_ia": {
+      "nombre": "Demanda de GUMA, industria de derivados de petróleo, media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ind_derivados_petroleo_todos": {
+      "nombre": "Demanda de GUMA, industria de derivados de petróleo, media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_construccion": {
+      "nombre": "Demanda de GUMA, industria de la construcción, media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_construccion_var_ia": {
+      "nombre": "Demanda de GUMA, industria de la construcción, media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ind_construccion_todos": {
+      "nombre": "Demanda de GUMA, industria de la construcción, media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_madera_papel": {
+      "nombre": "Demanda de GUMA, industria de la madera y el papel, media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_madera_papel_var_ia": {
+      "nombre": "Demanda de GUMA, industria de la madera y el papel, media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ind_madera_papel_todos": {
+      "nombre": "Demanda de GUMA, industria de la madera y el papel, media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_metalicos": {
+      "nombre": "Demanda de GUMA, productos metálicos no automotores, media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_metalicos_var_ia": {
+      "nombre": "Demanda de GUMA, productos metálicos no automotores, media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ind_metalicos_todos": {
+      "nombre": "Demanda de GUMA, productos metálicos no automotores, media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_textil": {
+      "nombre": "Demanda de GUMA, industria textil, media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_textil_var_ia": {
+      "nombre": "Demanda de GUMA, industria textil, media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ind_textil_todos": {
+      "nombre": "Demanda de GUMA, industria textil, media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_quimicas": {
+      "nombre": "Demanda de GUMA, químicas, caucho, plástico y minerales no metálicos, media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "ind_quimicas_var_ia": {
+      "nombre": "Demanda de GUMA, químicas, caucho, plástico y minerales no metálicos, media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ind_quimicas_todos": {
+      "nombre": "Demanda de GUMA, químicas, caucho, plástico y minerales no metálicos, media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "gran_siderurgia": {
+      "nombre": "Demanda de GUMA, gran siderurgia, media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "gran_siderurgia_var_ia": {
+      "nombre": "Demanda de GUMA, gran siderurgia, media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gran_siderurgia_todos": {
+      "nombre": "Demanda de GUMA, gran siderurgia, media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "petroleo_minerales": {
+      "nombre": "Demanda de GUMA, petróleo y minerales (total), media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "petroleo_minerales_var_ia": {
+      "nombre": "Demanda de GUMA, petróleo y minerales (total), media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "petroleo_minerales_todos": {
+      "nombre": "Demanda de GUMA, petróleo y minerales (total), media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "extraccion_minerales": {
+      "nombre": "Demanda de GUMA, extracción de minerales, media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "extraccion_minerales_var_ia": {
+      "nombre": "Demanda de GUMA, extracción de minerales, media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "extraccion_minerales_todos": {
+      "nombre": "Demanda de GUMA, extracción de minerales, media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "extraccion_petroleo": {
+      "nombre": "Demanda de GUMA, extracción de petróleo, media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "extraccion_petroleo_var_ia": {
+      "nombre": "Demanda de GUMA, extracción de petróleo, media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "extraccion_petroleo_todos": {
+      "nombre": "Demanda de GUMA, extracción de petróleo, media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "aluar": {
+      "nombre": "Demanda de GUMA, Aluar, media de días hábiles",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    },
+    "aluar_var_ia": {
+      "nombre": "Demanda de GUMA, Aluar, media de días hábiles, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "aluar_todos": {
+      "nombre": "Demanda de GUMA, Aluar, media de todos los días",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media)"
+    }
+  },
+  "descargado": "2026-10-20T19:43:33Z",
+  "calculado": "2026-10-20T19:43:33Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 57
+}

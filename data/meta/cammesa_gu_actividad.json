@@ -1,0 +1,115 @@
+{
+  "id": "cammesa_gu_actividad",
+  "nombre": "CAMMESA: demanda diaria de grandes usuarios (GUMA) por actividad",
+  "url": "https://cammesaweb.cammesa.com/download/base-de-datos-2/?wpdmdl=39428",
+  "pagina": "https://cammesaweb.cammesa.com/2026/10/16/covid-19-comportamiento-de-la-demanda-de-energia-electrica-en-el-mem/",
+  "frecuencia": "D",
+  "unidad": "MW (demanda media del día)",
+  "sha256": "7dbcbe2482e36db6d0e7541599a194ff6ca2875bb3a1f53d3c7d66784767eb27",
+  "columnas": {
+    "total": {
+      "nombre": "Demanda de grandes usuarios (GUMA), total (autogeneradores + GUMAs)",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "alim_com_serv": {
+      "nombre": "Demanda de grandes usuarios (GUMA), alimentación, comercios y servicios (total)",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "cargas_puertos": {
+      "nombre": "Demanda de grandes usuarios (GUMA), cargas y puertos",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "comercio_servicios": {
+      "nombre": "Demanda de grandes usuarios (GUMA), comercio y servicios",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "ind_alimentacion": {
+      "nombre": "Demanda de grandes usuarios (GUMA), industria de la alimentación",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "servicios_publicos_transporte": {
+      "nombre": "Demanda de grandes usuarios (GUMA), servicios públicos y transporte",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "industrias": {
+      "nombre": "Demanda de grandes usuarios (GUMA), industrias (total)",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "ind_automotriz": {
+      "nombre": "Demanda de grandes usuarios (GUMA), industria automotriz",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "ind_derivados_petroleo": {
+      "nombre": "Demanda de grandes usuarios (GUMA), industria de derivados de petróleo",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "ind_construccion": {
+      "nombre": "Demanda de grandes usuarios (GUMA), industria de la construcción",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "ind_madera_papel": {
+      "nombre": "Demanda de grandes usuarios (GUMA), industria de la madera y el papel",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "ind_metalicos": {
+      "nombre": "Demanda de grandes usuarios (GUMA), productos metálicos no automotores",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "ind_textil": {
+      "nombre": "Demanda de grandes usuarios (GUMA), industria textil",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "ind_quimicas": {
+      "nombre": "Demanda de grandes usuarios (GUMA), químicas, caucho, plástico y minerales no metálicos",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "gran_siderurgia": {
+      "nombre": "Demanda de grandes usuarios (GUMA), gran siderurgia",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "petroleo_minerales": {
+      "nombre": "Demanda de grandes usuarios (GUMA), petróleo y minerales (total)",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "extraccion_minerales": {
+      "nombre": "Demanda de grandes usuarios (GUMA), extracción de minerales",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "extraccion_petroleo": {
+      "nombre": "Demanda de grandes usuarios (GUMA), extracción de petróleo",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "aluar": {
+      "nombre": "Demanda de grandes usuarios (GUMA), Aluar",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "dia_habil": {
+      "nombre": "Día hábil según CAMMESA (1 = hábil, 0 = no hábil)",
+      "tipo": "nivel",
+      "unidad": "indicador"
+    }
+  },
+  "descargado": "2026-10-20T19:43:33Z",
+  "ultimo_periodo": "2026-10-14",
+  "observaciones": 1748,
+  "original_guardado": null
+}

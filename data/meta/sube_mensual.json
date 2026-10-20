@@ -5,12 +5,12 @@
   "pagina": "https://datos.transporte.gob.ar/dataset/sube-cantidad-de-transacciones-usos-por-fecha",
   "frecuencia": "M",
   "unidad": "Transacciones por mes",
-  "sha256": "645631414938afd07834e2147ac116077276f2d994538e77afb1974a2f278470",
+  "sha256": "11f7dff42963c72ddcdfbdd810e97b5127e8ea6073d4dc55de4db47a429d8e64",
   "derivada_de": [
     "sube"
   ],
   "archivos_de_origen": [
-    "https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2020.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2021.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2022.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2023.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2024.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2025.csv https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2026.csv"
+    "https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2026.csv"
   ],
   "columnas": {
     "total": {
@@ -134,8 +134,8 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-10-19T20:30:21Z",
-  "calculado": "2026-10-19T20:30:21Z",
+  "descargado": "2026-10-20T18:08:31Z",
+  "calculado": "2026-10-20T18:29:25Z",
   "ultimo_periodo": "2026-09",
   "observaciones": 81
 }

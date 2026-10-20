@@ -1,0 +1,40 @@
+{
+  "id": "cammesa_diaria",
+  "nombre": "CAMMESA: demanda eléctrica diaria del sistema",
+  "url": "https://api.cammesa.com/demanda-svc/demanda/ObtieneDemandaYTemperaturaRegionByFecha?id_region=1002&fecha=AAAA-MM-DD",
+  "pagina": "https://cammesaweb.cammesa.com/demanda-diaria/",
+  "frecuencia": "D",
+  "unidad": "GWh por día",
+  "sha256": "5a029f0a24c52c13ebf7c39e7e0d4db4ac7a6390ffd8fe439d0545c43919fca5",
+  "columnas": {
+    "energia": {
+      "nombre": "Demanda de energía eléctrica del día (SADI)",
+      "tipo": "nivel",
+      "unidad": "GWh por día"
+    },
+    "potencia_maxima": {
+      "nombre": "Potencia máxima demandada en el día (SADI)",
+      "tipo": "nivel",
+      "unidad": "MW"
+    },
+    "potencia_minima": {
+      "nombre": "Potencia mínima demandada en el día (SADI)",
+      "tipo": "nivel",
+      "unidad": "MW"
+    },
+    "temperatura_media": {
+      "nombre": "Temperatura media del día informada por CAMMESA",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "mediciones": {
+      "nombre": "Mediciones de 5 minutos en el día (288 = completo)",
+      "tipo": "nivel",
+      "unidad": "cantidad"
+    }
+  },
+  "descargado": "2026-10-20T18:29:25Z",
+  "ultimo_periodo": "2026-10-19",
+  "observaciones": 233,
+  "original_guardado": null
+}

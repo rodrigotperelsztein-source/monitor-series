@@ -27,10 +27,10 @@ import pandas as pd
 import requests
 
 from pipeline import calendario
-from pipeline.fuentes import emae, emae_letras, emae_letras_desest, ipc, ipi, isac, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, supermercados, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria
+from pipeline.fuentes import emae, emae_letras, emae_letras_desest, ipc, ipi, isac, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, supermercados, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_sectores
 from pipeline.fuentes._indec import iguales
 
-FUENTES = {f.ID: f for f in [emae, emae_letras, emae_letras_desest, ipc, ipi, isac, supermercados, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria]}
+FUENTES = {f.ID: f for f in [emae, emae_letras, emae_letras_desest, ipc, ipi, isac, supermercados, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_sectores]}
 # Series calculadas a partir de otra (DERIVADA_DE): no se bajan, se recalculan cuando cambia su base.
 DERIVADAS = {fid: f for fid, f in FUENTES.items() if hasattr(f, "DERIVADA_DE")}
 

@@ -1,0 +1,90 @@
+{
+  "id": "cammesa_balance",
+  "nombre": "CAMMESA: balance mensual de energía (demanda y generación)",
+  "url": "https://microfe.cammesa.com/static-content/CammesaWeb/download-manager-files/Sintesis%20Mensual/Estadisticas/Balance%20Mensual.xlsx",
+  "pagina": "https://cammesaweb.cammesa.com/informe-sintesis-mensual/",
+  "frecuencia": "M",
+  "unidad": "GWh",
+  "sha256": "3c082cf26d36765371db2cef1031a7f1abfa28ea8cdae98d4fc24e40b4a7c974",
+  "columnas": {
+    "demanda_mercado": {
+      "nombre": "Demanda de energía eléctrica: distribuidoras + grandes usuarios",
+      "tipo": "nivel",
+      "unidad": "GWh"
+    },
+    "demanda_mercado_var_ia": {
+      "nombre": "Demanda de energía eléctrica, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "demanda_distribuidores": {
+      "nombre": "Demanda de distribuidoras",
+      "tipo": "nivel",
+      "unidad": "GWh"
+    },
+    "demanda_grandes_usuarios": {
+      "nombre": "Demanda de grandes usuarios",
+      "tipo": "nivel",
+      "unidad": "GWh"
+    },
+    "demanda_exportacion": {
+      "nombre": "Exportación",
+      "tipo": "nivel",
+      "unidad": "GWh"
+    },
+    "demanda_bombeo": {
+      "nombre": "Bombeo",
+      "tipo": "nivel",
+      "unidad": "GWh"
+    },
+    "demanda_consumos_internos": {
+      "nombre": "Consumos internos",
+      "tipo": "nivel",
+      "unidad": "GWh"
+    },
+    "demanda_perdidas": {
+      "nombre": "Pérdidas",
+      "tipo": "nivel",
+      "unidad": "GWh"
+    },
+    "demanda_total": {
+      "nombre": "Demanda total (incluye exportación, bombeo y pérdidas)",
+      "tipo": "nivel",
+      "unidad": "GWh"
+    },
+    "generacion_termica": {
+      "nombre": "Generación térmica",
+      "tipo": "nivel",
+      "unidad": "GWh"
+    },
+    "generacion_nuclear": {
+      "nombre": "Generación nuclear",
+      "tipo": "nivel",
+      "unidad": "GWh"
+    },
+    "generacion_renovable": {
+      "nombre": "Generación renovable (Ley 27.191)",
+      "tipo": "nivel",
+      "unidad": "GWh"
+    },
+    "generacion_hidraulica": {
+      "nombre": "Generación hidráulica",
+      "tipo": "nivel",
+      "unidad": "GWh"
+    },
+    "importacion": {
+      "nombre": "Importación",
+      "tipo": "nivel",
+      "unidad": "GWh"
+    },
+    "generacion_total": {
+      "nombre": "Oferta total (generación + importación)",
+      "tipo": "nivel",
+      "unidad": "GWh"
+    }
+  },
+  "descargado": "2026-10-20T18:08:31Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 45,
+  "original_guardado": "data/raw/cammesa_balance/2026-10-20_3c082cf2.xlsx"
+}

@@ -5,7 +5,7 @@
   "pagina": "https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/logistica/_archivos/000023_Posici%C3%B3n%20de%20Camiones%20y%20Vagones/000020_Entrada%20diaria%20de%20camiones%20y%20vagones%20a%20puertos,%20f%C3%A1bricas%20y%20molinos%20(por%20zona%20portuaria%20y%20por%20producto).php",
   "frecuencia": "D",
   "unidad": "Camiones por día",
-  "sha256": "3eb55645f181fab67902de9c195451654c263d35075a39b6363d325cb6670855",
+  "sha256": "8484e65929595c31a5c3d9a53968adbc47adea7b322c4ea509f835742fb22f22",
   "columnas": {
     "total": {
       "nombre": "Camiones descargados por día, total",
@@ -70,8 +70,8 @@
   },
   "dias_sin_dato_en_lo_bajado": [],
   "totales_corregidos_en_lo_bajado": [],
-  "descargado": "2026-10-19T21:01:37Z",
-  "ultimo_periodo": "2026-10-19",
-  "observaciones": 1023,
+  "descargado": "2026-10-20T18:08:31Z",
+  "ultimo_periodo": "2026-10-20",
+  "observaciones": 1024,
   "original_guardado": null
 }

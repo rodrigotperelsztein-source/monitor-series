@@ -1,0 +1,40 @@
+{
+  "id": "cammesa_diaria",
+  "nombre": "CAMMESA: demanda eléctrica diaria del MEM",
+  "url": "https://cammesaweb.cammesa.com/download/base-de-datos-2/?wpdmdl=39428",
+  "pagina": "https://cammesaweb.cammesa.com/2026/10/16/covid-19-comportamiento-de-la-demanda-de-energia-electrica-en-el-mem/",
+  "frecuencia": "D",
+  "unidad": "MW (demanda media del día)",
+  "sha256": "7dbcbe2482e36db6d0e7541599a194ff6ca2875bb3a1f53d3c7d66784767eb27",
+  "columnas": {
+    "total": {
+      "nombre": "Demanda eléctrica total del MEM",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "grandes_usuarios": {
+      "nombre": "Demanda de grandes usuarios (autogeneradores + GUMAs)",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "distribuidoras": {
+      "nombre": "Demanda de distribuidoras",
+      "tipo": "nivel",
+      "unidad": "MW (demanda media del día)"
+    },
+    "temperatura_gba": {
+      "nombre": "Temperatura media del día en GBA",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "dia_habil": {
+      "nombre": "Día hábil según CAMMESA (1 = hábil, 0 = no hábil)",
+      "tipo": "nivel",
+      "unidad": "indicador"
+    }
+  },
+  "descargado": "2026-10-20T19:45:47Z",
+  "ultimo_periodo": "2026-10-14",
+  "observaciones": 1748,
+  "original_guardado": null
+}

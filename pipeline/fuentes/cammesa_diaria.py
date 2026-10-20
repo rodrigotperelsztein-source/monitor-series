@@ -54,24 +54,31 @@ def _dia(descargar, d: date) -> list[dict]:
     return [x for x in datos if str(x.get("fecha", "")).startswith(d.isoformat())]
 
 
+def _varios(descargar, dias: list[date]) -> dict[str, list]:
+    """Baja varios días en paralelo (la API responde lento de a uno)."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        return dict(zip((d.isoformat() for d in dias), ex.map(lambda d: _dia(descargar, d), dias)))
+
+
 def bajar(descargar, hoy: date) -> tuple[str, bytes]:
     ayer = hoy - timedelta(days=1)
     dias = {}
     if HISTORIA.exists():
         ultimo = pd.read_csv(HISTORIA, parse_dates=["fecha"])["fecha"].max().date()
-        d = min(ultimo, ayer) - timedelta(days=DIAS_REPASO - 1)
-        while d <= ayer:
-            dias[d.isoformat()] = _dia(descargar, d)
-            d += timedelta(days=1)
+        desde = min(ultimo, ayer) - timedelta(days=DIAS_REPASO - 1)
+        dias = _varios(descargar, [desde + timedelta(days=i) for i in range((ayer - desde).days + 1)])
     else:
-        # Hacia atrás desde ayer hasta el primer día sin datos.
-        d, vacios = ayer, 0
-        while (ayer - d).days < MAX_HISTORIA and vacios < 3:
-            puntos = _dia(descargar, d)
-            vacios = 0 if puntos else vacios + 1
-            if puntos:
-                dias[d.isoformat()] = puntos
-            d -= timedelta(days=1)
+        # Hacia atrás desde ayer, de a bloques de 16 días, hasta un bloque sin datos.
+        fin = ayer
+        while (ayer - fin).days < MAX_HISTORIA:
+            bloque = _varios(descargar, [fin - timedelta(days=i) for i in range(16)])
+            dias.update(bloque)
+            if not any(bloque.values()):
+                break
+            fin -= timedelta(days=16)
+    dias = {k: v for k, v in dias.items() if v}
     return URL, json.dumps(dias, sort_keys=True).encode()
 
 

@@ -1,126 +1,92 @@
-"""CAMMESA: demanda eléctrica diaria del sistema (SADI), desde los datos cada 5 minutos.
+"""CAMMESA: demanda eléctrica diaria del MEM: total, grandes usuarios y distribuidoras.
 
-Fuente: API pública de CAMMESA (api.cammesa.com, servicio demanda-svc), región 1002 = total
-del sistema. Trae la demanda en MW cada 5 minutos y la temperatura cada 15.
+Fuente: CAMMESA, "Comportamiento de la demanda de energía eléctrica en el MEM" (informe semanal),
+"Base de datos información por región" -> "Base de datos GU Semanal.xlsx", hoja "Base diaria".
+Demanda media del día en MW, desde enero de 2022, y la temperatura media de GBA.
 
-La API guarda solo los últimos meses (hoy, desde marzo de 2026 aproximadamente), así que la serie
-empieza ahí y se va acumulando en data/cammesa_diaria.csv. Cada noche se bajan los últimos días
-(CAMMESA a veces completa o corrige datos del día anterior); el día en curso no se incluye.
+  - total: demanda total del MEM;
+  - grandes_usuarios: autogeneradores + GUMAs (el detalle por actividad está en cammesa_gu_actividad);
+  - distribuidoras: resto de la demanda (distribuidoras);
+  - temperatura_gba: temperatura media del día en GBA, °C;
+  - dia_habil: 1 si CAMMESA lo cuenta como hábil.
 
-Por día:
-  - energia: energía demandada en GWh (promedio de la potencia × 24 h);
-  - potencia_maxima / potencia_minima: en MW;
-  - temperatura_media: °C (la que informa CAMMESA junto con la demanda);
-  - mediciones: cuántas mediciones de 5 minutos hubo (288 en un día completo).
+Para pasar a energía: GWh del día = MW medios × 24 / 1000. Datos provisorios; se publican una vez
+por semana y cada vez se reemplaza toda la serie.
 """
 
-import json
-from datetime import date, timedelta
-from pathlib import Path
+import io
+import zipfile
 
 import pandas as pd
 
 from pipeline.fuentes._indec import Columna
+from pipeline.fuentes.cammesa_gu_actividad import PAGINA, URL, _norm
 
 ID = "cammesa_diaria"
-NOMBRE = "CAMMESA: demanda eléctrica diaria del sistema"
-API = "https://api.cammesa.com/demanda-svc/demanda/ObtieneDemandaYTemperaturaRegionByFecha?id_region=1002&fecha={}"
-URL = API.format("AAAA-MM-DD")
-PAGINA = "https://cammesaweb.cammesa.com/demanda-diaria/"
-EXTENSION = "json"
+NOMBRE = "CAMMESA: demanda eléctrica diaria del MEM"
+EXTENSION = "zip"
 FRECUENCIA = "D"
 ORGANISMO = "CAMMESA"
-UNIDAD = "GWh por día"
-PRIMER_PERIODO = None  # el primer día que tenga la API
+UNIDAD = "MW (demanda media del día)"
+PRIMER_PERIODO = "2022-01-01"
 CALENDARIO = ""
 GUARDAR_ORIGINAL = False
 REGISTRAR_REVISIONES = False
-DIAS_REPASO = 7          # días recientes que se vuelven a bajar cada noche
-MAX_HISTORIA = 400       # la primera vez, hasta cuántos días atrás se busca
+HOJA = "Base diaria"
 
-HISTORIA = Path(__file__).resolve().parents[2] / "data" / f"{ID}.csv"
-
-COLUMNAS = {
-    "energia": Columna("", "Demanda de energía eléctrica del día (SADI)"),
-    "potencia_maxima": Columna("", "Potencia máxima demandada en el día (SADI)", unidad="MW"),
-    "potencia_minima": Columna("", "Potencia mínima demandada en el día (SADI)", unidad="MW"),
-    "temperatura_media": Columna("", "Temperatura media del día informada por CAMMESA", unidad="°C"),
-    "mediciones": Columna("", "Mediciones de 5 minutos en el día (288 = completo)", unidad="cantidad"),
+SERIES = {  # id: (encabezado, nombre)
+    "total": ("DEM TOTAL", "Demanda eléctrica total del MEM"),
+    "grandes_usuarios": ("AUTO +GUMAS", "Demanda de grandes usuarios (autogeneradores + GUMAs)"),
+    "distribuidoras": ("DEMANDA RESTO DISTCO", "Demanda de distribuidoras"),
+    "temperatura_gba": ("TEMPERATURA MEDIA GBA °C", "Temperatura media del día en GBA"),
 }
-
-
-def _dia(descargar, d: date) -> list[dict]:
-    datos = json.loads(descargar(API.format(d.isoformat()), minimo=2))
-    return [x for x in datos if str(x.get("fecha", "")).startswith(d.isoformat())]
-
-
-def _varios(descargar, dias: list[date]) -> dict[str, list]:
-    """Baja varios días en paralelo (la API responde lento de a uno)."""
-    from concurrent.futures import ThreadPoolExecutor
-
-    with ThreadPoolExecutor(max_workers=8) as ex:
-        return dict(zip((d.isoformat() for d in dias), ex.map(lambda d: _dia(descargar, d), dias)))
-
-
-def bajar(descargar, hoy: date) -> tuple[str, bytes]:
-    ayer = hoy - timedelta(days=1)
-    dias = {}
-    if HISTORIA.exists():
-        ultimo = pd.read_csv(HISTORIA, parse_dates=["fecha"])["fecha"].max().date()
-        desde = min(ultimo, ayer) - timedelta(days=DIAS_REPASO - 1)
-        dias = _varios(descargar, [desde + timedelta(days=i) for i in range((ayer - desde).days + 1)])
-    else:
-        # Hacia atrás desde ayer, de a bloques de 16 días, hasta un bloque sin datos.
-        fin = ayer
-        while (ayer - fin).days < MAX_HISTORIA:
-            bloque = _varios(descargar, [fin - timedelta(days=i) for i in range(16)])
-            dias.update(bloque)
-            if not any(bloque.values()):
-                break
-            fin -= timedelta(days=16)
-    dias = {k: v for k, v in dias.items() if v}
-    return URL, json.dumps(dias, sort_keys=True).encode()
+COLUMNAS = {cid: Columna("", n, unidad="°C" if cid == "temperatura_gba" else None)
+            for cid, (_, n) in SERIES.items()}
+COLUMNAS["dia_habil"] = Columna("", "Día hábil según CAMMESA (1 = hábil, 0 = no hábil)", unidad="indicador")
 
 
 def leer(contenido: bytes, columnas=COLUMNAS) -> pd.DataFrame:
-    dias = json.loads(contenido)
-    filas = []
-    for dia, puntos in sorted(dias.items()):
-        if not puntos:
-            continue
-        p = pd.DataFrame(puntos)
-        dem = pd.to_numeric(p["dem"], errors="coerce").dropna()
-        temp = pd.to_numeric(p["temp"], errors="coerce").dropna() if "temp" in p else pd.Series(dtype=float)
-        filas.append({
-            "fecha": pd.Timestamp(dia),
-            "energia": dem.mean() * 24 / 1000,
-            "potencia_maxima": dem.max(),
-            "potencia_minima": dem.min(),
-            "temperatura_media": temp.mean() if len(temp) else None,
-            "mediciones": len(dem),
-        })
-    if not filas:
-        raise ValueError("La API no devolvió datos.")
-    return pd.DataFrame(filas)[["fecha", *columnas]]
-
-
-def combinar(nuevo: pd.DataFrame, anterior: pd.DataFrame | None) -> pd.DataFrame:
-    if anterior is not None:
-        viejo = anterior[~anterior["fecha"].isin(nuevo["fecha"])]
-        nuevo = pd.concat([viejo, nuevo])
-    return nuevo.sort_values("fecha").reset_index(drop=True)
+    with zipfile.ZipFile(io.BytesIO(contenido)) as z:
+        nombre = next((n for n in z.namelist() if n.lower().endswith(".xlsx")), None)
+        if not nombre:
+            raise ValueError("El zip no trae un Excel.")
+        hoja = pd.read_excel(io.BytesIO(z.read(nombre)), sheet_name=HOJA, header=None)
+    # Encabezados de la tabla diaria: la fila con "TIPO DIA" (los rótulos de valores están en la fila 2).
+    cab = [i for i in range(len(hoja)) if any(_norm(v) == "TIPO DIA" for v in hoja.iloc[i])]
+    if not cab:
+        raise ValueError(f"No encontré la tabla diaria en la hoja {HOJA}.")
+    rotulos = [_norm(v) for v in hoja.iloc[2]]
+    datos = hoja.iloc[cab[0] + 1:]
+    fecha = pd.to_datetime(datos[0], errors="coerce")
+    ok = fecha.notna()
+    out = pd.DataFrame({"fecha": fecha[ok].dt.normalize().values})
+    for cid, (rotulo, _) in SERIES.items():
+        cols = [j for j, e in enumerate(rotulos) if e == _norm(rotulo)]
+        if not cols:
+            raise ValueError(f"No encontré la columna '{rotulo}'.")
+        out[cid] = pd.to_numeric(datos.loc[ok, cols[0]], errors="coerce").values
+    j_tipo = next(j for j, v in enumerate(hoja.iloc[cab[0]]) if _norm(v).startswith("HABIL"))
+    tipo = datos.loc[ok, j_tipo].map(_norm)
+    if not set(tipo) <= {"HABIL", "NO HABIL"}:
+        raise ValueError(f"Valores inesperados en Hábil/No Hábil: {set(tipo)}")
+    out["dia_habil"] = (tipo == "HABIL").astype(int).values
+    return out.sort_values("fecha").reset_index(drop=True)[["fecha", *columnas]]
 
 
 def validar(nuevo: pd.DataFrame, anterior: pd.DataFrame | None, columnas=COLUMNAS) -> list[str]:
     errores = []
-    faltan = sorted(set(pd.date_range(nuevo["fecha"].min(), nuevo["fecha"].max())) - set(nuevo["fecha"]))
-    if faltan:
-        print(f"  aviso: faltan {len(faltan)} días: {[f'{x:%Y-%m-%d}' for x in faltan[:10]]}")
-    if not nuevo["energia"].between(150, 900).all():
-        errores.append("Energía diaria fuera de rango (150 a 900 GWh): ¿cambió la unidad?")
-    incompletos = nuevo[nuevo["mediciones"] < 250]
-    if len(incompletos):
-        print(f"  aviso: días con menos de 250 mediciones: {[f'{x:%Y-%m-%d}' for x in incompletos['fecha'][-5:]]}")
-    if anterior is not None and len(anterior) and nuevo["fecha"].min() > anterior["fecha"].min():
-        errores.append("Se perdió historia guardada.")
+    if nuevo["fecha"].min() != pd.Timestamp(PRIMER_PERIODO):
+        errores.append(f"La serie no empieza el {PRIMER_PERIODO}.")
+    esperado = pd.date_range(nuevo["fecha"].min(), periods=len(nuevo), freq="D")
+    if not nuevo["fecha"].reset_index(drop=True).equals(pd.Series(esperado, name="fecha")):
+        errores.append("Los días no son consecutivos.")
+    if nuevo[["total", "grandes_usuarios", "distribuidoras"]].isna().any().any():
+        errores.append("Hay días sin demanda.")
+    dif = (nuevo["grandes_usuarios"] + nuevo["distribuidoras"] - nuevo["total"]).abs()
+    if (dif > 1).any():
+        errores.append(f"Grandes usuarios + distribuidoras no suman el total (diferencia máxima {dif.max():.1f} MW).")
+    if not nuevo["total"].between(7000, 35000).all():
+        errores.append("Demanda total fuera de rango (7.000 a 35.000 MW).")
+    if anterior is not None and len(anterior) and nuevo["fecha"].max() < anterior["fecha"].max():
+        errores.append("El último día es anterior al de la versión guardada.")
     return errores

@@ -17,7 +17,7 @@
 [salarios]
   sin cambios en el archivo
 [sube]
-  sin cambios en el archivo
+  actualizada: último período 2026-10 → 2026-10-19; valores revisados: 0
 [camiones_puertos]
   sin cambios en el archivo
 [cammesa_balance]
@@ -33,7 +33,7 @@
 [salarios_real]
   sin cambios en las series de base
 [sube_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-09 → 2026-09
 [camiones_puertos_mensual]
   sin cambios en las series de base
 [cammesa_gu_actividad_mensual]
@@ -43,3 +43,5 @@ AVISO: INDEC tenía previsto publicar emae_letras el 21/10 y el dato todavía no
 AVISO: INDEC tenía previsto publicar emae_letras_desest el 21/10 y el dato todavía no entró.
 AVISO: INDEC tenía previsto publicar salarios el 21/10 y el dato todavía no entró.
 AVISO: INDEC tenía previsto publicar salarios_real el 21/10 y el dato todavía no entró.
+[catálogo de Monitor Argy]
+  733 series

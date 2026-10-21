@@ -73,7 +73,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -95,7 +95,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -106,7 +106,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -150,7 +150,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -161,7 +161,128 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
+"frescura": "vigente"
+},
+{
+"id": "bp_activos_reserva",
+"nombre": "Variación de reservas (balanza de pagos)",
+"descripcion": "Activos de reserva de la cuenta financiera: variación de las reservas internacionales por transacciones, sin cambios de valuación (positivo = aumentan), millones de dólares, trimestral (MBP6)",
+"panel": "Comercio exterior",
+"unidad": "musd",
+"frecuencia": "Q",
+"fuente": "INDEC — Balanza de pagos",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "bp_bienes",
+"nombre": "Balance de bienes",
+"descripcion": "Saldo de bienes de la cuenta corriente (exportaciones menos importaciones FOB), millones de dólares, trimestral (MBP6)",
+"panel": "Comercio exterior",
+"unidad": "musd",
+"frecuencia": "Q",
+"fuente": "INDEC — Balanza de pagos",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "bp_cuenta_capital",
+"nombre": "Cuenta capital",
+"descripcion": "Saldo de la cuenta de capital (transferencias de capital y activos no financieros no producidos), millones de dólares, trimestral (MBP6)",
+"panel": "Comercio exterior",
+"unidad": "musd",
+"frecuencia": "Q",
+"fuente": "INDEC — Balanza de pagos",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "bp_cuenta_financiera",
+"nombre": "Cuenta financiera",
+"descripcion": "Saldo de la cuenta financiera: adquisición neta de activos menos pasivos netos incurridos (positivo = préstamo neto al resto del mundo), millones de dólares, trimestral (MBP6)",
+"panel": "Comercio exterior",
+"unidad": "musd",
+"frecuencia": "Q",
+"fuente": "INDEC — Balanza de pagos",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "bp_errores_omisiones",
+"nombre": "Errores y omisiones",
+"descripcion": "Errores y omisiones netos del balance de pagos: lo que la cuenta financiera no explica de la corriente y la de capital, millones de dólares, trimestral (MBP6)",
+"panel": "Comercio exterior",
+"unidad": "musd",
+"frecuencia": "Q",
+"fuente": "INDEC — Balanza de pagos",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "bp_ingreso_primario",
+"nombre": "Ingreso primario",
+"descripcion": "Saldo del ingreso primario de la cuenta corriente (intereses, utilidades y dividendos, remuneración de empleados), millones de dólares, trimestral (MBP6)",
+"panel": "Comercio exterior",
+"unidad": "musd",
+"frecuencia": "Q",
+"fuente": "INDEC — Balanza de pagos",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "bp_ingreso_secundario",
+"nombre": "Ingreso secundario",
+"descripcion": "Saldo del ingreso secundario de la cuenta corriente (transferencias corrientes, como remesas), millones de dólares, trimestral (MBP6)",
+"panel": "Comercio exterior",
+"unidad": "musd",
+"frecuencia": "Q",
+"fuente": "INDEC — Balanza de pagos",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "bp_inversion_cartera",
+"nombre": "Inversión de cartera neta",
+"descripcion": "Inversión de cartera de la cuenta financiera (acciones y títulos de deuda), activos menos pasivos, millones de dólares, trimestral (MBP6)",
+"panel": "Comercio exterior",
+"unidad": "musd",
+"frecuencia": "Q",
+"fuente": "INDEC — Balanza de pagos",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "bp_inversion_directa",
+"nombre": "Inversión directa neta",
+"descripcion": "Inversión directa de la cuenta financiera, activos menos pasivos (negativo = entra más inversión extranjera directa de la que sale), millones de dólares, trimestral (MBP6)",
+"panel": "Comercio exterior",
+"unidad": "musd",
+"frecuencia": "Q",
+"fuente": "INDEC — Balanza de pagos",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "bp_otra_inversion",
+"nombre": "Otra inversión neta",
+"descripcion": "Otra inversión de la cuenta financiera (préstamos, depósitos, moneda y créditos comerciales, incluido el FMI), activos menos pasivos, millones de dólares, trimestral (MBP6)",
+"panel": "Comercio exterior",
+"unidad": "musd",
+"frecuencia": "Q",
+"fuente": "INDEC — Balanza de pagos",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "bp_servicios",
+"nombre": "Balance de servicios",
+"descripcion": "Saldo de servicios de la cuenta corriente (turismo, fletes, servicios empresariales, etc.), millones de dólares, trimestral (MBP6)",
+"panel": "Comercio exterior",
+"unidad": "musd",
+"frecuencia": "Q",
+"fuente": "INDEC — Balanza de pagos",
+"ultimo_periodo": "2026-04-01",
 "frescura": "vigente"
 },
 {
@@ -183,7 +304,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos · BCRA",
-"ultimo_periodo": "2026-10-16",
+"ultimo_periodo": "2026-10-20",
 "frescura": "vigente"
 },
 {
@@ -194,7 +315,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-19",
+"ultimo_periodo": "2026-10-21",
 "frescura": "vigente"
 },
 {
@@ -205,7 +326,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos · BCRA",
-"ultimo_periodo": "2026-10-16",
+"ultimo_periodo": "2026-10-20",
 "frescura": "vigente"
 },
 {
@@ -220,11 +341,55 @@
 "frescura": "vigente"
 },
 {
+"id": "cantidades_expo_interanual",
+"nombre": "Cantidades exportadas var. interanual",
+"descripcion": "Variación interanual de la serie «Cantidades exportadas» (INDEC — Índices de precios y cantidades del comercio exterior), contra el mismo trimestre del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Índices de precios y cantidades del comercio exterior",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "cantidades_expo_trimestral",
+"nombre": "Cantidades exportadas var. trimestral",
+"descripcion": "Variación trimestral de la serie «Cantidades exportadas» (INDEC — Índices de precios y cantidades del comercio exterior), contra el trimestre anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Índices de precios y cantidades del comercio exterior",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
 "id": "cantidades_impo",
 "nombre": "Cantidades importadas",
 "descripcion": "Índice de cantidades (volumen físico) de las importaciones, base 2004 = 100",
 "panel": "Comercio exterior",
 "unidad": "indice",
+"frecuencia": "Q",
+"fuente": "INDEC — Índices de precios y cantidades del comercio exterior",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "cantidades_impo_interanual",
+"nombre": "Cantidades importadas var. interanual",
+"descripcion": "Variación interanual de la serie «Cantidades importadas» (INDEC — Índices de precios y cantidades del comercio exterior), contra el mismo trimestre del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Índices de precios y cantidades del comercio exterior",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "cantidades_impo_trimestral",
+"nombre": "Cantidades importadas var. trimestral",
+"descripcion": "Variación trimestral de la serie «Cantidades importadas» (INDEC — Índices de precios y cantidades del comercio exterior), contra el trimestre anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
 "frecuencia": "Q",
 "fuente": "INDEC — Índices de precios y cantidades del comercio exterior",
 "ultimo_periodo": "2026-04-01",
@@ -269,6 +434,17 @@
 "descripcion": "CBA por adulto equivalente a pesos de diciembre de 2016 (deflactada por el IPC): sube si la canasta aumenta más que los precios en general",
 "panel": "Pobreza e ingresos",
 "unidad": "ars",
+"frecuencia": "M",
+"fuente": "INDEC — Canastas básicas · deflactada por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "cba_real_ipc_interanual",
+"nombre": "Canasta básica alimentaria real (vs. precios) var. interanual",
+"descripcion": "Variación interanual de la serie «Canasta básica alimentaria real (vs. precios)» (INDEC — Canastas básicas · deflactada por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Pobreza e ingresos",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — Canastas básicas · deflactada por IPC",
 "ultimo_periodo": "2026-09-01",
@@ -352,6 +528,17 @@
 "frescura": "vigente"
 },
 {
+"id": "cbt_real_ipc_interanual",
+"nombre": "Canasta básica total real (vs. precios) var. interanual",
+"descripcion": "Variación interanual de la serie «Canasta básica total real (vs. precios)» (INDEC — Canastas básicas · deflactada por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Pobreza e ingresos",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — Canastas básicas · deflactada por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "cbt_real_ipc_mensual",
 "nombre": "Canasta básica total real (vs. precios) var. mensual",
 "descripcion": "Variación mensual de la canasta básica total deflactada por el IPC: positiva si la canasta sube más que los precios en general, en %",
@@ -390,6 +577,28 @@
 "descripcion": "Dólares ingresados al mercado de cambios por exportaciones de bienes (incluye anticipos y prefinanciaciones), millones de USD. Balance cambiario del BCRA",
 "panel": "Comercio exterior",
 "unidad": "musd",
+"frecuencia": "M",
+"fuente": "BCRA — Balance cambiario",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "cobros_expo_interanual",
+"nombre": "Cobros de exportaciones de bienes (MLC) var. interanual",
+"descripcion": "Variación interanual de la serie «Cobros de exportaciones de bienes (MLC)» (BCRA — Balance cambiario), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA — Balance cambiario",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "cobros_expo_mensual",
+"nombre": "Cobros de exportaciones de bienes (MLC) var. mensual",
+"descripcion": "Variación mensual de la serie «Cobros de exportaciones de bienes (MLC)» (BCRA — Balance cambiario), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "BCRA — Balance cambiario",
 "ultimo_periodo": "2026-08-01",
@@ -447,7 +656,7 @@
 "unidad": "tasa",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de tendencia de negocios. Industria manufacturera",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -458,7 +667,7 @@
 "unidad": "tasa",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de tendencia de negocios. Supermercados y autoservicios mayoristas",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -467,6 +676,17 @@
 "descripcion": "Despachos de insumos de la construcción, base jun-2002=100, desestacionalizado por Grupo Construya",
 "panel": "Construcción",
 "unidad": "indice",
+"frecuencia": "M",
+"fuente": "Grupo Construya",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "construya_desest_interanual",
+"nombre": "Índice Construya desestacionalizado var. interanual",
+"descripcion": "Variación interanual de la serie «Índice Construya desestacionalizado» (Grupo Construya), contra el mismo mes del año anterior, en %",
+"panel": "Construcción",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "Grupo Construya",
 "ultimo_periodo": "2026-09-01",
@@ -634,7 +854,7 @@
 "unidad": "gwh",
 "frecuencia": "M",
 "fuente": "CAMMESA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -645,7 +865,7 @@
 "unidad": "gwh",
 "frecuencia": "M",
 "fuente": "CAMMESA · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -656,7 +876,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "CAMMESA · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -667,7 +887,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "CAMMESA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -1001,11 +1221,55 @@
 "frescura": "vigente"
 },
 {
+"id": "dotacion_apn_interanual",
+"nombre": "Dotación de la administración pública nacional var. interanual",
+"descripcion": "Variación interanual de la serie «Dotación de la administración pública nacional» (INDEC — Dotación de personal de la APN, empresas y sociedades), contra el mismo mes del año anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — Dotación de personal de la APN, empresas y sociedades",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "dotacion_apn_mensual",
+"nombre": "Dotación de la administración pública nacional var. mensual",
+"descripcion": "Variación mensual de la serie «Dotación de la administración pública nacional» (INDEC — Dotación de personal de la APN, empresas y sociedades), contra el mes anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — Dotación de personal de la APN, empresas y sociedades",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
 "id": "dotacion_empresas_estado",
 "nombre": "Dotación de empresas y sociedades del Estado",
 "descripcion": "Dotación de personal de las empresas y sociedades del Estado nacional o con participación estatal, miles de personas",
 "panel": "Empleo",
 "unidad": "miles",
+"frecuencia": "M",
+"fuente": "INDEC — Dotación de personal de la APN, empresas y sociedades",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "dotacion_empresas_estado_interanual",
+"nombre": "Dotación de empresas y sociedades del Estado var. interanual",
+"descripcion": "Variación interanual de la serie «Dotación de empresas y sociedades del Estado» (INDEC — Dotación de personal de la APN, empresas y sociedades), contra el mismo mes del año anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — Dotación de personal de la APN, empresas y sociedades",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "dotacion_empresas_estado_mensual",
+"nombre": "Dotación de empresas y sociedades del Estado var. mensual",
+"descripcion": "Variación mensual de la serie «Dotación de empresas y sociedades del Estado» (INDEC — Dotación de personal de la APN, empresas y sociedades), contra el mes anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — Dotación de personal de la APN, empresas y sociedades",
 "ultimo_periodo": "2026-08-01",
@@ -1232,6 +1496,17 @@
 "frescura": "vigente"
 },
 {
+"id": "emae_interanual",
+"nombre": "EMAE var. interanual",
+"descripcion": "Variación interanual de la serie «EMAE» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-07-01",
+"frescura": "vigente"
+},
+{
 "id": "emae_mineria",
 "nombre": "EMAE minas y canteras",
 "descripcion": "EMAE, sector explotación de minas y canteras (incluye petróleo y gas), serie original",
@@ -1287,6 +1562,17 @@
 "frescura": "vigente"
 },
 {
+"id": "empleo_asalariados_no_registrados_interanual",
+"nombre": "Asalariados no registrados var. interanual",
+"descripcion": "Variación interanual de la serie «Asalariados no registrados» (INDEC — Cuenta de generación del ingreso), contra el mismo trimestre del año anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuenta de generación del ingreso",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
 "id": "empleo_asalariados_no_registrados_peso",
 "nombre": "Asalariados no registrados, % de los ocupados",
 "descripcion": "Parte de la suma de las ocho modalidades (registradas y no registradas), por trimestre",
@@ -1298,11 +1584,44 @@
 "frescura": "vigente"
 },
 {
+"id": "empleo_asalariados_no_registrados_trimestral",
+"nombre": "Asalariados no registrados var. trimestral",
+"descripcion": "Variación trimestral de la serie «Asalariados no registrados» (INDEC — Cuenta de generación del ingreso), contra el trimestre anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuenta de generación del ingreso",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
 "id": "empleo_asalariados_publicos",
 "nombre": "Asalariados registrados del sector público",
 "descripcion": "Asalariados registrados del sector público (SIPA), miles de personas, serie original",
 "panel": "Empleo",
 "unidad": "miles",
+"frecuencia": "M",
+"fuente": "Secretaría de Trabajo — SIPA",
+"ultimo_periodo": "2026-07-01",
+"frescura": "vigente"
+},
+{
+"id": "empleo_asalariados_publicos_interanual",
+"nombre": "Asalariados registrados del sector público var. interanual",
+"descripcion": "Variación interanual de la serie «Asalariados registrados del sector público» (Secretaría de Trabajo — SIPA), contra el mismo mes del año anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Secretaría de Trabajo — SIPA",
+"ultimo_periodo": "2026-07-01",
+"frescura": "vigente"
+},
+{
+"id": "empleo_asalariados_publicos_mensual",
+"nombre": "Asalariados registrados del sector público var. mensual",
+"descripcion": "Variación mensual de la serie «Asalariados registrados del sector público» (Secretaría de Trabajo — SIPA), contra el mes anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "Secretaría de Trabajo — SIPA",
 "ultimo_periodo": "2026-07-01",
@@ -1353,6 +1672,28 @@
 "frescura": "vigente"
 },
 {
+"id": "empleo_autonomos_interanual",
+"nombre": "Independientes autónomos var. interanual",
+"descripcion": "Variación interanual de la serie «Independientes autónomos» (Secretaría de Trabajo — SIPA), contra el mismo mes del año anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Secretaría de Trabajo — SIPA",
+"ultimo_periodo": "2026-07-01",
+"frescura": "vigente"
+},
+{
+"id": "empleo_autonomos_mensual",
+"nombre": "Independientes autónomos var. mensual",
+"descripcion": "Variación mensual de la serie «Independientes autónomos» (Secretaría de Trabajo — SIPA), contra el mes anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Secretaría de Trabajo — SIPA",
+"ultimo_periodo": "2026-07-01",
+"frescura": "vigente"
+},
+{
 "id": "empleo_autonomos_peso",
 "nombre": "Autónomos, % de los ocupados",
 "descripcion": "Parte de la suma de las ocho modalidades (registradas y no registradas), por trimestre",
@@ -1380,6 +1721,28 @@
 "descripcion": "Asalariados registrados de casas particulares (SIPA), miles de personas, serie original",
 "panel": "Empleo",
 "unidad": "miles",
+"frecuencia": "M",
+"fuente": "Secretaría de Trabajo — SIPA",
+"ultimo_periodo": "2026-07-01",
+"frescura": "vigente"
+},
+{
+"id": "empleo_casas_particulares_interanual",
+"nombre": "Asalariados registrados de casas particulares var. interanual",
+"descripcion": "Variación interanual de la serie «Asalariados registrados de casas particulares» (Secretaría de Trabajo — SIPA), contra el mismo mes del año anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Secretaría de Trabajo — SIPA",
+"ultimo_periodo": "2026-07-01",
+"frescura": "vigente"
+},
+{
+"id": "empleo_casas_particulares_mensual",
+"nombre": "Asalariados registrados de casas particulares var. mensual",
+"descripcion": "Variación mensual de la serie «Asalariados registrados de casas particulares» (Secretaría de Trabajo — SIPA), contra el mes anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "Secretaría de Trabajo — SIPA",
 "ultimo_periodo": "2026-07-01",
@@ -1419,6 +1782,17 @@
 "frescura": "vigente"
 },
 {
+"id": "empleo_cuentapropistas_no_registrados_interanual",
+"nombre": "Cuentapropistas no registrados var. interanual",
+"descripcion": "Variación interanual de la serie «Cuentapropistas no registrados» (INDEC (CGI) y Secretaría de Trabajo (SIPA)), contra el mismo trimestre del año anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC (CGI) y Secretaría de Trabajo (SIPA)",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
 "id": "empleo_cuentapropistas_no_registrados_peso",
 "nombre": "Cuentapropistas no registrados, % de los ocupados",
 "descripcion": "Parte de la suma de las ocho modalidades (registradas y no registradas), por trimestre",
@@ -1430,11 +1804,44 @@
 "frescura": "vigente"
 },
 {
+"id": "empleo_cuentapropistas_no_registrados_trimestral",
+"nombre": "Cuentapropistas no registrados var. trimestral",
+"descripcion": "Variación trimestral de la serie «Cuentapropistas no registrados» (INDEC (CGI) y Secretaría de Trabajo (SIPA)), contra el trimestre anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC (CGI) y Secretaría de Trabajo (SIPA)",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
 "id": "empleo_monotributo",
 "nombre": "Independientes monotributo",
 "descripcion": "Trabajadores independientes con monotributo registrados (SIPA), miles de personas, serie original",
 "panel": "Empleo",
 "unidad": "miles",
+"frecuencia": "M",
+"fuente": "Secretaría de Trabajo — SIPA",
+"ultimo_periodo": "2026-07-01",
+"frescura": "vigente"
+},
+{
+"id": "empleo_monotributo_interanual",
+"nombre": "Independientes monotributo var. interanual",
+"descripcion": "Variación interanual de la serie «Independientes monotributo» (Secretaría de Trabajo — SIPA), contra el mismo mes del año anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Secretaría de Trabajo — SIPA",
+"ultimo_periodo": "2026-07-01",
+"frescura": "vigente"
+},
+{
+"id": "empleo_monotributo_mensual",
+"nombre": "Independientes monotributo var. mensual",
+"descripcion": "Variación mensual de la serie «Independientes monotributo» (Secretaría de Trabajo — SIPA), contra el mes anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "Secretaría de Trabajo — SIPA",
 "ultimo_periodo": "2026-07-01",
@@ -1457,6 +1864,28 @@
 "descripcion": "Trabajadores independientes con monotributo social registrados (SIPA), miles de personas, serie original",
 "panel": "Empleo",
 "unidad": "miles",
+"frecuencia": "M",
+"fuente": "Secretaría de Trabajo — SIPA",
+"ultimo_periodo": "2026-07-01",
+"frescura": "vigente"
+},
+{
+"id": "empleo_monotributo_social_interanual",
+"nombre": "Independientes monotributo social var. interanual",
+"descripcion": "Variación interanual de la serie «Independientes monotributo social» (Secretaría de Trabajo — SIPA), contra el mismo mes del año anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Secretaría de Trabajo — SIPA",
+"ultimo_periodo": "2026-07-01",
+"frescura": "vigente"
+},
+{
+"id": "empleo_monotributo_social_mensual",
+"nombre": "Independientes monotributo social var. mensual",
+"descripcion": "Variación mensual de la serie «Independientes monotributo social» (Secretaría de Trabajo — SIPA), contra el mes anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "Secretaría de Trabajo — SIPA",
 "ultimo_periodo": "2026-07-01",
@@ -1672,6 +2101,17 @@
 "frescura": "vigente"
 },
 {
+"id": "empleo_total_trimestral",
+"nombre": "Empleo total var. trimestral",
+"descripcion": "Variación trimestral de la serie «Empleo total» (INDEC — Cuenta de generación del ingreso), contra el trimestre anterior, en %",
+"panel": "Empleo",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuenta de generación del ingreso",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
 "id": "escrituras_caba",
 "nombre": "Escrituras CABA",
 "descripcion": "Escrituras de compraventa de inmuebles en la Ciudad, cantidad",
@@ -1723,7 +2163,7 @@
 "unidad": "miles",
 "frecuencia": "M",
 "fuente": "Colegio de Escribanos de la Provincia de Buenos Aires",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -1734,7 +2174,7 @@
 "unidad": "miles",
 "frecuencia": "M",
 "fuente": "Colegio de Escribanos de la Provincia de Buenos Aires · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -1745,7 +2185,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Colegio de Escribanos de la Provincia de Buenos Aires · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -1756,7 +2196,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Colegio de Escribanos de la Provincia de Buenos Aires",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -1767,7 +2207,7 @@
 "unidad": "tasa",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de tendencia de negocios. Industria manufacturera",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -1778,7 +2218,7 @@
 "unidad": "tasa",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de tendencia de negocios. Supermercados y autoservicios mayoristas",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -1787,6 +2227,28 @@
 "descripcion": "Millones de USD FOB",
 "panel": "Comercio exterior",
 "unidad": "musd",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "expo_brasil_interanual",
+"nombre": "Exportaciones a Brasil var. interanual",
+"descripcion": "Variación interanual de la serie «Exportaciones a Brasil» (INDEC — ICA), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "expo_brasil_mensual",
+"nombre": "Exportaciones a Brasil var. mensual",
+"descripcion": "Variación mensual de la serie «Exportaciones a Brasil» (INDEC — ICA), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
 "ultimo_periodo": "2026-08-01",
@@ -1804,6 +2266,28 @@
 "frescura": "vigente"
 },
 {
+"id": "expo_china_interanual",
+"nombre": "Exportaciones a China var. interanual",
+"descripcion": "Variación interanual de la serie «Exportaciones a China» (INDEC — ICA), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "expo_china_mensual",
+"nombre": "Exportaciones a China var. mensual",
+"descripcion": "Variación mensual de la serie «Exportaciones a China» (INDEC — ICA), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
 "id": "expo_combustibles",
 "nombre": "Exportaciones de combustibles y energía",
 "descripcion": "Petróleo crudo, gas, carburantes y energía eléctrica, millones de USD FOB",
@@ -1811,7 +2295,29 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "expo_combustibles_interanual",
+"nombre": "Exportaciones de combustibles y energía var. interanual",
+"descripcion": "Variación interanual de la serie «Exportaciones de combustibles y energía» (INDEC — ICA), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "expo_combustibles_mensual",
+"nombre": "Exportaciones de combustibles y energía var. mensual",
+"descripcion": "Variación mensual de la serie «Exportaciones de combustibles y energía» (INDEC — ICA), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -1820,6 +2326,28 @@
 "descripcion": "Millones de USD FOB",
 "panel": "Comercio exterior",
 "unidad": "musd",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "expo_eeuu_interanual",
+"nombre": "Exportaciones a Estados Unidos var. interanual",
+"descripcion": "Variación interanual de la serie «Exportaciones a Estados Unidos» (INDEC — ICA), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "expo_eeuu_mensual",
+"nombre": "Exportaciones a Estados Unidos var. mensual",
+"descripcion": "Variación mensual de la serie «Exportaciones a Estados Unidos» (INDEC — ICA), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
 "ultimo_periodo": "2026-08-01",
@@ -1837,6 +2365,28 @@
 "frescura": "vigente"
 },
 {
+"id": "expo_mineria_interanual",
+"nombre": "Exportaciones mineras var. interanual",
+"descripcion": "Variación interanual de la serie «Exportaciones mineras» (Secretaría de Minería — SIACAM), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Secretaría de Minería — SIACAM",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "expo_mineria_mensual",
+"nombre": "Exportaciones mineras var. mensual",
+"descripcion": "Variación mensual de la serie «Exportaciones mineras» (Secretaría de Minería — SIACAM), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Secretaría de Minería — SIACAM",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
 "id": "expo_moa",
 "nombre": "Exportaciones de manufacturas de origen agropecuario (MOA)",
 "descripcion": "Harinas y aceites, carnes, lácteos y otros alimentos procesados, millones de USD FOB",
@@ -1844,7 +2394,29 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "expo_moa_interanual",
+"nombre": "Exportaciones de manufacturas de origen agropecuario (MOA) var. interanual",
+"descripcion": "Variación interanual de la serie «Exportaciones de manufacturas de origen agropecuario (MOA)» (INDEC — ICA), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "expo_moa_mensual",
+"nombre": "Exportaciones de manufacturas de origen agropecuario (MOA) var. mensual",
+"descripcion": "Variación mensual de la serie «Exportaciones de manufacturas de origen agropecuario (MOA)» (INDEC — ICA), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -1855,7 +2427,29 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "expo_moi_interanual",
+"nombre": "Exportaciones de manufacturas de origen industrial (MOI) var. interanual",
+"descripcion": "Variación interanual de la serie «Exportaciones de manufacturas de origen industrial (MOI)» (INDEC — ICA), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "expo_moi_mensual",
+"nombre": "Exportaciones de manufacturas de origen industrial (MOI) var. mensual",
+"descripcion": "Variación mensual de la serie «Exportaciones de manufacturas de origen industrial (MOI)» (INDEC — ICA), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -1866,7 +2460,29 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "expo_primarios_interanual",
+"nombre": "Exportaciones de productos primarios var. interanual",
+"descripcion": "Variación interanual de la serie «Exportaciones de productos primarios» (INDEC — ICA), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "expo_primarios_mensual",
+"nombre": "Exportaciones de productos primarios var. mensual",
+"descripcion": "Variación mensual de la serie «Exportaciones de productos primarios» (INDEC — ICA), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -1881,6 +2497,28 @@
 "frescura": "vigente"
 },
 {
+"id": "expo_ue_interanual",
+"nombre": "Exportaciones a la Unión Europea var. interanual",
+"descripcion": "Variación interanual de la serie «Exportaciones a la Unión Europea» (INDEC — ICA), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "expo_ue_mensual",
+"nombre": "Exportaciones a la Unión Europea var. mensual",
+"descripcion": "Variación mensual de la serie «Exportaciones a la Unión Europea» (INDEC — ICA), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
 "id": "exportaciones",
 "nombre": "Exportaciones",
 "descripcion": "Exportaciones totales, millones de USD FOB",
@@ -1888,7 +2526,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -1899,7 +2537,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -1910,7 +2548,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -1921,7 +2559,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2068,6 +2706,17 @@
 "frescura": "vigente"
 },
 {
+"id": "icc_interanual",
+"nombre": "ICC nivel general var. interanual",
+"descripcion": "Variación interanual de la serie «ICC nivel general» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "icc_mano_de_obra",
 "nombre": "ICC mano de obra",
 "descripcion": "Índice del costo de la construcción, GBA, capítulo mano de obra, base 2022=100",
@@ -2079,11 +2728,55 @@
 "frescura": "vigente"
 },
 {
+"id": "icc_mano_de_obra_interanual",
+"nombre": "ICC mano de obra var. interanual",
+"descripcion": "Variación interanual de la serie «ICC mano de obra» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "icc_mano_de_obra_mensual",
+"nombre": "ICC mano de obra var. mensual",
+"descripcion": "Variación mensual de la serie «ICC mano de obra» (INDEC), contra el mes anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "icc_materiales",
 "nombre": "ICC materiales",
 "descripcion": "Índice del costo de la construcción, GBA, capítulo materiales, base 2022=100",
 "panel": "Precios",
 "unidad": "indice",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "icc_materiales_interanual",
+"nombre": "ICC materiales var. interanual",
+"descripcion": "Variación interanual de la serie «ICC materiales» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "icc_materiales_mensual",
+"nombre": "ICC materiales var. mensual",
+"descripcion": "Variación mensual de la serie «ICC materiales» (INDEC), contra el mes anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC",
 "ultimo_periodo": "2026-09-01",
@@ -2108,7 +2801,29 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "impo_brasil_interanual",
+"nombre": "Importaciones desde Brasil var. interanual",
+"descripcion": "Variación interanual de la serie «Importaciones desde Brasil» (INDEC — ICA), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "impo_brasil_mensual",
+"nombre": "Importaciones desde Brasil var. mensual",
+"descripcion": "Variación mensual de la serie «Importaciones desde Brasil» (INDEC — ICA), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2119,7 +2834,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2130,7 +2845,18 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "impo_capital_desest_mensual",
+"nombre": "Impo. bienes de capital desest. (propia) var. mensual",
+"descripcion": "Variación mensual de la serie «Impo. bienes de capital desest. (propia)» (INDEC — ICA · desest. propia (X-13)), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA · desest. propia (X-13)",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2141,7 +2867,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2152,7 +2878,29 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "impo_china_interanual",
+"nombre": "Importaciones desde China var. interanual",
+"descripcion": "Variación interanual de la serie «Importaciones desde China» (INDEC — ICA), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "impo_china_mensual",
+"nombre": "Importaciones desde China var. mensual",
+"descripcion": "Variación mensual de la serie «Importaciones desde China» (INDEC — ICA), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2163,7 +2911,29 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "impo_combustibles_interanual",
+"nombre": "Importaciones de combustibles y lubricantes var. interanual",
+"descripcion": "Variación interanual de la serie «Importaciones de combustibles y lubricantes» (INDEC — ICA), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "impo_combustibles_mensual",
+"nombre": "Importaciones de combustibles y lubricantes var. mensual",
+"descripcion": "Variación mensual de la serie «Importaciones de combustibles y lubricantes» (INDEC — ICA), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2174,7 +2944,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2185,7 +2955,18 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "impo_consumo_desest_mensual",
+"nombre": "Impo. bienes de consumo desest. (propia) var. mensual",
+"descripcion": "Variación mensual de la serie «Impo. bienes de consumo desest. (propia)» (INDEC — ICA · desest. propia (X-13)), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA · desest. propia (X-13)",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2196,7 +2977,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2207,7 +2988,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2222,6 +3003,28 @@
 "frescura": "vigente"
 },
 {
+"id": "impo_eeuu_interanual",
+"nombre": "Importaciones desde Estados Unidos var. interanual",
+"descripcion": "Variación interanual de la serie «Importaciones desde Estados Unidos» (INDEC — ICA), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "impo_eeuu_mensual",
+"nombre": "Importaciones desde Estados Unidos var. mensual",
+"descripcion": "Variación mensual de la serie «Importaciones desde Estados Unidos» (INDEC — ICA), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
 "id": "impo_intermedios",
 "nombre": "Importaciones de bienes intermedios",
 "descripcion": "Importaciones de bienes intermedios, millones de USD",
@@ -2229,7 +3032,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2240,7 +3043,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2251,7 +3054,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2262,7 +3065,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2273,7 +3076,29 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "impo_piezas_interanual",
+"nombre": "Importaciones de piezas y accesorios para bienes de capital var. interanual",
+"descripcion": "Variación interanual de la serie «Importaciones de piezas y accesorios para bienes de capital» (INDEC — ICA), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "impo_piezas_mensual",
+"nombre": "Importaciones de piezas y accesorios para bienes de capital var. mensual",
+"descripcion": "Variación mensual de la serie «Importaciones de piezas y accesorios para bienes de capital» (INDEC — ICA), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2284,7 +3109,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2295,7 +3120,29 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "impo_ue_interanual",
+"nombre": "Importaciones desde la Unión Europea var. interanual",
+"descripcion": "Variación interanual de la serie «Importaciones desde la Unión Europea» (INDEC — ICA), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "impo_ue_mensual",
+"nombre": "Importaciones desde la Unión Europea var. mensual",
+"descripcion": "Variación mensual de la serie «Importaciones desde la Unión Europea» (INDEC — ICA), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2306,7 +3153,29 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "impo_vehiculos_interanual",
+"nombre": "Importaciones de vehículos automotores de pasajeros var. interanual",
+"descripcion": "Variación interanual de la serie «Importaciones de vehículos automotores de pasajeros» (INDEC — ICA), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "impo_vehiculos_mensual",
+"nombre": "Importaciones de vehículos automotores de pasajeros var. mensual",
+"descripcion": "Variación mensual de la serie «Importaciones de vehículos automotores de pasajeros» (INDEC — ICA), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — ICA",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2317,7 +3186,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2328,7 +3197,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2339,7 +3208,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2350,7 +3219,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2359,6 +3228,17 @@
 "descripcion": "Índice Líder de la actividad, base 2004=100, publicado desestacionalizado por la UTDT",
 "panel": "Expectativas",
 "unidad": "indice",
+"frecuencia": "M",
+"fuente": "Universidad Torcuato Di Tella — CIF",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "indice_lider_interanual",
+"nombre": "Índice Líder (UTDT) var. interanual",
+"descripcion": "Variación interanual de la serie «Índice Líder (UTDT)» (Universidad Torcuato Di Tella — CIF), contra el mismo mes del año anterior, en %",
+"panel": "Expectativas",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "Universidad Torcuato Di Tella — CIF",
 "ultimo_periodo": "2026-08-01",
@@ -2420,6 +3300,28 @@
 "frescura": "vigente"
 },
 {
+"id": "ipc_alimentos_interanual",
+"nombre": "IPC alimentos y bebidas var. interanual",
+"descripcion": "Variación interanual de la serie «IPC alimentos y bebidas» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipc_alimentos_mensual",
+"nombre": "IPC alimentos y bebidas var. mensual",
+"descripcion": "Variación mensual de la serie «IPC alimentos y bebidas» (INDEC), contra el mes anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "ipc_alquileres_gba",
 "nombre": "IPC alquileres (GBA)",
 "descripcion": "Clase alquiler de la vivienda, IPC GBA, base dic-2016=100",
@@ -2442,11 +3344,44 @@
 "frescura": "vigente"
 },
 {
+"id": "ipc_alquileres_gba_mensual",
+"nombre": "IPC alquileres (GBA) var. mensual",
+"descripcion": "Variación mensual de la serie «IPC alquileres (GBA)» (INDEC), contra el mes anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "ipc_estacional",
 "nombre": "IPC estacionales",
 "descripcion": "Categoría estacionales (frutas, verduras, ropa, turismo), nacional, base dic-2016=100",
 "panel": "Precios",
 "unidad": "indice",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipc_estacional_interanual",
+"nombre": "IPC estacionales var. interanual",
+"descripcion": "Variación interanual de la serie «IPC estacionales» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipc_estacional_mensual",
+"nombre": "IPC estacionales var. mensual",
+"descripcion": "Variación mensual de la serie «IPC estacionales» (INDEC), contra el mes anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC",
 "ultimo_periodo": "2026-09-01",
@@ -2508,6 +3443,17 @@
 "frescura": "vigente"
 },
 {
+"id": "ipc_nucleo_interanual",
+"nombre": "IPC núcleo var. interanual",
+"descripcion": "Variación interanual de la serie «IPC núcleo» (INDEC — archivo publicado), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — archivo publicado",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "ipc_nucleo_mensual",
 "nombre": "IPC núcleo var. mensual",
 "descripcion": "Variación mensual del IPC núcleo, total nacional (INDEC): excluye los precios regulados y los estacionales, en %",
@@ -2552,11 +3498,44 @@
 "frescura": "vigente"
 },
 {
+"id": "ipc_prendas_interanual",
+"nombre": "IPC prendas y calzado var. interanual",
+"descripcion": "Variación interanual de la serie «IPC prendas y calzado» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipc_prendas_mensual",
+"nombre": "IPC prendas y calzado var. mensual",
+"descripcion": "Variación mensual de la serie «IPC prendas y calzado» (INDEC), contra el mes anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "ipc_regulados",
 "nombre": "IPC regulados",
 "descripcion": "Categoría regulados (tarifas, combustibles, prepagas, educación formal, cigarrillos), nacional, base dic-2016=100",
 "panel": "Precios",
 "unidad": "indice",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipc_regulados_interanual",
+"nombre": "IPC regulados var. interanual",
+"descripcion": "Variación interanual de la serie «IPC regulados» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC",
 "ultimo_periodo": "2026-09-01",
@@ -2585,11 +3564,55 @@
 "frescura": "vigente"
 },
 {
+"id": "ipc_restaurantes_interanual",
+"nombre": "IPC restaurantes y hoteles var. interanual",
+"descripcion": "Variación interanual de la serie «IPC restaurantes y hoteles» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipc_restaurantes_mensual",
+"nombre": "IPC restaurantes y hoteles var. mensual",
+"descripcion": "Variación mensual de la serie «IPC restaurantes y hoteles» (INDEC), contra el mes anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "ipc_salud",
 "nombre": "IPC salud",
 "descripcion": "División salud, nacional, base dic-2016=100",
 "panel": "Precios",
 "unidad": "indice",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipc_salud_interanual",
+"nombre": "IPC salud var. interanual",
+"descripcion": "Variación interanual de la serie «IPC salud» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipc_salud_mensual",
+"nombre": "IPC salud var. mensual",
+"descripcion": "Variación mensual de la serie «IPC salud» (INDEC), contra el mes anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC",
 "ultimo_periodo": "2026-09-01",
@@ -2607,11 +3630,55 @@
 "frescura": "vigente"
 },
 {
+"id": "ipc_transporte_interanual",
+"nombre": "IPC transporte var. interanual",
+"descripcion": "Variación interanual de la serie «IPC transporte» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipc_transporte_mensual",
+"nombre": "IPC transporte var. mensual",
+"descripcion": "Variación mensual de la serie «IPC transporte» (INDEC), contra el mes anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "ipc_vivienda",
 "nombre": "IPC vivienda y servicios",
 "descripcion": "División vivienda, agua, electricidad, gas y otros combustibles, nacional, base dic-2016=100",
 "panel": "Precios",
 "unidad": "indice",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipc_vivienda_interanual",
+"nombre": "IPC vivienda y servicios var. interanual",
+"descripcion": "Variación interanual de la serie «IPC vivienda y servicios» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipc_vivienda_mensual",
+"nombre": "IPC vivienda y servicios var. mensual",
+"descripcion": "Variación mensual de la serie «IPC vivienda y servicios» (INDEC), contra el mes anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC",
 "ultimo_periodo": "2026-09-01",
@@ -2772,11 +3839,66 @@
 "frescura": "vigente"
 },
 {
+"id": "ipim_importados_interanual",
+"nombre": "IPIM productos importados var. interanual",
+"descripcion": "Variación interanual de la serie «IPIM productos importados» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipim_importados_mensual",
+"nombre": "IPIM productos importados var. mensual",
+"descripcion": "Variación mensual de la serie «IPIM productos importados» (INDEC), contra el mes anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipim_interanual",
+"nombre": "IPIM nivel general var. interanual",
+"descripcion": "Variación interanual de la serie «IPIM nivel general» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "ipim_manufacturados",
 "nombre": "IPIM productos manufacturados",
 "descripcion": "Índice de precios internos al por mayor, productos manufacturados, base dic-2015=100",
 "panel": "Precios",
 "unidad": "indice",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipim_manufacturados_interanual",
+"nombre": "IPIM productos manufacturados var. interanual",
+"descripcion": "Variación interanual de la serie «IPIM productos manufacturados» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipim_manufacturados_mensual",
+"nombre": "IPIM productos manufacturados var. mensual",
+"descripcion": "Variación mensual de la serie «IPIM productos manufacturados» (INDEC), contra el mes anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC",
 "ultimo_periodo": "2026-09-01",
@@ -2805,6 +3927,28 @@
 "frescura": "vigente"
 },
 {
+"id": "ipim_primarios_interanual",
+"nombre": "IPIM productos primarios var. interanual",
+"descripcion": "Variación interanual de la serie «IPIM productos primarios» (INDEC), contra el mismo mes del año anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipim_primarios_mensual",
+"nombre": "IPIM productos primarios var. mensual",
+"descripcion": "Variación mensual de la serie «IPIM productos primarios» (INDEC), contra el mes anterior, en %",
+"panel": "Precios",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "ipmp",
 "nombre": "Índice de precios de materias primas (BCRA)",
 "descripcion": "Precios internacionales de los productos que exporta Argentina (soja, maíz, trigo, petróleo, oro, litio…), ponderados por su peso en la canasta exportadora. Promedio mensual, dic-2001 = 100, en dólares corrientes",
@@ -2821,6 +3965,50 @@
 "descripcion": "Componente agropecuario del IPMP (granos, aceites, harinas, carne, leche). Promedio mensual, dic-2001 = 100, en dólares corrientes",
 "panel": "Comercio exterior",
 "unidad": "indice",
+"frecuencia": "M",
+"fuente": "BCRA — IPMP",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipmp_agro_interanual",
+"nombre": "Índice de precios de materias primas agropecuarias (BCRA) var. interanual",
+"descripcion": "Variación interanual de la serie «Índice de precios de materias primas agropecuarias (BCRA)» (BCRA — IPMP), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA — IPMP",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipmp_agro_mensual",
+"nombre": "Índice de precios de materias primas agropecuarias (BCRA) var. mensual",
+"descripcion": "Variación mensual de la serie «Índice de precios de materias primas agropecuarias (BCRA)» (BCRA — IPMP), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA — IPMP",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipmp_interanual",
+"nombre": "Índice de precios de materias primas (BCRA) var. interanual",
+"descripcion": "Variación interanual de la serie «Índice de precios de materias primas (BCRA)» (BCRA — IPMP), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA — IPMP",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipmp_mensual",
+"nombre": "Índice de precios de materias primas (BCRA) var. mensual",
+"descripcion": "Variación mensual de la serie «Índice de precios de materias primas (BCRA)» (BCRA — IPMP), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "BCRA — IPMP",
 "ultimo_periodo": "2026-09-01",
@@ -2959,6 +4147,28 @@
 "frescura": "vigente"
 },
 {
+"id": "itcrm_en_el_mes",
+"nombre": "Tipo de cambio real multilateral var. en el mes",
+"descripcion": "Variación en lo que va del mes de la serie «Tipo de cambio real multilateral» (BCRA — Índice de tipo de cambio real multilateral), contra el último dato del mes anterior, en %",
+"panel": "Cambiario y reservas",
+"unidad": "pct",
+"frecuencia": "D",
+"fuente": "BCRA — Índice de tipo de cambio real multilateral",
+"ultimo_periodo": "2026-10-16",
+"frescura": "vigente"
+},
+{
+"id": "itcrm_interanual",
+"nombre": "Tipo de cambio real multilateral var. interanual",
+"descripcion": "Variación interanual de la serie «Tipo de cambio real multilateral» (BCRA — Índice de tipo de cambio real multilateral), contra el último dato hasta el mismo día del año anterior, en %",
+"panel": "Cambiario y reservas",
+"unidad": "pct",
+"frecuencia": "D",
+"fuente": "BCRA — Índice de tipo de cambio real multilateral",
+"ultimo_periodo": "2026-10-16",
+"frescura": "vigente"
+},
+{
 "id": "itcrm_presidencias",
 "nombre": "ITCRM, promedio de cada presidencia",
 "descripcion": "Promedio del tipo de cambio real multilateral en cada mandato presidencial (el de Menem, desde 1997, cuando empieza la serie)",
@@ -3025,6 +4235,17 @@
 "frescura": "vigente"
 },
 {
+"id": "liquidacion_agro_mensual",
+"nombre": "Liquidación de divisas del agro (CIARA-CEC) var. mensual",
+"descripcion": "Variación mensual de la serie «Liquidación de divisas del agro (CIARA-CEC)» (CIARA-CEC), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "CIARA-CEC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "litio",
 "nombre": "Producción de carbonato de litio",
 "descripcion": "Producción de carbonato de litio, toneladas",
@@ -3039,6 +4260,17 @@
 "id": "litio_interanual",
 "nombre": "Carbonato de litio var. interanual",
 "descripcion": "Variación interanual de la producción de carbonato de litio, en toneladas (INDEC, IPI minero), contra el mismo mes del año anterior, sobre la serie original, en %",
+"panel": "Petróleo, gas y minería",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — IPI minero",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "litio_mensual",
+"nombre": "Producción de carbonato de litio var. mensual",
+"descripcion": "Variación mensual de la serie «Producción de carbonato de litio» (INDEC — IPI minero), contra el mes anterior, en %",
 "panel": "Petróleo, gas y minería",
 "unidad": "pct",
 "frecuencia": "M",
@@ -3110,6 +4342,50 @@
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de autoservicios mayoristas",
 "ultimo_periodo": "2026-07-01",
+"frescura": "vigente"
+},
+{
+"id": "metalurgia_adimra",
+"nombre": "Índice de producción metalúrgica",
+"descripcion": "Producción de la industria metalúrgica, índice base 2015=100 (ADIMRA)",
+"panel": "Industria",
+"unidad": "indice",
+"frecuencia": "M",
+"fuente": "ADIMRA — Estudios Económicos",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "metalurgia_adimra_desest",
+"nombre": "Índice de producción metalúrgica desestacionalizado",
+"descripcion": "Producción de la industria metalúrgica, índice base 2015=100, desestacionalizado por ADIMRA",
+"panel": "Industria",
+"unidad": "indice",
+"frecuencia": "M",
+"fuente": "ADIMRA — Estudios Económicos",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "metalurgia_adimra_desest_mensual",
+"nombre": "Producción metalúrgica desest. var. mensual",
+"descripcion": "Variación mensual del índice de producción metalúrgica, sobre la serie desestacionalizada que publica ADIMRA, en %",
+"panel": "Industria",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "ADIMRA — Estudios Económicos",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "metalurgia_adimra_interanual",
+"nombre": "Producción metalúrgica var. interanual",
+"descripcion": "Variación interanual del índice de producción metalúrgica (ADIMRA), contra el mismo mes del año anterior, sobre la serie original, en %",
+"panel": "Industria",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "ADIMRA — Estudios Económicos",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -3212,6 +4488,28 @@
 "frescura": "vigente"
 },
 {
+"id": "pagos_impo_interanual",
+"nombre": "Pagos de importaciones de bienes (MLC) var. interanual",
+"descripcion": "Variación interanual de la serie «Pagos de importaciones de bienes (MLC)» (BCRA — Balance cambiario), contra el mismo mes del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA — Balance cambiario",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "pagos_impo_mensual",
+"nombre": "Pagos de importaciones de bienes (MLC) var. mensual",
+"descripcion": "Variación mensual de la serie «Pagos de importaciones de bienes (MLC)» (BCRA — Balance cambiario), contra el mes anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA — Balance cambiario",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
 "id": "pasivos_bcra_ars",
 "nombre": "Pasivos remunerados del BCRA en pesos",
 "descripcion": "Al tipo de cambio mayorista de fin de mes, millones de pesos",
@@ -3263,7 +4561,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -3274,7 +4572,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-13",
+"ultimo_periodo": "2026-10-15",
 "frescura": "vigente"
 },
 {
@@ -3285,7 +4583,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-13",
+"ultimo_periodo": "2026-10-15",
 "frescura": "vigente"
 },
 {
@@ -3399,6 +4697,94 @@
 "frescura": "vigente"
 },
 {
+"id": "pbi_consumo_privado",
+"nombre": "Consumo privado",
+"descripcion": "Oferta y demanda globales, consumo privado (hogares e instituciones sin fines de lucro), millones de pesos a precios de 2004, serie original",
+"panel": "Actividad",
+"unidad": "mars",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_consumo_privado_desest",
+"nombre": "Consumo privado desestacionalizado",
+"descripcion": "Oferta y demanda globales, consumo privado (hogares e instituciones sin fines de lucro), millones de pesos a precios de 2004, serie desestacionalizada por INDEC",
+"panel": "Actividad",
+"unidad": "mars",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_consumo_privado_desest_trimestral",
+"nombre": "Consumo privado desest. var. trimestral",
+"descripcion": "Variación de consumo privado (hogares e instituciones sin fines de lucro) a precios de 2004 contra el trimestre anterior, sobre la serie desestacionalizada por INDEC, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_consumo_privado_interanual",
+"nombre": "Consumo privado var. interanual",
+"descripcion": "Variación interanual de consumo privado (hogares e instituciones sin fines de lucro) a precios de 2004 (INDEC, cuentas nacionales), contra el mismo trimestre del año anterior, sobre la serie original, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_consumo_publico",
+"nombre": "Consumo público",
+"descripcion": "Oferta y demanda globales, consumo público (gobierno general), millones de pesos a precios de 2004, serie original",
+"panel": "Actividad",
+"unidad": "mars",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_consumo_publico_desest",
+"nombre": "Consumo público desestacionalizado",
+"descripcion": "Oferta y demanda globales, consumo público (gobierno general), millones de pesos a precios de 2004, serie desestacionalizada por INDEC",
+"panel": "Actividad",
+"unidad": "mars",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_consumo_publico_desest_trimestral",
+"nombre": "Consumo público desest. var. trimestral",
+"descripcion": "Variación de consumo público (gobierno general) a precios de 2004 contra el trimestre anterior, sobre la serie desestacionalizada por INDEC, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_consumo_publico_interanual",
+"nombre": "Consumo público var. interanual",
+"descripcion": "Variación interanual de consumo público (gobierno general) a precios de 2004 (INDEC, cuentas nacionales), contra el mismo trimestre del año anterior, sobre la serie original, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
 "id": "pbi_desest",
 "nombre": "PBI desestacionalizado",
 "descripcion": "Producto interno bruto a precios de 2004, millones de pesos, serie desestacionalizada por INDEC",
@@ -3421,9 +4807,141 @@
 "frescura": "vigente"
 },
 {
+"id": "pbi_exportaciones",
+"nombre": "Exportaciones de bienes y servicios",
+"descripcion": "Oferta y demanda globales, exportaciones FOB de bienes y servicios reales, millones de pesos a precios de 2004, serie original",
+"panel": "Actividad",
+"unidad": "mars",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_exportaciones_desest",
+"nombre": "Exportaciones de bienes y servicios desestacionalizado",
+"descripcion": "Oferta y demanda globales, exportaciones FOB de bienes y servicios reales, millones de pesos a precios de 2004, serie desestacionalizada por INDEC",
+"panel": "Actividad",
+"unidad": "mars",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_exportaciones_desest_trimestral",
+"nombre": "Exportaciones de bienes y servicios desest. var. trimestral",
+"descripcion": "Variación de exportaciones FOB de bienes y servicios reales a precios de 2004 contra el trimestre anterior, sobre la serie desestacionalizada por INDEC, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_exportaciones_interanual",
+"nombre": "Exportaciones de bienes y servicios var. interanual",
+"descripcion": "Variación interanual de exportaciones FOB de bienes y servicios reales a precios de 2004 (INDEC, cuentas nacionales), contra el mismo trimestre del año anterior, sobre la serie original, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_importaciones",
+"nombre": "Importaciones de bienes y servicios",
+"descripcion": "Oferta y demanda globales, importaciones FOB de bienes y servicios reales, millones de pesos a precios de 2004, serie original",
+"panel": "Actividad",
+"unidad": "mars",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_importaciones_desest",
+"nombre": "Importaciones de bienes y servicios desestacionalizado",
+"descripcion": "Oferta y demanda globales, importaciones FOB de bienes y servicios reales, millones de pesos a precios de 2004, serie desestacionalizada por INDEC",
+"panel": "Actividad",
+"unidad": "mars",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_importaciones_desest_trimestral",
+"nombre": "Importaciones de bienes y servicios desest. var. trimestral",
+"descripcion": "Variación de importaciones FOB de bienes y servicios reales a precios de 2004 contra el trimestre anterior, sobre la serie desestacionalizada por INDEC, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_importaciones_interanual",
+"nombre": "Importaciones de bienes y servicios var. interanual",
+"descripcion": "Variación interanual de importaciones FOB de bienes y servicios reales a precios de 2004 (INDEC, cuentas nacionales), contra el mismo trimestre del año anterior, sobre la serie original, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
 "id": "pbi_interanual",
 "nombre": "PBI var. interanual",
 "descripcion": "Variación interanual del producto interno bruto a precios de 2004 (INDEC, cuentas nacionales), contra el mismo trimestre del año anterior, sobre la serie original, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_inversion",
+"nombre": "Inversión (FBCF)",
+"descripcion": "Oferta y demanda globales, formación bruta de capital fijo, millones de pesos a precios de 2004, serie original",
+"panel": "Actividad",
+"unidad": "mars",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_inversion_desest",
+"nombre": "Inversión (FBCF) desestacionalizado",
+"descripcion": "Oferta y demanda globales, formación bruta de capital fijo, millones de pesos a precios de 2004, serie desestacionalizada por INDEC",
+"panel": "Actividad",
+"unidad": "mars",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_inversion_desest_trimestral",
+"nombre": "Inversión (FBCF) desest. var. trimestral",
+"descripcion": "Variación de formación bruta de capital fijo a precios de 2004 contra el trimestre anterior, sobre la serie desestacionalizada por INDEC, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Cuentas nacionales",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_inversion_interanual",
+"nombre": "Inversión (FBCF) var. interanual",
+"descripcion": "Variación interanual de formación bruta de capital fijo a precios de 2004 (INDEC, cuentas nacionales), contra el mismo trimestre del año anterior, sobre la serie original, en %",
 "panel": "Actividad",
 "unidad": "pct",
 "frecuencia": "Q",
@@ -3553,6 +5071,17 @@
 "frescura": "vigente"
 },
 {
+"id": "petroleo_no_convencional_mensual",
+"nombre": "Producción de petróleo no convencional var. mensual",
+"descripcion": "Variación mensual de la serie «Producción de petróleo no convencional» (INDEC — IPI minero), contra el mes anterior, en %",
+"panel": "Petróleo, gas y minería",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — IPI minero",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
 "id": "pobreza_nowcast",
 "nombre": "Pobreza, nowcast UTDT (semestre móvil)",
 "descripcion": "Estimación mensual de la pobreza en personas para el semestre móvil de los seis meses hasta el informe (el punto va en el primer mes), con microsimulaciones de la EPH y la canasta básica total (M. González-Rozada, UTDT). No es el dato oficial: lo anticipa",
@@ -3586,6 +5115,28 @@
 "frescura": "vigente"
 },
 {
+"id": "precios_expo_interanual",
+"nombre": "Precios de exportación var. interanual",
+"descripcion": "Variación interanual de la serie «Precios de exportación» (INDEC — Índices de precios y cantidades del comercio exterior), contra el mismo trimestre del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Índices de precios y cantidades del comercio exterior",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "precios_expo_trimestral",
+"nombre": "Precios de exportación var. trimestral",
+"descripcion": "Variación trimestral de la serie «Precios de exportación» (INDEC — Índices de precios y cantidades del comercio exterior), contra el trimestre anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Índices de precios y cantidades del comercio exterior",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
 "id": "presion_tributaria",
 "nombre": "Presión tributaria nacional",
 "descripcion": "Recaudación nacional de los últimos cuatro trimestres sobre el PBI nominal del mismo período, en %. No incluye impuestos provinciales ni tasas municipales",
@@ -3604,7 +5155,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-13",
+"ultimo_periodo": "2026-10-15",
 "frescura": "vigente"
 },
 {
@@ -3615,7 +5166,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-13",
+"ultimo_periodo": "2026-10-15",
 "frescura": "vigente"
 },
 {
@@ -3663,6 +5214,17 @@
 "frescura": "vigente"
 },
 {
+"id": "prestamos_comerciales_real_interanual",
+"nombre": "Préstamos comerciales reales var. interanual",
+"descripcion": "Variación interanual de la serie «Préstamos comerciales reales» (BCRA · deflactado por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Consumo",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "prestamos_documentos",
 "nombre": "Préstamos en documentos",
 "descripcion": "Saldo de préstamos mediante documentos al sector privado, millones de pesos",
@@ -3670,7 +5232,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-13",
+"ultimo_periodo": "2026-10-15",
 "frescura": "vigente"
 },
 {
@@ -3681,7 +5243,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-13",
+"ultimo_periodo": "2026-10-15",
 "frescura": "vigente"
 },
 {
@@ -3701,6 +5263,28 @@
 "descripcion": "Promedio mensual, millones de pesos de diciembre de 2016",
 "panel": "Consumo",
 "unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_hipotecarios_real_interanual",
+"nombre": "Préstamos hipotecarios reales var. interanual",
+"descripcion": "Variación interanual de la serie «Préstamos hipotecarios reales» (BCRA · deflactado por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Consumo",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_hipotecarios_real_mensual",
+"nombre": "Préstamos hipotecarios reales var. mensual",
+"descripcion": "Variación mensual de la serie «Préstamos hipotecarios reales» (BCRA · deflactado por IPC), contra el mes anterior, en %",
+"panel": "Consumo",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "BCRA · deflactado por IPC",
 "ultimo_periodo": "2026-09-01",
@@ -3769,7 +5353,7 @@
 "unidad": "millones_litros",
 "frecuencia": "M",
 "fuente": "Secretaría de Agricultura — Dirección Nacional de Lechería",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -3780,7 +5364,7 @@
 "unidad": "millones_litros",
 "frecuencia": "M",
 "fuente": "Secretaría de Agricultura — Dirección Nacional de Lechería · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -3791,7 +5375,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Secretaría de Agricultura — Dirección Nacional de Lechería · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -3802,7 +5386,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Secretaría de Agricultura — Dirección Nacional de Lechería",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -4686,6 +6270,28 @@
 "frescura": "vigente"
 },
 {
+"id": "recaudacion_bienes_personales_real_interanual",
+"nombre": "Recaudación de Bienes personales real var. interanual",
+"descripcion": "Variación interanual de la serie «Recaudación de Bienes personales real» (Ministerio de Economía / ARCA · deflactada por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "recaudacion_bienes_personales_real_mensual",
+"nombre": "Recaudación de Bienes personales real var. mensual",
+"descripcion": "Variación mensual de la serie «Recaudación de Bienes personales real» (Ministerio de Economía / ARCA · deflactada por IPC), contra el mes anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "recaudacion_combustibles",
 "nombre": "Recaudación de Combustibles",
 "descripcion": "Impuestos a los combustibles líquidos y al dióxido de carbono, miles de millones de pesos corrientes",
@@ -4719,6 +6325,28 @@
 "frescura": "vigente"
 },
 {
+"id": "recaudacion_combustibles_real_desest_mensual",
+"nombre": "Recaudación de Combustibles real desest. (propia) var. mensual",
+"descripcion": "Variación mensual de la serie «Recaudación de Combustibles real desest. (propia)» (Ministerio de Economía / ARCA · desest. propia (X-13)), contra el mes anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · desest. propia (X-13)",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "recaudacion_combustibles_real_interanual",
+"nombre": "Recaudación de Combustibles real var. interanual",
+"descripcion": "Variación interanual de la serie «Recaudación de Combustibles real» (Ministerio de Economía / ARCA · deflactada por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "recaudacion_consumo_real",
 "nombre": "Recaudación vinculada al consumo real",
 "descripcion": "IVA DGI más impuesto a los débitos y créditos, miles de millones de pesos de diciembre de 2016",
@@ -4748,6 +6376,17 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Ministerio de Economía / ARCA · desest. propia (X-13)",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "recaudacion_consumo_real_interanual",
+"nombre": "Recaudación vinculada al consumo real var. interanual",
+"descripcion": "Variación interanual de la serie «Recaudación vinculada al consumo real» (Ministerio de Economía / ARCA · deflactada por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
 "ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
@@ -4796,6 +6435,17 @@
 "frescura": "vigente"
 },
 {
+"id": "recaudacion_debitos_creditos_real_interanual",
+"nombre": "Recaudación de Débitos y créditos real var. interanual",
+"descripcion": "Variación interanual de la serie «Recaudación de Débitos y créditos real» (Ministerio de Economía / ARCA · deflactada por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "recaudacion_derechos_exportacion",
 "nombre": "Recaudación de Derechos de exportación",
 "descripcion": "Retenciones a las exportaciones, miles de millones de pesos corrientes",
@@ -4812,6 +6462,28 @@
 "descripcion": "Miles de millones de pesos de diciembre de 2016 (deflactada por el IPC)",
 "panel": "Frente fiscal",
 "unidad": "mmars",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "recaudacion_derechos_exportacion_real_interanual",
+"nombre": "Recaudación de Derechos de exportación real var. interanual",
+"descripcion": "Variación interanual de la serie «Recaudación de Derechos de exportación real» (Ministerio de Economía / ARCA · deflactada por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "recaudacion_derechos_exportacion_real_mensual",
+"nombre": "Recaudación de Derechos de exportación real var. mensual",
+"descripcion": "Variación mensual de la serie «Recaudación de Derechos de exportación real» (Ministerio de Economía / ARCA · deflactada por IPC), contra el mes anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
 "ultimo_periodo": "2026-09-01",
@@ -4851,6 +6523,28 @@
 "frescura": "vigente"
 },
 {
+"id": "recaudacion_derechos_importacion_real_desest_mensual",
+"nombre": "Recaudación de derechos de importación real desest. (propia) var. mensual",
+"descripcion": "Variación mensual de la serie «Recaudación de derechos de importación real desest. (propia)» (Ministerio de Economía / ARCA · desest. propia (X-13)), contra el mes anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · desest. propia (X-13)",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "recaudacion_derechos_importacion_real_interanual",
+"nombre": "Recaudación de Derechos de importación real var. interanual",
+"descripcion": "Variación interanual de la serie «Recaudación de Derechos de importación real» (Ministerio de Economía / ARCA · deflactada por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "recaudacion_ganancias",
 "nombre": "Recaudación de Ganancias",
 "descripcion": "Impuesto a las Ganancias (DGI y aduana), miles de millones de pesos corrientes",
@@ -4867,6 +6561,28 @@
 "descripcion": "Miles de millones de pesos de diciembre de 2016 (deflactada por el IPC)",
 "panel": "Frente fiscal",
 "unidad": "mmars",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "recaudacion_ganancias_real_interanual",
+"nombre": "Recaudación de Ganancias real var. interanual",
+"descripcion": "Variación interanual de la serie «Recaudación de Ganancias real» (Ministerio de Economía / ARCA · deflactada por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "recaudacion_ganancias_real_mensual",
+"nombre": "Recaudación de Ganancias real var. mensual",
+"descripcion": "Variación mensual de la serie «Recaudación de Ganancias real» (Ministerio de Economía / ARCA · deflactada por IPC), contra el mes anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
 "ultimo_periodo": "2026-09-01",
@@ -4902,6 +6618,28 @@
 "unidad": "mmars",
 "frecuencia": "M",
 "fuente": "Ministerio de Economía / ARCA · desest. propia (X-13)",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "recaudacion_internos_real_desest_mensual",
+"nombre": "Recaudación de impuestos internos real desest. (propia) var. mensual",
+"descripcion": "Variación mensual de la serie «Recaudación de impuestos internos real desest. (propia)» (Ministerio de Economía / ARCA · desest. propia (X-13)), contra el mes anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · desest. propia (X-13)",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "recaudacion_internos_real_interanual",
+"nombre": "Recaudación de Impuestos internos real var. interanual",
+"descripcion": "Variación interanual de la serie «Recaudación de Impuestos internos real» (Ministerio de Economía / ARCA · deflactada por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
 "ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
@@ -4950,6 +6688,28 @@
 "frescura": "vigente"
 },
 {
+"id": "recaudacion_iva_dga_real_desest_mensual",
+"nombre": "Recaudación de IVA aduana real desest. (propia) var. mensual",
+"descripcion": "Variación mensual de la serie «Recaudación de IVA aduana real desest. (propia)» (Ministerio de Economía / ARCA · desest. propia (X-13)), contra el mes anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · desest. propia (X-13)",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "recaudacion_iva_dga_real_interanual",
+"nombre": "Recaudación de IVA aduana real var. interanual",
+"descripcion": "Variación interanual de la serie «Recaudación de IVA aduana real» (Ministerio de Economía / ARCA · deflactada por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "recaudacion_iva_dgi",
 "nombre": "Recaudación de IVA DGI",
 "descripcion": "IVA del mercado interno (sin el que cobra la aduana), miles de millones de pesos corrientes",
@@ -4990,6 +6750,17 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Ministerio de Economía / ARCA · desest. propia (X-13)",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "recaudacion_iva_dgi_real_interanual",
+"nombre": "Recaudación de IVA DGI real var. interanual",
+"descripcion": "Variación interanual de la serie «Recaudación de IVA DGI real» (Ministerio de Economía / ARCA · deflactada por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
 "ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
@@ -5082,6 +6853,28 @@
 "frescura": "vigente"
 },
 {
+"id": "recaudacion_seguridad_social_real_desest_mensual",
+"nombre": "Recaudación de seguridad social real desest. (propia) var. mensual",
+"descripcion": "Variación mensual de la serie «Recaudación de seguridad social real desest. (propia)» (Ministerio de Economía / ARCA · desest. propia (X-13)), contra el mes anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · desest. propia (X-13)",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "recaudacion_seguridad_social_real_interanual",
+"nombre": "Recaudación de Seguridad social real var. interanual",
+"descripcion": "Variación interanual de la serie «Recaudación de Seguridad social real» (Ministerio de Economía / ARCA · deflactada por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Frente fiscal",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "recaudacion_ss",
 "nombre": "Recaudación de la seguridad social",
 "descripcion": "Recaudación de aportes y contribuciones, millones de pesos corrientes",
@@ -5122,6 +6915,17 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Ministerio de Economía / ARCA · desest. propia (X-13)",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "recaudacion_ss_real_interanual",
+"nombre": "Recaudación seg. social real var. interanual",
+"descripcion": "Variación interanual de la serie «Recaudación seg. social real» (Ministerio de Economía / ARCA · deflactada por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "Ministerio de Economía / ARCA · deflactada por IPC",
 "ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
@@ -5210,7 +7014,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA — Principales Variables",
-"ultimo_periodo": "2026-10-14",
+"ultimo_periodo": "2026-10-16",
 "frescura": "vigente"
 },
 {
@@ -5233,7 +7037,7 @@
 "frecuencia": "Q",
 "fuente": "Secretaría de Hacienda (IMIG)",
 "ultimo_periodo": "2026-04-01",
-"frescura": "demorado"
+"frescura": "vencido"
 },
 {
 "id": "resultado_financiero_pbi",
@@ -5266,7 +7070,7 @@
 "frecuencia": "Q",
 "fuente": "Secretaría de Hacienda (IMIG)",
 "ultimo_periodo": "2026-04-01",
-"frescura": "demorado"
+"frescura": "vencido"
 },
 {
 "id": "resultado_primario",
@@ -5288,7 +7092,7 @@
 "frecuencia": "Q",
 "fuente": "Secretaría de Hacienda (IMIG)",
 "ultimo_periodo": "2026-04-01",
-"frescura": "demorado"
+"frescura": "vencido"
 },
 {
 "id": "resultado_primario_pbi",
@@ -5321,7 +7125,7 @@
 "frecuencia": "Q",
 "fuente": "Secretaría de Hacienda (IMIG)",
 "ultimo_periodo": "2026-04-01",
-"frescura": "demorado"
+"frescura": "vencido"
 },
 {
 "id": "riesgo_pais",
@@ -5331,7 +7135,7 @@
 "unidad": "pb",
 "frecuencia": "D",
 "fuente": "JP Morgan (EMBI) vía ArgentinaDatos",
-"ultimo_periodo": "2026-10-16",
+"ultimo_periodo": "2026-10-20",
 "frescura": "vigente"
 },
 {
@@ -5351,6 +7155,17 @@
 "descripcion": "A precios de diciembre de 2016 (deflactado por el IPC)",
 "panel": "Salarios reales",
 "unidad": "ars",
+"frecuencia": "M",
+"fuente": "Secretaría de Seguridad Social (RIPTE) · deflactado por IPC",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "ripte_real_interanual",
+"nombre": "RIPTE reales var. interanual",
+"descripcion": "Variación interanual de la serie «RIPTE reales» (Secretaría de Seguridad Social (RIPTE) · deflactado por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Salarios reales",
+"unidad": "pct",
 "frecuencia": "M",
 "fuente": "Secretaría de Seguridad Social (RIPTE) · deflactado por IPC",
 "ultimo_periodo": "2026-08-01",
@@ -5390,6 +7205,17 @@
 "frescura": "vigente"
 },
 {
+"id": "salarios_privados_real_interanual",
+"nombre": "Salarios privados registrados reales var. interanual",
+"descripcion": "Variación interanual de la serie «Salarios privados registrados reales» (INDEC — Índice de salarios · deflactado por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Salarios reales",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — Índice de salarios · deflactado por IPC",
+"ultimo_periodo": "2026-07-01",
+"frescura": "vigente"
+},
+{
 "id": "salarios_privados_real_mensual",
 "nombre": "Salarios privados registrados reales var. mensual",
 "descripcion": "Variación mensual del índice de salarios privados registrados de INDEC deflactado por el IPC: positiva si los salarios suben más que los precios, en %",
@@ -5423,6 +7249,17 @@
 "frescura": "vigente"
 },
 {
+"id": "salarios_publicos_real_interanual",
+"nombre": "Salarios públicos registrados reales var. interanual",
+"descripcion": "Variación interanual de la serie «Salarios públicos registrados reales» (INDEC — Índice de salarios · deflactado por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Salarios reales",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — Índice de salarios · deflactado por IPC",
+"ultimo_periodo": "2026-07-01",
+"frescura": "vigente"
+},
+{
 "id": "salarios_publicos_real_mensual",
 "nombre": "Salarios públicos registrados reales var. mensual",
 "descripcion": "Variación mensual del índice de salarios públicos registrados de INDEC deflactado por el IPC: positiva si los salarios suben más que los precios, en %",
@@ -5441,7 +7278,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -5533,6 +7370,17 @@
 "frescura": "vigente"
 },
 {
+"id": "tasa_adelantos",
+"nombre": "Tasa de adelantos en cuenta corriente",
+"descripcion": "Promedio de los adelantos en cuenta corriente en pesos, % nominal anual",
+"panel": "Tasas y riesgo país",
+"unidad": "tasa",
+"frecuencia": "D",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-19",
+"frescura": "vigente"
+},
+{
 "id": "tasa_badlar",
 "nombre": "Tasa BADLAR (bancos privados)",
 "descripcion": "Plazos fijos de más de $1 millón a 30-35 días en bancos privados, % nominal anual",
@@ -5540,7 +7388,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -5551,7 +7399,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA, INDEC y REM · cálculo propio",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -5562,7 +7410,29 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA, INDEC y REM · cálculo propio",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
+"frescura": "vigente"
+},
+{
+"id": "tasa_documentos",
+"nombre": "Tasa de documentos a sola firma",
+"descripcion": "Promedio mensual de los documentos a sola firma en pesos a tasa fija, % nominal anual",
+"panel": "Tasas y riesgo país",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-09-30",
+"frescura": "vigente"
+},
+{
+"id": "tasa_hipotecarios_fija",
+"nombre": "Tasa de hipotecarios a tasa fija",
+"descripcion": "Promedio mensual de los préstamos hipotecarios en pesos a tasa fija, % nominal anual",
+"panel": "Tasas y riesgo país",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-09-30",
 "frescura": "vigente"
 },
 {
@@ -5584,7 +7454,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -5595,7 +7465,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -5606,7 +7476,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA, INDEC y REM · cálculo propio",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -5617,7 +7487,18 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA, INDEC y REM · cálculo propio",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
+"frescura": "vigente"
+},
+{
+"id": "tasa_prendarios",
+"nombre": "Tasa de préstamos prendarios",
+"descripcion": "Promedio mensual de los préstamos prendarios en pesos a tasa fija, % nominal anual",
+"panel": "Tasas y riesgo país",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-09-30",
 "frescura": "vigente"
 },
 {
@@ -5628,7 +7509,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -5639,7 +7520,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA, INDEC y REM · cálculo propio",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -5650,7 +7531,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA, INDEC y REM · cálculo propio",
-"ultimo_periodo": "2026-10-15",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -5672,7 +7553,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-19",
+"ultimo_periodo": "2026-10-21",
 "frescura": "vigente"
 },
 {
@@ -5683,7 +7564,29 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-10-19",
+"ultimo_periodo": "2026-10-21",
+"frescura": "vigente"
+},
+{
+"id": "tc_bna_en_el_mes",
+"nombre": "Dólar BNA var. en el mes",
+"descripcion": "Variación en lo que va del mes de la serie «Dólar BNA» (BNA vía ArgentinaDatos), contra el último dato del mes anterior, en %",
+"panel": "Cambiario y reservas",
+"unidad": "pct",
+"frecuencia": "D",
+"fuente": "BNA vía ArgentinaDatos",
+"ultimo_periodo": "2026-10-21",
+"frescura": "vigente"
+},
+{
+"id": "tc_bna_interanual",
+"nombre": "Dólar BNA var. interanual",
+"descripcion": "Variación interanual de la serie «Dólar BNA» (BNA vía ArgentinaDatos), contra el último dato hasta el mismo día del año anterior, en %",
+"panel": "Cambiario y reservas",
+"unidad": "pct",
+"frecuencia": "D",
+"fuente": "BNA vía ArgentinaDatos",
+"ultimo_periodo": "2026-10-21",
 "frescura": "vigente"
 },
 {
@@ -5694,7 +7597,29 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-19",
+"ultimo_periodo": "2026-10-21",
+"frescura": "vigente"
+},
+{
+"id": "tc_ccl_en_el_mes",
+"nombre": "Dólar contado con liquidación var. en el mes",
+"descripcion": "Variación en lo que va del mes de la serie «Dólar contado con liquidación» (ArgentinaDatos), contra el último dato del mes anterior, en %",
+"panel": "Cambiario y reservas",
+"unidad": "pct",
+"frecuencia": "D",
+"fuente": "ArgentinaDatos",
+"ultimo_periodo": "2026-10-21",
+"frescura": "vigente"
+},
+{
+"id": "tc_ccl_interanual",
+"nombre": "Dólar contado con liquidación var. interanual",
+"descripcion": "Variación interanual de la serie «Dólar contado con liquidación» (ArgentinaDatos), contra el último dato hasta el mismo día del año anterior, en %",
+"panel": "Cambiario y reservas",
+"unidad": "pct",
+"frecuencia": "D",
+"fuente": "ArgentinaDatos",
+"ultimo_periodo": "2026-10-21",
 "frescura": "vigente"
 },
 {
@@ -5705,7 +7630,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-19",
+"ultimo_periodo": "2026-10-21",
 "frescura": "vigente"
 },
 {
@@ -5738,7 +7663,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-16",
+"ultimo_periodo": "2026-10-20",
 "frescura": "vigente"
 },
 {
@@ -5750,6 +7675,17 @@
 "frecuencia": "A",
 "fuente": "BCRA",
 "ultimo_periodo": "2026-01-01",
+"frescura": "vigente"
+},
+{
+"id": "tc_mayorista_en_el_mes",
+"nombre": "Tipo de cambio mayorista var. en el mes",
+"descripcion": "Variación en lo que va del mes de la serie «Tipo de cambio mayorista» (BCRA), contra el último dato del mes anterior, en %",
+"panel": "Cambiario y reservas",
+"unidad": "pct",
+"frecuencia": "D",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-20",
 "frescura": "vigente"
 },
 {
@@ -5771,7 +7707,18 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-10-13",
+"ultimo_periodo": "2026-10-15",
+"frescura": "vigente"
+},
+{
+"id": "tc_mayorista_interanual",
+"nombre": "Tipo de cambio mayorista var. interanual",
+"descripcion": "Variación interanual de la serie «Tipo de cambio mayorista» (BCRA), contra el último dato hasta el mismo día del año anterior, en %",
+"panel": "Cambiario y reservas",
+"unidad": "pct",
+"frecuencia": "D",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-20",
 "frescura": "vigente"
 },
 {
@@ -5782,7 +7729,29 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-19",
+"ultimo_periodo": "2026-10-21",
+"frescura": "vigente"
+},
+{
+"id": "tc_mep_en_el_mes",
+"nombre": "Dólar MEP var. en el mes",
+"descripcion": "Variación en lo que va del mes de la serie «Dólar MEP» (ArgentinaDatos), contra el último dato del mes anterior, en %",
+"panel": "Cambiario y reservas",
+"unidad": "pct",
+"frecuencia": "D",
+"fuente": "ArgentinaDatos",
+"ultimo_periodo": "2026-10-21",
+"frescura": "vigente"
+},
+{
+"id": "tc_mep_interanual",
+"nombre": "Dólar MEP var. interanual",
+"descripcion": "Variación interanual de la serie «Dólar MEP» (ArgentinaDatos), contra el último dato hasta el mismo día del año anterior, en %",
+"panel": "Cambiario y reservas",
+"unidad": "pct",
+"frecuencia": "D",
+"fuente": "ArgentinaDatos",
+"ultimo_periodo": "2026-10-21",
 "frescura": "vigente"
 },
 {
@@ -5793,7 +7762,29 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-16",
+"ultimo_periodo": "2026-10-20",
+"frescura": "vigente"
+},
+{
+"id": "tc_minorista_en_el_mes",
+"nombre": "Tipo de cambio minorista var. en el mes",
+"descripcion": "Variación en lo que va del mes de la serie «Tipo de cambio minorista» (BCRA), contra el último dato del mes anterior, en %",
+"panel": "Cambiario y reservas",
+"unidad": "pct",
+"frecuencia": "D",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-20",
+"frescura": "vigente"
+},
+{
+"id": "tc_minorista_interanual",
+"nombre": "Tipo de cambio minorista var. interanual",
+"descripcion": "Variación interanual de la serie «Tipo de cambio minorista» (BCRA), contra el último dato hasta el mismo día del año anterior, en %",
+"panel": "Cambiario y reservas",
+"unidad": "pct",
+"frecuencia": "D",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-20",
 "frescura": "vigente"
 },
 {
@@ -5802,6 +7793,28 @@
 "descripcion": "Precios de exportación sobre precios de importación, base 2004 = 100",
 "panel": "Comercio exterior",
 "unidad": "indice",
+"frecuencia": "Q",
+"fuente": "INDEC — Índices de precios y cantidades del comercio exterior",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "terminos_intercambio_interanual",
+"nombre": "Términos del intercambio var. interanual",
+"descripcion": "Variación interanual de la serie «Términos del intercambio» (INDEC — Índices de precios y cantidades del comercio exterior), contra el mismo trimestre del año anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC — Índices de precios y cantidades del comercio exterior",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "terminos_intercambio_trimestral",
+"nombre": "Términos del intercambio var. trimestral",
+"descripcion": "Variación trimestral de la serie «Términos del intercambio» (INDEC — Índices de precios y cantidades del comercio exterior), contra el trimestre anterior, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
 "frecuencia": "Q",
 "fuente": "INDEC — Índices de precios y cantidades del comercio exterior",
 "ultimo_periodo": "2026-04-01",
@@ -5841,6 +7854,17 @@
 "frescura": "vigente"
 },
 {
+"id": "turistas_no_residentes_aereo_desest_interanual",
+"nombre": "Llegadas de turistas no residentes por avión desest. var. interanual",
+"descripcion": "Variación interanual de la serie «Llegadas de turistas no residentes por avión desest.» (INDEC — Estadísticas de turismo internacional), contra el mismo mes del año anterior, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — Estadísticas de turismo internacional",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
 "id": "turistas_no_residentes_aereo_desest_mensual",
 "nombre": "Llegadas de turistas no residentes por avión desest. var. mensual",
 "descripcion": "Variación mensual de las llegadas de turistas no residentes por vía aérea internacional, sobre la serie desestacionalizada por INDEC, en %",
@@ -5855,6 +7879,17 @@
 "id": "turistas_no_residentes_interanual",
 "nombre": "Llegadas de turistas no residentes var. interanual",
 "descripcion": "Variación interanual de las llegadas de turistas no residentes por todas las vías (INDEC, ETI), contra el mismo mes del año anterior, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — Estadísticas de turismo internacional",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "turistas_no_residentes_mensual",
+"nombre": "Llegadas de turistas no residentes var. mensual",
+"descripcion": "Variación mensual de la serie «Llegadas de turistas no residentes» (INDEC — Estadísticas de turismo internacional), contra el mes anterior, en %",
 "panel": "Actividad",
 "unidad": "pct",
 "frecuencia": "M",
@@ -5885,6 +7920,17 @@
 "frescura": "vigente"
 },
 {
+"id": "turistas_residentes_aereo_desest_interanual",
+"nombre": "Salidas de turistas residentes por avión desest. var. interanual",
+"descripcion": "Variación interanual de la serie «Salidas de turistas residentes por avión desest.» (INDEC — Estadísticas de turismo internacional), contra el mismo mes del año anterior, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — Estadísticas de turismo internacional",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
 "id": "turistas_residentes_aereo_desest_mensual",
 "nombre": "Salidas de turistas residentes por avión desest. var. mensual",
 "descripcion": "Variación mensual de las salidas al exterior de turistas residentes por vía aérea internacional, sobre la serie desestacionalizada por INDEC, en %",
@@ -5903,6 +7949,72 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — Estadísticas de turismo internacional",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "turistas_residentes_mensual",
+"nombre": "Salidas de turistas residentes var. mensual",
+"descripcion": "Variación mensual de la serie «Salidas de turistas residentes» (INDEC — Estadísticas de turismo internacional), contra el mes anterior, en %",
+"panel": "Actividad",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INDEC — Estadísticas de turismo internacional",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "yerba_exportaciones",
+"nombre": "Exportaciones de yerba mate",
+"descripcion": "Yerba mate con destino al mercado externo, toneladas (INYM). Volumen declarado por los molinos, no valor en dólares",
+"panel": "Agro y pesca",
+"unidad": "toneladas",
+"frecuencia": "M",
+"fuente": "INYM — Estadísticas del sector yerbatero",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "yerba_exportaciones_desest",
+"nombre": "Exportaciones de yerba mate desest. (propia)",
+"descripcion": "Serie desestacionalizada por Monitor Argy (X-13 con calendario argentino)",
+"panel": "Agro y pesca",
+"unidad": "toneladas",
+"frecuencia": "M",
+"fuente": "INYM — Estadísticas del sector yerbatero · desest. propia (X-13)",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "yerba_exportaciones_desest_mensual",
+"nombre": "Exportaciones de yerba mate desest. var. mensual",
+"descripcion": "Variación mensual de las exportaciones de yerba mate en toneladas (INYM), sobre la serie desestacionalizada por Monitor Argy (X-13 con calendario argentino), en %",
+"panel": "Agro y pesca",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INYM — Estadísticas del sector yerbatero · desest. propia (X-13)",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "yerba_exportaciones_interanual",
+"nombre": "Exportaciones de yerba mate var. interanual",
+"descripcion": "Variación interanual de las exportaciones de yerba mate en toneladas (INYM), contra el mismo mes del año anterior, sobre la serie original, en %",
+"panel": "Agro y pesca",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INYM — Estadísticas del sector yerbatero",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "yerba_exportaciones_mensual",
+"nombre": "Exportaciones de yerba mate var. mensual",
+"descripcion": "Variación mensual de la serie «Exportaciones de yerba mate» (INYM — Estadísticas del sector yerbatero), contra el mes anterior, en %",
+"panel": "Agro y pesca",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "INYM — Estadísticas del sector yerbatero",
 "ultimo_periodo": "2026-08-01",
 "frescura": "vigente"
 },

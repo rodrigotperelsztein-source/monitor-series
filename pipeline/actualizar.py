@@ -426,7 +426,9 @@ def main() -> int:
         # Aviso: una publicación prevista para hoy o ayer que no entró.
         for fid, fuente in FUENTES.items():
             previstas = calendario.fechas(getattr(fuente, "CALENDARIO", ""), cal)
-            recientes = [f for f in previstas if hoy - timedelta(days=1) <= f <= hoy]
+            # Lo previsto para hoy cuenta recién a la noche (una corrida manual de la mañana no es atraso).
+            tope = hoy if momento.astimezone(TZ).hour >= 20 else hoy - timedelta(days=1)
+            recientes = [f for f in previstas if hoy - timedelta(days=1) <= f <= tope]
             if recientes and (fecha_cambio(fid) or date.min) < recientes[-1]:
                 fallas += 1
                 print(f"AVISO: INDEC tenía previsto publicar {fid} el {recientes[-1]:%d/%m} y el dato todavía no entró.")

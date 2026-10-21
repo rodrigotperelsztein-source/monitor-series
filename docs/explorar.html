@@ -449,7 +449,7 @@ function dibujar() {
   $("gtitulo").textContent = series.length === 1 ? series[0].meta.nombre : pre ? `${pre} · ${series.length} series` : `${series.length} series`;
 
   const comunes = { backgroundColor: "transparent", textStyle: { fontFamily: getComputedStyle(document.body).fontFamily }, animationDuration: 700, animationEasing: "cubicOut" };
-  if (E.tipo === "pie") return dibujarTorta(series, fin, comunes);
+  if (E.tipo === "pie") return dibujarTorta(series, ini, fin, comunes);
 
   const ejeDe = s => unidades.length === 2 && unidadMostrada(s.meta) === unidades[1] ? 1 : 0;
   const ejesY = (unidades.length === 2 ? unidades : [unidades.length === 1 ? unidades[0] : ""]).map((u, i) => ({
@@ -503,20 +503,32 @@ function dibujar() {
   lectura();
 }
 
-function dibujarTorta(series, fin, comunes) {
-  // Valor de cada serie en la última fecha común dentro del período (o su último dato).
-  const fechas = series.map(s => new Set(s.vista.filter(p => p[0] <= fin).map(p => p[0])));
-  const comun = [...fechas[0]].filter(f => fechas.every(x => x.has(f))).sort().pop();
-  const valores = series.map(s => { const m = new Map(s.vista); const f = comun || s.vista.filter(p => p[0] <= fin).pop()?.[0]; return { f, v: m.get(f) }; });
+function dibujarTorta(series, ini, fin, comunes) {
+  // La torta reparte el período elegido: suma, promedio o último valor de cada serie entre "desde" y "hasta",
+  // según el cálculo elegido. Usa los valores originales (agrupados), no las variaciones.
+  const hasta = E.hasta ? ultimoDelMes(fin) : fin;
+  const dentro = f => (E.rango > 0 && !E.desde ? f > ini : f >= ini) && f <= hasta;
+  const valores = series.map(s => {
+    const p = s.datos.filter(x => dentro(x[0]));
+    if (!p.length) return { v: 0, n: 0 };
+    const vs = p.map(x => x[1]);
+    const v = E.fn === "sum" ? vs.reduce((a, b) => a + b, 0) : E.fn === "last" ? vs[vs.length - 1] : vs.reduce((a, b) => a + b, 0) / vs.length;
+    return { v, n: p.length, f0: p[0][0], f1: p[p.length - 1][0] };
+  });
   const total = valores.reduce((a, b) => a + (b.v > 0 ? b.v : 0), 0);
-  $("gtitulo").textContent = `Composición · ${comun ? fmtFecha(comun, E.agr !== "orig" ? E.agr : series[0].meta.frec) : "último dato"}`;
+  const frec = E.agr !== "orig" ? E.agr : series[0].meta.frec;
+  const con = valores.filter(x => x.n);
+  const f0 = con.map(x => x.f0).sort()[0], f1 = con.map(x => x.f1).sort().pop();
+  const calc = { sum: "suma", mean: "promedio", last: "último dato" }[E.fn];
+  $("gtitulo").textContent = !con.length ? "Sin datos en el período" : E.fn === "last" ? `Composición · ${fmtFecha(f1, frec)}`
+    : f0 === f1 ? `Composición · ${fmtFecha(f0, frec)}` : `Composición · ${fmtFecha(f0, frec)} a ${fmtFecha(f1, frec)} (${calc})`;
   chart.setOption({
     ...comunes,
     tooltip: { trigger: "item", backgroundColor: "rgba(8,20,34,.94)", borderColor: "rgba(95,208,255,.35)", textStyle: { color: "#e8f1fa" },
       formatter: p => `${p.marker}${esc(p.name)}<br><b>${fmtValor(p.value)}</b> · ${nf(p.percent, 1)}%` },
     legend: { bottom: 0, type: "scroll", textStyle: { color: "#cfdceb" }, icon: "circle" },
     graphic: [{ type: "text", left: "center", top: "41%", style: { text: fmtValor(total), fill: "#fff", font: "700 24px ui-monospace, monospace", textAlign: "center" } },
-              { type: "text", left: "center", top: "49%", style: { text: "total", fill: "#93a8bd", font: "12px system-ui", textAlign: "center" } }],
+              { type: "text", left: "center", top: "49%", style: { text: E.fn === "mean" ? "promedio" : "total", fill: "#93a8bd", font: "12px system-ui", textAlign: "center" } }],
     series: [{ type: "pie", radius: ["46%", "72%"], center: ["50%", "46%"], padAngle: 2, itemStyle: { borderRadius: 8, borderColor: "#060e18", borderWidth: 2 },
       label: { color: "#cfdceb", formatter: p => `${nf(p.percent, 1)}%` }, labelLine: { lineStyle: { color: "rgba(140,190,240,.35)" } },
       data: series.map((s, i) => ({ name: s.corto, value: valores[i].v > 0 ? valores[i].v : 0, itemStyle: { color: s.color } })) }],
@@ -623,7 +635,7 @@ const EJEMPLOS = [
   { t: "Viajes en transporte público", d: "SUBE AMBA e interior, var. % interanual", sel: ["sube.amba", "sube.interior"], tipo: "bar", transf: "ia", agr: "M", fn: "sum", rango: 2 },
   { t: "Inflación mensual", d: "IPC nacional, nivel general", sel: ["ipc.nacional_nivel_general_var_m"], tipo: "bar", transf: "nivel", agr: "orig", fn: "mean", rango: 3 },
   { t: "Sectores del EMAE", d: "Industria, construcción, comercio y agro, base 100", sel: ["emae_letras_desest.d_industria", "emae_letras_desest.f_construccion", "emae_letras_desest.g_comercio", "emae_letras_desest.a_agro"], tipo: "line", transf: "base100", agr: "orig", fn: "mean", rango: 5 },
-  { t: "Composición de la carga a puertos", d: "Torta del último mes completo, por grano", sel: ["camiones_puertos.soja", "camiones_puertos.maiz", "camiones_puertos.trigo", "camiones_puertos.girasol", "camiones_puertos.cebada", "camiones_puertos.sorgo"], tipo: "pie", transf: "nivel", agr: "M", fn: "sum", rango: 0 },
+  { t: "Composición de la carga a puertos", d: "Torta del período elegido, por grano", sel: ["camiones_puertos.soja", "camiones_puertos.maiz", "camiones_puertos.trigo", "camiones_puertos.girasol", "camiones_puertos.cebada", "camiones_puertos.sorgo"], tipo: "pie", transf: "nivel", agr: "M", fn: "sum", rango: 1 },
 ];
 $("ejemplos").innerHTML = EJEMPLOS.map((e, i) => `<button class="ej" data-ej="${i}"><b>${esc(e.t)}</b><span>${esc(e.d)}</span></button>`).join("");
 $("ejemplos").addEventListener("click", ev => {

@@ -406,12 +406,13 @@ in
     Tipos`;
 
 const XLS1 = null;  // en Excel se usa el mismo parámetro que en Power BI
-const XLS2 = CODE2.replace(/in\n    Tipos$/, `    // Una columna por serie (más cómodo en Excel)
+const XLS2 = CODE2.replace(/\)\nin\n    Tipos$/, `),
+    // Una columna por serie (más cómodo en Excel)
     Ancha = Table.Pivot(Table.SelectColumns(Tipos, {"fecha", "id_serie", "valor"}),
         List.Distinct(Tipos[id_serie]), "id_serie", "valor"),
     Orden = Table.Sort(Ancha, {{"fecha", Order.Ascending}})
 in
-    Orden`).replace("    Tipos = Table.TransformColumnTypes", "    Tipos = Table.TransformColumnTypes");
+    Orden`);
 function codigoPython() {
   const ids = sel.length ? sel : ["emae.desest"];
   return `import pandas as pd

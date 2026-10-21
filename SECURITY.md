@@ -9,7 +9,7 @@ credenciales, no recibe datos de quienes lo usan y no necesita acceso a ninguna 
 |---|---|
 | Quién escribe | Solo el workflow *Actualizar series* (GitHub Actions) y los responsables del repositorio. |
 | Qué escribe | Solo archivos dentro de `data/`; el workflow frena si hay cambios en otra carpeta. |
-| Qué baja | Archivos de organismos públicos (INDEC, CAMMESA, EIA de EE.UU., Secretaría de Agricultura, Secretaría de Transporte, Seguridad Social) y el catálogo de Monitor Argy. Corre en los servidores de GitHub, no en equipos de la empresa. |
+| Qué baja | Archivos de organismos públicos (INDEC, CAMMESA, EIA de EE.UU., Secretaría de Energía, Secretaría de Agricultura, Secretaría de Transporte, Seguridad Social) y el catálogo de Monitor Argy. Corre en los servidores de GitHub, no en equipos de la empresa. |
 | Qué publica | CSV y Excel con números, fechas y nombres de series; JSON con metadatos; una página estática (`docs/`). |
 | Qué hace quien consume | Solo **lee** por HTTPS archivos públicos. No envía datos, no usa usuario ni contraseña, no ejecuta código del repositorio. |
 

@@ -113,6 +113,11 @@ ol.hint { padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
 .toast { font-size: 12px; color: var(--ok); min-height: 1em; }
 .error { color: var(--bad); }
 details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
+.seg { display: flex; flex-wrap: wrap; gap: 4px; padding: 3px; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }
+.seg button { flex: 1 1 auto; font: inherit; font-size: 12.5px; font-weight: 600; padding: 6px 8px; border: 0; border-radius: 6px; background: none; color: var(--muted); cursor: pointer; }
+.seg button[aria-selected="true"] { background: var(--surface); color: var(--accent); box-shadow: 0 1px 2px rgba(0,0,0,.08); }
+.panel { display: flex; flex-direction: column; gap: 8px; }
+.panel[hidden] { display: none; }
 </style>
 </head>
 <body>
@@ -190,22 +195,68 @@ details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
           <li><i>Cerrar y aplicar</i> (o <i>Actualizar</i>).</li>
         </ol>
       </div>
-      <div class="card">
-        <details id="setup">
-          <summary>Primera vez: armar las consultas en Power BI</summary>
-          <ol class="hint" style="margin-top:10px">
-            <li><i>Obtener datos &gt; Consulta en blanco &gt; Editor avanzado</i>, pegá el código 1 y llamá a la consulta <code>SeriesElegidas</code>. Queda como parámetro, con las series que tenés elegidas ahora.</li>
+      <div class="card" id="usar">
+        <h2>Usar las series elegidas</h2>
+        <div class="seg" role="tablist" aria-label="Herramienta">
+          <button role="tab" data-p="pbi" aria-selected="true">Power BI</button>
+          <button role="tab" data-p="xls" aria-selected="false">Excel</button>
+          <button role="tab" data-p="py" aria-selected="false">Python</button>
+          <button role="tab" data-p="gs" aria-selected="false">Sheets</button>
+          <button role="tab" data-p="url" aria-selected="false">Links</button>
+        </div>
+
+        <div class="panel" data-p="pbi">
+          <p class="hint">Se arma una vez. Después, para cambiar de series, se pega la lista nueva en el parámetro.</p>
+          <ol class="hint">
+            <li><i>Obtener datos &gt; Consulta en blanco &gt; Editor avanzado</i>: pegá el código 1 y llamá a la consulta <code>SeriesElegidas</code>. Queda como parámetro.</li>
             <li>Otra consulta en blanco con el código 2; llamala <code>Datos</code>. Devuelve <code>fecha</code>, <code>id_serie</code>, <code>serie</code>, <code>unidad</code> y <code>valor</code>.</li>
-            <li>Si Power BI pregunta cómo conectarse, elegí <b>Anónimo</b>. Si avisa de niveles de privacidad, marcá los dos orígenes como <b>Público</b>.</li>
+            <li>Conexión <b>Anónima</b>; si pregunta por privacidad, los dos orígenes como <b>Público</b>.</li>
           </ol>
           <h3>1 · SeriesElegidas (parámetro)</h3>
           <pre id="code1"></pre>
-          <div class="btns"><button class="btn sec" id="copy1">Copiar código 1</button></div>
+          <div class="btns"><button class="btn sec" data-copy="code1">Copiar código 1</button></div>
           <h3>2 · Datos</h3>
           <pre id="code2"></pre>
-          <div class="btns"><button class="btn sec" id="copy2">Copiar código 2</button></div>
-          <div class="toast" id="toast2" role="status"></div>
-        </details>
+          <div class="btns"><button class="btn sec" data-copy="code2">Copiar código 2</button></div>
+        </div>
+
+        <div class="panel" data-p="xls" hidden>
+          <p class="hint">Un dato vivo en tu planilla: la lista de series va en una celda, y con <i>Datos &gt; Actualizar todo</i> (o al abrir el archivo) se traen los valores nuevos.</p>
+          <ol class="hint">
+            <li>Pegá la lista de series en una celda y dale el nombre <code>SeriesElegidas</code> (cuadro de nombres, a la izquierda de la barra de fórmulas).</li>
+            <li><i>Datos &gt; Obtener datos &gt; De otras fuentes &gt; Consulta en blanco &gt; Editor avanzado</i>: pegá el código 1 y llamá a la consulta <code>SeriesElegidas</code>.</li>
+            <li>Otra consulta en blanco con el código 2; llamala <code>Datos</code>. Trae una columna por serie, con la fecha en la primera.</li>
+            <li><i>Inicio &gt; Cerrar y cargar en…</i> &gt; Tabla, en la hoja que quieras. Tus fórmulas pueden apuntar a esa tabla.</li>
+            <li>Para que se actualice sola: <i>Datos &gt; Consultas y conexiones</i>, clic derecho en <code>Datos</code> &gt; <i>Propiedades</i> &gt; <b>Actualizar al abrir el archivo</b> (y, si querés, cada tantos minutos).</li>
+            <li>Si Excel avisa de niveles de privacidad: <i>Datos &gt; Obtener datos &gt; Opciones de consulta &gt; Privacidad</i> &gt; <b>Ignorar los niveles de privacidad</b> en este libro.</li>
+          </ol>
+          <h3>1 · SeriesElegidas (lee la celda)</h3>
+          <pre id="xls1"></pre>
+          <div class="btns"><button class="btn sec" data-copy="xls1">Copiar código 1</button></div>
+          <h3>2 · Datos (una columna por serie)</h3>
+          <pre id="xls2"></pre>
+          <div class="btns"><button class="btn sec" data-copy="xls2">Copiar código 2</button></div>
+          <p class="hint">Para una sola serie alcanza con <i>Datos &gt; Desde la web</i> y el link de la pestaña <i>Links</i>.</p>
+        </div>
+
+        <div class="panel" data-p="py" hidden>
+          <p class="hint">Con pandas: cada serie del repositorio es un CSV con <code>fecha</code> y <code>valor</code>; las de Monitor Argy salen de su API. El código ya trae las series elegidas.</p>
+          <pre id="py"></pre>
+          <div class="btns"><button class="btn sec" data-copy="py">Copiar código</button></div>
+        </div>
+
+        <div class="panel" data-p="gs" hidden>
+          <p class="hint">Una fórmula por serie (solo las del repositorio). Se actualiza sola cada tantas horas. Si los números aparecen como texto, poné la configuración regional de la hoja en Estados Unidos (<i>Archivo &gt; Configuración</i>).</p>
+          <pre id="gs"></pre>
+          <div class="btns"><button class="btn sec" data-copy="gs">Copiar fórmulas</button></div>
+        </div>
+
+        <div class="panel" data-p="url" hidden>
+          <p class="hint">Link fijo de cada serie elegida: siempre apunta a la última versión. Sirve para cualquier herramienta que lea CSV o JSON desde la web.</p>
+          <pre id="urls"></pre>
+          <div class="btns"><button class="btn sec" data-copy="urls">Copiar links</button></div>
+        </div>
+        <div class="toast" id="toast2" role="status"></div>
       </div>
     </aside>
   </div>
@@ -353,6 +404,61 @@ const CODE2 = `let
 in
     Tipos`;
 
+const XLS1 = `let
+    Celda = Excel.CurrentWorkbook(){[Name = "SeriesElegidas"]}[Content],
+    Texto = Text.From(Celda{0}[Column1])
+in
+    Texto`;
+const XLS2 = CODE2.replace(/in\n    Tipos$/, `    // Una columna por serie (más cómodo en Excel)
+    Ancha = Table.Pivot(Table.SelectColumns(Tipos, {"fecha", "id_serie", "valor"}),
+        List.Distinct(Tipos[id_serie]), "id_serie", "valor"),
+    Orden = Table.Sort(Ancha, {{"fecha", Order.Ascending}})
+in
+    Orden`).replace("    Tipos = Table.TransformColumnTypes", "    Tipos = Table.TransformColumnTypes");
+function codigoPython() {
+  const ids = sel.length ? sel : ["emae.desest"];
+  return `import pandas as pd
+import requests
+
+BASE = "${RAW}/data/series/"
+
+
+def serie(id_serie: str) -> pd.Series:
+    """Una serie como pandas.Series con índice de fechas."""
+    if id_serie.startswith("ma:"):  # Monitor Argy
+        r = requests.get(f"https://monitorargy.com/api/v1/series/{id_serie[3:]}", timeout=60)
+        r.raise_for_status()
+        puntos = pd.DataFrame(r.json()["puntos"])
+        s = pd.Series(puntos["valor"].values, index=pd.to_datetime(puntos["fecha"].str[:10]))
+    else:  # repositorio monitor-series
+        s = pd.read_csv(BASE + id_serie + ".csv", parse_dates=["fecha"], index_col="fecha")["valor"]
+    return s.rename(id_serie)
+
+
+ids = [
+${ids.map(i => `    "${i}",`).join("\n")}
+]
+datos = pd.concat([serie(i) for i in ids], axis=1, sort=True)  # una columna por serie
+catalogo = pd.read_csv("${RAW}/data/todas/series.csv")  # nombres, unidades y fuentes
+print(datos.tail())
+`;
+}
+function formulasSheets() {
+  const ids = sel.filter(i => !i.startsWith("ma:"));
+  if (!ids.length) return "Elegí series del repositorio (las de Monitor Argy no se pueden leer con IMPORTDATA).";
+  return ids.map(i => `=IMPORTDATA("${RAW}/data/series/${i}.csv")`).join("\n");
+}
+function links() {
+  if (!sel.length) return "—";
+  return sel.map(i => i.startsWith("ma:") ? `https://monitorargy.com/api/v1/series/${i.slice(3)}` : `${RAW}/data/series/${i}.csv`).join("\n");
+}
+document.querySelectorAll(".seg button").forEach(b => b.onclick = () => {
+  document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-selected", x === b));
+  document.querySelectorAll(".panel").forEach(p => p.hidden = p.dataset.p !== b.dataset.p);
+});
+document.querySelectorAll("[data-copy]").forEach(b => b.onclick = () =>
+  copiar($(b.dataset.copy).textContent, "toast2", "Copiado."));
+
 function update() {
   try { localStorage.setItem("selector-series", JSON.stringify(sel)); } catch (e) {}
   $("nsel").textContent = sel.length;
@@ -362,6 +468,11 @@ function update() {
   $("lista").textContent = lista() || "—";
   $("code1").textContent = code1();
   $("code2").textContent = CODE2;
+  $("xls1").textContent = XLS1;
+  $("xls2").textContent = XLS2;
+  $("py").textContent = codigoPython();
+  $("gs").textContent = formulasSheets();
+  $("urls").textContent = links();
   $("copylista").disabled = $("clear").disabled = !sel.length;
 }
 $("selected").addEventListener("click", e => {
@@ -379,8 +490,6 @@ function copiar(texto, toast, msg) {
   try { navigator.clipboard.writeText(texto).then(ok, plan_b); } catch (e) { plan_b(); }
 }
 $("copylista").onclick = () => copiar(lista(), "toast1", "Lista copiada. Pegala en el parámetro SeriesElegidas.");
-$("copy1").onclick = () => copiar(code1(), "toast2", "Código 1 copiado.");
-$("copy2").onclick = () => copiar(CODE2, "toast2", "Código 2 copiado.");
 
 // ---------- Ticker con los últimos datos reales ----------
 const TICKER = [

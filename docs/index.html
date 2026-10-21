@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selector de series</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Herramienta de dos columnas: catálogo filtrable a la izquierda; selección y código para Power BI a la derecha. */
+:root {
+  --bg: #f6f8fa; --surface: #ffffff; --ink: #142233; --muted: #5b6b7d; --line: #d9e1e9;
+  --accent: #2f6fae; --accent-soft: #e3eef8; --code-bg: #0f1b29; --code-ink: #dbe7f3;
+  --ok: #2e7d4f; --warn: #a86b00; --bad: #b3261e;
+  --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d151e; --surface: #142130; --ink: #e4ecf4; --muted: #93a4b6; --line: #24364a;
+    --accent: #7db4e6; --accent-soft: #1b3249; --code-bg: #070d14; --code-ink: #d3e2f0;
+    --ok: #6cc596; --warn: #e2b04a; --bad: #f08a80; color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.45 var(--f-body);
+  padding: 20px max(16px, env(safe-area-inset-right, 0px)) 40px max(16px, env(safe-area-inset-left, 0px)); }
+.wrap { max-width: 1320px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+header h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -0.01em; }
+header p { margin: 0; color: var(--muted); max-width: 80ch; }
+.grid { display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 16px; align-items: start; }
+@media (max-width: 960px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); }
+.tab { font: inherit; font-weight: 600; padding: 8px 14px; border: 0; background: none; color: var(--muted);
+  border-bottom: 2px solid transparent; cursor: pointer; }
+.tab[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+.tab .n { font-weight: 400; font-variant-numeric: tabular-nums; margin-left: 4px; }
+.filters { display: flex; flex-direction: column; gap: 10px; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+input[type=search], select { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+input[type=search] { width: 100%; padding: 10px 12px; }
+select { padding: 5px 8px; font-size: 13px; max-width: 100%; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.count { color: var(--muted); font-size: 12.5px; }
+.tablewrap { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow: auto; max-height: 72vh; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; background: var(--surface); position: sticky; top: 0; z-index: 1; }
+tbody tr:hover, tr.sel { background: var(--accent-soft); }
+td.chk { width: 32px; }
+.nm { font-weight: 500; }
+.id { font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); word-break: break-all; }
+.desc { font-size: 12px; color: var(--muted); }
+td.meta { font-size: 12px; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.grp td { background: var(--bg); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; font-weight: 700; color: var(--accent); }
+.pill { display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+@media (max-width: 640px) { .hide-sm { display: none; } }
+aside { position: sticky; top: 12px; display: flex; flex-direction: column; gap: 12px; }
+@media (max-width: 960px) { aside { position: static; } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.card h2 { font-size: 14px; margin: 0; }
+.card h3 { font-size: 13px; margin: 4px 0 0; }
+.selected { display: flex; flex-wrap: wrap; gap: 6px; max-height: 200px; overflow-y: auto; }
+.tag { font-family: var(--f-mono); font-size: 11.5px; background: var(--accent-soft); border-radius: 4px; padding: 3px 4px 3px 7px; display: inline-flex; gap: 4px; align-items: center; }
+.tag button { border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 13px; padding: 0 3px; }
+.empty { color: var(--muted); font-size: 12.5px; }
+.btns { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn { font: inherit; font-size: 13px; font-weight: 600; padding: 7px 12px; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent); color: var(--surface); cursor: pointer; }
+.btn.sec { background: transparent; color: var(--accent); }
+.btn:disabled { opacity: .45; cursor: default; }
+pre { margin: 0; background: var(--code-bg); color: var(--code-ink); font: 11.5px/1.5 var(--f-mono); padding: 12px; border-radius: 6px; overflow: auto; max-height: 300px; white-space: pre; }
+.hint { font-size: 12.5px; color: var(--muted); margin: 0; }
+.hint code { font-family: var(--f-mono); font-size: 11.5px; }
+ol.hint { padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
+.toast { font-size: 12px; color: var(--ok); min-height: 1em; }
+.error { color: var(--bad); }
+details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Selector de series</h1>
+    <p>Elegí las series que querés llevar a Power BI. Las del repositorio <a href="https://github.com/rodrigotperelsztein-source/monitor-series">monitor-series</a> se leen de un archivo por serie; las de Monitor Argy, de su API. A la derecha queda la lista para pegar en el parámetro <code>SeriesElegidas</code>.</p>
+  </header>
+
+  <div class="grid">
+    <section class="filters" aria-label="Catálogo">
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" id="tab-propias" aria-selected="true">Repositorio<span class="n" id="n-propias"></span></button>
+        <button class="tab" role="tab" id="tab-ma" aria-selected="false">Monitor Argy<span class="n" id="n-ma"></span></button>
+      </div>
+      <input id="q" type="search" placeholder="Buscar por nombre, id o fuente (p. ej. «industria desest», «ripte», «sube amba»)" autocomplete="off">
+      <div class="row">
+        <span class="lbl" id="lbl-grupo">Fuente</span><select id="grupo" aria-labelledby="lbl-grupo"></select>
+        <span class="lbl">Frecuencia</span>
+        <select id="freq" aria-label="Frecuencia"><option value="">Todas</option><option value="D">Diaria</option><option value="M">Mensual</option><option value="Q">Trimestral</option><option value="S">Semestral</option><option value="A">Anual</option></select>
+        <span class="lbl" id="lbl-tipo">Tipo</span>
+        <select id="tipo" aria-labelledby="lbl-tipo"><option value="">Todos</option><option value="nivel">Niveles</option><option value="variacion">Variaciones</option></select>
+        <label class="count"><input type="checkbox" id="onlysel"> solo las elegidas</label>
+        <span class="count" id="count">Cargando…</span>
+      </div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th></th><th>Serie</th><th class="hide-sm">Unidad</th><th class="hide-sm">Frec.</th><th>Último dato</th></tr></thead>
+          <tbody id="rows"><tr><td colspan="5" class="empty">Cargando el catálogo…</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <aside>
+      <div class="card">
+        <h2>Elegidas (<span id="nsel">0</span>)</h2>
+        <div class="selected" id="selected"><span class="empty">Todavía no elegiste ninguna.</span></div>
+        <h3>Valor del parámetro <code>SeriesElegidas</code></h3>
+        <pre id="lista"></pre>
+        <div class="btns">
+          <button class="btn" id="copylista" disabled>Copiar la lista</button>
+          <button class="btn sec" id="clear" disabled>Vaciar</button>
+        </div>
+        <div class="toast" id="toast1" role="status"></div>
+        <ol class="hint">
+          <li>En Power BI: <i>Transformar datos &gt; Administrar parámetros</i> &gt; <code>SeriesElegidas</code>.</li>
+          <li>Pegá la lista en <i>Valor actual</i> y aceptá.</li>
+          <li><i>Cerrar y aplicar</i> (o <i>Actualizar</i>).</li>
+        </ol>
+      </div>
+      <div class="card">
+        <details id="setup">
+          <summary>Primera vez: armar las consultas en Power BI</summary>
+          <ol class="hint" style="margin-top:10px">
+            <li><i>Obtener datos &gt; Consulta en blanco &gt; Editor avanzado</i>, pegá el código 1 y llamá a la consulta <code>SeriesElegidas</code>. Queda como parámetro, con las series que tenés elegidas ahora.</li>
+            <li>Otra consulta en blanco con el código 2; llamala <code>Datos</code>. Devuelve <code>fecha</code>, <code>id_serie</code>, <code>serie</code>, <code>unidad</code> y <code>valor</code>.</li>
+            <li>Si Power BI pregunta cómo conectarse, elegí <b>Anónimo</b>. Si avisa de niveles de privacidad, marcá los dos orígenes como <b>Público</b>.</li>
+          </ol>
+          <h3>1 · SeriesElegidas (parámetro)</h3>
+          <pre id="code1"></pre>
+          <div class="btns"><button class="btn sec" id="copy1">Copiar código 1</button></div>
+          <h3>2 · Datos</h3>
+          <pre id="code2"></pre>
+          <div class="btns"><button class="btn sec" id="copy2">Copiar código 2</button></div>
+          <div class="toast" id="toast2" role="status"></div>
+        </details>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<script>
+const RAW = "https://raw.githubusercontent.com/rodrigotperelsztein-source/monitor-series/main";
+const FREQ = { D: "Diaria", W: "Semanal", M: "Mensual", Q: "Trimestral", S: "Semestral", A: "Anual" };
+const $ = id => document.getElementById(id);
+const norm = s => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function parseCSV(text) {
+  const rows = []; let row = [], cell = "", q = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (q) { if (c === '"') { if (text[i + 1] === '"') { cell += '"'; i++; } else q = false; } else cell += c; }
+    else if (c === '"') q = true;
+    else if (c === ",") { row.push(cell); cell = ""; }
+    else if (c === "\n") { row.push(cell); rows.push(row); row = []; cell = ""; }
+    else if (c !== "\r") cell += c;
+  }
+  if (cell || row.length) { row.push(cell); rows.push(row); }
+  const head = rows.shift();
+  return rows.filter(r => r.length === head.length).map(r => Object.fromEntries(head.map((h, i) => [h, r[i]])));
+}
+
+const DATA = { propias: [], ma: [] };
+let vista = "propias";
+let sel = [];
+try { sel = JSON.parse(localStorage.getItem("selector-series") || "[]"); } catch (e) {}
+
+async function cargar() {
+  try {
+    const [csv, ma] = await Promise.all([
+      fetch(RAW + "/data/todas/series.csv").then(r => { if (!r.ok) throw new Error(r.status); return r.text(); }),
+      fetch(RAW + "/data/monitorargy/catalogo.json").then(r => r.ok ? r.json() : []).catch(() => []),
+    ]);
+    DATA.propias = parseCSV(csv).map(s => ({
+      id: s.id_serie, nombre: s.serie, grupo: s.fuente_nombre || s.fuente, tipo: s.tipo, unidad: s.unidad,
+      frec: s.frecuencia, ultimo: s.ultimo_periodo, desc: s.organismo,
+    }));
+    DATA.ma = ma.map(s => ({
+      id: "ma:" + s.id, nombre: s.nombre, grupo: s.panel, tipo: s.unidad === "pct" ? "variacion" : "nivel",
+      unidad: s.unidad, frec: s.frecuencia, ultimo: (s.ultimo_periodo || "").slice(0, 10), desc: s.fuente,
+      extra: s.descripcion,
+    }));
+    DATA.propias.concat(DATA.ma).forEach(s => s._q = norm([s.id, s.nombre, s.grupo, s.desc, s.extra].join(" ")));
+    $("n-propias").textContent = DATA.propias.length;
+    $("n-ma").textContent = DATA.ma.length;
+    const todos = new Set([...DATA.propias, ...DATA.ma].map(s => s.id));
+    sel = sel.filter(id => todos.has(id));
+    elegirVista("propias");
+    update();
+  } catch (e) {
+    $("rows").innerHTML = `<tr><td colspan="5" class="error">No pude leer el catálogo (${esc(e.message)}). Probá recargar la página.</td></tr>`;
+    $("count").textContent = "";
+  }
+}
+
+function elegirVista(v) {
+  vista = v;
+  $("tab-propias").setAttribute("aria-selected", v === "propias");
+  $("tab-ma").setAttribute("aria-selected", v === "ma");
+  $("lbl-grupo").textContent = v === "propias" ? "Fuente" : "Panel";
+  const grupos = [...new Set(DATA[v].map(s => s.grupo))].sort((a, b) => a.localeCompare(b, "es"));
+  $("grupo").innerHTML = `<option value="">Todas</option>` + grupos.map(g => `<option>${esc(g)}</option>`).join("");
+  render();
+}
+$("tab-propias").onclick = () => elegirVista("propias");
+$("tab-ma").onclick = () => elegirVista("ma");
+
+function render() {
+  const q = norm($("q").value).split(/\s+/).filter(Boolean);
+  const g = $("grupo").value, f = $("freq").value, t = $("tipo").value, only = $("onlysel").checked;
+  const lista = DATA[vista].filter(s => (!g || s.grupo === g) && (!f || s.frec === f) && (!t || s.tipo === t)
+    && (!only || sel.includes(s.id)) && q.every(w => s._q.includes(w)));
+  lista.sort((a, b) => a.grupo.localeCompare(b.grupo, "es") || 0);
+  $("count").textContent = `${lista.length} de ${DATA[vista].length}`;
+  const out = []; let last = null;
+  for (const s of lista.slice(0, 1500)) {
+    if (s.grupo !== last) { out.push(`<tr class="grp"><td colspan="5">${esc(s.grupo)}</td></tr>`); last = s.grupo; }
+    const on = sel.includes(s.id);
+    out.push(`<tr class="${on ? "sel" : ""}"><td class="chk"><input type="checkbox" id="c-${esc(s.id)}" data-id="${esc(s.id)}" ${on ? "checked" : ""} aria-label="Elegir ${esc(s.nombre)}"></td>
+      <td><label for="c-${esc(s.id)}"><div class="nm">${esc(s.nombre)} ${s.tipo === "variacion" ? '<span class="pill">var.</span>' : ""}</div>
+      <div class="id">${esc(s.id)}</div>${s.extra && s.extra !== s.nombre ? `<div class="desc">${esc(s.extra)}</div>` : ""}<div class="desc">${esc(s.desc)}</div></label></td>
+      <td class="meta hide-sm">${esc(s.unidad)}</td><td class="meta hide-sm">${esc(FREQ[s.frec] || s.frec)}</td><td class="meta">${esc(s.ultimo)}</td></tr>`);
+  }
+  $("rows").innerHTML = out.join("") || `<tr><td colspan="5" class="empty">No hay series con ese filtro.</td></tr>`;
+}
+$("rows").addEventListener("change", e => {
+  const id = e.target.dataset && e.target.dataset.id; if (!id) return;
+  if (e.target.checked) { if (!sel.includes(id)) sel.push(id); } else sel = sel.filter(x => x !== id);
+  e.target.closest("tr").classList.toggle("sel", e.target.checked);
+  update();
+});
+["q", "grupo", "freq", "tipo", "onlysel"].forEach(id => $(id).addEventListener(id === "q" ? "input" : "change", render));
+
+const lista = () => sel.join(", ");
+const code1 = () => `"${lista() || "emae.desest"}" meta [IsParameterQuery = true, Type = "Text", IsParameterQueryRequired = true]`;
+const CODE2 = `let
+    Raw = "https://raw.githubusercontent.com",
+    Repo = "rodrigotperelsztein-source/monitor-series/main/data/",
+    LeerCsv = (ruta as text) as table => Table.PromoteHeaders(
+        Csv.Document(Web.Contents(Raw, [RelativePath = Repo & ruta]),
+            [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+        [PromoteAllScalars = true]),
+    Ids = List.Select(List.Transform(Text.Split(SeriesElegidas, ","), Text.Trim), each _ <> ""),
+    Catalogo = LeerCsv("todas/series.csv"),
+
+    // Serie del repositorio: data/series/<id>.csv
+    Propia = (id as text) as table =>
+        let
+            Info = Table.SelectRows(Catalogo, each [id_serie] = id),
+            Fila = if Table.IsEmpty(Info) then error ("La serie " & id & " no está en el catálogo") else Info{0},
+            T = LeerCsv("series/" & id & ".csv"),
+            Con = Table.AddColumn(Table.AddColumn(Table.AddColumn(T,
+                "id_serie", each id), "serie", each Fila[serie]), "unidad", each Fila[unidad])
+        in
+            Con,
+
+    // Serie de Monitor Argy (ids con el prefijo "ma:")
+    MonitorArgy = (id as text) as table =>
+        let
+            R = Json.Document(Web.Contents("https://monitorargy.com",
+                [RelativePath = "api/v1/series/" & id])),
+            T = Table.FromRecords(R[puntos], {"fecha", "valor"}, MissingField.UseNull),
+            T2 = Table.TransformColumns(T, {{"fecha", each Text.Start(Text.From(_), 10)}}),
+            Con = Table.AddColumn(Table.AddColumn(Table.AddColumn(T2,
+                "id_serie", each "ma:" & id), "serie", each R[nombre]), "unidad", each R[unidad])
+        in
+            Con,
+
+    Tablas = List.Transform(Ids, each if Text.StartsWith(_, "ma:") then MonitorArgy(Text.Range(_, 3)) else Propia(_)),
+    Todo = Table.SelectColumns(Table.Combine(Tablas), {"fecha", "id_serie", "serie", "unidad", "valor"}),
+    Tipos = Table.TransformColumnTypes(Todo,
+        {{"fecha", type date}, {"id_serie", type text}, {"serie", type text},
+         {"unidad", type text}, {"valor", type number}}, "en-US")
+in
+    Tipos`;
+
+function update() {
+  try { localStorage.setItem("selector-series", JSON.stringify(sel)); } catch (e) {}
+  $("nsel").textContent = sel.length;
+  $("selected").innerHTML = sel.length
+    ? sel.map(id => `<span class="tag">${esc(id)}<button type="button" data-rm="${esc(id)}" aria-label="Quitar ${esc(id)}">×</button></span>`).join("")
+    : `<span class="empty">Todavía no elegiste ninguna.</span>`;
+  $("lista").textContent = lista() || "—";
+  $("code1").textContent = code1();
+  $("code2").textContent = CODE2;
+  $("copylista").disabled = $("clear").disabled = !sel.length;
+}
+$("selected").addEventListener("click", e => {
+  const id = e.target.dataset && e.target.dataset.rm; if (!id) return;
+  sel = sel.filter(x => x !== id); update(); render();
+});
+$("clear").onclick = () => { sel = []; update(); render(); };
+
+function copiar(texto, toast, msg) {
+  const ok = () => { $(toast).textContent = msg; setTimeout(() => $(toast).textContent = "", 2500); };
+  const plan_b = () => {
+    const t = document.createElement("textarea"); t.value = texto; t.style.width = "100%"; t.rows = 4;
+    $(toast).textContent = "No se pudo copiar solo: seleccioná el texto y copialo."; $(toast).after(t); t.select();
+  };
+  try { navigator.clipboard.writeText(texto).then(ok, plan_b); } catch (e) { plan_b(); }
+}
+$("copylista").onclick = () => copiar(lista(), "toast1", "Lista copiada. Pegala en el parámetro SeriesElegidas.");
+$("copy1").onclick = () => copiar(code1(), "toast2", "Código 1 copiado.");
+$("copy2").onclick = () => copiar(CODE2, "toast2", "Código 2 copiado.");
+
+cargar();
+</script>
+</body>
+</html>

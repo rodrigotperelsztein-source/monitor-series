@@ -37,6 +37,7 @@ DERIVADAS = {fid: f for fid, f in FUENTES.items() if hasattr(f, "DERIVADA_DE")}
 RAIZ = Path(__file__).resolve().parent.parent
 DATA = RAIZ / "data"
 TZ = ZoneInfo("America/Argentina/Buenos_Aires")
+RAW = "https://raw.githubusercontent.com/rodrigotperelsztein-source/monitor-series/main"
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36"
 
 
@@ -280,6 +281,7 @@ def todas() -> None:
 
     data/todas/series.csv: una fila por serie (id_serie, nombre, unidad, frecuencia, fuente...).
     data/todas/valores.csv: fecha, id_serie, valor.
+    data/series/<id_serie>.csv: una serie sola (fecha, valor), para traer solo las elegidas.
     """
     series, valores = [], []
     for fid, fuente in FUENTES.items():
@@ -311,6 +313,7 @@ def todas() -> None:
                 "descargado": meta.get("descargado", ""),
                 "pagina": fuente.PAGINA,
                 "url_archivo": meta.get("url", ""),
+                "url_csv": f"{RAW}/data/series/{id_serie}.csv",
             })
     if not series:
         return
@@ -319,6 +322,40 @@ def todas() -> None:
     pd.DataFrame(series).to_csv(destino / "series.csv", index=False)
     pd.concat(valores).sort_values(["id_serie", "fecha"]).to_csv(
         destino / "valores.csv", index=False, date_format="%Y-%m-%d", float_format="%.6f")
+
+    # Un archivo por serie; se borran los de series que ya no existen.
+    carpeta = DATA / "series"
+    carpeta.mkdir(exist_ok=True)
+    vigentes = set()
+    for puntos in valores:
+        id_serie = puntos["id_serie"].iloc[0]
+        vigentes.add(f"{id_serie}.csv")
+        puntos[["fecha", "valor"]].sort_values("fecha").to_csv(
+            carpeta / f"{id_serie}.csv", index=False, date_format="%Y-%m-%d", float_format="%.6f")
+    for viejo in carpeta.glob("*.csv"):
+        if viejo.name not in vigentes:
+            viejo.unlink()
+
+
+def catalogo_monitor_argy() -> str:
+    """Guarda el catálogo de Monitor Argy (data/monitorargy/catalogo.json) para la página de selección."""
+    r = requests.get("https://monitorargy.com/api/v1/series", headers={"User-Agent": UA}, timeout=60)
+    r.raise_for_status()
+    datos = r.json()
+    paneles = {p["id"]: p["nombre"] for p in datos.get("paneles", [])}
+    filas = [{
+        "id": s["id"], "nombre": s.get("nombre", ""), "descripcion": s.get("descripcion", ""),
+        "panel": paneles.get(s.get("panel"), s.get("panel", "")), "unidad": s.get("unidad", ""),
+        "frecuencia": s.get("frecuencia", ""), "fuente": (s.get("fuente") or {}).get("nombre", ""),
+        "ultimo_periodo": s.get("ultimaFecha", ""), "frescura": s.get("frescura", ""),
+    } for s in datos["series"]]
+    if len(filas) < 100:
+        raise ValueError(f"El catálogo de Monitor Argy vino con solo {len(filas)} series.")
+    p = DATA / "monitorargy" / "catalogo.json"
+    p.parent.mkdir(exist_ok=True)
+    p.write_text(json.dumps(sorted(filas, key=lambda f: f["id"]), ensure_ascii=False, indent=0) + "\n",
+                 encoding="utf-8")
+    return f"{len(filas)} series"
 
 
 def main() -> int:
@@ -394,6 +431,12 @@ def main() -> int:
                 fallas += 1
                 print(f"AVISO: INDEC tenía previsto publicar {fid} el {recientes[-1]:%d/%m} y el dato todavía no entró.")
 
+    if args.modo == "completo":
+        print("[catálogo de Monitor Argy]")
+        try:
+            print("  " + catalogo_monitor_argy())
+        except Exception as e:  # noqa: BLE001
+            print(f"  aviso: no se pudo actualizar ({e}); queda el anterior")
     catalogo(cal, hoy)
     todas()
     return 1 if fallas else 0

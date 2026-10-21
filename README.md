@@ -41,6 +41,8 @@ próxima publicación según el calendario de INDEC y si está **al día**, **se
 | `data/revisiones/<id>.csv` | Cada valor que el organismo corrigió hacia atrás: período, serie, valor anterior y nuevo. |
 | `data/raw/<id>/` | El archivo original tal como se bajó, una copia por cada versión con datos distintos. |
 | `data/todas/valores.csv` | Todas las series juntas en formato largo: `fecha`, `id_serie`, `valor`. |
+| `data/series/<id_serie>.csv` | Una serie sola (`fecha`, `valor`), para traer solo las que se necesitan. |
+| `data/monitorargy/catalogo.json` | Catálogo de series de Monitor Argy (se actualiza cada noche), para el selector. |
 | `data/calendario/indec.csv` | Calendario de difusión de INDEC (fecha y título de cada publicación), leído del PDF semestral. |
 | `data/todas/series.csv` | Una fila por serie: `id_serie`, nombre, tipo (nivel o variación), unidad, frecuencia, fuente, primer y último período. |
 
@@ -57,7 +59,18 @@ https://raw.githubusercontent.com/rodrigotperelsztein-source/monitor-series/main
 
 Por ejemplo `.../main/data/todas/valores.csv` o `.../main/data/emae.csv`.
 
-### Power BI
+### Power BI: elegir solo algunas series (recomendado)
+
+La página **[Selector de series](https://rodrigotperelsztein-source.github.io/monitor-series/)** muestra el catálogo
+completo (las series de este repositorio y las de Monitor Argy), con buscador y filtros. Se tildan las series y la
+página arma la lista para pegar en el parámetro `SeriesElegidas` de Power BI; la consulta `Datos` baja solo esas
+(cada serie del repositorio tiene su archivo en `data/series/<id_serie>.csv`; las de Monitor Argy, prefijo `ma:`,
+salen de su API). La primera vez, la misma página da el código de las dos consultas.
+
+Para cambiar de series: elegir en la página, copiar la lista, pegarla en *Transformar datos > Administrar
+parámetros > SeriesElegidas* y actualizar.
+
+### Power BI: todas las series
 
 Lo más cómodo es usar el formato largo: dos consultas y una relación, y las series nuevas aparecen solas.
 

@@ -21,7 +21,7 @@ on:
     # las fuentes (atrapa revisiones y publicaciones fuera de calendario) y termina en error
     # si una publicación prevista para hoy no entró.
     - cron: "47 0 * * *"
-    # Días hábiles a las 10:10: cierre del día anterior del Brent y del WTI (la EIA lo publica
+    # Días hábiles a las 10:10: cierre del día anterior del Brent, el WTI, las naftas y el gasoil (la EIA lo publica
     # entre las 8:30 y las 9:30 de Buenos Aires). Solo baja esa fuente.
     - cron: "10 13 * * 1-5"
   workflow_dispatch:
@@ -74,7 +74,7 @@ jobs:
             MODO=completo
           elif [ "$HORARIO" = "10 13 * * 1-5" ]; then
             MODO=completo
-            FUENTES=petroleo
+            FUENTES="petroleo refinados"
           else
             MODO=calendario
           fi

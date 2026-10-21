@@ -1,25 +1,9 @@
 [calendario INDEC]
   2.º sem. 2026: 174 publicaciones; 1.º sem. 2027: todavía no publicado
 [emae]
-Aviso: original tiene 1 meses revisados respecto de la versión guardada.
-Aviso: desest tiene 4 meses revisados respecto de la versión guardada.
-Aviso: tendencia tiene 11 meses revisados respecto de la versión guardada.
-  actualizada: último período 2026-07 → 2026-08; valores revisados: 1094
+  sin cambios en el archivo
 [emae_letras]
-Aviso: a_agro tiene 6 meses revisados respecto de la versión guardada.
-Aviso: c_mineria tiene 1 meses revisados respecto de la versión guardada.
-Aviso: d_industria tiene 1 meses revisados respecto de la versión guardada.
-Aviso: e_electricidad_gas_agua tiene 1 meses revisados respecto de la versión guardada.
-Aviso: f_construccion tiene 3 meses revisados respecto de la versión guardada.
-Aviso: h_hoteles_restaurantes tiene 5 meses revisados respecto de la versión guardada.
-Aviso: i_transporte_comunicaciones tiene 1 meses revisados respecto de la versión guardada.
-Aviso: k_inmobiliarias_empresariales tiene 1 meses revisados respecto de la versión guardada.
-Aviso: l_administracion_publica tiene 1 meses revisados respecto de la versión guardada.
-Aviso: m_ensenanza tiene 1 meses revisados respecto de la versión guardada.
-Aviso: n_salud tiene 2 meses revisados respecto de la versión guardada.
-Aviso: o_otros_servicios tiene 4 meses revisados respecto de la versión guardada.
-Aviso: impuestos_netos tiene 3 meses revisados respecto de la versión guardada.
-  actualizada: último período 2026-07 → 2026-08; valores revisados: 106
+  sin cambios en el archivo
 [ipc]
   sin cambios en el archivo
 [ipi]
@@ -31,11 +15,14 @@ Aviso: impuestos_netos tiene 3 meses revisados respecto de la versión guardada.
 [ripte]
   sin cambios en el archivo
 [salarios]
-  actualizada: último período 2026-07 → 2026-08; valores revisados: 0
+  sin cambios en el archivo
 [sube]
   sin cambios en el archivo
 [petroleo]
   archivo distinto pero mismos datos
+[ventas_combustibles]
+  www.energia.gob.ar no envía su certificado intermedio; se tomó de http://crt.sectigo.com/SectigoPublicServerAuthenticationCADVR36.crt
+  actualizada: último período — → 2026-08; valores revisados: 0
 [camiones_puertos]
   sin cambios en el archivo
 [cammesa_balance]
@@ -45,11 +32,11 @@ Aviso: impuestos_netos tiene 3 meses revisados respecto de la versión guardada.
 [cammesa_gu_actividad]
   sin cambios en el archivo
 [emae_letras_desest]
-  recalculada: último período 2026-07 → 2026-08
+  sin cambios en las series de base
 [ripte_real]
   sin cambios en las series de base
 [salarios_real]
-  recalculada: último período 2026-07 → 2026-08
+  sin cambios en las series de base
 [sube_mensual]
   sin cambios en las series de base
 [sube_desest]

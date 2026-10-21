@@ -1,0 +1,555 @@
+{
+  "id": "ventas_combustibles",
+  "nombre": "Ventas al mercado de gasoil y naftas (grados 2 y 3) por empresa",
+  "url": "https://www.energia.gob.ar/contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip https://www.energia.gob.ar/contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado_2010_2019.zip",
+  "pagina": "https://www.argentina.gob.ar/economia/energia/hidrocarburos/refinacion-y-comercializacion-de-petroleo-gas-y-derivados-tablas-dinamicas",
+  "frecuencia": "M",
+  "unidad": "m³",
+  "sha256": "7ac557a22ae29435a55ed000ce3fe1c90055153b14ede0dbdc4a462d8b13e875",
+  "columnas": {
+    "gasoil_g2_ypf": {
+      "nombre": "Ventas de gasoil grado 2 (común), YPF",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_ypf_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 2 (común), YPF, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_shell": {
+      "nombre": "Ventas de gasoil grado 2 (común), Shell (Raízen)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_shell_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 2 (común), Shell (Raízen), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_axion": {
+      "nombre": "Ventas de gasoil grado 2 (común), Axion (Esso / Pan American)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_axion_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 2 (común), Axion (Esso / Pan American), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_trafigura": {
+      "nombre": "Ventas de gasoil grado 2 (común), Trafigura (Puma)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_trafigura_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 2 (común), Trafigura (Puma), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_dapsa": {
+      "nombre": "Ventas de gasoil grado 2 (común), DAPSA",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_dapsa_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 2 (común), DAPSA, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_delta_gulf": {
+      "nombre": "Ventas de gasoil grado 2 (común), Delta Patagonia / Gulf",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_delta_gulf_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 2 (común), Delta Patagonia / Gulf, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_refinor": {
+      "nombre": "Ventas de gasoil grado 2 (común), Refinor",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_refinor_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 2 (común), Refinor, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_resto": {
+      "nombre": "Ventas de gasoil grado 2 (común), resto de las empresas",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_resto_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 2 (común), resto de las empresas, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_total": {
+      "nombre": "Ventas de gasoil grado 2 (común), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_total_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 2 (común), total del mercado, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_ypf": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), YPF",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_ypf_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), YPF, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_shell": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), Shell (Raízen)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_shell_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), Shell (Raízen), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_axion": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), Axion (Esso / Pan American)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_axion_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), Axion (Esso / Pan American), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_trafigura": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), Trafigura (Puma)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_trafigura_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), Trafigura (Puma), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_dapsa": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), DAPSA",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_dapsa_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), DAPSA, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_delta_gulf": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), Delta Patagonia / Gulf",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_delta_gulf_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), Delta Patagonia / Gulf, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_refinor": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), Refinor",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_refinor_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), Refinor, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_resto": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), resto de las empresas",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_resto_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), resto de las empresas, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_total": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_total_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), total del mercado, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_ypf": {
+      "nombre": "Ventas de nafta grado 2 (súper), YPF",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_ypf_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 2 (súper), YPF, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_shell": {
+      "nombre": "Ventas de nafta grado 2 (súper), Shell (Raízen)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_shell_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 2 (súper), Shell (Raízen), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_axion": {
+      "nombre": "Ventas de nafta grado 2 (súper), Axion (Esso / Pan American)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_axion_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 2 (súper), Axion (Esso / Pan American), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_trafigura": {
+      "nombre": "Ventas de nafta grado 2 (súper), Trafigura (Puma)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_trafigura_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 2 (súper), Trafigura (Puma), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_dapsa": {
+      "nombre": "Ventas de nafta grado 2 (súper), DAPSA",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_dapsa_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 2 (súper), DAPSA, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_delta_gulf": {
+      "nombre": "Ventas de nafta grado 2 (súper), Delta Patagonia / Gulf",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_delta_gulf_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 2 (súper), Delta Patagonia / Gulf, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_refinor": {
+      "nombre": "Ventas de nafta grado 2 (súper), Refinor",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_refinor_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 2 (súper), Refinor, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_resto": {
+      "nombre": "Ventas de nafta grado 2 (súper), resto de las empresas",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_resto_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 2 (súper), resto de las empresas, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_total": {
+      "nombre": "Ventas de nafta grado 2 (súper), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_total_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 2 (súper), total del mercado, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_ypf": {
+      "nombre": "Ventas de nafta grado 3 (ultra), YPF",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_ypf_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 3 (ultra), YPF, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_shell": {
+      "nombre": "Ventas de nafta grado 3 (ultra), Shell (Raízen)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_shell_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 3 (ultra), Shell (Raízen), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_axion": {
+      "nombre": "Ventas de nafta grado 3 (ultra), Axion (Esso / Pan American)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_axion_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 3 (ultra), Axion (Esso / Pan American), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_trafigura": {
+      "nombre": "Ventas de nafta grado 3 (ultra), Trafigura (Puma)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_trafigura_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 3 (ultra), Trafigura (Puma), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_dapsa": {
+      "nombre": "Ventas de nafta grado 3 (ultra), DAPSA",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_dapsa_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 3 (ultra), DAPSA, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_delta_gulf": {
+      "nombre": "Ventas de nafta grado 3 (ultra), Delta Patagonia / Gulf",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_delta_gulf_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 3 (ultra), Delta Patagonia / Gulf, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_refinor": {
+      "nombre": "Ventas de nafta grado 3 (ultra), Refinor",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_refinor_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 3 (ultra), Refinor, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_resto": {
+      "nombre": "Ventas de nafta grado 3 (ultra), resto de las empresas",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_resto_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 3 (ultra), resto de las empresas, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_total": {
+      "nombre": "Ventas de nafta grado 3 (ultra), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_total_sin_usinas_bunker": {
+      "nombre": "Ventas de nafta grado 3 (ultra), total del mercado, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_ypf": {
+      "nombre": "Ventas de gasoil grados 2 y 3, YPF",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_ypf_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grados 2 y 3, YPF, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_shell": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Shell (Raízen)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_shell_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Shell (Raízen), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_axion": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Axion (Esso / Pan American)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_axion_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Axion (Esso / Pan American), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_trafigura": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Trafigura (Puma)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_trafigura_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Trafigura (Puma), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_dapsa": {
+      "nombre": "Ventas de gasoil grados 2 y 3, DAPSA",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_dapsa_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grados 2 y 3, DAPSA, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_delta_gulf": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Delta Patagonia / Gulf",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_delta_gulf_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Delta Patagonia / Gulf, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_refinor": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Refinor",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_refinor_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Refinor, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_resto": {
+      "nombre": "Ventas de gasoil grados 2 y 3, resto de las empresas",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_resto_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grados 2 y 3, resto de las empresas, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_total": {
+      "nombre": "Ventas de gasoil grados 2 y 3, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_total_sin_usinas_bunker": {
+      "nombre": "Ventas de gasoil grados 2 y 3, total del mercado, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_ypf": {
+      "nombre": "Ventas de naftas grados 2 y 3, YPF",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_ypf_sin_usinas_bunker": {
+      "nombre": "Ventas de naftas grados 2 y 3, YPF, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_shell": {
+      "nombre": "Ventas de naftas grados 2 y 3, Shell (Raízen)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_shell_sin_usinas_bunker": {
+      "nombre": "Ventas de naftas grados 2 y 3, Shell (Raízen), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_axion": {
+      "nombre": "Ventas de naftas grados 2 y 3, Axion (Esso / Pan American)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_axion_sin_usinas_bunker": {
+      "nombre": "Ventas de naftas grados 2 y 3, Axion (Esso / Pan American), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_trafigura": {
+      "nombre": "Ventas de naftas grados 2 y 3, Trafigura (Puma)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_trafigura_sin_usinas_bunker": {
+      "nombre": "Ventas de naftas grados 2 y 3, Trafigura (Puma), sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_dapsa": {
+      "nombre": "Ventas de naftas grados 2 y 3, DAPSA",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_dapsa_sin_usinas_bunker": {
+      "nombre": "Ventas de naftas grados 2 y 3, DAPSA, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_delta_gulf": {
+      "nombre": "Ventas de naftas grados 2 y 3, Delta Patagonia / Gulf",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_delta_gulf_sin_usinas_bunker": {
+      "nombre": "Ventas de naftas grados 2 y 3, Delta Patagonia / Gulf, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_refinor": {
+      "nombre": "Ventas de naftas grados 2 y 3, Refinor",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_refinor_sin_usinas_bunker": {
+      "nombre": "Ventas de naftas grados 2 y 3, Refinor, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_resto": {
+      "nombre": "Ventas de naftas grados 2 y 3, resto de las empresas",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_resto_sin_usinas_bunker": {
+      "nombre": "Ventas de naftas grados 2 y 3, resto de las empresas, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_total": {
+      "nombre": "Ventas de naftas grados 2 y 3, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_total_sin_usinas_bunker": {
+      "nombre": "Ventas de naftas grados 2 y 3, total del mercado, sin usinas eléctricas ni bunker internacional",
+      "tipo": "nivel",
+      "unidad": "m³"
+    }
+  },
+  "descargado": "2026-10-21T19:46:51Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 200,
+  "original_guardado": null
+}

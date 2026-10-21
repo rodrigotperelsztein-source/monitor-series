@@ -18,7 +18,8 @@ credenciales, no recibe datos de quienes lo usan y no necesita acceso a ninguna 
 - **Acciones de GitHub fijadas por commit** (no por etiqueta, que se puede mover) y revisadas por Dependabot.
 - **Dependencias de Python verificadas por huella**: `requirements.txt` lista cada paquete con su SHA-256 y el
   workflow instala con `--require-hashes --only-binary=:all:` (no compila ni ejecuta código de instalación).
-  Las versiones se eligen con al menos dos semanas de publicadas.
+  Las versiones se eligen con al menos dos semanas de publicadas, salvo arreglos de seguridad, que se
+  aplican apenas salen. Se controlan con Dependabot y con `pip-audit -r requirements.txt`.
 - **Permisos mínimos**: los workflows arrancan sin permisos (`permissions: {}`) y solo el trabajo que guarda datos
   pide escritura sobre el contenido.
 - **Sin credenciales mientras se procesan archivos de afuera**: el paso que baja y lee archivos corre sin token;

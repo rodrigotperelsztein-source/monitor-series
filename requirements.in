@@ -1,10 +1,15 @@
 # Dependencias directas. requirements.txt se genera con:
-#   pip-compile --generate-hashes --allow-unsafe requirements.in
+#   uv pip compile requirements.in --generate-hashes --python-version 3.12 \
+#     --python-platform x86_64-manylinux_2_28 --exclude-newer <fecha> -o requirements.txt
 # y el workflow instala con --require-hashes (cada paquete se verifica contra su huella).
 pandas==2.2.3
 xlrd==2.0.1
 openpyxl==3.1.5
-requests==2.32.3
-pdfplumber==0.11.4
+requests>=2.33.0
+pdfplumber>=0.11.4
 holidays==0.106
 numpy>=2.0,<2.3  # la versión con la que se probaron pandas 2.2 y la desestacionalización
+# Pisos por seguridad (alertas de Dependabot / pip-audit, oct-2026):
+pdfminer.six>=20251230  # carga insegura de pickle en CMap
+pillow>=13.0.0          # varios errores de memoria en TIFF/GIF/PDF
+certifi>=2026.10.19     # quita la raíz emSign ECC G3 (intermedios comprometidos)

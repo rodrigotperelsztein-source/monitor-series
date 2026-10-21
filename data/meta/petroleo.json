@@ -1,0 +1,32 @@
+{
+  "id": "petroleo",
+  "nombre": "Petróleo: precio spot de cierre del Brent y del WTI (EIA)",
+  "url": "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls https://www.eia.gov/dnav/pet/hist_xls/RWTCd.xls https://www.eia.gov/TODAYinENERGY/prices.php",
+  "pagina": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+  "frecuencia": "D",
+  "unidad": "Dólares por barril",
+  "sha256": "56d0041bed2e4c4f96d24e7f29633508c519e222ad1ccf7850427d2fe19d6108",
+  "columnas": {
+    "brent": {
+      "nombre": "Petróleo Brent, precio spot FOB (Europa), cierre del día",
+      "tipo": "nivel",
+      "unidad": "Dólares por barril"
+    },
+    "wti": {
+      "nombre": "Petróleo WTI, precio spot FOB (Cushing, Oklahoma), cierre del día",
+      "tipo": "nivel",
+      "unidad": "Dólares por barril"
+    },
+    "diferencial": {
+      "nombre": "Diferencial Brent - WTI",
+      "tipo": "nivel",
+      "unidad": "Dólares por barril"
+    }
+  },
+  "fuente_ultimo_dia": "planillas de la EIA",
+  "planillas_hasta": "2026-10-20",
+  "descargado": "2026-10-21T18:44:48Z",
+  "ultimo_periodo": "2026-10-20",
+  "observaciones": 10219,
+  "original_guardado": null
+}

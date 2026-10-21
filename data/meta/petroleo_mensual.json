@@ -1,0 +1,56 @@
+{
+  "id": "petroleo_mensual",
+  "nombre": "Petróleo: precio promedio mensual del Brent y del WTI (EIA)",
+  "url": "data/petroleo.csv",
+  "pagina": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+  "frecuencia": "M",
+  "unidad": "Dólares por barril",
+  "sha256": "8af5e64b835783632858cf86ff388c0d30595cf9e1bc0ae4b77fa08bb555e34a",
+  "derivada_de": [
+    "petroleo"
+  ],
+  "archivos_de_origen": [
+    "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls https://www.eia.gov/dnav/pet/hist_xls/RWTCd.xls https://www.eia.gov/TODAYinENERGY/prices.php"
+  ],
+  "columnas": {
+    "brent": {
+      "nombre": "Petróleo Brent, precio spot, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Dólares por barril"
+    },
+    "brent_var_m": {
+      "nombre": "Petróleo Brent, promedio del mes, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "brent_var_ia": {
+      "nombre": "Petróleo Brent, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "wti": {
+      "nombre": "Petróleo WTI, precio spot, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Dólares por barril"
+    },
+    "wti_var_m": {
+      "nombre": "Petróleo WTI, promedio del mes, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "wti_var_ia": {
+      "nombre": "Petróleo WTI, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "diferencial": {
+      "nombre": "Diferencial Brent - WTI, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Dólares por barril"
+    }
+  },
+  "descargado": "2026-10-21T18:44:48Z",
+  "calculado": "2026-10-21T18:44:48Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 489
+}

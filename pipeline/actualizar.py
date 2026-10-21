@@ -45,11 +45,54 @@ class DescargaError(RuntimeError):
     pass
 
 
+_CADENAS: dict[str, str] = {}  # servidor -> archivo de certificados con su intermedio
+
+
+def _cadena_completa(url: str) -> str:
+    """Para servidores que no envían su certificado intermedio (p. ej. energia.gob.ar).
+
+    Hace lo mismo que un navegador: lee en el certificado del servidor la dirección de su emisor
+    (campo "CA Issuers"), baja ese certificado intermedio y lo suma a las autoridades confiables
+    de siempre (certifi). La verificación sigue completa: la cadena tiene que terminar en una
+    autoridad raíz reconocida y el nombre del servidor tiene que coincidir. Un intermedio falso
+    no pasa, porque no está firmado por una raíz confiable.
+    """
+    import ssl
+    import tempfile
+    from urllib.parse import urlparse
+
+    import certifi
+
+    host = urlparse(url).hostname
+    if host in _CADENAS:
+        return _CADENAS[host]
+    hoja = ssl.get_server_certificate((host, 443), timeout=30)
+    with tempfile.NamedTemporaryFile("w", suffix=".pem", delete=False) as f:
+        f.write(hoja)
+    datos = ssl._ssl._test_decode_cert(f.name)  # noqa: SLF001 — lector de certificados de la biblioteca estándar
+    emisores = [u for u in datos.get("caIssuers", ()) if u.startswith(("http://", "https://"))]
+    if not emisores:
+        raise ValueError(f"{host}: el certificado no dice dónde está su emisor")
+    r = requests.get(emisores[0], headers={"User-Agent": UA}, timeout=30)
+    r.raise_for_status()
+    intermedio = r.content if r.content.startswith(b"-----BEGIN") else ssl.DER_cert_to_PEM_cert(r.content).encode()
+    with tempfile.NamedTemporaryFile("wb", suffix=".pem", delete=False) as f:
+        f.write(Path(certifi.where()).read_bytes() + b"\n" + intermedio)
+    _CADENAS[host] = f.name
+    print(f"  {host} no envía su certificado intermedio; se tomó de {emisores[0]}")
+    return f.name
+
+
 def descargar(url: str, intentos: int = 3, minimo: int = 1000) -> bytes:
     ultimo = None
     for i in range(intentos):
         try:
-            r = requests.get(url, headers={"User-Agent": UA}, timeout=60)
+            try:
+                r = requests.get(url, headers={"User-Agent": UA}, timeout=60)
+            except requests.exceptions.SSLError as e:
+                if "unable to get local issuer certificate" not in str(e):
+                    raise
+                r = requests.get(url, headers={"User-Agent": UA}, timeout=60, verify=_cadena_completa(url))
             if r.status_code == 404:
                 raise DescargaError(f"{url}: no existe (404)")
             r.raise_for_status()

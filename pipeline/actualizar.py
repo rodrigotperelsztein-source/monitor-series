@@ -440,6 +440,13 @@ def main() -> int:
         else:
             print(f"Hoy ({hoy:%d/%m/%Y}) no hay publicaciones pendientes de INDEC para estas series.")
 
+    # Fuentes que solo se revisan algunos días del mes (DIAS_DEL_MES), salvo que se pidan por nombre.
+    if not args.fuentes:
+        fuera = [fid for fid in ids if hoy.day not in getattr(FUENTES[fid], "DIAS_DEL_MES", range(1, 32))]
+        for fid in fuera:
+            print(f"[{fid}]\n  no se revisa hoy (solo los días {FUENTES[fid].DIAS_DEL_MES.start} a fin de mes)")
+        ids = [fid for fid in ids if fid not in fuera]
+
     for fid in ids:
         print(f"[{fid}]")
         try:

@@ -54,6 +54,8 @@ ORGANISMO = "Secretaría de Energía"
 UNIDAD = "m³"
 PRIMER_PERIODO = "2010-01-01"
 CALENDARIO = ""
+# Se publica una vez por mes, hacia fin de mes: se revisa del 20 al último día.
+DIAS_DEL_MES = range(20, 32)
 GUARDAR_ORIGINAL = False  # 6 MB por mes (y 17 MB el histórico); se puede volver a bajar
 
 HISTORIA = Path(__file__).resolve().parents[2] / "data" / f"{ID}.csv"

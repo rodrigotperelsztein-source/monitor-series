@@ -26,6 +26,15 @@ import pandas as pd
 RAIZ = Path(__file__).resolve().parent.parent
 X13 = RAIZ / "bin" / "x13as"
 PROGRAMA = "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)"
+# Huella del binario de bin/x13as: si el archivo cambia, no se ejecuta.
+X13_SHA256 = "c4496c94985984ae9acdcf7fa164197a91fa52c2690b1e1a456312b96920f652"
+
+
+def _verificar_x13() -> None:
+    import hashlib
+    huella = hashlib.sha256(X13.read_bytes()).hexdigest()
+    if huella != X13_SHA256:
+        raise RuntimeError(f"bin/x13as no coincide con la huella esperada ({huella}); no se ejecuta.")
 
 # Días que no se cuentan como feriado (se compara con el nombre que da la biblioteca holidays).
 NO_FERIADOS = ("Jueves Santo", "turísticos", "Censo", "Bicentenario", "Copa Mundial", "Papa")
@@ -152,6 +161,7 @@ def _num(x):
 def desestacionalizar(nombre: str, serie: pd.Series, esp: Especificacion) -> tuple[pd.Series, dict]:
     """Corre X-13 sobre una serie mensual (índice: Period mensual). Devuelve la serie
     desestacionalizada y un diccionario con los diagnósticos."""
+    _verificar_x13()
     serie = serie.dropna()
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)

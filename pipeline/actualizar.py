@@ -319,7 +319,11 @@ def todas() -> None:
         return
     destino = DATA / "todas"
     destino.mkdir(exist_ok=True)
-    pd.DataFrame(series).to_csv(destino / "series.csv", index=False)
+    # Textos que empiezan con =, +, - o @ se escapan: así una planilla que abra el CSV no los toma
+    # como fórmulas (inyección de fórmulas en CSV).
+    def seguro(v):
+        return "'" + v if isinstance(v, str) and v[:1] in ("=", "+", "-", "@", "\t", "\r") else v
+    pd.DataFrame(series).map(seguro).to_csv(destino / "series.csv", index=False)
     pd.concat(valores).sort_values(["id_serie", "fecha"]).to_csv(
         destino / "valores.csv", index=False, date_format="%Y-%m-%d", float_format="%.6f")
 

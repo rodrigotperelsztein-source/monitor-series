@@ -253,6 +253,12 @@ Después se suma a la lista `FUENTES` de `pipeline/actualizar.py`. Para los cuad
 (ver `emae.py` y `emae_letras.py`). En las variaciones que publica el organismo, el pipeline las recalcula
 desde los índices y frena si no coinciden.
 
+## Seguridad
+
+Datos públicos, solo lectura, sin credenciales. Las medidas (acciones fijadas por commit, dependencias verificadas
+por huella, workflows sin permisos por defecto, binario de X-13 verificado, página sin terceros) y las
+recomendaciones para usarlo dentro de una empresa están en [`SECURITY.md`](SECURITY.md).
+
 ## Licencia de los datos
 
 Los datos pertenecen a los organismos que los publican. Citá la fuente original de cada serie.

@@ -5,16 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Series productivas de Argentina</title>
 <meta name="description" content="Series estadísticas de la actividad productiva argentina, actualizadas automáticamente desde fuentes oficiales, listas para llevar a Power BI.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<!-- La página solo puede leer datos de este repositorio y de Monitor Argy; no carga nada de terceros. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src https://raw.githubusercontent.com; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
 <style>
 /* Herramienta de dos columnas: catálogo filtrable a la izquierda; selección y código para Power BI a la derecha. */
 :root {
   --bg: #f6f8fa; --surface: #ffffff; --ink: #142233; --muted: #5b6b7d; --line: #d9e1e9;
   --accent: #2f6fae; --accent-soft: #e3eef8; --code-bg: #0f1b29; --code-ink: #dbe7f3;
   --ok: #2e7d4f; --warn: #a86b00; --bad: #b3261e;
-  --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --f-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --f-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --f-mono: ui-monospace, "SFMono-Regular", "Cascadia Mono", Menlo, Consolas, monospace;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -210,7 +211,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
           <ol class="hint">
             <li><i>Obtener datos &gt; Consulta en blanco &gt; Editor avanzado</i>: pegá el código 1 y llamá a la consulta <code>SeriesElegidas</code>. Queda como parámetro.</li>
             <li>Otra consulta en blanco con el código 2; llamala <code>Datos</code>. Devuelve <code>fecha</code>, <code>id_serie</code>, <code>serie</code>, <code>unidad</code> y <code>valor</code>.</li>
-            <li>Conexión <b>Anónima</b>; si pregunta por privacidad, los dos orígenes como <b>Público</b>.</li>
+            <li>Conexión <b>Anónima</b> (no hace falta ningún usuario). Si pregunta por privacidad, los dos orígenes como <b>Público</b>. Conviene tener estas consultas en un archivo o flujo de datos aparte de los que leen bases internas.</li>
           </ol>
           <h3>1 · SeriesElegidas (parámetro)</h3>
           <pre id="code1"></pre>
@@ -221,16 +222,16 @@ details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
         </div>
 
         <div class="panel" data-p="xls" hidden>
-          <p class="hint">Un dato vivo en tu planilla: la lista de series va en una celda, y con <i>Datos &gt; Actualizar todo</i> (o al abrir el archivo) se traen los valores nuevos.</p>
+          <p class="hint">Un dato vivo en tu planilla: con <i>Datos &gt; Actualizar todo</i> (o al abrir el archivo) se traen los valores nuevos. La lista de series va en un parámetro de la consulta, no en una celda: así ningún dato del libro sale en los pedidos a la web.</p>
           <ol class="hint">
-            <li>Pegá la lista de series en una celda y dale el nombre <code>SeriesElegidas</code> (cuadro de nombres, a la izquierda de la barra de fórmulas).</li>
-            <li><i>Datos &gt; Obtener datos &gt; De otras fuentes &gt; Consulta en blanco &gt; Editor avanzado</i>: pegá el código 1 y llamá a la consulta <code>SeriesElegidas</code>.</li>
+            <li><i>Datos &gt; Obtener datos &gt; De otras fuentes &gt; Consulta en blanco &gt; Editor avanzado</i>: pegá el código 1 y llamá a la consulta <code>SeriesElegidas</code>. Queda como parámetro.</li>
             <li>Otra consulta en blanco con el código 2; llamala <code>Datos</code>. Trae una columna por serie, con la fecha en la primera.</li>
             <li><i>Inicio &gt; Cerrar y cargar en…</i> &gt; Tabla, en la hoja que quieras. Tus fórmulas pueden apuntar a esa tabla.</li>
             <li>Para que se actualice sola: <i>Datos &gt; Consultas y conexiones</i>, clic derecho en <code>Datos</code> &gt; <i>Propiedades</i> &gt; <b>Actualizar al abrir el archivo</b> (y, si querés, cada tantos minutos).</li>
-            <li>Si Excel avisa de niveles de privacidad: <i>Datos &gt; Obtener datos &gt; Opciones de consulta &gt; Privacidad</i> &gt; <b>Ignorar los niveles de privacidad</b> en este libro.</li>
+            <li>Para cambiar de series: <i>Datos &gt; Obtener datos &gt; Iniciar el Editor de Power Query</i> &gt; <code>SeriesElegidas</code>, pegá la lista nueva y <i>Cerrar y cargar</i>.</li>
+            <li>Si pregunta cómo conectarse: <b>Anónimo</b>. Si pregunta por niveles de privacidad: los dos orígenes como <b>Público</b>. No elijas "ignorar los niveles de privacidad".</li>
           </ol>
-          <h3>1 · SeriesElegidas (lee la celda)</h3>
+          <h3>1 · SeriesElegidas (parámetro)</h3>
           <pre id="xls1"></pre>
           <div class="btns"><button class="btn sec" data-copy="xls1">Copiar código 1</button></div>
           <h3>2 · Datos (una columna por serie)</h3>
@@ -404,11 +405,7 @@ const CODE2 = `let
 in
     Tipos`;
 
-const XLS1 = `let
-    Celda = Excel.CurrentWorkbook(){[Name = "SeriesElegidas"]}[Content],
-    Texto = Text.From(Celda{0}[Column1])
-in
-    Texto`;
+const XLS1 = null;  // en Excel se usa el mismo parámetro que en Power BI
 const XLS2 = CODE2.replace(/in\n    Tipos$/, `    // Una columna por serie (más cómodo en Excel)
     Ancha = Table.Pivot(Table.SelectColumns(Tipos, {"fecha", "id_serie", "valor"}),
         List.Distinct(Tipos[id_serie]), "id_serie", "valor"),
@@ -468,7 +465,7 @@ function update() {
   $("lista").textContent = lista() || "—";
   $("code1").textContent = code1();
   $("code2").textContent = CODE2;
-  $("xls1").textContent = XLS1;
+  $("xls1").textContent = code1();
   $("xls2").textContent = XLS2;
   $("py").textContent = codigoPython();
   $("gs").textContent = formulasSheets();

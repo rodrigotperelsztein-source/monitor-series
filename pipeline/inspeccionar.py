@@ -75,6 +75,9 @@ def main() -> int:
     salida.mkdir(exist_ok=True)
     for url in sys.argv[1:]:
         u = urlparse(url)
+        if u.scheme != "https" or not u.netloc:
+            print(f"URL ignorada (solo se aceptan direcciones https): {url}")
+            continue
         nombre = Path(u.path).name or "archivo"
         if u.query:
             import hashlib

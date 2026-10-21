@@ -76,6 +76,11 @@ compartir la vista. Usa Apache ECharts 5.5.1, alojado en el propio repositorio (
 
 ### Power BI: elegir solo algunas series (recomendado)
 
+`data/todas/series.csv` clasifica cada serie para buscarla y filtrarla: `categoria` (Actividad económica, Precios,
+Salarios, Transporte, Agro y puertos, Electricidad, Combustibles, Petróleo y precios internacionales),
+`organismo_corto` (la fuente), `dato` (Nivel, Variación mensual, interanual o acumulada) y `ajuste` (Original,
+Desestacionalizada, Tendencia-ciclo o Real). Las dos páginas usan esos campos en sus filtros.
+
 La página **[Selector de series](https://rodrigotperelsztein-source.github.io/monitor-series/)** muestra el catálogo
 completo (las series de este repositorio y las de Monitor Argy), con buscador y filtros. Se tildan las series y la
 página arma la lista para pegar en el parámetro `SeriesElegidas` de Power BI; la consulta `Datos` baja solo esas

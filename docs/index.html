@@ -81,6 +81,19 @@ select { padding: 5px 8px; font-size: 13px; max-width: 100%; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
 .count { color: var(--muted); font-size: 12.5px; }
+.cats { display: flex; flex-wrap: wrap; gap: 6px; }
+.cat { font: inherit; font-size: 12.5px; padding: 5px 11px; border-radius: 999px; border: 1px solid var(--line); background: none; color: var(--fg, inherit); cursor: pointer; }
+.cat .n { color: var(--muted); font-variant-numeric: tabular-nums; margin-left: 3px; font-size: 11.5px; }
+.cat[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.cat[aria-pressed="true"] .n { color: rgba(255,255,255,.8); }
+.filtros-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
+.filtros-grid label { display: flex; flex-direction: column; gap: 3px; }
+.filtros-grid select { width: 100%; }
+.tags { display: inline-flex; gap: 4px; flex-wrap: wrap; margin-left: 4px; vertical-align: middle; }
+.pill.des { border-color: rgba(31,157,117,.5); color: #1d8a66; }
+.pill.var { border-color: rgba(42,120,214,.45); color: #2a6fc0; }
+.pill.real { border-color: rgba(186,117,23,.5); color: #9a5f10; }
+.linklimpiar { font: inherit; font-size: 12.5px; background: none; border: 0; color: var(--accent); cursor: pointer; padding: 0; text-decoration: underline; }
 .tablewrap { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow: auto; max-height: 72vh; }
 table { width: 100%; border-collapse: collapse; }
 th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
@@ -167,14 +180,17 @@ details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
         <button class="tab" role="tab" id="tab-ma" aria-selected="false">Monitor Argy<span class="n" id="n-ma"></span></button>
       </div>
       <input id="q" type="search" placeholder="Buscar por nombre, id o fuente (p. ej. «industria desest», «ripte», «sube amba»)" autocomplete="off">
+      <div class="cats" id="cats" role="group" aria-label="Categoría"></div>
+      <div class="filtros-grid">
+        <label><span class="lbl" id="lbl-grupo">Fuente</span><select id="grupo" aria-labelledby="lbl-grupo"></select></label>
+        <label><span class="lbl">Dato</span><select id="dato"><option value="">Todos</option><option>Nivel</option><option>Variación mensual</option><option>Variación interanual</option><option>Variación acumulada</option><option>Otra variación</option></select></label>
+        <label><span class="lbl">Ajuste</span><select id="ajuste"><option value="">Todos</option><option>Original</option><option>Desestacionalizada</option><option>Tendencia-ciclo</option><option>Real (deflactada)</option></select></label>
+        <label><span class="lbl">Frecuencia</span><select id="freq" aria-label="Frecuencia"><option value="">Todas</option><option value="D">Diaria</option><option value="M">Mensual</option><option value="Q">Trimestral</option><option value="S">Semestral</option><option value="A">Anual</option></select></label>
+      </div>
       <div class="row">
-        <span class="lbl" id="lbl-grupo">Fuente</span><select id="grupo" aria-labelledby="lbl-grupo"></select>
-        <span class="lbl">Frecuencia</span>
-        <select id="freq" aria-label="Frecuencia"><option value="">Todas</option><option value="D">Diaria</option><option value="M">Mensual</option><option value="Q">Trimestral</option><option value="S">Semestral</option><option value="A">Anual</option></select>
-        <span class="lbl" id="lbl-tipo">Tipo</span>
-        <select id="tipo" aria-labelledby="lbl-tipo"><option value="">Todos</option><option value="nivel">Niveles</option><option value="variacion">Variaciones</option></select>
         <label class="count"><input type="checkbox" id="onlysel"> solo las elegidas</label>
-        <span class="count" id="count">Cargando…</span>
+        <button class="linklimpiar" id="limpiar" type="button">Limpiar filtros</button>
+        <span class="count" id="count" style="margin-left:auto">Cargando…</span>
       </div>
       <div class="tablewrap">
         <table>
@@ -304,13 +320,16 @@ async function cargar() {
     DATA.propias = parseCSV(csv).map(s => ({
       id: s.id_serie, nombre: s.serie, grupo: s.fuente_nombre || s.fuente, tipo: s.tipo, unidad: s.unidad,
       frec: s.frecuencia, ultimo: s.ultimo_periodo, desc: s.organismo,
+      cat: s.categoria || "Otras", org: s.organismo_corto || s.organismo, dato: s.dato, ajuste: s.ajuste,
     }));
     DATA.ma = ma.map(s => ({
       id: "ma:" + s.id, nombre: s.nombre, grupo: s.panel, tipo: s.unidad === "pct" ? "variacion" : "nivel",
       unidad: s.unidad, frec: s.frecuencia, ultimo: (s.ultimo_periodo || "").slice(0, 10), desc: s.fuente,
-      extra: s.descripcion,
+      extra: s.descripcion, cat: s.panel || "Otras", org: (s.fuente || "").split(/ [—–-] | · /)[0],
+      dato: s.unidad !== "pct" ? "Nivel" : /_mensual$/.test(s.id) ? "Variación mensual" : /_interanual$/.test(s.id) ? "Variación interanual" : "Otra variación",
+      ajuste: /desest/.test(s.id) ? "Desestacionalizada" : /_real/.test(s.id) ? "Real (deflactada)" : /tendencia/.test(s.id) ? "Tendencia-ciclo" : "Original",
     }));
-    DATA.propias.concat(DATA.ma).forEach(s => s._q = norm([s.id, s.nombre, s.grupo, s.desc, s.extra].join(" ")));
+    DATA.propias.concat(DATA.ma).forEach(s => s._q = norm([s.id, s.nombre, s.grupo, s.desc, s.extra, s.cat, s.org, s.dato, s.ajuste, s.ajuste === "Desestacionalizada" ? "desest sin estacionalidad" : "", s.dato.startsWith("Var") ? "var variacion" : ""].join(" ")));
     $("n-propias").textContent = DATA.propias.length;
     $("st-propias").textContent = DATA.propias.length.toLocaleString("es-AR");
     $("st-ma").textContent = DATA.ma.length.toLocaleString("es-AR");
@@ -333,39 +352,53 @@ function elegirVista(v) {
   vista = v;
   $("tab-propias").setAttribute("aria-selected", v === "propias");
   $("tab-ma").setAttribute("aria-selected", v === "ma");
-  $("lbl-grupo").textContent = v === "propias" ? "Fuente" : "Panel";
-  const grupos = [...new Set(DATA[v].map(s => s.grupo))].sort((a, b) => a.localeCompare(b, "es"));
-  $("grupo").innerHTML = `<option value="">Todas</option>` + grupos.map(g => `<option>${esc(g)}</option>`).join("");
+  $("lbl-grupo").textContent = "Fuente";
+  const orgs = [...new Set(DATA[v].map(s => s.org).filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
+  $("grupo").innerHTML = `<option value="">Todas</option>` + orgs.map(g => `<option>${esc(g)}</option>`).join("");
+  catSel = "";
   render();
 }
 $("tab-propias").onclick = () => elegirVista("propias");
 $("tab-ma").onclick = () => elegirVista("ma");
 
+let catSel = "";
+function pasa(s, sinCat) {
+  const g = $("grupo").value, f = $("freq").value, d = $("dato").value, aj = $("ajuste").value;
+  return (sinCat || !catSel || s.cat === catSel) && (!g || s.org === g) && (!f || s.frec === f) && (!d || s.dato === d)
+    && (!aj || s.ajuste === aj) && (!$("onlysel").checked || sel.includes(s.id));
+}
 function render() {
   const q = norm($("q").value).split(/\s+/).filter(Boolean);
-  const g = $("grupo").value, f = $("freq").value, t = $("tipo").value, only = $("onlysel").checked;
-  const lista = DATA[vista].filter(s => (!g || s.grupo === g) && (!f || s.frec === f) && (!t || s.tipo === t)
-    && (!only || sel.includes(s.id)) && q.every(w => s._q.includes(w)));
-  lista.sort((a, b) => a.grupo.localeCompare(b.grupo, "es") || 0);
+  const base = DATA[vista].filter(s => q.every(w => s._q.includes(w)) && pasa(s, true));
+  const cuenta = {}; base.forEach(s => cuenta[s.cat] = (cuenta[s.cat] || 0) + 1);
+  const cats = [...new Set(DATA[vista].map(s => s.cat))].sort((a, b) => a.localeCompare(b, "es"));
+  $("cats").innerHTML = `<button class="cat" data-cat="" aria-pressed="${!catSel}">Todas<span class="n">${base.length}</span></button>` +
+    cats.map(c => `<button class="cat" data-cat="${esc(c)}" aria-pressed="${catSel === c}">${esc(c)}<span class="n">${cuenta[c] || 0}</span></button>`).join("");
+  const lista = base.filter(s => !catSel || s.cat === catSel);
+  lista.sort((a, b) => a.cat.localeCompare(b.cat, "es") || a.grupo.localeCompare(b.grupo, "es"));
   $("count").textContent = `${lista.length} de ${DATA[vista].length}`;
   const out = []; let last = null;
   for (const s of lista.slice(0, 1500)) {
-    if (s.grupo !== last) { out.push(`<tr class="grp"><td colspan="5">${esc(s.grupo)}</td></tr>`); last = s.grupo; }
+    if (s.cat !== last) { out.push(`<tr class="grp"><td colspan="5">${esc(s.cat)}</td></tr>`); last = s.cat; }
     const on = sel.includes(s.id);
+    const tags = [s.dato !== "Nivel" ? `<span class="pill var">${esc(s.dato.replace("Variación", "var."))}</span>` : "",
+      s.ajuste === "Desestacionalizada" ? '<span class="pill des">desest.</span>' : s.ajuste === "Tendencia-ciclo" ? '<span class="pill des">tendencia</span>' : s.ajuste === "Real (deflactada)" ? '<span class="pill real">real</span>' : ""].join("");
     out.push(`<tr class="${on ? "sel" : ""}"><td class="chk"><input type="checkbox" id="c-${esc(s.id)}" data-id="${esc(s.id)}" ${on ? "checked" : ""} aria-label="Elegir ${esc(s.nombre)}"></td>
-      <td><label for="c-${esc(s.id)}"><div class="nm">${esc(s.nombre)} ${s.tipo === "variacion" ? '<span class="pill">var.</span>' : ""}</div>
-      <div class="id">${esc(s.id)}</div>${s.extra && s.extra !== s.nombre ? `<div class="desc">${esc(s.extra)}</div>` : ""}<div class="desc">${esc(s.desc)}</div></label></td>
+      <td><label for="c-${esc(s.id)}"><div class="nm">${esc(s.nombre)}<span class="tags">${tags}</span></div>
+      <div class="id">${esc(s.id)}</div>${s.extra && s.extra !== s.nombre ? `<div class="desc">${esc(s.extra)}</div>` : ""}<div class="desc">${esc(s.org)} · ${esc(s.grupo)}</div></label></td>
       <td class="meta hide-sm">${esc(s.unidad)}</td><td class="meta hide-sm">${esc(FREQ[s.frec] || s.frec)}</td><td class="meta">${esc(s.ultimo)}</td></tr>`);
   }
   $("rows").innerHTML = out.join("") || `<tr><td colspan="5" class="empty">No hay series con ese filtro.</td></tr>`;
 }
+$("cats").addEventListener("click", e => { const b = e.target.closest("[data-cat]"); if (b) { catSel = b.dataset.cat; render(); } });
+$("limpiar").onclick = () => { catSel = ""; ["q", "grupo", "freq", "dato", "ajuste"].forEach(id => $(id).value = ""); $("onlysel").checked = false; render(); };
 $("rows").addEventListener("change", e => {
   const id = e.target.dataset && e.target.dataset.id; if (!id) return;
   if (e.target.checked) { if (!sel.includes(id)) sel.push(id); } else sel = sel.filter(x => x !== id);
   e.target.closest("tr").classList.toggle("sel", e.target.checked);
   update();
 });
-["q", "grupo", "freq", "tipo", "onlysel"].forEach(id => $(id).addEventListener(id === "q" ? "input" : "change", render));
+["q", "grupo", "freq", "dato", "ajuste", "onlysel"].forEach(id => $(id).addEventListener(id === "q" ? "input" : "change", render));
 
 const lista = () => sel.join(", ");
 const code1 = () => `"${lista() || "emae.desest"}" meta [IsParameterQuery = true, Type = "Text", IsParameterQueryRequired = true]`;

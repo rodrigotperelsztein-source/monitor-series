@@ -319,6 +319,51 @@ def catalogo(cal, hoy: date) -> None:
         pd.DataFrame(filas).reindex(columns=cols).to_csv(DATA / "catalogo.csv", index=False)
 
 
+CATEGORIAS = {  # fuente -> gran categoría (para buscar y filtrar en las páginas)
+    "emae": "Actividad económica", "emae_letras": "Actividad económica", "emae_letras_desest": "Actividad económica",
+    "ipi": "Actividad económica", "isac": "Actividad económica", "supermercados": "Actividad económica",
+    "ipc": "Precios",
+    "ripte": "Salarios", "ripte_real": "Salarios", "salarios": "Salarios", "salarios_real": "Salarios",
+    "sube": "Transporte", "sube_mensual": "Transporte", "sube_desest": "Transporte",
+    "camiones_puertos": "Agro y puertos", "camiones_puertos_mensual": "Agro y puertos",
+    "cammesa_balance": "Electricidad", "cammesa_diaria": "Electricidad", "cammesa_gu_actividad": "Electricidad",
+    "cammesa_gu_actividad_mensual": "Electricidad",
+    "ventas_combustibles": "Combustibles", "ventas_combustibles_desest": "Combustibles",
+    "petroleo": "Petróleo y precios internacionales", "petroleo_mensual": "Petróleo y precios internacionales",
+    "refinados": "Petróleo y precios internacionales", "refinados_mensual": "Petróleo y precios internacionales",
+}
+
+
+def clasificar(fid: str, cid: str, tipo: str) -> tuple[str, str]:
+    """(dato, ajuste) de una serie, para los filtros de las páginas.
+
+    dato: Nivel, Variación mensual, Variación interanual, Variación acumulada u Otra variación.
+    ajuste: Desestacionalizada, Tendencia-ciclo, Real (deflactada) u Original.
+    """
+    if tipo == "variacion":
+        dato = ("Variación mensual" if cid.endswith("_var_m") else "Variación interanual" if cid.endswith("_var_ia")
+                else "Variación acumulada" if cid.endswith("_var_acum") else "Otra variación")
+    else:
+        dato = "Nivel"
+    base = cid.rsplit("_var_", 1)[0]
+    if fid.endswith("_desest") or "desest" in base:
+        ajuste = "Desestacionalizada"
+    elif "tendencia" in base:
+        ajuste = "Tendencia-ciclo"
+    elif fid.endswith("_real") or base.endswith("_real") or "_real_" in base:
+        ajuste = "Real (deflactada)"
+    else:
+        ajuste = "Original"
+    return dato, ajuste
+
+
+def organismo_corto(texto: str) -> str:
+    """'INDEC (serie original); desestacionalización propia' -> 'INDEC'."""
+    for sep in (" (", ";"):
+        texto = texto.split(sep)[0]
+    return texto.strip()
+
+
 def todas() -> None:
     """Todas las series juntas en formato largo, pensado para Power BI y similares.
 
@@ -342,10 +387,15 @@ def todas() -> None:
             puntos = df[["fecha", cid]].dropna().rename(columns={cid: "valor"})
             puntos.insert(1, "id_serie", id_serie)
             valores.append(puntos)
+            dato, ajuste = clasificar(fid, cid, col["tipo"])
             series.append({
                 "id_serie": id_serie,
                 "serie": col["nombre"],
                 "tipo": col["tipo"],
+                "categoria": CATEGORIAS.get(fid, "Otras"),
+                "dato": dato,
+                "ajuste": ajuste,
+                "organismo_corto": organismo_corto(getattr(fuente, "ORGANISMO", "")),
                 "unidad": col["unidad"] or ("%" if col["tipo"] == "variacion" else fuente.UNIDAD),
                 "frecuencia": fuente.FRECUENCIA,
                 "fuente": fid,

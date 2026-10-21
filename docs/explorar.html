@@ -64,6 +64,11 @@ input[type=month] { color-scheme: dark; }
 .resultados button { display: block; width: 100%; text-align: left; font: inherit; color: var(--ink); background: none; border: 0; border-bottom: 1px solid rgba(140,190,240,.08); padding: 8px 10px; cursor: pointer; }
 .resultados button:hover, .resultados button:focus-visible { background: rgba(95,208,255,.1); }
 .resultados small { display: block; color: var(--muted); font-size: 11.5px; }
+.resultados .rg { padding: 7px 10px 4px; font-size: 10.5px; text-transform: uppercase; letter-spacing: .09em; color: var(--acc); font-weight: 700; background: rgba(95,208,255,.05); }
+.resultados .tg { display: inline-block; margin-left: 6px; font-size: 10.5px; padding: 0 6px; border-radius: 999px; border: 1px solid rgba(140,190,240,.3); color: var(--muted); }
+.resultados .tg.des { border-color: rgba(124,242,195,.45); color: var(--acc2); }
+.resultados .tg.real { border-color: rgba(255,200,87,.45); color: var(--warn); }
+.filtros select { font-size: 12px; padding: 6px 5px; }
 .chips { display: flex; flex-direction: column; gap: 6px; }
 .chip { display: grid; grid-template-columns: 10px minmax(0, 1fr) auto; align-items: center; gap: 8px; background: rgba(0,0,0,.22); border: 1px solid var(--card-b); border-radius: 9px; padding: 7px 8px 7px 10px; }
 .chip .c { width: 10px; height: 10px; border-radius: 3px; }
@@ -141,6 +146,12 @@ footer { color: var(--dim); font-size: 12px; text-align: center; padding: 8px; }
     <aside class="panel" aria-label="Controles">
       <div class="campo buscador">
         <label class="lbl" for="q">Agregar series</label>
+        <div class="fila filtros">
+          <select id="f-cat" aria-label="Categoría"><option value="">Todas las categorías</option></select>
+          <select id="f-org" aria-label="Fuente"><option value="">Todas las fuentes</option></select>
+          <select id="f-dato" aria-label="Dato"><option value="">Dato: todos</option><option>Nivel</option><option>Variación mensual</option><option>Variación interanual</option><option>Variación acumulada</option></select>
+          <select id="f-ajuste" aria-label="Ajuste"><option value="">Ajuste: todos</option><option>Original</option><option>Desestacionalizada</option><option>Tendencia-ciclo</option><option>Real (deflactada)</option></select>
+        </div>
         <input id="q" type="search" placeholder="Buscar: industria, sube, salario, soja…" autocomplete="off">
         <div class="resultados" id="resultados" hidden></div>
       </div>
@@ -356,13 +367,22 @@ function renderChips() {
 $("chips").addEventListener("click", e => { const id = e.target.dataset.rm; if (id) { E.sel = E.sel.filter(x => x !== id); actualizar(); } });
 function buscar() {
   const q = norm($("q").value).split(/\s+/).filter(Boolean);
+  const f = { cat: $("f-cat").value, org: $("f-org").value, dato: $("f-dato").value, ajuste: $("f-ajuste").value };
   const box = $("resultados");
-  if (!q.length) { box.hidden = true; return; }
-  const r = CATALOGO.filter(s => !E.sel.includes(s.id) && q.every(w => s._q.includes(w))).slice(0, 40);
-  box.innerHTML = r.length ? r.map(s => `<button data-add="${esc(s.id)}">${esc(s.nombre)}<small>${esc(s.fuente)} · ${esc(s.unidad)} · ${s.frec === "D" ? "diaria" : s.frec === "M" ? "mensual" : s.frec}</small></button>`).join("")
-    : `<div class="vacio" style="padding:10px">Sin resultados.</div>`;
+  if (!q.length && !f.cat && !f.org && !f.dato && !f.ajuste) { box.hidden = true; return; }
+  const r = CATALOGO.filter(s => !E.sel.includes(s.id) && q.every(w => s._q.includes(w)) && (!f.cat || s.cat === f.cat)
+    && (!f.org || s.org === f.org) && (!f.dato || s.dato === f.dato) && (!f.ajuste || s.ajuste === f.ajuste))
+    .sort((a, b) => a.cat.localeCompare(b.cat, "es")).slice(0, 80);
+  let ult = null;
+  box.innerHTML = r.length ? r.map(s => {
+    const cab = s.cat !== ult ? `<div class="rg">${esc(s.cat)}</div>` : ""; ult = s.cat;
+    const tg = (s.dato !== "Nivel" ? `<span class="tg">${esc(s.dato.replace("Variación", "var."))}</span>` : "")
+      + (s.ajuste === "Desestacionalizada" ? '<span class="tg des">desest.</span>' : s.ajuste === "Tendencia-ciclo" ? '<span class="tg des">tendencia</span>' : s.ajuste === "Real (deflactada)" ? '<span class="tg real">real</span>' : "");
+    return cab + `<button data-add="${esc(s.id)}">${esc(s.nombre)}${tg}<small>${esc(s.org)} · ${esc(s.unidad)} · ${s.frec === "D" ? "diaria" : s.frec === "M" ? "mensual" : s.frec}</small></button>`;
+  }).join("") : `<div class="vacio" style="padding:10px">Sin resultados.</div>`;
   box.hidden = false;
 }
+for (const id of ["f-cat", "f-org", "f-dato", "f-ajuste"]) $(id).addEventListener("change", buscar);
 $("q").addEventListener("input", buscar);
 $("q").addEventListener("focus", buscar);
 document.addEventListener("click", e => { if (!e.target.closest(".buscador")) $("resultados").hidden = true; });
@@ -654,7 +674,10 @@ $("ejemplos").addEventListener("click", ev => {
     const t = await fetch(`${RAW}/data/todas/series.csv`).then(r => r.text());
     const filas = parseCSV(t);
     CATALOGO = filas.map(s => ({ id: s.id_serie, nombre: s.serie, unidad: s.unidad, frec: s.frecuencia, tipo: s.tipo, fuente: s.fuente_nombre || s.fuente,
-      _q: norm([s.id_serie, s.serie, s.fuente_nombre, s.organismo].join(" ")) }));
+      cat: s.categoria || "Otras", org: s.organismo_corto || s.organismo, dato: s.dato || "", ajuste: s.ajuste || "",
+      _q: norm([s.id_serie, s.serie, s.fuente_nombre, s.organismo, s.categoria, s.dato, s.ajuste, s.ajuste === "Desestacionalizada" ? "desest" : ""].join(" ")) }));
+    const opciones = (id, vals) => $(id).insertAdjacentHTML("beforeend", [...new Set(vals)].filter(Boolean).sort((a, b) => a.localeCompare(b, "es")).map(v => `<option>${esc(v)}</option>`).join(""));
+    opciones("f-cat", CATALOGO.map(s => s.cat)); opciones("f-org", CATALOGO.map(s => s.org));
     POR_ID = Object.fromEntries(CATALOGO.map(s => [s.id, s]));
     const desc = filas.map(s => s.descargado).filter(Boolean).sort().pop();
     $("actualizado").textContent = desc ? "datos al " + new Date(desc).toLocaleString("es-AR", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "en línea";

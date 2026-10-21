@@ -5,7 +5,7 @@
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-31-61",
   "frecuencia": "M",
   "unidad": "Índice base oct-2016=100",
-  "sha256": "1aa57cd93a1afa405f8032769c05672270516d60ee6388f2b0c206e83f4b5d2b",
+  "sha256": "9c0f2aa39b571d7d7a6c8c54daf11e0f46b8d9a1679a714f4feb0e533cafb4b9",
   "columnas": {
     "privado_registrado": {
       "nombre": "Salarios del sector privado registrado, índice oct-2016=100",
@@ -83,8 +83,8 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-10-19T18:11:14Z",
-  "ultimo_periodo": "2026-07",
-  "observaciones": 130,
-  "original_guardado": "data/raw/salarios/2026-10-19_1aa57cd9.csv"
+  "descargado": "2026-10-21T19:38:26Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 131,
+  "original_guardado": "data/raw/salarios/2026-10-21_9c0f2aa3.csv"
 }

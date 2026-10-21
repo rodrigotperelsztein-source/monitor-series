@@ -5,7 +5,7 @@
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48",
   "frecuencia": "M",
   "unidad": "Índice base 2004=100",
-  "sha256": "363de205816744e9c43ef0354872d421b7895f4ebdc3c956a6423389d8480ad1",
+  "sha256": "746ccd07d447362e0dd21585317e54e571841e67cb7bd30e065c60e7a4dd7fbd",
   "derivada_de": [
     "emae_letras"
   ],
@@ -94,10 +94,10 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-10-16T20:25:54Z",
-  "calculado": "2026-10-19T18:10:00Z",
-  "ultimo_periodo": "2026-07",
-  "observaciones": 271,
+  "descargado": "2026-10-21T19:38:26Z",
+  "calculado": "2026-10-21T19:38:26Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 272,
   "desestacionalizacion": {
     "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
     "version_especificaciones": "2026-10-19",
@@ -141,20 +141,20 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(2 0 0)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1781.53162023314,
+        "aicc": 1787.12878012798,
         "calendario": {
           "dias_semana": {
-            "chi2": 9.81,
+            "chi2": 9.99,
             "gl": 6,
-            "p": 0.1329
+            "p": 0.1249
           },
           "feriados": {
-            "coef": -0.00849,
-            "t": -2.04
+            "coef": -0.008567,
+            "t": -2.06
           },
           "pascua": {
-            "coef": 0.010202,
-            "t": 1.02
+            "coef": 0.010292,
+            "t": 1.03
           }
         },
         "outliers": [
@@ -184,10 +184,10 @@
           }
         ],
         "calidad": {
-          "m7": 0.104,
+          "m7": 0.103,
           "q": 0.34,
-          "qs_desest_p": 0.86212,
-          "qs_irregular_p": 0.14463,
+          "qs_desest_p": 0.85979,
+          "qs_irregular_p": 0.14129,
           "ljungbox_rezagos_significativos": 10
         },
         "advertencias": [
@@ -229,19 +229,19 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "No transformation",
-        "aicc": 1136.88153807763,
+        "aicc": 1138.98122312815,
         "calendario": {
           "dias_semana": {
-            "chi2": 30.87,
+            "chi2": 31.17,
             "gl": 7,
             "p": 0.0001
           },
           "feriados": {
-            "coef": -0.270179,
-            "t": -1.61
+            "coef": -0.271398,
+            "t": -1.63
           },
           "pascua": {
-            "coef": -0.427058,
+            "coef": -0.425634,
             "t": -1.01
           }
         },
@@ -268,11 +268,11 @@
           }
         ],
         "calidad": {
-          "m7": 0.259,
+          "m7": 0.258,
           "q": 0.3,
           "qs_desest_p": 1.0,
           "qs_irregular_p": 1.0,
-          "ljungbox_rezagos_significativos": 0
+          "ljungbox_rezagos_significativos": 1
         },
         "advertencias": [
           "WARNING: At least one visually significant seasonal peak has been found"
@@ -305,19 +305,19 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(3 1 1)(0 1 1)",
         "transformacion": "No transformation",
-        "aicc": 1419.30702116436,
+        "aicc": 1423.79912128771,
         "calendario": {
           "dias_semana": {
-            "chi2": 85.63,
+            "chi2": 85.91,
             "gl": 7,
             "p": 0.0
           },
           "feriados": {
-            "coef": -1.344544,
-            "t": -4.66
+            "coef": -1.339615,
+            "t": -4.65
           },
           "pascua": {
-            "coef": -1.534317,
+            "coef": -1.538959,
             "t": -2.09
           }
         },
@@ -360,22 +360,22 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 2)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1534.89830733612,
+        "aicc": 1540.39022893047,
         "calendario": {
           "dias_semana": {
-            "chi2": 18.56,
+            "chi2": 18.36,
             "gl": 6,
-            "p": 0.005
+            "p": 0.0054
           },
           "feriados": {
-            "coef": -0.007952,
-            "t": -2.46
+            "coef": -0.007905,
+            "t": -2.45
           },
           "pascua": null
         },
         "outliers": [],
         "calidad": {
-          "m7": 0.348,
+          "m7": 0.347,
           "q": 0.8,
           "qs_desest_p": 1.0,
           "qs_irregular_p": 1.0,
@@ -426,20 +426,20 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 2)(0 1 1)",
         "transformacion": "No transformation",
-        "aicc": 1422.82128756335,
+        "aicc": 1426.53860918834,
         "calendario": {
           "dias_semana": {
-            "chi2": 106.86,
+            "chi2": 108.89,
             "gl": 7,
             "p": 0.0
           },
           "feriados": {
-            "coef": -1.03598,
-            "t": -3.98
+            "coef": -1.036582,
+            "t": -4.0
           },
           "pascua": {
-            "coef": 0.270769,
-            "t": 0.4
+            "coef": 0.277129,
+            "t": 0.42
           }
         },
         "outliers": [
@@ -473,7 +473,7 @@
           }
         ],
         "calidad": {
-          "m7": 0.384,
+          "m7": 0.38,
           "q": 0.32,
           "qs_desest_p": 1.0,
           "qs_irregular_p": 1.0,
@@ -508,16 +508,16 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 3)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1460.06195941052,
+        "aicc": 1464.7140630354,
         "calendario": {
           "dias_semana": {
-            "chi2": 208.89,
+            "chi2": 208.61,
             "gl": 6,
             "p": 0.0
           },
           "feriados": {
-            "coef": -0.011585,
-            "t": -6.0
+            "coef": -0.011542,
+            "t": -5.99
           },
           "pascua": null
         },
@@ -574,16 +574,16 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(1 1 0)(0 1 1)",
         "transformacion": "No transformation",
-        "aicc": 1187.59940803284,
+        "aicc": 1194.63200879867,
         "calendario": {
           "dias_semana": {
-            "chi2": 53.73,
+            "chi2": 54.92,
             "gl": 7,
             "p": 0.0
           },
           "feriados": {
-            "coef": -0.547755,
-            "t": -3.0
+            "coef": -0.554112,
+            "t": -3.03
           },
           "pascua": null
         },
@@ -602,7 +602,7 @@
           }
         ],
         "calidad": {
-          "m7": 0.173,
+          "m7": 0.174,
           "q": 0.16,
           "qs_desest_p": 1.0,
           "qs_irregular_p": 1.0,
@@ -631,16 +631,16 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 0)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1469.66766280297,
+        "aicc": 1475.09485149527,
         "calendario": {
           "dias_semana": {
-            "chi2": 80.65,
+            "chi2": 80.46,
             "gl": 6,
             "p": 0.0
           },
           "feriados": {
-            "coef": -0.008611,
-            "t": -5.14
+            "coef": -0.008576,
+            "t": -5.12
           },
           "pascua": null
         },
@@ -651,9 +651,9 @@
           }
         ],
         "calidad": {
-          "m7": 0.568,
-          "q": 0.45,
-          "qs_desest_p": 0.99131,
+          "m7": 0.569,
+          "q": 0.44,
+          "qs_desest_p": 0.98416,
           "qs_irregular_p": 1.0,
           "ljungbox_rezagos_significativos": 1
         },

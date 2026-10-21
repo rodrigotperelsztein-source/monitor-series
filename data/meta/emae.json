@@ -5,11 +5,11 @@
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48",
   "frecuencia": "M",
   "unidad": "Índice base 2004=100",
-  "sha256": "ab878bfbc76f95a934e57ff5db9b7e6db3c100194d3527e980953a3b71d6a244",
-  "descargado": "2026-10-16T21:08:21Z",
-  "ultimo_periodo": "2026-07",
-  "observaciones": 271,
-  "original_guardado": "data/raw/emae/2026-10-16_ab878bfb.xls",
+  "sha256": "b5efa8d63ab83a6db1b0ad9dc2198ada30669f8443e851803d4767131329ad38",
+  "descargado": "2026-10-21T19:38:26Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 272,
+  "original_guardado": "data/raw/emae/2026-10-21_b5efa8d6.xls",
   "columnas": {
     "original": {
       "nombre": "Índice serie original (2004=100)",

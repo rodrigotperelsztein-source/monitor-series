@@ -1,9 +1,25 @@
 [calendario INDEC]
   2.º sem. 2026: 174 publicaciones; 1.º sem. 2027: todavía no publicado
 [emae]
-  sin cambios en el archivo
+Aviso: original tiene 1 meses revisados respecto de la versión guardada.
+Aviso: desest tiene 4 meses revisados respecto de la versión guardada.
+Aviso: tendencia tiene 11 meses revisados respecto de la versión guardada.
+  actualizada: último período 2026-07 → 2026-08; valores revisados: 1094
 [emae_letras]
-  sin cambios en el archivo
+Aviso: a_agro tiene 6 meses revisados respecto de la versión guardada.
+Aviso: c_mineria tiene 1 meses revisados respecto de la versión guardada.
+Aviso: d_industria tiene 1 meses revisados respecto de la versión guardada.
+Aviso: e_electricidad_gas_agua tiene 1 meses revisados respecto de la versión guardada.
+Aviso: f_construccion tiene 3 meses revisados respecto de la versión guardada.
+Aviso: h_hoteles_restaurantes tiene 5 meses revisados respecto de la versión guardada.
+Aviso: i_transporte_comunicaciones tiene 1 meses revisados respecto de la versión guardada.
+Aviso: k_inmobiliarias_empresariales tiene 1 meses revisados respecto de la versión guardada.
+Aviso: l_administracion_publica tiene 1 meses revisados respecto de la versión guardada.
+Aviso: m_ensenanza tiene 1 meses revisados respecto de la versión guardada.
+Aviso: n_salud tiene 2 meses revisados respecto de la versión guardada.
+Aviso: o_otros_servicios tiene 4 meses revisados respecto de la versión guardada.
+Aviso: impuestos_netos tiene 3 meses revisados respecto de la versión guardada.
+  actualizada: último período 2026-07 → 2026-08; valores revisados: 106
 [ipc]
   sin cambios en el archivo
 [ipi]
@@ -15,15 +31,13 @@
 [ripte]
   sin cambios en el archivo
 [salarios]
-  sin cambios en el archivo
+  actualizada: último período 2026-07 → 2026-08; valores revisados: 0
 [sube]
   sin cambios en el archivo
 [petroleo]
-  actualizada: último período — → 2026-10-20; valores revisados: 0
+  archivo distinto pero mismos datos
 [camiones_puertos]
-  aviso: 3 días sin dato en la fuente: ['2024-08-31', '2025-02-28', '2025-12-31']
-  aviso: en 1 días la suma por productos no da el total: ['2024-09-26']
-  actualizada: último período 2026-10 → 2026-10-21; valores revisados: 0
+  sin cambios en el archivo
 [cammesa_balance]
   sin cambios en el archivo
 [cammesa_diaria]
@@ -31,19 +45,19 @@
 [cammesa_gu_actividad]
   sin cambios en el archivo
 [emae_letras_desest]
-  sin cambios en las series de base
+  recalculada: último período 2026-07 → 2026-08
 [ripte_real]
   sin cambios en las series de base
 [salarios_real]
-  sin cambios en las series de base
+  recalculada: último período 2026-07 → 2026-08
 [sube_mensual]
   sin cambios en las series de base
 [sube_desest]
   sin cambios en las series de base
 [petroleo_mensual]
-  recalculada: último período — → 2026-09
+  sin cambios en las series de base
 [camiones_puertos_mensual]
-  recalculada: último período 2026-09 → 2026-09
+  sin cambios en las series de base
 [cammesa_gu_actividad_mensual]
   sin cambios en las series de base
 [catálogo de Monitor Argy]

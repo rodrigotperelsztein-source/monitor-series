@@ -5,11 +5,11 @@
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48",
   "frecuencia": "M",
   "unidad": "Índice base 2004=100",
-  "sha256": "f58295279c4a5df9a1319cfb285710d28305e830c6e63fa7d3fee32ab9bf23c9",
-  "descargado": "2026-10-16T20:25:54Z",
-  "ultimo_periodo": "2026-07",
-  "observaciones": 271,
-  "original_guardado": "data/raw/emae_letras/2026-10-16_f5829527.xls",
+  "sha256": "42106ce74638f29e5099a103178d469211f2afa476edd76e0a2effc1743a4366",
+  "descargado": "2026-10-21T19:38:26Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 272,
+  "original_guardado": "data/raw/emae_letras/2026-10-21_42106ce7.xls",
   "columnas": {
     "a_agro": {
       "nombre": "A - Agricultura, ganadería, caza y silvicultura",

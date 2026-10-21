@@ -56,7 +56,7 @@ jobs:
           python-version: "3.12"
 
       - name: Instalar dependencias (verificadas por huella)
-        run: pip install --require-hashes --only-binary=:all: --no-cache-dir -r requirements.txt
+        run: "pip install --require-hashes --only-binary=:all: --no-cache-dir -r requirements.txt"
 
       - name: Bajar, validar y procesar
         env:

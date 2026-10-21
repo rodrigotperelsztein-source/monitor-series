@@ -21,6 +21,9 @@ on:
     # las fuentes (atrapa revisiones y publicaciones fuera de calendario) y termina en error
     # si una publicación prevista para hoy no entró.
     - cron: "47 0 * * *"
+    # Días hábiles a las 10:10: cierre del día anterior del Brent y del WTI (la EIA lo publica
+    # entre las 8:30 y las 9:30 de Buenos Aires). Solo baja esa fuente.
+    - cron: "10 13 * * 1-5"
   workflow_dispatch:
     inputs:
       modo:
@@ -69,13 +72,16 @@ jobs:
             MODO="$MODO_MANUAL"
           elif [ "$HORARIO" = "47 0 * * *" ]; then
             MODO=completo
+          elif [ "$HORARIO" = "10 13 * * 1-5" ]; then
+            MODO=completo
+            FUENTES=petroleo
           else
             MODO=calendario
           fi
           case "$MODO" in completo|calendario) ;; *) echo "Modo inválido"; exit 1;; esac
           echo "Modo: $MODO"
           # La salida queda también en data/ultima_corrida.txt, para verla sin entrar a Actions.
-          python -m pipeline.actualizar --modo "$MODO" $FORZAR 2>&1 | tee data/ultima_corrida.txt
+          python -m pipeline.actualizar --modo "$MODO" $FORZAR ${FUENTES:-} 2>&1 | tee data/ultima_corrida.txt
           exit "${PIPESTATUS[0]}"
 
       - name: Guardar cambios en el repositorio (solo data/)

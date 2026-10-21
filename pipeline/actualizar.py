@@ -27,10 +27,10 @@ import pandas as pd
 import requests
 
 from pipeline import calendario
-from pipeline.fuentes import emae, emae_letras, emae_letras_desest, ipc, ipi, isac, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, supermercados, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual
+from pipeline.fuentes import emae, emae_letras, emae_letras_desest, ipc, ipi, isac, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, supermercados, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual
 from pipeline.fuentes._indec import iguales
 
-FUENTES = {f.ID: f for f in [emae, emae_letras, emae_letras_desest, ipc, ipi, isac, supermercados, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual]}
+FUENTES = {f.ID: f for f in [emae, emae_letras, emae_letras_desest, ipc, ipi, isac, supermercados, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual]}
 # Series calculadas a partir de otra (DERIVADA_DE): no se bajan, se recalculan cuando cambia su base.
 DERIVADAS = {fid: f for fid, f in FUENTES.items() if hasattr(f, "DERIVADA_DE")}
 
@@ -377,7 +377,7 @@ def main() -> int:
     (DATA / "meta").mkdir(parents=True, exist_ok=True)
     fallas = 0
 
-    if args.modo == "completo":
+    if args.modo == "completo" and not args.fuentes:
         print("[calendario INDEC]")
         try:
             print("  " + calendario.actualizar(descargar, hoy))
@@ -426,7 +426,7 @@ def main() -> int:
     if args.modo == "calendario" and not ids and not fallas:
         return 0
 
-    if args.modo == "completo":
+    if args.modo == "completo" and not args.fuentes:
         # Aviso: una publicación prevista para hoy o ayer que no entró.
         for fid, fuente in FUENTES.items():
             previstas = calendario.fechas(getattr(fuente, "CALENDARIO", ""), cal)
@@ -437,7 +437,7 @@ def main() -> int:
                 fallas += 1
                 print(f"AVISO: INDEC tenía previsto publicar {fid} el {recientes[-1]:%d/%m} y el dato todavía no entró.")
 
-    if args.modo == "completo":
+    if args.modo == "completo" and not args.fuentes:
         print("[catálogo de Monitor Argy]")
         try:
             print("  " + catalogo_monitor_argy())

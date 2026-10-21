@@ -5,7 +5,7 @@
   "pagina": "https://www.argentina.gob.ar/economia/energia/hidrocarburos/refinacion-y-comercializacion-de-petroleo-gas-y-derivados-tablas-dinamicas",
   "frecuencia": "M",
   "unidad": "m³",
-  "sha256": "b0492338076634340e6764073078937f0c73ccc0a02e7866978d61450b9b4d79",
+  "sha256": "fd84b58479cabf313a46f4fb22ef214d4ee21caccbf7a371dd24805a775e667b",
   "derivada_de": [
     "ventas_combustibles"
   ],
@@ -82,15 +82,115 @@
       "nombre": "Ventas de nafta grado 3 (ultra), total del mercado, desestacionalizada (propia, X-13), var. % mensual",
       "tipo": "variacion",
       "unidad": "%"
+    },
+    "gasoil_ypf": {
+      "nombre": "Ventas de gasoil grados 2 y 3, YPF, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_ypf_var_m": {
+      "nombre": "Ventas de gasoil grados 2 y 3, YPF, desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gasoil_shell": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Shell (Raízen), desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_shell_var_m": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Shell (Raízen), desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gasoil_axion": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Axion (Esso / Pan American), desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_axion_var_m": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Axion (Esso / Pan American), desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gasoil_trafigura": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Trafigura (Puma), desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_trafigura_var_m": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Trafigura (Puma), desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gasoil_refinor": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Refinor, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_refinor_var_m": {
+      "nombre": "Ventas de gasoil grados 2 y 3, Refinor, desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "naftas_ypf": {
+      "nombre": "Ventas de naftas grados 2 y 3, YPF, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_ypf_var_m": {
+      "nombre": "Ventas de naftas grados 2 y 3, YPF, desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "naftas_shell": {
+      "nombre": "Ventas de naftas grados 2 y 3, Shell (Raízen), desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_shell_var_m": {
+      "nombre": "Ventas de naftas grados 2 y 3, Shell (Raízen), desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "naftas_axion": {
+      "nombre": "Ventas de naftas grados 2 y 3, Axion (Esso / Pan American), desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_axion_var_m": {
+      "nombre": "Ventas de naftas grados 2 y 3, Axion (Esso / Pan American), desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "naftas_trafigura": {
+      "nombre": "Ventas de naftas grados 2 y 3, Trafigura (Puma), desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_trafigura_var_m": {
+      "nombre": "Ventas de naftas grados 2 y 3, Trafigura (Puma), desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "naftas_refinor": {
+      "nombre": "Ventas de naftas grados 2 y 3, Refinor, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_refinor_var_m": {
+      "nombre": "Ventas de naftas grados 2 y 3, Refinor, desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
     }
   },
   "descargado": "2026-10-21T19:46:51Z",
-  "calculado": "2026-10-21T20:45:44Z",
+  "calculado": "2026-10-21T20:52:19Z",
   "ultimo_periodo": "2026-08",
   "observaciones": 200,
   "desestacionalizacion": {
     "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
-    "version_especificaciones": "2026-10-21",
+    "version_especificaciones": "2026-10-21b",
     "series": {
       "gasoil_total": {
         "especificacion": {
@@ -651,6 +751,701 @@
         "calidad": {
           "m7": 0.263,
           "q": 0.35,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": []
+      },
+      "gasoil_ypf": {
+        "especificacion": {
+          "modelo": "(0 1 1)(0 1 1)",
+          "transformacion": "niveles",
+          "outliers": [
+            {
+              "tipo": "AO",
+              "fecha": "2015-04"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2016-05"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2020-03"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2020-04"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2020-08"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "identificada con X-13 sobre 2010-01 a 2026-08 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(0 1 1)(0 1 1)",
+        "transformacion": "No transformation",
+        "aicc": 1741.11076123723,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 61.22,
+            "gl": 7,
+            "p": 0.0
+          },
+          "feriados": {
+            "coef": -3.533256,
+            "t": -1.54
+          },
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "AO",
+            "fecha": "2015-04"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2016-05"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2020-03"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2020-08"
+          }
+        ],
+        "calidad": {
+          "m7": 0.299,
+          "q": 0.48,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant seasonal peak has been found",
+          "WARNING: At least one visually significant trading day peak has been"
+        ]
+      },
+      "gasoil_shell": {
+        "especificacion": {
+          "modelo": "(0 1 1)(0 1 1)",
+          "transformacion": "niveles",
+          "outliers": [
+            {
+              "tipo": "TC",
+              "fecha": "2020-03"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "identificada con X-13 sobre 2010-01 a 2026-08 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(0 1 1)(0 1 1)",
+        "transformacion": "No transformation",
+        "aicc": 1425.97099380686,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 27.44,
+            "gl": 7,
+            "p": 0.0003
+          },
+          "feriados": {
+            "coef": -0.757874,
+            "t": -0.7
+          },
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "TC",
+            "fecha": "2020-03"
+          }
+        ],
+        "calidad": {
+          "m7": 0.443,
+          "q": 0.67,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": []
+      },
+      "gasoil_axion": {
+        "especificacion": {
+          "modelo": "(0 1 1)(0 1 1)",
+          "transformacion": "log",
+          "outliers": [
+            {
+              "tipo": "LS",
+              "fecha": "2012-11"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2014-02"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2016-09"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2017-04"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2020-03"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2020-12"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "identificada con X-13 sobre 2010-01 a 2026-08 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(0 1 1)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 1504.54316534858,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 15.89,
+            "gl": 6,
+            "p": 0.0144
+          },
+          "feriados": {
+            "coef": -0.008457,
+            "t": -0.98
+          },
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2012-11"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2014-02"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2016-09"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2017-04"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2020-03"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2020-12"
+          }
+        ],
+        "calidad": {
+          "m7": 0.788,
+          "q": 1.55,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 1
+        },
+        "advertencias": []
+      },
+      "gasoil_trafigura": {
+        "especificacion": {
+          "modelo": "(1 0 2)(1 0 0)",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": true,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "identificada con X-13 sobre 2010-01 a 2026-08 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 0 2)(1 0 0)",
+        "transformacion": "Log(y)",
+        "aicc": 679.551900626718,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": {
+            "coef": -0.025954,
+            "t": -1.82
+          },
+          "pascua": null
+        },
+        "outliers": [],
+        "calidad": {
+          "m7": 0.793,
+          "q": 1.17,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 4
+        },
+        "advertencias": []
+      },
+      "gasoil_refinor": {
+        "especificacion": {
+          "modelo": "(1 0 0)(0 1 1)",
+          "transformacion": "log",
+          "outliers": [
+            {
+              "tipo": "AO",
+              "fecha": "2018-04"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2020-02"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2022-05"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2023-05"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2023-12"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "identificada con X-13 sobre 2010-01 a 2026-08 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 0 0)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 614.233068439387,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 52.87,
+            "gl": 6,
+            "p": 0.0
+          },
+          "feriados": {
+            "coef": 0.006762,
+            "t": 0.87
+          },
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "AO",
+            "fecha": "2018-04"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2020-02"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2022-05"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2023-05"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2023-12"
+          }
+        ],
+        "calidad": {
+          "m7": 0.507,
+          "q": 0.84,
+          "qs_desest_p": 0.99535,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": []
+      },
+      "naftas_ypf": {
+        "especificacion": {
+          "modelo": "(0 1 1)(0 1 1)",
+          "transformacion": "niveles",
+          "outliers": [
+            {
+              "tipo": "LS",
+              "fecha": "2020-03"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2020-04"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2020-06"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2020-12"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2021-04"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2021-05"
+            }
+          ],
+          "dias_semana": false,
+          "feriados": true,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "identificada con X-13 sobre 2010-01 a 2026-08 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(0 1 1)(0 1 1)",
+        "transformacion": "No transformation",
+        "aicc": 1442.36450790957,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": {
+            "coef": 1.116681,
+            "t": 1.12
+          },
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2020-03"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2020-06"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2020-12"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2021-04"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2021-05"
+          }
+        ],
+        "calidad": {
+          "m7": 0.199,
+          "q": 0.64,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": []
+      },
+      "naftas_shell": {
+        "especificacion": {
+          "modelo": "(1 1 0)(0 1 1)",
+          "transformacion": "niveles",
+          "outliers": [
+            {
+              "tipo": "AO",
+              "fecha": "2020-03"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2020-04"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2021-05"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2023-12"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "identificada con X-13 sobre 2010-01 a 2026-08 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 0)(0 1 1)",
+        "transformacion": "No transformation",
+        "aicc": 1232.57166928211,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 75.75,
+            "gl": 7,
+            "p": 0.0
+          },
+          "feriados": {
+            "coef": -0.287707,
+            "t": -0.51
+          },
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "AO",
+            "fecha": "2020-03"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2021-05"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2023-12"
+          }
+        ],
+        "calidad": {
+          "m7": 0.364,
+          "q": 0.52,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": []
+      },
+      "naftas_axion": {
+        "especificacion": {
+          "modelo": "(0 1 1)(0 1 1)",
+          "transformacion": "niveles",
+          "outliers": [
+            {
+              "tipo": "AO",
+              "fecha": "2016-09"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2017-03"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2020-03"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2020-04"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2021-05"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "identificada con X-13 sobre 2010-01 a 2026-08 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(0 1 1)(0 1 1)",
+        "transformacion": "No transformation",
+        "aicc": 1185.51616951401,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 17.58,
+            "gl": 7,
+            "p": 0.014
+          },
+          "feriados": {
+            "coef": -0.187091,
+            "t": -0.36
+          },
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "AO",
+            "fecha": "2016-09"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2017-03"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2020-03"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2021-05"
+          }
+        ],
+        "calidad": {
+          "m7": 0.539,
+          "q": 0.66,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": []
+      },
+      "naftas_trafigura": {
+        "especificacion": {
+          "modelo": "(0 1 0)(1 1 0)",
+          "transformacion": "niveles",
+          "outliers": [
+            {
+              "tipo": "LS",
+              "fecha": "2020-03"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2020-04"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2020-12"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "identificada con X-13 sobre 2010-01 a 2026-08 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(0 1 0)(1 1 0)",
+        "transformacion": "No transformation",
+        "aicc": 371.092962694122,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 50.19,
+            "gl": 7,
+            "p": 0.0
+          },
+          "feriados": {
+            "coef": -0.207016,
+            "t": -0.92
+          },
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2020-03"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2020-12"
+          }
+        ],
+        "calidad": {
+          "m7": 0.656,
+          "q": 0.79,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 8
+        },
+        "advertencias": []
+      },
+      "naftas_refinor": {
+        "especificacion": {
+          "modelo": "(0 1 1)(0 1 1)",
+          "transformacion": "log",
+          "outliers": [
+            {
+              "tipo": "AO",
+              "fecha": "2014-01"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2020-03"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2020-04"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2023-12"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "identificada con X-13 sobre 2010-01 a 2026-08 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(0 1 1)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 448.945934175724,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 41.27,
+            "gl": 6,
+            "p": 0.0
+          },
+          "feriados": {
+            "coef": -0.001266,
+            "t": -0.21
+          },
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "AO",
+            "fecha": "2014-01"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2020-03"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2023-12"
+          }
+        ],
+        "calidad": {
+          "m7": 0.521,
+          "q": 0.71,
           "qs_desest_p": 1.0,
           "qs_irregular_p": 1.0,
           "ljungbox_rezagos_significativos": 0

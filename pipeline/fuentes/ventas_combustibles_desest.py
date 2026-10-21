@@ -1,4 +1,4 @@
-"""Ventas al mercado de gasoil y naftas, total del mercado, desestacionalización propia (X-13).
+"""Ventas al mercado de gasoil y naftas (total del mercado y principales empresas), desestacionalización propia (X-13).
 
 Se calcula desde data/ventas_combustibles.csv cada vez que esta cambia. Ver pipeline/desest.py
 para el método. Como en SUBE, los efectos de días de la semana y feriados SÍ se quitan de la serie
@@ -29,7 +29,7 @@ FRECUENCIA = "M"
 ORGANISMO = "Secretaría de Energía (datos originales); desestacionalización propia"
 UNIDAD = "m³"
 CALENDARIO = ""
-VERSION = "2026-10-21"
+VERSION = "2026-10-21b"
 
 IDENT = "identificada con X-13 sobre 2010-01 a 2026-08 y fijada"
 _e = dict(pascua=False, efectos_en_serie=False, origen=IDENT)
@@ -51,7 +51,33 @@ ESPECIFICACIONES = {
     "nafta_g3_total": Especificacion("(0 1 0)(0 1 1)", "niveles", [
         ("LS", "2018-09"), ("LS", "2020-03"), ("TC", "2020-04"), ("TC", "2021-05"), ("AO", "2023-12"),
         ("LS", "2023-12")], **_e),
+    # Por empresa (gasoil y naftas, grados 2 + 3). DAPSA y Delta/Gulf no se ajustan: no tienen una
+    # estacionalidad estable que X-13 pueda identificar (M7 > 1).
+    "gasoil_ypf": Especificacion("(0 1 1)(0 1 1)", "niveles", [
+        ("AO", "2015-04"), ("TC", "2016-05"), ("LS", "2020-03"), ("AO", "2020-04"), ("AO", "2020-08")], **_e),
+    "gasoil_shell": Especificacion("(0 1 1)(0 1 1)", "niveles", [("TC", "2020-03")], **_e),
+    "gasoil_axion": Especificacion("(0 1 1)(0 1 1)", "log", [
+        ("LS", "2012-11"), ("TC", "2014-02"), ("AO", "2016-09"), ("TC", "2017-04"), ("TC", "2020-03"),
+        ("TC", "2020-12")], **_e),
+    "gasoil_trafigura": Especificacion("(1 0 2)(1 0 0)", "log", [], dias_semana=False, **_e),
+    # Refinor en logaritmos: su estacionalidad (cosecha en el NOA) es proporcional al nivel, que bajó.
+    "gasoil_refinor": Especificacion("(1 0 0)(0 1 1)", "log", [
+        ("AO", "2018-04"), ("AO", "2020-02"), ("LS", "2022-05"), ("TC", "2023-05"), ("LS", "2023-12")], **_e),
+    "naftas_ypf": Especificacion("(0 1 1)(0 1 1)", "niveles", [
+        ("LS", "2020-03"), ("TC", "2020-04"), ("AO", "2020-06"), ("LS", "2020-12"), ("AO", "2021-04"),
+        ("TC", "2021-05")], dias_semana=False, **_e),
+    "naftas_shell": Especificacion("(1 1 0)(0 1 1)", "niveles", [
+        ("AO", "2020-03"), ("TC", "2020-04"), ("TC", "2021-05"), ("LS", "2023-12")], **_e),
+    "naftas_axion": Especificacion("(0 1 1)(0 1 1)", "niveles", [
+        ("AO", "2016-09"), ("TC", "2017-03"), ("LS", "2020-03"), ("TC", "2020-04"), ("TC", "2021-05")], **_e),
+    "naftas_trafigura": Especificacion("(0 1 0)(1 1 0)", "niveles", [
+        ("LS", "2020-03"), ("AO", "2020-04"), ("TC", "2020-12")], **_e),
+    "naftas_refinor": Especificacion("(0 1 1)(0 1 1)", "log", [
+        ("AO", "2014-01"), ("LS", "2020-03"), ("AO", "2020-04"), ("LS", "2023-12")], **_e),
 }
+# Trafigura (red Puma) empieza a vender en volumen en 2018, cuando compra la red de Petrobras:
+# se ajusta desde 2019.
+DESDE = {"gasoil_trafigura": "2019-01", "naftas_trafigura": "2019-01"}
 
 COLUMNAS = {}
 for _cid in ESPECIFICACIONES:
@@ -68,7 +94,10 @@ def calcular(original: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
     salida = pd.DataFrame({"fecha": original["fecha"]})
     detalle = {}
     for cid, esp in ESPECIFICACIONES.items():
-        sa, diag = desestacionalizar(cid, pd.Series(original[cid].values / ESCALA, index=idx), esp)
+        serie = pd.Series(original[cid].values / ESCALA, index=idx)
+        if cid in DESDE:
+            serie = serie[pd.Period(DESDE[cid], "M"):]
+        sa, diag = desestacionalizar(cid, serie, esp)
         sa = sa.reindex(idx) * ESCALA
         salida[cid] = sa.round(1).values
         salida[f"{cid}_var_m"] = (sa.pct_change() * 100).values
@@ -83,11 +112,14 @@ def validar(nuevo: pd.DataFrame, original: pd.DataFrame) -> list[str]:
     if len(nuevo) != len(original):
         errores.append(f"largo distinto al de la serie original ({len(nuevo)} vs {len(original)})")
     for cid in ESPECIFICACIONES:
-        if nuevo[cid].isna().any():
+        desde = DESDE.get(cid, "2000-01") + "-01"
+        if nuevo.loc[nuevo["fecha"] >= desde, cid].isna().any():
             errores.append(f"{cid}: hay meses sin valor desestacionalizado")
             continue
-        r = (nuevo[cid] / original[cid])[original["fecha"] >= "2021-01-01"]
-        if not r.between(0.7, 1.4).all():
+        r = (nuevo[cid] / original[cid])[original["fecha"] >= max("2021-01-01", desde)]
+        # Las empresas chicas tienen estacionalidad más marcada que el total del mercado.
+        lim = (0.7, 1.4) if cid.endswith("_total") or "_total_" in cid else (0.5, 2.0)
+        if not r.between(*lim).all():
             errores.append(f"{cid}: la desestacionalizada se aleja demasiado de la original "
                            f"(cociente entre {r.min():.2f} y {r.max():.2f})")
     return errores

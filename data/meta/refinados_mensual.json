@@ -1,0 +1,111 @@
+{
+  "id": "refinados_mensual",
+  "nombre": "Precios internacionales de naftas y gasoil: promedio mensual (spot EE.UU., EIA)",
+  "url": "data/refinados.csv",
+  "pagina": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+  "frecuencia": "M",
+  "unidad": "Dólares por galón",
+  "sha256": "8c52258f29d25049e6ea3e09d7874b9f4d1091ce75d8a8d6dc94b55f95f30de7",
+  "derivada_de": [
+    "refinados"
+  ],
+  "archivos_de_origen": [
+    "https://www.eia.gov/dnav/pet/hist_xls/EER_EPMRU_PF4_Y35NY_DPGd.xls https://www.eia.gov/dnav/pet/hist_xls/EER_EPMRU_PF4_RGC_DPGd.xls https://www.eia.gov/dnav/pet/hist_xls/EER_EPMRR_PF4_Y05LA_DPGd.xls https://www.eia.gov/dnav/pet/hist_xls/EER_EPD2F_PF4_Y35NY_DPGd.xls https://www.eia.gov/dnav/pet/hist_xls/EER_EPD2DXL0_PF4_Y35NY_DPGd.xls https://www.eia.gov/dnav/pet/hist_xls/EER_EPD2DXL0_PF4_RGC_DPGd.xls https://www.eia.gov/TODAYinENERGY/prices.php"
+  ],
+  "columnas": {
+    "nafta_nyh": {
+      "nombre": "Nafta convencional regular, puerto de Nueva York, spot, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Dólares por galón"
+    },
+    "nafta_nyh_var_m": {
+      "nombre": "Nafta convencional regular, puerto de Nueva York, spot, promedio del mes, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nafta_nyh_var_ia": {
+      "nombre": "Nafta convencional regular, puerto de Nueva York, spot, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nafta_usgc": {
+      "nombre": "Nafta convencional regular, Costa del Golfo (EE.UU.), spot, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Dólares por galón"
+    },
+    "nafta_usgc_var_m": {
+      "nombre": "Nafta convencional regular, Costa del Golfo (EE.UU.), spot, promedio del mes, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nafta_usgc_var_ia": {
+      "nombre": "Nafta convencional regular, Costa del Golfo (EE.UU.), spot, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nafta_rbob_la": {
+      "nombre": "Nafta RBOB regular, Los Ángeles, spot, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Dólares por galón"
+    },
+    "nafta_rbob_la_var_m": {
+      "nombre": "Nafta RBOB regular, Los Ángeles, spot, promedio del mes, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nafta_rbob_la_var_ia": {
+      "nombre": "Nafta RBOB regular, Los Ángeles, spot, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ho_nyh": {
+      "nombre": "Heating oil N.º 2, puerto de Nueva York, spot, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Dólares por galón"
+    },
+    "ho_nyh_var_m": {
+      "nombre": "Heating oil N.º 2, puerto de Nueva York, spot, promedio del mes, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ho_nyh_var_ia": {
+      "nombre": "Heating oil N.º 2, puerto de Nueva York, spot, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gasoil_nyh": {
+      "nombre": "Gasoil (diésel ULSD), puerto de Nueva York, spot, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Dólares por galón"
+    },
+    "gasoil_nyh_var_m": {
+      "nombre": "Gasoil (diésel ULSD), puerto de Nueva York, spot, promedio del mes, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gasoil_nyh_var_ia": {
+      "nombre": "Gasoil (diésel ULSD), puerto de Nueva York, spot, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gasoil_usgc": {
+      "nombre": "Gasoil (diésel ULSD), Costa del Golfo (EE.UU.), spot, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Dólares por galón"
+    },
+    "gasoil_usgc_var_m": {
+      "nombre": "Gasoil (diésel ULSD), Costa del Golfo (EE.UU.), spot, promedio del mes, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gasoil_usgc_var_ia": {
+      "nombre": "Gasoil (diésel ULSD), Costa del Golfo (EE.UU.), spot, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-10-21T20:42:34Z",
+  "calculado": "2026-10-21T20:42:34Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 484
+}

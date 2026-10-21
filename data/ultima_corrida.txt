@@ -20,9 +20,11 @@
   sin cambios en el archivo
 [petroleo]
   archivo distinto pero mismos datos
+[refinados]
+  actualizada: último período — → 2026-10-20; valores revisados: 0
 [ventas_combustibles]
   www.energia.gob.ar no envía su certificado intermedio; se tomó de http://crt.sectigo.com/SectigoPublicServerAuthenticationCADVR36.crt
-  actualizada: último período — → 2026-08; valores revisados: 0
+  archivo distinto pero mismos datos
 [camiones_puertos]
   sin cambios en el archivo
 [cammesa_balance]
@@ -43,6 +45,8 @@
   sin cambios en las series de base
 [petroleo_mensual]
   sin cambios en las series de base
+[refinados_mensual]
+  recalculada: último período — → 2026-09
 [camiones_puertos_mensual]
   sin cambios en las series de base
 [cammesa_gu_actividad_mensual]

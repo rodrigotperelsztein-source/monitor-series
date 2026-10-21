@@ -1,0 +1,61 @@
+{
+  "id": "refinados",
+  "nombre": "Precios internacionales de naftas y gasoil (spot EE.UU., EIA)",
+  "url": "https://www.eia.gov/dnav/pet/hist_xls/EER_EPMRU_PF4_Y35NY_DPGd.xls https://www.eia.gov/dnav/pet/hist_xls/EER_EPMRU_PF4_RGC_DPGd.xls https://www.eia.gov/dnav/pet/hist_xls/EER_EPMRR_PF4_Y05LA_DPGd.xls https://www.eia.gov/dnav/pet/hist_xls/EER_EPD2F_PF4_Y35NY_DPGd.xls https://www.eia.gov/dnav/pet/hist_xls/EER_EPD2DXL0_PF4_Y35NY_DPGd.xls https://www.eia.gov/dnav/pet/hist_xls/EER_EPD2DXL0_PF4_RGC_DPGd.xls https://www.eia.gov/TODAYinENERGY/prices.php",
+  "pagina": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+  "frecuencia": "D",
+  "unidad": "Dólares por galón",
+  "sha256": "e89e8526b31e407579d8a75e04a4495809a0b515a468f746f8a24f2a724f66e5",
+  "columnas": {
+    "nafta_nyh": {
+      "nombre": "Nafta convencional regular, puerto de Nueva York, spot",
+      "tipo": "nivel",
+      "unidad": "Dólares por galón"
+    },
+    "nafta_usgc": {
+      "nombre": "Nafta convencional regular, Costa del Golfo (EE.UU.), spot",
+      "tipo": "nivel",
+      "unidad": "Dólares por galón"
+    },
+    "nafta_rbob_la": {
+      "nombre": "Nafta RBOB regular, Los Ángeles, spot",
+      "tipo": "nivel",
+      "unidad": "Dólares por galón"
+    },
+    "ho_nyh": {
+      "nombre": "Heating oil N.º 2, puerto de Nueva York, spot",
+      "tipo": "nivel",
+      "unidad": "Dólares por galón"
+    },
+    "gasoil_nyh": {
+      "nombre": "Gasoil (diésel ULSD), puerto de Nueva York, spot",
+      "tipo": "nivel",
+      "unidad": "Dólares por galón"
+    },
+    "gasoil_usgc": {
+      "nombre": "Gasoil (diésel ULSD), Costa del Golfo (EE.UU.), spot",
+      "tipo": "nivel",
+      "unidad": "Dólares por galón"
+    },
+    "nafta_rbob_nyh": {
+      "nombre": "Nafta RBOB, puerto de Nueva York, spot (desde oct-2026)",
+      "tipo": "nivel",
+      "unidad": "Dólares por galón"
+    },
+    "nafta_rbob_usgc": {
+      "nombre": "Nafta RBOB, Costa del Golfo (EE.UU.), spot (desde oct-2026)",
+      "tipo": "nivel",
+      "unidad": "Dólares por galón"
+    },
+    "ho_usgc": {
+      "nombre": "Heating oil, Costa del Golfo (EE.UU.), spot (desde oct-2026)",
+      "tipo": "nivel",
+      "unidad": "Dólares por galón"
+    }
+  },
+  "planillas_hasta": "2026-10-20",
+  "descargado": "2026-10-21T20:42:34Z",
+  "ultimo_periodo": "2026-10-20",
+  "observaciones": 10062,
+  "original_guardado": null
+}

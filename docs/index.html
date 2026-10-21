@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Selector de series</title>
+<title>Series productivas de Argentina</title>
+<meta name="description" content="Series estadísticas de la actividad productiva argentina, actualizadas automáticamente desde fuentes oficiales, listas para llevar a Power BI.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
@@ -27,8 +28,15 @@
 body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.45 var(--f-body);
   padding: 20px max(16px, env(safe-area-inset-right, 0px)) 40px max(16px, env(safe-area-inset-left, 0px)); }
 .wrap { max-width: 1320px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
-header h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -0.01em; }
-header p { margin: 0; color: var(--muted); max-width: 80ch; }
+.hero { display: flex; flex-direction: column; gap: 10px; padding-block: 8px 4px; }
+.eyebrow { font-size: 11.5px; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); font-weight: 700; }
+.hero h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.1; margin: 0; letter-spacing: -0.02em; text-wrap: balance; max-width: 22ch; }
+.bajada { margin: 0; font-size: 15.5px; color: var(--ink); max-width: 75ch; line-height: 1.55; }
+.como { margin: 0; color: var(--muted); max-width: 80ch; }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 4px 0; padding: 12px 0; border-block: 1px solid var(--line); }
+.stats div { display: flex; flex-direction: column; }
+.stats dt { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.stats dd { margin: 0; font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
 .grid { display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 16px; align-items: start; }
 @media (max-width: 960px) { .grid { grid-template-columns: minmax(0, 1fr); } }
 .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); }
@@ -81,9 +89,22 @@ details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>Selector de series</h1>
-    <p>Elegí las series que querés llevar a Power BI. Las del repositorio <a href="https://github.com/rodrigotperelsztein-source/monitor-series">monitor-series</a> se leen de un archivo por serie; las de Monitor Argy, de su API. A la derecha queda la lista para pegar en el parámetro <code>SeriesElegidas</code>.</p>
+  <header class="hero">
+    <div class="eyebrow">Monitor de series · datos abiertos</div>
+    <h1>Series estadísticas productivas de Argentina</h1>
+    <p class="bajada">Actividad, industria, construcción, energía, transporte, agro, precios y salarios en un solo lugar.
+      Las series se bajan de sus fuentes oficiales (INDEC, CAMMESA, Secretaría de Agricultura, Secretaría de Transporte,
+      Seguridad Social), se validan y se actualizan solas según el calendario de cada publicación, con historial de
+      revisiones. Incluye desestacionalizaciones propias con X-13 y el catálogo de Monitor Argy.</p>
+    <dl class="stats">
+      <div><dt>Series propias</dt><dd id="st-propias">…</dd></div>
+      <div><dt>Monitor Argy</dt><dd id="st-ma">…</dd></div>
+      <div><dt>Fuentes</dt><dd id="st-fuentes">…</dd></div>
+      <div><dt>Última actualización</dt><dd id="st-fecha">…</dd></div>
+    </dl>
+    <p class="como"><b>Cómo se usa:</b> buscá y tildá las series que necesitás; a la derecha queda la lista para pegar
+      en el parámetro <code>SeriesElegidas</code> de Power BI, que trae solo esas. Los datos también se pueden bajar
+      directo desde el <a href="https://github.com/rodrigotperelsztein-source/monitor-series">repositorio</a>.</p>
   </header>
 
   <div class="grid">
@@ -192,6 +213,11 @@ async function cargar() {
     }));
     DATA.propias.concat(DATA.ma).forEach(s => s._q = norm([s.id, s.nombre, s.grupo, s.desc, s.extra].join(" ")));
     $("n-propias").textContent = DATA.propias.length;
+    $("st-propias").textContent = DATA.propias.length.toLocaleString("es-AR");
+    $("st-ma").textContent = DATA.ma.length.toLocaleString("es-AR");
+    $("st-fuentes").textContent = new Set(DATA.propias.map(s => s.grupo)).size;
+    const desc = parseCSV(csv).map(s => s.descargado).filter(Boolean).sort().pop();
+    $("st-fecha").textContent = desc ? new Date(desc).toLocaleDateString("es-AR", { day: "numeric", month: "short", year: "numeric" }) : "—";
     $("n-ma").textContent = DATA.ma.length;
     const todos = new Set([...DATA.propias, ...DATA.ma].map(s => s.id));
     sel = sel.filter(id => todos.has(id));

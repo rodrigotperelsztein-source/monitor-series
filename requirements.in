@@ -8,7 +8,7 @@ openpyxl==3.1.5
 requests>=2.33.0
 pdfplumber>=0.11.4
 holidays==0.106
-numpy>=2.0,<2.3  # la versión con la que se probaron pandas 2.2 y la desestacionalización
+numpy>=2.5.4,<2.6  # la versión con la que se probaron pandas 2.2 y la desestacionalización
 # Pisos por seguridad (alertas de Dependabot / pip-audit, oct-2026):
 pdfminer.six>=20251230  # carga insegura de pickle en CMap
 pillow>=13.0.0          # varios errores de memoria en TIFF/GIF/PDF

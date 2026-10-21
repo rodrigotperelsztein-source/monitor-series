@@ -20,6 +20,7 @@ actualiza los datos y guarda la versión nueva.
 | `salarios_real` | Índice de salarios real: cada índice deflactado por el IPC nacional (como Monitor Argy), con variaciones mensual e interanual | Cálculo propio sobre `salarios` e `ipc` | Mensual | 2016-12 |
 | `sube` | SUBE: transacciones (usos) por **día**: total, AMBA, interior, colectivos, trenes, subte, lanchas y colectivos del AMBA. Los últimos meses son preliminares (la fecha desde la que lo son está en `data/meta/sube.json`); la cobertura del interior crece con los años, así que el total y el interior no son del todo comparables entre años | [Secretaría de Transporte](https://datos.transporte.gob.ar/dataset/sube-cantidad-de-transacciones-usos-por-fecha) | Diaria | 2020-01-01 |
 | `sube_mensual` | SUBE por mes (solo meses completos): transacciones del mes, promedio diario y variación interanual de cada serie de `sube` | Cálculo propio sobre `sube` | Mensual | 2020-01 |
+| `sube_desest` | SUBE por mes **desestacionalizada** (X-13, propia): total, AMBA, interior, colectivo, tren y subte, con su variación mensual. Ver [SUBE desestacionalizada](#sube-desestacionalizada) | Cálculo propio sobre `sube_mensual` | Mensual | 2020-01 |
 | `camiones_puertos` | Entrada **diaria** de camiones con granos a puertos, fábricas y molinos: total, por zona portuaria (Rosario y aledaños, Dársena Buenos Aires–Entre Ríos, Necochea, Bahía Blanca), por producto (trigo, maíz, sorgo, cebada, soja, girasol) y vagones. Los días sin informe figuran en cero | [Secretaría de Agricultura](https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/logistica/_archivos/000023_Posici%C3%B3n%20de%20Camiones%20y%20Vagones/000020_Entrada%20diaria%20de%20camiones%20y%20vagones%20a%20puertos,%20f%C3%A1bricas%20y%20molinos%20(por%20zona%20portuaria%20y%20por%20producto).php), con datos de Williams Entregas | Diaria | 2024-01-01 |
 | `camiones_puertos_mensual` | Lo mismo por mes (solo meses completos), con variación interanual | Cálculo propio sobre `camiones_puertos` | Mensual | 2024-01 |
 | `cammesa_balance` | Balance mensual de energía del Mercado Eléctrico Mayorista (GWh): demanda de distribuidoras, grandes usuarios, exportación, bombeo, consumos internos y pérdidas; generación térmica, nuclear, renovable, hidráulica e importación. `demanda_mercado` (distribuidoras + grandes usuarios) es la "demanda eléctrica" de Monitor Argy, con variación interanual. El archivo de CAMMESA trae desde 2023; la historia se va acumulando | [CAMMESA](https://cammesaweb.cammesa.com/informe-sintesis-mensual/) | Mensual | 2023-01 |
@@ -199,6 +200,28 @@ Como en cualquier desestacionalización, con cada dato nuevo se reestima el mode
 anteriores (no se registran en `data/revisiones/`). El modelo, los coeficientes de feriados, Pascua y días de
 la semana, los outliers y los indicadores de calidad de cada letra quedan en
 [`data/meta/emae_letras_desest.json`](data/meta/emae_letras_desest.json).
+
+### SUBE desestacionalizada
+
+`sube_desest` se recalcula cada vez que cambia `sube_mensual` (transacciones de los meses completos), con el
+mismo programa y código. Especificaciones en `pipeline/fuentes/sube_desest.py`; diagnósticos en
+[`data/meta/sube_desest.json`](data/meta/sube_desest.json). Diferencias con el EMAE:
+
+- **feriados y días de la semana se quitan** de la serie (un feriado baja mucho los viajes del mes y no es un
+  cambio de tendencia); Pascua no resultó significativa;
+- empieza en 2020-01 e incluye la pandemia, separada con outliers; con pocos años de datos, los meses
+  recientes se revisan más que en series largas;
+- los paros quedan en la serie (outliers AO): una caída por huelga se ve como caída;
+- total, AMBA e interior se ajustan por separado: AMBA + interior no suma exactamente el total.
+
+| Serie | Modelo | Transf. | Outliers |
+|---|---|---|---|
+| total | (0 1 1)(0 1 1) | niveles | LS 2020-03; AO 2020-04; TC 2022-01 |
+| AMBA | (0 1 1)(0 1 1) | niveles | AO 2020-03; LS 2020-04 |
+| interior | (0 1 1)(0 1 1) | niveles | AO 2020-04 |
+| colectivo | (1 1 0)(0 1 1) | niveles | LS 2020-03; AO 2020-04 |
+| tren | (0 1 1)(0 1 1) | niveles | LS 2020-03, 2020-04, 2021-03; TC 2021-04; AO 2021-05, 2021-10, 2022-01, 2025-02, 2025-10, 2026-07 |
+| subte | (0 1 1)(0 1 1) | log | TC 2020-03, 2020-05, 2022-01; LS 2020-04 |
 
 ## Cuándo corre
 

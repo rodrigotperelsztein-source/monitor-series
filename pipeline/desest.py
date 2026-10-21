@@ -196,7 +196,7 @@ def _diagnosticos(udg: dict, errores: str) -> dict:
 
     outliers = []
     for k in udg:
-        m = re.fullmatch(r"(?:Outlier|AO|LS|TC)[^$]*\$(AO|LS|TC)(\d{4})\.(\w{3})", k)
+        m = re.fullmatch(r"(?:Auto)?(?:Outlier|AO|LS|TC)[^$]*\$(AO|LS|TC)(\d{4})\.(\w{3})", k)
         if m:
             fecha = pd.Period(f"{m[3]} {m[2]}", freq="M")
             outliers.append({"tipo": m[1], "fecha": f"{fecha}"})

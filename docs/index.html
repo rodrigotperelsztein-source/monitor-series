@@ -28,15 +28,43 @@
 body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.45 var(--f-body);
   padding: 20px max(16px, env(safe-area-inset-right, 0px)) 40px max(16px, env(safe-area-inset-left, 0px)); }
 .wrap { max-width: 1320px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
-.hero { display: flex; flex-direction: column; gap: 10px; padding-block: 8px 4px; }
-.eyebrow { font-size: 11.5px; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); font-weight: 700; }
-.hero h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.1; margin: 0; letter-spacing: -0.02em; text-wrap: balance; max-width: 22ch; }
-.bajada { margin: 0; font-size: 15.5px; color: var(--ink); max-width: 75ch; line-height: 1.55; }
-.como { margin: 0; color: var(--muted); max-width: 80ch; }
-.stats { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 4px 0; padding: 12px 0; border-block: 1px solid var(--line); }
+body { padding: 0 0 40px; }
+.wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-top: 18px; }
+.hero { --h-bg: #07111d; --h-ink: #e8f1fa; --h-muted: #9fb3c8; --h-acc: #5fd0ff; --h-acc2: #7cf2c3; --h-line: rgba(140,190,240,.16);
+  position: relative; overflow: hidden; background: radial-gradient(1200px 500px at 80% -10%, #12345a 0%, transparent 60%),
+  radial-gradient(900px 400px at -10% 110%, #0d3b3a 0%, transparent 55%), var(--h-bg); color: var(--h-ink); color-scheme: dark; }
+#fondo { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero-in { position: relative; max-width: 1320px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;
+  padding: 42px max(16px, env(safe-area-inset-right, 0px)) 26px max(16px, env(safe-area-inset-left, 0px)); }
+.live { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; font: 600 12px/1 var(--f-mono);
+  letter-spacing: .04em; color: var(--h-acc2); background: rgba(124,242,195,.08); border: 1px solid rgba(124,242,195,.25);
+  padding: 7px 11px; border-radius: 999px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--h-acc2); box-shadow: 0 0 0 0 rgba(124,242,195,.7); animation: pulso 2s infinite; }
+@keyframes pulso { 0% { box-shadow: 0 0 0 0 rgba(124,242,195,.6); } 70% { box-shadow: 0 0 0 10px rgba(124,242,195,0); } 100% { box-shadow: 0 0 0 0 rgba(124,242,195,0); } }
+.hero h1 { font-size: clamp(30px, 5.2vw, 56px); line-height: 1.04; margin: 0; letter-spacing: -0.03em; max-width: 18ch; text-wrap: balance;
+  background: linear-gradient(90deg, #ffffff 0%, #cfe8ff 55%, var(--h-acc) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lead { margin: 0; font-size: clamp(15px, 1.6vw, 18px); line-height: 1.55; color: var(--h-ink); max-width: 68ch; opacity: .92; }
+.pilares { list-style: none; margin: 4px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; max-width: 980px; }
+.pilares li { display: flex; flex-direction: column; gap: 2px; padding: 10px 12px; border: 1px solid var(--h-line); border-radius: 8px; background: rgba(255,255,255,.03); backdrop-filter: blur(2px); }
+.pilares b { font-size: 13.5px; color: #fff; }
+.pilares span { font-size: 12.5px; color: var(--h-muted); }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 36px; margin: 6px 0 0; }
 .stats div { display: flex; flex-direction: column; }
-.stats dt { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
-.stats dd { margin: 0; font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stats dt { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--h-muted); }
+.stats dd { margin: 0; font: 700 26px/1.1 var(--f-mono); color: #fff; font-variant-numeric: tabular-nums; }
+.ticker { position: relative; border-top: 1px solid var(--h-line); background: rgba(3,10,18,.55); overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.track { display: flex; gap: 0; width: max-content; animation: corre 70s linear infinite; }
+.ticker:hover .track { animation-play-state: paused; }
+@keyframes corre { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.tk { display: flex; align-items: center; gap: 10px; padding: 11px 22px; border-right: 1px solid var(--h-line); white-space: nowrap; font-size: 12.5px; color: var(--h-muted); }
+.tk b { color: #fff; font-weight: 600; }
+.tk .v { font: 600 13px var(--f-mono); color: #fff; }
+.tk .up { color: var(--h-acc2); } .tk .down { color: #ff9b8f; }
+.tk svg { width: 64px; height: 20px; }
+.tk-cargando { padding: 11px 22px; font-size: 12.5px; color: var(--h-muted); }
+.intro p { margin: 0; color: var(--muted); max-width: 90ch; }
+@media (prefers-reduced-motion: reduce) { .track { animation: none; } .dot { animation: none; } }
 .grid { display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 16px; align-items: start; }
 @media (max-width: 960px) { .grid { grid-template-columns: minmax(0, 1fr); } }
 .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); }
@@ -88,24 +116,38 @@ details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="hero">
-    <div class="eyebrow">Monitor de series · datos abiertos</div>
-    <h1>Series estadísticas productivas de Argentina</h1>
-    <p class="bajada">Actividad, industria, construcción, energía, transporte, agro, precios y salarios en un solo lugar.
-      Las series se bajan de sus fuentes oficiales (INDEC, CAMMESA, Secretaría de Agricultura, Secretaría de Transporte,
-      Seguridad Social), se validan y se actualizan solas según el calendario de cada publicación, con historial de
-      revisiones. Incluye desestacionalizaciones propias con X-13 y el catálogo de Monitor Argy.</p>
+<header class="hero" aria-labelledby="titulo">
+  <canvas id="fondo" aria-hidden="true"></canvas>
+  <div class="hero-in">
+    <div class="live"><span class="dot" aria-hidden="true"></span>Actualización automática · <span id="st-fecha">…</span></div>
+    <h1 id="titulo">Series estadísticas productivas de Argentina</h1>
+    <p class="lead">Un tablero de datos para seguir la economía real: cuánto se produce, se construye, se vende, se
+      viaja, se consume de energía y se lleva a los puertos. Junta en un solo lugar las estadísticas que publican
+      distintos organismos y las mantiene al día solo: cuando sale un dato nuevo, se descarga, se controla y queda listo
+      para graficar.</p>
+    <ul class="pilares">
+      <li><b>Fuentes oficiales</b><span>INDEC, CAMMESA, Agricultura, Transporte, Seguridad Social</span></li>
+      <li><b>Se actualiza solo</b><span>sigue el calendario de cada publicación y guarda las revisiones</span></li>
+      <li><b>Listo para usar</b><span>Power BI, Excel, Google Sheets o Python, con un link fijo por serie</span></li>
+    </ul>
     <dl class="stats">
       <div><dt>Series propias</dt><dd id="st-propias">…</dd></div>
-      <div><dt>Monitor Argy</dt><dd id="st-ma">…</dd></div>
+      <div><dt>De Monitor Argy</dt><dd id="st-ma">…</dd></div>
       <div><dt>Fuentes</dt><dd id="st-fuentes">…</dd></div>
-      <div><dt>Última actualización</dt><dd id="st-fecha">…</dd></div>
     </dl>
-    <p class="como"><b>Cómo se usa:</b> buscá y tildá las series que necesitás; a la derecha queda la lista para pegar
-      en el parámetro <code>SeriesElegidas</code> de Power BI, que trae solo esas. Los datos también se pueden bajar
-      directo desde el <a href="https://github.com/rodrigotperelsztein-source/monitor-series">repositorio</a>.</p>
-  </header>
+  </div>
+  <div class="ticker" aria-label="Últimos datos">
+    <div class="track" id="track"><span class="tk-cargando">Cargando últimos datos…</span></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="intro">
+    <p><b>Cómo se usa.</b> Buscá y tildá las series que necesitás. A la derecha queda la lista para pegar en el
+      parámetro <code>SeriesElegidas</code> de Power BI, que trae solo esas. Para análisis técnicos: las series del
+      repositorio incluyen desestacionalizaciones propias con X-13 y calendario argentino; los datos también se pueden
+      bajar directo desde el <a href="https://github.com/rodrigotperelsztein-source/monitor-series">repositorio</a>.</p>
+  </section>
 
   <div class="grid">
     <section class="filters" aria-label="Catálogo">
@@ -217,7 +259,8 @@ async function cargar() {
     $("st-ma").textContent = DATA.ma.length.toLocaleString("es-AR");
     $("st-fuentes").textContent = new Set(DATA.propias.map(s => s.grupo)).size;
     const desc = parseCSV(csv).map(s => s.descargado).filter(Boolean).sort().pop();
-    $("st-fecha").textContent = desc ? new Date(desc).toLocaleDateString("es-AR", { day: "numeric", month: "short", year: "numeric" }) : "—";
+    $("st-fecha").textContent = desc ? "último dato bajado el " + new Date(desc).toLocaleString("es-AR",
+      { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "—";
     $("n-ma").textContent = DATA.ma.length;
     const todos = new Set([...DATA.propias, ...DATA.ma].map(s => s.id));
     sel = sel.filter(id => todos.has(id));
@@ -338,6 +381,94 @@ function copiar(texto, toast, msg) {
 $("copylista").onclick = () => copiar(lista(), "toast1", "Lista copiada. Pegala en el parámetro SeriesElegidas.");
 $("copy1").onclick = () => copiar(code1(), "toast2", "Código 1 copiado.");
 $("copy2").onclick = () => copiar(CODE2, "toast2", "Código 2 copiado.");
+
+// ---------- Ticker con los últimos datos reales ----------
+const TICKER = [
+  ["emae.desest_var_m", "Actividad (EMAE desest.)", "pct", "M"],
+  ["ipc.nacional_nivel_general_var_m", "Inflación mensual", "pct", "M"],
+  ["ipi.desest_var_m", "Industria (IPI desest.)", "pct", "M"],
+  ["isac.desest_var_m", "Construcción (ISAC desest.)", "pct", "M"],
+  ["supermercados.indice_desest_var_m", "Supermercados (desest.)", "pct", "M"],
+  ["salarios_real.privado_registrado_real_var_ia", "Salario real privado, i.a.", "pct", "M"],
+  ["ripte_real.ripte_real_var_ia", "RIPTE real, i.a.", "pct", "M"],
+  ["cammesa_diaria.total", "Demanda eléctrica", "MW", "D"],
+  ["cammesa_gu_actividad.industrias", "Electricidad, grandes industrias", "MW", "D"],
+  ["sube.amba", "Viajes SUBE AMBA", "n", "D"],
+  ["camiones_puertos.total", "Camiones a puertos", "n", "D"],
+  ["sube_mensual.amba_var_ia", "SUBE AMBA mensual, i.a.", "pct", "M"],
+];
+const fmtN = (v, d = 0) => v.toLocaleString("es-AR", { maximumFractionDigits: d, minimumFractionDigits: d });
+function fechaCorta(f, frec) {
+  const d = new Date(f + "T12:00:00");
+  return frec === "D" ? d.toLocaleDateString("es-AR", { day: "numeric", month: "short" })
+                      : d.toLocaleDateString("es-AR", { month: "short", year: "2-digit" });
+}
+function spark(vals) {
+  if (vals.length < 2) return "";
+  const mn = Math.min(...vals), mx = Math.max(...vals), r = mx - mn || 1;
+  const pts = vals.map((v, i) => `${(i / (vals.length - 1) * 62 + 1).toFixed(1)},${(18 - (v - mn) / r * 16).toFixed(1)}`).join(" ");
+  const [x, y] = pts.split(" ").pop().split(",");
+  return `<svg viewBox="0 0 64 20" aria-hidden="true"><polyline points="${pts}" fill="none" stroke="#5fd0ff" stroke-width="1.4" stroke-linejoin="round"/><circle cx="${x}" cy="${y}" r="2" fill="#7cf2c3"/></svg>`;
+}
+async function ticker() {
+  const items = await Promise.all(TICKER.map(async ([id, nombre, tipo, frec]) => {
+    try {
+      const t = await fetch(`${RAW}/data/series/${id}.csv`).then(r => r.ok ? r.text() : Promise.reject());
+      let filas = parseCSV(t).map(r => ({ f: r.fecha, v: parseFloat(r.valor) })).filter(r => !isNaN(r.v));
+      if (id === "camiones_puertos.total") filas = filas.filter(r => r.v > 0);  // domingos y feriados en cero
+      if (!filas.length) return "";
+      const ult = filas[filas.length - 1], prev = filas[filas.length - 2];
+      const serie = filas.slice(-(frec === "D" ? 30 : 24)).map(r => r.v);
+      let valor, cls = "";
+      if (tipo === "pct") { valor = (ult.v > 0 ? "+" : "") + fmtN(ult.v, 1) + "%"; cls = ult.v >= 0 ? "up" : "down"; }
+      else {
+        valor = tipo === "MW" ? fmtN(ult.v) + " MW" : (ult.v >= 1e6 ? fmtN(ult.v / 1e6, 2) + " M" : fmtN(ult.v));
+        if (prev) cls = ult.v >= prev.v ? "up" : "down";
+      }
+      const flecha = cls === "up" ? "▲" : cls === "down" ? "▼" : "";
+      return `<div class="tk"><b>${esc(nombre)}</b><span class="v ${cls}">${flecha} ${valor}</span>${spark(serie)}<span>${fechaCorta(ult.f, frec)}</span></div>`;
+    } catch (e) { return ""; }
+  }));
+  const html = items.filter(Boolean).join("");
+  if (html) $("track").innerHTML = html + html;  // duplicado para que el desplazamiento sea continuo
+}
+
+// ---------- Fondo animado: líneas de datos que se desplazan ----------
+function fondo() {
+  const c = $("fondo"), ctx = c.getContext("2d");
+  const quieto = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let w, h, t = 0;
+  const lineas = Array.from({ length: 7 }, (_, i) => ({
+    y: 0.25 + i * 0.09, amp: 10 + Math.random() * 26, fr: 0.004 + Math.random() * 0.006,
+    vel: 0.3 + Math.random() * 0.7, fase: Math.random() * 100, alfa: 0.08 + Math.random() * 0.14,
+    color: i % 3 === 0 ? "124,242,195" : "95,208,255",
+  }));
+  function tam() { const r = c.getBoundingClientRect(), d = window.devicePixelRatio || 1;
+    w = r.width; h = r.height; c.width = w * d; c.height = h * d; ctx.setTransform(d, 0, 0, d, 0, 0); }
+  function cuadro() {
+    ctx.clearRect(0, 0, w, h);
+    ctx.fillStyle = "rgba(140,190,240,0.10)";
+    for (let x = 12; x < w; x += 28) for (let y = 12; y < h; y += 28) ctx.fillRect(x, y, 1.2, 1.2);
+    for (const l of lineas) {
+      ctx.beginPath();
+      for (let x = 0; x <= w; x += 6) {
+        const k = (x + t * l.vel * 40 + l.fase * 10) * l.fr;
+        const y = l.y * h + Math.sin(k) * l.amp + Math.sin(k * 2.7 + l.fase) * l.amp * 0.35;
+        x ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+      }
+      ctx.strokeStyle = `rgba(${l.color},${l.alfa})`; ctx.lineWidth = 1.3; ctx.stroke();
+      const xp = (t * l.vel * 60 + l.fase * 37) % (w + 60) - 30;
+      const k = (xp + t * l.vel * 40 + l.fase * 10) * l.fr;
+      const yp = l.y * h + Math.sin(k) * l.amp + Math.sin(k * 2.7 + l.fase) * l.amp * 0.35;
+      ctx.beginPath(); ctx.arc(xp, yp, 2.2, 0, Math.PI * 2); ctx.fillStyle = `rgba(${l.color},${Math.min(1, l.alfa * 5)})`; ctx.fill();
+    }
+    t += 0.016;
+    if (!quieto) requestAnimationFrame(cuadro);
+  }
+  tam(); window.addEventListener("resize", tam); cuadro();
+}
+fondo();
+ticker();
 
 cargar();
 </script>

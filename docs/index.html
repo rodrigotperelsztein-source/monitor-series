@@ -371,7 +371,9 @@ const CODE2 = `let
         Csv.Document(Web.Contents(Raw, [RelativePath = Repo & ruta]),
             [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
         [PromoteAllScalars = true]),
-    Ids = List.Select(List.Transform(Text.Split(SeriesElegidas, ","), Text.Trim), each _ <> ""),
+    // Acepta la lista con o sin comillas, separada por comas, punto y coma o saltos de línea
+    Ids = List.Select(List.Transform(Text.SplitAny(SeriesElegidas, ",;#(cr)#(lf)"),
+        each Text.Trim(_, {" ", """", "#(tab)"})), each _ <> ""),
     Catalogo = LeerCsv("todas/series.csv"),
 
     // Serie del repositorio: data/series/<id>.csv

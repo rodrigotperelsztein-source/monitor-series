@@ -59,6 +59,14 @@ https://raw.githubusercontent.com/rodrigotperelsztein-source/monitor-series/main
 
 Por ejemplo `.../main/data/todas/valores.csv` o `.../main/data/emae.csv`.
 
+### Explorar y graficar en la web
+
+La página **[Explorar](https://rodrigotperelsztein-source.github.io/monitor-series/explorar.html)** grafica hasta 8
+series del repositorio: líneas, áreas, barras, barras apiladas o torta; valores originales, índice base 100,
+variación interanual o contra el período anterior; agrupación mensual, trimestral o anual; selector de período;
+tarjetas con el último dato y su variación; lectura automática del gráfico; descarga en CSV o PNG y link para
+compartir la vista. Usa Apache ECharts 5.5.1, alojado en el propio repositorio (`docs/vendor/`).
+
 ### Power BI: elegir solo algunas series (recomendado)
 
 La página **[Selector de series](https://rodrigotperelsztein-source.github.io/monitor-series/)** muestra el catálogo

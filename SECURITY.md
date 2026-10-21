@@ -27,8 +27,10 @@ credenciales, no recibe datos de quienes lo usan y no necesita acceso a ninguna 
   (`pipeline/desest.py`).
 - **Sin inyección de fórmulas**: los textos de `data/todas/series.csv` que empiezan con `=`, `+`, `-` o `@` se
   escapan para que una planilla no los tome como fórmulas.
-- **Página sin terceros**: `docs/index.html` no carga scripts, fuentes ni imágenes externas; una política de
-  seguridad de contenido (CSP) solo le permite leer `raw.githubusercontent.com`. No usa cookies ni analítica.
+- **Páginas sin terceros**: `docs/index.html` y `docs/explorar.html` no cargan scripts, fuentes ni imágenes externas;
+  una política de seguridad de contenido (CSP) solo les permite leer `raw.githubusercontent.com`. No usan cookies ni
+  analítica. La librería de gráficos (Apache ECharts 5.5.1, licencia Apache-2.0) está copiada en `docs/vendor/` con
+  su huella SHA-256 en `docs/vendor/SHA256SUMS`, y solo se ejecutan scripts del mismo sitio.
 - **Validación de datos**: cada fuente se controla antes de guardarse (períodos consecutivos, rangos, sumas,
   revisiones desproporcionadas). Si algo no cierra, no se toca esa fuente.
 

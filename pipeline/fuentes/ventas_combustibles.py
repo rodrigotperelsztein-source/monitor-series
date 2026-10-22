@@ -87,6 +87,13 @@ NOMBRE_EMPRESA = {"ypf": "YPF", "shell": "Shell (Raízen)", "axion": "Axion (Ess
                   "trafigura": "Trafigura (Puma)", "dapsa": "DAPSA", "delta_gulf": "Delta Patagonia / Gulf",
                   "refinor": "Refinor", "resto": "resto de las empresas", "total": "total del mercado"}
 EXCLUIDOS = {"Usinas Eléctricas", "Bunker Internacional"}
+CANALES = {  # canal de venta en la base -> id (total del mercado, sin separar por empresa)
+    "Al Público": ("publico", "al público (estaciones de servicio)"),
+    "Transporte de Carga": ("carga", "transporte de carga"),
+    "Agro": ("agro", "agro"),
+    "transporte Público de Pasajeros": ("pasajeros", "transporte público de pasajeros"),
+    "Otras Empresas": ("otras_empresas", "otras empresas del sector (reventa)"),
+}
 
 COLUMNAS = {}
 for _p in [*PRODUCTOS.values(), *GRUPOS]:
@@ -94,12 +101,16 @@ for _p in [*PRODUCTOS.values(), *GRUPOS]:
         _n = f"Ventas de {NOMBRE_PRODUCTO[_p]}, {NOMBRE_EMPRESA[_e]}"
         COLUMNAS[f"{_p}_{_e}"] = Columna("", _n)
         COLUMNAS[f"{_p}_{_e}_sin_usinas_bunker"] = Columna("", f"{_n}, sin usinas eléctricas ni bunker internacional")
+for _p in [*PRODUCTOS.values(), *GRUPOS]:
+    for _c, (_cid, _cn) in CANALES.items():
+        COLUMNAS[f"{_p}_canal_{_cid}"] = Columna("", f"Ventas de {NOMBRE_PRODUCTO[_p]}, canal {_cn}, total del mercado")
 
 
 def bajar(descargar, hoy: date) -> tuple[str, bytes]:
     archivos = {"actual.zip": descargar(URL, minimo=1_000_000)}
     urls = [URL]
-    if not HISTORIA.exists():
+    # La historia 2010-2019 se vuelve a bajar si falta o si le faltan columnas (series nuevas).
+    if not HISTORIA.exists() or not set(COLUMNAS) <= set(HISTORIA.open().readline().strip().split(",")):
         archivos["historia.zip"] = descargar(URL_HISTORIA, minimo=1_000_000)
         urls.append(URL_HISTORIA)
     buf = io.BytesIO()
@@ -150,6 +161,13 @@ def leer(contenido: bytes, columnas=COLUMNAS) -> pd.DataFrame:
         for g, partes_g in GRUPOS.items():
             for e in NOMBRE_EMPRESA:
                 cols[f"{g}_{e}{sufijo}"] = sum(cols[f"{p}_{e}{sufijo}"] for p in partes_g)
+    t = d.pivot_table(index="fecha", columns=["prod", "subtipo"], values="cantidad", aggfunc="sum").reindex(indice)
+    for p in PRODUCTOS.values():
+        for canal, (cid, _) in CANALES.items():
+            cols[f"{p}_canal_{cid}"] = t[(p, canal)].fillna(0) if (p, canal) in t.columns else pd.Series(0.0, index=indice)
+    for g, partes_g in GRUPOS.items():
+        for canal, (cid, _) in CANALES.items():
+            cols[f"{g}_canal_{cid}"] = sum(cols[f"{p}_canal_{cid}"] for p in partes_g)
     out = pd.DataFrame(cols, index=indice)
     out = out.reindex(columns=list(columnas)).fillna(0).round(3)
     return out.reset_index()
@@ -175,6 +193,9 @@ def validar(nuevo: pd.DataFrame, anterior: pd.DataFrame | None, columnas=COLUMNA
             partes = sum(nuevo[f"{p}_{e}{suf}"] for e in NOMBRE_EMPRESA if e != "total")
             if ((partes - nuevo[f"{p}_total{suf}"]).abs() > 1).any():
                 errores.append(f"{p}{suf}: las empresas no suman el total.")
+        canales = sum(nuevo[f"{p}_canal_{cid}"] for cid, _ in CANALES.values())
+        if (canales > nuevo[f"{p}_total"] + 1).any():
+            errores.append(f"{p}: los canales suman más que el total.")
         if (nuevo[f"{p}_total_sin_usinas_bunker"] > nuevo[f"{p}_total"] + 1).any():
             errores.append(f"{p}: el subtotal sin usinas ni bunker supera al total.")
         if (nuevo[f"{p}_total"] <= 0).any():

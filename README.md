@@ -240,8 +240,9 @@ La programación sigue el calendario de difusión de INDEC, que publica a las 16
 
 | Horario (Buenos Aires) | Qué hace |
 |---|---|
-| Días hábiles 16:40, 17:10, 17:40, 18:10 y 18:40 | **Modo calendario.** Si INDEC prevé publicar ese día alguna de las series, baja solo esas, hasta que entre el dato nuevo. Si no hay nada previsto, termina en segundos. El primer intento es 40 minutos después de las 16 porque a esa hora la página de INDEC suele saturarse; si falla la descarga, no cuenta como error y se reintenta en la siguiente. |
-| Todas las noches 21:47 | **Control completo.** Actualiza el calendario (semestre actual y siguiente, cuando INDEC lo publica), revisa todas las fuentes para atrapar revisiones o publicaciones fuera de calendario, y **termina en error** si una publicación prevista para el día no entró. |
+| Días hábiles, 13 veces entre 16:23 y 20:37 | **Modo calendario.** Si INDEC prevé publicar ese día alguna de las series, baja solo esas, hasta que entre el dato nuevo. Si no hay nada previsto o ya entró, termina en segundos y no guarda nada. Si falla la descarga (la página de INDEC suele saturarse a las 16), no cuenta como error y se reintenta en la siguiente. |
+| Todas las noches 21:47 y 01:17 | **Control completo.** Actualiza el calendario (semestre actual y siguiente, cuando INDEC lo publica), revisa todas las fuentes para atrapar revisiones o publicaciones fuera de calendario, y **termina en error** si una publicación prevista no entró. El segundo horario es de respaldo. |
+| Días hábiles 10:12, 11:38 y 13:19 | **Petróleo y combustibles internacionales** (`petroleo`, `refinados`): cierre del día anterior de la EIA. |
 
 La SUBE se actualiza casi todos los días y entra en el control de cada noche; solo se baja el archivo del
 año en curso (unos 50 MB), y la historia de años anteriores queda en `data/sube.csv`.
@@ -249,7 +250,8 @@ año en curso (unos 50 MB), y la historia de años anteriores queda en `data/sub
 El RIPTE no está en el calendario de INDEC: se publica sin fecha fija (en general, unos dos meses después
 del mes de referencia) y entra en el control de cada noche.
 
-GitHub puede demorar las tareas programadas, a veces más de una hora, según su carga.
+GitHub no garantiza el horario de las tareas programadas: con carga alta las demora (se vieron atrasos de 3 a 4 horas)
+o las saltea, sobre todo en horas redondas. Por eso hay varios horarios, en minutos poco usados.
 
 Para que una fuente siga el calendario, su módulo define `CALENDARIO` con el comienzo del título con que
 figura en el PDF de INDEC (por ejemplo, `"Estimador mensual de actividad económica"`).

@@ -5,7 +5,7 @@
   "pagina": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
   "frecuencia": "M",
   "unidad": "Dólares por galón",
-  "sha256": "8c52258f29d25049e6ea3e09d7874b9f4d1091ce75d8a8d6dc94b55f95f30de7",
+  "sha256": "b27e49befb96a1b6a9b2a387ad3bb8ea9a27d6accc82ba233b8afe0f6e36304a",
   "derivada_de": [
     "refinados"
   ],
@@ -104,8 +104,8 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-10-21T20:42:34Z",
-  "calculado": "2026-10-21T20:42:34Z",
+  "descargado": "2026-10-22T13:57:24Z",
+  "calculado": "2026-10-22T13:57:24Z",
   "ultimo_periodo": "2026-09",
   "observaciones": 484
 }

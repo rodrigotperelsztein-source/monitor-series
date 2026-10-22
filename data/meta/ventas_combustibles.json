@@ -1,11 +1,11 @@
 {
   "id": "ventas_combustibles",
   "nombre": "Ventas al mercado de gasoil y naftas (grados 2 y 3) por empresa",
-  "url": "https://www.energia.gob.ar/contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip",
+  "url": "https://www.energia.gob.ar/contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip https://www.energia.gob.ar/contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado_2010_2019.zip",
   "pagina": "https://www.argentina.gob.ar/economia/energia/hidrocarburos/refinacion-y-comercializacion-de-petroleo-gas-y-derivados-tablas-dinamicas",
   "frecuencia": "M",
   "unidad": "m³",
-  "sha256": "d50d048efc20608bad1a36262448746dca412df95e9841465a46cca16e4b1b8d",
+  "sha256": "42d52ec71e59c8b93742911fcf253f5b82c1c512de7ca401f53f9800d67e8d94",
   "columnas": {
     "gasoil_g2_ypf": {
       "nombre": "Ventas de gasoil grado 2 (común), YPF",
@@ -546,9 +546,159 @@
       "nombre": "Ventas de naftas grados 2 y 3, total del mercado, sin usinas eléctricas ni bunker internacional",
       "tipo": "nivel",
       "unidad": "m³"
+    },
+    "gasoil_g2_canal_publico": {
+      "nombre": "Ventas de gasoil grado 2 (común), canal al público (estaciones de servicio), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_canal_carga": {
+      "nombre": "Ventas de gasoil grado 2 (común), canal transporte de carga, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_canal_agro": {
+      "nombre": "Ventas de gasoil grado 2 (común), canal agro, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_canal_pasajeros": {
+      "nombre": "Ventas de gasoil grado 2 (común), canal transporte público de pasajeros, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g2_canal_otras_empresas": {
+      "nombre": "Ventas de gasoil grado 2 (común), canal otras empresas del sector (reventa), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_canal_publico": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), canal al público (estaciones de servicio), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_canal_carga": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), canal transporte de carga, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_canal_agro": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), canal agro, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_canal_pasajeros": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), canal transporte público de pasajeros, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_g3_canal_otras_empresas": {
+      "nombre": "Ventas de gasoil grado 3 (ultra), canal otras empresas del sector (reventa), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_canal_publico": {
+      "nombre": "Ventas de nafta grado 2 (súper), canal al público (estaciones de servicio), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_canal_carga": {
+      "nombre": "Ventas de nafta grado 2 (súper), canal transporte de carga, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_canal_agro": {
+      "nombre": "Ventas de nafta grado 2 (súper), canal agro, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_canal_pasajeros": {
+      "nombre": "Ventas de nafta grado 2 (súper), canal transporte público de pasajeros, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g2_canal_otras_empresas": {
+      "nombre": "Ventas de nafta grado 2 (súper), canal otras empresas del sector (reventa), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_canal_publico": {
+      "nombre": "Ventas de nafta grado 3 (ultra), canal al público (estaciones de servicio), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_canal_carga": {
+      "nombre": "Ventas de nafta grado 3 (ultra), canal transporte de carga, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_canal_agro": {
+      "nombre": "Ventas de nafta grado 3 (ultra), canal agro, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_canal_pasajeros": {
+      "nombre": "Ventas de nafta grado 3 (ultra), canal transporte público de pasajeros, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "nafta_g3_canal_otras_empresas": {
+      "nombre": "Ventas de nafta grado 3 (ultra), canal otras empresas del sector (reventa), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_canal_publico": {
+      "nombre": "Ventas de gasoil grados 2 y 3, canal al público (estaciones de servicio), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_canal_carga": {
+      "nombre": "Ventas de gasoil grados 2 y 3, canal transporte de carga, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_canal_agro": {
+      "nombre": "Ventas de gasoil grados 2 y 3, canal agro, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_canal_pasajeros": {
+      "nombre": "Ventas de gasoil grados 2 y 3, canal transporte público de pasajeros, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "gasoil_canal_otras_empresas": {
+      "nombre": "Ventas de gasoil grados 2 y 3, canal otras empresas del sector (reventa), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_canal_publico": {
+      "nombre": "Ventas de naftas grados 2 y 3, canal al público (estaciones de servicio), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_canal_carga": {
+      "nombre": "Ventas de naftas grados 2 y 3, canal transporte de carga, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_canal_agro": {
+      "nombre": "Ventas de naftas grados 2 y 3, canal agro, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_canal_pasajeros": {
+      "nombre": "Ventas de naftas grados 2 y 3, canal transporte público de pasajeros, total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "naftas_canal_otras_empresas": {
+      "nombre": "Ventas de naftas grados 2 y 3, canal otras empresas del sector (reventa), total del mercado",
+      "tipo": "nivel",
+      "unidad": "m³"
     }
   },
-  "descargado": "2026-10-21T19:46:51Z",
+  "descargado": "2026-10-22T13:57:24Z",
   "ultimo_periodo": "2026-08",
   "observaciones": 200,
   "original_guardado": null

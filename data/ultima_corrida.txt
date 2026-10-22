@@ -17,14 +17,14 @@
 [salarios]
   sin cambios en el archivo
 [sube]
-  actualizada: último período 2026-10 → 2026-10-20; valores revisados: 0
+  sin cambios en el archivo
 [petroleo]
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-10 → 2026-10-21; valores revisados: 0
 [refinados]
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-10 → 2026-10-21; valores revisados: 0
 [ventas_combustibles]
   www.energia.gob.ar no envía su certificado intermedio; se tomó de http://crt.sectigo.com/SectigoPublicServerAuthenticationCADVR36.crt
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-08 → 2026-08; valores revisados: 0
 [camiones_puertos]
   sin cambios en el archivo
 [cammesa_balance]
@@ -40,15 +40,15 @@
 [salarios_real]
   sin cambios en las series de base
 [sube_mensual]
-  recalculada: último período 2026-09 → 2026-09
+  sin cambios en las series de base
 [sube_desest]
   sin cambios en las series de base
 [petroleo_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-09 → 2026-09
 [refinados_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-09 → 2026-09
 [ventas_combustibles_desest]
-  sin cambios en las series de base
+  recalculada: último período 2026-08 → 2026-08
 [camiones_puertos_mensual]
   sin cambios en las series de base
 [cammesa_gu_actividad_mensual]

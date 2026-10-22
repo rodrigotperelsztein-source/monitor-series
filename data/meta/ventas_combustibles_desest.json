@@ -5,12 +5,12 @@
   "pagina": "https://www.argentina.gob.ar/economia/energia/hidrocarburos/refinacion-y-comercializacion-de-petroleo-gas-y-derivados-tablas-dinamicas",
   "frecuencia": "M",
   "unidad": "m³",
-  "sha256": "fd84b58479cabf313a46f4fb22ef214d4ee21caccbf7a371dd24805a775e667b",
+  "sha256": "6f9427cc0ec8fcbe16e59b295f6bc09862b02131083ebfbe25cc3b180b9d3cfc",
   "derivada_de": [
     "ventas_combustibles"
   ],
   "archivos_de_origen": [
-    "https://www.energia.gob.ar/contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip"
+    "https://www.energia.gob.ar/contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip https://www.energia.gob.ar/contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado_2010_2019.zip"
   ],
   "columnas": {
     "gasoil_total": {
@@ -184,8 +184,8 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-10-21T19:46:51Z",
-  "calculado": "2026-10-21T20:52:19Z",
+  "descargado": "2026-10-22T13:57:24Z",
+  "calculado": "2026-10-22T13:57:24Z",
   "ultimo_periodo": "2026-08",
   "observaciones": 200,
   "desestacionalizacion": {

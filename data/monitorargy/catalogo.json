@@ -315,7 +315,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -2119,7 +2119,7 @@
 "unidad": "miles",
 "frecuencia": "M",
 "fuente": "Colegio de Escribanos de la Ciudad de Buenos Aires",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2130,7 +2130,7 @@
 "unidad": "miles",
 "frecuencia": "M",
 "fuente": "Colegio de Escribanos de la Ciudad de Buenos Aires · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2141,7 +2141,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Colegio de Escribanos de la Ciudad de Buenos Aires · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -2152,7 +2152,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Colegio de Escribanos de la Ciudad de Buenos Aires",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -7135,7 +7135,7 @@
 "unidad": "pb",
 "frecuencia": "D",
 "fuente": "JP Morgan (EMBI) vía ArgentinaDatos",
-"ultimo_periodo": "2026-10-20",
+"ultimo_periodo": "2026-10-21",
 "frescura": "vigente"
 },
 {
@@ -7553,7 +7553,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -7564,7 +7564,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -7575,7 +7575,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -7586,7 +7586,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -7597,7 +7597,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -7608,7 +7608,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -7619,7 +7619,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -7630,7 +7630,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -7729,7 +7729,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -7740,7 +7740,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -7751,7 +7751,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {

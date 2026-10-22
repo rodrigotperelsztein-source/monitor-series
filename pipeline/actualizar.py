@@ -27,10 +27,10 @@ import pandas as pd
 import requests
 
 from pipeline import calendario
-from pipeline.fuentes import emae, emae_letras, emae_letras_desest, ipc, ipi, isac, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, refinados, refinados_mensual, ventas_combustibles, ventas_combustibles_desest, supermercados, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual
+from pipeline.fuentes import emae, emae_letras, emae_letras_desest, ipc, ipi, isac, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, refinados, refinados_mensual, ventas_combustibles, ventas_combustibles_desest, came, supermercados, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual
 from pipeline.fuentes._indec import iguales
 
-FUENTES = {f.ID: f for f in [emae, emae_letras, emae_letras_desest, ipc, ipi, isac, supermercados, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, refinados, refinados_mensual, ventas_combustibles, ventas_combustibles_desest, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual]}
+FUENTES = {f.ID: f for f in [emae, emae_letras, emae_letras_desest, ipc, ipi, isac, supermercados, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, refinados, refinados_mensual, ventas_combustibles, ventas_combustibles_desest, came, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual]}
 # Series calculadas a partir de otra (DERIVADA_DE): no se bajan, se recalculan cuando cambia su base.
 DERIVADAS = {fid: f for fid, f in FUENTES.items() if hasattr(f, "DERIVADA_DE")}
 
@@ -322,6 +322,7 @@ def catalogo(cal, hoy: date) -> None:
 CATEGORIAS = {  # fuente -> gran categoría (para buscar y filtrar en las páginas)
     "emae": "Actividad económica", "emae_letras": "Actividad económica", "emae_letras_desest": "Actividad económica",
     "ipi": "Actividad económica", "isac": "Actividad económica", "supermercados": "Actividad económica",
+    "came": "Actividad económica",
     "ipc": "Precios",
     "ripte": "Salarios", "ripte_real": "Salarios", "salarios": "Salarios", "salarios_real": "Salarios",
     "sube": "Transporte", "sube_mensual": "Transporte", "sube_desest": "Transporte",

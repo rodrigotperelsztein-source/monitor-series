@@ -1,8 +1,5 @@
-[petroleo]
-  archivo distinto pero mismos datos
-[refinados]
-  archivo distinto pero mismos datos
-[petroleo_mensual]
-  sin cambios en las series de base
-[refinados_mensual]
-  sin cambios en las series de base
+Publicaciones previstas hoy y todavía no descargadas: supermercados
+[supermercados]
+Aviso: indice_desest tiene 14 meses revisados respecto de la versión guardada.
+Aviso: indice_tendencia tiene 22 meses revisados respecto de la versión guardada.
+  actualizada: último período 2026-07 → 2026-08; valores revisados: 458

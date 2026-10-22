@@ -5,7 +5,7 @@
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-1-34",
   "frecuencia": "M",
   "unidad": "Índice de ventas a precios constantes",
-  "sha256": "98c8d1f79b97868f39942c5568ba72be0f0fb7f5b871919f6a00775a6a410212",
+  "sha256": "112cf5646feb5a94a050ebf9c0aab62594c37414261386041ae75f5701df1e85",
   "columnas": {
     "indice": {
       "nombre": "Índice de ventas a precios constantes, serie original",
@@ -63,8 +63,8 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-10-19T15:37:12Z",
-  "ultimo_periodo": "2026-07",
-  "observaciones": 115,
-  "original_guardado": "data/raw/supermercados/2026-10-19_98c8d1f7.xlsx"
+  "descargado": "2026-10-22T22:27:57Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 116,
+  "original_guardado": "data/raw/supermercados/2026-10-22_112cf564.xlsx"
 }

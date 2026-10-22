@@ -8,22 +8,37 @@ name: Actualizar series
 
 on:
   schedule:
-    # Días hábiles, ventana de publicación de INDEC (horas en UTC; Buenos Aires = UTC-3).
-    # INDEC publica a las 16:00 y a esa hora la página suele saturarse, sobre todo los días
-    # del IPC: el primer intento es a las 16:40 y se reintenta cada media hora hasta las 18:40.
-    # Estas corridas solo bajan las fuentes que el calendario prevé para ese día.
-    - cron: "40 19 * * 1-5"   # 16:40
-    - cron: "10 20 * * 1-5"   # 17:10
-    - cron: "40 20 * * 1-5"   # 17:40
-    - cron: "10 21 * * 1-5"   # 18:10
-    - cron: "40 21 * * 1-5"   # 18:40
-    # Control completo todas las noches a las 21:47: actualiza el calendario, revisa todas
-    # las fuentes (atrapa revisiones y publicaciones fuera de calendario) y termina en error
-    # si una publicación prevista para hoy no entró.
-    - cron: "47 0 * * *"
-    # Días hábiles a las 10:10: cierre del día anterior del Brent, el WTI, las naftas y el gasoil (la EIA lo publica
-    # entre las 8:30 y las 9:30 de Buenos Aires). Solo baja esa fuente.
-    - cron: "10 13 * * 1-5"
+    # Horas en UTC (Buenos Aires = UTC-3). GitHub no garantiza el horario de las tareas
+    # programadas: con carga alta las demora horas o las saltea, sobre todo en horas redondas.
+    # Por eso hay varios horarios, en minutos poco usados; si una corrida no tiene nada que
+    # hacer termina en segundos y no guarda nada.
+    #
+    # Días hábiles, ventana de publicación de INDEC (publica a las 16:00): de 16:23 a 20:37,
+    # cada 15 a 25 minutos. Solo bajan las fuentes que el calendario prevé para ese día y que
+    # todavía no entraron.
+    - cron: "23 19 * * 1-5"   # 16:23
+    - cron: "41 19 * * 1-5"   # 16:41
+    - cron: "57 19 * * 1-5"   # 16:57
+    - cron: "13 20 * * 1-5"   # 17:13
+    - cron: "29 20 * * 1-5"   # 17:29
+    - cron: "46 20 * * 1-5"   # 17:46
+    - cron: "7 21 * * 1-5"    # 18:07
+    - cron: "26 21 * * 1-5"   # 18:26
+    - cron: "52 21 * * 1-5"   # 18:52
+    - cron: "18 22 * * 1-5"   # 19:18
+    - cron: "44 22 * * 1-5"   # 19:44
+    - cron: "11 23 * * 1-5"   # 20:11
+    - cron: "37 23 * * 1-5"   # 20:37
+    # Control completo todas las noches: actualiza el calendario, revisa todas las fuentes
+    # (atrapa revisiones y publicaciones fuera de calendario) y termina en error si una
+    # publicación prevista no entró. Dos horarios (21:47 y 01:17) por si uno se demora.
+    - cron: "47 0 * * *"      # 21:47
+    - cron: "17 4 * * *"      # 01:17
+    # Días hábiles por la mañana: cierre del día anterior del Brent, el WTI, las naftas y el
+    # gasoil (la EIA lo publica entre las 8:30 y las 9:30). Solo bajan esas fuentes.
+    - cron: "12 13 * * 1-5"   # 10:12
+    - cron: "38 14 * * 1-5"   # 11:38
+    - cron: "19 16 * * 1-5"   # 13:19
   workflow_dispatch:
     inputs:
       modo:
@@ -62,6 +77,7 @@ jobs:
         run: "pip install --require-hashes --only-binary=:all: --no-cache-dir -r requirements.txt"
 
       - name: Bajar, validar y procesar
+        id: proc
         env:
           EVENTO: ${{ github.event_name }}
           HORARIO: ${{ github.event.schedule }}
@@ -70,13 +86,12 @@ jobs:
         run: |
           if [ "$EVENTO" = "workflow_dispatch" ]; then
             MODO="$MODO_MANUAL"
-          elif [ "$HORARIO" = "47 0 * * *" ]; then
-            MODO=completo
-          elif [ "$HORARIO" = "10 13 * * 1-5" ]; then
-            MODO=completo
-            FUENTES="petroleo refinados"
           else
-            MODO=calendario
+            case "$HORARIO" in
+              "47 0 * * *"|"17 4 * * *") MODO=completo ;;
+              "12 13 * * 1-5"|"38 14 * * 1-5"|"19 16 * * 1-5") MODO=completo; FUENTES="petroleo refinados" ;;
+              *) MODO=calendario ;;
+            esac
           fi
           case "$MODO" in completo|calendario) ;; *) echo "Modo inválido"; exit 1;; esac
           echo "Modo: $MODO"
@@ -88,11 +103,14 @@ jobs:
         if: always()
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RESULTADO: ${{ steps.proc.outcome }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
-          if git diff --cached --quiet; then
+          # Si la corrida salió bien y lo único que cambió es su registro, no se guarda (evita un
+          # commit por cada corrida sin novedades). Si hubo un error, el registro sí se guarda.
+          if [ "$RESULTADO" = "success" ] && git diff --cached --quiet -- . ':(exclude)data/ultima_corrida.txt'; then
             echo "Sin cambios para guardar."
             exit 0
           fi

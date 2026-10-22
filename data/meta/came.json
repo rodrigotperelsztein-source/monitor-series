@@ -1,0 +1,30 @@
+{
+  "id": "came",
+  "nombre": "CAME: ventas minoristas pyme e industria pyme (variación interanual)",
+  "url": "https://www.redcame.org.ar/prensa https://www.redcame.org.ar/prensa/comunicados/p2/",
+  "pagina": "https://www.redcame.org.ar/estadisticas-pyme/78/ndice-de-ventas-minoristas",
+  "frecuencia": "M",
+  "unidad": "%",
+  "sha256": "4052c61575b36cacad881ab87d915db7151119934ccbcc41b4a9dee97381f064",
+  "columnas": {
+    "minoristas_var_ia": {
+      "nombre": "CAME, ventas minoristas pyme a precios constantes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipip_var_ia": {
+      "nombre": "CAME, producción industrial pyme (IPIP), var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "informes_leidos": {
+    "ipip_var_ia 2026-08": "https://www.redcame.org.ar/prensa/574311149/la-produccion-industrial-pyme-bajo-61-en-el-mes-de-agosto",
+    "ipip_var_ia 2026-07": "https://www.redcame.org.ar/prensa/574311133/la-produccion-industrial-pyme-cayo-39-en-el-mes-de-julio",
+    "ipip_var_ia 2026-06": "https://www.redcame.org.ar/prensa/574311135/la-produccion-industrial-pyme-cayo-71-en-el-mes-de-junio"
+  },
+  "descargado": "2026-10-22T14:17:14Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 97,
+  "original_guardado": null
+}

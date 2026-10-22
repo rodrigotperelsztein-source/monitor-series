@@ -25,6 +25,8 @@
 [ventas_combustibles]
   www.energia.gob.ar no envía su certificado intermedio; se tomó de http://crt.sectigo.com/SectigoPublicServerAuthenticationCADVR36.crt
   archivo distinto pero mismos datos
+[came]
+  actualizada: último período — → 2026-09; valores revisados: 0
 [camiones_puertos]
   sin cambios en el archivo
 [cammesa_balance]

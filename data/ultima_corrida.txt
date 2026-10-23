@@ -1,5 +1,61 @@
-Publicaciones previstas hoy y todavía no descargadas: supermercados
+[calendario INDEC]
+  2.º sem. 2026: 174 publicaciones; 1.º sem. 2027: todavía no publicado
+[emae]
+  sin cambios en el archivo
+[emae_letras]
+  sin cambios en el archivo
+[ipc]
+  sin cambios en el archivo
+[ipi]
+  sin cambios en el archivo
+[isac]
+  sin cambios en el archivo
 [supermercados]
-Aviso: indice_desest tiene 14 meses revisados respecto de la versión guardada.
-Aviso: indice_tendencia tiene 22 meses revisados respecto de la versión guardada.
-  actualizada: último período 2026-07 → 2026-08; valores revisados: 458
+  sin cambios en el archivo
+[ripte]
+  sin cambios en el archivo
+[salarios]
+  sin cambios en el archivo
+[sube]
+  sin cambios en el archivo
+[petroleo]
+  archivo distinto pero mismos datos
+[refinados]
+  archivo distinto pero mismos datos
+[ventas_combustibles]
+  www.energia.gob.ar no envía su certificado intermedio; se tomó de http://crt.sectigo.com/SectigoPublicServerAuthenticationCADVR36.crt
+  archivo distinto pero mismos datos
+[came]
+  archivo distinto pero mismos datos
+[camiones_puertos]
+  aviso: 3 días sin dato en la fuente: ['2024-08-31', '2025-02-28', '2025-12-31']
+  aviso: en 1 días la suma por productos no da el total: ['2024-09-26']
+  actualizada: último período 2026-10 → 2026-10-22; valores revisados: 0
+[cammesa_balance]
+  sin cambios en el archivo
+[cammesa_diaria]
+  sin cambios en el archivo
+[cammesa_gu_actividad]
+  sin cambios en el archivo
+[emae_letras_desest]
+  sin cambios en las series de base
+[ripte_real]
+  sin cambios en las series de base
+[salarios_real]
+  sin cambios en las series de base
+[sube_mensual]
+  sin cambios en las series de base
+[sube_desest]
+  sin cambios en las series de base
+[petroleo_mensual]
+  sin cambios en las series de base
+[refinados_mensual]
+  sin cambios en las series de base
+[ventas_combustibles_desest]
+  sin cambios en las series de base
+[camiones_puertos_mensual]
+  recalculada: último período 2026-09 → 2026-09
+[cammesa_gu_actividad_mensual]
+  sin cambios en las series de base
+[catálogo de Monitor Argy]
+  733 series

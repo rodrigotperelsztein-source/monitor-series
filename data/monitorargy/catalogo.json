@@ -73,7 +73,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-10-20",
+"ultimo_periodo": "2026-10-21",
 "frescura": "vigente"
 },
 {
@@ -95,7 +95,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-10-20",
+"ultimo_periodo": "2026-10-21",
 "frescura": "vigente"
 },
 {
@@ -106,7 +106,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-10-20",
+"ultimo_periodo": "2026-10-21",
 "frescura": "vigente"
 },
 {
@@ -150,7 +150,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-10-20",
+"ultimo_periodo": "2026-10-21",
 "frescura": "vigente"
 },
 {
@@ -161,7 +161,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-10-20",
+"ultimo_periodo": "2026-10-21",
 "frescura": "vigente"
 },
 {
@@ -304,7 +304,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos · BCRA",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -326,7 +326,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos · BCRA",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -612,7 +612,7 @@
 "unidad": "indice",
 "frecuencia": "M",
 "fuente": "Universidad Torcuato Di Tella — CIF",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -623,7 +623,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Universidad Torcuato Di Tella",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -4308,7 +4308,7 @@
 "unidad": "mars",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de autoservicios mayoristas",
-"ultimo_periodo": "2026-07-01",
+"ultimo_periodo": "2026-08-01",
 "frescura": "vigente"
 },
 {
@@ -4319,7 +4319,7 @@
 "unidad": "mars",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de autoservicios mayoristas",
-"ultimo_periodo": "2026-07-01",
+"ultimo_periodo": "2026-08-01",
 "frescura": "vigente"
 },
 {
@@ -4330,7 +4330,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de autoservicios mayoristas",
-"ultimo_periodo": "2026-07-01",
+"ultimo_periodo": "2026-08-01",
 "frescura": "vigente"
 },
 {
@@ -4341,7 +4341,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de autoservicios mayoristas",
-"ultimo_periodo": "2026-07-01",
+"ultimo_periodo": "2026-08-01",
 "frescura": "vigente"
 },
 {
@@ -4561,7 +4561,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-20",
+"ultimo_periodo": "2026-10-21",
 "frescura": "vigente"
 },
 {
@@ -4572,7 +4572,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-16",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -4583,7 +4583,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-16",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -5155,7 +5155,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-16",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -5166,7 +5166,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-16",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -5232,7 +5232,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-16",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -5243,7 +5243,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-16",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -7014,7 +7014,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA — Principales Variables",
-"ultimo_periodo": "2026-10-19",
+"ultimo_periodo": "2026-10-20",
 "frescura": "vigente"
 },
 {
@@ -7289,7 +7289,7 @@
 "unidad": "mars",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de centros de compras",
-"ultimo_periodo": "2026-07-01",
+"ultimo_periodo": "2026-08-01",
 "frescura": "vigente"
 },
 {
@@ -7300,7 +7300,7 @@
 "unidad": "indice",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de centros de compras",
-"ultimo_periodo": "2026-07-01",
+"ultimo_periodo": "2026-08-01",
 "frescura": "vigente"
 },
 {
@@ -7311,7 +7311,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de centros de compras",
-"ultimo_periodo": "2026-07-01",
+"ultimo_periodo": "2026-08-01",
 "frescura": "vigente"
 },
 {
@@ -7322,7 +7322,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de centros de compras",
-"ultimo_periodo": "2026-07-01",
+"ultimo_periodo": "2026-08-01",
 "frescura": "vigente"
 },
 {
@@ -7333,7 +7333,7 @@
 "unidad": "mars",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de supermercados",
-"ultimo_periodo": "2026-07-01",
+"ultimo_periodo": "2026-08-01",
 "frescura": "vigente"
 },
 {
@@ -7344,7 +7344,7 @@
 "unidad": "mars",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de supermercados",
-"ultimo_periodo": "2026-07-01",
+"ultimo_periodo": "2026-08-01",
 "frescura": "vigente"
 },
 {
@@ -7355,7 +7355,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de supermercados",
-"ultimo_periodo": "2026-07-01",
+"ultimo_periodo": "2026-08-01",
 "frescura": "vigente"
 },
 {
@@ -7366,7 +7366,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — Encuesta de supermercados",
-"ultimo_periodo": "2026-07-01",
+"ultimo_periodo": "2026-08-01",
 "frescura": "vigente"
 },
 {
@@ -7377,7 +7377,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-20",
+"ultimo_periodo": "2026-10-21",
 "frescura": "vigente"
 },
 {
@@ -7454,7 +7454,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-20",
+"ultimo_periodo": "2026-10-21",
 "frescura": "vigente"
 },
 {
@@ -7663,7 +7663,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -7685,7 +7685,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -7707,7 +7707,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-10-16",
+"ultimo_periodo": "2026-10-19",
 "frescura": "vigente"
 },
 {
@@ -7718,7 +7718,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -7762,7 +7762,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -7773,7 +7773,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {
@@ -7784,7 +7784,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-21",
+"ultimo_periodo": "2026-10-22",
 "frescura": "vigente"
 },
 {

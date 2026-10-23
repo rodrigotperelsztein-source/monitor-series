@@ -1133,6 +1133,7 @@ fecha,id_serie,valor
 2026-10-19,camiones_puertos.bahia_blanca,829.000000
 2026-10-20,camiones_puertos.bahia_blanca,1391.000000
 2026-10-21,camiones_puertos.bahia_blanca,1446.000000
+2026-10-22,camiones_puertos.bahia_blanca,1208.000000
 2024-01-01,camiones_puertos.cebada,0.000000
 2024-01-02,camiones_puertos.cebada,473.000000
 2024-01-03,camiones_puertos.cebada,938.000000
@@ -2155,6 +2156,7 @@ fecha,id_serie,valor
 2026-10-19,camiones_puertos.cebada,95.000000
 2026-10-20,camiones_puertos.cebada,204.000000
 2026-10-21,camiones_puertos.cebada,186.000000
+2026-10-22,camiones_puertos.cebada,195.000000
 2024-01-01,camiones_puertos.darsena_bsas_entre_rios,0.000000
 2024-01-02,camiones_puertos.darsena_bsas_entre_rios,237.000000
 2024-01-03,camiones_puertos.darsena_bsas_entre_rios,344.000000
@@ -3177,6 +3179,7 @@ fecha,id_serie,valor
 2026-10-19,camiones_puertos.darsena_bsas_entre_rios,112.000000
 2026-10-20,camiones_puertos.darsena_bsas_entre_rios,128.000000
 2026-10-21,camiones_puertos.darsena_bsas_entre_rios,176.000000
+2026-10-22,camiones_puertos.darsena_bsas_entre_rios,173.000000
 2024-01-01,camiones_puertos.girasol,0.000000
 2024-01-02,camiones_puertos.girasol,56.000000
 2024-01-03,camiones_puertos.girasol,68.000000
@@ -4199,6 +4202,7 @@ fecha,id_serie,valor
 2026-10-19,camiones_puertos.girasol,3.000000
 2026-10-20,camiones_puertos.girasol,7.000000
 2026-10-21,camiones_puertos.girasol,7.000000
+2026-10-22,camiones_puertos.girasol,34.000000
 2024-01-01,camiones_puertos.maiz,0.000000
 2024-01-02,camiones_puertos.maiz,343.000000
 2024-01-03,camiones_puertos.maiz,733.000000
@@ -5221,6 +5225,7 @@ fecha,id_serie,valor
 2026-10-19,camiones_puertos.maiz,1281.000000
 2026-10-20,camiones_puertos.maiz,2310.000000
 2026-10-21,camiones_puertos.maiz,2650.000000
+2026-10-22,camiones_puertos.maiz,2599.000000
 2024-01-01,camiones_puertos.necochea,0.000000
 2024-01-02,camiones_puertos.necochea,368.000000
 2024-01-03,camiones_puertos.necochea,942.000000
@@ -6243,6 +6248,7 @@ fecha,id_serie,valor
 2026-10-19,camiones_puertos.necochea,419.000000
 2026-10-20,camiones_puertos.necochea,650.000000
 2026-10-21,camiones_puertos.necochea,683.000000
+2026-10-22,camiones_puertos.necochea,536.000000
 2024-01-01,camiones_puertos.rosario,0.000000
 2024-01-02,camiones_puertos.rosario,461.000000
 2024-01-03,camiones_puertos.rosario,1797.000000
@@ -7265,6 +7271,7 @@ fecha,id_serie,valor
 2026-10-19,camiones_puertos.rosario,2004.000000
 2026-10-20,camiones_puertos.rosario,4000.000000
 2026-10-21,camiones_puertos.rosario,4240.000000
+2026-10-22,camiones_puertos.rosario,4764.000000
 2024-01-01,camiones_puertos.soja,0.000000
 2024-01-02,camiones_puertos.soja,85.000000
 2024-01-03,camiones_puertos.soja,500.000000
@@ -8287,6 +8294,7 @@ fecha,id_serie,valor
 2026-10-19,camiones_puertos.soja,1301.000000
 2026-10-20,camiones_puertos.soja,2318.000000
 2026-10-21,camiones_puertos.soja,2373.000000
+2026-10-22,camiones_puertos.soja,2596.000000
 2024-01-01,camiones_puertos.sorgo,0.000000
 2024-01-02,camiones_puertos.sorgo,0.000000
 2024-01-03,camiones_puertos.sorgo,11.000000
@@ -9309,6 +9317,7 @@ fecha,id_serie,valor
 2026-10-19,camiones_puertos.sorgo,43.000000
 2026-10-20,camiones_puertos.sorgo,93.000000
 2026-10-21,camiones_puertos.sorgo,80.000000
+2026-10-22,camiones_puertos.sorgo,80.000000
 2024-01-01,camiones_puertos.total,0.000000
 2024-01-02,camiones_puertos.total,1486.000000
 2024-01-03,camiones_puertos.total,3666.000000
@@ -10331,6 +10340,7 @@ fecha,id_serie,valor
 2026-10-19,camiones_puertos.total,3364.000000
 2026-10-20,camiones_puertos.total,6169.000000
 2026-10-21,camiones_puertos.total,6545.000000
+2026-10-22,camiones_puertos.total,6681.000000
 2024-01-01,camiones_puertos.trigo,0.000000
 2024-01-02,camiones_puertos.trigo,529.000000
 2024-01-03,camiones_puertos.trigo,1416.000000
@@ -11353,6 +11363,7 @@ fecha,id_serie,valor
 2026-10-19,camiones_puertos.trigo,641.000000
 2026-10-20,camiones_puertos.trigo,1237.000000
 2026-10-21,camiones_puertos.trigo,1249.000000
+2026-10-22,camiones_puertos.trigo,1177.000000
 2024-01-01,camiones_puertos.vagones,0.000000
 2024-01-02,camiones_puertos.vagones,204.000000
 2024-01-03,camiones_puertos.vagones,160.000000
@@ -12375,6 +12386,7 @@ fecha,id_serie,valor
 2026-10-19,camiones_puertos.vagones,313.000000
 2026-10-20,camiones_puertos.vagones,112.000000
 2026-10-21,camiones_puertos.vagones,187.000000
+2026-10-22,camiones_puertos.vagones,220.000000
 2024-01-01,camiones_puertos_mensual.bahia_blanca,14836.000000
 2024-02-01,camiones_puertos_mensual.bahia_blanca,13505.000000
 2024-03-01,camiones_puertos_mensual.bahia_blanca,13205.000000

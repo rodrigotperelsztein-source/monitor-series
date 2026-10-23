@@ -483,7 +483,7 @@ function dibujar() {
   const opt = {
     ...comunes,
     color: series.map(s => s.color),
-    grid: { left: 12, right: unidades.length === 2 ? 16 : 26, top: 54, bottom: 78, containLabel: true },
+    grid: { left: 12, right: ((E.tipo === "line" || E.tipo === "area") && series.length <= 4 && !apilar) ? (unidades.length === 2 ? 84 : 72) : (unidades.length === 2 ? 16 : 26), top: 54, bottom: 78, containLabel: true },
     legend: { top: 4, type: "scroll", textStyle: { color: "#cfdceb" }, icon: "roundRect", itemWidth: 12, itemHeight: 8, pageTextStyle: { color: "#93a8bd" } },
     tooltip: {
       trigger: "axis", backgroundColor: "rgba(8,20,34,.94)", borderColor: "rgba(95,208,255,.35)", textStyle: { color: "#e8f1fa", fontSize: 12 },

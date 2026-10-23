@@ -17,7 +17,7 @@
 [salarios]
   sin cambios en el archivo
 [sube]
-  sin cambios en el archivo
+  actualizada: último período 2026-10 → 2026-10-21; valores revisados: 0
 [petroleo]
   archivo distinto pero mismos datos
 [refinados]
@@ -28,9 +28,7 @@
 [came]
   archivo distinto pero mismos datos
 [camiones_puertos]
-  aviso: 3 días sin dato en la fuente: ['2024-08-31', '2025-02-28', '2025-12-31']
-  aviso: en 1 días la suma por productos no da el total: ['2024-09-26']
-  actualizada: último período 2026-10 → 2026-10-22; valores revisados: 0
+  sin cambios en el archivo
 [cammesa_balance]
   sin cambios en el archivo
 [cammesa_diaria]
@@ -44,7 +42,7 @@
 [salarios_real]
   sin cambios en las series de base
 [sube_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-09 → 2026-09
 [sube_desest]
   sin cambios en las series de base
 [petroleo_mensual]
@@ -54,7 +52,7 @@
 [ventas_combustibles_desest]
   sin cambios en las series de base
 [camiones_puertos_mensual]
-  recalculada: último período 2026-09 → 2026-09
+  sin cambios en las series de base
 [cammesa_gu_actividad_mensual]
   sin cambios en las series de base
 [catálogo de Monitor Argy]

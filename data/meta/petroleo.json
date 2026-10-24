@@ -5,7 +5,7 @@
   "pagina": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
   "frecuencia": "D",
   "unidad": "Dólares por barril",
-  "sha256": "36e876e9e31d40f904bd7579e2bda96944dd58336d1a11064bed22a7693cae1c",
+  "sha256": "c2710fc2e924b200168bf2d10999f7295a4c42684340cae47aa06f3deee28889",
   "columnas": {
     "brent": {
       "nombre": "Petróleo Brent, precio spot FOB (Europa), cierre del día",

@@ -1,16 +1,3 @@
-Traceback (most recent call last):
-  File "<frozen runpy>", line 198, in _run_module_as_main
-  File "<frozen runpy>", line 88, in _run_code
-  File "/home/runner/work/monitor-series/monitor-series/pipeline/actualizar.py", line 554, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File "/home/runner/work/monitor-series/monitor-series/pipeline/actualizar.py", line 549, in main
-    todas()
-  File "/home/runner/work/monitor-series/monitor-series/pipeline/actualizar.py", line 406, in todas
-    "primer_periodo": f"{puntos['fecha'].min():%Y-%m-%d}",
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "nattype.pyx", line 54, in pandas._libs.tslibs.nattype._make_error_func.f
-ValueError: NaTType does not support strftime
 [calendario INDEC]
   2.º sem. 2026: 174 publicaciones; 1.º sem. 2027: todavía no publicado
 [emae]
@@ -49,7 +36,7 @@ ValueError: NaTType does not support strftime
 [cammesa_gu_actividad]
   sin cambios en el archivo
 [estimaciones_agricolas]
-  actualizada: último período — → 2026-10; valores revisados: 0
+  archivo distinto pero mismos datos
 [emae_letras_desest]
   sin cambios en las series de base
 [ripte_real]

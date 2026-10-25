@@ -17,7 +17,7 @@
 [salarios]
   sin cambios en el archivo
 [sube]
-  sin cambios en el archivo
+  actualizada: último período 2026-10 → 2026-10-23; valores revisados: 0
 [petroleo]
   archivo distinto pero mismos datos
 [refinados]
@@ -44,7 +44,7 @@
 [salarios_real]
   sin cambios en las series de base
 [sube_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-09 → 2026-09
 [sube_desest]
   sin cambios en las series de base
 [petroleo_mensual]

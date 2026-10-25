@@ -1,0 +1,95 @@
+{
+  "id": "estimaciones_agricolas",
+  "nombre": "Estimación de la campaña agrícola en curso: trigo, maíz, soja y girasol (Secretaría de Agricultura)",
+  "url": "https://www.magyp.gob.ar/sitio/areas/estimaciones/_archivos/estimaciones/260000_2026/261000_Octubre/261015%20Informe%20Mensual%20al%2015_10_2026.pdf https://www.magyp.gob.ar/sitio/areas/estimaciones/_archivos/estimaciones/260000_2026/261000_Octubre/261022_Informe%20Semanal%20al%2022_10_2026.pdf",
+  "pagina": "https://www.magyp.gob.ar/sitio/areas/estimaciones/estimaciones/informes/",
+  "frecuencia": "M",
+  "unidad": "Toneladas",
+  "sha256": "e133a86eb0fe3ee32ccf41de6a2c1b2d9a3bc9a1913fbbf71f178ca5ed0043ca",
+  "columnas": {
+    "trigo_campania": {
+      "nombre": "Trigo: año de inicio de la campaña estimada",
+      "tipo": "nivel",
+      "unidad": "año"
+    },
+    "trigo_superficie_ha": {
+      "nombre": "Trigo: superficie implantada, campaña en curso",
+      "tipo": "nivel",
+      "unidad": "Hectáreas"
+    },
+    "trigo_produccion_t": {
+      "nombre": "Trigo: producción estimada, campaña en curso",
+      "tipo": "nivel",
+      "unidad": "Toneladas"
+    },
+    "trigo_produccion_tendencial_t": {
+      "nombre": "Trigo: producción con rendimiento tendencial (superficie × mediana de 5 campañas)",
+      "tipo": "nivel",
+      "unidad": "Toneladas"
+    },
+    "maiz_campania": {
+      "nombre": "Maíz: año de inicio de la campaña estimada",
+      "tipo": "nivel",
+      "unidad": "año"
+    },
+    "maiz_superficie_ha": {
+      "nombre": "Maíz: superficie implantada, campaña en curso",
+      "tipo": "nivel",
+      "unidad": "Hectáreas"
+    },
+    "maiz_produccion_t": {
+      "nombre": "Maíz: producción estimada, campaña en curso",
+      "tipo": "nivel",
+      "unidad": "Toneladas"
+    },
+    "maiz_produccion_tendencial_t": {
+      "nombre": "Maíz: producción con rendimiento tendencial (superficie × mediana de 5 campañas)",
+      "tipo": "nivel",
+      "unidad": "Toneladas"
+    },
+    "soja_campania": {
+      "nombre": "Soja: año de inicio de la campaña estimada",
+      "tipo": "nivel",
+      "unidad": "año"
+    },
+    "soja_superficie_ha": {
+      "nombre": "Soja: superficie implantada, campaña en curso",
+      "tipo": "nivel",
+      "unidad": "Hectáreas"
+    },
+    "soja_produccion_t": {
+      "nombre": "Soja: producción estimada, campaña en curso",
+      "tipo": "nivel",
+      "unidad": "Toneladas"
+    },
+    "soja_produccion_tendencial_t": {
+      "nombre": "Soja: producción con rendimiento tendencial (superficie × mediana de 5 campañas)",
+      "tipo": "nivel",
+      "unidad": "Toneladas"
+    },
+    "girasol_campania": {
+      "nombre": "Girasol: año de inicio de la campaña estimada",
+      "tipo": "nivel",
+      "unidad": "año"
+    },
+    "girasol_superficie_ha": {
+      "nombre": "Girasol: superficie implantada, campaña en curso",
+      "tipo": "nivel",
+      "unidad": "Hectáreas"
+    },
+    "girasol_produccion_t": {
+      "nombre": "Girasol: producción estimada, campaña en curso",
+      "tipo": "nivel",
+      "unidad": "Toneladas"
+    },
+    "girasol_produccion_tendencial_t": {
+      "nombre": "Girasol: producción con rendimiento tendencial (superficie × mediana de 5 campañas)",
+      "tipo": "nivel",
+      "unidad": "Toneladas"
+    }
+  },
+  "descargado": "2026-10-25T02:53:33Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 1,
+  "original_guardado": null
+}

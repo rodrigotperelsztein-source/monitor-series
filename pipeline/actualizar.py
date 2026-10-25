@@ -387,6 +387,8 @@ def todas() -> None:
                 continue
             id_serie = f"{fid}.{cid}"
             puntos = df[["fecha", cid]].dropna().rename(columns={cid: "valor"})
+            if puntos.empty:  # p. ej. una estimación que la fuente todavía no publicó
+                continue
             puntos.insert(1, "id_serie", id_serie)
             valores.append(puntos)
             dato, ajuste = clasificar(fid, cid, col["tipo"])

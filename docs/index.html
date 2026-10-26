@@ -314,8 +314,8 @@ try { sel = JSON.parse(localStorage.getItem("selector-series") || "[]"); } catch
 async function cargar() {
   try {
     const [csv, ma] = await Promise.all([
-      fetch(RAW + "/data/todas/series.csv").then(r => { if (!r.ok) throw new Error(r.status); return r.text(); }),
-      fetch(RAW + "/data/monitorargy/catalogo.json").then(r => r.ok ? r.json() : []).catch(() => []),
+      fetch(RAW + "/data/todas/series.csv", { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(r.status); return r.text(); }),
+      fetch(RAW + "/data/monitorargy/catalogo.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : []).catch(() => []),
     ]);
     DATA.propias = parseCSV(csv).map(s => ({
       id: s.id_serie, nombre: s.serie, grupo: s.fuente_nombre || s.fuente, tipo: s.tipo, unidad: s.unidad,
@@ -560,7 +560,7 @@ function spark(vals) {
 async function ticker() {
   const items = await Promise.all(TICKER.map(async ([id, nombre, tipo, frec]) => {
     try {
-      const t = await fetch(`${RAW}/data/series/${id}.csv`).then(r => r.ok ? r.text() : Promise.reject());
+      const t = await fetch(`${RAW}/data/series/${id}.csv`, { cache: "no-cache" }).then(r => r.ok ? r.text() : Promise.reject());
       let filas = parseCSV(t).map(r => ({ f: r.fecha, v: parseFloat(r.valor) })).filter(r => !isNaN(r.v));
       if (id === "camiones_puertos.total") filas = filas.filter(r => r.v > 0);  // domingos y feriados en cero
       if (!filas.length) return "";

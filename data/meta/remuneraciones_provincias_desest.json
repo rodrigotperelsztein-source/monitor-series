@@ -1,0 +1,1291 @@
+{
+  "id": "remuneraciones_provincias_desest",
+  "nombre": "Remuneración promedio de los asalariados registrados del sector privado, por provincia, desestacionalizada (X-13)",
+  "url": "data/remuneraciones_provincias.csv",
+  "pagina": "https://www.argentina.gob.ar/trabajo/estadisticas/oede-estadisticas-provinciales",
+  "frecuencia": "M",
+  "unidad": "Pesos corrientes",
+  "sha256": "5660657df5fc98e42a8b5a7ea60b6c38e4e27fb359394a79a0d194aa748e2b48",
+  "derivada_de": [
+    "remuneraciones_provincias"
+  ],
+  "archivos_de_origen": [
+    "https://www.argentina.gob.ar/sites/default/files/provinciales_serie_remuneraciones_mensual_2dig_9.xlsx"
+  ],
+  "columnas": {
+    "total": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Total país, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "gba": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Gran Buenos Aires (CABA y conurbano), desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "caba": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Ciudad de Buenos Aires, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "buenos_aires_resto": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Buenos Aires, resto de la provincia (sin el conurbano), desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "catamarca": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Catamarca, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "cordoba": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Córdoba, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "corrientes": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Corrientes, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "chaco": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Chaco, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "chubut": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Chubut, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "entre_rios": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Entre Ríos, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "formosa": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Formosa, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "jujuy": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Jujuy, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "la_pampa": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: La Pampa, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "la_rioja": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: La Rioja, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "mendoza": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Mendoza, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "misiones": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Misiones, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "neuquen": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Neuquén, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "rio_negro": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Río Negro, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "salta": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Salta, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "san_juan": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: San Juan, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "san_luis": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: San Luis, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "santa_cruz": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Santa Cruz, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "santa_fe": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Santa Fe, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "santiago_del_estero": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Santiago del Estero, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "tucuman": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Tucumán, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "tierra_del_fuego": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Tierra del Fuego, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "total_var_m": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: total país, desestacionalizada, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-10-26T18:24:15Z",
+  "calculado": "2026-10-26T18:42:01Z",
+  "ultimo_periodo": "2026-06",
+  "observaciones": 378,
+  "desestacionalizacion": {
+    "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+    "version": "2026-10-26",
+    "desde": "2007-01",
+    "series": {
+      "total": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 413.234879719779,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": {
+            "coef": -0.006526,
+            "t": -2.14
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.039,
+          "q": 0.06,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 3
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant seasonal peak has been found"
+        ]
+      },
+      "gba": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 469.548557120897,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.038,
+          "q": 0.13,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 0.91465,
+          "ljungbox_rezagos_significativos": 6
+        },
+        "advertencias": [
+          "WARNING: Visually significant seasonal and trading day peaks have"
+        ]
+      },
+      "caba": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 541.997498950064,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 31.24,
+            "gl": 6,
+            "p": 0.0
+          },
+          "feriados": null,
+          "pascua": {
+            "coef": -0.009713,
+            "t": -3.19
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "AO",
+            "fecha": "2014-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.048,
+          "q": 0.05,
+          "qs_desest_p": 0.56715,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant trading day peak has been"
+        ]
+      },
+      "buenos_aires_resto": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 432.763373509677,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.034,
+          "q": 0.09,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 2
+        },
+        "advertencias": []
+      },
+      "catamarca": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(1 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 673.61107335682,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "AO",
+            "fecha": "2014-01"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2024-02"
+          }
+        ],
+        "calidad": {
+          "m7": 0.088,
+          "q": 0.17,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 5e-05,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant trading day peak has been"
+        ]
+      },
+      "cordoba": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 453.750531404757,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 33.94,
+            "gl": 6,
+            "p": 0.0
+          },
+          "feriados": null,
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.043,
+          "q": 0.03,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 1
+        },
+        "advertencias": []
+      },
+      "corrientes": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 445.692781949278,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.049,
+          "q": 0.08,
+          "qs_desest_p": 0.85795,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 20
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant seasonal peak has been found"
+        ]
+      },
+      "chaco": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 466.075189588267,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": {
+            "coef": -0.012553,
+            "t": -2.35
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.05,
+          "q": 0.06,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 5
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant seasonal peak has been found"
+        ]
+      },
+      "chubut": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 2 1)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 983.474929547276,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": {
+            "coef": -0.020846,
+            "t": -2.4
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.072,
+          "q": 0.15,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": []
+      },
+      "entre_rios": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 443.682911122277,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.043,
+          "q": 0.05,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 3
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant seasonal peak has been found"
+        ]
+      },
+      "formosa": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 547.558098195247,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.054,
+          "q": 0.12,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": []
+      },
+      "jujuy": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 581.705170317303,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2025-02"
+          }
+        ],
+        "calidad": {
+          "m7": 0.072,
+          "q": 0.09,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 7
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant seasonal peak has been found",
+          "WARNING: At least one visually significant trading day peak has been"
+        ]
+      },
+      "la_pampa": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 514.263868630131,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": {
+            "coef": -0.01557,
+            "t": -2.93
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2024-02"
+          }
+        ],
+        "calidad": {
+          "m7": 0.045,
+          "q": 0.12,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 20
+        },
+        "advertencias": []
+      },
+      "la_rioja": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 519.55021260316,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-03"
+          }
+        ],
+        "calidad": {
+          "m7": 0.046,
+          "q": 0.11,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 0.94815,
+          "ljungbox_rezagos_significativos": 3
+        },
+        "advertencias": [
+          "WARNING: Visually significant seasonal and trading day peaks have"
+        ]
+      },
+      "mendoza": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 378.88500392203,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": {
+            "coef": -0.008426,
+            "t": -2.25
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "AO",
+            "fecha": "2015-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.042,
+          "q": 0.12,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 3
+        },
+        "advertencias": []
+      },
+      "misiones": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 341.531876318302,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 31.05,
+            "gl": 6,
+            "p": 0.0
+          },
+          "feriados": null,
+          "pascua": {
+            "coef": -0.01237,
+            "t": -3.24
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2021-06"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.046,
+          "q": 0.06,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 6
+        },
+        "advertencias": []
+      },
+      "neuquen": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 951.357311846887,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": {
+            "coef": -0.018008,
+            "t": -2.23
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "TC",
+            "fecha": "2007-08"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2011-05"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2016-07"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-02"
+          }
+        ],
+        "calidad": {
+          "m7": 0.066,
+          "q": 0.09,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": []
+      },
+      "rio_negro": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 531.335428937156,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": {
+            "coef": -0.012466,
+            "t": -2.95
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "AO",
+            "fecha": "2011-05"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.052,
+          "q": 0.07,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": []
+      },
+      "salta": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 416.368705403519,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": {
+            "coef": -0.011601,
+            "t": -2.78
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-03"
+          }
+        ],
+        "calidad": {
+          "m7": 0.042,
+          "q": 0.06,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 5
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant trading day peak has been"
+        ]
+      },
+      "san_juan": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(2 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 596.96559640197,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": {
+            "coef": -0.014718,
+            "t": -2.54
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.07,
+          "q": 0.11,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 1
+        },
+        "advertencias": []
+      },
+      "san_luis": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 531.991109610889,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": {
+            "coef": -0.012627,
+            "t": -2.69
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.053,
+          "q": 0.14,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 4
+        },
+        "advertencias": []
+      },
+      "santa_cruz": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(2 1 1)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 1144.29401583363,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": {
+            "coef": -0.025547,
+            "t": -2.76
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "AO",
+            "fecha": "2011-05"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.117,
+          "q": 0.19,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 3
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant trading day peak has been"
+        ]
+      },
+      "santa_fe": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 449.074099868608,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 57.46,
+            "gl": 6,
+            "p": 0.0
+          },
+          "feriados": null,
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2024-04"
+          }
+        ],
+        "calidad": {
+          "m7": 0.038,
+          "q": 0.07,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant seasonal peak has been found"
+        ]
+      },
+      "santiago_del_estero": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(2 1 1)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 461.193072154433,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": {
+            "coef": -0.016617,
+            "t": -3.05
+          }
+        },
+        "outliers": [],
+        "calidad": {
+          "m7": 0.054,
+          "q": 0.11,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 11
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant seasonal peak has been found"
+        ]
+      },
+      "tucuman": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(0 2 1)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 484.04695837907,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.056,
+          "q": 0.05,
+          "qs_desest_p": 0.16243,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 9
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant seasonal peak has been found"
+        ]
+      },
+      "tierra_del_fuego": {
+        "especificacion": {
+          "modelo": "automático",
+          "transformacion": "log",
+          "outliers": [],
+          "dias_semana": false,
+          "feriados": false,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": false,
+          "origen": "automática en cada corrida (modelo y outliers)"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 2)(0 1 1)",
+        "transformacion": "Log(y)",
+        "aicc": 1013.18287124029,
+        "calendario": {
+          "dias_semana": null,
+          "feriados": null,
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2024-04"
+          }
+        ],
+        "calidad": {
+          "m7": 0.076,
+          "q": 0.12,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 0
+        },
+        "advertencias": []
+      }
+    }
+  }
+}

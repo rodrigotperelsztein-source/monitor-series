@@ -315,7 +315,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-23",
+"ultimo_periodo": "2026-10-26",
 "frescura": "vigente"
 },
 {
@@ -7135,7 +7135,7 @@
 "unidad": "pb",
 "frecuencia": "D",
 "fuente": "JP Morgan (EMBI) vía ArgentinaDatos",
-"ultimo_periodo": "2026-10-22",
+"ultimo_periodo": "2026-10-23",
 "frescura": "vigente"
 },
 {
@@ -7553,7 +7553,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-23",
+"ultimo_periodo": "2026-10-26",
 "frescura": "vigente"
 },
 {
@@ -7564,7 +7564,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-10-23",
+"ultimo_periodo": "2026-10-26",
 "frescura": "vigente"
 },
 {
@@ -7575,7 +7575,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-10-23",
+"ultimo_periodo": "2026-10-26",
 "frescura": "vigente"
 },
 {
@@ -7586,7 +7586,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-10-23",
+"ultimo_periodo": "2026-10-26",
 "frescura": "vigente"
 },
 {
@@ -7597,7 +7597,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-23",
+"ultimo_periodo": "2026-10-26",
 "frescura": "vigente"
 },
 {
@@ -7608,7 +7608,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-23",
+"ultimo_periodo": "2026-10-26",
 "frescura": "vigente"
 },
 {
@@ -7619,7 +7619,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-23",
+"ultimo_periodo": "2026-10-26",
 "frescura": "vigente"
 },
 {
@@ -7630,7 +7630,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-23",
+"ultimo_periodo": "2026-10-26",
 "frescura": "vigente"
 },
 {
@@ -7729,7 +7729,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-23",
+"ultimo_periodo": "2026-10-26",
 "frescura": "vigente"
 },
 {
@@ -7740,7 +7740,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-23",
+"ultimo_periodo": "2026-10-26",
 "frescura": "vigente"
 },
 {
@@ -7751,7 +7751,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-10-23",
+"ultimo_periodo": "2026-10-26",
 "frescura": "vigente"
 },
 {

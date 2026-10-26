@@ -5,7 +5,7 @@
   "pagina": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
   "frecuencia": "D",
   "unidad": "Dólares por barril",
-  "sha256": "d84491df1e7aa272c4c3cf33c36fba1c342716036560ef70098f578689018c25",
+  "sha256": "cf83f95b6b786464eaca48e9daa2a16d38b86d7315d7a92e308fbbfd58467689",
   "columnas": {
     "brent": {
       "nombre": "Petróleo Brent, precio spot FOB (Europa), cierre del día",
@@ -25,8 +25,8 @@
   },
   "fuente_ultimo_dia": "página diaria de la EIA",
   "planillas_hasta": "2026-10-20",
-  "descargado": "2026-10-23T17:51:24Z",
-  "ultimo_periodo": "2026-10-22",
-  "observaciones": 10221,
+  "descargado": "2026-10-26T13:22:32Z",
+  "ultimo_periodo": "2026-10-23",
+  "observaciones": 10222,
   "original_guardado": null
 }

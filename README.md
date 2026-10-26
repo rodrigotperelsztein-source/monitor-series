@@ -4,6 +4,12 @@ Series económicas argentinas bajadas de sus fuentes oficiales, validadas y guar
 Una tarea de GitHub Actions corre todos los días, revisa si cambió cada archivo de origen y, si cambió,
 actualiza los datos y guarda la versión nueva.
 
+**Monitor Argy.** Las páginas de este repositorio también disponibilizan las series de
+[Monitor Argy](https://monitorargy.com), un sitio que publica indicadores macroeconómicos argentinos con una API
+abierta. Esas series no se procesan acá: se leen de su API tal como las publica (con el prefijo `ma:` en el selector),
+y su origen es Monitor Argy y los organismos que cita en cada serie. Además, la desestacionalización propia del EMAE por
+sector replica su método. Gracias a Monitor Argy por abrir sus datos.
+
 ## Series disponibles
 
 | id | Serie | Fuente | Frecuencia | Desde |

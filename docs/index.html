@@ -28,6 +28,9 @@
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.45 var(--f-body);
   padding: 20px max(16px, env(safe-area-inset-right, 0px)) 40px max(16px, env(safe-area-inset-left, 0px)); }
+.credito { margin: 10px 0 0; font-size: 13.5px; line-height: 1.5; color: var(--h-ink); opacity: .85; max-width: 68ch; }
+.credito a { color: inherit; font-weight: 700; }
+.pie { font-size: 12.5px; line-height: 1.55; opacity: .8; padding: 8px 2px 24px; max-width: 110ch; }
 .wrap { max-width: 1320px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
 body { padding: 0 0 40px; }
 .wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-top: 18px; }
@@ -148,9 +151,12 @@ details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
       viaja, se consume de energía y se lleva a los puertos. Junta en un solo lugar las estadísticas que publican
       distintos organismos y las mantiene al día solo: cuando sale un dato nuevo, se descarga, se controla y queda listo
       para graficar o incluir en tu flujo de datos.</p>
+    <p class="credito">Además de sus series propias, este sitio pone a mano las de
+      <a href="https://monitorargy.com" target="_blank" rel="noopener">Monitor Argy</a>, que las publica con una API abierta:
+      el origen de esas series es Monitor Argy (y los organismos que cita en cada una). Gracias por abrir sus datos.</p>
     <p class="ctas"><a class="cta" href="./explorar.html">Explorar y graficar las series →</a><a class="cta sec" href="#usar">Usarlas en Power BI, Excel o Python</a><a class="cta sec" href="https://rodrigotperelsztein-source.github.io/indicador-adelantado/">Indicador adelantado del EMAE ↗</a></p>
     <ul class="pilares">
-      <li><b>Fuentes oficiales</b><span>INDEC, CAMMESA, Agricultura, Transporte, Seguridad Social</span></li>
+      <li><b>Fuentes oficiales</b><span>INDEC, BCRA, CAMMESA, Energía, Agricultura, Transporte, Seguridad Social; más las series de Monitor Argy</span></li>
       <li><b>Se actualiza solo</b><span>sigue el calendario de cada publicación y guarda las revisiones</span></li>
       <li><b>Listo para usar</b><span>Power BI, Excel, Google Sheets o Python, con un link fijo por serie</span></li>
     </ul>
@@ -282,6 +288,14 @@ details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
       </div>
     </aside>
   </div>
+  <footer class="pie">
+    <p><b>De dónde salen los datos.</b> Las series del repositorio se bajan de los organismos que las publican (INDEC, BCRA,
+      CAMMESA, Secretarías de Energía, Agricultura y Transporte, Seguridad Social, CAME, EIA de EE.UU.) y se procesan en
+      <a href="https://github.com/rodrigotperelsztein-source/monitor-series">monitor-series</a>. Las de la pestaña
+      «Monitor Argy» son de <a href="https://monitorargy.com" target="_blank" rel="noopener">monitorargy.com</a>: se leen de su
+      API pública tal como las publica, con su fuente original indicada en cada serie. Algunas desestacionalizaciones propias (EMAE
+      por sector) replican el método de Monitor Argy.</p>
+  </footer>
 </div>
 
 <script>

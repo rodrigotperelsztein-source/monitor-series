@@ -1,0 +1,160 @@
+{
+  "id": "remuneraciones_provincias_real",
+  "nombre": "Remuneración promedio real de los asalariados registrados del sector privado, por provincia (a precios del último IPC)",
+  "url": "data/remuneraciones_provincias.csv y data/ipc.csv",
+  "pagina": "https://www.argentina.gob.ar/trabajo/estadisticas/oede-estadisticas-provinciales",
+  "frecuencia": "M",
+  "unidad": "Pesos del último IPC publicado",
+  "sha256": "17a88af7c1bbf1d16d5f28d8d38a73aadea469148f03cc308e430f5020f50af2",
+  "derivada_de": [
+    "remuneraciones_provincias",
+    "ipc"
+  ],
+  "archivos_de_origen": [
+    "https://www.argentina.gob.ar/sites/default/files/provinciales_serie_remuneraciones_mensual_2dig_9.xlsx",
+    "https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv"
+  ],
+  "columnas": {
+    "total_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Total país",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "gba_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Gran Buenos Aires (CABA y conurbano)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "caba_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Ciudad de Buenos Aires",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "buenos_aires_resto_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Buenos Aires, resto de la provincia (sin el conurbano)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "catamarca_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Catamarca",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "cordoba_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Córdoba",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "corrientes_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Corrientes",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "chaco_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Chaco",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "chubut_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Chubut",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "entre_rios_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Entre Ríos",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "formosa_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Formosa",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "jujuy_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Jujuy",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "la_pampa_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): La Pampa",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "la_rioja_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): La Rioja",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "mendoza_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Mendoza",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "misiones_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Misiones",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "neuquen_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Neuquén",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "rio_negro_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Río Negro",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "salta_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Salta",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "san_juan_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): San Juan",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "san_luis_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): San Luis",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "santa_cruz_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Santa Cruz",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "santa_fe_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Santa Fe",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "santiago_del_estero_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Santiago del Estero",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "tucuman_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Tucumán",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "tierra_del_fuego_real": {
+      "nombre": "Remuneración promedio real (a precios del último IPC): Tierra del Fuego",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "total_real_var_ia": {
+      "nombre": "Remuneración promedio real, total país, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-10-26T18:24:15Z",
+  "calculado": "2026-10-26T18:24:15Z",
+  "ultimo_periodo": "2026-06",
+  "observaciones": 115,
+  "deflactor": "IPC nacional, nivel general (ipc.nacional_nivel_general_indice)",
+  "precios_del_ultimo_mes": "2026-09"
+}

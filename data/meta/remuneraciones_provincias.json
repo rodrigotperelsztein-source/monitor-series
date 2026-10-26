@@ -1,0 +1,145 @@
+{
+  "id": "remuneraciones_provincias",
+  "nombre": "Remuneración promedio de los asalariados registrados del sector privado, por provincia (OEDE, SIPA)",
+  "url": "https://www.argentina.gob.ar/sites/default/files/provinciales_serie_remuneraciones_mensual_2dig_9.xlsx",
+  "pagina": "https://www.argentina.gob.ar/trabajo/estadisticas/oede-estadisticas-provinciales",
+  "frecuencia": "M",
+  "unidad": "Pesos corrientes",
+  "sha256": "e54d56bf902aafae4cee3c77f89885e1802e3c7b3cd108c42b567716124d4510",
+  "columnas": {
+    "total": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Total país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "gba": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Gran Buenos Aires (CABA y conurbano)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "caba": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Ciudad de Buenos Aires",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "buenos_aires_resto": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Buenos Aires, resto de la provincia (sin el conurbano)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "catamarca": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Catamarca",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "cordoba": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Córdoba",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "corrientes": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Corrientes",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "chaco": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Chaco",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "chubut": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Chubut",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "entre_rios": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Entre Ríos",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "formosa": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Formosa",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "jujuy": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Jujuy",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "la_pampa": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: La Pampa",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "la_rioja": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: La Rioja",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "mendoza": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Mendoza",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "misiones": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Misiones",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "neuquen": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Neuquén",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "rio_negro": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Río Negro",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "salta": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Salta",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "san_juan": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: San Juan",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "san_luis": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: San Luis",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "santa_cruz": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Santa Cruz",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "santa_fe": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Santa Fe",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "santiago_del_estero": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Santiago del Estero",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "tucuman": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Tucumán",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    },
+    "tierra_del_fuego": {
+      "nombre": "Remuneración promedio, asalariados registrados del sector privado: Tierra del Fuego",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes"
+    }
+  },
+  "descargado": "2026-10-26T18:24:15Z",
+  "ultimo_periodo": "2026-06",
+  "observaciones": 378,
+  "original_guardado": null
+}

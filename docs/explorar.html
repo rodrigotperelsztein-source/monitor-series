@@ -49,6 +49,8 @@ nav a[aria-current="page"] { color: var(--bg); background: var(--acc); }
 .ej:hover { border-color: rgba(95,208,255,.5); transform: translateY(-2px); }
 .ej b { display: block; font-size: 13.5px; margin-bottom: 3px; }
 .ej span { font-size: 12px; color: var(--muted); }
+.ej small { display: block; font-size: 10.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--acc); font-weight: 700; margin-bottom: 4px; }
+.ej-cab { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
 .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .09em; color: var(--dim); font-weight: 700; }
 
 .layout { display: grid; grid-template-columns: 330px minmax(0, 1fr); gap: 18px; align-items: start; }
@@ -139,7 +141,7 @@ footer { color: var(--dim); font-size: 12px; text-align: center; padding: 8px; }
   </section>
 
   <section aria-label="Ejemplos">
-    <div class="lbl" style="margin-bottom:8px">Para empezar</div>
+    <div class="ej-cab"><span class="lbl">Para empezar</span><div class="rangos" id="ej-grupos" role="group" aria-label="Tema de los ejemplos"></div></div>
     <div class="ejemplos" id="ejemplos"></div>
   </section>
 
@@ -650,23 +652,40 @@ $("link").onclick = () => {
 };
 
 // ---------- Ejemplos ----------
+const EJ_GRUPOS = ["Actividad", "Combustibles", "Internacionales", "Agro y transporte", "Precios y expectativas"];
 const EJEMPLOS = [
-  { t: "Actividad, industria y construcción", d: "EMAE, IPI e ISAC desestacionalizados, base 100", sel: ["emae.desest", "ipi.desest", "isac.desest"], tipo: "line", transf: "base100", agr: "orig", fn: "mean", rango: 5 },
-  { t: "Salario real vs. RIPTE real", d: "Poder de compra de los salarios, base 100", sel: ["salarios_real.privado_registrado_real", "ripte_real.ripte_real"], tipo: "area", transf: "base100", agr: "orig", fn: "mean", rango: 0 },
-  { t: "Granos que llegan a puerto", d: "Camiones por mes, por producto", sel: ["camiones_puertos.soja", "camiones_puertos.maiz", "camiones_puertos.trigo", "camiones_puertos.girasol", "camiones_puertos.cebada", "camiones_puertos.sorgo"], tipo: "stack", transf: "nivel", agr: "M", fn: "sum", rango: 0 },
-  { t: "Electricidad de grandes usuarios", d: "Demanda media por actividad, por mes", sel: ["cammesa_gu_actividad.industrias", "cammesa_gu_actividad.alim_com_serv", "cammesa_gu_actividad.petroleo_minerales", "cammesa_gu_actividad.aluar"], tipo: "area", transf: "nivel", agr: "M", fn: "mean", rango: 0 },
-  { t: "Viajes en transporte público", d: "SUBE AMBA e interior, var. % interanual", sel: ["sube.amba", "sube.interior"], tipo: "bar", transf: "ia", agr: "M", fn: "sum", rango: 2 },
-  { t: "SUBE desestacionalizada", d: "Viajes por mes sin estacionalidad, AMBA e interior, base 100", sel: ["sube_desest.amba", "sube_desest.interior"], tipo: "line", transf: "base100", agr: "orig", fn: "mean", rango: 5 },
-  { t: "Petróleo Brent y WTI", d: "Cierre diario en dólares por barril, último año", sel: ["petroleo.brent", "petroleo.wti"], tipo: "line", transf: "nivel", agr: "orig", fn: "mean", rango: 1 },
-  { t: "Inflación mensual", d: "IPC nacional, nivel general", sel: ["ipc.nacional_nivel_general_var_m"], tipo: "bar", transf: "nivel", agr: "orig", fn: "mean", rango: 3 },
-  { t: "Sectores del EMAE", d: "Industria, construcción, comercio y agro, base 100", sel: ["emae_letras_desest.d_industria", "emae_letras_desest.f_construccion", "emae_letras_desest.g_comercio", "emae_letras_desest.a_agro"], tipo: "line", transf: "base100", agr: "orig", fn: "mean", rango: 5 },
-  { t: "Composición de la carga a puertos", d: "Torta del período elegido, por grano", sel: ["camiones_puertos.soja", "camiones_puertos.maiz", "camiones_puertos.trigo", "camiones_puertos.girasol", "camiones_puertos.cebada", "camiones_puertos.sorgo"], tipo: "pie", transf: "nivel", agr: "M", fn: "sum", rango: 1 },
+  { g: "Actividad", t: "Actividad, industria y construcción", d: "EMAE, IPI e ISAC desestacionalizados, base 100", sel: ["emae.desest", "ipi.desest", "isac.desest"], tipo: "line", transf: "base100", agr: "orig", fn: "mean", rango: 5 },
+  { g: "Actividad", t: "Electricidad de grandes usuarios", d: "Demanda media por actividad, por mes", sel: ["cammesa_gu_actividad.industrias", "cammesa_gu_actividad.alim_com_serv", "cammesa_gu_actividad.petroleo_minerales", "cammesa_gu_actividad.aluar"], tipo: "area", transf: "nivel", agr: "M", fn: "mean", rango: 0 },
+  { g: "Actividad", t: "Sectores del EMAE", d: "Industria, construcción, comercio y agro, base 100", sel: ["emae_letras_desest.d_industria", "emae_letras_desest.f_construccion", "emae_letras_desest.g_comercio", "emae_letras_desest.a_agro"], tipo: "line", transf: "base100", agr: "orig", fn: "mean", rango: 5 },
+  { g: "Actividad", t: "Gasoil y actividad", d: "Gasoil (sin usinas ni bunker) y EMAE, desestacionalizados, base 100", sel: ["ventas_combustibles_desest.gasoil_total_sin_usinas_bunker", "emae.desest"], tipo: "line", transf: "base100", agr: "orig", fn: "mean", rango: 5 },
+  { g: "Combustibles", t: "Gasoil y naftas sin estacionalidad", d: "Mercado de gasoil (sin usinas ni bunker) y naftas, desestacionalizados, base 100", sel: ["ventas_combustibles_desest.gasoil_total_sin_usinas_bunker", "ventas_combustibles_desest.naftas_total"], tipo: "line", transf: "base100", agr: "orig", fn: "mean", rango: 5 },
+  { g: "Combustibles", t: "Gasoil y naftas contra el año pasado", d: "Ventas al mercado, var. % interanual", sel: ["ventas_combustibles.gasoil_total_sin_usinas_bunker", "ventas_combustibles.naftas_total"], tipo: "bar", transf: "ia", agr: "orig", fn: "sum", rango: 2 },
+  { g: "Combustibles", t: "Quién vende la nafta", d: "Participación por empresa, torta del período elegido", sel: ["ventas_combustibles.naftas_ypf", "ventas_combustibles.naftas_shell", "ventas_combustibles.naftas_axion", "ventas_combustibles.naftas_trafigura", "ventas_combustibles.naftas_dapsa", "ventas_combustibles.naftas_delta_gulf", "ventas_combustibles.naftas_refinor", "ventas_combustibles.naftas_resto"], tipo: "pie", transf: "nivel", agr: "orig", fn: "sum", rango: 1 },
+  { g: "Combustibles", t: "Gasoil por canal", d: "Estaciones de servicio, carga, agro, pasajeros y otras empresas, m³ por mes", sel: ["ventas_combustibles.gasoil_canal_publico", "ventas_combustibles.gasoil_canal_carga", "ventas_combustibles.gasoil_canal_agro", "ventas_combustibles.gasoil_canal_pasajeros", "ventas_combustibles.gasoil_canal_otras_empresas"], tipo: "area", transf: "nivel", agr: "orig", fn: "sum", rango: 2 },
+  { g: "Combustibles", t: "Naftas premium vs. súper", d: "Grado 3 y grado 2, total del mercado, m³ por mes", sel: ["ventas_combustibles.nafta_g3_total", "ventas_combustibles.nafta_g2_total"], tipo: "area", transf: "nivel", agr: "orig", fn: "sum", rango: 5 },
+  { g: "Internacionales", t: "Petróleo Brent y WTI", d: "Cierre diario en dólares por barril, último año", sel: ["petroleo.brent", "petroleo.wti"], tipo: "line", transf: "nivel", agr: "orig", fn: "mean", rango: 1 },
+  { g: "Internacionales", t: "Petróleo y combustibles en EE.UU.", d: "Brent, nafta y gasoil en Nueva York, promedio mensual, base 100", sel: ["petroleo_mensual.brent", "refinados_mensual.nafta_nyh", "refinados_mensual.gasoil_nyh"], tipo: "line", transf: "base100", agr: "orig", fn: "mean", rango: 5 },
+  { g: "Agro y transporte", t: "Granos que llegan a puerto", d: "Camiones por mes, por producto", sel: ["camiones_puertos.soja", "camiones_puertos.maiz", "camiones_puertos.trigo", "camiones_puertos.girasol", "camiones_puertos.cebada", "camiones_puertos.sorgo"], tipo: "stack", transf: "nivel", agr: "M", fn: "sum", rango: 0 },
+  { g: "Agro y transporte", t: "Viajes en transporte público", d: "SUBE AMBA e interior, var. % interanual", sel: ["sube.amba", "sube.interior"], tipo: "bar", transf: "ia", agr: "M", fn: "sum", rango: 2 },
+  { g: "Agro y transporte", t: "SUBE desestacionalizada", d: "Viajes por mes sin estacionalidad, AMBA e interior, base 100", sel: ["sube_desest.amba", "sube_desest.interior"], tipo: "line", transf: "base100", agr: "orig", fn: "mean", rango: 5 },
+  { g: "Agro y transporte", t: "Composición de la carga a puertos", d: "Torta del período elegido, por grano", sel: ["camiones_puertos.soja", "camiones_puertos.maiz", "camiones_puertos.trigo", "camiones_puertos.girasol", "camiones_puertos.cebada", "camiones_puertos.sorgo"], tipo: "pie", transf: "nivel", agr: "M", fn: "sum", rango: 1 },
+  { g: "Agro y transporte", t: "Cosecha y gasoil del agro", d: "Camiones de granos a puerto y gasoil del canal agro, var. % interanual", sel: ["camiones_puertos_mensual.total", "ventas_combustibles.gasoil_canal_agro"], tipo: "bar", transf: "ia", agr: "orig", fn: "sum", rango: 2 },
+  { g: "Precios y expectativas", t: "Salario real vs. RIPTE real", d: "Poder de compra de los salarios, base 100", sel: ["salarios_real.privado_registrado_real", "ripte_real.ripte_real"], tipo: "area", transf: "base100", agr: "orig", fn: "mean", rango: 0 },
+  { g: "Precios y expectativas", t: "Inflación mensual", d: "IPC nacional, nivel general", sel: ["ipc.nacional_nivel_general_var_m"], tipo: "bar", transf: "nivel", agr: "orig", fn: "mean", rango: 2 },
+  { g: "Precios y expectativas", t: "Qué espera el mercado (REM)", d: "Crecimiento del PIB del año e inflación a 12 meses esperados, por encuesta", sel: ["rem.pib_anio", "rem.ipc_12m"], tipo: "line", transf: "nivel", agr: "orig", fn: "mean", rango: 5 },
 ];
-$("ejemplos").innerHTML = EJEMPLOS.map((e, i) => `<button class="ej" data-ej="${i}"><b>${esc(e.t)}</b><span>${esc(e.d)}</span></button>`).join("");
+let EJ_G = "";
+function dibujarEjemplos() {
+  $("ej-grupos").innerHTML = ["", ...EJ_GRUPOS].map(g => `<button data-g="${esc(g)}" aria-pressed="${g === EJ_G}">${g || "Todos"}</button>`).join("");
+  $("ejemplos").innerHTML = EJEMPLOS.map((e, i) => (!EJ_G || e.g === EJ_G) ? `<button class="ej" data-ej="${i}"><small>${esc(e.g)}</small><b>${esc(e.t)}</b><span>${esc(e.d)}</span></button>` : "").join("");
+}
+dibujarEjemplos();
+$("ej-grupos").addEventListener("click", ev => { const b = ev.target.closest("[data-g]"); if (b) { EJ_G = b.dataset.g; dibujarEjemplos(); } });
 $("ejemplos").addEventListener("click", ev => {
   const b = ev.target.closest("[data-ej]"); if (!b) return;
   const e = EJEMPLOS[+b.dataset.ej];
   Object.assign(E, { sel: e.sel.filter(id => POR_ID[id]), tipo: e.tipo, transf: e.transf, agr: e.agr, fn: e.fn, rango: e.rango, desde: "", hasta: "" });
+  marcar("rangos", E.rango);
   actualizar();
   document.querySelector(".layout").scrollIntoView({ behavior: "smooth", block: "start" });
 });

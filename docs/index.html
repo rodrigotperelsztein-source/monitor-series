@@ -367,8 +367,7 @@ function elegirVista(v) {
   $("tab-propias").setAttribute("aria-selected", v === "propias");
   $("tab-ma").setAttribute("aria-selected", v === "ma");
   $("lbl-grupo").textContent = "Fuente";
-  const orgs = [...new Set(DATA[v].map(s => s.org).filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
-  $("grupo").innerHTML = `<option value="">Todas</option>` + orgs.map(g => `<option>${esc(g)}</option>`).join("");
+  $("grupo").innerHTML = `<option value="">Todas</option>`;
   catSel = "";
   render();
 }
@@ -376,12 +375,32 @@ $("tab-propias").onclick = () => elegirVista("propias");
 $("tab-ma").onclick = () => elegirVista("ma");
 
 let catSel = "";
-function pasa(s, sinCat) {
-  const g = $("grupo").value, f = $("freq").value, d = $("dato").value, aj = $("ajuste").value;
+function pasa(s, sinCat, sin) {
+  const g = sin === "grupo" ? "" : $("grupo").value, f = sin === "freq" ? "" : $("freq").value,
+    d = sin === "dato" ? "" : $("dato").value, aj = sin === "ajuste" ? "" : $("ajuste").value;
   return (sinCat || !catSel || s.cat === catSel) && (!g || s.org === g) && (!f || s.frec === f) && (!d || s.dato === d)
     && (!aj || s.ajuste === aj) && (!$("onlysel").checked || sel.includes(s.id));
 }
+// Cada filtro muestra solo las opciones que tienen series con la categoría y los demás filtros elegidos.
+const CAMPO = { grupo: "org", freq: "frec", dato: "dato", ajuste: "ajuste" };
+function facetas() {
+  for (const [id, campo] of Object.entries(CAMPO)) {
+    const n = {};
+    DATA[vista].filter(s => pasa(s, false, id)).forEach(s => n[s[campo]] = (n[s[campo]] || 0) + 1);
+    const el = $(id);
+    if (el.value && !n[el.value]) el.value = "";  // la opción elegida ya no tiene series: se vuelve a "Todas"
+    if (id === "grupo") {
+      const actual = el.value;
+      el.innerHTML = `<option value="">Todas</option>` + Object.keys(n).filter(Boolean).sort((a, b) => a.localeCompare(b, "es"))
+        .map(g => `<option value="${esc(g)}">${esc(g)} (${n[g]})</option>`).join("");
+      el.value = actual;
+    } else {
+      for (const o of el.options) if (o.value) { o.disabled = !n[o.value]; o.hidden = !n[o.value]; }
+    }
+  }
+}
 function render() {
+  facetas();
   const q = norm($("q").value).split(/\s+/).filter(Boolean);
   const base = DATA[vista].filter(s => q.every(w => s._q.includes(w)) && pasa(s, true));
   const cuenta = {}; base.forEach(s => cuenta[s.cat] = (cuenta[s.cat] || 0) + 1);

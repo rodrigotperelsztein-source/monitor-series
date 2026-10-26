@@ -370,7 +370,28 @@ function renderChips() {
   }).join("") : `<span class="vacio">Elegí una serie o un ejemplo.</span>`;
 }
 $("chips").addEventListener("click", e => { const id = e.target.dataset.rm; if (id) { E.sel = E.sel.filter(x => x !== id); actualizar(); } });
+// Cada filtro muestra solo las opciones que tienen series con lo elegido en los demás.
+const FILTROS = { "f-cat": "cat", "f-org": "org", "f-dato": "dato", "f-ajuste": "ajuste" };
+const TODAS = { "f-cat": "Todas las categorías", "f-org": "Todas las fuentes" };
+function facetas() {
+  const val = Object.fromEntries(Object.entries(FILTROS).map(([id, c]) => [c, $(id).value]));
+  for (const [id, campo] of Object.entries(FILTROS)) {
+    const n = {};
+    CATALOGO.filter(s => Object.entries(val).every(([c, v]) => c === campo || !v || s[c] === v)).forEach(s => n[s[campo]] = (n[s[campo]] || 0) + 1);
+    const el = $(id);
+    if (el.value && !n[el.value]) el.value = "";
+    if (TODAS[id]) {
+      const actual = el.value;
+      el.innerHTML = `<option value="">${TODAS[id]}</option>` + Object.keys(n).filter(Boolean).sort((a, b) => a.localeCompare(b, "es"))
+        .map(v => `<option value="${esc(v)}">${esc(v)} (${n[v]})</option>`).join("");
+      el.value = actual;
+    } else {
+      for (const o of el.options) if (o.value) { o.disabled = !n[o.value]; o.hidden = !n[o.value]; }
+    }
+  }
+}
 function buscar() {
+  facetas();
   const q = norm($("q").value).split(/\s+/).filter(Boolean);
   const f = { cat: $("f-cat").value, org: $("f-org").value, dato: $("f-dato").value, ajuste: $("f-ajuste").value };
   const box = $("resultados");
@@ -698,8 +719,7 @@ $("ejemplos").addEventListener("click", ev => {
     CATALOGO = filas.map(s => ({ id: s.id_serie, nombre: s.serie, unidad: s.unidad, frec: s.frecuencia, tipo: s.tipo, fuente: s.fuente_nombre || s.fuente,
       cat: s.categoria || "Otras", org: s.organismo_corto || s.organismo, dato: s.dato || "", ajuste: s.ajuste || "",
       _q: norm([s.id_serie, s.serie, s.fuente_nombre, s.organismo, s.categoria, s.dato, s.ajuste, s.ajuste === "Desestacionalizada" ? "desest" : ""].join(" ")) }));
-    const opciones = (id, vals) => $(id).insertAdjacentHTML("beforeend", [...new Set(vals)].filter(Boolean).sort((a, b) => a.localeCompare(b, "es")).map(v => `<option>${esc(v)}</option>`).join(""));
-    opciones("f-cat", CATALOGO.map(s => s.cat)); opciones("f-org", CATALOGO.map(s => s.org));
+    facetas();
     POR_ID = Object.fromEntries(CATALOGO.map(s => [s.id, s]));
     const desc = filas.map(s => s.descargado).filter(Boolean).sort().pop();
     $("actualizado").textContent = desc ? "datos al " + new Date(desc).toLocaleString("es-AR", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "en línea";

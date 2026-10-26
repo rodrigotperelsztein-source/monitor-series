@@ -1,0 +1,100 @@
+{
+  "id": "rem",
+  "nombre": "REM: expectativas de mercado del BCRA (mediana)",
+  "url": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/informes/relevamiento-expectativas-mercado-historico.xlsx",
+  "pagina": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Relevamiento_Expectativas_de_Mercado.asp",
+  "frecuencia": "M",
+  "unidad": "%",
+  "sha256": "f186fc6024ea51a66bd8356b8f9d3aad4f9886706af9f4a6a92f7003e7c93db8",
+  "columnas": {
+    "ipc_mes": {
+      "nombre": "REM: inflación mensual esperada para el mes de la encuesta",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "ipc_mes_siguiente": {
+      "nombre": "REM: inflación mensual esperada para el mes siguiente",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "ipc_nucleo_mes": {
+      "nombre": "REM: inflación núcleo mensual esperada para el mes de la encuesta",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "ipc_12m": {
+      "nombre": "REM: inflación esperada para los próximos 12 meses",
+      "tipo": "nivel",
+      "unidad": "% i.a."
+    },
+    "ipc_anio": {
+      "nombre": "REM: inflación esperada para el año en curso (diciembre contra diciembre)",
+      "tipo": "nivel",
+      "unidad": "% i.a."
+    },
+    "tamar_mes_siguiente": {
+      "nombre": "REM: tasa TAMAR esperada para el mes siguiente",
+      "tipo": "nivel",
+      "unidad": "TNA %"
+    },
+    "tc_mes_siguiente": {
+      "nombre": "REM: tipo de cambio nominal esperado para el mes siguiente",
+      "tipo": "nivel",
+      "unidad": "$/USD"
+    },
+    "tc_fin_anio": {
+      "nombre": "REM: tipo de cambio nominal esperado para diciembre del año en curso",
+      "tipo": "nivel",
+      "unidad": "$/USD"
+    },
+    "pib_trim_anterior": {
+      "nombre": "REM: PIB, var. % trimestral desestacionalizada esperada, trimestre anterior al de la encuesta",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "pib_trim_actual": {
+      "nombre": "REM: PIB, var. % trimestral desestacionalizada esperada, trimestre de la encuesta",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "pib_trim_siguiente": {
+      "nombre": "REM: PIB, var. % trimestral desestacionalizada esperada, trimestre siguiente",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "pib_anio": {
+      "nombre": "REM: PIB, var. % promedio anual esperada para el año en curso",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "pib_anio_siguiente": {
+      "nombre": "REM: PIB, var. % promedio anual esperada para el año siguiente",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "desocupacion_anio": {
+      "nombre": "REM: desocupación esperada para el año en curso",
+      "tipo": "nivel",
+      "unidad": "% de la PEA"
+    },
+    "exportaciones_anio": {
+      "nombre": "REM: exportaciones esperadas para el año en curso",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "importaciones_anio": {
+      "nombre": "REM: importaciones esperadas para el año en curso",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "resultado_primario_anio": {
+      "nombre": "REM: resultado primario del SPNF esperado para el año en curso",
+      "tipo": "nivel",
+      "unidad": "Miles de millones de $"
+    }
+  },
+  "descargado": "2026-10-26T13:47:02Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 124,
+  "original_guardado": null
+}

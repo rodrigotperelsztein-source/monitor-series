@@ -27,6 +27,8 @@ SERIES = {
     "tasa_tamar": "Tasa TAMAR, bancos privados (diario)",
     "patentamientos_autos_desest": "Patentamientos de autos, desestacionalizado",
     "patentamientos_autos_interanual": "Patentamientos de autos, var. interanual",
+    "patentamientos_motos_desest": "Patentamientos de motos, desestacionalizado",
+    "patentamientos_motos_interanual": "Patentamientos de motos, var. interanual",
     "mayoristas_interanual": "Ventas en autoservicios mayoristas, var. interanual",
     "shoppings_interanual": "Ventas en shoppings, var. interanual",
     "petroleo": "Producción de petróleo",

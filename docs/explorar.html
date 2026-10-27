@@ -679,7 +679,7 @@ $("link").onclick = () => {
 // ---------- Ejemplos ----------
 const EJ_GRUPOS = ["Actividad", "Combustibles", "Internacionales", "Agro y transporte", "Precios y expectativas"];
 const EJEMPLOS = [
-  { g: "Actividad", t: "Actividad, industria y construcción", d: "EMAE, IPI e ISAC desestacionalizados, base 100", sel: ["emae.desest", "ipi.desest", "isac.desest"], tipo: "line", transf: "base100", agr: "orig", fn: "mean", rango: 5 },
+  { g: "Actividad", t: "Actividad, industria, minería y construcción", d: "EMAE, IPI manufacturero, IPI minero e ISAC desestacionalizados, base 100", sel: ["emae.desest", "ipi.desest", "ipi_minero.desest", "isac.desest"], tipo: "line", transf: "base100", agr: "orig", fn: "mean", rango: 5 },
   { g: "Actividad", t: "Electricidad de grandes usuarios", d: "Demanda media por actividad, por mes", sel: ["cammesa_gu_actividad.industrias", "cammesa_gu_actividad.alim_com_serv", "cammesa_gu_actividad.petroleo_minerales", "cammesa_gu_actividad.aluar"], tipo: "area", transf: "nivel", agr: "M", fn: "mean", rango: 0 },
   { g: "Actividad", t: "Sectores del EMAE", d: "Industria, construcción, comercio y agro, base 100", sel: ["emae_letras_desest.d_industria", "emae_letras_desest.f_construccion", "emae_letras_desest.g_comercio", "emae_letras_desest.a_agro"], tipo: "line", transf: "base100", agr: "orig", fn: "mean", rango: 5 },
   { g: "Actividad", t: "Gasoil y actividad", d: "Gasoil (sin usinas ni bunker) y EMAE, desestacionalizados, base 100", sel: ["ventas_combustibles_desest.gasoil_total_sin_usinas_bunker", "emae.desest"], tipo: "line", transf: "base100", agr: "orig", fn: "mean", rango: 5 },

@@ -26,7 +26,7 @@ from zoneinfo import ZoneInfo
 import pandas as pd
 import requests
 
-from pipeline import calendario
+from pipeline import calendario, monitorargy
 from pipeline.fuentes import emae, emae_letras, emae_letras_desest, ipc, ipi, isac, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, refinados, refinados_mensual, ventas_combustibles, ventas_combustibles_desest, came, supermercados, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual, estimaciones_agricolas, rem, remuneraciones_provincias, remuneraciones_provincias_real, remuneraciones_provincias_desest, remuneraciones_provincias_real_desest
 from pipeline.fuentes._indec import iguales
 
@@ -550,6 +550,12 @@ def main() -> int:
             print("  " + catalogo_monitor_argy())
         except Exception as e:  # noqa: BLE001
             print(f"  aviso: no se pudo actualizar ({e}); queda el anterior")
+        print("[series de Monitor Argy (copia)]")
+        try:
+            frec = {f["id"]: f["frecuencia"] for f in json.loads((DATA / "monitorargy" / "catalogo.json").read_text("utf-8"))}
+            print("  " + monitorargy.espejo(DATA / "monitorargy" / "series", UA, frec))
+        except Exception as e:  # noqa: BLE001
+            print(f"  aviso: no se pudo actualizar ({e}); quedan las copias anteriores")
     catalogo(cal, hoy)
     todas()
     return 1 if fallas else 0

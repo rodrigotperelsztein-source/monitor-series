@@ -63,6 +63,7 @@ próxima publicación según el calendario de INDEC y si está **al día**, **se
 | `data/todas/valores.csv` | Todas las series juntas en formato largo: `fecha`, `id_serie`, `valor`. |
 | `data/series/<id_serie>.csv` | Una serie sola (`fecha`, `valor`), para traer solo las que se necesitan. |
 | `data/monitorargy/catalogo.json` | Catálogo de series de Monitor Argy (se actualiza cada noche), para el selector. |
+| `data/monitorargy/series/<id>.csv` | Copia sin cambios de una selección de series de Monitor Argy (lista en `pipeline/monitorargy.py`), actualizada cada noche. |
 | `data/calendario/indec.csv` | Calendario de difusión de INDEC (fecha y título de cada publicación), leído del PDF semestral. |
 | `data/todas/series.csv` | Una fila por serie: `id_serie`, nombre, tipo (nivel o variación), unidad, frecuencia, fuente, primer y último período. |
 

@@ -8,6 +8,8 @@
   sin cambios en el archivo
 [ipi]
   sin cambios en el archivo
+[ipi_minero]
+  actualizada: último período — → 2026-08; valores revisados: 0
 [isac]
   sin cambios en el archivo
 [supermercados]
@@ -19,9 +21,9 @@
 [sube]
   sin cambios en el archivo
 [petroleo]
-  actualizada: último período 2026-10 → 2026-10-26; valores revisados: 0
+  archivo distinto pero mismos datos
 [refinados]
-  actualizada: último período 2026-10 → 2026-10-26; valores revisados: 0
+  archivo distinto pero mismos datos
 [ventas_combustibles]
   www.energia.gob.ar no envía su certificado intermedio; se tomó de http://crt.sectigo.com/SectigoPublicServerAuthenticationCADVR36.crt
   archivo distinto pero mismos datos
@@ -43,6 +45,8 @@
   sin cambios en el archivo
 [emae_letras_desest]
   sin cambios en las series de base
+[ipi_minero_desest]
+  recalculada: último período — → 2026-08
 [ripte_real]
   sin cambios en las series de base
 [salarios_real]
@@ -52,9 +56,9 @@
 [sube_desest]
   sin cambios en las series de base
 [petroleo_mensual]
-  recalculada: último período 2026-09 → 2026-09
+  sin cambios en las series de base
 [refinados_mensual]
-  recalculada: último período 2026-09 → 2026-09
+  sin cambios en las series de base
 [ventas_combustibles_desest]
   sin cambios en las series de base
 [camiones_puertos_mensual]
@@ -70,4 +74,4 @@
 [catálogo de Monitor Argy]
   733 series
 [series de Monitor Argy (copia)]
-  23 de 23 series
+  24 de 24 series

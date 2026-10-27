@@ -1,0 +1,315 @@
+{
+  "id": "ipi_minero",
+  "nombre": "IPI minero: nivel general, aperturas y producción de petróleo, gas y litio",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipi_minero.xlsx",
+  "pagina": "https://www.indec.gob.ar/Nivel4/Tema/3/7/172",
+  "frecuencia": "M",
+  "unidad": "Índice base 2016=100",
+  "sha256": "0d4167c6ae5844df4cd9bf6dbd01e6c790da1d7f07b2c90f0fcdf3f1905fb851",
+  "columnas": {
+    "original": {
+      "nombre": "IPI minero, serie original",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "original_var_ia": {
+      "nombre": "IPI minero, serie original, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "original_var_acum": {
+      "nombre": "IPI minero, serie original, var. % acumulada en el año",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest": {
+      "nombre": "IPI minero, serie desestacionalizada (INDEC)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "desest_var_m": {
+      "nombre": "IPI minero, desestacionalizada (INDEC), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "tendencia": {
+      "nombre": "IPI minero, serie tendencia-ciclo",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "tendencia_var_m": {
+      "nombre": "IPI minero, tendencia-ciclo, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "orig_g_petroleo_gas": {
+      "nombre": "IPI minero, Extracción de petróleo crudo y gas natural y servicios de apoyo (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_petroleo_crudo": {
+      "nombre": "IPI minero, Petróleo crudo (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_gas_natural": {
+      "nombre": "IPI minero, Gas natural (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_servicios_apoyo": {
+      "nombre": "IPI minero, Servicios de apoyo para la extracción de petróleo y gas (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_g_metaliferos": {
+      "nombre": "IPI minero, Extracción de minerales metalíferos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_plata_oro": {
+      "nombre": "IPI minero, Plata y oro y sus concentrados (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_bullon_dore": {
+      "nombre": "IPI minero, Bullón dorado (doré) (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_metaliferos_resto": {
+      "nombre": "IPI minero, Resto de metalíferos (hierro, cobre, plomo, cinc, molibdeno y otros) (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_g_no_metaliferos": {
+      "nombre": "IPI minero, Extracción de minerales no metalíferos y rocas de aplicación (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_g_rocas_ornamentales": {
+      "nombre": "IPI minero, Extracción de rocas ornamentales (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_granito": {
+      "nombre": "IPI minero, Granito (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_piedra_laja": {
+      "nombre": "IPI minero, Piedra laja (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_dolomita_cruda": {
+      "nombre": "IPI minero, Dolomita cruda, excepto para cal o cemento (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_rocas_ornamentales_resto": {
+      "nombre": "IPI minero, Resto de rocas ornamentales (mármol, travertino y otras) (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_g_caliza_yeso": {
+      "nombre": "IPI minero, Extracción de piedra caliza y yeso (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_yeso": {
+      "nombre": "IPI minero, Yeso (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_caliza_cal_cemento": {
+      "nombre": "IPI minero, Piedra caliza y calcáreos para cal y cemento (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_clinker": {
+      "nombre": "IPI minero, Clínker (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_g_arenas_triturados": {
+      "nombre": "IPI minero, Extracción de arenas, canto rodado y triturados pétreos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_arena_construccion": {
+      "nombre": "IPI minero, Arena común para construcción (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_arenas_industriales": {
+      "nombre": "IPI minero, Arenas industriales y arenas y gravas silíceas (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_arenas_fractura": {
+      "nombre": "IPI minero, Arenas de fractura (fracking) (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_triturados_petreos": {
+      "nombre": "IPI minero, Rocas para triturados pétreos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_canto_rodado": {
+      "nombre": "IPI minero, Canto rodado, granza y ripio (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_arenas_triturados_resto": {
+      "nombre": "IPI minero, Resto de arenas y triturados (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_g_arcilla_caolin": {
+      "nombre": "IPI minero, Extracción de arcilla y caolín (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_caolin_bentonita": {
+      "nombre": "IPI minero, Caolín y bentonita (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_arcilla_comun": {
+      "nombre": "IPI minero, Arcilla común (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_arcillas_plasticas": {
+      "nombre": "IPI minero, Arcillas plásticas (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_zeolita_limo": {
+      "nombre": "IPI minero, Zeolita natural y limo arcilloso (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_g_minerales_quimicos": {
+      "nombre": "IPI minero, Extracción de minerales para productos químicos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_litio": {
+      "nombre": "IPI minero, Carbonato de litio y otros minerales de litio (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_calcita": {
+      "nombre": "IPI minero, Calcita y carbonato de calcio (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_boro": {
+      "nombre": "IPI minero, Minerales de boro (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_minerales_quimicos_resto": {
+      "nombre": "IPI minero, Resto de minerales para productos químicos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_g_sal": {
+      "nombre": "IPI minero, Extracción de sal (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_salmuera": {
+      "nombre": "IPI minero, Salmuera o solución saturada de sal (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_sal_refinada": {
+      "nombre": "IPI minero, Sal refinada, de mesa e industrial (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_cloruro_sodio": {
+      "nombre": "IPI minero, Cloruro de sodio puro (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_g_carbon_otros": {
+      "nombre": "IPI minero, Carbón, turba y explotación de minas y canteras n.c.p. (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_turba": {
+      "nombre": "IPI minero, Turba (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_puzolana_feldespato": {
+      "nombre": "IPI minero, Puzolana y feldespatos (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_suelo_seleccionado": {
+      "nombre": "IPI minero, Suelo seleccionado o estabilizado para relleno (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_cuarzo": {
+      "nombre": "IPI minero, Cuarzo y cuarzo amatista (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_diatomita_perlita": {
+      "nombre": "IPI minero, Diatomita y perlita (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "orig_carbon_otros_resto": {
+      "nombre": "IPI minero, Resto (carbón térmico, talco, baritina y otros) (serie original)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2016=100"
+    },
+    "petroleo_m3": {
+      "nombre": "Extracción de petróleo crudo",
+      "tipo": "nivel",
+      "unidad": "Miles de m³"
+    },
+    "petroleo_convencional_m3": {
+      "nombre": "Extracción de petróleo crudo convencional",
+      "tipo": "nivel",
+      "unidad": "Miles de m³"
+    },
+    "petroleo_no_convencional_m3": {
+      "nombre": "Extracción de petróleo crudo no convencional",
+      "tipo": "nivel",
+      "unidad": "Miles de m³"
+    },
+    "gas_m3": {
+      "nombre": "Extracción de gas natural",
+      "tipo": "nivel",
+      "unidad": "Millones de m³"
+    },
+    "gas_convencional_m3": {
+      "nombre": "Extracción de gas natural convencional",
+      "tipo": "nivel",
+      "unidad": "Millones de m³"
+    },
+    "gas_no_convencional_m3": {
+      "nombre": "Extracción de gas natural no convencional",
+      "tipo": "nivel",
+      "unidad": "Millones de m³"
+    },
+    "litio_toneladas": {
+      "nombre": "Producción de carbonato de litio",
+      "tipo": "nivel",
+      "unidad": "Toneladas"
+    }
+  },
+  "descargado": "2026-10-27T14:48:25Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 116,
+  "original_guardado": "data/raw/ipi_minero/2026-10-27_0d4167c6.xlsx"
+}

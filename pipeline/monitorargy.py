@@ -29,6 +29,7 @@ SERIES = {
     "patentamientos_autos_interanual": "Patentamientos de autos, var. interanual",
     "mayoristas_interanual": "Ventas en autoservicios mayoristas, var. interanual",
     "shoppings_interanual": "Ventas en shoppings, var. interanual",
+    "petroleo": "Producción de petróleo",
     "petroleo_desest": "Producción de petróleo, desestacionalizada",
     "petroleo_interanual": "Producción de petróleo, var. interanual",
     "petroleo_no_convencional": "Producción de petróleo no convencional",

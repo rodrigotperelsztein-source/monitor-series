@@ -123,6 +123,19 @@ aside { position: sticky; top: 12px; display: flex; flex-direction: column; gap:
 .btn { font: inherit; font-size: 13px; font-weight: 600; padding: 7px 12px; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent); color: var(--surface); cursor: pointer; }
 .btn.sec { background: transparent; color: var(--accent); }
 .btn:disabled { opacity: .45; cursor: default; }
+.canastas { display: flex; gap: 6px; flex-wrap: wrap; }
+.canasta { font: inherit; font-size: 12px; padding: 4px 9px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.canasta:hover { border-color: var(--accent); }
+.canasta.propia { border-style: dashed; }
+.canasta .x { margin-left: 4px; color: var(--muted); }
+.guardar { display: flex; gap: 6px; }
+.guardar input { flex: 1; min-width: 0; font: inherit; font-size: 13px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); }
+.aviso { font-size: 12.5px; border-left: 3px solid var(--warn); background: color-mix(in srgb, var(--warn) 10%, transparent); padding: 6px 9px; border-radius: 4px; }
+.aviso:empty { display: none; }
+.ficha-btn { border: 0; background: none; color: var(--accent); cursor: pointer; font-size: 12px; padding: 0 0 0 6px; }
+tr.ficha td { background: var(--accent-soft); font-size: 12.5px; }
+.ficha-g { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+.ficha-g svg { width: 180px; height: 44px; }
 pre { margin: 0; background: var(--code-bg); color: var(--code-ink); font: 11.5px/1.5 var(--f-mono); padding: 12px; border-radius: 6px; overflow: auto; max-height: 300px; white-space: pre; }
 .hint { font-size: 12.5px; color: var(--muted); margin: 0; }
 .hint code { font-family: var(--f-mono); font-size: 11.5px; }
@@ -208,12 +221,18 @@ details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
 
     <aside>
       <div class="card">
+        <h2>Canastas</h2>
+        <p class="hint" style="margin:0">Conjuntos de series listos: un clic los suma a la selección. Las tuyas (borde punteado) quedan guardadas en este navegador.</p>
+        <div class="canastas" id="canastas"></div>
         <h2>Elegidas (<span id="nsel">0</span>)</h2>
         <div class="selected" id="selected"><span class="empty">Todavía no elegiste ninguna.</span></div>
+        <div class="aviso" id="aviso" role="status"></div>
+        <div class="guardar"><input id="nombre-canasta" placeholder="Nombre para guardar esta selección" maxlength="40"><button class="btn sec" id="guardar" disabled>Guardar canasta</button></div>
         <h3>Valor del parámetro <code>SeriesElegidas</code></h3>
         <pre id="lista"></pre>
         <div class="btns">
           <button class="btn" id="copylista" disabled>Copiar la lista</button>
+          <button class="btn sec" id="compartir" disabled>Copiar link con la selección</button>
           <button class="btn sec" id="clear" disabled>Vaciar</button>
         </div>
         <div class="toast" id="toast1" role="status"></div>
@@ -237,7 +256,7 @@ details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
           <p class="hint">Se arma una vez. Después, para cambiar de series, se pega la lista nueva en el parámetro.</p>
           <ol class="hint">
             <li><i>Obtener datos &gt; Consulta en blanco &gt; Editor avanzado</i>: pegá el código 1 y llamá a la consulta <code>SeriesElegidas</code>. Queda como parámetro.</li>
-            <li>Otra consulta en blanco con el código 2; llamala <code>Datos</code>. Devuelve <code>fecha</code>, <code>id_serie</code>, <code>serie</code>, <code>unidad</code> y <code>valor</code>.</li>
+            <li>Otra consulta en blanco con el código 2; llamala <code>Datos</code>. Devuelve una tabla larga: <code>fecha</code>, <code>id_serie</code>, <code>serie</code>, <code>unidad</code>, <code>dato</code> (nivel o variación), <code>ajuste</code> (original, desestacionalizada…), <code>frecuencia</code> y <code>valor</code>.</li>
             <li>Conexión <b>Anónima</b> (no hace falta ningún usuario). Si pregunta por privacidad, los dos orígenes como <b>Público</b>. Conviene tener estas consultas en un archivo o flujo de datos aparte de los que leen bases internas.</li>
           </ol>
           <h3>1 · SeriesElegidas (parámetro)</h3>
@@ -320,6 +339,40 @@ function parseCSV(text) {
   return rows.filter(r => r.length === head.length).map(r => Object.fromEntries(head.map((h, i) => [h, r[i]])));
 }
 
+// Palabras con que la gente busca: si el id de la serie coincide con la expresión, se suman esas palabras a su búsqueda.
+const SINONIMOS = [
+  [/tc_|brecha|itcrm/, "dolar tipo de cambio tc divisa"],
+  [/^ipc\./, "inflacion precios"],
+  [/^emae/, "actividad pbi producto nivel de actividad"],
+  [/^ipi\./, "industria fabril produccion industrial"],
+  [/^isac/, "construccion obra insumos"],
+  [/^ipi_minero/, "mineria"],
+  [/^ipi_minero.*(petroleo|gas)|^ma:(petroleo|gas)/, "hidrocarburos vaca muerta"],
+  [/nafta|gasoil|combustible/, "combustibles diesel surtidor"],
+  [/salario|ripte|remuneracion/, "salarios sueldos ingresos"],
+  [/sube/, "colectivo tren subte transporte publico pasajeros"],
+  [/cammesa|electric/, "electricidad energia luz"],
+  [/brent|wti/, "petroleo crudo barril"],
+  [/^rem\./, "expectativas encuesta bcra consultoras"],
+  [/confianza/, "ditella utdt encuesta opinion"],
+  [/supermercado|mayorista|shopping|came/, "consumo ventas comercio"],
+  [/patentamiento/, "autos motos ventas vehiculos"],
+  [/reserva/, "reservas bcra dolares"],
+  [/riesgo_pais/, "riesgo pais embi bonos"],
+];
+// Canastas listas. Los ids "ma:" son series de Monitor Argy.
+const CANASTAS = [
+  { nombre: "Informe mensual", ids: ["emae.desest", "emae.original_var_ia", "ipi.desest", "ipi_minero.desest", "isac.desest",
+    "supermercados.ventas_constantes_var_ia", "ventas_combustibles_desest.gasoil_total_sin_usinas_bunker", "ventas_combustibles_desest.naftas_total",
+    "ipc.nacional_nivel_general_var_m", "ipc.nacional_nucleo_var_m", "salarios_real.privado_registrado_real", "petroleo_mensual.brent",
+    "ipi_minero.petroleo_m3", "ipi_minero.gas_m3", "rem.ipc_12m", "ma:confianza_gobierno", "ma:confianza_consumidor", "ma:tc_mayorista", "ma:riesgo_pais"] },
+  { nombre: "Actividad por sector", ids: ["emae.desest", "ipi.desest", "ipi_minero.desest", "isac.desest", "supermercados.indice_desest"] },
+  { nombre: "Precios", ids: ["ipc.nacional_nivel_general_var_m", "ipc.nacional_nucleo_var_m", "ipc.nacional_regulados_var_m", "ipc.nacional_estacionales_var_m", "ipc.nacional_nivel_general_var_ia", "rem.ipc_12m"] },
+  { nombre: "Combustibles", ids: ["ventas_combustibles_desest.gasoil_total_sin_usinas_bunker", "ventas_combustibles_desest.naftas_total", "petroleo_mensual.brent", "refinados_mensual.gasoil_usgc"] },
+  { nombre: "Petróleo y gas", ids: ["ipi_minero.petroleo_m3", "ipi_minero.petroleo_no_convencional_m3", "ipi_minero.gas_m3", "ipi_minero.gas_no_convencional_m3", "ipi_minero_desest.petroleo_m3", "ipi_minero_desest.gas_m3"] },
+  { nombre: "Salarios", ids: ["salarios_real.privado_registrado_real", "salarios_real.publico_real", "ripte_real.ripte_real", "remuneraciones_provincias_real_desest.total_real"] },
+  { nombre: "Expectativas", ids: ["rem.ipc_12m", "rem.pib_anio", "rem.tc_fin_anio", "ma:confianza_gobierno", "ma:confianza_consumidor"] },
+];
 const DATA = { propias: [], ma: [] };
 let vista = "propias";
 let sel = [];
@@ -343,7 +396,10 @@ async function cargar() {
       dato: s.unidad !== "pct" ? "Nivel" : /_mensual$/.test(s.id) ? "Variación mensual" : /_interanual$/.test(s.id) ? "Variación interanual" : "Otra variación",
       ajuste: /desest/.test(s.id) ? "Desestacionalizada" : /_real/.test(s.id) ? "Real (deflactada)" : /tendencia/.test(s.id) ? "Tendencia-ciclo" : "Original",
     }));
-    DATA.propias.concat(DATA.ma).forEach(s => s._q = norm([s.id, s.nombre, s.grupo, s.desc, s.extra, s.cat, s.org, s.dato, s.ajuste, s.ajuste === "Desestacionalizada" ? "desest sin estacionalidad" : "", s.dato.startsWith("Var") ? "var variacion" : ""].join(" ")));
+    DATA.propias.concat(DATA.ma).forEach(s => {
+      s._q = norm([s.id, s.nombre, s.grupo, s.desc, s.extra, s.cat, s.org, s.dato, s.ajuste, s.ajuste === "Desestacionalizada" ? "desest sin estacionalidad" : "", s.dato.startsWith("Var") ? "var variacion" : ""].join(" "));
+      s._q += " " + SINONIMOS.filter(([re]) => re.test(s.id)).map(([, extra]) => extra).join(" ");
+    });
     $("n-propias").textContent = DATA.propias.length;
     $("st-propias").textContent = DATA.propias.length.toLocaleString("es-AR");
     $("st-ma").textContent = DATA.ma.length.toLocaleString("es-AR");
@@ -353,7 +409,11 @@ async function cargar() {
       { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "—";
     $("n-ma").textContent = DATA.ma.length;
     const todos = new Set([...DATA.propias, ...DATA.ma].map(s => s.id));
+    // Selección compartida por link: #s=id1,id2
+    const h = new URLSearchParams(location.hash.slice(1)).get("s");
+    if (h) sel = h.split(",").map(x => x.trim()).filter(Boolean);
     sel = sel.filter(id => todos.has(id));
+    pintarCanastas();
     elegirVista("propias");
     update();
   } catch (e) {
@@ -418,11 +478,34 @@ function render() {
       s.ajuste === "Desestacionalizada" ? '<span class="pill des">desest.</span>' : s.ajuste === "Tendencia-ciclo" ? '<span class="pill des">tendencia</span>' : s.ajuste === "Real (deflactada)" ? '<span class="pill real">real</span>' : ""].join("");
     out.push(`<tr class="${on ? "sel" : ""}"><td class="chk"><input type="checkbox" id="c-${esc(s.id)}" data-id="${esc(s.id)}" ${on ? "checked" : ""} aria-label="Elegir ${esc(s.nombre)}"></td>
       <td><label for="c-${esc(s.id)}"><div class="nm">${esc(s.nombre)}<span class="tags">${tags}</span></div>
-      <div class="id">${esc(s.id)}</div>${s.extra && s.extra !== s.nombre ? `<div class="desc">${esc(s.extra)}</div>` : ""}<div class="desc">${esc(s.org)} · ${esc(s.grupo)}</div></label></td>
+      <div class="id">${esc(s.id)}<button type="button" class="ficha-btn" data-ficha="${esc(s.id)}" aria-label="Ver ficha de ${esc(s.nombre)}">ficha ▸</button></div>${s.extra && s.extra !== s.nombre ? `<div class="desc">${esc(s.extra)}</div>` : ""}<div class="desc">${esc(s.org)} · ${esc(s.grupo)}</div></label></td>
       <td class="meta hide-sm">${esc(s.unidad)}</td><td class="meta hide-sm">${esc(FREQ[s.frec] || s.frec)}</td><td class="meta">${esc(s.ultimo)}</td></tr>`);
   }
   $("rows").innerHTML = out.join("") || `<tr><td colspan="5" class="empty">No hay series con ese filtro.</td></tr>`;
 }
+// Ficha: últimos valores, minigráfica y datos de la serie (se baja al abrirla).
+$("rows").addEventListener("click", async e => {
+  const b = e.target.closest("[data-ficha]"); if (!b) return;
+  e.preventDefault();
+  const tr = b.closest("tr"), sig = tr.nextElementSibling;
+  if (sig && sig.classList.contains("ficha")) { sig.remove(); return; }
+  const s = DATA[vista].find(x => x.id === b.dataset.ficha);
+  const fila = document.createElement("tr"); fila.className = "ficha";
+  fila.innerHTML = `<td></td><td colspan="4">Cargando…</td>`;
+  tr.after(fila);
+  if (s.id.startsWith("ma:")) {
+    fila.cells[1].innerHTML = `Serie de Monitor Argy · ${esc(s.unidad)} · ${esc(FREQ[s.frec] || s.frec)} · último dato ${esc(s.ultimo)}. ${esc(s.extra || "")}`;
+    return;
+  }
+  try {
+    const t = await fetch(`${RAW}/data/series/${s.id}.csv`, { cache: "no-cache" }).then(r => r.ok ? r.text() : Promise.reject(r.status));
+    const f = parseCSV(t).map(r => ({ f: r.fecha, v: parseFloat(r.valor) })).filter(r => !isNaN(r.v));
+    const ult = f.slice(-3).reverse().map(r => `${fechaCorta(r.f, s.frec)}: <b>${fmtN(r.v, Math.abs(r.v) < 100 ? 2 : 0)}</b>`).join(" · ");
+    const g = spark(f.slice(-36).map(r => r.v));
+    fila.cells[1].innerHTML = `<div class="ficha-g">${g}<div>${ult}<br>${esc(s.dato)} · ${esc(s.ajuste)} · ${esc(s.unidad)} · ${esc(FREQ[s.frec] || s.frec)} ·
+      desde ${esc((f[0] || {}).f || "")} · ${esc(s.desc)}</div></div>`;
+  } catch (err) { fila.cells[1].textContent = "No se pudo leer la serie."; }
+});
 $("cats").addEventListener("click", e => { const b = e.target.closest("[data-cat]"); if (b) { catSel = b.dataset.cat; render(); } });
 $("limpiar").onclick = () => { catSel = ""; ["q", "grupo", "freq", "dato", "ajuste"].forEach(id => $(id).value = ""); $("onlysel").checked = false; render(); };
 $("rows").addEventListener("change", e => {
@@ -453,8 +536,9 @@ const CODE2 = `let
             Info = Table.SelectRows(Catalogo, each [id_serie] = id),
             Fila = if Table.IsEmpty(Info) then error ("La serie " & id & " no está en el catálogo") else Info{0},
             T = LeerCsv("series/" & id & ".csv"),
-            Con = Table.AddColumn(Table.AddColumn(Table.AddColumn(T,
-                "id_serie", each id), "serie", each Fila[serie]), "unidad", each Fila[unidad])
+            Con = Table.AddColumn(Table.AddColumn(Table.AddColumn(Table.AddColumn(Table.AddColumn(Table.AddColumn(T,
+                "id_serie", each id), "serie", each Fila[serie]), "unidad", each Fila[unidad]),
+                "dato", each Fila[dato]), "ajuste", each Fila[ajuste]), "frecuencia", each Fila[frecuencia])
         in
             Con,
 
@@ -465,16 +549,17 @@ const CODE2 = `let
                 [RelativePath = "api/v1/series/" & id])),
             T = Table.FromRecords(R[puntos], {"fecha", "valor"}, MissingField.UseNull),
             T2 = Table.TransformColumns(T, {{"fecha", each Text.Start(Text.From(_), 10)}}),
-            Con = Table.AddColumn(Table.AddColumn(Table.AddColumn(T2,
-                "id_serie", each "ma:" & id), "serie", each R[nombre]), "unidad", each R[unidad])
+            Con = Table.AddColumn(Table.AddColumn(Table.AddColumn(Table.AddColumn(Table.AddColumn(Table.AddColumn(T2,
+                "id_serie", each "ma:" & id), "serie", each R[nombre]), "unidad", each R[unidad]),
+                "dato", each null), "ajuste", each null), "frecuencia", each R[frecuencia])
         in
             Con,
 
     Tablas = List.Transform(Ids, each if Text.StartsWith(_, "ma:") then MonitorArgy(Text.Range(_, 3)) else Propia(_)),
-    Todo = Table.SelectColumns(Table.Combine(Tablas), {"fecha", "id_serie", "serie", "unidad", "valor"}),
+    Todo = Table.SelectColumns(Table.Combine(Tablas), {"fecha", "id_serie", "serie", "unidad", "dato", "ajuste", "frecuencia", "valor"}),
     Tipos = Table.TransformColumnTypes(Todo,
-        {{"fecha", type date}, {"id_serie", type text}, {"serie", type text},
-         {"unidad", type text}, {"valor", type number}}, "en-US")
+        {{"fecha", type date}, {"id_serie", type text}, {"serie", type text}, {"unidad", type text},
+         {"dato", type text}, {"ajuste", type text}, {"frecuencia", type text}, {"valor", type number}}, "en-US")
 in
     Tipos`;
 
@@ -544,8 +629,45 @@ function update() {
   $("py").textContent = codigoPython();
   $("gs").textContent = formulasSheets();
   $("urls").textContent = links();
-  $("copylista").disabled = $("clear").disabled = !sel.length;
+  $("copylista").disabled = $("clear").disabled = $("compartir").disabled = $("guardar").disabled = !sel.length;
+  $("aviso").innerHTML = avisos();
 }
+// Avisos al combinar series que no conviene graficar o sumar juntas tal cual.
+function avisos() {
+  const info = sel.map(id => DATA.propias.concat(DATA.ma).find(s => s.id === id)).filter(Boolean);
+  const out = [];
+  const unidades = new Set(info.map(s => s.unidad)), frec = new Set(info.map(s => s.frec));
+  const ajustes = new Set(info.filter(s => s.dato === "Nivel").map(s => s.ajuste));
+  if (frec.size > 1) out.push(`Mezclás frecuencias (${[...frec].map(f => FREQ[f] || f).join(", ")}): para graficarlas juntas conviene pasarlas a mensual.`);
+  if (unidades.size > 1 && info.length > 1) out.push(`Hay ${unidades.size} unidades distintas: para compararlas en un gráfico usá base 100 o variaciones.`);
+  if (ajustes.size > 1) out.push(`Hay niveles ${[...ajustes].map(a => a.toLowerCase()).join(" y ")}: no se comparan mes a mes entre sí.`);
+  return out.map(t => `⚠ ${esc(t)}`).join("<br>");
+}
+// Canastas: las listas fijas y las guardadas en este navegador.
+function canastasPropias() { try { return JSON.parse(localStorage.getItem("canastas-series") || "[]"); } catch (e) { return []; } }
+function pintarCanastas() {
+  const existe = new Set([...DATA.propias, ...DATA.ma].map(s => s.id));
+  const fijas = CANASTAS.map((c, i) => `<button type="button" class="canasta" data-canasta="f${i}" title="${esc(c.ids.join(", "))}">${esc(c.nombre)} (${c.ids.filter(x => existe.has(x)).length})</button>`);
+  const propias = canastasPropias().map((c, i) => `<button type="button" class="canasta propia" data-canasta="p${i}" title="${esc(c.ids.join(", "))}">${esc(c.nombre)} (${c.ids.length})<span class="x" data-borrar="${i}" aria-label="Borrar">×</span></button>`);
+  $("canastas").innerHTML = fijas.concat(propias).join("");
+}
+$("canastas").addEventListener("click", e => {
+  const x = e.target.closest("[data-borrar]");
+  if (x) { const l = canastasPropias(); l.splice(+x.dataset.borrar, 1); try { localStorage.setItem("canastas-series", JSON.stringify(l)); } catch (err) {} pintarCanastas(); return; }
+  const b = e.target.closest("[data-canasta]"); if (!b) return;
+  const k = b.dataset.canasta, c = k[0] === "f" ? CANASTAS[+k.slice(1)] : canastasPropias()[+k.slice(1)];
+  const existe = new Set([...DATA.propias, ...DATA.ma].map(s => s.id));
+  c.ids.filter(id => existe.has(id) && !sel.includes(id)).forEach(id => sel.push(id));
+  update(); render();
+});
+$("guardar").onclick = () => {
+  const nombre = $("nombre-canasta").value.trim() || `Selección ${new Date().toLocaleDateString("es-AR")}`;
+  const l = canastasPropias().filter(c => c.nombre !== nombre);
+  l.push({ nombre, ids: [...sel] });
+  try { localStorage.setItem("canastas-series", JSON.stringify(l)); } catch (err) {}
+  $("nombre-canasta").value = ""; pintarCanastas();
+};
+$("compartir").onclick = () => copiar(location.origin + location.pathname + "#s=" + sel.join(","), "toast1", "Link copiado: quien lo abra ve la misma selección.");
 $("selected").addEventListener("click", e => {
   const id = e.target.dataset && e.target.dataset.rm; if (!id) return;
   sel = sel.filter(x => x !== id); update(); render();

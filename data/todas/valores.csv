@@ -166760,6 +166760,7 @@ fecha,id_serie,valor
 2026-10-23,petroleo.brent,128.300000
 2026-10-26,petroleo.brent,128.120000
 2026-10-27,petroleo.brent,123.100000
+2026-10-28,petroleo.brent,119.200000
 1987-05-20,petroleo.diferencial,-1.120000
 1987-05-21,petroleo.diferencial,-1.500000
 1987-05-22,petroleo.diferencial,-1.130000
@@ -175185,6 +175186,7 @@ fecha,id_serie,valor
 2026-10-23,petroleo.diferencial,18.580000
 2026-10-26,petroleo.diferencial,22.870000
 2026-10-27,petroleo.diferencial,19.730000
+2026-10-28,petroleo.diferencial,12.950000
 1986-01-02,petroleo.wti,25.560000
 1986-01-03,petroleo.wti,26.000000
 1986-01-06,petroleo.wti,26.530000
@@ -184717,6 +184719,7 @@ fecha,id_serie,valor
 2026-10-23,petroleo.wti,109.720000
 2026-10-26,petroleo.wti,105.250000
 2026-10-27,petroleo.wti,103.370000
+2026-10-28,petroleo.wti,106.250000
 1987-05-01,petroleo_mensual.brent,18.580000
 1987-06-01,petroleo_mensual.brent,18.860476
 1987-07-01,petroleo_mensual.brent,19.856522
@@ -193161,6 +193164,7 @@ fecha,id_serie,valor
 2026-10-23,refinados.gasoil_nyh,5.162000
 2026-10-26,refinados.gasoil_nyh,4.833000
 2026-10-27,refinados.gasoil_nyh,4.687000
+2026-10-28,refinados.gasoil_nyh,4.710000
 2006-06-14,refinados.gasoil_usgc,2.152000
 2006-06-15,refinados.gasoil_usgc,2.145000
 2006-06-16,refinados.gasoil_usgc,2.085000
@@ -198270,6 +198274,7 @@ fecha,id_serie,valor
 2026-10-23,refinados.gasoil_usgc,5.005000
 2026-10-26,refinados.gasoil_usgc,4.894000
 2026-10-27,refinados.gasoil_usgc,4.767000
+2026-10-28,refinados.gasoil_usgc,4.740000
 1986-06-02,refinados.ho_nyh,0.402000
 1986-06-03,refinados.ho_nyh,0.393000
 1986-06-04,refinados.ho_nyh,0.378000
@@ -207085,12 +207090,14 @@ fecha,id_serie,valor
 2026-10-23,refinados.ho_nyh,4.912000
 2026-10-26,refinados.ho_nyh,4.803000
 2026-10-27,refinados.ho_nyh,4.667000
+2026-10-28,refinados.ho_nyh,4.690000
 2026-10-20,refinados.ho_usgc,4.780000
 2026-10-21,refinados.ho_usgc,4.640000
 2026-10-22,refinados.ho_usgc,4.800000
 2026-10-23,refinados.ho_usgc,4.850000
 2026-10-26,refinados.ho_usgc,4.740000
 2026-10-27,refinados.ho_usgc,4.600000
+2026-10-28,refinados.ho_usgc,4.620000
 1986-06-02,refinados.nafta_nyh,0.468000
 1986-06-03,refinados.nafta_nyh,0.436000
 1986-06-04,refinados.nafta_nyh,0.418000
@@ -221892,18 +221899,21 @@ fecha,id_serie,valor
 2026-10-23,refinados.nafta_rbob_la,3.590000
 2026-10-26,refinados.nafta_rbob_la,3.590000
 2026-10-27,refinados.nafta_rbob_la,3.521000
+2026-10-28,refinados.nafta_rbob_la,3.610000
 2026-10-20,refinados.nafta_rbob_nyh,3.230000
 2026-10-21,refinados.nafta_rbob_nyh,3.250000
 2026-10-22,refinados.nafta_rbob_nyh,3.280000
 2026-10-23,refinados.nafta_rbob_nyh,3.320000
 2026-10-26,refinados.nafta_rbob_nyh,3.320000
 2026-10-27,refinados.nafta_rbob_nyh,3.250000
+2026-10-28,refinados.nafta_rbob_nyh,3.280000
 2026-10-20,refinados.nafta_rbob_usgc,3.070000
 2026-10-21,refinados.nafta_rbob_usgc,3.040000
 2026-10-22,refinados.nafta_rbob_usgc,3.060000
 2026-10-23,refinados.nafta_rbob_usgc,3.090000
 2026-10-26,refinados.nafta_rbob_usgc,3.090000
 2026-10-27,refinados.nafta_rbob_usgc,2.990000
+2026-10-28,refinados.nafta_rbob_usgc,3.030000
 1986-06-02,refinados.nafta_usgc,0.445000
 1986-06-03,refinados.nafta_usgc,0.418000
 1986-06-04,refinados.nafta_usgc,0.398000

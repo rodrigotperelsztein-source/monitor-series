@@ -5,7 +5,7 @@
   "pagina": "https://www.argentina.gob.ar/economia/energia/hidrocarburos/refinacion-y-comercializacion-de-petroleo-gas-y-derivados-tablas-dinamicas",
   "frecuencia": "M",
   "unidad": "m³",
-  "sha256": "91afd0fbd3207dc816dce265085173685700fcfc57e417a464f0ea2a5776dc1d",
+  "sha256": "97ae7295e28488741658e17aeea9c95ba3eecb447d55528e8b3bed21fb0eedb8",
   "columnas": {
     "gasoil_g2_ypf": {
       "nombre": "Ventas de gasoil grado 2 (común), YPF",

@@ -1,0 +1,81 @@
+{
+  "id": "acciones_energia_mensual",
+  "nombre": "Acciones de energía en Nueva York: cierre de fin de mes y variaciones (YPF, Vista, Pampa, TGS)",
+  "url": "data/acciones_energia.csv",
+  "pagina": "https://www.nasdaq.com/market-activity/stocks/ypf/historical",
+  "frecuencia": "M",
+  "unidad": "Dólares por acción (ADR)",
+  "sha256": "2e24fd0dacda4310ada03a43cfc1de4a0653fa3704704fb9b47ce66ff58ac3e9",
+  "derivada_de": [
+    "acciones_energia"
+  ],
+  "archivos_de_origen": [
+    "https://api.nasdaq.com/api/quote/YPF/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999 https://api.nasdaq.com/api/quote/VIST/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999 https://api.nasdaq.com/api/quote/PAM/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999 https://api.nasdaq.com/api/quote/TGS/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999"
+  ],
+  "columnas": {
+    "ypf": {
+      "nombre": "YPF (YPF), cierre de fin de mes en dólares",
+      "tipo": "nivel",
+      "unidad": "Dólares por acción (ADR)"
+    },
+    "ypf_var_m": {
+      "nombre": "YPF (YPF), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ypf_var_ia": {
+      "nombre": "YPF (YPF), var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vista": {
+      "nombre": "Vista Energy (VIST), cierre de fin de mes en dólares",
+      "tipo": "nivel",
+      "unidad": "Dólares por acción (ADR)"
+    },
+    "vista_var_m": {
+      "nombre": "Vista Energy (VIST), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vista_var_ia": {
+      "nombre": "Vista Energy (VIST), var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampa": {
+      "nombre": "Pampa Energía (PAM), cierre de fin de mes en dólares",
+      "tipo": "nivel",
+      "unidad": "Dólares por acción (ADR)"
+    },
+    "pampa_var_m": {
+      "nombre": "Pampa Energía (PAM), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampa_var_ia": {
+      "nombre": "Pampa Energía (PAM), var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "tgs": {
+      "nombre": "Transportadora de Gas del Sur (TGS) (TGS), cierre de fin de mes en dólares",
+      "tipo": "nivel",
+      "unidad": "Dólares por acción (ADR)"
+    },
+    "tgs_var_m": {
+      "nombre": "Transportadora de Gas del Sur (TGS) (TGS), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "tgs_var_ia": {
+      "nombre": "Transportadora de Gas del Sur (TGS) (TGS), var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-10-29T12:36:56Z",
+  "calculado": "2026-10-29T12:36:56Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 120
+}

@@ -1,0 +1,35 @@
+{
+  "id": "acciones_energia",
+  "nombre": "Acciones de energía en Nueva York: YPF, Vista, Pampa y TGS (cierre diario, dólares)",
+  "url": "https://api.nasdaq.com/api/quote/YPF/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999 https://api.nasdaq.com/api/quote/VIST/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999 https://api.nasdaq.com/api/quote/PAM/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999 https://api.nasdaq.com/api/quote/TGS/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999",
+  "pagina": "https://www.nasdaq.com/market-activity/stocks/ypf/historical",
+  "frecuencia": "D",
+  "unidad": "Dólares por acción (ADR)",
+  "sha256": "f541901db99241981e0e224d382b8bec91fd0b178ec8db6478a8479f39b98eb0",
+  "columnas": {
+    "ypf": {
+      "nombre": "YPF (YPF, Nueva York), precio de cierre en dólares",
+      "tipo": "nivel",
+      "unidad": "Dólares por acción (ADR)"
+    },
+    "vista": {
+      "nombre": "Vista Energy (VIST, Nueva York), precio de cierre en dólares",
+      "tipo": "nivel",
+      "unidad": "Dólares por acción (ADR)"
+    },
+    "pampa": {
+      "nombre": "Pampa Energía (PAM, Nueva York), precio de cierre en dólares",
+      "tipo": "nivel",
+      "unidad": "Dólares por acción (ADR)"
+    },
+    "tgs": {
+      "nombre": "Transportadora de Gas del Sur (TGS) (TGS, Nueva York), precio de cierre en dólares",
+      "tipo": "nivel",
+      "unidad": "Dólares por acción (ADR)"
+    }
+  },
+  "descargado": "2026-10-29T12:36:56Z",
+  "ultimo_periodo": "2026-10-28",
+  "observaciones": 2513,
+  "original_guardado": null
+}

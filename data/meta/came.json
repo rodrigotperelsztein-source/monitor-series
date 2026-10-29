@@ -5,7 +5,7 @@
   "pagina": "https://www.redcame.org.ar/estadisticas-pyme/78/ndice-de-ventas-minoristas",
   "frecuencia": "M",
   "unidad": "%",
-  "sha256": "501ff7aea808f558b2f93820215806873b8ebc8cfe849078a26c6b8b48969532",
+  "sha256": "724b76b1724d9a282b27a5fa158fd72662dbfe505ed6d698401f978d78625253",
   "columnas": {
     "minoristas_var_ia": {
       "nombre": "CAME, ventas minoristas pyme a precios constantes, var. % interanual",

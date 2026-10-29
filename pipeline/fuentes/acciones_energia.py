@@ -34,7 +34,7 @@ CALENDARIO = ""
 GUARDAR_ORIGINAL = False
 
 EMPRESAS = {"ypf": ("YPF", "YPF"), "vista": ("VIST", "Vista Energy"), "pampa": ("PAM", "Pampa Energía"),
-            "tgs": ("TGS", "Transportadora de Gas del Sur (TGS)")}
+            "tgs": ("TGS", "Transportadora de Gas del Sur")}
 COLUMNAS = {cid: Columna("", f"{nombre} ({tk}, Nueva York), precio de cierre en dólares")
             for cid, (tk, nombre) in EMPRESAS.items()}
 

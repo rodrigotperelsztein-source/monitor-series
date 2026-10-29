@@ -4,7 +4,8 @@ Empresas (ADR que cotizan en la Bolsa de Nueva York):
   - YPF (YPF), Vista Energy (VIST), Pampa Energía (PAM) y Transportadora de Gas del Sur (TGS).
 
 Fuente: historial de precios de Nasdaq (api.nasdaq.com, el mismo que muestra nasdaq.com en "Historical Quotes"),
-desde 2016 (Vista cotiza desde julio de 2019). Es el precio de cierre sin ajustar por dividendos. Se baja en la corrida
+de los últimos 10 años (Vista cotiza desde julio de 2019); los días que ya se guardaron se conservan aunque la fuente
+los deje de devolver. Es el precio de cierre sin ajustar por dividendos. Se baja en la corrida
 completa de cada noche, después del cierre del mercado de Nueva York.
 
 Solo cotizaciones públicas de mercado: no hay datos de ninguna empresa más allá de lo que publica la bolsa.
@@ -28,7 +29,7 @@ EXTENSION = "zip"
 FRECUENCIA = "D"
 ORGANISMO = "Bolsa de Nueva York, vía Nasdaq"
 UNIDAD = "Dólares por acción (ADR)"
-PRIMER_PERIODO = "2016-01-04"
+PRIMER_PERIODO = "2016-10-28"
 CALENDARIO = ""
 GUARDAR_ORIGINAL = False
 

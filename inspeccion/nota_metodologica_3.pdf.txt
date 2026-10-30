@@ -1,0 +1,174 @@
+URL: https://www.argentina.gob.ar/sites/default/files/nota_metodologica_3.pdf
+Bytes: 579730
+
+Páginas: 6
+=== Página 1
+Empleo asalariado registrado
+y remuneraciones del sector
+privado
+por departamento
+Nota metodológica
+=== Página 2
+Presentación
+La Dirección Nacional de Estudios y Estadísticas Laborales de la Secretaría de Trabajo, Empleo y
+Seguridad Social del Ministerio de Capital Humano pone a disposición nuevas series estadísticas
+sobre empleo y remuneraciones a nivel de departamento.
+La cobertura estadística alcanza a los departamentos de todo el país. La Ciudad Autónoma de
+Buenos Aires recibe un tratamiento como bloque único, ya que aún no se ha consistido la
+información por comuna. Las series se inician en enero de 2021 y se actualizarán periódicamente,
+en abril de 2026 se presentará una actualización de la información al primer semestre de 2025.
+La presentación de la información se realiza en tres archivos:
+1) Conjunto de tablas con la información sobre el empleo y las remuneraciones del trabajo
+registrado del sector privado por departamento (el presente archivo).
+2) Tabla en formato CSV con la información sobre el empleo y las remuneraciones por
+departamento según sector de actividad.
+3) Tabla en formato CSV con la información sobre el empleo y las remuneraciones por
+departamento según tamaño de establecimiento.
+Las series estadísticas de empleo registrado por departamento presentan dos exclusiones:
+1) el empleo localizado en 12 departamentos a lo largo de todo el país, ya que no cumplen con
+el criterio mínimo de empleo registrado establecido a efectos de este boletín (al menos 20
+empleados promedio en los últimos 2 años).
+2) el empleo correspondiente a los domicilios de explotación de carácter ambulante, dado que
+no es posible georeferenciarlos, ni imputar de manera precisa el empleo correspondiente a
+cada departamento. El empleo en este tipo de domicilios de explotación se estima cercano
+al 4% del empleo asalariado registrado a nivel nacional, pero puede variar de acuerdo a la
+composición sectorial de cada provincia y departamento. Los sectores con mayor
+proporción de empleo ambulante son Pesca, Construcción, Minería y Petróleo y Agricultura,
+Ganadería Y Silvicultura. En tanto, Santa Cruz, Tucumán, Chubut, San Juan, Neuquén y
+Corrientes son las provincias con mayor proporción de este tipo de empleo.
+Dada las exclusiones aplicadas, la suma del empleo de los departamentos incluidos en una provincia
+en este sistema de información no necesariamente coincide con el total del empleo asalariado
+registrado de la provincia. Para contar con el empleo a nivel provincial debe consultarse la
+información publicada en los boletines estadísticos provinciales del OEDE
+(https://www.argentina.gob.ar/trabajo/estadisticas/oede-estadisticas-provinciales).
+Los datos presentados se consideran de carácter experimental, es decir, que se encuentran sujetos
+a correcciones, debido a que aún no han alcanzado la suficiente estabilidad en término de
+armonización, cobertura o metodología, como para incluirlos dentro de la estadística oficial. Sin
+embargo, los datos se ponen a disposición para su explotación y evaluación por parte de los
+usuarios.
+=== Página 3
+Ficha Técnica
+Período: Desde enero 2021, con periodicidad mensual.
+Cobertura: Nacional: en departamentos con 20 o más empleados registrados en el sector privado
+de promedio en los últimos dos años.
+Cobertura del empleo: Puestos asalariados registrados del sector privado.
+Cobertura de las empresas: Domicilios de explotación de empresas del sector privado a excepción
+del empleo en domicilios de explotación de tipo ambulante o aquellos declarados en el exterior del
+país.
+Cobertura sectorial: Todos los sectores económicos del sector privado.
+Salarios: Se considera la remuneración bruta declarada por los empleadores en el Sistema Integrado
+Previsional Argentino (ARCA), incluyendo los componentes remunerativos y no remunerativos, el
+diferencial salarial abonado en concepto de licencia vacacional y el Salario Anual Complementario
+(SAC).
+Criterio de anonimización: Celdas con menos de 3 casos (domicilios de explotación). Cuando sea
+necesario, se excluyen celdas adicionales para evitar triangulaciones. La anonimización se hace en
+espejo para empleo y remuneraciones.
+Desagregación sectorial
+A continuación, se muestra la tabla de correspondencia entre la Clasificación Industrial Internacional
+Uniforme (CIIU 1 dig. Revisión 3) y el sector económico utilizado en este boletín estadístico.
+LETRA CIIU
+DESCRIPCION SECTOR
+REVISION 3
+A AGRICULTURA, GANADERIA, CAZA Y SILVICULTURA
+AGRICULTURA, GANADERIA Y PESCA
+B PESCA
+C EXPLOTACION DE MINAS Y CANTERAS EXPLOTACION DE MINAS Y CANTERAS
+D INDUSTRIAS MANUFACTURERAS INDUSTRIAS MANUFACTURERAS
+E SUMINISTRO DE ELECTRICIDAD, GAS Y AGUA ELECTRICIDAD, GAS Y AGUA
+F CONSTRUCCION CONSTRUCCION
+G COMERCIO Y REPARACIONES COMERCIO
+H HOTELES Y RESTAURANTES
+I TRANSPORTE, ALMACENAMIENTO Y COMUNICACIONES
+J INTERMEDIACION FINANCIERA
+K ACTIVIDADES INMOBILIARIAS, EMPRESARIALES Y DE ALQUILER SERVICIOS
+M ENSEÑANZA
+N SERVICIOS SOCIALES Y DE SALUD
+O OTRAS ACTIVIDADES DE SERVICIOS COMUNITARIAS, SOCIALES Y PERSONALES
+=== Página 4
+Desagregación territorial
+La información se presenta por región y provincia, tal como se muestra en la siguiente tabla:
+Fuente de información
+La fuente de información utilizada para la elaboración de las series estadísticas es el Observatorio
+de Empleo y Dinámica Empresarial (OEDE) de la Secretaría de Trabajo, Empleo y Seguridad Social,
+que desarrolla un sistema de información a partir de combinación y adaptación de diferentes
+registros administrativos para fines estadísticos.
+El sistema de información del OEDE está compuesto por distintos registros administrativos que se
+vinculan con el objetivo de obtener información de la estructura y coyuntura del mercado de trabajo
+argentino. Entre los registros que lo componen se puede mencionar el Sistema Integrado Previsional
+Argentino (SIPA), el padrón de personas físicas y jurídicas AFIP.
+El desarrollo de las presentes estadísticas implicó la incorporación del registro de Simplificación
+Registral (SR) al sistema de información. El servicio SR sirve para las empresas informen las altas,
+bajas y modificaciones de cada relación laboral. Entre otros datos, el sistema solicita que los
+empleadores declaren el número de sucursal y el domicilio de explotación en donde desempeña su
+P
+R E G IO N
+A M B A
+C E N T R O
+C U Y O
+N O A
+N E A
+A T A G O N IA
+C
+B
+B
+C
+E
+L
+S
+M
+S
+S
+C
+J
+L
+S
+S
+T
+C
+C
+F
+M
+C
+N
+R
+S
+T
+IU D A D A U T O
+S A S - 4 0 M U
+S A S - R E S T O
+O R D O B A
+N T R E R IO S
+A P A M P A
+A N T A F E
+E N D O Z A
+A N J U A N
+A N L U IS
+A T A M A R C A
+U J U Y
+A R IO J A
+A L T A
+A N T IA G O D E
+U C U M A N
+O R R IE N T E S
+H A C O
+O R M O S A
+IS IO N E S
+H U B U T
+E U Q U E N
+IO N E G R O
+A N T A C R U Z
+IE R R A D E L F U
+P R O V IN
+N O M A D
+N IC IP IO S
+D E P B A
+L E S T E R O
+E G O
+C IA
+E B
+D E
+U
+G
+E N
+B A
+O S A IR E S

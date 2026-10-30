@@ -1,11 +1,11 @@
 {
   "id": "acciones_energia",
   "nombre": "Acciones de energía en Nueva York: YPF, Vista, Pampa y TGS (cierre diario, dólares)",
-  "url": "https://api.nasdaq.com/api/quote/YPF/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999 https://api.nasdaq.com/api/quote/VIST/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999 https://api.nasdaq.com/api/quote/PAM/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999 https://api.nasdaq.com/api/quote/TGS/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999",
+  "url": "https://api.nasdaq.com/api/quote/YPF/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-30&limit=9999 https://api.nasdaq.com/api/quote/VIST/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-30&limit=9999 https://api.nasdaq.com/api/quote/PAM/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-30&limit=9999 https://api.nasdaq.com/api/quote/TGS/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-30&limit=9999",
   "pagina": "https://www.nasdaq.com/market-activity/stocks/ypf/historical",
   "frecuencia": "D",
   "unidad": "Dólares por acción (ADR)",
-  "sha256": "f541901db99241981e0e224d382b8bec91fd0b178ec8db6478a8479f39b98eb0",
+  "sha256": "716ecac177ed9c4592f10d9baedab6bcdc87537cec799ea4b3bf8cbf494d45d7",
   "columnas": {
     "ypf": {
       "nombre": "YPF (YPF, Nueva York), precio de cierre en dólares",
@@ -23,13 +23,13 @@
       "unidad": "Dólares por acción (ADR)"
     },
     "tgs": {
-      "nombre": "Transportadora de Gas del Sur (TGS) (TGS, Nueva York), precio de cierre en dólares",
+      "nombre": "Transportadora de Gas del Sur (TGS, Nueva York), precio de cierre en dólares",
       "tipo": "nivel",
       "unidad": "Dólares por acción (ADR)"
     }
   },
-  "descargado": "2026-10-29T12:36:56Z",
-  "ultimo_periodo": "2026-10-28",
-  "observaciones": 2513,
+  "descargado": "2026-10-30T06:28:30Z",
+  "ultimo_periodo": "2026-10-29",
+  "observaciones": 2514,
   "original_guardado": null
 }

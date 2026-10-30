@@ -5,12 +5,12 @@
   "pagina": "https://www.nasdaq.com/market-activity/stocks/ypf/historical",
   "frecuencia": "M",
   "unidad": "Dólares por acción (ADR)",
-  "sha256": "2e24fd0dacda4310ada03a43cfc1de4a0653fa3704704fb9b47ce66ff58ac3e9",
+  "sha256": "8951a46685f1f5a30402e3f0e2fc82aba03fa3a5dfb09b9b44599b9377852c84",
   "derivada_de": [
     "acciones_energia"
   ],
   "archivos_de_origen": [
-    "https://api.nasdaq.com/api/quote/YPF/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999 https://api.nasdaq.com/api/quote/VIST/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999 https://api.nasdaq.com/api/quote/PAM/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999 https://api.nasdaq.com/api/quote/TGS/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-29&limit=9999"
+    "https://api.nasdaq.com/api/quote/YPF/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-30&limit=9999 https://api.nasdaq.com/api/quote/VIST/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-30&limit=9999 https://api.nasdaq.com/api/quote/PAM/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-30&limit=9999 https://api.nasdaq.com/api/quote/TGS/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-30&limit=9999"
   ],
   "columnas": {
     "ypf": {
@@ -59,23 +59,23 @@
       "unidad": "%"
     },
     "tgs": {
-      "nombre": "Transportadora de Gas del Sur (TGS) (TGS), cierre de fin de mes en dólares",
+      "nombre": "Transportadora de Gas del Sur (TGS), cierre de fin de mes en dólares",
       "tipo": "nivel",
       "unidad": "Dólares por acción (ADR)"
     },
     "tgs_var_m": {
-      "nombre": "Transportadora de Gas del Sur (TGS) (TGS), var. % mensual",
+      "nombre": "Transportadora de Gas del Sur (TGS), var. % mensual",
       "tipo": "variacion",
       "unidad": "%"
     },
     "tgs_var_ia": {
-      "nombre": "Transportadora de Gas del Sur (TGS) (TGS), var. % interanual",
+      "nombre": "Transportadora de Gas del Sur (TGS), var. % interanual",
       "tipo": "variacion",
       "unidad": "%"
     }
   },
-  "descargado": "2026-10-29T12:36:56Z",
-  "calculado": "2026-10-29T12:36:56Z",
+  "descargado": "2026-10-30T06:28:30Z",
+  "calculado": "2026-10-30T06:28:30Z",
   "ultimo_periodo": "2026-09",
   "observaciones": 120
 }

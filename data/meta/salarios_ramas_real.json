@@ -1,0 +1,295 @@
+{
+  "id": "salarios_ramas_real",
+  "nombre": "Remuneración promedio real por rama de actividad (a precios del último IPC), asalariados registrados privados",
+  "url": "data/salarios_ramas.csv y data/ipc.csv",
+  "pagina": "https://www.argentina.gob.ar/trabajo/estadisticas/oede-estadisticas-provinciales",
+  "frecuencia": "M",
+  "unidad": "Pesos del último IPC publicado",
+  "sha256": "91781c1285b14e37bf9139bbab9126b2f010a8a54baf2029aaf356bd95220503",
+  "derivada_de": [
+    "salarios_ramas",
+    "ipc"
+  ],
+  "archivos_de_origen": [
+    "https://www.argentina.gob.ar/sites/default/files/provinciales_serie_remuneraciones_mensual_2dig_9.xlsx https://www.argentina.gob.ar/sites/default/files/provinciales_serie_empleo_trimestral_2dig_7.xlsx",
+    "https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv"
+  ],
+  "columnas": {
+    "total_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: total del país (promedio de las ramas) (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "total_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: total del país (promedio de las ramas), var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "agro_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Agricultura, ganadería, caza y silvicultura, total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "agro_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Agricultura, ganadería, caza y silvicultura, total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pesca_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Pesca, total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "pesca_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Pesca, total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "mineria_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Explotación de minas y canteras (incluye petróleo y gas), total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "mineria_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Explotación de minas y canteras (incluye petróleo y gas), total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "petroleo_gas_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Extracción de petróleo crudo y gas natural (incluye servicios a la extracción), total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "petroleo_gas_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Extracción de petróleo crudo y gas natural (incluye servicios a la extracción), total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "industria_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Industria manufacturera, total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "industria_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Industria manufacturera, total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "refinacion_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Refinación de petróleo y coque (productos de petróleo), total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "refinacion_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Refinación de petróleo y coque (productos de petróleo), total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "electricidad_gas_agua_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Electricidad, gas y agua, total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "electricidad_gas_agua_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Electricidad, gas y agua, total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "construccion_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Construcción, total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "construccion_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Construcción, total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "comercio_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Comercio, total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "comercio_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Comercio, total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "venta_combustibles_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Venta y reparación de vehículos y venta al por menor de combustible, total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "venta_combustibles_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Venta y reparación de vehículos y venta al por menor de combustible, total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "hoteles_restaurantes_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Hoteles y restaurantes, total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "hoteles_restaurantes_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Hoteles y restaurantes, total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "transporte_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Transporte, almacenamiento y comunicaciones, total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "transporte_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Transporte, almacenamiento y comunicaciones, total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "transporte_terrestre_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Transporte terrestre y por tuberías, total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "transporte_terrestre_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Transporte terrestre y por tuberías, total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "finanzas_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Intermediación financiera, total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "finanzas_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Intermediación financiera, total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "inmobiliarias_empresariales_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Servicios inmobiliarios, empresariales y de alquiler, total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "inmobiliarias_empresariales_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Servicios inmobiliarios, empresariales y de alquiler, total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ensenanza_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Enseñanza, total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "ensenanza_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Enseñanza, total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "salud_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Servicios sociales y de salud, total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "salud_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Servicios sociales y de salud, total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "otros_servicios_real": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Otros servicios comunitarios, sociales y personales, total del país (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "otros_servicios_real_var_ia": {
+      "nombre": "Remuneración promedio real, asalariados registrados privados: Otros servicios comunitarios, sociales y personales, total del país, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "petroleo_gas_neuquen_real": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Neuquén (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "petroleo_gas_neuquen_real_var_ia": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Neuquén, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "petroleo_gas_chubut_real": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Chubut (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "petroleo_gas_chubut_real_var_ia": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Chubut, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "petroleo_gas_santa_cruz_real": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Santa Cruz (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "petroleo_gas_santa_cruz_real_var_ia": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Santa Cruz, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "petroleo_gas_mendoza_real": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Mendoza (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "petroleo_gas_mendoza_real_var_ia": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Mendoza, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "petroleo_gas_rio_negro_real": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Río Negro (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "petroleo_gas_rio_negro_real_var_ia": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Río Negro, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "petroleo_gas_tierra_del_fuego_real": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Tierra del Fuego (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "petroleo_gas_tierra_del_fuego_real_var_ia": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Tierra del Fuego, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "petroleo_gas_salta_real": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Salta (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "petroleo_gas_salta_real_var_ia": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Salta, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "petroleo_gas_caba_real": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Ciudad de Buenos Aires (a precios del último IPC)",
+      "tipo": "nivel",
+      "unidad": "Pesos del último IPC publicado"
+    },
+    "petroleo_gas_caba_real_var_ia": {
+      "nombre": "Remuneración promedio real, extracción de petróleo y gas: Ciudad de Buenos Aires, var. % interanual real",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-10-30T18:03:55Z",
+  "calculado": "2026-10-30T18:03:55Z",
+  "ultimo_periodo": "2026-06",
+  "observaciones": 115,
+  "deflactor": "IPC nacional (ipc.nacional_nivel_general_indice)",
+  "precios_del_ultimo_mes": "2026-09"
+}

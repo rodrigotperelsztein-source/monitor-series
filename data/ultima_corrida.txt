@@ -1,3 +1,11 @@
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:118: UserWarning: Print area cannot be set to Defined name: 'La Rioja'!$1:$82.
+  warn(f"Print area cannot be set to Defined name: {defn.value}.")
+/home/runner/work/monitor-series/monitor-series/pipeline/fuentes/_oede_ramas.py:93: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  vals = pd.to_numeric(df.iloc[i, 2:].replace({"s.d.": np.nan}), errors="coerce").values
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:118: UserWarning: Print area cannot be set to Defined name: 'La Rioja'!$1:$82.
+  warn(f"Print area cannot be set to Defined name: {defn.value}.")
+/home/runner/work/monitor-series/monitor-series/pipeline/fuentes/_oede_ramas.py:93: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  vals = pd.to_numeric(df.iloc[i, 2:].replace({"s.d.": np.nan}), errors="coerce").values
 [calendario INDEC]
   2.º sem. 2026: 174 publicaciones; 1.º sem. 2027: todavía no publicado
 [emae]
@@ -19,11 +27,11 @@
 [salarios]
   sin cambios en el archivo
 [sube]
-  actualizada: último período 2026-10 → 2026-10-28; valores revisados: 0
+  sin cambios en el archivo
 [petroleo]
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-10 → 2026-10-29; valores revisados: 0
 [refinados]
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-10 → 2026-10-29; valores revisados: 0
 [acciones_energia]
   archivo distinto pero mismos datos
 [ventas_combustibles]
@@ -45,6 +53,10 @@
   sin cambios en el archivo
 [remuneraciones_provincias]
   sin cambios en el archivo
+[salarios_ramas]
+  actualizada: último período — → 2026-06; valores revisados: 0
+[empleo_ramas]
+  actualizada: último período — → 2026-01; valores revisados: 0
 [emae_letras_desest]
   sin cambios en las series de base
 [ipi_minero_desest]
@@ -54,13 +66,13 @@
 [salarios_real]
   sin cambios en las series de base
 [sube_mensual]
-  recalculada: último período 2026-09 → 2026-09
+  sin cambios en las series de base
 [sube_desest]
   sin cambios en las series de base
 [petroleo_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-09 → 2026-09
 [refinados_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-09 → 2026-09
 [acciones_energia_mensual]
   sin cambios en las series de base
 [ventas_combustibles_desest]
@@ -75,6 +87,8 @@
   sin cambios en las series de base
 [remuneraciones_provincias_real_desest]
   sin cambios en las series de base
+[salarios_ramas_real]
+  recalculada: último período — → 2026-06
 [catálogo de Monitor Argy]
   839 series
 [series de Monitor Argy (copia)]

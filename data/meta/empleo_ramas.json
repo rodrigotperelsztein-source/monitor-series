@@ -1,0 +1,240 @@
+{
+  "id": "empleo_ramas",
+  "nombre": "Puestos de trabajo asalariados registrados del sector privado, por rama de actividad (OEDE, SIPA)",
+  "url": "https://www.argentina.gob.ar/sites/default/files/provinciales_serie_remuneraciones_mensual_2dig_9.xlsx https://www.argentina.gob.ar/sites/default/files/provinciales_serie_empleo_trimestral_2dig_7.xlsx",
+  "pagina": "https://www.argentina.gob.ar/trabajo/estadisticas/oede-estadisticas-provinciales",
+  "frecuencia": "Q",
+  "unidad": "Puestos de trabajo",
+  "sha256": "0138af7788199b62022b038ff186681fddf8bd3b3b330ebe6db211d91c6dc73a",
+  "columnas": {
+    "total": {
+      "nombre": "Puestos asalariados registrados privados: total del país (suma de las ramas)",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "agro": {
+      "nombre": "Puestos asalariados registrados privados: Agricultura, ganadería, caza y silvicultura, total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "pesca": {
+      "nombre": "Puestos asalariados registrados privados: Pesca, total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "mineria": {
+      "nombre": "Puestos asalariados registrados privados: Explotación de minas y canteras (incluye petróleo y gas), total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "petroleo_gas": {
+      "nombre": "Puestos asalariados registrados privados: Extracción de petróleo crudo y gas natural (incluye servicios a la extracción), total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "industria": {
+      "nombre": "Puestos asalariados registrados privados: Industria manufacturera, total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "refinacion": {
+      "nombre": "Puestos asalariados registrados privados: Refinación de petróleo y coque (productos de petróleo), total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "electricidad_gas_agua": {
+      "nombre": "Puestos asalariados registrados privados: Electricidad, gas y agua, total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "construccion": {
+      "nombre": "Puestos asalariados registrados privados: Construcción, total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "comercio": {
+      "nombre": "Puestos asalariados registrados privados: Comercio, total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "venta_combustibles": {
+      "nombre": "Puestos asalariados registrados privados: Venta y reparación de vehículos y venta al por menor de combustible, total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "hoteles_restaurantes": {
+      "nombre": "Puestos asalariados registrados privados: Hoteles y restaurantes, total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "transporte": {
+      "nombre": "Puestos asalariados registrados privados: Transporte, almacenamiento y comunicaciones, total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "transporte_terrestre": {
+      "nombre": "Puestos asalariados registrados privados: Transporte terrestre y por tuberías, total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "finanzas": {
+      "nombre": "Puestos asalariados registrados privados: Intermediación financiera, total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "inmobiliarias_empresariales": {
+      "nombre": "Puestos asalariados registrados privados: Servicios inmobiliarios, empresariales y de alquiler, total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "ensenanza": {
+      "nombre": "Puestos asalariados registrados privados: Enseñanza, total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "salud": {
+      "nombre": "Puestos asalariados registrados privados: Servicios sociales y de salud, total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "otros_servicios": {
+      "nombre": "Puestos asalariados registrados privados: Otros servicios comunitarios, sociales y personales, total del país",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "agro_part": {
+      "nombre": "Participación en el empleo privado registrado: Agricultura, ganadería, caza y silvicultura",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "pesca_part": {
+      "nombre": "Participación en el empleo privado registrado: Pesca",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "mineria_part": {
+      "nombre": "Participación en el empleo privado registrado: Explotación de minas y canteras (incluye petróleo y gas)",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "petroleo_gas_part": {
+      "nombre": "Participación en el empleo privado registrado: Extracción de petróleo crudo y gas natural (incluye servicios a la extracción)",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "industria_part": {
+      "nombre": "Participación en el empleo privado registrado: Industria manufacturera",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "refinacion_part": {
+      "nombre": "Participación en el empleo privado registrado: Refinación de petróleo y coque (productos de petróleo)",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "electricidad_gas_agua_part": {
+      "nombre": "Participación en el empleo privado registrado: Electricidad, gas y agua",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "construccion_part": {
+      "nombre": "Participación en el empleo privado registrado: Construcción",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "comercio_part": {
+      "nombre": "Participación en el empleo privado registrado: Comercio",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "venta_combustibles_part": {
+      "nombre": "Participación en el empleo privado registrado: Venta y reparación de vehículos y venta al por menor de combustible",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "hoteles_restaurantes_part": {
+      "nombre": "Participación en el empleo privado registrado: Hoteles y restaurantes",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "transporte_part": {
+      "nombre": "Participación en el empleo privado registrado: Transporte, almacenamiento y comunicaciones",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "transporte_terrestre_part": {
+      "nombre": "Participación en el empleo privado registrado: Transporte terrestre y por tuberías",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "finanzas_part": {
+      "nombre": "Participación en el empleo privado registrado: Intermediación financiera",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "inmobiliarias_empresariales_part": {
+      "nombre": "Participación en el empleo privado registrado: Servicios inmobiliarios, empresariales y de alquiler",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "ensenanza_part": {
+      "nombre": "Participación en el empleo privado registrado: Enseñanza",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "salud_part": {
+      "nombre": "Participación en el empleo privado registrado: Servicios sociales y de salud",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "otros_servicios_part": {
+      "nombre": "Participación en el empleo privado registrado: Otros servicios comunitarios, sociales y personales",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "petroleo_gas_neuquen": {
+      "nombre": "Puestos asalariados registrados, extracción de petróleo y gas: Neuquén",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "petroleo_gas_chubut": {
+      "nombre": "Puestos asalariados registrados, extracción de petróleo y gas: Chubut",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "petroleo_gas_santa_cruz": {
+      "nombre": "Puestos asalariados registrados, extracción de petróleo y gas: Santa Cruz",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "petroleo_gas_mendoza": {
+      "nombre": "Puestos asalariados registrados, extracción de petróleo y gas: Mendoza",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "petroleo_gas_rio_negro": {
+      "nombre": "Puestos asalariados registrados, extracción de petróleo y gas: Río Negro",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "petroleo_gas_tierra_del_fuego": {
+      "nombre": "Puestos asalariados registrados, extracción de petróleo y gas: Tierra del Fuego",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "petroleo_gas_salta": {
+      "nombre": "Puestos asalariados registrados, extracción de petróleo y gas: Salta",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    },
+    "petroleo_gas_caba": {
+      "nombre": "Puestos asalariados registrados, extracción de petróleo y gas: Ciudad de Buenos Aires",
+      "tipo": "nivel",
+      "unidad": "Puestos de trabajo"
+    }
+  },
+  "descargado": "2026-10-30T18:03:55Z",
+  "ultimo_periodo": "2026-01",
+  "observaciones": 121,
+  "original_guardado": null
+}

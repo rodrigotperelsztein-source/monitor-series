@@ -1,0 +1,150 @@
+{
+  "id": "salarios_ramas",
+  "nombre": "Remuneración promedio de los asalariados registrados del sector privado, por rama de actividad (OEDE, SIPA)",
+  "url": "https://www.argentina.gob.ar/sites/default/files/provinciales_serie_remuneraciones_mensual_2dig_9.xlsx https://www.argentina.gob.ar/sites/default/files/provinciales_serie_empleo_trimestral_2dig_7.xlsx",
+  "pagina": "https://www.argentina.gob.ar/trabajo/estadisticas/oede-estadisticas-provinciales",
+  "frecuencia": "M",
+  "unidad": "Pesos corrientes por mes",
+  "sha256": "d1685b264d8fdedeede15c1991e163f1d751471780a673d75187af2441a68041",
+  "columnas": {
+    "total": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: total del país (promedio de las ramas)",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "agro": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Agricultura, ganadería, caza y silvicultura, total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "pesca": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Pesca, total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "mineria": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Explotación de minas y canteras (incluye petróleo y gas), total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "petroleo_gas": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Extracción de petróleo crudo y gas natural (incluye servicios a la extracción), total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "industria": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Industria manufacturera, total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "refinacion": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Refinación de petróleo y coque (productos de petróleo), total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "electricidad_gas_agua": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Electricidad, gas y agua, total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "construccion": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Construcción, total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "comercio": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Comercio, total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "venta_combustibles": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Venta y reparación de vehículos y venta al por menor de combustible, total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "hoteles_restaurantes": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Hoteles y restaurantes, total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "transporte": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Transporte, almacenamiento y comunicaciones, total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "transporte_terrestre": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Transporte terrestre y por tuberías, total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "finanzas": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Intermediación financiera, total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "inmobiliarias_empresariales": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Servicios inmobiliarios, empresariales y de alquiler, total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "ensenanza": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Enseñanza, total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "salud": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Servicios sociales y de salud, total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "otros_servicios": {
+      "nombre": "Remuneración promedio, asalariados registrados privados: Otros servicios comunitarios, sociales y personales, total del país",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "petroleo_gas_neuquen": {
+      "nombre": "Remuneración promedio, extracción de petróleo y gas: Neuquén",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "petroleo_gas_chubut": {
+      "nombre": "Remuneración promedio, extracción de petróleo y gas: Chubut",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "petroleo_gas_santa_cruz": {
+      "nombre": "Remuneración promedio, extracción de petróleo y gas: Santa Cruz",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "petroleo_gas_mendoza": {
+      "nombre": "Remuneración promedio, extracción de petróleo y gas: Mendoza",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "petroleo_gas_rio_negro": {
+      "nombre": "Remuneración promedio, extracción de petróleo y gas: Río Negro",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "petroleo_gas_tierra_del_fuego": {
+      "nombre": "Remuneración promedio, extracción de petróleo y gas: Tierra del Fuego",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "petroleo_gas_salta": {
+      "nombre": "Remuneración promedio, extracción de petróleo y gas: Salta",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    },
+    "petroleo_gas_caba": {
+      "nombre": "Remuneración promedio, extracción de petróleo y gas: Ciudad de Buenos Aires",
+      "tipo": "nivel",
+      "unidad": "Pesos corrientes por mes"
+    }
+  },
+  "descargado": "2026-10-30T18:03:55Z",
+  "ultimo_periodo": "2026-06",
+  "observaciones": 366,
+  "original_guardado": null
+}

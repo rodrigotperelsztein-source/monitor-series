@@ -5,7 +5,7 @@
   "pagina": "https://cammesaweb.cammesa.com/2026/10/16/covid-19-comportamiento-de-la-demanda-de-energia-electrica-en-el-mem/",
   "frecuencia": "M",
   "unidad": "MW (demanda media)",
-  "sha256": "6cd22aa68621c4185b072f838db84bdd30a51224700f29ba78274b3d7b5b8ce1",
+  "sha256": "bae495cf4ef58b70764d372e176da91664ce15e2a2d92b402fe956329fd67ab7",
   "derivada_de": [
     "cammesa_gu_actividad"
   ],
@@ -299,8 +299,8 @@
       "unidad": "MW (demanda media)"
     }
   },
-  "descargado": "2026-10-24T05:02:43Z",
-  "calculado": "2026-10-24T05:02:43Z",
+  "descargado": "2026-10-31T06:18:29Z",
+  "calculado": "2026-10-31T06:18:29Z",
   "ultimo_periodo": "2026-09",
   "observaciones": 57
 }

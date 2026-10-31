@@ -5,7 +5,7 @@
   "pagina": "https://cammesaweb.cammesa.com/2026/10/16/covid-19-comportamiento-de-la-demanda-de-energia-electrica-en-el-mem/",
   "frecuencia": "D",
   "unidad": "MW (demanda media del día)",
-  "sha256": "cef38291888f0cf02f6fb913bd801cb0b920dff24c68e354dbbc242cfb74b81d",
+  "sha256": "ba601c26c05d6a2f3932f1a9db56044ec625f9a4cda1ac2683d780ebdfef639b",
   "columnas": {
     "total": {
       "nombre": "Demanda de grandes usuarios (GUMA), total (autogeneradores + GUMAs)",
@@ -108,8 +108,8 @@
       "unidad": "indicador"
     }
   },
-  "descargado": "2026-10-24T05:02:43Z",
-  "ultimo_periodo": "2026-10-21",
-  "observaciones": 1755,
+  "descargado": "2026-10-31T06:18:29Z",
+  "ultimo_periodo": "2026-10-28",
+  "observaciones": 1762,
   "original_guardado": null
 }

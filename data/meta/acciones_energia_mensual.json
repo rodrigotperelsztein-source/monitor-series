@@ -5,12 +5,12 @@
   "pagina": "https://www.nasdaq.com/market-activity/stocks/ypf/historical",
   "frecuencia": "M",
   "unidad": "Dólares por acción (ADR)",
-  "sha256": "8951a46685f1f5a30402e3f0e2fc82aba03fa3a5dfb09b9b44599b9377852c84",
+  "sha256": "8e0853e941cf9ae695cb4b3dd7fa09ff6d9a9fe974db3510b4a197a1c7a5f674",
   "derivada_de": [
     "acciones_energia"
   ],
   "archivos_de_origen": [
-    "https://api.nasdaq.com/api/quote/YPF/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-30&limit=9999 https://api.nasdaq.com/api/quote/VIST/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-30&limit=9999 https://api.nasdaq.com/api/quote/PAM/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-30&limit=9999 https://api.nasdaq.com/api/quote/TGS/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-30&limit=9999"
+    "https://api.nasdaq.com/api/quote/YPF/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-31&limit=9999 https://api.nasdaq.com/api/quote/VIST/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-31&limit=9999 https://api.nasdaq.com/api/quote/PAM/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-31&limit=9999 https://api.nasdaq.com/api/quote/TGS/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-10-31&limit=9999"
   ],
   "columnas": {
     "ypf": {
@@ -74,8 +74,8 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-10-30T06:28:30Z",
-  "calculado": "2026-10-30T06:28:30Z",
+  "descargado": "2026-10-31T06:18:29Z",
+  "calculado": "2026-10-31T06:18:29Z",
   "ultimo_periodo": "2026-09",
   "observaciones": 120
 }

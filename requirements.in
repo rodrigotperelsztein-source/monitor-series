@@ -12,4 +12,4 @@ numpy>=2.0,<2.3  # la versión con la que se probaron pandas 2.2 y la desestacio
 # Pisos por seguridad (alertas de Dependabot / pip-audit, oct-2026):
 pdfminer.six>=20251230  # carga insegura de pickle en CMap
 pillow>=13.0.0          # varios errores de memoria en TIFF/GIF/PDF
-certifi>=2026.10.19     # quita la raíz emSign ECC G3 (intermedios comprometidos)
+certifi>=2026.10.23     # quita la raíz emSign ECC G3 (intermedios comprometidos)

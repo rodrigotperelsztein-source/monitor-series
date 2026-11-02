@@ -5,7 +5,7 @@
   "pagina": "https://cammesaweb.cammesa.com/informe-sintesis-mensual/",
   "frecuencia": "M",
   "unidad": "GWh",
-  "sha256": "3c082cf26d36765371db2cef1031a7f1abfa28ea8cdae98d4fc24e40b4a7c974",
+  "sha256": "c7a98b055fe585214cf2458cc9ce8bb4ae3efa77957992e1e54b82bee345a5c3",
   "columnas": {
     "demanda_mercado": {
       "nombre": "Demanda de energía eléctrica: distribuidoras + grandes usuarios",

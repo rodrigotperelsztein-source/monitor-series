@@ -4946,7 +4946,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "CIARA-CEC",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -4957,7 +4957,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "CIARA-CEC vía datos.gob.ar · desest. propia (X-13)",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -4968,7 +4968,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "CIARA-CEC vía datos.gob.ar · desest. propia (X-13)",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -4979,7 +4979,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "CIARA-CEC vía datos.gob.ar",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -4990,7 +4990,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "CIARA-CEC",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -5650,7 +5650,7 @@
 "unidad": "miles",
 "frecuencia": "M",
 "fuente": "DNRPA (Ministerio de Justicia)",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -5661,7 +5661,7 @@
 "unidad": "miles",
 "frecuencia": "M",
 "fuente": "DNRPA (Ministerio de Justicia) · desest. propia (X-13)",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -5672,7 +5672,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "DNRPA (Ministerio de Justicia) · desest. propia (X-13)",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -5683,7 +5683,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "DNRPA (Ministerio de Justicia)",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -5694,7 +5694,7 @@
 "unidad": "miles",
 "frecuencia": "M",
 "fuente": "DNRPA (Ministerio de Justicia)",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -5705,7 +5705,7 @@
 "unidad": "miles",
 "frecuencia": "M",
 "fuente": "DNRPA (Ministerio de Justicia) · desest. propia (X-13)",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -5716,7 +5716,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "DNRPA (Ministerio de Justicia) · desest. propia (X-13)",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -5727,7 +5727,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "DNRPA (Ministerio de Justicia)",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {

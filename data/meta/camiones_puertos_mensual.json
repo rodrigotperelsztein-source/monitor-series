@@ -5,12 +5,12 @@
   "pagina": "https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/logistica/_archivos/000023_Posici%C3%B3n%20de%20Camiones%20y%20Vagones/000020_Entrada%20diaria%20de%20camiones%20y%20vagones%20a%20puertos,%20f%C3%A1bricas%20y%20molinos%20(por%20zona%20portuaria%20y%20por%20producto).php",
   "frecuencia": "M",
   "unidad": "Camiones por mes",
-  "sha256": "cf378b4ad1d3aaecd4efd34eb36423a1f56ddd0576bc38615aa4cc171c76ff65",
+  "sha256": "5fa0273f842b557aab92d03f54c030abee510a92474801dafce9133d43bf9b8d",
   "derivada_de": [
     "camiones_puertos"
   ],
   "archivos_de_origen": [
-    "https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/logistica/_archivos/000023_Posici%C3%B3n%20de%20Camiones%20y%20Vagones/000020_Entrada%20diaria%20de%20camiones%20y%20vagones%20a%20puertos,%20f%C3%A1bricas%20y%20molinos%20(por%20zona%20portuaria%20y%20por%20producto).php https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2026/total_mensual_sep_2026.pdf"
+    "https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/logistica/_archivos/000023_Posici%C3%B3n%20de%20Camiones%20y%20Vagones/000020_Entrada%20diaria%20de%20camiones%20y%20vagones%20a%20puertos,%20f%C3%A1bricas%20y%20molinos%20(por%20zona%20portuaria%20y%20por%20producto).php"
   ],
   "columnas": {
     "total": {
@@ -134,8 +134,8 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-10-24T05:02:43Z",
-  "calculado": "2026-10-24T05:02:43Z",
-  "ultimo_periodo": "2026-09",
-  "observaciones": 33
+  "descargado": "2026-11-02T15:01:11Z",
+  "calculado": "2026-11-02T15:01:11Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 34
 }

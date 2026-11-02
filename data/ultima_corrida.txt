@@ -12,6 +12,10 @@
   no se revisa hoy (solo los días 20 a fin de mes)
 [estimaciones_agricolas]
   no se revisa hoy (solo los días 12 a fin de mes)
+[itcrm]
+  actualizada: último período — → 2026-10-30; valores revisados: 0
+[itcrm_mensual]
+  actualizada: último período — → 2026-10; valores revisados: 0
 [emae]
   sin cambios en el archivo
 [emae_letras]
@@ -31,19 +35,22 @@
 [salarios]
   sin cambios en el archivo
 [sube]
-  actualizada: último período 2026-10 → 2026-10-31; valores revisados: 0
+  sin cambios en el archivo
 [petroleo]
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-10 → 2026-10-30; valores revisados: 0
 [refinados]
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-10 → 2026-10-30; valores revisados: 0
 [acciones_energia]
   archivo distinto pero mismos datos
 [came]
   archivo distinto pero mismos datos
 [camiones_puertos]
-  sin cambios en el archivo
+  aviso: 3 días sin dato en la fuente: ['2024-08-31', '2025-02-28', '2025-12-31']
+  aviso: en 1 días la suma por zonas no da el total: ['2026-10-27']
+  aviso: en 1 días la suma por productos no da el total: ['2024-09-26']
+  actualizada: último período 2026-10 → 2026-10-31; valores revisados: 0
 [cammesa_balance]
-  sin cambios en el archivo
+  archivo distinto pero mismos datos
 [cammesa_diaria]
   sin cambios en el archivo
 [cammesa_gu_actividad]
@@ -65,19 +72,19 @@
 [salarios_real]
   sin cambios en las series de base
 [sube_mensual]
-  recalculada: último período 2026-09 → 2026-10
+  sin cambios en las series de base
 [sube_desest]
-  recalculada: último período 2026-09 → 2026-10
+  sin cambios en las series de base
 [petroleo_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-09 → 2026-09
 [refinados_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-09 → 2026-09
 [acciones_energia_mensual]
   sin cambios en las series de base
 [ventas_combustibles_desest]
   sin cambios en las series de base
 [camiones_puertos_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-09 → 2026-10
 [cammesa_gu_actividad_mensual]
   sin cambios en las series de base
 [remuneraciones_provincias_real]

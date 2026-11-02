@@ -1,0 +1,90 @@
+{
+  "id": "itcrm",
+  "nombre": "Tipo de cambio real multilateral y bilaterales (BCRA), diario",
+  "url": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/itcrm-serie.xlsx",
+  "pagina": "https://www.bcra.gob.ar/indices-de-tipo-de-cambio-multilateral/",
+  "frecuencia": "D",
+  "unidad": "Índice 17-12-2015=100",
+  "sha256": "58fb9d1c089bcb0d0a0a633c000d5c0c16934f96437da4eee7595d7c745e3e15",
+  "columnas": {
+    "multilateral": {
+      "nombre": "Tipo de cambio real multilateral (ITCRM)",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "brasil": {
+      "nombre": "Tipo de cambio real bilateral con Brasil",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "estados_unidos": {
+      "nombre": "Tipo de cambio real bilateral con Estados Unidos",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "china": {
+      "nombre": "Tipo de cambio real bilateral con China",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "zona_euro": {
+      "nombre": "Tipo de cambio real bilateral con la zona del euro",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "chile": {
+      "nombre": "Tipo de cambio real bilateral con Chile",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "uruguay": {
+      "nombre": "Tipo de cambio real bilateral con Uruguay",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "mexico": {
+      "nombre": "Tipo de cambio real bilateral con México",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "canada": {
+      "nombre": "Tipo de cambio real bilateral con Canadá",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "india": {
+      "nombre": "Tipo de cambio real bilateral con India",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "japon": {
+      "nombre": "Tipo de cambio real bilateral con Japón",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "reino_unido": {
+      "nombre": "Tipo de cambio real bilateral con el Reino Unido",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "suiza": {
+      "nombre": "Tipo de cambio real bilateral con Suiza",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "vietnam": {
+      "nombre": "Tipo de cambio real bilateral con Vietnam",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "sudamerica": {
+      "nombre": "Tipo de cambio real bilateral con Sudamérica (promedio de Brasil, Chile y Uruguay)",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    }
+  },
+  "descargado": "2026-11-02T15:01:11Z",
+  "ultimo_periodo": "2026-10-30",
+  "observaciones": 10895,
+  "original_guardado": null
+}

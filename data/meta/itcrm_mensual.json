@@ -1,0 +1,240 @@
+{
+  "id": "itcrm_mensual",
+  "nombre": "Tipo de cambio real multilateral y bilaterales (BCRA), promedio mensual",
+  "url": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/itcrm-serie.xlsx",
+  "pagina": "https://www.bcra.gob.ar/indices-de-tipo-de-cambio-multilateral/",
+  "frecuencia": "M",
+  "unidad": "Índice 17-12-2015=100",
+  "sha256": "58fb9d1c089bcb0d0a0a633c000d5c0c16934f96437da4eee7595d7c745e3e15",
+  "columnas": {
+    "multilateral": {
+      "nombre": "Tipo de cambio real multilateral (ITCRM), promedio mensual",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "multilateral_var_m": {
+      "nombre": "Tipo de cambio real multilateral (ITCRM), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "multilateral_var_ia": {
+      "nombre": "Tipo de cambio real multilateral (ITCRM), var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "brasil": {
+      "nombre": "Tipo de cambio real bilateral con Brasil, promedio mensual",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "brasil_var_m": {
+      "nombre": "Tipo de cambio real bilateral con Brasil, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "brasil_var_ia": {
+      "nombre": "Tipo de cambio real bilateral con Brasil, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "estados_unidos": {
+      "nombre": "Tipo de cambio real bilateral con Estados Unidos, promedio mensual",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "estados_unidos_var_m": {
+      "nombre": "Tipo de cambio real bilateral con Estados Unidos, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "estados_unidos_var_ia": {
+      "nombre": "Tipo de cambio real bilateral con Estados Unidos, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "china": {
+      "nombre": "Tipo de cambio real bilateral con China, promedio mensual",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "china_var_m": {
+      "nombre": "Tipo de cambio real bilateral con China, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "china_var_ia": {
+      "nombre": "Tipo de cambio real bilateral con China, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "zona_euro": {
+      "nombre": "Tipo de cambio real bilateral con la zona del euro, promedio mensual",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "zona_euro_var_m": {
+      "nombre": "Tipo de cambio real bilateral con la zona del euro, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "zona_euro_var_ia": {
+      "nombre": "Tipo de cambio real bilateral con la zona del euro, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "chile": {
+      "nombre": "Tipo de cambio real bilateral con Chile, promedio mensual",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "chile_var_m": {
+      "nombre": "Tipo de cambio real bilateral con Chile, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "chile_var_ia": {
+      "nombre": "Tipo de cambio real bilateral con Chile, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "uruguay": {
+      "nombre": "Tipo de cambio real bilateral con Uruguay, promedio mensual",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "uruguay_var_m": {
+      "nombre": "Tipo de cambio real bilateral con Uruguay, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "uruguay_var_ia": {
+      "nombre": "Tipo de cambio real bilateral con Uruguay, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "mexico": {
+      "nombre": "Tipo de cambio real bilateral con México, promedio mensual",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "mexico_var_m": {
+      "nombre": "Tipo de cambio real bilateral con México, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "mexico_var_ia": {
+      "nombre": "Tipo de cambio real bilateral con México, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "canada": {
+      "nombre": "Tipo de cambio real bilateral con Canadá, promedio mensual",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "canada_var_m": {
+      "nombre": "Tipo de cambio real bilateral con Canadá, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "canada_var_ia": {
+      "nombre": "Tipo de cambio real bilateral con Canadá, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "india": {
+      "nombre": "Tipo de cambio real bilateral con India, promedio mensual",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "india_var_m": {
+      "nombre": "Tipo de cambio real bilateral con India, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "india_var_ia": {
+      "nombre": "Tipo de cambio real bilateral con India, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "japon": {
+      "nombre": "Tipo de cambio real bilateral con Japón, promedio mensual",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "japon_var_m": {
+      "nombre": "Tipo de cambio real bilateral con Japón, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "japon_var_ia": {
+      "nombre": "Tipo de cambio real bilateral con Japón, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "reino_unido": {
+      "nombre": "Tipo de cambio real bilateral con el Reino Unido, promedio mensual",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "reino_unido_var_m": {
+      "nombre": "Tipo de cambio real bilateral con el Reino Unido, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "reino_unido_var_ia": {
+      "nombre": "Tipo de cambio real bilateral con el Reino Unido, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "suiza": {
+      "nombre": "Tipo de cambio real bilateral con Suiza, promedio mensual",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "suiza_var_m": {
+      "nombre": "Tipo de cambio real bilateral con Suiza, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "suiza_var_ia": {
+      "nombre": "Tipo de cambio real bilateral con Suiza, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vietnam": {
+      "nombre": "Tipo de cambio real bilateral con Vietnam, promedio mensual",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "vietnam_var_m": {
+      "nombre": "Tipo de cambio real bilateral con Vietnam, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vietnam_var_ia": {
+      "nombre": "Tipo de cambio real bilateral con Vietnam, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "sudamerica": {
+      "nombre": "Tipo de cambio real bilateral con Sudamérica (promedio de Brasil, Chile y Uruguay), promedio mensual",
+      "tipo": "nivel",
+      "unidad": "Índice 17-12-2015=100"
+    },
+    "sudamerica_var_m": {
+      "nombre": "Tipo de cambio real bilateral con Sudamérica (promedio de Brasil, Chile y Uruguay), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "sudamerica_var_ia": {
+      "nombre": "Tipo de cambio real bilateral con Sudamérica (promedio de Brasil, Chile y Uruguay), var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-02T15:01:11Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 358,
+  "original_guardado": null
+}

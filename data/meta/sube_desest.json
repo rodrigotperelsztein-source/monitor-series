@@ -5,7 +5,7 @@
   "pagina": "https://datos.transporte.gob.ar/dataset/sube-cantidad-de-transacciones-usos-por-fecha",
   "frecuencia": "M",
   "unidad": "Transacciones por mes",
-  "sha256": "847c8f15b0c2327702e510e7b1ae524945995100934206b3f4948e2417086788",
+  "sha256": "0cf5aab5beeeb7a835f420f5527c1093b19c35901b9b296681b32803d8a7c3d7",
   "derivada_de": [
     "sube_mensual"
   ],
@@ -74,10 +74,10 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-10-21T12:53:13Z",
-  "calculado": "2026-10-21T18:25:59Z",
-  "ultimo_periodo": "2026-09",
-  "observaciones": 81,
+  "descargado": "2026-11-02T12:35:07Z",
+  "calculado": "2026-11-02T12:35:07Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 82,
   "desestacionalizacion": {
     "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
     "version_especificaciones": "2026-10-21",
@@ -109,16 +109,16 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "No transformation",
-        "aicc": 609.738033394116,
+        "aicc": 614.108889419468,
         "calendario": {
           "dias_semana": {
-            "chi2": 105.88,
+            "chi2": 327.92,
             "gl": 7,
             "p": 0.0
           },
           "feriados": {
-            "coef": -5.395616,
-            "t": -4.36
+            "coef": -5.582945,
+            "t": -7.63
           },
           "pascua": null
         },
@@ -137,10 +137,10 @@
           }
         ],
         "calidad": {
-          "m7": 0.588,
-          "q": 0.52,
-          "qs_desest_p": 0.83085,
-          "qs_irregular_p": 0.1752,
+          "m7": 0.608,
+          "q": 0.59,
+          "qs_desest_p": 0.67923,
+          "qs_irregular_p": 0.28985,
           "ljungbox_rezagos_significativos": 0
         },
         "advertencias": []
@@ -168,16 +168,16 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "No transformation",
-        "aicc": 586.285065066178,
+        "aicc": 594.488899141813,
         "calendario": {
           "dias_semana": {
-            "chi2": 49.91,
+            "chi2": 53.22,
             "gl": 7,
             "p": 0.0
           },
           "feriados": {
-            "coef": -1.538174,
-            "t": -1.0
+            "coef": -1.79972,
+            "t": -1.19
           },
           "pascua": null
         },
@@ -192,9 +192,9 @@
           }
         ],
         "calidad": {
-          "m7": 0.38,
-          "q": 0.27,
-          "qs_desest_p": 0.94403,
+          "m7": 0.39,
+          "q": 0.28,
+          "qs_desest_p": 0.95917,
           "qs_irregular_p": 1.0,
           "ljungbox_rezagos_significativos": 0
         },
@@ -219,16 +219,16 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "No transformation",
-        "aicc": 417.006502965123,
+        "aicc": 423.146919326172,
         "calendario": {
           "dias_semana": {
-            "chi2": 93.54,
+            "chi2": 98.54,
             "gl": 7,
             "p": 0.0
           },
           "feriados": {
-            "coef": -0.99145,
-            "t": -2.62
+            "coef": -1.095411,
+            "t": -2.98
           },
           "pascua": null
         },
@@ -239,10 +239,10 @@
           }
         ],
         "calidad": {
-          "m7": 0.846,
-          "q": 0.53,
+          "m7": 0.841,
+          "q": 0.55,
           "qs_desest_p": 1.0,
-          "qs_irregular_p": 0.07329,
+          "qs_irregular_p": 0.07244,
           "ljungbox_rezagos_significativos": 0
         },
         "advertencias": []
@@ -270,16 +270,16 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(1 1 0)(0 1 1)",
         "transformacion": "No transformation",
-        "aicc": 599.81522711634,
+        "aicc": 608.447915373427,
         "calendario": {
           "dias_semana": {
-            "chi2": 64.86,
+            "chi2": 66.74,
             "gl": 7,
             "p": 0.0
           },
           "feriados": {
-            "coef": -2.759335,
-            "t": -1.77
+            "coef": -3.029542,
+            "t": -1.96
           },
           "pascua": null
         },
@@ -294,11 +294,11 @@
           }
         ],
         "calidad": {
-          "m7": 0.468,
-          "q": 0.36,
-          "qs_desest_p": 0.99994,
-          "qs_irregular_p": 0.2647,
-          "ljungbox_rezagos_significativos": 2
+          "m7": 0.474,
+          "q": 0.39,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 0.23502,
+          "ljungbox_rezagos_significativos": 0
         },
         "advertencias": []
       },
@@ -357,16 +357,16 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "No transformation",
-        "aicc": 206.434231972513,
+        "aicc": 218.652363819298,
         "calendario": {
           "dias_semana": {
-            "chi2": 251.77,
+            "chi2": 209.52,
             "gl": 7,
             "p": 0.0
           },
           "feriados": {
-            "coef": -0.088398,
-            "t": -1.35
+            "coef": -0.077839,
+            "t": -1.1
           },
           "pascua": null
         },
@@ -413,11 +413,11 @@
           }
         ],
         "calidad": {
-          "m7": 0.316,
-          "q": 0.47,
-          "qs_desest_p": 0.22471,
+          "m7": 0.341,
+          "q": 0.49,
+          "qs_desest_p": 0.20394,
           "qs_irregular_p": 1.0,
-          "ljungbox_rezagos_significativos": 9
+          "ljungbox_rezagos_significativos": 10
         },
         "advertencias": []
       },
@@ -452,16 +452,16 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 277.152589957822,
+        "aicc": 279.14119280315,
         "calendario": {
           "dias_semana": {
-            "chi2": 28.06,
+            "chi2": 28.81,
             "gl": 6,
             "p": 0.0001
           },
           "feriados": {
-            "coef": -0.020185,
-            "t": -2.4
+            "coef": -0.020134,
+            "t": -2.42
           },
           "pascua": null
         },
@@ -484,10 +484,10 @@
           }
         ],
         "calidad": {
-          "m7": 0.964,
-          "q": 0.91,
-          "qs_desest_p": 0.4034,
-          "qs_irregular_p": 0.84694,
+          "m7": 0.951,
+          "q": 0.9,
+          "qs_desest_p": 0.391,
+          "qs_irregular_p": 0.85601,
           "ljungbox_rezagos_significativos": 0
         },
         "advertencias": []

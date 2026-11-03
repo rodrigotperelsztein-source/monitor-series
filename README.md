@@ -14,6 +14,7 @@ sector replica su método. Gracias a Monitor Argy por abrir sus datos.
 
 | id | Serie | Fuente | Frecuencia | Desde |
 |---|---|---|---|---|
+| `canastas` | Canasta básica alimentaria (CBA, línea de indigencia) y total (CBT, línea de pobreza), GBA: por adulto equivalente con variaciones mensual e interanual, para los tres hogares tipo y la inversa del coeficiente de Engel. Solo por la API del INDEC | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-43-149) | Mensual | 2016-04 |
 | `emae` | EMAE total: índice original, desestacionalizado y tendencia-ciclo (base 2004=100), con la variación interanual de la original y las mensuales de las otras dos | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48) | Mensual | 2004-01 |
 | `emae_letras` | EMAE por sector de actividad (letras A a O e impuestos netos de subsidios), serie original, base 2004=100 | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48) | Mensual | 2004-01 |
 | `emae_letras_desest` | EMAE por sector, **desestacionalización propia** (X-13ARIMA-SEATS con calendario argentino) de las letras A, C, D, E, F, G, I y J, con su variación mensual. INDEC no las publica; ver [Desestacionalización propia](#desestacionalización-propia) | Cálculo propio sobre `emae_letras` | Mensual | 2004-01 |
@@ -46,6 +47,7 @@ sector replica su método. Gracias a Monitor Argy por abrir sus datos.
 | `estimaciones_agricolas` | **Secretaría de Agricultura**: superficie implantada y producción estimada de trigo, maíz, soja y girasol para la campaña en curso (informe mensual de Estimaciones Agrícolas, en PDF), más una producción con rendimiento tendencial (mediana de las últimas cinco campañas del informe semanal). Se revisa del 12 a fin de mes | [Estimaciones Agrícolas](https://www.magyp.gob.ar/sitio/areas/estimaciones/estimaciones/informes/) | Mensual | 2026-10 |
 | `itcrm` | **BCRA**: tipo de cambio real multilateral (ITCRM) y bilaterales con Brasil, Estados Unidos, China, zona del euro y otros 10 socios, base 17-12-2015=100. Si sube, el peso se deprecia en términos reales. Los últimos meses son provisorios (inflación estimada) | [BCRA, ITCRM](https://www.bcra.gob.ar/indices-de-tipo-de-cambio-multilateral/) | Diaria | 1997-01 |
 | `itcrm_mensual` | Los mismos índices, promedio mensual publicado por el BCRA, con variación mensual e interanual | [BCRA, ITCRM](https://www.bcra.gob.ar/indices-de-tipo-de-cambio-multilateral/) | Mensual | 1997-01 |
+| `precios_mayoristas` | Precios mayoristas (SIPM): IPIM, IPIB e IPP (dic-2015=100), nivel general, nacionales e importados, primarios, manufacturados y energía eléctrica, petróleo crudo y gas natural y productos refinados del petróleo; índice y variaciones mensual e interanual del INDEC. Solo por la API del INDEC | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-32) | Mensual | 2015-12 |
 | `rem` | **BCRA**: Relevamiento de Expectativas de Mercado (mediana): inflación mensual, a 12 meses y del año; TAMAR; tipo de cambio; PIB trimestral (trimestre anterior, actual y siguiente) y anual; desocupación; exportaciones e importaciones; resultado primario. Una fila por encuesta, con horizontes contados desde el mes de la encuesta | [BCRA, REM](https://www.bcra.gob.ar/PublicacionesEstadisticas/Relevamiento_Expectativas_de_Mercado.asp) | Mensual | 2016-06 |
 | `ventas_combustibles` | Ventas al mercado de **gasoil y naftas grado 2 y grado 3** (y gasoil y naftas en total), por empresa (YPF, Shell, Axion, Trafigura, DAPSA, Delta/Gulf, Refinor, resto) y total del mercado; cada serie también **sin usinas eléctricas ni bunker internacional**. También por canal de venta (al público, transporte de carga, agro, transporte de pasajeros, otras empresas), total del mercado. Incluye ventas a otras empresas del sector. Se leen los registros guardados en las tablas dinámicas. Se revisa del 20 a fin de cada mes | [Secretaría de Energía](https://www.argentina.gob.ar/economia/energia/hidrocarburos/refinacion-y-comercializacion-de-petroleo-gas-y-derivados-tablas-dinamicas) (SESCO, Res. 1104/04) | Mensual | 2010-01 |
 | `ventas_combustibles_desest` | Ventas de gasoil y naftas del total del mercado **desestacionalizadas** (X-13, propia): gasoil total, G2, G3 y total sin usinas ni bunker; naftas total, G2 y G3; y gasoil y naftas (G2 + G3) de YPF, Shell, Axion, Trafigura (desde 2019) y Refinor; con variación mensual. Se quitan días de la semana y feriados. DAPSA y Delta/Gulf no se ajustan (sin estacionalidad estable) | Cálculo propio sobre `ventas_combustibles` | Mensual | 2010-01 |
@@ -181,7 +183,9 @@ tabla = valores.pivot(index="fecha", columns="id_serie", values="valor")
 
 Para cada fuente, `python -m pipeline.actualizar`:
 
-1. **Baja el archivo** de la URL oficial.
+1. **Baja el archivo** de la URL oficial. El IPC, el EMAE total, el índice de salarios, las canastas básicas y los
+   precios mayoristas salen del [Catálogo API-INDEC](https://api.indec.gob.ar) (ver abajo); si la API no responde,
+   los tres primeros usan el archivo de siempre del sitio de INDEC.
 2. **Compara su huella** (SHA-256) con la de la última versión. Si es igual, no hace nada.
 3. **Lo lee buscando los encabezados por su texto**, no por posición fija, para tolerar cambios menores de formato.
 4. **Valida** antes de guardar: columnas completas, meses consecutivos, sin vacíos, valores en rango,
@@ -190,6 +194,14 @@ Para cada fuente, `python -m pipeline.actualizar`:
 5. Si todo está bien, **guarda** el CSV, el Excel, el original y el registro de revisiones, y regenera
    los archivos de `data/todas/` con todas las series juntas.
    Si algo falla, **no toca nada de esa fuente** y la tarea termina en error.
+
+### API del INDEC
+
+La API pide un token personal que vence a los 12 meses. Está en el secreto `INDEC_API_TOKEN` del repositorio y solo
+llega a un paso del workflow que baja las tablas necesarias (`python -m pipeline.indec_api bajar`) a una carpeta
+local que no se guarda; el procesamiento corre después, sin token. Para renovarlo: en api.indec.gob.ar, perfil →
+regenerar token; en GitHub, Settings → Secrets and variables → Actions → editar `INDEC_API_TOKEN`. Con el token
+vencido, la corrida avisa en el registro y las canastas y los precios mayoristas no se actualizan.
 
 ## Desestacionalización propia
 
@@ -322,7 +334,8 @@ desde los índices y frena si no coinciden.
 
 ## Seguridad
 
-Datos públicos, solo lectura, sin credenciales. Las medidas (acciones fijadas por commit, dependencias verificadas
+Datos públicos, solo lectura. La única credencial externa es el token de la API del INDEC, que solo ve el paso que
+baja esas tablas. Las medidas (acciones fijadas por commit, dependencias verificadas
 por huella, workflows sin permisos por defecto, binario de X-13 verificado, página sin terceros) y las
 recomendaciones para usarlo dentro de una empresa están en [`SECURITY.md`](SECURITY.md).
 

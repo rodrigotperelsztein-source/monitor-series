@@ -33,7 +33,7 @@ PAGINA = 1000  # máximo de filas por pedido que devuelve la API
 # sin un orden único, la paginación puede repetir o saltear filas.
 TABLAS = {
     "ipc_nacional": ("clasificador,nivel,codigo,descripcion,periodo,anio,mes,indicador,tipo_de_indicador,"
-                     "tipo_de_indicador_descripcion,region,unidad_de_medida", {"region": "eq.Nacional"}),
+                     "tipo_de_indicador_descripcion,region,unidad_de_medida", {}),
     "estimador-mensual-de-actividad-economica-nivel-general": ("tipo_de_indicador_descripcion,anio,mes,periodo,tipo_de_indicador", {}),
     "estimador-mensual-de-actividad-economica-sectores": ("anio,mes,codigo,descripcion,periodo,tipo_de_indicador", {}),
     "ipi_manufacturero": ("periodo,anio,mes,indicador,cuadro_web,codigo_CLaNAE_2004,descripcion,serie,tipo_de_indicador,unidad_de_medida", {}),
@@ -44,9 +44,13 @@ TABLAS = {
     "valorizacion_canastas_cba_cbt": ("clasificador,nivel,codigo,descripcion,periodo,anio,mes,indicador,tipo_de_indicador,"
                                       "tipo_de_indicador_descripcion,region,unidad_de_medida", {}),
     "sipm_precios_mayoristas": ("operativo,indicador,clasificador,nivel,codigo_apertura,descripcion,periodo,anio,mes,"
-                                "tipo_de_indicador,tipo_de_indicador_descripcion,region,unidad_de_medida", {}),
+                                "tipo_de_indicador,tipo_de_indicador_descripcion,region,unidad_de_medida",
+                                # Sin las clases y grupos de la CIIU (unas 150 mil filas que no se usan).
+                                {"nivel": 'in.("Nivel general",Origen,Sector,División)'}),
     "icc_precios_construccion": ("indicador,codigo_apertura,codigo_CPC_1,clasificador,nivel,descripcion,periodo,anio,mes,"
-                                 "tipo_de_indicador,tipo_de_indicador_descripcion,region,unidad_de_medida", {}),
+                                 "tipo_de_indicador,tipo_de_indicador_descripcion,region,unidad_de_medida",
+                                # Sin las clases y grupos de la CIIU (unas 150 mil filas que no se usan).
+                                {"nivel": 'in.("Nivel general",Origen,Sector,División)'}),
     "pobreza_eph": ("area_geografica_cod,periodo,anio,semestre", {}),
     "mercado_trabajo_eph": ("area_geografica_cod,periodo,anio,trimestre", {}),
 }

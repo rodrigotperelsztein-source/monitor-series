@@ -24,6 +24,9 @@ credenciales, no recibe datos de quienes lo usan y no necesita acceso a ninguna 
   pide escritura sobre el contenido.
 - **Sin credenciales mientras se procesan archivos de afuera**: el paso que baja y lee archivos corre sin token;
   el token de GitHub solo existe en el último paso, que hace el commit de `data/`.
+- **Token de la API del INDEC aislado**: el secreto `INDEC_API_TOKEN` (personal, gratuito, vence a los 12 meses) solo
+  llega al paso que baja tablas de `https://api.indec.gob.ar/v1/` (host fijo, tablas en una lista cerrada). Ese paso no
+  procesa nada, no escribe en `data/` y nunca imprime el token (si un error lo incluyera, se reemplaza por `***`).
 - **Binario de X-13 verificado**: `bin/x13as` se ejecuta solo si coincide con su huella SHA-256
   (`pipeline/desest.py`).
 - **Sin inyección de fórmulas**: los textos de `data/todas/series.csv` que empiezan con `=`, `+`, `-` o `@` se

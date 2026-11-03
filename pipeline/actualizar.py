@@ -27,10 +27,10 @@ import pandas as pd
 import requests
 
 from pipeline import calendario, monitorargy
-from pipeline.fuentes import itcrm, itcrm_mensual, salarios_ramas, empleo_ramas, salarios_ramas_real, acciones_energia, acciones_energia_mensual, emae, emae_letras, emae_letras_desest, ipc, ipi, ipi_minero, ipi_minero_desest, isac, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, refinados, refinados_mensual, ventas_combustibles, ventas_combustibles_desest, came, supermercados, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual, estimaciones_agricolas, rem, remuneraciones_provincias, remuneraciones_provincias_real, remuneraciones_provincias_desest, remuneraciones_provincias_real_desest
+from pipeline.fuentes import canastas, precios_mayoristas, itcrm, itcrm_mensual, salarios_ramas, empleo_ramas, salarios_ramas_real, acciones_energia, acciones_energia_mensual, emae, emae_letras, emae_letras_desest, ipc, ipi, ipi_minero, ipi_minero_desest, isac, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, refinados, refinados_mensual, ventas_combustibles, ventas_combustibles_desest, came, supermercados, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual, estimaciones_agricolas, rem, remuneraciones_provincias, remuneraciones_provincias_real, remuneraciones_provincias_desest, remuneraciones_provincias_real_desest
 from pipeline.fuentes._indec import iguales
 
-FUENTES = {f.ID: f for f in [itcrm, itcrm_mensual, emae, emae_letras, emae_letras_desest, ipc, ipi, ipi_minero, ipi_minero_desest, isac, supermercados, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, refinados, refinados_mensual, acciones_energia, acciones_energia_mensual, ventas_combustibles, ventas_combustibles_desest, came, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual, estimaciones_agricolas, rem, remuneraciones_provincias, remuneraciones_provincias_real, remuneraciones_provincias_desest, remuneraciones_provincias_real_desest, salarios_ramas, empleo_ramas, salarios_ramas_real]}
+FUENTES = {f.ID: f for f in [canastas, precios_mayoristas, itcrm, itcrm_mensual, emae, emae_letras, emae_letras_desest, ipc, ipi, ipi_minero, ipi_minero_desest, isac, supermercados, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, refinados, refinados_mensual, acciones_energia, acciones_energia_mensual, ventas_combustibles, ventas_combustibles_desest, came, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual, estimaciones_agricolas, rem, remuneraciones_provincias, remuneraciones_provincias_real, remuneraciones_provincias_desest, remuneraciones_provincias_real_desest, salarios_ramas, empleo_ramas, salarios_ramas_real]}
 # Series calculadas a partir de otra (DERIVADA_DE): no se bajan, se recalculan cuando cambia su base.
 DERIVADAS = {fid: f for fid, f in FUENTES.items() if hasattr(f, "DERIVADA_DE")}
 
@@ -117,7 +117,8 @@ def leer_csv(p: Path) -> pd.DataFrame | None:
     return pd.read_csv(p, parse_dates=["fecha"]) if p.exists() else None
 
 
-def registrar_revisiones(fid: str, nuevo: pd.DataFrame, anterior: pd.DataFrame | None, ahora: str) -> int:
+def registrar_revisiones(fid: str, nuevo: pd.DataFrame, anterior: pd.DataFrame | None, ahora: str,
+                         tol: float = 1e-6) -> int:
     if anterior is None:
         return 0
     cols = [c for c in nuevo.columns if c != "fecha"]
@@ -126,7 +127,7 @@ def registrar_revisiones(fid: str, nuevo: pd.DataFrame, anterior: pd.DataFrame |
     for c in cols:
         if f"{c}_ant" not in comunes:
             continue
-        cambio = ~iguales(comunes[c], comunes[f"{c}_ant"])
+        cambio = ~iguales(comunes[c], comunes[f"{c}_ant"], tol)
         for _, r in comunes[cambio].iterrows():
             filas.append({"detectado": ahora, "periodo": f"{r['fecha']:%Y-%m}", "serie": c,
                           "valor_anterior": r[f"{c}_ant"], "valor_nuevo": r[c]})
@@ -207,14 +208,16 @@ def procesar(fuente, forzar: bool, ahora: str, hoy: date) -> str:
         **extra,
     })
 
+    # Tolerancia para considerar iguales dos valores (por defecto, exactos; algunas fuentes la amplían por redondeo).
+    tol = getattr(fuente, "TOL_REVISION", 1e-6)
     datos_iguales = anterior is not None and list(nuevo.columns) == list(anterior.columns) and \
         nuevo.shape == anterior.shape and nuevo["fecha"].equals(anterior["fecha"]) and \
-        all(iguales(nuevo[c], anterior[c]).all() for c in nuevo.columns if c != "fecha")
+        all(iguales(nuevo[c], anterior[c], tol).all() for c in nuevo.columns if c != "fecha")
     if datos_iguales:
         p_meta.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         return "archivo distinto pero mismos datos"
 
-    revisados = registrar_revisiones(fid, nuevo, anterior, ahora) if getattr(fuente, "REGISTRAR_REVISIONES", True) else 0
+    revisados = registrar_revisiones(fid, nuevo, anterior, ahora, tol) if getattr(fuente, "REGISTRAR_REVISIONES", True) else 0
     raw = None
     if getattr(fuente, "GUARDAR_ORIGINAL", True):
         raw = DATA / "raw" / fid / f"{ahora[:10]}_{huella[:8]}.{fuente.EXTENSION}"
@@ -324,7 +327,7 @@ CATEGORIAS = {  # fuente -> gran categoría (para buscar y filtrar en las págin
     "ipi": "Actividad económica", "isac": "Actividad económica",
     "ipi_minero": "Actividad económica", "ipi_minero_desest": "Actividad económica", "supermercados": "Actividad económica",
     "came": "Actividad económica",
-    "ipc": "Precios",
+    "ipc": "Precios", "precios_mayoristas": "Precios", "canastas": "Precios",
     "ripte": "Salarios", "ripte_real": "Salarios", "salarios": "Salarios", "salarios_real": "Salarios",
     "sube": "Transporte", "sube_mensual": "Transporte", "sube_desest": "Transporte",
     "camiones_puertos": "Agro y puertos", "camiones_puertos_mensual": "Agro y puertos",
@@ -466,11 +469,36 @@ def catalogo_monitor_argy() -> str:
     return f"{len(filas)} series"
 
 
+def elegir(args, hoy: date, cal, avisar: bool = True) -> list[str]:
+    """Fuentes (no derivadas) que procesa esta corrida, según el modo, el calendario y el día del mes."""
+    pedidas = args.fuentes or list(FUENTES)
+    ids = [fid for fid in pedidas if fid not in DERIVADAS]
+    if args.modo == "calendario":
+        ids = [fid for fid in ids
+               if hoy in calendario.fechas(getattr(FUENTES[fid], "CALENDARIO", ""), cal)
+               and (fecha_cambio(fid) or date.min) < hoy]
+        if avisar:
+            if ids:
+                print(f"Publicaciones previstas hoy y todavía no descargadas: {', '.join(ids)}")
+            else:
+                print(f"Hoy ({hoy:%d/%m/%Y}) no hay publicaciones pendientes de INDEC para estas series.")
+    # Fuentes que solo se revisan algunos días del mes (DIAS_DEL_MES), salvo que se pidan por nombre.
+    if not args.fuentes:
+        fuera = [fid for fid in ids if hoy.day not in getattr(FUENTES[fid], "DIAS_DEL_MES", range(1, 32))]
+        if avisar:
+            for fid in fuera:
+                print(f"[{fid}]\n  no se revisa hoy (solo los días {FUENTES[fid].DIAS_DEL_MES.start} a fin de mes)")
+        ids = [fid for fid in ids if fid not in fuera]
+    return ids
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("fuentes", nargs="*", help="ids a procesar (por defecto, todas)")
     ap.add_argument("--modo", choices=["completo", "calendario"], default="completo")
     ap.add_argument("--forzar", action="store_true")
+    ap.add_argument("--tablas-api", action="store_true",
+                    help="solo lista las tablas de la API del INDEC que necesitan las fuentes de esta corrida")
     args = ap.parse_args()
 
     # MONITOR_AHORA (ISO, UTC) fija el momento actual; sirve solo para pruebas.
@@ -478,6 +506,10 @@ def main() -> int:
                if os.environ.get("MONITOR_AHORA") else datetime.now(timezone.utc))
     ahora = momento.strftime("%Y-%m-%dT%H:%M:%SZ")
     hoy = momento.astimezone(TZ).date()
+    if args.tablas_api:
+        ids = elegir(args, hoy, calendario.cargar(), avisar=False)
+        print(" ".join(sorted({FUENTES[f].TABLA_API for f in ids if hasattr(FUENTES[f], "TABLA_API")})))
+        return 0
     (DATA / "meta").mkdir(parents=True, exist_ok=True)
     fallas = 0
 
@@ -491,22 +523,7 @@ def main() -> int:
     cal = calendario.cargar()
 
     pedidas = args.fuentes or list(FUENTES)
-    ids = [fid for fid in pedidas if fid not in DERIVADAS]
-    if args.modo == "calendario":
-        ids = [fid for fid in ids
-               if hoy in calendario.fechas(getattr(FUENTES[fid], "CALENDARIO", ""), cal)
-               and (fecha_cambio(fid) or date.min) < hoy]
-        if ids:
-            print(f"Publicaciones previstas hoy y todavía no descargadas: {', '.join(ids)}")
-        else:
-            print(f"Hoy ({hoy:%d/%m/%Y}) no hay publicaciones pendientes de INDEC para estas series.")
-
-    # Fuentes que solo se revisan algunos días del mes (DIAS_DEL_MES), salvo que se pidan por nombre.
-    if not args.fuentes:
-        fuera = [fid for fid in ids if hoy.day not in getattr(FUENTES[fid], "DIAS_DEL_MES", range(1, 32))]
-        for fid in fuera:
-            print(f"[{fid}]\n  no se revisa hoy (solo los días {FUENTES[fid].DIAS_DEL_MES.start} a fin de mes)")
-        ids = [fid for fid in ids if fid not in fuera]
+    ids = elegir(args, hoy, cal)
 
     for fid in ids:
         print(f"[{fid}]")

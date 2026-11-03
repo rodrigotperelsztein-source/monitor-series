@@ -5,6 +5,7 @@ name: Actualizar series
 #   - Las dependencias de Python se instalan solo si coinciden con su huella (requirements.txt).
 #   - El paso que baja y procesa archivos de afuera corre SIN credenciales: el token de GitHub
 #     solo está disponible en el último paso, que guarda data/ y nada más.
+#   - El token de la API del INDEC solo llega al paso que baja esas tablas (no procesa nada).
 
 on:
   schedule:
@@ -76,14 +77,14 @@ jobs:
       - name: Instalar dependencias (verificadas por huella)
         run: "pip install --require-hashes --only-binary=:all: --no-cache-dir -r requirements.txt"
 
-      - name: Bajar, validar y procesar
-        id: proc
+      - name: Elegir modo y fuentes
+        id: modo
         env:
           EVENTO: ${{ github.event_name }}
           HORARIO: ${{ github.event.schedule }}
           MODO_MANUAL: ${{ inputs.modo }}
-          FORZAR: ${{ inputs.forzar && '--forzar' || '' }}
         run: |
+          FUENTES=""
           if [ "$EVENTO" = "workflow_dispatch" ]; then
             MODO="$MODO_MANUAL"
           else
@@ -94,9 +95,31 @@ jobs:
             esac
           fi
           case "$MODO" in completo|calendario) ;; *) echo "Modo inválido"; exit 1;; esac
-          echo "Modo: $MODO"
+          TABLAS=$(python -m pipeline.actualizar --modo "$MODO" --tablas-api $FUENTES)
+          case "$TABLAS" in *[!a-z0-9_\ -]*) echo "Lista de tablas inválida"; exit 1;; esac
+          echo "Modo: $MODO; fuentes: ${FUENTES:-todas}; tablas de la API del INDEC: ${TABLAS:-ninguna}"
+          { echo "modo=$MODO"; echo "fuentes=$FUENTES"; echo "tablas=$TABLAS"; } >> "$GITHUB_OUTPUT"
+
+      # Único paso con el token del INDEC (secreto INDEC_API_TOKEN): solo baja tablas de https://api.indec.gob.ar
+      # a api_indec/ (fuera de data/, no se guarda en el repositorio). Si falla (token vencido, API caída), las
+      # fuentes de INDEC usan el archivo de siempre del sitio y la corrida sigue.
+      - name: Bajar tablas de la API del INDEC
+        if: steps.modo.outputs.tablas != ''
+        continue-on-error: true
+        env:
+          INDEC_API_TOKEN: ${{ secrets.INDEC_API_TOKEN }}
+          TABLAS: ${{ steps.modo.outputs.tablas }}
+        run: python -m pipeline.indec_api bajar $TABLAS
+
+      - name: Bajar, validar y procesar
+        id: proc
+        env:
+          MODO: ${{ steps.modo.outputs.modo }}
+          FUENTES: ${{ steps.modo.outputs.fuentes }}
+          FORZAR: ${{ inputs.forzar && '--forzar' || '' }}
+        run: |
           # La salida queda también en data/ultima_corrida.txt, para verla sin entrar a Actions.
-          python -m pipeline.actualizar --modo "$MODO" $FORZAR ${FUENTES:-} 2>&1 | tee data/ultima_corrida.txt
+          python -m pipeline.actualizar --modo "$MODO" $FORZAR $FUENTES 2>&1 | tee data/ultima_corrida.txt
           exit "${PIPESTATUS[0]}"
 
       - name: Guardar cambios en el repositorio (solo data/)

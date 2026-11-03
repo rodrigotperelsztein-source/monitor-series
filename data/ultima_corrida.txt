@@ -12,16 +12,20 @@
   no se revisa hoy (solo los días 20 a fin de mes)
 [estimaciones_agricolas]
   no se revisa hoy (solo los días 12 a fin de mes)
+[canastas]
+  actualizada: último período — → 2026-09; valores revisados: 0
+[precios_mayoristas]
+  actualizada: último período — → 2026-09; valores revisados: 0
 [itcrm]
   sin cambios en el archivo
 [itcrm_mensual]
   sin cambios en el archivo
 [emae]
-  sin cambios en el archivo
+  archivo distinto pero mismos datos
 [emae_letras]
   sin cambios en el archivo
 [ipc]
-  sin cambios en el archivo
+  archivo distinto pero mismos datos
 [ipi]
   sin cambios en el archivo
 [ipi_minero]
@@ -33,13 +37,13 @@
 [ripte]
   sin cambios en el archivo
 [salarios]
-  sin cambios en el archivo
+  archivo distinto pero mismos datos
 [sube]
-  actualizada: último período 2026-10 → 2026-11-01; valores revisados: 0
+  sin cambios en el archivo
 [petroleo]
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-10 → 2026-11-02; valores revisados: 0
 [refinados]
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-10 → 2026-11-02; valores revisados: 0
 [acciones_energia]
   archivo distinto pero mismos datos
 [came]
@@ -69,13 +73,13 @@
 [salarios_real]
   sin cambios en las series de base
 [sube_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [sube_desest]
   sin cambios en las series de base
 [petroleo_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-09 → 2026-10
 [refinados_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-09 → 2026-10
 [acciones_energia_mensual]
   sin cambios en las series de base
 [ventas_combustibles_desest]

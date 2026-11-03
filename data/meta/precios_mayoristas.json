@@ -1,0 +1,300 @@
+{
+  "id": "precios_mayoristas",
+  "nombre": "Precios mayoristas (SIPM): IPIM, IPIB e IPP",
+  "url": "https://api.indec.gob.ar/v1/sipm_precios_mayoristas",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-32",
+  "frecuencia": "M",
+  "unidad": "Índice dic-2015=100",
+  "sha256": "c5c7776e0e82065098d17fc006948027cfc7bfc6be89f4fb382a59d1b52db32a",
+  "columnas": {
+    "ipim_nivel_general": {
+      "nombre": "Precios internos al por mayor (IPIM), nivel general, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipim_nivel_general_var_m": {
+      "nombre": "Precios internos al por mayor (IPIM), nivel general, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipim_nivel_general_var_ia": {
+      "nombre": "Precios internos al por mayor (IPIM), nivel general, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipim_nacionales": {
+      "nombre": "Precios internos al por mayor (IPIM), productos nacionales, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipim_nacionales_var_m": {
+      "nombre": "Precios internos al por mayor (IPIM), productos nacionales, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipim_nacionales_var_ia": {
+      "nombre": "Precios internos al por mayor (IPIM), productos nacionales, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipim_importados": {
+      "nombre": "Precios internos al por mayor (IPIM), productos importados, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipim_importados_var_m": {
+      "nombre": "Precios internos al por mayor (IPIM), productos importados, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipim_importados_var_ia": {
+      "nombre": "Precios internos al por mayor (IPIM), productos importados, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipim_primarios": {
+      "nombre": "Precios internos al por mayor (IPIM), productos primarios, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipim_primarios_var_m": {
+      "nombre": "Precios internos al por mayor (IPIM), productos primarios, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipim_primarios_var_ia": {
+      "nombre": "Precios internos al por mayor (IPIM), productos primarios, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipim_manufacturados_energia": {
+      "nombre": "Precios internos al por mayor (IPIM), manufacturados y energía eléctrica, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipim_manufacturados_energia_var_m": {
+      "nombre": "Precios internos al por mayor (IPIM), manufacturados y energía eléctrica, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipim_manufacturados_energia_var_ia": {
+      "nombre": "Precios internos al por mayor (IPIM), manufacturados y energía eléctrica, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipim_petroleo_gas": {
+      "nombre": "Precios internos al por mayor (IPIM), petróleo crudo y gas natural, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipim_petroleo_gas_var_m": {
+      "nombre": "Precios internos al por mayor (IPIM), petróleo crudo y gas natural, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipim_petroleo_gas_var_ia": {
+      "nombre": "Precios internos al por mayor (IPIM), petróleo crudo y gas natural, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipim_refinados": {
+      "nombre": "Precios internos al por mayor (IPIM), productos refinados del petróleo, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipim_refinados_var_m": {
+      "nombre": "Precios internos al por mayor (IPIM), productos refinados del petróleo, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipim_refinados_var_ia": {
+      "nombre": "Precios internos al por mayor (IPIM), productos refinados del petróleo, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipib_nivel_general": {
+      "nombre": "Precios internos básicos (IPIB), nivel general, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipib_nivel_general_var_m": {
+      "nombre": "Precios internos básicos (IPIB), nivel general, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipib_nivel_general_var_ia": {
+      "nombre": "Precios internos básicos (IPIB), nivel general, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipib_nacionales": {
+      "nombre": "Precios internos básicos (IPIB), productos nacionales, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipib_nacionales_var_m": {
+      "nombre": "Precios internos básicos (IPIB), productos nacionales, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipib_nacionales_var_ia": {
+      "nombre": "Precios internos básicos (IPIB), productos nacionales, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipib_importados": {
+      "nombre": "Precios internos básicos (IPIB), productos importados, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipib_importados_var_m": {
+      "nombre": "Precios internos básicos (IPIB), productos importados, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipib_importados_var_ia": {
+      "nombre": "Precios internos básicos (IPIB), productos importados, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipib_primarios": {
+      "nombre": "Precios internos básicos (IPIB), productos primarios, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipib_primarios_var_m": {
+      "nombre": "Precios internos básicos (IPIB), productos primarios, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipib_primarios_var_ia": {
+      "nombre": "Precios internos básicos (IPIB), productos primarios, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipib_manufacturados_energia": {
+      "nombre": "Precios internos básicos (IPIB), manufacturados y energía eléctrica, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipib_manufacturados_energia_var_m": {
+      "nombre": "Precios internos básicos (IPIB), manufacturados y energía eléctrica, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipib_manufacturados_energia_var_ia": {
+      "nombre": "Precios internos básicos (IPIB), manufacturados y energía eléctrica, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipib_petroleo_gas": {
+      "nombre": "Precios internos básicos (IPIB), petróleo crudo y gas natural, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipib_petroleo_gas_var_m": {
+      "nombre": "Precios internos básicos (IPIB), petróleo crudo y gas natural, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipib_petroleo_gas_var_ia": {
+      "nombre": "Precios internos básicos (IPIB), petróleo crudo y gas natural, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipib_refinados": {
+      "nombre": "Precios internos básicos (IPIB), productos refinados del petróleo, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipib_refinados_var_m": {
+      "nombre": "Precios internos básicos (IPIB), productos refinados del petróleo, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipib_refinados_var_ia": {
+      "nombre": "Precios internos básicos (IPIB), productos refinados del petróleo, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipp_nivel_general": {
+      "nombre": "Precios al productor (IPP), nivel general, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipp_nivel_general_var_m": {
+      "nombre": "Precios al productor (IPP), nivel general, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipp_nivel_general_var_ia": {
+      "nombre": "Precios al productor (IPP), nivel general, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipp_primarios": {
+      "nombre": "Precios al productor (IPP), productos primarios, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipp_primarios_var_m": {
+      "nombre": "Precios al productor (IPP), productos primarios, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipp_primarios_var_ia": {
+      "nombre": "Precios al productor (IPP), productos primarios, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipp_manufacturados_energia": {
+      "nombre": "Precios al productor (IPP), manufacturados y energía eléctrica, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipp_manufacturados_energia_var_m": {
+      "nombre": "Precios al productor (IPP), manufacturados y energía eléctrica, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipp_manufacturados_energia_var_ia": {
+      "nombre": "Precios al productor (IPP), manufacturados y energía eléctrica, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipp_petroleo_gas": {
+      "nombre": "Precios al productor (IPP), petróleo crudo y gas natural, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipp_petroleo_gas_var_m": {
+      "nombre": "Precios al productor (IPP), petróleo crudo y gas natural, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipp_petroleo_gas_var_ia": {
+      "nombre": "Precios al productor (IPP), petróleo crudo y gas natural, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipp_refinados": {
+      "nombre": "Precios al productor (IPP), productos refinados del petróleo, índice",
+      "tipo": "nivel",
+      "unidad": "Índice dic-2015=100"
+    },
+    "ipp_refinados_var_m": {
+      "nombre": "Precios al productor (IPP), productos refinados del petróleo, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ipp_refinados_var_ia": {
+      "nombre": "Precios al productor (IPP), productos refinados del petróleo, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-03T14:14:29Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 130,
+  "original_guardado": null
+}

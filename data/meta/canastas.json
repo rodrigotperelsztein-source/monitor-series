@@ -1,0 +1,80 @@
+{
+  "id": "canastas",
+  "nombre": "Canastas básicas alimentaria y total (CBA y CBT), GBA",
+  "url": "https://api.indec.gob.ar/v1/valorizacion_canastas_cba_cbt",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-43-149",
+  "frecuencia": "M",
+  "unidad": "Pesos por mes",
+  "sha256": "a756f7c2c15dc50b4ca467ba9363c2bed4d1462acbab4b71acb0c36d564d6fab",
+  "columnas": {
+    "cba": {
+      "nombre": "CBA por adulto equivalente",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "cba_var_m": {
+      "nombre": "CBA por adulto equivalente, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cba_var_ia": {
+      "nombre": "CBA por adulto equivalente, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cbt": {
+      "nombre": "CBT por adulto equivalente",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "cbt_var_m": {
+      "nombre": "CBT por adulto equivalente, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cbt_var_ia": {
+      "nombre": "CBT por adulto equivalente, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cba_hogar_2": {
+      "nombre": "CBA del hogar tipo 2 (cuatro personas): línea de indigencia",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "cbt_hogar_2": {
+      "nombre": "CBT del hogar tipo 2 (cuatro personas): línea de pobreza",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "cba_hogar_1": {
+      "nombre": "CBA del hogar tipo 1 (tres personas)",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "cbt_hogar_1": {
+      "nombre": "CBT del hogar tipo 1 (tres personas)",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "cba_hogar_3": {
+      "nombre": "CBA del hogar tipo 3 (cinco personas)",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "cbt_hogar_3": {
+      "nombre": "CBT del hogar tipo 3 (cinco personas)",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "inversa_engel": {
+      "nombre": "Inversa del coeficiente de Engel (CBT / CBA)",
+      "tipo": "nivel",
+      "unidad": "Coeficiente"
+    }
+  },
+  "descargado": "2026-11-03T14:14:29Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 126,
+  "original_guardado": null
+}

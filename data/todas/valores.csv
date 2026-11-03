@@ -2514,6 +2514,7 @@ fecha,id_serie,valor
 2026-10-28,acciones_energia.pampa,75.470000
 2026-10-29,acciones_energia.pampa,75.120000
 2026-10-30,acciones_energia.pampa,72.650000
+2026-11-02,acciones_energia.pampa,69.780000
 2016-10-28,acciones_energia.tgs,7.164200
 2016-10-31,acciones_energia.tgs,6.981300
 2016-11-01,acciones_energia.tgs,6.875400
@@ -5029,6 +5030,7 @@ fecha,id_serie,valor
 2026-10-28,acciones_energia.tgs,25.300000
 2026-10-29,acciones_energia.tgs,25.020000
 2026-10-30,acciones_energia.tgs,23.670000
+2026-11-02,acciones_energia.tgs,22.880000
 2019-07-26,acciones_energia.vista,9.100000
 2019-07-29,acciones_energia.vista,10.000000
 2019-07-30,acciones_energia.vista,10.100000
@@ -6856,6 +6858,7 @@ fecha,id_serie,valor
 2026-10-28,acciones_energia.vista,72.270000
 2026-10-29,acciones_energia.vista,71.580000
 2026-10-30,acciones_energia.vista,70.450000
+2026-11-02,acciones_energia.vista,66.890000
 2016-10-28,acciones_energia.ypf,17.770000
 2016-10-31,acciones_energia.ypf,17.760000
 2016-11-01,acciones_energia.ypf,17.380000
@@ -9371,6 +9374,7 @@ fecha,id_serie,valor
 2026-10-28,acciones_energia.ypf,49.340000
 2026-10-29,acciones_energia.ypf,47.810000
 2026-10-30,acciones_energia.ypf,47.000000
+2026-11-02,acciones_energia.ypf,43.850000
 2016-10-01,acciones_energia_mensual.pampa,34.070000
 2016-11-01,acciones_energia_mensual.pampa,34.930000
 2016-12-01,acciones_energia_mensual.pampa,34.810000
@@ -9491,6 +9495,7 @@ fecha,id_serie,valor
 2026-07-01,acciones_energia_mensual.pampa,88.320000
 2026-08-01,acciones_energia_mensual.pampa,82.320000
 2026-09-01,acciones_energia_mensual.pampa,77.770000
+2026-10-01,acciones_energia_mensual.pampa,72.650000
 2017-10-01,acciones_energia_mensual.pampa_var_ia,99.090109
 2017-11-01,acciones_energia_mensual.pampa_var_ia,82.421987
 2017-12-01,acciones_energia_mensual.pampa_var_ia,93.277794
@@ -9599,6 +9604,7 @@ fecha,id_serie,valor
 2026-07-01,acciones_energia_mensual.pampa_var_ia,16.134122
 2026-08-01,acciones_energia_mensual.pampa_var_ia,21.901377
 2026-09-01,acciones_energia_mensual.pampa_var_ia,29.487179
+2026-10-01,acciones_energia_mensual.pampa_var_ia,-15.326340
 2016-11-01,acciones_energia_mensual.pampa_var_m,2.524215
 2016-12-01,acciones_energia_mensual.pampa_var_m,-0.343544
 2017-01-01,acciones_energia_mensual.pampa_var_m,33.409940
@@ -9718,6 +9724,7 @@ fecha,id_serie,valor
 2026-07-01,acciones_energia_mensual.pampa_var_m,7.536832
 2026-08-01,acciones_energia_mensual.pampa_var_m,-6.793478
 2026-09-01,acciones_energia_mensual.pampa_var_m,-5.527211
+2026-10-01,acciones_energia_mensual.pampa_var_m,-6.583515
 2016-10-01,acciones_energia_mensual.tgs,6.981300
 2016-11-01,acciones_energia_mensual.tgs,7.453100
 2016-12-01,acciones_energia_mensual.tgs,8.685700
@@ -9838,6 +9845,7 @@ fecha,id_serie,valor
 2026-07-01,acciones_energia_mensual.tgs,31.830000
 2026-08-01,acciones_energia_mensual.tgs,28.900000
 2026-09-01,acciones_energia_mensual.tgs,25.950000
+2026-10-01,acciones_energia_mensual.tgs,23.670000
 2017-10-01,acciones_energia_mensual.tgs_var_ia,192.689041
 2017-11-01,acciones_energia_mensual.tgs_var_ia,175.194214
 2017-12-01,acciones_energia_mensual.tgs_var_ia,146.452215
@@ -9946,6 +9954,7 @@ fecha,id_serie,valor
 2026-07-01,acciones_energia_mensual.tgs_var_ia,10.905923
 2026-08-01,acciones_energia_mensual.tgs_var_ia,6.406480
 2026-09-01,acciones_energia_mensual.tgs_var_ia,23.395150
+2026-10-01,acciones_energia_mensual.tgs_var_ia,-23.964022
 2016-11-01,acciones_energia_mensual.tgs_var_m,6.758054
 2016-12-01,acciones_energia_mensual.tgs_var_m,16.538085
 2017-01-01,acciones_energia_mensual.tgs_var_m,15.964171
@@ -10065,6 +10074,7 @@ fecha,id_serie,valor
 2026-07-01,acciones_energia_mensual.tgs_var_m,7.063572
 2026-08-01,acciones_energia_mensual.tgs_var_m,-9.205152
 2026-09-01,acciones_energia_mensual.tgs_var_m,-10.207612
+2026-10-01,acciones_energia_mensual.tgs_var_m,-8.786127
 2019-07-01,acciones_energia_mensual.vista,10.020000
 2019-08-01,acciones_energia_mensual.vista,4.000000
 2019-09-01,acciones_energia_mensual.vista,5.170000
@@ -10152,6 +10162,7 @@ fecha,id_serie,valor
 2026-07-01,acciones_energia_mensual.vista,70.450000
 2026-08-01,acciones_energia_mensual.vista,71.460000
 2026-09-01,acciones_energia_mensual.vista,65.350000
+2026-10-01,acciones_energia_mensual.vista,70.450000
 2020-07-01,acciones_energia_mensual.vista_var_ia,-64.870259
 2020-08-01,acciones_energia_mensual.vista_var_ia,-28.250000
 2020-09-01,acciones_energia_mensual.vista_var_ia,-56.479691
@@ -10227,6 +10238,7 @@ fecha,id_serie,valor
 2026-07-01,acciones_energia_mensual.vista_var_ia,57.606264
 2026-08-01,acciones_energia_mensual.vista_var_ia,83.324782
 2026-09-01,acciones_energia_mensual.vista_var_ia,89.970930
+2026-10-01,acciones_energia_mensual.vista_var_ia,45.407637
 2019-08-01,acciones_energia_mensual.vista_var_m,-60.079840
 2019-09-01,acciones_energia_mensual.vista_var_m,29.250000
 2019-10-01,acciones_energia_mensual.vista_var_m,-5.222437
@@ -10313,6 +10325,7 @@ fecha,id_serie,valor
 2026-07-01,acciones_energia_mensual.vista_var_m,10.423197
 2026-08-01,acciones_energia_mensual.vista_var_m,1.433641
 2026-09-01,acciones_energia_mensual.vista_var_m,-8.550238
+2026-10-01,acciones_energia_mensual.vista_var_m,7.804132
 2016-10-01,acciones_energia_mensual.ypf,17.760000
 2016-11-01,acciones_energia_mensual.ypf,16.990000
 2016-12-01,acciones_energia_mensual.ypf,16.500000
@@ -10433,6 +10446,7 @@ fecha,id_serie,valor
 2026-07-01,acciones_energia_mensual.ypf,52.540000
 2026-08-01,acciones_energia_mensual.ypf,51.580000
 2026-09-01,acciones_energia_mensual.ypf,50.130000
+2026-10-01,acciones_energia_mensual.ypf,47.000000
 2017-10-01,acciones_energia_mensual.ypf_var_ia,38.288288
 2017-11-01,acciones_energia_mensual.ypf_var_ia,33.549147
 2017-12-01,acciones_energia_mensual.ypf_var_ia,38.848485
@@ -10541,6 +10555,7 @@ fecha,id_serie,valor
 2026-07-01,acciones_energia_mensual.ypf_var_ia,56.648778
 2026-08-01,acciones_energia_mensual.ypf_var_ia,69.281260
 2026-09-01,acciones_energia_mensual.ypf_var_ia,106.381227
+2026-10-01,acciones_energia_mensual.ypf_var_ia,29.014548
 2016-11-01,acciones_energia_mensual.ypf_var_m,-4.335586
 2016-12-01,acciones_energia_mensual.ypf_var_m,-2.884049
 2017-01-01,acciones_energia_mensual.ypf_var_m,31.333333
@@ -10660,6 +10675,7 @@ fecha,id_serie,valor
 2026-07-01,acciones_energia_mensual.ypf_var_m,15.548713
 2026-08-01,acciones_energia_mensual.ypf_var_m,-1.827179
 2026-09-01,acciones_energia_mensual.ypf_var_m,-2.811167
+2026-10-01,acciones_energia_mensual.ypf_var_m,-6.243766
 2025-03-01,came.ipip_var_ia,2.400000
 2025-04-01,came.ipip_var_ia,3.700000
 2025-05-01,came.ipip_var_ia,0.800000
@@ -174275,6 +174291,9 @@ fecha,id_serie,valor
 2026-10-28,itcrm.brasil,80.991891
 2026-10-29,itcrm.brasil,80.239262
 2026-10-30,itcrm.brasil,79.555488
+2026-10-31,itcrm.brasil,79.514545
+2026-11-01,itcrm.brasil,79.476858
+2026-11-02,itcrm.brasil,80.095069
 1997-01-01,itcrm.canada,75.995391
 1997-01-02,itcrm.canada,75.806922
 1997-01-03,itcrm.canada,75.707305
@@ -185170,6 +185189,9 @@ fecha,id_serie,valor
 2026-10-28,itcrm.canada,86.899176
 2026-10-29,itcrm.canada,87.049471
 2026-10-30,itcrm.canada,86.838101
+2026-10-31,itcrm.canada,86.797677
+2026-11-01,itcrm.canada,86.753085
+2026-11-02,itcrm.canada,87.239803
 1997-01-01,itcrm.chile,92.222063
 1997-01-02,itcrm.chile,92.354079
 1997-01-03,itcrm.chile,92.203203
@@ -196065,6 +196087,9 @@ fecha,id_serie,valor
 2026-10-28,itcrm.chile,75.249786
 2026-10-29,itcrm.chile,74.869768
 2026-10-30,itcrm.chile,74.503622
+2026-10-31,itcrm.chile,74.464220
+2026-11-01,itcrm.chile,74.430818
+2026-11-02,itcrm.chile,76.009376
 1997-01-01,itcrm.china,58.423535
 1997-01-02,itcrm.china,58.449648
 1997-01-03,itcrm.china,58.475068
@@ -206960,6 +206985,9 @@ fecha,id_serie,valor
 2026-10-28,itcrm.china,73.750310
 2026-10-29,itcrm.china,73.594340
 2026-10-30,itcrm.china,73.351670
+2026-10-31,itcrm.china,73.275424
+2026-11-01,itcrm.china,73.217470
+2026-11-02,itcrm.china,73.796738
 1997-01-01,itcrm.estados_unidos,70.278200
 1997-01-02,itcrm.estados_unidos,70.272755
 1997-01-03,itcrm.estados_unidos,70.266463
@@ -217855,6 +217883,9 @@ fecha,id_serie,valor
 2026-10-28,itcrm.estados_unidos,92.190858
 2026-10-29,itcrm.estados_unidos,91.969940
 2026-10-30,itcrm.estados_unidos,91.629738
+2026-10-31,itcrm.estados_unidos,91.588352
+2026-11-01,itcrm.estados_unidos,91.538438
+2026-11-02,itcrm.estados_unidos,92.174418
 1997-01-01,itcrm.india,55.491836
 1997-01-02,itcrm.india,55.329054
 1997-01-03,itcrm.india,55.374687
@@ -228750,6 +228781,9 @@ fecha,id_serie,valor
 2026-10-28,itcrm.india,74.703964
 2026-10-29,itcrm.india,74.497522
 2026-10-30,itcrm.india,74.450613
+2026-10-31,itcrm.india,74.410139
+2026-11-01,itcrm.india,74.376856
+2026-11-02,itcrm.india,74.944333
 1997-01-01,itcrm.japon,30.679197
 1997-01-02,itcrm.japon,30.784092
 1997-01-03,itcrm.japon,30.655737
@@ -239645,6 +239679,9 @@ fecha,id_serie,valor
 2026-10-28,itcrm.japon,59.218999
 2026-10-29,itcrm.japon,59.200818
 2026-10-30,itcrm.japon,59.150657
+2026-10-31,itcrm.japon,59.124197
+2026-11-01,itcrm.japon,59.096543
+2026-11-02,itcrm.japon,59.372208
 1997-01-01,itcrm.mexico,73.995263
 1997-01-02,itcrm.mexico,73.754322
 1997-01-03,itcrm.mexico,74.122552
@@ -250540,6 +250577,9 @@ fecha,id_serie,valor
 2026-10-28,itcrm.mexico,98.044098
 2026-10-29,itcrm.mexico,96.941985
 2026-10-30,itcrm.mexico,96.798974
+2026-10-31,itcrm.mexico,96.757626
+2026-11-01,itcrm.mexico,96.727215
+2026-11-02,itcrm.mexico,98.782656
 1997-01-01,itcrm.multilateral,86.348001
 1997-01-02,itcrm.multilateral,86.333102
 1997-01-03,itcrm.multilateral,86.056125
@@ -261435,6 +261475,9 @@ fecha,id_serie,valor
 2026-10-28,itcrm.multilateral,82.126015
 2026-10-29,itcrm.multilateral,81.803234
 2026-10-30,itcrm.multilateral,81.393180
+2026-10-31,itcrm.multilateral,81.342351
+2026-11-01,itcrm.multilateral,81.294417
+2026-11-02,itcrm.multilateral,82.039398
 1997-01-01,itcrm.reino_unido,83.886389
 1997-01-02,itcrm.reino_unido,82.857232
 1997-01-03,itcrm.reino_unido,82.882734
@@ -272330,6 +272373,9 @@ fecha,id_serie,valor
 2026-10-28,itcrm.reino_unido,83.458820
 2026-10-29,itcrm.reino_unido,83.668121
 2026-10-30,itcrm.reino_unido,83.473369
+2026-10-31,itcrm.reino_unido,83.438173
+2026-11-01,itcrm.reino_unido,83.387835
+2026-11-02,itcrm.reino_unido,84.144173
 1997-01-01,itcrm.sudamerica,96.145348
 1997-01-02,itcrm.sudamerica,96.206997
 1997-01-03,itcrm.sudamerica,96.170498
@@ -283225,6 +283271,9 @@ fecha,id_serie,valor
 2026-10-28,itcrm.sudamerica,85.498649
 2026-10-29,itcrm.sudamerica,85.000697
 2026-10-30,itcrm.sudamerica,84.519642
+2026-10-31,itcrm.sudamerica,84.479050
+2026-11-01,itcrm.sudamerica,84.439199
+2026-11-02,itcrm.sudamerica,85.403605
 1997-01-01,itcrm.suiza,71.526335
 1997-01-02,itcrm.suiza,71.501836
 1997-01-03,itcrm.suiza,70.881223
@@ -294120,6 +294169,9 @@ fecha,id_serie,valor
 2026-10-28,itcrm.suiza,85.169737
 2026-10-29,itcrm.suiza,85.300360
 2026-10-30,itcrm.suiza,85.165786
+2026-10-31,itcrm.suiza,85.112373
+2026-11-01,itcrm.suiza,85.060985
+2026-11-02,itcrm.suiza,86.253903
 1997-01-01,itcrm.uruguay,75.972367
 1997-01-02,itcrm.uruguay,76.009427
 1997-01-03,itcrm.uruguay,76.046505
@@ -305015,6 +305067,9 @@ fecha,id_serie,valor
 2026-10-28,itcrm.uruguay,100.254269
 2026-10-29,itcrm.uruguay,99.893061
 2026-10-30,itcrm.uruguay,99.499815
+2026-10-31,itcrm.uruguay,99.458384
+2026-11-01,itcrm.uruguay,99.409921
+2026-11-02,itcrm.uruguay,100.106369
 1997-01-01,itcrm.vietnam,63.218311
 1997-01-02,itcrm.vietnam,63.186638
 1997-01-03,itcrm.vietnam,63.174810
@@ -315910,6 +315965,9 @@ fecha,id_serie,valor
 2026-10-28,itcrm.vietnam,80.560413
 2026-10-29,itcrm.vietnam,80.442943
 2026-10-30,itcrm.vietnam,80.208386
+2026-10-31,itcrm.vietnam,80.169941
+2026-11-01,itcrm.vietnam,80.127862
+2026-11-02,itcrm.vietnam,80.748777
 1997-01-01,itcrm.zona_euro,88.850926
 1997-01-02,itcrm.zona_euro,88.867798
 1997-01-03,itcrm.zona_euro,87.945201
@@ -326805,6 +326863,9 @@ fecha,id_serie,valor
 2026-10-28,itcrm.zona_euro,89.662891
 2026-10-29,itcrm.zona_euro,89.686913
 2026-10-30,itcrm.zona_euro,89.217173
+2026-10-31,itcrm.zona_euro,89.174887
+2026-11-01,itcrm.zona_euro,89.118563
+2026-11-02,itcrm.zona_euro,90.140264
 1997-01-01,itcrm_mensual.brasil,120.293767
 1997-02-01,itcrm_mensual.brasil,120.047629
 1997-03-01,itcrm_mensual.brasil,119.824771

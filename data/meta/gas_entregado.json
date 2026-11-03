@@ -1,0 +1,125 @@
+{
+  "id": "gas_entregado",
+  "nombre": "Gas natural entregado por tipo de usuario y GNC por área de licencia (ENARGAS)",
+  "url": "https://www.enargas.gob.ar/secciones/transporte-y-distribucion/datos-estadisticos/GETD/GETD.xlsx",
+  "pagina": "https://www.enargas.gob.ar/secciones/transporte-y-distribucion/datos-operativos.php",
+  "frecuencia": "M",
+  "unidad": "Miles de m³ de 9.300 kcal",
+  "sha256": "a9100fe4b9264be850f5a5941ea15f6585a716605a0c2fd1f2591f9720e00f7d",
+  "columnas": {
+    "total": {
+      "nombre": "Gas entregado a usuarios finales, total del sistema",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "residencial": {
+      "nombre": "Gas entregado: residencial",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "comercial": {
+      "nombre": "Gas entregado: comercial",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "entes_oficiales": {
+      "nombre": "Gas entregado: entes oficiales",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "industria": {
+      "nombre": "Gas entregado: industria",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "centrales": {
+      "nombre": "Gas entregado: centrales eléctricas",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "gnc": {
+      "nombre": "Gas entregado: GNC (estaciones de carga)",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "subdistribuidor": {
+      "nombre": "Gas entregado: subdistribuidor",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "rtp": {
+      "nombre": "Gas entregado: rtp",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "exportaciones": {
+      "nombre": "Gas entregado: exportaciones",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "gnc_por_dia": {
+      "nombre": "GNC: promedio diario del mes",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal por día"
+    },
+    "gnc_var_ia": {
+      "nombre": "GNC: var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gnc_metrogas": {
+      "nombre": "GNC entregado en el área de Metrogas (CABA y sur del conurbano)",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "gnc_ban": {
+      "nombre": "GNC entregado en el área de Naturgy BAN (norte y oeste del conurbano)",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "gnc_pampeana": {
+      "nombre": "GNC entregado en el área de Camuzzi Pampeana",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "gnc_sur": {
+      "nombre": "GNC entregado en el área de Camuzzi Sur",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "gnc_litoral": {
+      "nombre": "GNC entregado en el área de Litoral Gas",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "gnc_centro": {
+      "nombre": "GNC entregado en el área de Ecogas Centro",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "gnc_cuyana": {
+      "nombre": "GNC entregado en el área de Ecogas Cuyana",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "gnc_noroeste": {
+      "nombre": "GNC entregado en el área de Gasnor (Noroeste)",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "gnc_gasnea": {
+      "nombre": "GNC entregado en el área de GasNEA",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    },
+    "gnc_parana": {
+      "nombre": "GNC entregado en el área de Redengas (Paraná)",
+      "tipo": "nivel",
+      "unidad": "Miles de m³ de 9.300 kcal"
+    }
+  },
+  "descargado": "2026-11-03T15:33:02Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 404,
+  "original_guardado": null
+}

@@ -5,7 +5,7 @@
   "pagina": "https://www.nasdaq.com/market-activity/stocks/ypf/historical",
   "frecuencia": "D",
   "unidad": "Dólares por acción (ADR)",
-  "sha256": "8d60a8896bafad9cbc8b2a0e9cce5b86110b02a45be065f75004da74644e8ba6",
+  "sha256": "a4f784be78fd3daf1bf5060183ded41fa1fbf1917a731919e00acbb79936b9ba",
   "columnas": {
     "ypf": {
       "nombre": "YPF (YPF, Nueva York), precio de cierre en dólares",

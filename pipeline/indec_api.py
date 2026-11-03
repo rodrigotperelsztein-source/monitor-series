@@ -9,10 +9,12 @@ Seguridad:
   - El token nunca se escribe en disco ni en la salida: si un error lo incluyera, se reemplaza por "***".
   - Las respuestas se guardan tal cual (JSON); los lectores de cada fuente las validan.
 
-Uso:  python -m pipeline.indec_api bajar  [TABLA ...]   descarga completa de las tablas de TABLAS
-      python -m pipeline.indec_api muestra [TABLA ...]  primeras filas de cada tabla (para inspeccionar)
+Uso:  python -m pipeline.indec_api bajar    [TABLA ...]  descarga completa a api_indec/ (para procesar)
+      python -m pipeline.indec_api muestra  [TABLA ...]  primeras filas de cada tabla, a inspeccion/indec_api/
+      python -m pipeline.indec_api completo [TABLA ...]  descarga completa comprimida, a inspeccion/indec_api/
 """
 
+import gzip
 import json
 import os
 import sys
@@ -31,7 +33,7 @@ PAGINA = 1000  # máximo de filas por pedido que devuelve la API
 # sin un orden único, la paginación puede repetir o saltear filas.
 TABLAS = {
     "ipc_nacional": ("clasificador,nivel,codigo,descripcion,periodo,anio,mes,indicador,tipo_de_indicador,"
-                     "tipo_de_indicador_descripcion,region,unidad_de_medida", {}),
+                     "tipo_de_indicador_descripcion,region,unidad_de_medida", {"region": "eq.Nacional"}),
     "estimador-mensual-de-actividad-economica-nivel-general": ("tipo_de_indicador_descripcion,anio,mes,periodo,tipo_de_indicador", {}),
     "estimador-mensual-de-actividad-economica-sectores": ("anio,mes,codigo,descripcion,periodo,tipo_de_indicador", {}),
     "ipi_manufacturero": ("periodo,anio,mes,indicador,cuadro_web,codigo_CLaNAE_2004,descripcion,serie,tipo_de_indicador,unidad_de_medida", {}),
@@ -112,7 +114,7 @@ def bajar_tabla(sesion, tabla: str, token: str, maximo: int | None = None) -> di
 
 
 def main(argv: list[str]) -> int:
-    if not argv or argv[0] not in ("bajar", "muestra"):
+    if not argv or argv[0] not in ("bajar", "muestra", "completo"):
         print(__doc__)
         return 2
     modo, pedidas = argv[0], argv[1:] or list(TABLAS)
@@ -123,8 +125,12 @@ def main(argv: list[str]) -> int:
     with requests.Session() as s:
         for t in pedidas:
             try:
-                d = bajar_tabla(s, t, token, maximo=None if modo == "bajar" else 60)
-                (destino / f"{t}.json").write_text(json.dumps(d, ensure_ascii=False), encoding="utf-8")
+                d = bajar_tabla(s, t, token, maximo=60 if modo == "muestra" else None)
+                texto = json.dumps(d, ensure_ascii=False)
+                if modo == "completo":
+                    (destino / f"{t}.json.gz").write_bytes(gzip.compress(texto.encode("utf-8")))
+                else:
+                    (destino / f"{t}.json").write_text(texto, encoding="utf-8")
                 print(f"{t}: {len(d['filas'])} filas (total {d['total']})")
             except ErrorAPI as e:
                 fallas.append(t)

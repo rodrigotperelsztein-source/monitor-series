@@ -12,9 +12,10 @@ on:
         required: false
         default: ""
       indec_api:
-        description: "Bajar una muestra (60 filas) de cada tabla de la API del INDEC (usa el secreto INDEC_API_TOKEN)"
-        type: boolean
-        default: false
+        description: "API del INDEC (usa el secreto INDEC_API_TOKEN): no, muestra (60 filas por tabla) o completo"
+        type: choice
+        options: ["no", muestra, completo]
+        default: "no"
 
 permissions: {}
 
@@ -34,10 +35,11 @@ jobs:
           python-version: "3.12"
       - run: "pip install --require-hashes --only-binary=:all: --no-cache-dir -r requirements.txt"
       - name: Muestra de la API del INDEC (único paso con el token del INDEC; solo descarga)
-        if: inputs.indec_api
+        if: inputs.indec_api == 'muestra' || inputs.indec_api == 'completo'
         env:
           INDEC_API_TOKEN: ${{ secrets.INDEC_API_TOKEN }}
-        run: python -m pipeline.indec_api muestra
+          MODO: ${{ inputs.indec_api }}
+        run: python -m pipeline.indec_api "$MODO"
       - name: Describir archivos
         if: inputs.urls != ''
         env:

@@ -169,7 +169,12 @@ def bajar_fuente(fuente, hoy: date) -> tuple[str, bytes]:
     no_existen = []
     for url in candidatos:
         try:
-            return url, descargar(url)
+            contenido = descargar(url)
+            # Algunos sitios (el INDEC) responden un archivo que no existe con una página HTML y código 200.
+            if len(candidatos) > 1 and contenido.lstrip()[:1] == b"<" and getattr(fuente, "EXTENSION", "") in ("xls", "xlsx"):
+                no_existen.append(url)
+                continue
+            return url, contenido
         except DescargaError as e:
             if "(404)" not in str(e):
                 raise

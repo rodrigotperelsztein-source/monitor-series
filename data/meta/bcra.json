@@ -1,0 +1,220 @@
+{
+  "id": "bcra",
+  "nombre": "BCRA: reservas, base monetaria, depósitos, préstamos, tasas y tipo de cambio (diario)",
+  "url": "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias",
+  "pagina": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
+  "frecuencia": "D",
+  "unidad": "Según la serie",
+  "sha256": "7bdec15b11ad3b90f6eb2d74a644b22525bb1570d67dbc4b6ca41d31a1f0a532",
+  "columnas": {
+    "reservas": {
+      "nombre": "Reservas internacionales",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "reservas_var_compras": {
+      "nombre": "Variación de reservas por compras de divisas",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "tc_mayorista": {
+      "nombre": "Tipo de cambio mayorista de referencia (Com. A 3500)",
+      "tipo": "nivel",
+      "unidad": "$ por dólar"
+    },
+    "tc_minorista": {
+      "nombre": "Tipo de cambio minorista, promedio vendedor",
+      "tipo": "nivel",
+      "unidad": "$ por dólar"
+    },
+    "banda_inferior": {
+      "nombre": "Bandas cambiarias: límite inferior",
+      "tipo": "nivel",
+      "unidad": "$ por dólar"
+    },
+    "banda_superior": {
+      "nombre": "Bandas cambiarias: límite superior",
+      "tipo": "nivel",
+      "unidad": "$ por dólar"
+    },
+    "base_monetaria": {
+      "nombre": "Base monetaria",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "circulacion_monetaria": {
+      "nombre": "Circulación monetaria",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "billetes_publico": {
+      "nombre": "Billetes y monedas en poder del público",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "m2": {
+      "nombre": "M2 (billetes y monedas, cuentas corrientes y cajas de ahorro)",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "depositos_privados_pesos": {
+      "nombre": "Depósitos del sector privado no financiero en pesos",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "depositos_privados_usd": {
+      "nombre": "Depósitos del sector privado no financiero en dólares",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "depositos_plazo_privados": {
+      "nombre": "Depósitos a plazo fijo del sector privado (no ajustables)",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_privados_pesos": {
+      "nombre": "Préstamos al sector privado en pesos",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_adelantos": {
+      "nombre": "Préstamos al sector privado: adelantos en cuenta corriente",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_documentos": {
+      "nombre": "Préstamos al sector privado: documentos",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_hipotecarios": {
+      "nombre": "Préstamos al sector privado: hipotecarios",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_prendarios": {
+      "nombre": "Préstamos al sector privado: prendarios",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_personales": {
+      "nombre": "Préstamos al sector privado: personales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_tarjetas": {
+      "nombre": "Préstamos al sector privado: tarjetas de crédito",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_privados_usd": {
+      "nombre": "Préstamos al sector privado en dólares",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "tasa_tamar": {
+      "nombre": "Tasa TAMAR de bancos privados",
+      "tipo": "nivel",
+      "unidad": "% nominal anual"
+    },
+    "tasa_badlar": {
+      "nombre": "Tasa BADLAR de bancos privados",
+      "tipo": "nivel",
+      "unidad": "% nominal anual"
+    },
+    "tasa_tm20": {
+      "nombre": "Tasa TM20 de bancos privados",
+      "tipo": "nivel",
+      "unidad": "% nominal anual"
+    },
+    "tasa_plazo_fijo_30d": {
+      "nombre": "Tasa de depósitos a 30 días",
+      "tipo": "nivel",
+      "unidad": "% nominal anual"
+    },
+    "tasa_baibar": {
+      "nombre": "Tasa de préstamos interbancarios (BAIBAR)",
+      "tipo": "nivel",
+      "unidad": "% nominal anual"
+    },
+    "tasa_adelantos": {
+      "nombre": "Tasa de adelantos en cuenta corriente",
+      "tipo": "nivel",
+      "unidad": "% nominal anual"
+    },
+    "tasa_personales": {
+      "nombre": "Tasa de préstamos personales",
+      "tipo": "nivel",
+      "unidad": "% nominal anual"
+    },
+    "pases_pasivos": {
+      "nombre": "Pases pasivos del BCRA",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "cer": {
+      "nombre": "Coeficiente de estabilización de referencia (CER)",
+      "tipo": "nivel",
+      "unidad": "Índice 2-2-2002=1"
+    },
+    "uva": {
+      "nombre": "Unidad de valor adquisitivo (UVA)",
+      "tipo": "nivel",
+      "unidad": "$"
+    },
+    "icl": {
+      "nombre": "Índice para contratos de locación (ICL)",
+      "tipo": "nivel",
+      "unidad": "Índice 30-6-2020=1"
+    },
+    "factor_total": {
+      "nombre": "Base monetaria: total de factores de explicación",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_compras_privado": {
+      "nombre": "Base monetaria: compras de divisas al sector privado",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_compras_tesoro": {
+      "nombre": "Base monetaria: compras de divisas al Tesoro",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_adelantos_tesoro": {
+      "nombre": "Base monetaria: adelantos transitorios al Tesoro",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_utilidades": {
+      "nombre": "Base monetaria: transferencia de utilidades al Tesoro",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_resto_tesoro": {
+      "nombre": "Base monetaria: resto de operaciones con el Tesoro",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_pases": {
+      "nombre": "Base monetaria: pases",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_letras_fiscales": {
+      "nombre": "Base monetaria: letras fiscales de liquidez (LEFI)",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_otros": {
+      "nombre": "Base monetaria: otras operaciones",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    }
+  },
+  "descargado": "2026-11-05T18:15:19Z",
+  "ultimo_periodo": "2026-11-05",
+  "observaciones": 10567,
+  "original_guardado": null
+}

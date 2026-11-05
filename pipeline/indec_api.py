@@ -48,9 +48,7 @@ TABLAS = {
                                 # Sin las clases y grupos de la CIIU (unas 150 mil filas que no se usan).
                                 {"nivel": 'in.("Nivel general",Origen,Sector,División)'}),
     "icc_precios_construccion": ("indicador,codigo_apertura,codigo_CPC_1,clasificador,nivel,descripcion,periodo,anio,mes,"
-                                 "tipo_de_indicador,tipo_de_indicador_descripcion,region,unidad_de_medida",
-                                # Sin las clases y grupos de la CIIU (unas 150 mil filas que no se usan).
-                                {"nivel": 'in.("Nivel general",Origen,Sector,División)'}),
+                                 "tipo_de_indicador,tipo_de_indicador_descripcion,region,unidad_de_medida", {}),
     "comercio_exterior_nomenclaturas": ("nombre_columna,codigo", {}),
     # Comercio exterior: casi 1,2 millones de filas desde 1986. En la corrida diaria se bajan los últimos años
     # (la fuente conserva los meses anteriores ya guardados); INDEC_API_ANIO_DESDE permite bajar toda la historia.

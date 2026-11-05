@@ -47,6 +47,10 @@ on:
         type: choice
         options: [completo, calendario]
         default: completo
+      fuentes:
+        description: "Solo estas fuentes (ids separados por espacio; vacío = según el modo)"
+        required: false
+        default: ""
       forzar:
         description: "Procesar aunque el archivo no haya cambiado"
         type: boolean
@@ -83,10 +87,13 @@ jobs:
           EVENTO: ${{ github.event_name }}
           HORARIO: ${{ github.event.schedule }}
           MODO_MANUAL: ${{ inputs.modo }}
+          FUENTES_MANUAL: ${{ inputs.fuentes }}
         run: |
           FUENTES=""
           if [ "$EVENTO" = "workflow_dispatch" ]; then
             MODO="$MODO_MANUAL"
+            case "$FUENTES_MANUAL" in *[!a-z0-9_\ ]*) echo "Lista de fuentes inválida"; exit 1;; esac
+            FUENTES="$FUENTES_MANUAL"
           else
             case "$HORARIO" in
               "47 0 * * *"|"17 4 * * *") MODO=completo ;;

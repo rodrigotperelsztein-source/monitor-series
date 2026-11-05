@@ -5,7 +5,7 @@
   "pagina": "https://www.bcra.gob.ar/indices-de-tipo-de-cambio-multilateral/",
   "frecuencia": "D",
   "unidad": "Índice 17-12-2015=100",
-  "sha256": "49cda5b15a5f461d60bd02c281612a5f44633155d756ab5c67659f382a6c17fa",
+  "sha256": "b3b27aaa945739a2a597da309d5165f8bd11c27792ec331cc60c49b76359c742",
   "columnas": {
     "multilateral": {
       "nombre": "Tipo de cambio real multilateral (ITCRM)",
@@ -83,8 +83,8 @@
       "unidad": "Índice 17-12-2015=100"
     }
   },
-  "descargado": "2026-11-04T07:00:38Z",
-  "ultimo_periodo": "2026-11-03",
-  "observaciones": 10899,
+  "descargado": "2026-11-05T07:26:54Z",
+  "ultimo_periodo": "2026-11-04",
+  "observaciones": 10900,
   "original_guardado": null
 }

@@ -2516,6 +2516,7 @@ fecha,id_serie,valor
 2026-10-30,acciones_energia.pampa,72.650000
 2026-11-02,acciones_energia.pampa,69.780000
 2026-11-03,acciones_energia.pampa,68.510000
+2026-11-04,acciones_energia.pampa,64.840000
 2016-10-28,acciones_energia.tgs,7.164200
 2016-10-31,acciones_energia.tgs,6.981300
 2016-11-01,acciones_energia.tgs,6.875400
@@ -5033,6 +5034,7 @@ fecha,id_serie,valor
 2026-10-30,acciones_energia.tgs,23.670000
 2026-11-02,acciones_energia.tgs,22.880000
 2026-11-03,acciones_energia.tgs,23.810000
+2026-11-04,acciones_energia.tgs,23.250000
 2019-07-26,acciones_energia.vista,9.100000
 2019-07-29,acciones_energia.vista,10.000000
 2019-07-30,acciones_energia.vista,10.100000
@@ -6862,6 +6864,7 @@ fecha,id_serie,valor
 2026-10-30,acciones_energia.vista,70.450000
 2026-11-02,acciones_energia.vista,66.890000
 2026-11-03,acciones_energia.vista,67.920000
+2026-11-04,acciones_energia.vista,62.020000
 2016-10-28,acciones_energia.ypf,17.770000
 2016-10-31,acciones_energia.ypf,17.760000
 2016-11-01,acciones_energia.ypf,17.380000
@@ -9379,6 +9382,7 @@ fecha,id_serie,valor
 2026-10-30,acciones_energia.ypf,47.000000
 2026-11-02,acciones_energia.ypf,43.850000
 2026-11-03,acciones_energia.ypf,44.810000
+2026-11-04,acciones_energia.ypf,41.610000
 2016-10-01,acciones_energia_mensual.pampa,34.070000
 2016-11-01,acciones_energia_mensual.pampa,34.930000
 2016-12-01,acciones_energia_mensual.pampa,34.810000
@@ -184250,6 +184254,7 @@ fecha,id_serie,valor
 2026-11-01,itcrm.brasil,79.476858
 2026-11-02,itcrm.brasil,80.095069
 2026-11-03,itcrm.brasil,79.544761
+2026-11-04,itcrm.brasil,79.697691
 1997-01-01,itcrm.canada,75.995391
 1997-01-02,itcrm.canada,75.806922
 1997-01-03,itcrm.canada,75.707305
@@ -195149,6 +195154,7 @@ fecha,id_serie,valor
 2026-11-01,itcrm.canada,86.753085
 2026-11-02,itcrm.canada,87.239803
 2026-11-03,itcrm.canada,87.411484
+2026-11-04,itcrm.canada,87.278287
 1997-01-01,itcrm.chile,92.222063
 1997-01-02,itcrm.chile,92.354079
 1997-01-03,itcrm.chile,92.203203
@@ -206048,6 +206054,7 @@ fecha,id_serie,valor
 2026-11-01,itcrm.chile,74.430818
 2026-11-02,itcrm.chile,76.009376
 2026-11-03,itcrm.chile,75.941374
+2026-11-04,itcrm.chile,77.010300
 1997-01-01,itcrm.china,58.423535
 1997-01-02,itcrm.china,58.449648
 1997-01-03,itcrm.china,58.475068
@@ -216947,6 +216954,7 @@ fecha,id_serie,valor
 2026-11-01,itcrm.china,73.217470
 2026-11-02,itcrm.china,73.796738
 2026-11-03,itcrm.china,73.737853
+2026-11-04,itcrm.china,73.403494
 1997-01-01,itcrm.estados_unidos,70.278200
 1997-01-02,itcrm.estados_unidos,70.272755
 1997-01-03,itcrm.estados_unidos,70.266463
@@ -227846,6 +227854,7 @@ fecha,id_serie,valor
 2026-11-01,itcrm.estados_unidos,91.538438
 2026-11-02,itcrm.estados_unidos,92.174418
 2026-11-03,itcrm.estados_unidos,92.452030
+2026-11-04,itcrm.estados_unidos,92.103768
 1997-01-01,itcrm.india,55.491836
 1997-01-02,itcrm.india,55.329054
 1997-01-03,itcrm.india,55.374687
@@ -238745,6 +238754,7 @@ fecha,id_serie,valor
 2026-11-01,itcrm.india,74.376856
 2026-11-02,itcrm.india,74.944333
 2026-11-03,itcrm.india,75.299349
+2026-11-04,itcrm.india,75.101349
 1997-01-01,itcrm.japon,30.679197
 1997-01-02,itcrm.japon,30.784092
 1997-01-03,itcrm.japon,30.655737
@@ -249644,6 +249654,7 @@ fecha,id_serie,valor
 2026-11-01,itcrm.japon,59.096543
 2026-11-02,itcrm.japon,59.372208
 2026-11-03,itcrm.japon,59.300122
+2026-11-04,itcrm.japon,59.159692
 1997-01-01,itcrm.mexico,73.995263
 1997-01-02,itcrm.mexico,73.754322
 1997-01-03,itcrm.mexico,74.122552
@@ -260543,6 +260554,7 @@ fecha,id_serie,valor
 2026-11-01,itcrm.mexico,96.727215
 2026-11-02,itcrm.mexico,98.782656
 2026-11-03,itcrm.mexico,97.464472
+2026-11-04,itcrm.mexico,98.658854
 1997-01-01,itcrm.multilateral,86.348001
 1997-01-02,itcrm.multilateral,86.333102
 1997-01-03,itcrm.multilateral,86.056125
@@ -271442,6 +271454,7 @@ fecha,id_serie,valor
 2026-11-01,itcrm.multilateral,81.294417
 2026-11-02,itcrm.multilateral,82.039398
 2026-11-03,itcrm.multilateral,81.911454
+2026-11-04,itcrm.multilateral,81.866051
 1997-01-01,itcrm.reino_unido,83.886389
 1997-01-02,itcrm.reino_unido,82.857232
 1997-01-03,itcrm.reino_unido,82.882734
@@ -282341,6 +282354,7 @@ fecha,id_serie,valor
 2026-11-01,itcrm.reino_unido,83.387835
 2026-11-02,itcrm.reino_unido,84.144173
 2026-11-03,itcrm.reino_unido,84.417836
+2026-11-04,itcrm.reino_unido,84.420783
 1997-01-01,itcrm.sudamerica,96.145348
 1997-01-02,itcrm.sudamerica,96.206997
 1997-01-03,itcrm.sudamerica,96.170498
@@ -293240,6 +293254,7 @@ fecha,id_serie,valor
 2026-11-01,itcrm.sudamerica,84.439199
 2026-11-02,itcrm.sudamerica,85.403605
 2026-11-03,itcrm.sudamerica,85.225129
+2026-11-04,itcrm.sudamerica,85.551966
 1997-01-01,itcrm.suiza,71.526335
 1997-01-02,itcrm.suiza,71.501836
 1997-01-03,itcrm.suiza,70.881223
@@ -304139,6 +304154,7 @@ fecha,id_serie,valor
 2026-11-01,itcrm.suiza,85.060985
 2026-11-02,itcrm.suiza,86.253903
 2026-11-03,itcrm.suiza,86.276667
+2026-11-04,itcrm.suiza,86.335891
 1997-01-01,itcrm.uruguay,75.972367
 1997-01-02,itcrm.uruguay,76.009427
 1997-01-03,itcrm.uruguay,76.046505
@@ -315038,6 +315054,7 @@ fecha,id_serie,valor
 2026-11-01,itcrm.uruguay,99.409921
 2026-11-02,itcrm.uruguay,100.106369
 2026-11-03,itcrm.uruguay,100.189252
+2026-11-04,itcrm.uruguay,99.947908
 1997-01-01,itcrm.vietnam,63.218311
 1997-01-02,itcrm.vietnam,63.186638
 1997-01-03,itcrm.vietnam,63.174810
@@ -325937,6 +325954,7 @@ fecha,id_serie,valor
 2026-11-01,itcrm.vietnam,80.127862
 2026-11-02,itcrm.vietnam,80.748777
 2026-11-03,itcrm.vietnam,81.056481
+2026-11-04,itcrm.vietnam,80.881487
 1997-01-01,itcrm.zona_euro,88.850926
 1997-01-02,itcrm.zona_euro,88.867798
 1997-01-03,itcrm.zona_euro,87.945201
@@ -336836,6 +336854,7 @@ fecha,id_serie,valor
 2026-11-01,itcrm.zona_euro,89.118563
 2026-11-02,itcrm.zona_euro,90.140264
 2026-11-03,itcrm.zona_euro,90.331290
+2026-11-04,itcrm.zona_euro,90.312765
 1997-01-01,itcrm_mensual.brasil,120.293767
 1997-02-01,itcrm_mensual.brasil,120.047629
 1997-03-01,itcrm_mensual.brasil,119.824771

@@ -72,7 +72,14 @@ def leer_excel(contenido: bytes) -> dict[str, pd.DataFrame]:
 
 
 def _periodo(fila: list, anio: int | None) -> tuple[pd.Timestamp | None, int | None]:
-    """Fecha de la fila (o None) y el año vigente, mirando las primeras columnas."""
+    """Fecha de la fila (o None) y el año vigente, mirando las primeras columnas.
+
+    Una fila que solo dice "Año 2016" (subtítulo de bloque) fija el año de los meses que siguen.
+    """
+    for v in fila[:2]:
+        m = re.fullmatch(r"A[NÑ]O ((?:19|20)\d\d)\*?", norm(v)) if pd.notna(v) else None
+        if m:
+            return None, int(m.group(1))
     for j, v in enumerate(fila[:4]):
         if isinstance(v, (pd.Timestamp, np.datetime64)) or hasattr(v, "year") and hasattr(v, "month"):
             t = pd.Timestamp(v)

@@ -32,15 +32,15 @@ for _k, (_, _n, _u, _a) in bcra.VARIABLES.items():
 def calcular(diaria: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
     d = diaria.set_index("fecha")
     mes = d.index.to_period("M")
-    out = pd.DataFrame(index=sorted(set(mes)))
+    meses = pd.period_range(mes.min(), mes.max(), freq="M")
+    out = pd.DataFrame(index=meses)
     for k, (_, _, _, a) in bcra.VARIABLES.items():
-        g = d[k].dropna().groupby(d[k].dropna().index.to_period("M"))
-        s = g.last() if a == "fin" else g.sum() if a == "suma" else g.mean()
+        v = d[k].dropna()
+        g = v.groupby(v.index.to_period("M"))
+        s = (g.last() if a == "fin" else g.sum() if a == "suma" else g.mean()).reindex(meses)
         out[k] = s
         if a != "suma":
-            # Por período (no por posición): una serie puede tener meses sin dato
-            out[f"{k}_var_ia"] = [((s.get(p) / s.get(p - 12) - 1) * 100) if s.get(p - 12) not in (None, 0) and p - 12 in s.index else None
-                                 for p in out.index]
+            out[f"{k}_var_ia"] = (s / s.shift(12) - 1) * 100  # meses consecutivos: shift(12) es un año
     out = out[out.index < d.index.max().to_period("M")]
     out.insert(0, "fecha", out.index.to_timestamp())
     return out.reset_index(drop=True)[["fecha", *COLUMNAS]].astype({c: float for c in COLUMNAS}), {}

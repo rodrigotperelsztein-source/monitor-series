@@ -1,4 +1,4 @@
 [bcra]
-  actualizada: último período — → 2026-11-05; valores revisados: 0
+  archivo distinto pero mismos datos
 [bcra_mensual]
-  ERROR: unsupported operand type(s) for /: 'NoneType' and 'float'
+  recalculada: último período — → 2026-10

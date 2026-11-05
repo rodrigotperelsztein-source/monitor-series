@@ -1,0 +1,381 @@
+{
+  "id": "bcra_mensual",
+  "nombre": "BCRA: reservas, base monetaria, depósitos, préstamos, tasas y tipo de cambio (mensual)",
+  "url": "data/bcra.csv",
+  "pagina": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
+  "frecuencia": "M",
+  "unidad": "Según la serie",
+  "sha256": "4a0ea36aef78b80599baece36c2279ca5128f0f667ac2b8c2e70368d0b8afb95",
+  "derivada_de": [
+    "bcra"
+  ],
+  "archivos_de_origen": [
+    "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias"
+  ],
+  "columnas": {
+    "reservas": {
+      "nombre": "Reservas internacionales, último dato del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "reservas_var_ia": {
+      "nombre": "Reservas internacionales, último dato del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "reservas_var_compras": {
+      "nombre": "Variación de reservas por compras de divisas, suma del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "tc_mayorista": {
+      "nombre": "Tipo de cambio mayorista de referencia (Com. A 3500), promedio del mes",
+      "tipo": "nivel",
+      "unidad": "$ por dólar"
+    },
+    "tc_mayorista_var_ia": {
+      "nombre": "Tipo de cambio mayorista de referencia (Com. A 3500), promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "tc_minorista": {
+      "nombre": "Tipo de cambio minorista, promedio vendedor, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "$ por dólar"
+    },
+    "tc_minorista_var_ia": {
+      "nombre": "Tipo de cambio minorista, promedio vendedor, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "banda_inferior": {
+      "nombre": "Bandas cambiarias: límite inferior, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "$ por dólar"
+    },
+    "banda_inferior_var_ia": {
+      "nombre": "Bandas cambiarias: límite inferior, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "banda_superior": {
+      "nombre": "Bandas cambiarias: límite superior, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "$ por dólar"
+    },
+    "banda_superior_var_ia": {
+      "nombre": "Bandas cambiarias: límite superior, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "base_monetaria": {
+      "nombre": "Base monetaria, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "base_monetaria_var_ia": {
+      "nombre": "Base monetaria, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "circulacion_monetaria": {
+      "nombre": "Circulación monetaria, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "circulacion_monetaria_var_ia": {
+      "nombre": "Circulación monetaria, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "billetes_publico": {
+      "nombre": "Billetes y monedas en poder del público, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "billetes_publico_var_ia": {
+      "nombre": "Billetes y monedas en poder del público, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "m2": {
+      "nombre": "M2 (billetes y monedas, cuentas corrientes y cajas de ahorro), promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "m2_var_ia": {
+      "nombre": "M2 (billetes y monedas, cuentas corrientes y cajas de ahorro), promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "depositos_privados_pesos": {
+      "nombre": "Depósitos del sector privado no financiero en pesos, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "depositos_privados_pesos_var_ia": {
+      "nombre": "Depósitos del sector privado no financiero en pesos, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "depositos_privados_usd": {
+      "nombre": "Depósitos del sector privado no financiero en dólares, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "depositos_privados_usd_var_ia": {
+      "nombre": "Depósitos del sector privado no financiero en dólares, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "depositos_plazo_privados": {
+      "nombre": "Depósitos a plazo fijo del sector privado (no ajustables), promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "depositos_plazo_privados_var_ia": {
+      "nombre": "Depósitos a plazo fijo del sector privado (no ajustables), promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "prestamos_privados_pesos": {
+      "nombre": "Préstamos al sector privado en pesos, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_privados_pesos_var_ia": {
+      "nombre": "Préstamos al sector privado en pesos, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "prestamos_adelantos": {
+      "nombre": "Préstamos al sector privado: adelantos en cuenta corriente, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_adelantos_var_ia": {
+      "nombre": "Préstamos al sector privado: adelantos en cuenta corriente, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "prestamos_documentos": {
+      "nombre": "Préstamos al sector privado: documentos, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_documentos_var_ia": {
+      "nombre": "Préstamos al sector privado: documentos, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "prestamos_hipotecarios": {
+      "nombre": "Préstamos al sector privado: hipotecarios, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_hipotecarios_var_ia": {
+      "nombre": "Préstamos al sector privado: hipotecarios, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "prestamos_prendarios": {
+      "nombre": "Préstamos al sector privado: prendarios, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_prendarios_var_ia": {
+      "nombre": "Préstamos al sector privado: prendarios, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "prestamos_personales": {
+      "nombre": "Préstamos al sector privado: personales, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_personales_var_ia": {
+      "nombre": "Préstamos al sector privado: personales, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "prestamos_tarjetas": {
+      "nombre": "Préstamos al sector privado: tarjetas de crédito, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_tarjetas_var_ia": {
+      "nombre": "Préstamos al sector privado: tarjetas de crédito, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "prestamos_privados_usd": {
+      "nombre": "Préstamos al sector privado en dólares, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "prestamos_privados_usd_var_ia": {
+      "nombre": "Préstamos al sector privado en dólares, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "tasa_tamar": {
+      "nombre": "Tasa TAMAR de bancos privados, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "% nominal anual"
+    },
+    "tasa_tamar_var_ia": {
+      "nombre": "Tasa TAMAR de bancos privados, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "tasa_badlar": {
+      "nombre": "Tasa BADLAR de bancos privados, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "% nominal anual"
+    },
+    "tasa_badlar_var_ia": {
+      "nombre": "Tasa BADLAR de bancos privados, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "tasa_tm20": {
+      "nombre": "Tasa TM20 de bancos privados, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "% nominal anual"
+    },
+    "tasa_tm20_var_ia": {
+      "nombre": "Tasa TM20 de bancos privados, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "tasa_plazo_fijo_30d": {
+      "nombre": "Tasa de depósitos a 30 días, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "% nominal anual"
+    },
+    "tasa_plazo_fijo_30d_var_ia": {
+      "nombre": "Tasa de depósitos a 30 días, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "tasa_baibar": {
+      "nombre": "Tasa de préstamos interbancarios (BAIBAR), promedio del mes",
+      "tipo": "nivel",
+      "unidad": "% nominal anual"
+    },
+    "tasa_baibar_var_ia": {
+      "nombre": "Tasa de préstamos interbancarios (BAIBAR), promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "tasa_adelantos": {
+      "nombre": "Tasa de adelantos en cuenta corriente, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "% nominal anual"
+    },
+    "tasa_adelantos_var_ia": {
+      "nombre": "Tasa de adelantos en cuenta corriente, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "tasa_personales": {
+      "nombre": "Tasa de préstamos personales, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "% nominal anual"
+    },
+    "tasa_personales_var_ia": {
+      "nombre": "Tasa de préstamos personales, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pases_pasivos": {
+      "nombre": "Pases pasivos del BCRA, promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "pases_pasivos_var_ia": {
+      "nombre": "Pases pasivos del BCRA, promedio del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cer": {
+      "nombre": "Coeficiente de estabilización de referencia (CER), último dato del mes",
+      "tipo": "nivel",
+      "unidad": "Índice 2-2-2002=1"
+    },
+    "cer_var_ia": {
+      "nombre": "Coeficiente de estabilización de referencia (CER), último dato del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "uva": {
+      "nombre": "Unidad de valor adquisitivo (UVA), último dato del mes",
+      "tipo": "nivel",
+      "unidad": "$"
+    },
+    "uva_var_ia": {
+      "nombre": "Unidad de valor adquisitivo (UVA), último dato del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "icl": {
+      "nombre": "Índice para contratos de locación (ICL), último dato del mes",
+      "tipo": "nivel",
+      "unidad": "Índice 30-6-2020=1"
+    },
+    "icl_var_ia": {
+      "nombre": "Índice para contratos de locación (ICL), último dato del mes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "factor_total": {
+      "nombre": "Base monetaria: total de factores de explicación, suma del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_compras_privado": {
+      "nombre": "Base monetaria: compras de divisas al sector privado, suma del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_compras_tesoro": {
+      "nombre": "Base monetaria: compras de divisas al Tesoro, suma del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_adelantos_tesoro": {
+      "nombre": "Base monetaria: adelantos transitorios al Tesoro, suma del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_utilidades": {
+      "nombre": "Base monetaria: transferencia de utilidades al Tesoro, suma del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_resto_tesoro": {
+      "nombre": "Base monetaria: resto de operaciones con el Tesoro, suma del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_pases": {
+      "nombre": "Base monetaria: pases, suma del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_letras_fiscales": {
+      "nombre": "Base monetaria: letras fiscales de liquidez (LEFI), suma del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "factor_otros": {
+      "nombre": "Base monetaria: otras operaciones, suma del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    }
+  },
+  "descargado": "2026-11-05T18:15:19Z",
+  "calculado": "2026-11-05T18:17:24Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 370
+}

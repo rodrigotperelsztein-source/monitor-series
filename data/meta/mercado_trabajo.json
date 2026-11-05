@@ -1,0 +1,55 @@
+{
+  "id": "mercado_trabajo",
+  "nombre": "Mercado de trabajo: actividad, empleo y desocupación, 31 aglomerados (INDEC, EPH)",
+  "url": "https://api.indec.gob.ar/v1/mercado_trabajo_eph",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-31-58",
+  "frecuencia": "Q",
+  "unidad": "%",
+  "sha256": "ed42bbbd7ebfd24b0cfad8f6d9dd0f7f5979d8651ce32fd4ee08964e2ebded3d",
+  "columnas": {
+    "actividad": {
+      "nombre": "Tasa de actividad",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "empleo": {
+      "nombre": "Tasa de empleo",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "desocupacion": {
+      "nombre": "Tasa de desocupación",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "subocupacion": {
+      "nombre": "Tasa de subocupación",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "subocupacion_demandante": {
+      "nombre": "Tasa de subocupación demandante",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "ocupacion_demandante": {
+      "nombre": "Tasa de ocupados demandantes",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "empleo_informal": {
+      "nombre": "Tasa de empleo informal (asalariados sin descuento jubilatorio y otros)",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "empleo_formal": {
+      "nombre": "Tasa de empleo formal",
+      "tipo": "nivel",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-05T19:58:37Z",
+  "ultimo_periodo": "2026-04",
+  "observaciones": 41,
+  "original_guardado": "data/raw/mercado_trabajo/2026-11-05_ed42bbbd.json"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "icc",
+  "nombre": "Índice del costo de la construcción, GBA (INDEC)",
+  "url": "https://api.indec.gob.ar/v1/icc_precios_construccion",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-33",
+  "frecuencia": "M",
+  "unidad": "Índice ene-22=100",
+  "sha256": "0bda32615bf97c032a82d7655acf13cb1c9875da0778bc129739236e62950516",
+  "columnas": {
+    "nivel_general": {
+      "nombre": "ICC: nivel general",
+      "tipo": "nivel",
+      "unidad": "Índice ene-22=100"
+    },
+    "nivel_general_var_m": {
+      "nombre": "ICC: nivel general, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "nivel_general_var_ia": {
+      "nombre": "ICC: nivel general, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "materiales": {
+      "nombre": "ICC: materiales",
+      "tipo": "nivel",
+      "unidad": "Índice ene-22=100"
+    },
+    "materiales_var_m": {
+      "nombre": "ICC: materiales, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "materiales_var_ia": {
+      "nombre": "ICC: materiales, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "mano_de_obra": {
+      "nombre": "ICC: mano de obra",
+      "tipo": "nivel",
+      "unidad": "Índice ene-22=100"
+    },
+    "mano_de_obra_var_m": {
+      "nombre": "ICC: mano de obra, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "mano_de_obra_var_ia": {
+      "nombre": "ICC: mano de obra, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gastos_generales": {
+      "nombre": "ICC: gastos generales",
+      "tipo": "nivel",
+      "unidad": "Índice ene-22=100"
+    },
+    "gastos_generales_var_m": {
+      "nombre": "ICC: gastos generales, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gastos_generales_var_ia": {
+      "nombre": "ICC: gastos generales, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-05T19:58:37Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 131,
+  "original_guardado": "data/raw/icc/2026-11-05_0bda3261.json"
+}

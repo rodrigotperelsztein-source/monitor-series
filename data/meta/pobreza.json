@@ -1,0 +1,35 @@
+{
+  "id": "pobreza",
+  "nombre": "Pobreza e indigencia, 31 aglomerados urbanos (INDEC, EPH)",
+  "url": "https://api.indec.gob.ar/v1/pobreza_eph",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-46-152",
+  "frecuencia": "S",
+  "unidad": "%",
+  "sha256": "24dcb31216c73df4bb7ec0ad66a8ab8f8e636185281973cc928b4e534117ec07",
+  "columnas": {
+    "pobreza_personas": {
+      "nombre": "Pobreza, % de personas",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "pobreza_hogares": {
+      "nombre": "Pobreza, % de hogares",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "indigencia_personas": {
+      "nombre": "Indigencia, % de personas",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "indigencia_hogares": {
+      "nombre": "Indigencia, % de hogares",
+      "tipo": "nivel",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-05T19:58:37Z",
+  "ultimo_periodo": "2026-01",
+  "observaciones": 20,
+  "original_guardado": "data/raw/pobreza/2026-11-05_24dcb312.json"
+}

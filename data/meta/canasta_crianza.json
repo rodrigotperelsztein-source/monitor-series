@@ -1,0 +1,75 @@
+{
+  "id": "canasta_crianza",
+  "nombre": "Canasta de crianza de la primera infancia, la niñez y la adolescencia (INDEC)",
+  "url": "https://api.indec.gob.ar/v1/canasta-crianza",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-43-149",
+  "frecuencia": "M",
+  "unidad": "Pesos por mes",
+  "sha256": "6e2fc866ee03c0fbf9b2ddb2acf20064f6a386e09de59f2130f53e3192369523",
+  "columnas": {
+    "tot_men1": {
+      "nombre": "Canasta de crianza, total, menores de 1 año",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "bys_men1": {
+      "nombre": "Canasta de crianza, bienes y servicios, menores de 1 año",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "cuid_men1": {
+      "nombre": "Canasta de crianza, cuidado, menores de 1 año",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "tot_1a3": {
+      "nombre": "Canasta de crianza, total, de 1 a 3 años",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "bys_1a3": {
+      "nombre": "Canasta de crianza, bienes y servicios, de 1 a 3 años",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "cuid_1a3": {
+      "nombre": "Canasta de crianza, cuidado, de 1 a 3 años",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "tot_4a5": {
+      "nombre": "Canasta de crianza, total, de 4 a 5 años",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "bys_4a5": {
+      "nombre": "Canasta de crianza, bienes y servicios, de 4 a 5 años",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "cuid_4a5": {
+      "nombre": "Canasta de crianza, cuidado, de 4 a 5 años",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "tot_6a12": {
+      "nombre": "Canasta de crianza, total, de 6 a 12 años",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "bys_6a12": {
+      "nombre": "Canasta de crianza, bienes y servicios, de 6 a 12 años",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    },
+    "cuid_6a12": {
+      "nombre": "Canasta de crianza, cuidado, de 6 a 12 años",
+      "tipo": "nivel",
+      "unidad": "Pesos por mes"
+    }
+  },
+  "descargado": "2026-11-05T19:58:37Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 81,
+  "original_guardado": "data/raw/canasta_crianza/2026-11-05_6e2fc866.json"
+}

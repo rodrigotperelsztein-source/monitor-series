@@ -1,4 +1,15 @@
 [comercio_exterior]
+  códigos fuera de la lista: rubros ['9'], usos ['9']
+  expo_sin_rubro: hasta 22.0% del total (2020-12); meses con más de 0,1%: 105
+  impo_sin_uso: hasta 2.0% del total (2026-04); meses con más de 0,1%: 370
   ERROR: Validación fallida:
-  - La suma de los rubros no da el total exportado.
-  - La suma de los usos económicos no da el total importado.
+  - expo_sin_rubro: más del 1% del total en los últimos tres años (¿cambiaron los códigos?).
+  - impo_sin_uso: más del 1% del total en los últimos tres años (¿cambiaron los códigos?).
+[icc]
+  actualizada: último período — → 2026-09; valores revisados: 0
+[canasta_crianza]
+  actualizada: último período — → 2026-09; valores revisados: 0
+[pobreza]
+  actualizada: último período — → 2026-01; valores revisados: 0
+[mercado_trabajo]
+  actualizada: último período — → 2026-04; valores revisados: 0

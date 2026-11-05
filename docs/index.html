@@ -141,6 +141,10 @@ pre { margin: 0; background: var(--code-bg); color: var(--code-ink); font: 11.5p
 .hint code { font-family: var(--f-mono); font-size: 11.5px; }
 ol.hint { padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
 .toast { font-size: 12px; color: var(--ok); min-height: 1em; }
+.btn.copiado, .btn.sec.copiado { background: var(--ok); border-color: var(--ok); color: var(--surface); }
+.copia-ok { font-size: 12.5px; font-weight: 600; color: var(--ok); margin-top: 6px; min-height: 0; }
+.copia-ok:empty { display: none; }
+.copia-ok.error { color: var(--bad); }
 .error { color: var(--bad); }
 details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
 .seg { display: flex; flex-wrap: wrap; gap: 4px; padding: 3px; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }
@@ -622,8 +626,13 @@ document.querySelectorAll(".seg button").forEach(b => b.onclick = () => {
   document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-selected", x === b));
   document.querySelectorAll(".panel").forEach(p => p.hidden = p.dataset.p !== b.dataset.p);
 });
-document.querySelectorAll("[data-copy]").forEach(b => b.onclick = () =>
-  copiar($(b.dataset.copy).textContent, "toast2", "Copiado."));
+// Aviso de cada botón, armado con su texto ("Copiar código 1" -> "Código 1 copiado").
+const COPIADO = { "fórmulas": "Fórmulas copiadas", "links": "Links copiados" };
+document.querySelectorAll("[data-copy]").forEach(b => {
+  const que = b.textContent.replace(/^Copiar\s*/, "").trim();
+  const msg = "✓ " + (COPIADO[que] || que.replace(/^./, c => c.toUpperCase()) + " copiado") + ". Ya lo podés pegar.";
+  b.onclick = () => copiar($(b.dataset.copy).textContent, b, msg);
+});
 
 function update() {
   try { localStorage.setItem("selector-series", JSON.stringify(sel)); } catch (e) {}
@@ -677,22 +686,33 @@ $("guardar").onclick = () => {
   try { localStorage.setItem("canastas-series", JSON.stringify(l)); } catch (err) {}
   $("nombre-canasta").value = ""; pintarCanastas();
 };
-$("compartir").onclick = () => copiar(location.origin + location.pathname + "#s=" + sel.join(","), "toast1", "Link copiado: quien lo abra ve la misma selección.");
+$("compartir").onclick = () => copiar(location.origin + location.pathname + "#s=" + sel.join(","), $("compartir"), "✓ Link copiado: quien lo abra ve la misma selección.");
 $("selected").addEventListener("click", e => {
   const id = e.target.dataset && e.target.dataset.rm; if (!id) return;
   sel = sel.filter(x => x !== id); update(); render();
 });
 $("clear").onclick = () => { sel = []; update(); render(); };
 
-function copiar(texto, toast, msg) {
-  const ok = () => { $(toast).textContent = msg; setTimeout(() => $(toast).textContent = "", 2500); };
+// Al copiar, el botón se pone verde y dice "Copiado"; abajo de ese botón aparece el aviso. Vuelve a la normalidad a
+// los 4 segundos. Si el navegador no deja copiar, el aviso lo dice y muestra el texto seleccionado para copiarlo a mano.
+function copiar(texto, boton, msg) {
+  const aviso = boton._aviso || (boton._aviso = Object.assign(document.createElement("div"), { className: "copia-ok" }));
+  aviso.setAttribute("role", "status");
+  boton.closest(".btns").after(aviso);
+  const original = boton._original || (boton._original = boton.textContent);
+  const ok = () => {
+    clearTimeout(boton._t);
+    boton.classList.add("copiado"); boton.textContent = "✓ Copiado";
+    aviso.classList.remove("error"); aviso.textContent = msg;
+    boton._t = setTimeout(() => { boton.classList.remove("copiado"); boton.textContent = original; aviso.textContent = ""; }, 4000);
+  };
   const plan_b = () => {
-    const t = document.createElement("textarea"); t.value = texto; t.style.width = "100%"; t.rows = 4;
-    $(toast).textContent = "No se pudo copiar solo: seleccioná el texto y copialo."; $(toast).after(t); t.select();
+    aviso.classList.add("error"); aviso.textContent = "No se pudo copiar solo: el texto quedó seleccionado abajo, copialo con Ctrl+C.";
+    const t = document.createElement("textarea"); t.value = texto; t.style.width = "100%"; t.rows = 4; aviso.after(t); t.select();
   };
   try { navigator.clipboard.writeText(texto).then(ok, plan_b); } catch (e) { plan_b(); }
 }
-$("copylista").onclick = () => copiar(lista(), "toast1", "Lista copiada. Pegala en el parámetro SeriesElegidas.");
+$("copylista").onclick = () => copiar(lista(), $("copylista"), "✓ Lista copiada. Pegala en el parámetro SeriesElegidas.");
 
 // ---------- Ticker con los últimos datos reales ----------
 const TICKER = [

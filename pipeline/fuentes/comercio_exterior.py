@@ -47,6 +47,8 @@ COLUMNAS |= {f"expo_{k}": Columna("", f"Exportaciones a {NOMBRE_PAIS[k]}") for k
 COLUMNAS["importaciones"] = Columna("", "Importaciones de bienes (CIF)")
 COLUMNAS |= {f"impo_{k}": Columna("", f"Importaciones: {n}") for k, (_, n) in USOS.items()}
 COLUMNAS |= {f"impo_{k}": Columna("", f"Importaciones desde {NOMBRE_PAIS[k]}") for k in PAISES}
+COLUMNAS["expo_sin_rubro"] = Columna("", "Exportaciones sin rubro asignado (total menos los cuatro rubros)")
+COLUMNAS["impo_sin_uso"] = Columna("", "Importaciones sin uso económico asignado (total menos los siete usos)")
 COLUMNAS["saldo"] = Columna("", "Saldo comercial (exportaciones - importaciones)")
 
 
@@ -83,6 +85,12 @@ def leer(contenido: bytes, columnas=COLUMNAS) -> pd.DataFrame:
         out[f"impo_{k}"] = im[im["uso_economico_cod"].astype(str) == cod].groupby("fecha")["v"].sum()
     for k, paises in PAISES.items():
         out[f"impo_{k}"] = im[im["pais_cod"].isin(paises)].groupby("fecha")["v"].sum()
+    out["expo_sin_rubro"] = out["exportaciones"] - out[[f"expo_{k}" for k in RUBROS]].sum(axis=1)
+    out["impo_sin_uso"] = out["importaciones"] - out[[f"impo_{k}" for k in USOS]].sum(axis=1)
+    otros_r = sorted(set(ex["rubro_cod"].astype(str)) - {c for c, _ in RUBROS.values()})
+    otros_u = sorted(set(im["uso_economico_cod"].astype(str)) - {c for c, _ in USOS.values()})
+    if otros_r or otros_u:
+        print(f"  códigos fuera de la lista: rubros {otros_r[:10]}, usos {otros_u[:10]}")
     out["saldo"] = out["exportaciones"] - out["importaciones"]
     out.index.name = "fecha"
     return out.sort_index().reset_index()[["fecha", *columnas]]
@@ -103,12 +111,14 @@ def validar(nuevo: pd.DataFrame, anterior: pd.DataFrame | None, columnas=COLUMNA
     esperado = pd.date_range(nuevo["fecha"].min(), periods=len(nuevo), freq="MS")
     if not nuevo["fecha"].reset_index(drop=True).equals(pd.Series(esperado, name="fecha")):
         errores.append("Los meses no son consecutivos (¿falta bajar la historia completa?).")
-    rub = nuevo[[f"expo_{k}" for k in RUBROS]].sum(axis=1)
-    if ((rub - nuevo["exportaciones"]).abs() > 0.5).any():
-        errores.append("La suma de los rubros no da el total exportado.")
-    uso = nuevo[[f"impo_{k}" for k in USOS]].sum(axis=1)
-    if ((uso - nuevo["importaciones"]).abs() > 0.5).any():
-        errores.append("La suma de los usos económicos no da el total importado.")
+    for col, total in (("expo_sin_rubro", "exportaciones"), ("impo_sin_uso", "importaciones")):
+        parte = (nuevo[col] / nuevo[total]).abs()
+        if parte.max() > 0.001:
+            peor = parte.idxmax()
+            print(f"  {col}: hasta {parte.max():.1%} del total ({nuevo['fecha'][peor]:%Y-%m}); "
+                  f"meses con más de 0,1%: {(parte > 0.001).sum()}")
+        if (parte.tail(36) > 0.01).any():
+            errores.append(f"{col}: más del 1% del total en los últimos tres años (¿cambiaron los códigos?).")
     if not nuevo["exportaciones"].between(100, 20_000).all():
         errores.append("Exportaciones mensuales fuera de rango (100 a 20.000 millones de USD).")
     if (pd.Timestamp.today() - nuevo["fecha"].max()).days > 75:

@@ -51,6 +51,10 @@ TABLAS = {
                                  "tipo_de_indicador,tipo_de_indicador_descripcion,region,unidad_de_medida",
                                 # Sin las clases y grupos de la CIIU (unas 150 mil filas que no se usan).
                                 {"nivel": 'in.("Nivel general",Origen,Sector,División)'}),
+    "comercio_exterior_nomenclaturas": ("nombre_columna,codigo", {}),
+    "comercio_exterior_exportacion_bienes": ("Periodo,rubro_cod,subrubro_cod,pais_cod", {}),
+    "comercio_exterior_importacion_bienes": ("Periodo,uso_economico_cod,gce_cod,pais_cod", {}),
+    "canasta-crianza": ("Periodo", {}),
     "pobreza_eph": ("area_geografica_cod,periodo,anio,semestre", {}),
     "mercado_trabajo_eph": ("area_geografica_cod,periodo,anio,trimestre", {}),
 }

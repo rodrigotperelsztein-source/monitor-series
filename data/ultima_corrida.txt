@@ -1,8 +1,8 @@
-/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:118: UserWarning: Print area cannot be set to Defined name: 'La Rioja'!$1:$82.
+/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:118: UserWarning: Print area cannot be set to Defined name: 'La Rioja'!$1:$82.
   warn(f"Print area cannot be set to Defined name: {defn.value}.")
 /home/runner/work/monitor-series/monitor-series/pipeline/fuentes/_oede_ramas.py:93: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
   vals = pd.to_numeric(df.iloc[i, 2:].replace({"s.d.": np.nan}), errors="coerce").values
-/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:118: UserWarning: Print area cannot be set to Defined name: 'La Rioja'!$1:$82.
+/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:118: UserWarning: Print area cannot be set to Defined name: 'La Rioja'!$1:$82.
   warn(f"Print area cannot be set to Defined name: {defn.value}.")
 /home/runner/work/monitor-series/monitor-series/pipeline/fuentes/_oede_ramas.py:93: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
   vals = pd.to_numeric(df.iloc[i, 2:].replace({"s.d.": np.nan}), errors="coerce").values
@@ -41,15 +41,15 @@
 [salarios]
   sin cambios en el archivo
 [sube]
-  actualizada: último período 2026-11 → 2026-11-03; valores revisados: 0
+  sin cambios en el archivo
 [petroleo]
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-11 → 2026-11-04; valores revisados: 0
 [refinados]
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-11 → 2026-11-04; valores revisados: 0
 [acciones_energia]
   archivo distinto pero mismos datos
 [came]
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-09 → 2026-09; valores revisados: 1
 [camiones_puertos]
   sin cambios en el archivo
 [cammesa_balance]
@@ -75,13 +75,13 @@
 [salarios_real]
   sin cambios en las series de base
 [sube_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [sube_desest]
   sin cambios en las series de base
 [petroleo_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-10 → 2026-10
 [refinados_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-10 → 2026-10
 [acciones_energia_mensual]
   sin cambios en las series de base
 [ventas_combustibles_desest]

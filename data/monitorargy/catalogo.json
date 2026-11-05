@@ -788,7 +788,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -1481,7 +1481,7 @@
 "unidad": "miles",
 "frecuencia": "M",
 "fuente": "AFCP vía Ministerio de Economía",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -1492,7 +1492,7 @@
 "unidad": "miles",
 "frecuencia": "M",
 "fuente": "AFCP vía Ministerio de Economía · desest. propia (X-13)",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -1503,7 +1503,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "AFCP vía Ministerio de Economía · desest. propia (X-13)",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -1514,7 +1514,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "AFCP vía Ministerio de Economía",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -4891,8 +4891,8 @@
 "unidad": "indice",
 "frecuencia": "D",
 "fuente": "BCRA — Índice de tipo de cambio real multilateral",
-"ultimo_periodo": "2026-10-16",
-"frescura": "vencido"
+"ultimo_periodo": "2026-11-04",
+"frescura": "vigente"
 },
 {
 "id": "itcrm_en_el_mes",
@@ -4902,8 +4902,8 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BCRA — Índice de tipo de cambio real multilateral",
-"ultimo_periodo": "2026-10-16",
-"frescura": "vencido"
+"ultimo_periodo": "2026-11-04",
+"frescura": "vigente"
 },
 {
 "id": "itcrm_interanual",
@@ -4913,8 +4913,8 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BCRA — Índice de tipo de cambio real multilateral",
-"ultimo_periodo": "2026-10-16",
-"frescura": "vencido"
+"ultimo_periodo": "2026-11-04",
+"frescura": "vigente"
 },
 {
 "id": "itcrm_presidencias",
@@ -4924,8 +4924,8 @@
 "unidad": "indice",
 "frecuencia": "D",
 "fuente": "BCRA — Índice de tipo de cambio real multilateral",
-"ultimo_periodo": "2026-10-16",
-"frescura": "vencido"
+"ultimo_periodo": "2026-11-04",
+"frescura": "vigente"
 },
 {
 "id": "itcrm_var_anio",
@@ -4935,8 +4935,8 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BCRA — Índice de tipo de cambio real multilateral",
-"ultimo_periodo": "2026-10-16",
-"frescura": "vencido"
+"ultimo_periodo": "2026-11-04",
+"frescura": "vigente"
 },
 {
 "id": "liquidacion_agro",
@@ -6365,7 +6365,7 @@
 "unidad": "miles",
 "frecuencia": "M",
 "fuente": "ADEFA vía Ministerio de Economía",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -6376,7 +6376,7 @@
 "unidad": "miles",
 "frecuencia": "M",
 "fuente": "ADEFA vía Ministerio de Economía · desest. propia (X-13)",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -6387,7 +6387,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "ADEFA vía Ministerio de Economía · desest. propia (X-13)",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -6398,7 +6398,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "ADEFA vía Ministerio de Economía",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -6409,7 +6409,7 @@
 "unidad": "miles",
 "frecuencia": "M",
 "fuente": "ADEFA vía Ministerio de Economía",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -6464,7 +6464,7 @@
 "unidad": "miles",
 "frecuencia": "M",
 "fuente": "ADEFA vía Ministerio de Economía",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -8268,7 +8268,7 @@
 "unidad": "pb",
 "frecuencia": "D",
 "fuente": "JP Morgan (EMBI) vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -8686,7 +8686,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8697,7 +8697,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8708,7 +8708,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8719,7 +8719,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8730,7 +8730,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8741,7 +8741,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8752,7 +8752,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8763,7 +8763,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8774,7 +8774,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8785,7 +8785,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8884,7 +8884,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8895,7 +8895,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8906,7 +8906,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {

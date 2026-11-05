@@ -1,4 +1,8 @@
-[comercio_exterior]
-  actualizada: último período — → 2026-09; valores revisados: 0
-[provincias]
-  actualizada: último período — → 2025-01; valores revisados: 0
+[petroleo]
+  archivo distinto pero mismos datos
+[refinados]
+  archivo distinto pero mismos datos
+[petroleo_mensual]
+  sin cambios en las series de base
+[refinados_mensual]
+  sin cambios en las series de base

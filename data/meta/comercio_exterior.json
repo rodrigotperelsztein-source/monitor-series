@@ -1,0 +1,135 @@
+{
+  "id": "comercio_exterior",
+  "nombre": "Comercio exterior de bienes: exportaciones, importaciones y saldo (INDEC)",
+  "url": "https://api.indec.gob.ar/v1/comercio_exterior_exportacion_bienes",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-2-40",
+  "frecuencia": "M",
+  "unidad": "Millones de USD",
+  "sha256": "977ac46a04de31428a8605778fbb764788264216667f44ef36168dc50ca0c78e",
+  "columnas": {
+    "exportaciones": {
+      "nombre": "Exportaciones de bienes (FOB)",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "expo_primarios": {
+      "nombre": "Exportaciones: Productos primarios",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "expo_moa": {
+      "nombre": "Exportaciones: Manufacturas de origen agropecuario (MOA)",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "expo_moi": {
+      "nombre": "Exportaciones: Manufacturas de origen industrial (MOI)",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "expo_combustibles": {
+      "nombre": "Exportaciones: Combustibles y energía",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "expo_brasil": {
+      "nombre": "Exportaciones a Brasil",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "expo_china": {
+      "nombre": "Exportaciones a China",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "expo_eeuu": {
+      "nombre": "Exportaciones a Estados Unidos",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "expo_ue": {
+      "nombre": "Exportaciones a Unión Europea",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "importaciones": {
+      "nombre": "Importaciones de bienes (CIF)",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "impo_capital": {
+      "nombre": "Importaciones: Bienes de capital",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "impo_intermedios": {
+      "nombre": "Importaciones: Bienes intermedios",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "impo_combustibles": {
+      "nombre": "Importaciones: Combustibles y lubricantes",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "impo_piezas": {
+      "nombre": "Importaciones: Piezas y accesorios para bienes de capital",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "impo_consumo": {
+      "nombre": "Importaciones: Bienes de consumo",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "impo_vehiculos": {
+      "nombre": "Importaciones: Vehículos automotores de pasajeros",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "impo_resto": {
+      "nombre": "Importaciones: Resto",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "impo_brasil": {
+      "nombre": "Importaciones desde Brasil",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "impo_china": {
+      "nombre": "Importaciones desde China",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "impo_eeuu": {
+      "nombre": "Importaciones desde Estados Unidos",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "impo_ue": {
+      "nombre": "Importaciones desde Unión Europea",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "expo_sin_rubro": {
+      "nombre": "Exportaciones bajo secreto estadístico, sin rubro informado",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "impo_sin_uso": {
+      "nombre": "Importaciones bajo secreto estadístico, sin uso económico informado",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "saldo": {
+      "nombre": "Saldo comercial (exportaciones - importaciones)",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    }
+  },
+  "descargado": "2026-11-05T20:32:17Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 489,
+  "original_guardado": null
+}

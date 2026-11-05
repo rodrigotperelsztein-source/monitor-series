@@ -1,0 +1,540 @@
+{
+  "id": "provincias",
+  "nombre": "Ejecución presupuestaria de las provincias: ingresos, gastos y resultado (DNAP)",
+  "url": "https://www.argentina.gob.ar/sites/default/files/serie_aif-apnf-2025.xlsx",
+  "pagina": "https://www.argentina.gob.ar/economia/sechacienda/coordinacion-fiscal-provincial/ejecucion-presupuestaria-provincial/ejecuciones",
+  "frecuencia": "A",
+  "unidad": "Millones de $",
+  "sha256": "d3f411aba594581b238f0f0d135f16647c7bbc7e8f7bda1f679737dcbfa1cd9d",
+  "columnas": {
+    "ingresos_totales": {
+      "nombre": "24 jurisdicciones: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "tributarios_provinciales": {
+      "nombre": "24 jurisdicciones: recursos tributarios de origen provincial",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "tributarios_nacionales": {
+      "nombre": "24 jurisdicciones: recursos tributarios de origen nacional (coparticipación y otros)",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "regalias": {
+      "nombre": "24 jurisdicciones: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "gastos_totales": {
+      "nombre": "24 jurisdicciones: gastos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "personal": {
+      "nombre": "24 jurisdicciones: gasto en personal",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "inversion_real": {
+      "nombre": "24 jurisdicciones: inversión real directa",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "resultado_primario": {
+      "nombre": "24 jurisdicciones: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "resultado_financiero": {
+      "nombre": "24 jurisdicciones: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ciudad_de_buenos_aires_ingresos_totales": {
+      "nombre": "Ciudad de Buenos Aires: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ciudad_de_buenos_aires_regalias": {
+      "nombre": "Ciudad de Buenos Aires: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ciudad_de_buenos_aires_resultado_primario": {
+      "nombre": "Ciudad de Buenos Aires: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ciudad_de_buenos_aires_resultado_financiero": {
+      "nombre": "Ciudad de Buenos Aires: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "buenos_aires_ingresos_totales": {
+      "nombre": "Buenos Aires: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "buenos_aires_regalias": {
+      "nombre": "Buenos Aires: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "buenos_aires_resultado_primario": {
+      "nombre": "Buenos Aires: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "buenos_aires_resultado_financiero": {
+      "nombre": "Buenos Aires: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "catamarca_ingresos_totales": {
+      "nombre": "Catamarca: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "catamarca_regalias": {
+      "nombre": "Catamarca: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "catamarca_resultado_primario": {
+      "nombre": "Catamarca: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "catamarca_resultado_financiero": {
+      "nombre": "Catamarca: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "cordoba_ingresos_totales": {
+      "nombre": "Córdoba: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "cordoba_regalias": {
+      "nombre": "Córdoba: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "cordoba_resultado_primario": {
+      "nombre": "Córdoba: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "cordoba_resultado_financiero": {
+      "nombre": "Córdoba: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "corrientes_ingresos_totales": {
+      "nombre": "Corrientes: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "corrientes_regalias": {
+      "nombre": "Corrientes: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "corrientes_resultado_primario": {
+      "nombre": "Corrientes: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "corrientes_resultado_financiero": {
+      "nombre": "Corrientes: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "chaco_ingresos_totales": {
+      "nombre": "Chaco: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "chaco_regalias": {
+      "nombre": "Chaco: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "chaco_resultado_primario": {
+      "nombre": "Chaco: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "chaco_resultado_financiero": {
+      "nombre": "Chaco: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "chubut_ingresos_totales": {
+      "nombre": "Chubut: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "chubut_regalias": {
+      "nombre": "Chubut: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "chubut_resultado_primario": {
+      "nombre": "Chubut: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "chubut_resultado_financiero": {
+      "nombre": "Chubut: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "entre_rios_ingresos_totales": {
+      "nombre": "Entre Ríos: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "entre_rios_regalias": {
+      "nombre": "Entre Ríos: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "entre_rios_resultado_primario": {
+      "nombre": "Entre Ríos: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "entre_rios_resultado_financiero": {
+      "nombre": "Entre Ríos: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "formosa_ingresos_totales": {
+      "nombre": "Formosa: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "formosa_regalias": {
+      "nombre": "Formosa: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "formosa_resultado_primario": {
+      "nombre": "Formosa: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "formosa_resultado_financiero": {
+      "nombre": "Formosa: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "jujuy_ingresos_totales": {
+      "nombre": "Jujuy: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "jujuy_regalias": {
+      "nombre": "Jujuy: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "jujuy_resultado_primario": {
+      "nombre": "Jujuy: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "jujuy_resultado_financiero": {
+      "nombre": "Jujuy: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "la_pampa_ingresos_totales": {
+      "nombre": "La Pampa: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "la_pampa_regalias": {
+      "nombre": "La Pampa: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "la_pampa_resultado_primario": {
+      "nombre": "La Pampa: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "la_pampa_resultado_financiero": {
+      "nombre": "La Pampa: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "la_rioja_ingresos_totales": {
+      "nombre": "La Rioja: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "la_rioja_regalias": {
+      "nombre": "La Rioja: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "la_rioja_resultado_primario": {
+      "nombre": "La Rioja: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "la_rioja_resultado_financiero": {
+      "nombre": "La Rioja: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "mendoza_ingresos_totales": {
+      "nombre": "Mendoza: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "mendoza_regalias": {
+      "nombre": "Mendoza: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "mendoza_resultado_primario": {
+      "nombre": "Mendoza: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "mendoza_resultado_financiero": {
+      "nombre": "Mendoza: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "misiones_ingresos_totales": {
+      "nombre": "Misiones: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "misiones_regalias": {
+      "nombre": "Misiones: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "misiones_resultado_primario": {
+      "nombre": "Misiones: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "misiones_resultado_financiero": {
+      "nombre": "Misiones: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "neuquen_ingresos_totales": {
+      "nombre": "Neuquén: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "neuquen_regalias": {
+      "nombre": "Neuquén: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "neuquen_resultado_primario": {
+      "nombre": "Neuquén: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "neuquen_resultado_financiero": {
+      "nombre": "Neuquén: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "rio_negro_ingresos_totales": {
+      "nombre": "Río Negro: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "rio_negro_regalias": {
+      "nombre": "Río Negro: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "rio_negro_resultado_primario": {
+      "nombre": "Río Negro: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "rio_negro_resultado_financiero": {
+      "nombre": "Río Negro: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "salta_ingresos_totales": {
+      "nombre": "Salta: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "salta_regalias": {
+      "nombre": "Salta: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "salta_resultado_primario": {
+      "nombre": "Salta: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "salta_resultado_financiero": {
+      "nombre": "Salta: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "san_juan_ingresos_totales": {
+      "nombre": "San Juan: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "san_juan_regalias": {
+      "nombre": "San Juan: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "san_juan_resultado_primario": {
+      "nombre": "San Juan: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "san_juan_resultado_financiero": {
+      "nombre": "San Juan: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "san_luis_ingresos_totales": {
+      "nombre": "San Luis: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "san_luis_regalias": {
+      "nombre": "San Luis: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "san_luis_resultado_primario": {
+      "nombre": "San Luis: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "san_luis_resultado_financiero": {
+      "nombre": "San Luis: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "santa_cruz_ingresos_totales": {
+      "nombre": "Santa Cruz: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "santa_cruz_regalias": {
+      "nombre": "Santa Cruz: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "santa_cruz_resultado_primario": {
+      "nombre": "Santa Cruz: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "santa_cruz_resultado_financiero": {
+      "nombre": "Santa Cruz: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "santa_fe_ingresos_totales": {
+      "nombre": "Santa Fe: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "santa_fe_regalias": {
+      "nombre": "Santa Fe: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "santa_fe_resultado_primario": {
+      "nombre": "Santa Fe: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "santa_fe_resultado_financiero": {
+      "nombre": "Santa Fe: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "santiago_del_estero_ingresos_totales": {
+      "nombre": "Santiago del Estero: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "santiago_del_estero_regalias": {
+      "nombre": "Santiago del Estero: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "santiago_del_estero_resultado_primario": {
+      "nombre": "Santiago del Estero: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "santiago_del_estero_resultado_financiero": {
+      "nombre": "Santiago del Estero: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "tucuman_ingresos_totales": {
+      "nombre": "Tucumán: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "tucuman_regalias": {
+      "nombre": "Tucumán: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "tucuman_resultado_primario": {
+      "nombre": "Tucumán: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "tucuman_resultado_financiero": {
+      "nombre": "Tucumán: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "tierra_del_fuego_ingresos_totales": {
+      "nombre": "Tierra del Fuego: ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "tierra_del_fuego_regalias": {
+      "nombre": "Tierra del Fuego: regalías",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "tierra_del_fuego_resultado_primario": {
+      "nombre": "Tierra del Fuego: resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "tierra_del_fuego_resultado_financiero": {
+      "nombre": "Tierra del Fuego: resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    }
+  },
+  "descargado": "2026-11-05T20:32:17Z",
+  "ultimo_periodo": "2025-01",
+  "observaciones": 21,
+  "original_guardado": "data/raw/provincias/2026-11-05_d3f411ab.zip"
+}

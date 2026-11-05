@@ -17,6 +17,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import sys
 import time
 from datetime import date, datetime, timedelta, timezone
@@ -402,6 +403,11 @@ def todas() -> None:
             puntos.insert(1, "id_serie", id_serie)
             valores.append(puntos)
             dato, ajuste = clasificar(fid, cid, col["tipo"])
+            # Serie original: el dato tal como lo publica el organismo. No lo son las variaciones, las
+            # desestacionalizadas, las deflactadas, los promedios o sumas de otra serie (fuentes derivadas)
+            # ni las participaciones y promedios diarios calculados acá.
+            original = (dato == "Nivel" and ajuste == "Original" and fid not in DERIVADAS
+                        and not re.search(r"(_part|_por_dia)$", cid))
             series.append({
                 "id_serie": id_serie,
                 "serie": col["nombre"],
@@ -409,6 +415,7 @@ def todas() -> None:
                 "categoria": CATEGORIAS.get(fid, "Otras"),
                 "dato": dato,
                 "ajuste": ajuste,
+                "original": "sí" if original else "no",
                 "organismo_corto": organismo_corto(getattr(fuente, "ORGANISMO", "")),
                 "unidad": col["unidad"] or ("%" if col["tipo"] == "variacion" else fuente.UNIDAD),
                 "frecuencia": fuente.FRECUENCIA,

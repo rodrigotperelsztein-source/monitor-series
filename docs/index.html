@@ -140,6 +140,7 @@ pre { margin: 0; background: var(--code-bg); color: var(--code-ink); font: 11.5p
 .hint { font-size: 12.5px; color: var(--muted); margin: 0; }
 .hint code { font-family: var(--f-mono); font-size: 11.5px; }
 ol.hint { padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
+.nota-stats { font-size: 12.5px; color: var(--h-muted); max-width: 70ch; margin: 8px 0 0; line-height: 1.45; }
 .toast { font-size: 12px; color: var(--ok); min-height: 1em; }
 .btn.copiado, .btn.sec.copiado { background: var(--ok); border-color: var(--ok); color: var(--surface); }
 .copia-ok { font-size: 12.5px; font-weight: 600; color: var(--ok); margin-top: 6px; min-height: 0; }
@@ -178,10 +179,11 @@ details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
       <li><b>Listo para usar</b><span>Power BI, Excel, Google Sheets o Python, con un link fijo por serie</span></li>
     </ul>
     <dl class="stats">
-      <div><dt>Series propias</dt><dd id="st-propias">…</dd></div>
+      <div><dt>Series originales</dt><dd id="st-propias">…</dd></div>
       <div><dt>De Monitor Argy</dt><dd id="st-ma">…</dd></div>
       <div><dt>Fuentes</dt><dd id="st-fuentes">…</dd></div>
     </dl>
+    <p class="nota-stats" id="st-nota"></p>
   </div>
   <div class="ticker" aria-label="Últimos datos">
     <div class="track" id="track"><span class="tk-cargando">Cargando últimos datos…</span></div>
@@ -392,6 +394,8 @@ let vista = "propias";
 let sel = [];
 try { sel = JSON.parse(localStorage.getItem("selector-series") || "[]"); } catch (e) {}
 
+// Ids de Monitor Argy que son cálculos sobre otra serie (por su sufijo).
+const MA_CALCULADA = /(desest|_real|tendencia|presidencias|var_anio|var_usd|_en_el_mes|_trim$|_peso$|_mensual$|_interanual$|_trimestral$|_prom$|_anual$|_fin_de_mes$)/;
 async function cargar() {
   try {
     const [csv, ma] = await Promise.all([
@@ -402,6 +406,9 @@ async function cargar() {
       id: s.id_serie, nombre: s.serie, grupo: s.fuente_nombre || s.fuente, tipo: s.tipo, unidad: s.unidad,
       frec: s.frecuencia, ultimo: s.ultimo_periodo, desc: s.organismo,
       cat: s.categoria || "Otras", org: s.organismo_corto || s.organismo, dato: s.dato, ajuste: s.ajuste,
+      fuente: s.fuente,
+      // Columna "original" del catálogo; si todavía no está, se infiere de dato y ajuste.
+      original: s.original ? s.original === "sí" : (s.dato === "Nivel" && s.ajuste === "Original"),
     }));
     DATA.ma = ma.map(s => ({
       id: "ma:" + s.id, nombre: s.nombre, grupo: s.panel, tipo: s.unidad === "pct" ? "variacion" : "nivel",
@@ -409,15 +416,22 @@ async function cargar() {
       extra: s.descripcion, cat: s.panel || "Otras", org: (s.fuente || "").split(/ [—–-] | · /)[0],
       dato: s.unidad !== "pct" ? "Nivel" : /_mensual$/.test(s.id) ? "Variación mensual" : /_interanual$/.test(s.id) ? "Variación interanual" : "Otra variación",
       ajuste: /desest/.test(s.id) ? "Desestacionalizada" : /_real/.test(s.id) ? "Real (deflactada)" : /tendencia/.test(s.id) ? "Tendencia-ciclo" : "Original",
+      original: s.unidad !== "pct" && !MA_CALCULADA.test(s.id),
     }));
     DATA.propias.concat(DATA.ma).forEach(s => {
       s._q = norm([s.id, s.nombre, s.grupo, s.desc, s.extra, s.cat, s.org, s.dato, s.ajuste, s.ajuste === "Desestacionalizada" ? "desest sin estacionalidad" : "", s.dato.startsWith("Var") ? "var variacion" : ""].join(" "));
       s._q += " " + SINONIMOS.filter(([re]) => re.test(s.id)).map(([, extra]) => extra).join(" ");
     });
     $("n-propias").textContent = DATA.propias.length;
-    $("st-propias").textContent = DATA.propias.length.toLocaleString("es-AR");
-    $("st-ma").textContent = DATA.ma.length.toLocaleString("es-AR");
-    $("st-fuentes").textContent = new Set(DATA.propias.map(s => s.grupo)).size;
+    // Se cuentan solo las series originales (el dato como lo publica el organismo): las variaciones,
+    // desestacionalizaciones, deflactadas, promedios y otros cálculos sobre ellas no suman como series aparte.
+    const orig = DATA.propias.filter(s => s.original);
+    const origMa = DATA.ma.filter(s => s.original);
+    const n = (v) => v.toLocaleString("es-AR");
+    $("st-propias").textContent = n(orig.length);
+    $("st-ma").textContent = n(origMa.length);
+    $("st-fuentes").textContent = new Set(orig.map(s => s.fuente)).size;
+    $("st-nota").textContent = `Solo series originales, tal como las publica cada organismo. Además hay ${n(DATA.propias.length - orig.length + DATA.ma.length - origMa.length)} calculadas sobre ellas (variaciones, desestacionalizadas, a precios constantes, promedios), que no se cuentan aparte.`;
     const desc = parseCSV(csv).map(s => s.descargado).filter(Boolean).sort().pop();
     $("st-fecha").textContent = desc ? "último dato bajado el " + new Date(desc).toLocaleString("es-AR",
       { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "—";

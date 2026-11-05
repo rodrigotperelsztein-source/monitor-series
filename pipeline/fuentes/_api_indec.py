@@ -49,5 +49,6 @@ def es_api(contenido: bytes) -> bool:
 def filas(contenido: bytes) -> pd.DataFrame:
     d = json.loads(contenido[len(MARCA):].decode("utf-8"))
     df = pd.DataFrame(d["filas"])
-    df["fecha"] = pd.to_datetime(df["periodo"].astype(str).str[:6], format="%Y%m")
+    col = "periodo" if "periodo" in df else "Periodo"  # comercio exterior lo escribe con mayúscula
+    df["fecha"] = pd.to_datetime(df[col].astype(str).str.replace(r"\D", "", regex=True).str[:6], format="%Y%m")
     return df

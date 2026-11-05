@@ -1,4 +1,2 @@
-[bcra]
-  archivo distinto pero mismos datos
-[bcra_mensual]
-  recalculada: último período — → 2026-10
+[comercio_exterior]
+  ERROR: 'periodo'

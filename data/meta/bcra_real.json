@@ -1,0 +1,179 @@
+{
+  "id": "bcra_real",
+  "nombre": "BCRA: base monetaria, depósitos y préstamos en términos reales (deflactados por el IPC)",
+  "url": "data/bcra_mensual.csv y data/ipc.csv",
+  "pagina": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
+  "frecuencia": "M",
+  "unidad": "Millones de $ de dic-2016",
+  "sha256": "f96ff6ebb47b006e4cb656c610c645f228e605637a10779c814a15cecd0be6b9",
+  "derivada_de": [
+    "bcra_mensual",
+    "ipc"
+  ],
+  "archivos_de_origen": [
+    "data/bcra.csv",
+    "https://api.indec.gob.ar/v1/ipc_nacional"
+  ],
+  "columnas": {
+    "prestamos_comerciales": {
+      "nombre": "Préstamos comerciales (adelantos y documentos), promedio del mes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestamos_comerciales_real": {
+      "nombre": "Préstamos comerciales (adelantos y documentos), a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "prestamos_comerciales_real_var_ia": {
+      "nombre": "Préstamos comerciales (adelantos y documentos), real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "base_monetaria_real": {
+      "nombre": "Base monetaria, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "base_monetaria_real_var_ia": {
+      "nombre": "Base monetaria, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "circulacion_monetaria_real": {
+      "nombre": "Circulación monetaria, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "circulacion_monetaria_real_var_ia": {
+      "nombre": "Circulación monetaria, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "billetes_publico_real": {
+      "nombre": "Billetes y monedas en poder del público, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "billetes_publico_real_var_ia": {
+      "nombre": "Billetes y monedas en poder del público, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "m2_real": {
+      "nombre": "M2 (billetes y monedas, cuentas corrientes y cajas de ahorro), a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "m2_real_var_ia": {
+      "nombre": "M2 (billetes y monedas, cuentas corrientes y cajas de ahorro), real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "depositos_privados_pesos_real": {
+      "nombre": "Depósitos del sector privado no financiero en pesos, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "depositos_privados_pesos_real_var_ia": {
+      "nombre": "Depósitos del sector privado no financiero en pesos, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "depositos_plazo_privados_real": {
+      "nombre": "Depósitos a plazo fijo del sector privado (no ajustables), a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "depositos_plazo_privados_real_var_ia": {
+      "nombre": "Depósitos a plazo fijo del sector privado (no ajustables), real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "prestamos_privados_pesos_real": {
+      "nombre": "Préstamos al sector privado en pesos, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "prestamos_privados_pesos_real_var_ia": {
+      "nombre": "Préstamos al sector privado en pesos, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "prestamos_adelantos_real": {
+      "nombre": "Préstamos al sector privado: adelantos en cuenta corriente, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "prestamos_adelantos_real_var_ia": {
+      "nombre": "Préstamos al sector privado: adelantos en cuenta corriente, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "prestamos_documentos_real": {
+      "nombre": "Préstamos al sector privado: documentos, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "prestamos_documentos_real_var_ia": {
+      "nombre": "Préstamos al sector privado: documentos, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "prestamos_hipotecarios_real": {
+      "nombre": "Préstamos al sector privado: hipotecarios, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "prestamos_hipotecarios_real_var_ia": {
+      "nombre": "Préstamos al sector privado: hipotecarios, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "prestamos_prendarios_real": {
+      "nombre": "Préstamos al sector privado: prendarios, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "prestamos_prendarios_real_var_ia": {
+      "nombre": "Préstamos al sector privado: prendarios, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "prestamos_personales_real": {
+      "nombre": "Préstamos al sector privado: personales, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "prestamos_personales_real_var_ia": {
+      "nombre": "Préstamos al sector privado: personales, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "prestamos_tarjetas_real": {
+      "nombre": "Préstamos al sector privado: tarjetas de crédito, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "prestamos_tarjetas_real_var_ia": {
+      "nombre": "Préstamos al sector privado: tarjetas de crédito, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pases_pasivos_real": {
+      "nombre": "Pases pasivos del BCRA, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "pases_pasivos_real_var_ia": {
+      "nombre": "Pases pasivos del BCRA, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-05T18:15:19Z",
+  "calculado": "2026-11-05T20:39:06Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 118,
+  "deflactor": "IPC nacional, nivel general (ipc.nacional_nivel_general_indice), base dic-2016=100"
+}

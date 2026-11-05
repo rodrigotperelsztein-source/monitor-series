@@ -1,8 +1,6 @@
-[petroleo]
-  archivo distinto pero mismos datos
-[refinados]
-  archivo distinto pero mismos datos
-[petroleo_mensual]
-  sin cambios en las series de base
-[refinados_mensual]
-  sin cambios en las series de base
+[comercio_exterior]
+  actualizada: último período 2026-09 → 2026-09; valores revisados: 3508
+[bcra_mensual]
+  recalculada: último período 2026-10 → 2026-10
+[bcra_real]
+  recalculada: último período — → 2026-09

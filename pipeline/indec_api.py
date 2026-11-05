@@ -52,8 +52,10 @@ TABLAS = {
                                 # Sin las clases y grupos de la CIIU (unas 150 mil filas que no se usan).
                                 {"nivel": 'in.("Nivel general",Origen,Sector,División)'}),
     "comercio_exterior_nomenclaturas": ("nombre_columna,codigo", {}),
-    "comercio_exterior_exportacion_bienes": ("Periodo,rubro_cod,subrubro_cod,pais_cod", {}),
-    "comercio_exterior_importacion_bienes": ("Periodo,uso_economico_cod,gce_cod,pais_cod", {}),
+    # Comercio exterior: casi 1,2 millones de filas desde 1986. En la corrida diaria se bajan los últimos años
+    # (la fuente conserva los meses anteriores ya guardados); INDEC_API_ANIO_DESDE permite bajar toda la historia.
+    "comercio_exterior_exportacion_bienes": ("Periodo,rubro_cod,subrubro_cod,pais_cod", {"Anio": "gte.{anio_desde}"}),
+    "comercio_exterior_importacion_bienes": ("Periodo,uso_economico_cod,gce_cod,pais_cod", {"Anio": "gte.{anio_desde}"}),
     "canasta-crianza": ("Periodo", {}),
     "pobreza_eph": ("area_geografica_cod,periodo,anio,semestre", {}),
     "mercado_trabajo_eph": ("area_geografica_cod,periodo,anio,trimestre", {}),
@@ -99,8 +101,14 @@ def _pedir(sesion: requests.Session, tabla: str, params: dict, token: str, inten
     raise ErrorAPI(f"{tabla}: no pude descargar: {ultimo}")
 
 
+def anio_desde() -> int:
+    v = os.environ.get("INDEC_API_ANIO_DESDE", "").strip()
+    return int(v) if v.isdigit() and 1980 <= int(v) <= 2100 else time.gmtime().tm_year - 2
+
+
 def bajar_tabla(sesion, tabla: str, token: str, maximo: int | None = None) -> dict:
     orden, filtros = TABLAS[tabla]
+    filtros = {k: v.replace("{anio_desde}", str(anio_desde())) for k, v in filtros.items()}
     filas, total, offset = [], None, 0
     while True:
         lim = PAGINA if maximo is None else min(PAGINA, maximo - len(filas))

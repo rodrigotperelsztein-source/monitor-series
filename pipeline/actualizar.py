@@ -28,10 +28,10 @@ import pandas as pd
 import requests
 
 from pipeline import calendario, monitorargy
-from pipeline.fuentes import bcra, bcra_mensual, gas_entregado, canastas, precios_mayoristas, itcrm, itcrm_mensual, salarios_ramas, empleo_ramas, salarios_ramas_real, acciones_energia, acciones_energia_mensual, emae, emae_letras, emae_letras_desest, ipc, ipi, ipi_minero, ipi_minero_desest, isac, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, refinados, refinados_mensual, ventas_combustibles, ventas_combustibles_desest, came, supermercados, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual, estimaciones_agricolas, rem, remuneraciones_provincias, remuneraciones_provincias_real, remuneraciones_provincias_desest, remuneraciones_provincias_real_desest
+from pipeline.fuentes import comercio_exterior, bcra, bcra_mensual, gas_entregado, canastas, precios_mayoristas, itcrm, itcrm_mensual, salarios_ramas, empleo_ramas, salarios_ramas_real, acciones_energia, acciones_energia_mensual, emae, emae_letras, emae_letras_desest, ipc, ipi, ipi_minero, ipi_minero_desest, isac, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, refinados, refinados_mensual, ventas_combustibles, ventas_combustibles_desest, came, supermercados, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual, estimaciones_agricolas, rem, remuneraciones_provincias, remuneraciones_provincias_real, remuneraciones_provincias_desest, remuneraciones_provincias_real_desest
 from pipeline.fuentes._indec import iguales
 
-FUENTES = {f.ID: f for f in [bcra, bcra_mensual, gas_entregado, canastas, precios_mayoristas, itcrm, itcrm_mensual, emae, emae_letras, emae_letras_desest, ipc, ipi, ipi_minero, ipi_minero_desest, isac, supermercados, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, refinados, refinados_mensual, acciones_energia, acciones_energia_mensual, ventas_combustibles, ventas_combustibles_desest, came, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual, estimaciones_agricolas, rem, remuneraciones_provincias, remuneraciones_provincias_real, remuneraciones_provincias_desest, remuneraciones_provincias_real_desest, salarios_ramas, empleo_ramas, salarios_ramas_real]}
+FUENTES = {f.ID: f for f in [comercio_exterior, bcra, bcra_mensual, gas_entregado, canastas, precios_mayoristas, itcrm, itcrm_mensual, emae, emae_letras, emae_letras_desest, ipc, ipi, ipi_minero, ipi_minero_desest, isac, supermercados, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, refinados, refinados_mensual, acciones_energia, acciones_energia_mensual, ventas_combustibles, ventas_combustibles_desest, came, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual, estimaciones_agricolas, rem, remuneraciones_provincias, remuneraciones_provincias_real, remuneraciones_provincias_desest, remuneraciones_provincias_real_desest, salarios_ramas, empleo_ramas, salarios_ramas_real]}
 # Series calculadas a partir de otra (DERIVADA_DE): no se bajan, se recalculan cuando cambia su base.
 DERIVADAS = {fid: f for fid, f in FUENTES.items() if hasattr(f, "DERIVADA_DE")}
 
@@ -334,6 +334,7 @@ CATEGORIAS = {  # fuente -> gran categoría (para buscar y filtrar en las págin
     "camiones_puertos": "Agro y puertos", "camiones_puertos_mensual": "Agro y puertos",
     "estimaciones_agricolas": "Agro y puertos",
     "rem": "Expectativas",
+    "comercio_exterior": "Comercio exterior",
     "bcra": "Dinero, bancos y tasas", "bcra_mensual": "Dinero, bancos y tasas",
     "itcrm": "Tipo de cambio", "itcrm_mensual": "Tipo de cambio",
     "remuneraciones_provincias": "Salarios", "remuneraciones_provincias_real": "Salarios",
@@ -516,7 +517,11 @@ def main() -> int:
     hoy = momento.astimezone(TZ).date()
     if args.tablas_api:
         ids = elegir(args, hoy, calendario.cargar(), avisar=False)
-        print(" ".join(sorted({FUENTES[f].TABLA_API for f in ids if hasattr(FUENTES[f], "TABLA_API")})))
+        tablas = set()
+        for f in ids:
+            t = getattr(FUENTES[f], "TABLA_API", None)
+            tablas |= {t} if isinstance(t, str) else set(t or ())
+        print(" ".join(sorted(tablas)))
         return 0
     (DATA / "meta").mkdir(parents=True, exist_ok=True)
     fallas = 0

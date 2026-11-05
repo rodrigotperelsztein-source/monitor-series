@@ -51,6 +51,10 @@ on:
         description: "Solo estas fuentes (ids separados por espacio; vacío = según el modo)"
         required: false
         default: ""
+      historia_indec:
+        description: "Año desde el que se baja el comercio exterior de la API del INDEC (vacío = últimos dos años)"
+        required: false
+        default: ""
       forzar:
         description: "Procesar aunque el archivo no haya cambiado"
         type: boolean
@@ -116,6 +120,7 @@ jobs:
         env:
           INDEC_API_TOKEN: ${{ secrets.INDEC_API_TOKEN }}
           TABLAS: ${{ steps.modo.outputs.tablas }}
+          INDEC_API_ANIO_DESDE: ${{ inputs.historia_indec }}
         run: python -m pipeline.indec_api bajar $TABLAS
 
       - name: Bajar, validar y procesar

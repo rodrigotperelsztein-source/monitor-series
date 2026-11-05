@@ -1,0 +1,95 @@
+{
+  "id": "recaudacion",
+  "nombre": "Recaudación tributaria nacional: total y principales impuestos (ARCA)",
+  "url": "https://infra.datos.gob.ar/catalog/sspm/dataset/172/distribution/172.3/download/recaudacion-tributaria-datos-mensuales.csv https://contenidos.afip.gob.ar/institucional/estudios/archivos/serie<año>.xls",
+  "pagina": "https://www.arca.gob.ar/institucional/estudios/recaudacion/series.asp",
+  "frecuencia": "M",
+  "unidad": "Millones de $",
+  "sha256": "7955293fe480ce8331056f22bf46136f6d1413ebbd6e9b673b4e75a5ab5bf717",
+  "columnas": {
+    "total": {
+      "nombre": "Recaudación tributaria total",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "dgi": {
+      "nombre": "Recaudación DGI (impuestos internos)",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "dga": {
+      "nombre": "Recaudación DGA (aduana)",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "seguridad_social": {
+      "nombre": "Recaudación de la seguridad social",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "iva_bruto": {
+      "nombre": "IVA bruto",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "iva_dgi": {
+      "nombre": "IVA DGI (pagos directos y retenciones impositivos)",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "iva_dga": {
+      "nombre": "IVA DGA (aduanero)",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "iva_neto": {
+      "nombre": "IVA neto de devoluciones",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ganancias": {
+      "nombre": "Impuesto a las ganancias",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "debitos_creditos": {
+      "nombre": "Impuesto a los débitos y créditos bancarios",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "combustibles": {
+      "nombre": "Impuestos sobre los combustibles",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "internos": {
+      "nombre": "Impuestos internos",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "bienes_personales": {
+      "nombre": "Bienes personales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "derechos_exportacion": {
+      "nombre": "Derechos de exportación",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "derechos_importacion": {
+      "nombre": "Derechos de importación",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "total_var_ia": {
+      "nombre": "Recaudación tributaria total, var. % interanual (nominal)",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-05T18:56:24Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 358,
+  "original_guardado": null
+}

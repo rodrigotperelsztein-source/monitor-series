@@ -1,0 +1,50 @@
+{
+  "id": "comex_indices",
+  "nombre": "Índices de precios y cantidades del comercio exterior (INDEC)",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_mensual_indices_comex.xls",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-2-41",
+  "frecuencia": "M",
+  "unidad": "Índice base 2004=100",
+  "sha256": "3ec2d48ff94966220b820ab26e30ca0bb008d9ee5ea5374117e006f5f5cacf2d",
+  "columnas": {
+    "expo_valor": {
+      "nombre": "Exportaciones: índice de valor",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "expo_precio": {
+      "nombre": "Exportaciones: índice de precio",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "expo_cantidad": {
+      "nombre": "Exportaciones: índice de cantidad",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "impo_valor": {
+      "nombre": "Importaciones: índice de valor",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "impo_precio": {
+      "nombre": "Importaciones: índice de precio",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "impo_cantidad": {
+      "nombre": "Importaciones: índice de cantidad",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "terminos_intercambio": {
+      "nombre": "Términos del intercambio (precio de exportación / precio de importación × 100)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    }
+  },
+  "descargado": "2026-11-05T18:56:24Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 273,
+  "original_guardado": "data/raw/comex_indices/2026-11-05_3ec2d48f.xls"
+}

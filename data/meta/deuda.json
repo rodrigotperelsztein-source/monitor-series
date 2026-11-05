@@ -1,0 +1,75 @@
+{
+  "id": "deuda",
+  "nombre": "Deuda bruta de la Administración Central, por instrumento (Secretaría de Finanzas)",
+  "url": "https://www.argentina.gob.ar/sites/default/files/boletin_mensual_30_09_2026_0.xlsx",
+  "pagina": "https://www.argentina.gob.ar/economia/finanzas/datos-mensuales",
+  "frecuencia": "M",
+  "unidad": "Millones de USD",
+  "sha256": "191640f6b250daf4bbaa1dce0e5dbaa0a52777eb94b0ff0dce90ab65ed3f7dec",
+  "columnas": {
+    "deuda_bruta": {
+      "nombre": "Deuda bruta de la Administración Central",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "pago_normal": {
+      "nombre": "Deuda en situación de pago normal",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "titulos_publicos": {
+      "nombre": "Títulos públicos de mediano y largo plazo",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "titulos_moneda_nacional": {
+      "nombre": "Títulos públicos en moneda nacional",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "titulos_cer": {
+      "nombre": "Títulos públicos ajustables por CER",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "titulos_moneda_extranjera": {
+      "nombre": "Títulos públicos en moneda extranjera",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "organismos_internacionales": {
+      "nombre": "Préstamos de organismos internacionales",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "organismos_oficiales": {
+      "nombre": "Préstamos de organismos oficiales",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "corto_plazo": {
+      "nombre": "Deuda de corto plazo",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "letras_corto_plazo": {
+      "nombre": "Letras del Tesoro de corto plazo",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "pago_diferido": {
+      "nombre": "Deuda en situación de pago diferido",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "pendiente_reestructuracion": {
+      "nombre": "Deuda elegible pendiente de reestructuración",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    }
+  },
+  "descargado": "2026-11-05T18:56:24Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 93,
+  "original_guardado": "data/raw/deuda/2026-11-05_191640f6.zip"
+}

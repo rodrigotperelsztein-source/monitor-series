@@ -1,0 +1,55 @@
+{
+  "id": "turismo",
+  "nombre": "Turismo internacional: turistas emisivos y receptivos, por vía (INDEC)",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_turismo_emisivo_total_vias.xlsx https://www.indec.gob.ar/ftp/cuadros/economia/serie_turismo_receptivo_total_vias.xlsx",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-13-55",
+  "frecuencia": "M",
+  "unidad": "Miles de personas",
+  "sha256": "d1c64af198e218fd31ee90e77b87d15c525418f96b40e3244cafe2bf2ac0ca86",
+  "columnas": {
+    "emisivo_total": {
+      "nombre": "Turistas residentes que viajaron al exterior",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "emisivo_aerea": {
+      "nombre": "Turistas residentes que viajaron al exterior, vía aérea",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "emisivo_fluvial": {
+      "nombre": "Turistas residentes que viajaron al exterior, vía fluvial",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "emisivo_terrestre": {
+      "nombre": "Turistas residentes que viajaron al exterior, vía terrestre",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "receptivo_total": {
+      "nombre": "Turistas no residentes que llegaron al país",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "receptivo_aerea": {
+      "nombre": "Turistas no residentes que llegaron al país, vía aérea",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "receptivo_fluvial": {
+      "nombre": "Turistas no residentes que llegaron al país, vía fluvial",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "receptivo_terrestre": {
+      "nombre": "Turistas no residentes que llegaron al país, vía terrestre",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    }
+  },
+  "descargado": "2026-11-05T18:56:24Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 57,
+  "original_guardado": "data/raw/turismo/2026-11-05_d1c64af1.zip"
+}

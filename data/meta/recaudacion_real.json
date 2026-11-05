@@ -1,0 +1,174 @@
+{
+  "id": "recaudacion_real",
+  "nombre": "Recaudación tributaria real (deflactada por el IPC nacional)",
+  "url": "data/recaudacion.csv y data/ipc.csv",
+  "pagina": "https://www.arca.gob.ar/institucional/estudios/recaudacion/series.asp",
+  "frecuencia": "M",
+  "unidad": "Millones de $ de dic-2016",
+  "sha256": "ad6b88b15a3ce567b2e71723988b19f06c50d440e7b86a953d66f0152391f688",
+  "derivada_de": [
+    "recaudacion",
+    "ipc"
+  ],
+  "archivos_de_origen": [
+    "https://infra.datos.gob.ar/catalog/sspm/dataset/172/distribution/172.3/download/recaudacion-tributaria-datos-mensuales.csv https://contenidos.afip.gob.ar/institucional/estudios/archivos/serie<año>.xls",
+    "https://api.indec.gob.ar/v1/ipc_nacional"
+  ],
+  "columnas": {
+    "total_real": {
+      "nombre": "Recaudación tributaria total, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "total_real_var_ia": {
+      "nombre": "Recaudación tributaria total, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "dgi_real": {
+      "nombre": "Recaudación DGI (impuestos internos), a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "dgi_real_var_ia": {
+      "nombre": "Recaudación DGI (impuestos internos), real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "dga_real": {
+      "nombre": "Recaudación DGA (aduana), a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "dga_real_var_ia": {
+      "nombre": "Recaudación DGA (aduana), real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "seguridad_social_real": {
+      "nombre": "Recaudación de la seguridad social, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "seguridad_social_real_var_ia": {
+      "nombre": "Recaudación de la seguridad social, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "iva_bruto_real": {
+      "nombre": "IVA bruto, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "iva_bruto_real_var_ia": {
+      "nombre": "IVA bruto, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "iva_dgi_real": {
+      "nombre": "IVA DGI (pagos directos y retenciones impositivos), a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "iva_dgi_real_var_ia": {
+      "nombre": "IVA DGI (pagos directos y retenciones impositivos), real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "iva_dga_real": {
+      "nombre": "IVA DGA (aduanero), a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "iva_dga_real_var_ia": {
+      "nombre": "IVA DGA (aduanero), real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "iva_neto_real": {
+      "nombre": "IVA neto de devoluciones, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "iva_neto_real_var_ia": {
+      "nombre": "IVA neto de devoluciones, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ganancias_real": {
+      "nombre": "Impuesto a las ganancias, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "ganancias_real_var_ia": {
+      "nombre": "Impuesto a las ganancias, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "debitos_creditos_real": {
+      "nombre": "Impuesto a los débitos y créditos bancarios, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "debitos_creditos_real_var_ia": {
+      "nombre": "Impuesto a los débitos y créditos bancarios, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "combustibles_real": {
+      "nombre": "Impuestos sobre los combustibles, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "combustibles_real_var_ia": {
+      "nombre": "Impuestos sobre los combustibles, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "internos_real": {
+      "nombre": "Impuestos internos, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "internos_real_var_ia": {
+      "nombre": "Impuestos internos, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "bienes_personales_real": {
+      "nombre": "Bienes personales, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "bienes_personales_real_var_ia": {
+      "nombre": "Bienes personales, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "derechos_exportacion_real": {
+      "nombre": "Derechos de exportación, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "derechos_exportacion_real_var_ia": {
+      "nombre": "Derechos de exportación, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "derechos_importacion_real": {
+      "nombre": "Derechos de importación, a precios de diciembre de 2016",
+      "tipo": "nivel",
+      "unidad": "Millones de $ de dic-2016"
+    },
+    "derechos_importacion_real_var_ia": {
+      "nombre": "Derechos de importación, real, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-05T18:56:24Z",
+  "calculado": "2026-11-05T18:56:24Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 118,
+  "deflactor": "IPC nacional, nivel general (ipc.nacional_nivel_general_indice), base dic-2016=100"
+}

@@ -1,0 +1,125 @@
+{
+  "id": "imig",
+  "nombre": "Resultado fiscal del Sector Público Nacional, base caja (IMIG, Secretaría de Hacienda)",
+  "url": "https://infra.datos.gob.ar/catalog/sspm/dataset/452/distribution/452.3/download/imig-mensual.csv",
+  "pagina": "https://www.argentina.gob.ar/economia/sechacienda/infoestadistica",
+  "frecuencia": "M",
+  "unidad": "Millones de $",
+  "sha256": "cfb206c2ae85a4ae318124399b780a1616b8e91cd3e7a3f3b553b8ffb8747e68",
+  "columnas": {
+    "ingresos_totales": {
+      "nombre": "Ingresos totales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ingresos_tributarios": {
+      "nombre": "Ingresos tributarios",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "iva": {
+      "nombre": "IVA neto de reintegros",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ganancias": {
+      "nombre": "Ganancias",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "seguridad_social": {
+      "nombre": "Aportes y contribuciones a la seguridad social",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "derechos_exportacion": {
+      "nombre": "Derechos de exportación",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "rentas_propiedad": {
+      "nombre": "Rentas de la propiedad",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "gasto_primario": {
+      "nombre": "Gasto primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "prestaciones_sociales": {
+      "nombre": "Prestaciones sociales",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "jubilaciones": {
+      "nombre": "Jubilaciones y pensiones contributivas",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "asignaciones": {
+      "nombre": "AUH y asignaciones familiares",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "subsidios": {
+      "nombre": "Subsidios económicos",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "subsidios_energia": {
+      "nombre": "Subsidios económicos a la energía",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "subsidios_transporte": {
+      "nombre": "Subsidios económicos al transporte",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "gastos_funcionamiento": {
+      "nombre": "Gastos de funcionamiento",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "salarios": {
+      "nombre": "Salarios",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "transferencias_provincias": {
+      "nombre": "Transferencias corrientes a provincias",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "universidades": {
+      "nombre": "Transferencias a universidades",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "gasto_capital": {
+      "nombre": "Gastos de capital",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "resultado_primario": {
+      "nombre": "Resultado primario",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "intereses": {
+      "nombre": "Intereses netos de la deuda",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "resultado_financiero": {
+      "nombre": "Resultado financiero",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    }
+  },
+  "descargado": "2026-11-05T18:56:24Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 129,
+  "original_guardado": "data/raw/imig/2026-11-05_cfb206c2.csv"
+}

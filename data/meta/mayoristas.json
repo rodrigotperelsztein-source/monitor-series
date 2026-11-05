@@ -1,0 +1,45 @@
+{
+  "id": "mayoristas",
+  "nombre": "Encuesta de autoservicios mayoristas: índice de ventas y ventas totales (INDEC)",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_autoservicios_mayoristas.xlsx",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-1-168",
+  "frecuencia": "M",
+  "unidad": "Índice de ventas a precios constantes",
+  "sha256": "e647d32aee03df61202438ca12be934b2bc0a960de3a132609a798794cd62ad4",
+  "columnas": {
+    "indice": {
+      "nombre": "Índice de ventas a precios constantes, serie original",
+      "tipo": "nivel",
+      "unidad": "Índice de ventas a precios constantes"
+    },
+    "indice_var_ia": {
+      "nombre": "Índice de ventas, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "indice_desest": {
+      "nombre": "Índice de ventas, serie desestacionalizada",
+      "tipo": "nivel",
+      "unidad": "Índice de ventas a precios constantes"
+    },
+    "indice_desest_var_m": {
+      "nombre": "Índice de ventas, desestacionalizada, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ventas_corrientes": {
+      "nombre": "Ventas totales a precios corrientes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ventas_constantes": {
+      "nombre": "Ventas totales a precios constantes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    }
+  },
+  "descargado": "2026-11-05T18:56:24Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 116,
+  "original_guardado": "data/raw/mayoristas/2026-11-05_e647d32a.xlsx"
+}

@@ -15,34 +15,21 @@ import requests
 API = "https://monitorargy.com/api/v1/series/{}"
 DESDE_DIARIAS = "2020-01-01"
 
-# id de Monitor Argy -> para qué se usa (solo documentación)
+# id de Monitor Argy -> para qué se usa (solo documentación). Quedan solo las que todavía no tienen fuente propia:
+# confianza (UTDT), dólar contado con liquidación y riesgo país (precios de mercado), patentamientos (SIOMAA, con
+# licencia) y empleo privado registrado desestacionalizado. El resto ya sale de los organismos (ver README).
 SERIES = {
     "confianza_gobierno": "Índice de Confianza en el Gobierno (UTDT)",
     "confianza_consumidor": "Índice de Confianza del Consumidor (UTDT)",
-    "tc_mayorista": "Tipo de cambio mayorista (diario)",
     "tc_ccl": "Dólar contado con liquidación (diario)",
     "brecha_ccl": "Brecha CCL vs. mayorista (diario)",
-    "reservas": "Reservas internacionales del BCRA (diario)",
     "riesgo_pais": "Riesgo país (diario)",
-    "tasa_tamar": "Tasa TAMAR, bancos privados (diario)",
     "patentamientos_autos_desest": "Patentamientos de autos, desestacionalizado",
     "patentamientos_autos_interanual": "Patentamientos de autos, var. interanual",
     "patentamientos_motos_desest": "Patentamientos de motos, desestacionalizado",
     "patentamientos_motos_interanual": "Patentamientos de motos, var. interanual",
-    "mayoristas_interanual": "Ventas en autoservicios mayoristas, var. interanual",
-    "shoppings_interanual": "Ventas en shoppings, var. interanual",
-    "petroleo": "Producción de petróleo",
-    "petroleo_desest": "Producción de petróleo, desestacionalizada",
-    "petroleo_interanual": "Producción de petróleo, var. interanual",
-    "petroleo_no_convencional": "Producción de petróleo no convencional",
-    "gas_desest": "Producción de gas natural, desestacionalizada",
-    "gas_interanual": "Producción de gas natural, var. interanual",
     "empleo_privado_desest": "Asalariados registrados del sector privado, desestacionalizado",
     "empleo_privado_interanual": "Asalariados registrados del sector privado, var. interanual",
-    "exportaciones": "Exportaciones de bienes",
-    "importaciones": "Importaciones de bienes",
-    "saldo_comercial": "Saldo comercial",
-    "expo_combustibles": "Exportaciones de combustibles y energía",
 }
 
 

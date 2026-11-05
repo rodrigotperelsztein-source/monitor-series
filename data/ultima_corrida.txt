@@ -1,10 +1,4 @@
-[cuentas_nacionales]
-  actualizada: último período — → 2026-04; valores revisados: 0
-[balanza_pagos]
-  actualizada: último período — → 2026-04; valores revisados: 0
-[capacidad_instalada]
-  actualizada: último período — → 2026-08; valores revisados: 0
-[shoppings]
-  actualizada: último período — → 2026-08; valores revisados: 0
-[electrodomesticos]
-  actualizada: último período — → 2026-06; valores revisados: 0
+[comercio_exterior]
+  ERROR: Validación fallida:
+  - La suma de los rubros no da el total exportado.
+  - La suma de los usos económicos no da el total importado.

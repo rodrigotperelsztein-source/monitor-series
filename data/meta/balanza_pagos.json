@@ -1,0 +1,135 @@
+{
+  "id": "balanza_pagos",
+  "nombre": "Balanza de pagos: cuenta corriente, de capital y financiera (INDEC, trimestral)",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/cin_II_2026.xls",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-35-45",
+  "frecuencia": "Q",
+  "unidad": "Millones de USD",
+  "sha256": "43e9607dbec00cd780ccc664902c113921121271219d20a3d34218e6f620aa78",
+  "columnas": {
+    "cuenta_corriente": {
+      "nombre": "Cuenta corriente",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "bienes_y_servicios": {
+      "nombre": "Bienes y servicios: saldo",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "bienes": {
+      "nombre": "Bienes: saldo",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "bienes_exportaciones": {
+      "nombre": "Bienes: exportaciones",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "bienes_importaciones": {
+      "nombre": "Bienes: importaciones",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "servicios": {
+      "nombre": "Servicios: saldo",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "servicios_exportaciones": {
+      "nombre": "Servicios: exportaciones",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "servicios_importaciones": {
+      "nombre": "Servicios: importaciones",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "ingreso_primario": {
+      "nombre": "Ingreso primario: saldo",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "renta_inversion": {
+      "nombre": "Renta de la inversión: saldo",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "renta_inversion_directa": {
+      "nombre": "Renta de la inversión directa: saldo",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "renta_inversion_cartera": {
+      "nombre": "Renta de la inversión de cartera: saldo",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "renta_otra_inversion": {
+      "nombre": "Renta de otra inversión (intereses de préstamos): saldo",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "ingreso_secundario": {
+      "nombre": "Ingreso secundario: saldo",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "cuenta_capital": {
+      "nombre": "Cuenta de capital",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "prestamo_neto": {
+      "nombre": "Préstamo neto (+) / endeudamiento neto (-)",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "cuenta_financiera": {
+      "nombre": "Cuenta financiera",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "inversion_directa": {
+      "nombre": "Inversión directa: neto",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "inversion_directa_pasivos": {
+      "nombre": "Inversión directa en Argentina (pasivos)",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "inversion_cartera": {
+      "nombre": "Inversión de cartera: neto",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "derivados": {
+      "nombre": "Derivados financieros: neto",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "otra_inversion": {
+      "nombre": "Otra inversión: neto",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "activos_reserva": {
+      "nombre": "Variación de activos de reserva",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    },
+    "errores_omisiones": {
+      "nombre": "Errores y omisiones netos",
+      "tipo": "nivel",
+      "unidad": "Millones de USD"
+    }
+  },
+  "descargado": "2026-11-05T18:58:10Z",
+  "ultimo_periodo": "2026-04",
+  "observaciones": 82,
+  "original_guardado": "data/raw/balanza_pagos/2026-11-05_43e9607d.xls"
+}

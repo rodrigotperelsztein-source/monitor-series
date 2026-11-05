@@ -1,26 +1,10 @@
 [cuentas_nacionales]
-  ERROR: Excel file format cannot be determined, you must specify an engine manually.
+  actualizada: último período — → 2026-04; valores revisados: 0
 [balanza_pagos]
-  ERROR: Excel file format cannot be determined, you must specify an engine manually.
+  actualizada: último período — → 2026-04; valores revisados: 0
 [capacidad_instalada]
-  ERROR: Excel file format cannot be determined, you must specify an engine manually.
-[mayoristas]
   actualizada: último período — → 2026-08; valores revisados: 0
 [shoppings]
-  ERROR: Excel file format cannot be determined, you must specify an engine manually.
+  actualizada: último período — → 2026-08; valores revisados: 0
 [electrodomesticos]
-  ERROR: Excel file format cannot be determined, you must specify an engine manually.
-[issp]
-  actualizada: último período — → 2026-07; valores revisados: 0
-[comex_indices]
-  actualizada: último período — → 2026-09; valores revisados: 0
-[turismo]
-  actualizada: último período — → 2026-09; valores revisados: 0
-[imig]
-  actualizada: último período — → 2026-09; valores revisados: 0
-[recaudacion]
-  actualizada: último período — → 2026-10; valores revisados: 0
-[deuda]
-  actualizada: último período — → 2026-09; valores revisados: 0
-[recaudacion_real]
-  recalculada: último período — → 2026-09
+  actualizada: último período — → 2026-06; valores revisados: 0

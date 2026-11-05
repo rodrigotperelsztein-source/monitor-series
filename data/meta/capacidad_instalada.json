@@ -1,0 +1,80 @@
+{
+  "id": "capacidad_instalada",
+  "nombre": "Utilización de la capacidad instalada en la industria (INDEC)",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_capacidad_10_26.xls",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-6-15",
+  "frecuencia": "M",
+  "unidad": "% de la capacidad instalada",
+  "sha256": "e70f40215b2ed45742eed643aca27870218ebd226990fdf67aa26e9eeebf2693",
+  "columnas": {
+    "nivel_general": {
+      "nombre": "Capacidad instalada utilizada: nivel general",
+      "tipo": "nivel",
+      "unidad": "% de la capacidad instalada"
+    },
+    "alimentos": {
+      "nombre": "Capacidad instalada utilizada: productos alimenticios y bebidas",
+      "tipo": "nivel",
+      "unidad": "% de la capacidad instalada"
+    },
+    "tabaco": {
+      "nombre": "Capacidad instalada utilizada: productos del tabaco",
+      "tipo": "nivel",
+      "unidad": "% de la capacidad instalada"
+    },
+    "textiles": {
+      "nombre": "Capacidad instalada utilizada: productos textiles",
+      "tipo": "nivel",
+      "unidad": "% de la capacidad instalada"
+    },
+    "papel": {
+      "nombre": "Capacidad instalada utilizada: papel y cartón",
+      "tipo": "nivel",
+      "unidad": "% de la capacidad instalada"
+    },
+    "edicion": {
+      "nombre": "Capacidad instalada utilizada: edición e impresión",
+      "tipo": "nivel",
+      "unidad": "% de la capacidad instalada"
+    },
+    "refinacion_petroleo": {
+      "nombre": "Capacidad instalada utilizada: refinación del petróleo",
+      "tipo": "nivel",
+      "unidad": "% de la capacidad instalada"
+    },
+    "quimicos": {
+      "nombre": "Capacidad instalada utilizada: sustancias y productos químicos",
+      "tipo": "nivel",
+      "unidad": "% de la capacidad instalada"
+    },
+    "caucho_plastico": {
+      "nombre": "Capacidad instalada utilizada: productos de caucho y plástico",
+      "tipo": "nivel",
+      "unidad": "% de la capacidad instalada"
+    },
+    "minerales_no_metalicos": {
+      "nombre": "Capacidad instalada utilizada: productos minerales no metálicos",
+      "tipo": "nivel",
+      "unidad": "% de la capacidad instalada"
+    },
+    "metalicas_basicas": {
+      "nombre": "Capacidad instalada utilizada: industrias metálicas básicas",
+      "tipo": "nivel",
+      "unidad": "% de la capacidad instalada"
+    },
+    "automotriz": {
+      "nombre": "Capacidad instalada utilizada: industria automotriz",
+      "tipo": "nivel",
+      "unidad": "% de la capacidad instalada"
+    },
+    "metalmecanica": {
+      "nombre": "Capacidad instalada utilizada: metalmecánica excluida industria automotriz",
+      "tipo": "nivel",
+      "unidad": "% de la capacidad instalada"
+    }
+  },
+  "descargado": "2026-11-05T18:58:10Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 128,
+  "original_guardado": "data/raw/capacidad_instalada/2026-11-05_e70f4021.xls"
+}

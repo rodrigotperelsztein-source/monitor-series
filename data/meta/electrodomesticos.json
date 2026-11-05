@@ -1,0 +1,80 @@
+{
+  "id": "electrodomesticos",
+  "nombre": "Encuesta de comercios de electrodomésticos: ventas por rubro (INDEC)",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_electro_08_26.xls",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-1-37",
+  "frecuencia": "M",
+  "unidad": "Millones de $ corrientes",
+  "sha256": "bd6e9a7f0a98fbaba7ea876a663b7dcf702ad512671246bcbdba42d134d7cb8c",
+  "columnas": {
+    "ventas": {
+      "nombre": "Ventas totales a precios corrientes",
+      "tipo": "nivel",
+      "unidad": "Millones de $ corrientes"
+    },
+    "ventas_var_ia": {
+      "nombre": "Ventas totales, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ventas_televisores": {
+      "nombre": "Ventas: televisores, video y fotografía",
+      "tipo": "nivel",
+      "unidad": "Millones de $ corrientes"
+    },
+    "ventas_audio": {
+      "nombre": "Ventas: equipos de audio, radios y similares",
+      "tipo": "nivel",
+      "unidad": "Millones de $ corrientes"
+    },
+    "ventas_heladeras": {
+      "nombre": "Ventas: heladeras y freezers",
+      "tipo": "nivel",
+      "unidad": "Millones de $ corrientes"
+    },
+    "ventas_aire_acondicionado": {
+      "nombre": "Ventas: equipos de aire acondicionado y climatizadores",
+      "tipo": "nivel",
+      "unidad": "Millones de $ corrientes"
+    },
+    "ventas_lavarropas": {
+      "nombre": "Ventas: lavarropas, secarropas y lavavajillas",
+      "tipo": "nivel",
+      "unidad": "Millones de $ corrientes"
+    },
+    "ventas_cocinas": {
+      "nombre": "Ventas: cocinas a gas y eléctricas",
+      "tipo": "nivel",
+      "unidad": "Millones de $ corrientes"
+    },
+    "ventas_computacion": {
+      "nombre": "Ventas: computación y accesorios informáticos",
+      "tipo": "nivel",
+      "unidad": "Millones de $ corrientes"
+    },
+    "ventas_telefonia": {
+      "nombre": "Ventas: telefonía",
+      "tipo": "nivel",
+      "unidad": "Millones de $ corrientes"
+    },
+    "ventas_cuidado_personal": {
+      "nombre": "Ventas: cuidado personal",
+      "tipo": "nivel",
+      "unidad": "Millones de $ corrientes"
+    },
+    "ventas_pequenos": {
+      "nombre": "Ventas: pequeños electrodomésticos",
+      "tipo": "nivel",
+      "unidad": "Millones de $ corrientes"
+    },
+    "ventas_otros": {
+      "nombre": "Ventas: otros electrodomésticos y artículos para el hogar",
+      "tipo": "nivel",
+      "unidad": "Millones de $ corrientes"
+    }
+  },
+  "descargado": "2026-11-05T18:58:10Z",
+  "ultimo_periodo": "2026-06",
+  "observaciones": 78,
+  "original_guardado": "data/raw/electrodomesticos/2026-11-05_bd6e9a7f.xls"
+}

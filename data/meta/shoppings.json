@@ -1,0 +1,90 @@
+{
+  "id": "shoppings",
+  "nombre": "Encuesta de centros de compras: índice de ventas y ventas por rubro (INDEC)",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_compras_10_26.xls",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-1-36",
+  "frecuencia": "M",
+  "unidad": "Según la serie",
+  "sha256": "b8467a5c28f517bfbb33d9a304c72cf8a1a283d97a040f3ce2475ee183d959b5",
+  "columnas": {
+    "indice": {
+      "nombre": "Índice de ventas a precios constantes, serie original",
+      "tipo": "nivel",
+      "unidad": "Según la serie"
+    },
+    "indice_var_ia": {
+      "nombre": "Índice de ventas, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "indice_desest": {
+      "nombre": "Índice de ventas, serie desestacionalizada",
+      "tipo": "nivel",
+      "unidad": "Según la serie"
+    },
+    "indice_desest_var_m": {
+      "nombre": "Índice de ventas, desestacionalizada, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ventas_corrientes": {
+      "nombre": "Ventas totales a precios corrientes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ventas_indumentaria": {
+      "nombre": "Ventas a precios corrientes: indumentaria, calzado y marroquinería",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ventas_deportes": {
+      "nombre": "Ventas a precios corrientes: ropa y accesorios deportivos",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ventas_hogar": {
+      "nombre": "Ventas a precios corrientes: amoblamientos, decoración y textiles para el hogar",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ventas_comidas": {
+      "nombre": "Ventas a precios corrientes: patio de comidas, alimentos y kioscos",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ventas_electronicos": {
+      "nombre": "Ventas a precios corrientes: electrónicos, cd, electrodomésticos y computación",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ventas_jugueteria": {
+      "nombre": "Ventas a precios corrientes: juguetería",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ventas_libreria": {
+      "nombre": "Ventas a precios corrientes: librería y papelería",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ventas_diversion": {
+      "nombre": "Ventas a precios corrientes: diversión y esparcimiento",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ventas_perfumeria": {
+      "nombre": "Ventas a precios corrientes: perfumería y farmacia",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "ventas_otros": {
+      "nombre": "Ventas a precios corrientes: otros",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    }
+  },
+  "descargado": "2026-11-05T18:58:10Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 116,
+  "original_guardado": "data/raw/shoppings/2026-11-05_b8467a5c.xls"
+}

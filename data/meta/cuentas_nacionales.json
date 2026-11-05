@@ -1,0 +1,290 @@
+{
+  "id": "cuentas_nacionales",
+  "nombre": "Cuentas nacionales: PIB, oferta y demanda globales y valor agregado por sector (INDEC, trimestral)",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_oferta_demanda_09_26.xls",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-47",
+  "frecuencia": "Q",
+  "unidad": "Millones de $",
+  "sha256": "fbd4a5b6964cd49a1b5dd48c47b8af5bf3b238c4359503a55167806b8b74e55e",
+  "columnas": {
+    "pib": {
+      "nombre": "Producto interno bruto, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "pib_var_ia": {
+      "nombre": "Producto interno bruto, a precios de 2004, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "importaciones": {
+      "nombre": "Importaciones de bienes y servicios, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "importaciones_var_ia": {
+      "nombre": "Importaciones de bienes y servicios, a precios de 2004, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "consumo_privado": {
+      "nombre": "Consumo privado, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "consumo_privado_var_ia": {
+      "nombre": "Consumo privado, a precios de 2004, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "consumo_publico": {
+      "nombre": "Consumo público, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "consumo_publico_var_ia": {
+      "nombre": "Consumo público, a precios de 2004, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "exportaciones": {
+      "nombre": "Exportaciones de bienes y servicios, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "exportaciones_var_ia": {
+      "nombre": "Exportaciones de bienes y servicios, a precios de 2004, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "inversion": {
+      "nombre": "Formación bruta de capital fijo, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "inversion_var_ia": {
+      "nombre": "Formación bruta de capital fijo, a precios de 2004, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "variacion_existencias": {
+      "nombre": "Variación de existencias, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "pib_corriente": {
+      "nombre": "Producto interno bruto, a precios corrientes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "importaciones_corriente": {
+      "nombre": "Importaciones de bienes y servicios, a precios corrientes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "consumo_privado_corriente": {
+      "nombre": "Consumo privado, a precios corrientes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "consumo_publico_corriente": {
+      "nombre": "Consumo público, a precios corrientes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "exportaciones_corriente": {
+      "nombre": "Exportaciones de bienes y servicios, a precios corrientes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "inversion_corriente": {
+      "nombre": "Formación bruta de capital fijo, a precios corrientes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "variacion_existencias_corriente": {
+      "nombre": "Variación de existencias, a precios corrientes",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "pib_deflactor": {
+      "nombre": "Índice de precios implícitos del PIB (2004=100)",
+      "tipo": "nivel",
+      "unidad": "Índice 2004=100"
+    },
+    "pib_deflactor_var_ia": {
+      "nombre": "Índice de precios implícitos del PIB, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab": {
+      "nombre": "Valor agregado bruto a precios básicos, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_agro": {
+      "nombre": "Valor agregado bruto: agricultura, ganadería, caza y silvicultura, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_agro_var_ia": {
+      "nombre": "Valor agregado bruto: agricultura, ganadería, caza y silvicultura, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab_pesca": {
+      "nombre": "Valor agregado bruto: pesca, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_pesca_var_ia": {
+      "nombre": "Valor agregado bruto: pesca, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab_mineria": {
+      "nombre": "Valor agregado bruto: explotación de minas y canteras, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_mineria_var_ia": {
+      "nombre": "Valor agregado bruto: explotación de minas y canteras, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab_industria": {
+      "nombre": "Valor agregado bruto: industria manufacturera, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_industria_var_ia": {
+      "nombre": "Valor agregado bruto: industria manufacturera, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab_electricidad_gas_agua": {
+      "nombre": "Valor agregado bruto: electricidad, gas y agua, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_electricidad_gas_agua_var_ia": {
+      "nombre": "Valor agregado bruto: electricidad, gas y agua, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab_construccion": {
+      "nombre": "Valor agregado bruto: construcción, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_construccion_var_ia": {
+      "nombre": "Valor agregado bruto: construcción, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab_comercio": {
+      "nombre": "Valor agregado bruto: comercio mayorista, minorista y reparaciones, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_comercio_var_ia": {
+      "nombre": "Valor agregado bruto: comercio mayorista, minorista y reparaciones, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab_hoteles_restaurantes": {
+      "nombre": "Valor agregado bruto: hoteles y restaurantes, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_hoteles_restaurantes_var_ia": {
+      "nombre": "Valor agregado bruto: hoteles y restaurantes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab_transporte_comunicaciones": {
+      "nombre": "Valor agregado bruto: transporte, almacenamiento y comunicaciones, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_transporte_comunicaciones_var_ia": {
+      "nombre": "Valor agregado bruto: transporte, almacenamiento y comunicaciones, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab_intermediacion_financiera": {
+      "nombre": "Valor agregado bruto: intermediación financiera, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_intermediacion_financiera_var_ia": {
+      "nombre": "Valor agregado bruto: intermediación financiera, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab_inmobiliarias": {
+      "nombre": "Valor agregado bruto: actividades inmobiliarias, empresariales y de alquiler, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_inmobiliarias_var_ia": {
+      "nombre": "Valor agregado bruto: actividades inmobiliarias, empresariales y de alquiler, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab_administracion_publica": {
+      "nombre": "Valor agregado bruto: administración pública y defensa, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_administracion_publica_var_ia": {
+      "nombre": "Valor agregado bruto: administración pública y defensa, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab_ensenanza": {
+      "nombre": "Valor agregado bruto: enseñanza, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_ensenanza_var_ia": {
+      "nombre": "Valor agregado bruto: enseñanza, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab_salud": {
+      "nombre": "Valor agregado bruto: servicios sociales y de salud, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_salud_var_ia": {
+      "nombre": "Valor agregado bruto: servicios sociales y de salud, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab_otros_servicios": {
+      "nombre": "Valor agregado bruto: otras actividades de servicios, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_otros_servicios_var_ia": {
+      "nombre": "Valor agregado bruto: otras actividades de servicios, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "vab_servicio_domestico": {
+      "nombre": "Valor agregado bruto: hogares privados con servicio doméstico, a precios de 2004",
+      "tipo": "nivel",
+      "unidad": "Millones de $"
+    },
+    "vab_servicio_domestico_var_ia": {
+      "nombre": "Valor agregado bruto: hogares privados con servicio doméstico, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-05T18:58:10Z",
+  "ultimo_periodo": "2026-04",
+  "observaciones": 90,
+  "original_guardado": "data/raw/cuentas_nacionales/2026-11-05_fbd4a5b6.xls"
+}

@@ -17,7 +17,7 @@ from pipeline.fuentes.deuda import _mes
 
 ID = "utdt"
 NOMBRE = "Índice Líder, confianza del consumidor y confianza en el gobierno (UTDT)"
-PAGINAS = {"lider": "https://www.utdt.edu/ver_contenido.php?id_contenido=3160&id_item_menu=6230",
+PAGINAS = {"lider": "https://www.utdt.edu/ver_contenido.php?id_contenido=13306&id_item_menu=16461",
            "icc": "https://www.utdt.edu/ver_contenido.php?id_contenido=8513&id_item_menu=16458",
            "icg": "https://www.utdt.edu/listado_contenidos.php?id_item_menu=28756"}
 PAGINA = "https://www.utdt.edu/ver_contenido.php?id_contenido=27166&id_item_menu=44662"

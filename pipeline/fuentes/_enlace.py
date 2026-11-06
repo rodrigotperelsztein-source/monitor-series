@@ -13,6 +13,7 @@ def buscar(descargar, pagina: str, patron: str, hosts: tuple[str, ...] = ()) -> 
     permitidos = {urlparse(pagina).hostname, *hosts}
     for href in re.findall(r'href="([^"]+)"', html):
         href = href.replace("&amp;", "&")
+        href = re.sub(r"^blank:#", "", href)  # argentina.gob.ar marca así los enlaces que abren en otra pestaña
         if not re.search(patron, href):
             continue
         url = urljoin(pagina, href)

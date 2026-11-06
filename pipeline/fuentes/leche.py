@@ -26,7 +26,7 @@ COLUMNAS = {"produccion": Columna("", "Producción primaria de leche"),
 
 def leer(contenido: bytes, columnas=COLUMNAS) -> pd.DataFrame:
     h = pd.read_excel(io.BytesIO(contenido), sheet_name="Mensual", header=None)
-    fechas = pd.to_datetime(h.iloc[:, 1], errors="coerce")
+    fechas = pd.to_datetime(h.iloc[:, 1].where(h.iloc[:, 1].map(lambda v: hasattr(v, "year"))), errors="coerce")
     litros = pd.to_numeric(h.iloc[:, 2], errors="coerce")
     ok = fechas.notna() & litros.notna()
     if ok.sum() < 100:

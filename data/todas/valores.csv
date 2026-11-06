@@ -2517,6 +2517,7 @@ fecha,id_serie,valor
 2026-11-02,acciones_energia.pampa,69.780000
 2026-11-03,acciones_energia.pampa,68.510000
 2026-11-04,acciones_energia.pampa,64.840000
+2026-11-05,acciones_energia.pampa,64.070000
 2016-10-28,acciones_energia.tgs,7.164200
 2016-10-31,acciones_energia.tgs,6.981300
 2016-11-01,acciones_energia.tgs,6.875400
@@ -5035,6 +5036,7 @@ fecha,id_serie,valor
 2026-11-02,acciones_energia.tgs,22.880000
 2026-11-03,acciones_energia.tgs,23.810000
 2026-11-04,acciones_energia.tgs,23.250000
+2026-11-05,acciones_energia.tgs,21.780000
 2019-07-26,acciones_energia.vista,9.100000
 2019-07-29,acciones_energia.vista,10.000000
 2019-07-30,acciones_energia.vista,10.100000
@@ -6865,6 +6867,7 @@ fecha,id_serie,valor
 2026-11-02,acciones_energia.vista,66.890000
 2026-11-03,acciones_energia.vista,67.920000
 2026-11-04,acciones_energia.vista,62.020000
+2026-11-05,acciones_energia.vista,57.340000
 2016-10-28,acciones_energia.ypf,17.770000
 2016-10-31,acciones_energia.ypf,17.760000
 2016-11-01,acciones_energia.ypf,17.380000
@@ -9383,6 +9386,7 @@ fecha,id_serie,valor
 2026-11-02,acciones_energia.ypf,43.850000
 2026-11-03,acciones_energia.ypf,44.810000
 2026-11-04,acciones_energia.ypf,41.610000
+2026-11-05,acciones_energia.ypf,38.660000
 2016-10-01,acciones_energia_mensual.pampa,34.070000
 2016-11-01,acciones_energia_mensual.pampa,34.930000
 2016-12-01,acciones_energia_mensual.pampa,34.810000
@@ -37639,6 +37643,7 @@ fecha,id_serie,valor
 2026-11-03,bcra.cer,864.372650
 2026-11-04,bcra.cer,864.897616
 2026-11-05,bcra.cer,865.422901
+2026-11-06,bcra.cer,865.948505
 1996-01-02,bcra.circulacion_monetaria,13069.000000
 1996-01-03,bcra.circulacion_monetaria,12970.000000
 1996-01-04,bcra.circulacion_monetaria,13034.000000
@@ -117679,6 +117684,7 @@ fecha,id_serie,valor
 2026-11-03,bcra.icl,37.250000
 2026-11-04,bcra.icl,37.280000
 2026-11-05,bcra.icl,37.300000
+2026-11-06,bcra.icl,37.320000
 2002-12-31,bcra.m2,47874.740000
 2003-01-02,bcra.m2,47347.040000
 2003-01-03,bcra.m2,47206.850000
@@ -235529,6 +235535,7 @@ fecha,id_serie,valor
 2026-11-03,bcra.uva,2181.500000
 2026-11-04,bcra.uva,2182.820000
 2026-11-05,bcra.uva,2184.150000
+2026-11-06,bcra.uva,2185.480000
 2025-04-01,bcra_mensual.banda_inferior,997.173636
 2025-05-01,bcra_mensual.banda_inferior,988.843500
 2025-06-01,bcra_mensual.banda_inferior,979.464737
@@ -724729,6 +724736,7 @@ fecha,id_serie,valor
 2026-07-01,rem.desocupacion_anio,7.500000
 2026-08-01,rem.desocupacion_anio,7.500000
 2026-09-01,rem.desocupacion_anio,7.700000
+2026-10-01,rem.desocupacion_anio,7.750000
 2021-01-01,rem.exportaciones_anio,60783.500000
 2021-02-01,rem.exportaciones_anio,61550.000000
 2021-03-01,rem.exportaciones_anio,62427.500000
@@ -724793,6 +724801,7 @@ fecha,id_serie,valor
 2026-07-01,rem.exportaciones_anio,100207.380845
 2026-08-01,rem.exportaciones_anio,100895.000000
 2026-09-01,rem.exportaciones_anio,101200.000000
+2026-10-01,rem.exportaciones_anio,103434.000000
 2021-01-01,rem.importaciones_anio,48530.000000
 2021-02-01,rem.importaciones_anio,49200.000000
 2021-03-01,rem.importaciones_anio,49223.500000
@@ -724857,6 +724866,7 @@ fecha,id_serie,valor
 2026-07-01,rem.importaciones_anio,76773.020427
 2026-08-01,rem.importaciones_anio,75861.000000
 2026-09-01,rem.importaciones_anio,75498.690205
+2026-10-01,rem.importaciones_anio,75673.000000
 2016-06-01,rem.ipc_12m,21.500000
 2016-07-01,rem.ipc_12m,21.700000
 2016-08-01,rem.ipc_12m,21.900000
@@ -724981,6 +724991,7 @@ fecha,id_serie,valor
 2026-07-01,rem.ipc_12m,21.800000
 2026-08-01,rem.ipc_12m,21.000000
 2026-09-01,rem.ipc_12m,21.050000
+2026-10-01,rem.ipc_12m,21.800000
 2016-06-01,rem.ipc_anio,37.000000
 2016-07-01,rem.ipc_anio,38.600000
 2016-08-01,rem.ipc_anio,37.700000
@@ -725095,6 +725106,7 @@ fecha,id_serie,valor
 2026-07-01,rem.ipc_anio,29.790000
 2026-08-01,rem.ipc_anio,30.000000
 2026-09-01,rem.ipc_anio,30.000000
+2026-10-01,rem.ipc_anio,30.360000
 2019-01-01,rem.ipc_mes,2.500000
 2019-02-01,rem.ipc_mes,3.500000
 2019-03-01,rem.ipc_mes,3.800000
@@ -725188,6 +725200,7 @@ fecha,id_serie,valor
 2026-07-01,rem.ipc_mes,1.950000
 2026-08-01,rem.ipc_mes,1.717211
 2026-09-01,rem.ipc_mes,1.900000
+2026-10-01,rem.ipc_mes,1.800000
 2016-06-01,rem.ipc_mes_siguiente,2.200000
 2016-07-01,rem.ipc_mes_siguiente,2.000000
 2016-08-01,rem.ipc_mes_siguiente,1.600000
@@ -725312,6 +725325,7 @@ fecha,id_serie,valor
 2026-07-01,rem.ipc_mes_siguiente,1.800000
 2026-08-01,rem.ipc_mes_siguiente,1.800000
 2026-09-01,rem.ipc_mes_siguiente,1.700000
+2026-10-01,rem.ipc_mes_siguiente,1.700000
 2019-01-01,rem.ipc_nucleo_mes,2.400000
 2019-02-01,rem.ipc_nucleo_mes,3.200000
 2019-03-01,rem.ipc_nucleo_mes,3.600000
@@ -725405,6 +725419,7 @@ fecha,id_serie,valor
 2026-07-01,rem.ipc_nucleo_mes,1.800000
 2026-08-01,rem.ipc_nucleo_mes,1.700000
 2026-09-01,rem.ipc_nucleo_mes,1.760000
+2026-10-01,rem.ipc_nucleo_mes,1.687448
 2016-06-01,rem.pib_anio,-1.400000
 2016-07-01,rem.pib_anio,-1.500000
 2016-08-01,rem.pib_anio,-1.500000
@@ -725519,6 +725534,7 @@ fecha,id_serie,valor
 2026-07-01,rem.pib_anio,2.650000
 2026-08-01,rem.pib_anio,2.100000
 2026-09-01,rem.pib_anio,1.500000
+2026-10-01,rem.pib_anio,0.700000
 2016-06-01,rem.pib_anio_siguiente,3.200000
 2016-07-01,rem.pib_anio_siguiente,3.200000
 2016-08-01,rem.pib_anio_siguiente,3.200000
@@ -725643,6 +725659,7 @@ fecha,id_serie,valor
 2026-07-01,rem.pib_anio_siguiente,2.950000
 2026-08-01,rem.pib_anio_siguiente,2.850000
 2026-09-01,rem.pib_anio_siguiente,2.474341
+2026-10-01,rem.pib_anio_siguiente,2.085914
 2016-10-01,rem.pib_trim_actual,1.000000
 2016-11-01,rem.pib_trim_actual,0.300000
 2017-01-01,rem.pib_trim_actual,1.100000
@@ -725754,6 +725771,7 @@ fecha,id_serie,valor
 2026-07-01,rem.pib_trim_actual,0.990298
 2026-08-01,rem.pib_trim_actual,1.100000
 2026-09-01,rem.pib_trim_actual,-0.950000
+2026-10-01,rem.pib_trim_actual,1.965000
 2019-04-01,rem.pib_trim_anterior,0.400000
 2019-05-01,rem.pib_trim_anterior,-0.200000
 2019-07-01,rem.pib_trim_anterior,0.500000
@@ -725814,6 +725832,7 @@ fecha,id_serie,valor
 2026-05-01,rem.pib_trim_anterior,0.330000
 2026-07-01,rem.pib_trim_anterior,-0.364823
 2026-08-01,rem.pib_trim_anterior,-0.900000
+2026-10-01,rem.pib_trim_anterior,-2.300000
 2016-10-01,rem.pib_trim_siguiente,1.400000
 2016-11-01,rem.pib_trim_siguiente,1.200000
 2016-12-01,rem.pib_trim_siguiente,1.000000
@@ -725934,6 +725953,7 @@ fecha,id_serie,valor
 2026-07-01,rem.pib_trim_siguiente,0.956493
 2026-08-01,rem.pib_trim_siguiente,1.300000
 2026-09-01,rem.pib_trim_siguiente,1.800000
+2026-10-01,rem.pib_trim_siguiente,0.891723
 2016-06-01,rem.resultado_primario_anio,-350.600000
 2016-07-01,rem.resultado_primario_anio,-355.000000
 2016-08-01,rem.resultado_primario_anio,-375.000000
@@ -726048,6 +726068,7 @@ fecha,id_serie,valor
 2026-07-01,rem.resultado_primario_anio,15554.300000
 2026-08-01,rem.resultado_primario_anio,15400.000000
 2026-09-01,rem.resultado_primario_anio,15000.000000
+2026-10-01,rem.resultado_primario_anio,15107.759098
 2024-12-01,rem.tamar_mes_siguiente,34.000000
 2025-01-01,rem.tamar_mes_siguiente,30.600000
 2025-02-01,rem.tamar_mes_siguiente,29.700000
@@ -726070,6 +726091,7 @@ fecha,id_serie,valor
 2026-07-01,rem.tamar_mes_siguiente,22.400000
 2026-08-01,rem.tamar_mes_siguiente,24.110000
 2026-09-01,rem.tamar_mes_siguiente,23.562500
+2026-10-01,rem.tamar_mes_siguiente,23.900000
 2016-06-01,rem.tc_fin_anio,16.100000
 2016-07-01,rem.tc_fin_anio,16.200000
 2016-08-01,rem.tc_fin_anio,16.000000
@@ -726184,6 +726206,7 @@ fecha,id_serie,valor
 2026-07-01,rem.tc_fin_anio,1651.792802
 2026-08-01,rem.tc_fin_anio,1629.580207
 2026-09-01,rem.tc_fin_anio,1614.322263
+2026-10-01,rem.tc_fin_anio,1590.000000
 2016-06-01,rem.tc_mes_siguiente,15.000000
 2016-07-01,rem.tc_mes_siguiente,15.200000
 2016-08-01,rem.tc_mes_siguiente,15.300000
@@ -726308,6 +726331,7 @@ fecha,id_serie,valor
 2026-07-01,rem.tc_mes_siguiente,1512.381372
 2026-08-01,rem.tc_mes_siguiente,1530.397708
 2026-09-01,rem.tc_mes_siguiente,1545.032036
+2026-10-01,rem.tc_mes_siguiente,1558.481827
 1995-01-01,remuneraciones_provincias.buenos_aires_resto,786.572574
 1995-02-01,remuneraciones_provincias.buenos_aires_resto,751.877468
 1995-03-01,remuneraciones_provincias.buenos_aires_resto,764.548549

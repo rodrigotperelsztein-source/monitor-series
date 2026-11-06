@@ -73,7 +73,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-02",
+"ultimo_periodo": "2026-11-03",
 "frescura": "vigente"
 },
 {
@@ -117,7 +117,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -326,7 +326,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -348,7 +348,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -359,7 +359,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -403,7 +403,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -414,7 +414,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -425,7 +425,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -436,7 +436,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-02",
+"ultimo_periodo": "2026-11-03",
 "frescura": "vigente"
 },
 {
@@ -447,7 +447,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-02",
+"ultimo_periodo": "2026-11-03",
 "frescura": "vigente"
 },
 {
@@ -469,7 +469,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-02",
+"ultimo_periodo": "2026-11-03",
 "frescura": "vigente"
 },
 {
@@ -491,7 +491,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -502,7 +502,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -513,7 +513,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -524,7 +524,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -535,7 +535,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -546,7 +546,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -557,7 +557,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -568,7 +568,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -579,7 +579,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -590,7 +590,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -601,7 +601,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -612,7 +612,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -623,7 +623,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -755,7 +755,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos · BCRA",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -777,7 +777,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos · BCRA",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -788,7 +788,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-05",
+"ultimo_periodo": "2026-11-06",
 "frescura": "vigente"
 },
 {
@@ -799,7 +799,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos · BCRA",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -1184,7 +1184,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -1382,7 +1382,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -1393,7 +1393,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -1404,7 +1404,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -1415,7 +1415,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -1437,7 +1437,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -1448,7 +1448,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -4891,7 +4891,7 @@
 "unidad": "indice",
 "frecuencia": "D",
 "fuente": "BCRA — Índice de tipo de cambio real multilateral",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -4902,7 +4902,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BCRA — Índice de tipo de cambio real multilateral",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -4913,7 +4913,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BCRA — Índice de tipo de cambio real multilateral",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -4924,7 +4924,7 @@
 "unidad": "indice",
 "frecuencia": "D",
 "fuente": "BCRA — Índice de tipo de cambio real multilateral",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -4935,7 +4935,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BCRA — Índice de tipo de cambio real multilateral",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -5034,7 +5034,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -5078,7 +5078,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -5122,7 +5122,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -5144,7 +5144,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -5606,7 +5606,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -5617,7 +5617,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -5628,7 +5628,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -6134,7 +6134,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -6222,7 +6222,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -6233,7 +6233,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -6299,7 +6299,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -6310,7 +6310,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -6839,7 +6839,7 @@
 "frecuencia": "A",
 "fuente": "Ministerio de Economía (DNAP)",
 "ultimo_periodo": "2024-01-01",
-"frescura": "demorado"
+"frescura": "vigente"
 },
 {
 "id": "prov_la_pampa_resultado",
@@ -6850,7 +6850,7 @@
 "frecuencia": "A",
 "fuente": "Ministerio de Economía (DNAP)",
 "ultimo_periodo": "2024-01-01",
-"frescura": "demorado"
+"frescura": "vigente"
 },
 {
 "id": "prov_la_pampa_resultado_ingresos",
@@ -6861,7 +6861,7 @@
 "frecuencia": "A",
 "fuente": "Ministerio de Economía (DNAP)",
 "ultimo_periodo": "2024-01-01",
-"frescura": "demorado"
+"frescura": "vigente"
 },
 {
 "id": "prov_la_rioja_ingresos",
@@ -8015,7 +8015,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "BCRA — REM",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -8026,7 +8026,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "BCRA — REM",
-"ultimo_periodo": "2026-10-01",
+"ultimo_periodo": "2026-11-01",
 "frescura": "vigente"
 },
 {
@@ -8037,7 +8037,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "BCRA — REM",
-"ultimo_periodo": "2026-11-01",
+"ultimo_periodo": "2026-12-01",
 "frescura": "vigente"
 },
 {
@@ -8048,7 +8048,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "BCRA — REM",
-"ultimo_periodo": "2026-12-01",
+"ultimo_periodo": "2027-01-01",
 "frescura": "vigente"
 },
 {
@@ -8059,7 +8059,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "BCRA — REM",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -8070,7 +8070,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "BCRA — REM",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -8081,7 +8081,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA — Principales Variables",
-"ultimo_periodo": "2026-11-02",
+"ultimo_periodo": "2026-11-03",
 "frescura": "vigente"
 },
 {
@@ -8092,7 +8092,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -8103,7 +8103,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -8114,7 +8114,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -8125,7 +8125,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -8136,7 +8136,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -8147,7 +8147,7 @@
 "unidad": "musd",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -8268,7 +8268,7 @@
 "unidad": "pb",
 "frecuencia": "D",
 "fuente": "JP Morgan (EMBI) vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8280,7 +8280,7 @@
 "frecuencia": "M",
 "fuente": "Secretaría de Seguridad Social (RIPTE)",
 "ultimo_periodo": "2026-08-01",
-"frescura": "demorado"
+"frescura": "vigente"
 },
 {
 "id": "ripte_real",
@@ -8291,7 +8291,7 @@
 "frecuencia": "M",
 "fuente": "Secretaría de Seguridad Social (RIPTE) · deflactado por IPC",
 "ultimo_periodo": "2026-08-01",
-"frescura": "demorado"
+"frescura": "vigente"
 },
 {
 "id": "ripte_real_interanual",
@@ -8302,7 +8302,7 @@
 "frecuencia": "M",
 "fuente": "Secretaría de Seguridad Social (RIPTE) · deflactado por IPC",
 "ultimo_periodo": "2026-08-01",
-"frescura": "demorado"
+"frescura": "vigente"
 },
 {
 "id": "ripte_real_mensual",
@@ -8313,7 +8313,7 @@
 "frecuencia": "M",
 "fuente": "Secretaría de Seguridad Social (RIPTE) · deflactado por IPC",
 "ultimo_periodo": "2026-08-01",
-"frescura": "demorado"
+"frescura": "vigente"
 },
 {
 "id": "salarios_privados",
@@ -8510,7 +8510,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -8521,7 +8521,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -8532,7 +8532,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA, INDEC y REM · cálculo propio",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -8543,7 +8543,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA, INDEC y REM · cálculo propio",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -8587,7 +8587,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -8598,7 +8598,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -8609,7 +8609,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA, INDEC y REM · cálculo propio",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -8620,7 +8620,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA, INDEC y REM · cálculo propio",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -8642,7 +8642,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -8653,7 +8653,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA, INDEC y REM · cálculo propio",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -8664,7 +8664,7 @@
 "unidad": "tasa",
 "frecuencia": "D",
 "fuente": "BCRA, INDEC y REM · cálculo propio",
-"ultimo_periodo": "2026-11-03",
+"ultimo_periodo": "2026-11-04",
 "frescura": "vigente"
 },
 {
@@ -8686,7 +8686,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-05",
+"ultimo_periodo": "2026-11-06",
 "frescura": "vigente"
 },
 {
@@ -8697,7 +8697,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-05",
+"ultimo_periodo": "2026-11-06",
 "frescura": "vigente"
 },
 {
@@ -8708,7 +8708,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-05",
+"ultimo_periodo": "2026-11-06",
 "frescura": "vigente"
 },
 {
@@ -8719,7 +8719,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-05",
+"ultimo_periodo": "2026-11-06",
 "frescura": "vigente"
 },
 {
@@ -8730,7 +8730,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-05",
+"ultimo_periodo": "2026-11-06",
 "frescura": "vigente"
 },
 {
@@ -8741,7 +8741,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-05",
+"ultimo_periodo": "2026-11-06",
 "frescura": "vigente"
 },
 {
@@ -8752,7 +8752,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-05",
+"ultimo_periodo": "2026-11-06",
 "frescura": "vigente"
 },
 {
@@ -8763,7 +8763,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-05",
+"ultimo_periodo": "2026-11-06",
 "frescura": "vigente"
 },
 {
@@ -8774,7 +8774,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-05",
+"ultimo_periodo": "2026-11-06",
 "frescura": "vigente"
 },
 {
@@ -8785,7 +8785,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-05",
+"ultimo_periodo": "2026-11-06",
 "frescura": "vigente"
 },
 {
@@ -8818,7 +8818,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8840,7 +8840,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8862,7 +8862,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BCRA — Informe monetario diario",
-"ultimo_periodo": "2026-10-30",
+"ultimo_periodo": "2026-11-02",
 "frescura": "vigente"
 },
 {
@@ -8873,7 +8873,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8884,7 +8884,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-05",
+"ultimo_periodo": "2026-11-06",
 "frescura": "vigente"
 },
 {
@@ -8895,7 +8895,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-05",
+"ultimo_periodo": "2026-11-06",
 "frescura": "vigente"
 },
 {
@@ -8906,7 +8906,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-05",
+"ultimo_periodo": "2026-11-06",
 "frescura": "vigente"
 },
 {
@@ -8917,7 +8917,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8928,7 +8928,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8939,7 +8939,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-04",
+"ultimo_periodo": "2026-11-05",
 "frescura": "vigente"
 },
 {
@@ -8983,7 +8983,7 @@
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
-"ultimo_periodo": "2026-11-02",
+"ultimo_periodo": "2026-11-03",
 "frescura": "vigente"
 },
 {

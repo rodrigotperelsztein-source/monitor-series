@@ -1,8 +1,7 @@
-[petroleo]
-  archivo distinto pero mismos datos
-[refinados]
-  archivo distinto pero mismos datos
-[petroleo_mensual]
-  sin cambios en las series de base
-[refinados_mensual]
-  sin cambios en las series de base
+Publicaciones previstas hoy y todavía no descargadas: ipi, ipi_minero, isac
+[ipi]
+  sin cambios en el archivo
+[ipi_minero]
+  sin cambios en el archivo
+[isac]
+  sin cambios en el archivo

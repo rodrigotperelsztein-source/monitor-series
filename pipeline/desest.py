@@ -113,7 +113,8 @@ def _spc(nombre: str, serie: pd.Series, esp: Especificacion) -> str:
     partes.append(f"transform{{function={funcion}}}")
 
     # X-13 admite líneas de hasta 132 caracteres: un argumento por línea.
-    reg = [f"variables=({' '.join(variables)})"] if variables else []
+    filas = [" ".join(variables[i:i + 8]) for i in range(0, len(variables), 8)]
+    reg = ["variables=(\n  " + "\n  ".join(filas) + "\n )"] if variables else []
     if esp.feriados:
         # usertype=user: el efecto se estima pero no se quita de la serie desestacionalizada.
         tipo = "user" if esp.efectos_en_serie else "holiday"

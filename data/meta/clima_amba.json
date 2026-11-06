@@ -1,0 +1,55 @@
+{
+  "id": "clima_amba",
+  "nombre": "Temperatura y lluvia diarias de CABA y el AMBA (reanálisis ERA5, Open-Meteo)",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "pagina": "https://open-meteo.com/en/docs/historical-weather-api",
+  "frecuencia": "D",
+  "unidad": "°C y mm",
+  "sha256": "e7533cf34a0e039ce10dd0f55999014055a42d63f7a5383d1d28857dffe2e886",
+  "columnas": {
+    "caba_tmax": {
+      "nombre": "Temperatura máxima (CABA)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "caba_tmin": {
+      "nombre": "Temperatura mínima (CABA)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "caba_tmed": {
+      "nombre": "Temperatura media (CABA)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "caba_lluvia": {
+      "nombre": "Lluvia acumulada en el día (CABA)",
+      "tipo": "nivel",
+      "unidad": "mm"
+    },
+    "amba_tmax": {
+      "nombre": "Temperatura máxima (AMBA, promedio de los partidos)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "amba_tmin": {
+      "nombre": "Temperatura mínima (AMBA, promedio de los partidos)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "amba_tmed": {
+      "nombre": "Temperatura media (AMBA, promedio de los partidos)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "amba_lluvia": {
+      "nombre": "Lluvia acumulada en el día (AMBA, promedio de los partidos)",
+      "tipo": "nivel",
+      "unidad": "mm"
+    }
+  },
+  "descargado": "2026-11-06T19:40:52Z",
+  "ultimo_periodo": "2026-10-30",
+  "observaciones": 729,
+  "original_guardado": null
+}

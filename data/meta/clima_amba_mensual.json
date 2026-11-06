@@ -1,0 +1,71 @@
+{
+  "id": "clima_amba_mensual",
+  "nombre": "Temperatura y lluvia mensuales de CABA y el AMBA (reanálisis ERA5, Open-Meteo)",
+  "url": "data/clima_amba.csv",
+  "pagina": "https://open-meteo.com/en/docs/historical-weather-api",
+  "frecuencia": "M",
+  "unidad": "°C, mm y días",
+  "sha256": "ddab76e9dd4d844f8ce1a31f07664e41976e71ac7d4d9cda52c583792adb3f16",
+  "derivada_de": [
+    "clima_amba"
+  ],
+  "archivos_de_origen": [
+    "https://archive-api.open-meteo.com/v1/archive"
+  ],
+  "columnas": {
+    "caba_tmed": {
+      "nombre": "Temperatura media del mes (CABA)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "caba_tmax": {
+      "nombre": "Promedio de las temperaturas máximas (CABA)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "caba_tmin": {
+      "nombre": "Promedio de las temperaturas mínimas (CABA)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "caba_lluvia": {
+      "nombre": "Lluvia acumulada en el mes (CABA)",
+      "tipo": "nivel",
+      "unidad": "mm"
+    },
+    "caba_dias_lluvia": {
+      "nombre": "Días con lluvia de 1 mm o más (CABA)",
+      "tipo": "nivel",
+      "unidad": "días"
+    },
+    "amba_tmed": {
+      "nombre": "Temperatura media del mes (AMBA)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "amba_tmax": {
+      "nombre": "Promedio de las temperaturas máximas (AMBA)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "amba_tmin": {
+      "nombre": "Promedio de las temperaturas mínimas (AMBA)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "amba_lluvia": {
+      "nombre": "Lluvia acumulada en el mes (AMBA)",
+      "tipo": "nivel",
+      "unidad": "mm"
+    },
+    "amba_dias_lluvia": {
+      "nombre": "Días con lluvia de 1 mm o más (AMBA)",
+      "tipo": "nivel",
+      "unidad": "días"
+    }
+  },
+  "descargado": "2026-11-06T19:40:52Z",
+  "calculado": "2026-11-06T19:40:52Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 23
+}

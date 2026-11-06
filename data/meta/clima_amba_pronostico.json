@@ -1,0 +1,65 @@
+{
+  "id": "clima_amba_pronostico",
+  "nombre": "Pronóstico de temperatura y lluvia para CABA y el AMBA, próximos 16 días (Open-Meteo)",
+  "url": "https://api.open-meteo.com/v1/forecast",
+  "pagina": "https://open-meteo.com/en/docs",
+  "frecuencia": "D",
+  "unidad": "°C, mm y %",
+  "sha256": "3ee01a9aec820689896fac0b6e5754c6a14368046ea467b6b385c559b2625fbd",
+  "columnas": {
+    "caba_tmax": {
+      "nombre": "Temperatura máxima pronosticada (CABA)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "caba_tmin": {
+      "nombre": "Temperatura mínima pronosticada (CABA)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "caba_tmed": {
+      "nombre": "Temperatura media pronosticada (CABA)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "caba_lluvia": {
+      "nombre": "Lluvia pronosticada en el día (CABA)",
+      "tipo": "nivel",
+      "unidad": "mm"
+    },
+    "caba_prob_lluvia": {
+      "nombre": "Probabilidad máxima de lluvia en el día (CABA)",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "amba_tmax": {
+      "nombre": "Temperatura máxima pronosticada (AMBA, promedio de los partidos)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "amba_tmin": {
+      "nombre": "Temperatura mínima pronosticada (AMBA, promedio de los partidos)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "amba_tmed": {
+      "nombre": "Temperatura media pronosticada (AMBA, promedio de los partidos)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "amba_lluvia": {
+      "nombre": "Lluvia pronosticada en el día (AMBA, promedio de los partidos)",
+      "tipo": "nivel",
+      "unidad": "mm"
+    },
+    "amba_prob_lluvia": {
+      "nombre": "Probabilidad máxima de lluvia en el día (AMBA, promedio de los partidos)",
+      "tipo": "nivel",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-06T19:40:52Z",
+  "ultimo_periodo": "2026-11-21",
+  "observaciones": 16,
+  "original_guardado": null
+}

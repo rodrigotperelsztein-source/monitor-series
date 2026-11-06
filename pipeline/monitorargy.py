@@ -15,21 +15,12 @@ import requests
 API = "https://monitorargy.com/api/v1/series/{}"
 DESDE_DIARIAS = "2020-01-01"
 
-# id de Monitor Argy -> para qué se usa (solo documentación). Quedan solo las que todavía no tienen fuente propia:
-# confianza (UTDT), dólar contado con liquidación y riesgo país (precios de mercado), patentamientos (SIOMAA, con
-# licencia) y empleo privado registrado desestacionalizado. El resto ya sale de los organismos (ver README).
+# id de Monitor Argy -> para qué se usa (solo documentación). Quedan solo los precios de mercado que todavía no tienen
+# fuente propia: dólar contado con liquidación, brecha y riesgo país. El resto ya sale de los organismos (ver README).
 SERIES = {
-    "confianza_gobierno": "Índice de Confianza en el Gobierno (UTDT)",
-    "confianza_consumidor": "Índice de Confianza del Consumidor (UTDT)",
     "tc_ccl": "Dólar contado con liquidación (diario)",
     "brecha_ccl": "Brecha CCL vs. mayorista (diario)",
     "riesgo_pais": "Riesgo país (diario)",
-    "patentamientos_autos_desest": "Patentamientos de autos, desestacionalizado",
-    "patentamientos_autos_interanual": "Patentamientos de autos, var. interanual",
-    "patentamientos_motos_desest": "Patentamientos de motos, desestacionalizado",
-    "patentamientos_motos_interanual": "Patentamientos de motos, var. interanual",
-    "empleo_privado_desest": "Asalariados registrados del sector privado, desestacionalizado",
-    "empleo_privado_interanual": "Asalariados registrados del sector privado, var. interanual",
 }
 
 

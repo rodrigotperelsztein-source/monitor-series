@@ -1,0 +1,30 @@
+{
+  "id": "cemento",
+  "nombre": "Despacho de cemento al mercado interno (AFCP)",
+  "url": "https://infra.datos.gob.ar/catalog/sspm/dataset/38/distribution/38.3/download/ventas-al-mercado-interno-produccion-nacional-base-1994-valores-mensuales.csv",
+  "pagina": "https://www.afcp.org.ar/despacho-mensual",
+  "frecuencia": "M",
+  "unidad": "Miles de toneladas",
+  "sha256": "f53fd6428b6253746508dde107e0fc10409e0d5ac9f2b2cf23d4aa1e4a1b9b1d",
+  "columnas": {
+    "despacho": {
+      "nombre": "Despacho de cemento al mercado interno",
+      "tipo": "nivel",
+      "unidad": "Miles de toneladas"
+    },
+    "despacho_var_ia": {
+      "nombre": "Despacho de cemento, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "asfalto": {
+      "nombre": "Despacho de asfalto al mercado interno",
+      "tipo": "nivel",
+      "unidad": "Miles de toneladas"
+    }
+  },
+  "descargado": "2026-11-06T18:01:30Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 394,
+  "original_guardado": "data/raw/cemento/2026-11-06_f53fd642.csv"
+}

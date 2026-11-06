@@ -1,0 +1,35 @@
+{
+  "id": "adimra",
+  "nombre": "Índice de producción industrial metalúrgica (ADIMRA)",
+  "url": "https://drive.usercontent.google.com/download?id=1og3v0E-gs2ETlajmKd_ngyuwXECAZEUw&export=download",
+  "pagina": "https://www.adimra.org.ar/datos",
+  "frecuencia": "M",
+  "unidad": "Índice 2015=100",
+  "sha256": "45e94ecfd05a95310c1ef6a5d2cf7193042aef7c9e0e1eb50ebbe391455fc80e",
+  "columnas": {
+    "indice": {
+      "nombre": "Índice de producción metalúrgica, serie original",
+      "tipo": "nivel",
+      "unidad": "Índice 2015=100"
+    },
+    "indice_desest": {
+      "nombre": "Índice de producción metalúrgica, desestacionalizado (ADIMRA)",
+      "tipo": "nivel",
+      "unidad": "Índice 2015=100"
+    },
+    "indice_var_ia": {
+      "nombre": "Índice de producción metalúrgica, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "indice_desest_var_m": {
+      "nombre": "Índice de producción metalúrgica, desestacionalizado, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-06T18:01:30Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 129,
+  "original_guardado": "data/raw/adimra/2026-11-06_45e94ecf.xlsx"
+}

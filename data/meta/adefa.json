@@ -1,0 +1,75 @@
+{
+  "id": "adefa",
+  "nombre": "Industria automotriz: producción, exportaciones y ventas internas (ADEFA)",
+  "url": "https://infra.datos.gob.ar/catalog/sspm/dataset/330/distribution/330.3/download/datos-historicos-industria-automotriz-unidades-mensuales.csv",
+  "pagina": "https://www.adefa.org.ar/es/estadisticas-mensuales",
+  "frecuencia": "M",
+  "unidad": "Unidades",
+  "sha256": "9db634f6686728a0a28c3876e42b127372a4d46fd7f86517d0bccc802be96934",
+  "columnas": {
+    "produccion": {
+      "nombre": "Producción de automóviles y utilitarios",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "produccion_automoviles": {
+      "nombre": "Producción de automóviles",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "produccion_utilitarios": {
+      "nombre": "Producción de utilitarios",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "exportaciones": {
+      "nombre": "Exportaciones de automóviles y utilitarios",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "exportaciones_automoviles": {
+      "nombre": "Exportaciones de automóviles",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "exportaciones_utilitarios": {
+      "nombre": "Exportaciones de utilitarios",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "ventas_internas": {
+      "nombre": "Ventas a concesionarios de automóviles y utilitarios",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "ventas_internas_automoviles": {
+      "nombre": "Ventas a concesionarios: automóviles",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "ventas_internas_utilitarios": {
+      "nombre": "Ventas a concesionarios: utilitarios",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "ventas_internas_nacionales": {
+      "nombre": "Ventas a concesionarios: vehículos nacionales",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "ventas_internas_importados": {
+      "nombre": "Ventas a concesionarios: vehículos importados",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "produccion_var_ia": {
+      "nombre": "Producción de automóviles y utilitarios, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-06T18:01:30Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 406,
+  "original_guardado": "data/raw/adefa/2026-11-06_9db634f6.csv"
+}

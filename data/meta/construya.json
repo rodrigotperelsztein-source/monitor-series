@@ -1,0 +1,35 @@
+{
+  "id": "construya",
+  "nombre": "Índice Construya de despachos de insumos para la construcción (Grupo Construya)",
+  "url": "https://www.grupoconstruya.com.ar/servicios/indice_construya",
+  "pagina": "https://www.grupoconstruya.com.ar/servicios/indice_construya",
+  "frecuencia": "M",
+  "unidad": "Índice jun-2002=100",
+  "sha256": "124a3984cd3f18073fc9aa43ad65d1b641c7dc612c0fa8ff2a056c6616e04607",
+  "columnas": {
+    "indice": {
+      "nombre": "Índice Construya, con estacionalidad",
+      "tipo": "nivel",
+      "unidad": "Índice jun-2002=100"
+    },
+    "indice_var_ia": {
+      "nombre": "Índice Construya, var. % interanual (publicada)",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "indice_desest": {
+      "nombre": "Índice Construya, desestacionalizado (Grupo Construya)",
+      "tipo": "nivel",
+      "unidad": "Índice jun-2002=100"
+    },
+    "indice_desest_var_m": {
+      "nombre": "Índice Construya, desestacionalizado, var. % mensual (publicada)",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-06T18:01:30Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 118,
+  "original_guardado": "data/raw/construya/2026-11-06_124a3984.html"
+}

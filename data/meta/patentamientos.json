@@ -1,0 +1,275 @@
+{
+  "id": "patentamientos",
+  "nombre": "Patentamientos de automotores y motos, total y por provincia (DNRPA)",
+  "url": "https://datos.jus.gob.ar/dataset/1ab0cc03-ab9b-4520-975c-5757d87d1061/resource/4358c995-bb04-4ad9-be4a-a9076dc3e42c/download/estadistica-inscripciones-iniciales-automotores-2000-01-2026-10.csv https://datos.jus.gob.ar/dataset/72d85f23-b751-4d12-935b-25e32ed9445e/resource/d523dd08-5c12-467e-b947-aa3206a24d21/download/estadistica-inscripciones-iniciales-motovehiculos-2007-01-2026-10.csv",
+  "pagina": "https://datos.jus.gob.ar/dataset/estadistica-de-tramites-de-automotores",
+  "frecuencia": "M",
+  "unidad": "Unidades",
+  "sha256": "586518a0edb9e394fa6451ea4cab0d6d0d793f2f8ae5d5f6c6556036d473dcc4",
+  "columnas": {
+    "autos": {
+      "nombre": "Patentamientos de automotores, total del país",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_var_ia": {
+      "nombre": "Patentamientos de automotores, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "motos": {
+      "nombre": "Patentamientos de motos, total del país",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_var_ia": {
+      "nombre": "Patentamientos de motos, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "autos_buenos_aires": {
+      "nombre": "Patentamientos de automotores: Buenos Aires",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_catamarca": {
+      "nombre": "Patentamientos de automotores: Catamarca",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_chaco": {
+      "nombre": "Patentamientos de automotores: Chaco",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_chubut": {
+      "nombre": "Patentamientos de automotores: Chubut",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_caba": {
+      "nombre": "Patentamientos de automotores: CABA",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_cordoba": {
+      "nombre": "Patentamientos de automotores: Córdoba",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_corrientes": {
+      "nombre": "Patentamientos de automotores: Corrientes",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_entre_rios": {
+      "nombre": "Patentamientos de automotores: Entre Ríos",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_formosa": {
+      "nombre": "Patentamientos de automotores: Formosa",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_jujuy": {
+      "nombre": "Patentamientos de automotores: Jujuy",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_la_pampa": {
+      "nombre": "Patentamientos de automotores: La Pampa",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_la_rioja": {
+      "nombre": "Patentamientos de automotores: La Rioja",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_mendoza": {
+      "nombre": "Patentamientos de automotores: Mendoza",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_misiones": {
+      "nombre": "Patentamientos de automotores: Misiones",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_neuquen": {
+      "nombre": "Patentamientos de automotores: Neuquén",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_rio_negro": {
+      "nombre": "Patentamientos de automotores: Río Negro",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_salta": {
+      "nombre": "Patentamientos de automotores: Salta",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_san_juan": {
+      "nombre": "Patentamientos de automotores: San Juan",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_san_luis": {
+      "nombre": "Patentamientos de automotores: San Luis",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_santa_cruz": {
+      "nombre": "Patentamientos de automotores: Santa Cruz",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_santa_fe": {
+      "nombre": "Patentamientos de automotores: Santa Fe",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_santiago_del_estero": {
+      "nombre": "Patentamientos de automotores: Santiago del Estero",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_tierra_del_fuego": {
+      "nombre": "Patentamientos de automotores: Tierra del Fuego",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_tucuman": {
+      "nombre": "Patentamientos de automotores: Tucumán",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_buenos_aires": {
+      "nombre": "Patentamientos de motos: Buenos Aires",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_catamarca": {
+      "nombre": "Patentamientos de motos: Catamarca",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_chaco": {
+      "nombre": "Patentamientos de motos: Chaco",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_chubut": {
+      "nombre": "Patentamientos de motos: Chubut",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_caba": {
+      "nombre": "Patentamientos de motos: CABA",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_cordoba": {
+      "nombre": "Patentamientos de motos: Córdoba",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_corrientes": {
+      "nombre": "Patentamientos de motos: Corrientes",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_entre_rios": {
+      "nombre": "Patentamientos de motos: Entre Ríos",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_formosa": {
+      "nombre": "Patentamientos de motos: Formosa",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_jujuy": {
+      "nombre": "Patentamientos de motos: Jujuy",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_la_pampa": {
+      "nombre": "Patentamientos de motos: La Pampa",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_la_rioja": {
+      "nombre": "Patentamientos de motos: La Rioja",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_mendoza": {
+      "nombre": "Patentamientos de motos: Mendoza",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_misiones": {
+      "nombre": "Patentamientos de motos: Misiones",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_neuquen": {
+      "nombre": "Patentamientos de motos: Neuquén",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_rio_negro": {
+      "nombre": "Patentamientos de motos: Río Negro",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_salta": {
+      "nombre": "Patentamientos de motos: Salta",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_san_juan": {
+      "nombre": "Patentamientos de motos: San Juan",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_san_luis": {
+      "nombre": "Patentamientos de motos: San Luis",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_santa_cruz": {
+      "nombre": "Patentamientos de motos: Santa Cruz",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_santa_fe": {
+      "nombre": "Patentamientos de motos: Santa Fe",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_santiago_del_estero": {
+      "nombre": "Patentamientos de motos: Santiago del Estero",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_tierra_del_fuego": {
+      "nombre": "Patentamientos de motos: Tierra del Fuego",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_tucuman": {
+      "nombre": "Patentamientos de motos: Tucumán",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    }
+  },
+  "descargado": "2026-11-06T18:01:30Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 322,
+  "original_guardado": null
+}

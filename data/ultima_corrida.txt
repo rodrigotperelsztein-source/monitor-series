@@ -1,149 +1,24 @@
-/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:118: UserWarning: Print area cannot be set to Defined name: 'La Rioja'!$1:$82.
-  warn(f"Print area cannot be set to Defined name: {defn.value}.")
-/home/runner/work/monitor-series/monitor-series/pipeline/fuentes/_oede_ramas.py:93: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
-  vals = pd.to_numeric(df.iloc[i, 2:].replace({"s.d.": np.nan}), errors="coerce").values
-/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:118: UserWarning: Print area cannot be set to Defined name: 'La Rioja'!$1:$82.
-  warn(f"Print area cannot be set to Defined name: {defn.value}.")
-/home/runner/work/monitor-series/monitor-series/pipeline/fuentes/_oede_ramas.py:93: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
-  vals = pd.to_numeric(df.iloc[i, 2:].replace({"s.d.": np.nan}), errors="coerce").values
-[calendario INDEC]
-  2.º sem. 2026: 174 publicaciones; 1.º sem. 2027: todavía no publicado
-[ventas_combustibles]
-  no se revisa hoy (solo los días 20 a fin de mes)
-[estimaciones_agricolas]
-  no se revisa hoy (solo los días 12 a fin de mes)
-[provincias]
-  archivo distinto pero mismos datos
-[icc]
-  sin cambios en el archivo
-[canasta_crianza]
-  sin cambios en el archivo
-[pobreza]
-  sin cambios en el archivo
-[mercado_trabajo]
-  sin cambios en el archivo
-[imig]
-  sin cambios en el archivo
-[recaudacion]
-  archivo distinto pero mismos datos
-[deuda]
-  archivo distinto pero mismos datos
-[cuentas_nacionales]
-  sin cambios en el archivo
-[balanza_pagos]
-  sin cambios en el archivo
-[capacidad_instalada]
-  sin cambios en el archivo
-[mayoristas]
-  sin cambios en el archivo
-[shoppings]
-  sin cambios en el archivo
-[electrodomesticos]
-  sin cambios en el archivo
-[issp]
-  sin cambios en el archivo
-[comex_indices]
-  sin cambios en el archivo
-[turismo]
-  archivo distinto pero mismos datos
-[comercio_exterior]
-  archivo distinto pero mismos datos
-[bcra]
-  archivo distinto pero mismos datos
-[gas_entregado]
-  sin cambios en el archivo
-[canastas]
-  sin cambios en el archivo
-[precios_mayoristas]
-  sin cambios en el archivo
-[itcrm]
-  sin cambios en el archivo
-[itcrm_mensual]
-  sin cambios en el archivo
-[emae]
-  sin cambios en el archivo
-[emae_letras]
-  sin cambios en el archivo
-[ipc]
-  sin cambios en el archivo
-[ipi]
-  sin cambios en el archivo
-[ipi_minero]
-  sin cambios en el archivo
-[isac]
-  sin cambios en el archivo
-[supermercados]
-  sin cambios en el archivo
-[ripte]
-  sin cambios en el archivo
-[salarios]
-  sin cambios en el archivo
-[sube]
-  actualizada: último período 2026-11 → 2026-11-04; valores revisados: 0
-[petroleo]
-  archivo distinto pero mismos datos
-[refinados]
-  archivo distinto pero mismos datos
-[acciones_energia]
-  archivo distinto pero mismos datos
-[came]
-  archivo distinto pero mismos datos
-[camiones_puertos]
-  www.magyp.gob.ar no envía su certificado intermedio; se tomó de http://crt.sectigo.com/SectigoPublicServerAuthenticationCAOVR36.crt
-  sin cambios en el archivo
-[cammesa_balance]
-  sin cambios en el archivo
-[cammesa_diaria]
-  sin cambios en el archivo
-[cammesa_gu_actividad]
-  sin cambios en el archivo
-[rem]
-  sin cambios en el archivo
-[remuneraciones_provincias]
-  sin cambios en el archivo
-[salarios_ramas]
-  archivo distinto pero mismos datos
-[empleo_ramas]
-  archivo distinto pero mismos datos
-[recaudacion_real]
-  sin cambios en las series de base
-[bcra_mensual]
-  sin cambios en las series de base
-[bcra_real]
-  sin cambios en las series de base
-[emae_letras_desest]
-  sin cambios en las series de base
-[ipi_minero_desest]
-  sin cambios en las series de base
-[ripte_real]
-  sin cambios en las series de base
-[salarios_real]
-  sin cambios en las series de base
-[sube_mensual]
-  recalculada: último período 2026-10 → 2026-10
-[sube_desest]
-  sin cambios en las series de base
-[petroleo_mensual]
-  sin cambios en las series de base
-[refinados_mensual]
-  sin cambios en las series de base
-[acciones_energia_mensual]
-  sin cambios en las series de base
-[ventas_combustibles_desest]
-  sin cambios en las series de base
-[camiones_puertos_mensual]
-  sin cambios en las series de base
-[cammesa_gu_actividad_mensual]
-  sin cambios en las series de base
-[remuneraciones_provincias_real]
-  sin cambios en las series de base
-[remuneraciones_provincias_desest]
-  sin cambios en las series de base
-[remuneraciones_provincias_real_desest]
-  sin cambios en las series de base
-[salarios_ramas_real]
-  sin cambios en las series de base
-[catálogo de Monitor Argy]
-  839 series
-[series de Monitor Argy (copia)]
-  11 de 11 series
+/home/runner/work/monitor-series/monitor-series/pipeline/fuentes/leche.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  fechas = pd.to_datetime(h.iloc[:, 1], errors="coerce")
+[adefa]
+  actualizada: último período — → 2026-10; valores revisados: 0
+[adimra]
+  actualizada: último período — → 2026-09; valores revisados: 0
+[acero]
+  actualizada: último período — → 2026-09; valores revisados: 0
+[cemento]
+  actualizada: último período — → 2026-10; valores revisados: 0
+[construya]
+  actualizada: último período — → 2026-10; valores revisados: 0
+[patentamientos]
+  actualizada: último período — → 2026-10; valores revisados: 0
+[empleo_sipa]
+  ERROR: No encontré en https://www.argentina.gob.ar/trabajo/estadisticas/situacion-y-evolucion-del-trabajo-registrado un enlace que cumpla '/sites/default/files/[\\w/-]*trabajoregistrado_\\d{4}_estadisticas\\.xlsx$'.
+[utdt]
+  ERROR: No encontré en https://www.utdt.edu/ver_contenido.php?id_contenido=3160&id_item_menu=6230 un enlace que cumpla 'download\\.php\\?fname=_\\d+\\.xls$'.
+[leche]
+  actualizada: último período — → 2026-09; valores revisados: 0
+[faena]
+  actualizada: último período — → 2026-09; valores revisados: 0
+[patentamientos_desest]
+  recalculada: último período — → 2026-10

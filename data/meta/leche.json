@@ -1,0 +1,25 @@
+{
+  "id": "leche",
+  "nombre": "Producción primaria de leche (Dirección Nacional de Lechería)",
+  "url": "https://www.magyp.gob.ar/sitio/areas/ss_lecheria/estadisticas/_01_primaria/_archivos/PPV021_PPV022.xlsx",
+  "pagina": "https://www.magyp.gob.ar/sitio/areas/ss_lecheria/estadisticas/_01_primaria/index.php",
+  "frecuencia": "M",
+  "unidad": "Millones de litros",
+  "sha256": "3efbfc76d8b116c9d2d811904e35aa1a2403d90f188479e0a7aa5dd1257d7c46",
+  "columnas": {
+    "produccion": {
+      "nombre": "Producción primaria de leche",
+      "tipo": "nivel",
+      "unidad": "Millones de litros"
+    },
+    "produccion_var_ia": {
+      "nombre": "Producción primaria de leche, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-06T18:01:30Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 141,
+  "original_guardado": "data/raw/leche/2026-11-06_3efbfc76.xlsx"
+}

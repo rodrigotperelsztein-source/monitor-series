@@ -1,0 +1,268 @@
+{
+  "id": "patentamientos_desest",
+  "nombre": "Patentamientos de automotores y motos, desestacionalización propia (X-13)",
+  "url": "data/patentamientos.csv",
+  "pagina": "https://datos.jus.gob.ar/dataset/estadistica-de-tramites-de-automotores",
+  "frecuencia": "M",
+  "unidad": "Unidades",
+  "sha256": "073d15bda47e897d2d13201158dcec04d47fda2f4482016a0ed7eb86de086c55",
+  "derivada_de": [
+    "patentamientos"
+  ],
+  "archivos_de_origen": [
+    "https://datos.jus.gob.ar/dataset/1ab0cc03-ab9b-4520-975c-5757d87d1061/resource/4358c995-bb04-4ad9-be4a-a9076dc3e42c/download/estadistica-inscripciones-iniciales-automotores-2000-01-2026-10.csv https://datos.jus.gob.ar/dataset/72d85f23-b751-4d12-935b-25e32ed9445e/resource/d523dd08-5c12-467e-b947-aa3206a24d21/download/estadistica-inscripciones-iniciales-motovehiculos-2007-01-2026-10.csv"
+  ],
+  "columnas": {
+    "autos": {
+      "nombre": "Patentamientos de automotores, total del país, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "autos_var_m": {
+      "nombre": "Patentamientos de automotores, total del país, desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "motos": {
+      "nombre": "Patentamientos de motos, total del país, desestacionalizada (propia, X-13)",
+      "tipo": "nivel",
+      "unidad": "Unidades"
+    },
+    "motos_var_m": {
+      "nombre": "Patentamientos de motos, total del país, desestacionalizada (propia, X-13), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-06T18:01:30Z",
+  "calculado": "2026-11-06T18:01:30Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 322,
+  "desestacionalizacion": {
+    "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+    "version_especificaciones": "2026-11-06",
+    "series": {
+      "autos": {
+        "especificacion": {
+          "modelo": "(1 1 0)(1 1 1)",
+          "transformacion": "niveles",
+          "outliers": [
+            {
+              "tipo": "TC",
+              "fecha": "2012-09"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2013-04"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2014-02"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2015-01"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2016-01"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2018-01"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2018-06"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2020-03"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2020-04"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2020-10"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2024-01"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": false,
+          "efectos_feriados_pascua_en_la_serie": true,
+          "origen": "identificada con X-13 sobre los datos hasta 2026-10 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 0)(1 1 1)",
+        "transformacion": "No transformation",
+        "aicc": 1879.49556064103,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 82.24,
+            "gl": 7,
+            "p": 0.0
+          },
+          "feriados": {
+            "coef": -2.330044,
+            "t": -7.33
+          },
+          "pascua": null
+        },
+        "outliers": [
+          {
+            "tipo": "TC",
+            "fecha": "2012-09"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2013-04"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2014-02"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2015-01"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2016-01"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2018-01"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2018-06"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2020-03"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2020-10"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2024-01"
+          }
+        ],
+        "calidad": {
+          "m7": 0.308,
+          "q": 0.37,
+          "qs_desest_p": 0.01043,
+          "qs_irregular_p": 1e-05,
+          "ljungbox_rezagos_significativos": 3
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant trading day peak has been"
+        ]
+      },
+      "motos": {
+        "especificacion": {
+          "modelo": "(1 1 1)(0 1 1)",
+          "transformacion": "niveles",
+          "outliers": [
+            {
+              "tipo": "LS",
+              "fecha": "2014-02"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2020-04"
+            },
+            {
+              "tipo": "TC",
+              "fecha": "2024-01"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2024-08"
+            },
+            {
+              "tipo": "LS",
+              "fecha": "2024-11"
+            },
+            {
+              "tipo": "AO",
+              "fecha": "2025-02"
+            }
+          ],
+          "dias_semana": true,
+          "feriados": true,
+          "pascua": "easter[8]",
+          "efectos_feriados_pascua_en_la_serie": true,
+          "origen": "identificada con X-13 sobre los datos hasta 2026-10 y fijada"
+        },
+        "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
+        "modelo": "(1 1 1)(0 1 1)",
+        "transformacion": "No transformation",
+        "aicc": 1279.65250614553,
+        "calendario": {
+          "dias_semana": {
+            "chi2": 262.35,
+            "gl": 7,
+            "p": 0.0
+          },
+          "feriados": {
+            "coef": -2.257677,
+            "t": -7.42
+          },
+          "pascua": {
+            "coef": -1.897173,
+            "t": -2.59
+          }
+        },
+        "outliers": [
+          {
+            "tipo": "LS",
+            "fecha": "2014-02"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2020-04"
+          },
+          {
+            "tipo": "TC",
+            "fecha": "2024-01"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2024-08"
+          },
+          {
+            "tipo": "LS",
+            "fecha": "2024-11"
+          },
+          {
+            "tipo": "AO",
+            "fecha": "2025-02"
+          }
+        ],
+        "calidad": {
+          "m7": 0.418,
+          "q": 0.4,
+          "qs_desest_p": 1.0,
+          "qs_irregular_p": 1.0,
+          "ljungbox_rezagos_significativos": 21
+        },
+        "advertencias": [
+          "WARNING: At least one visually significant seasonal peak has been found"
+        ]
+      }
+    }
+  }
+}

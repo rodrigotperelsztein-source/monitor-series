@@ -1,0 +1,60 @@
+{
+  "id": "acero",
+  "nombre": "Producción siderúrgica: acero crudo, hierro primario y laminados (Cámara Argentina del Acero)",
+  "url": "https://www.acero.org.ar/wp-content/uploads/2026/10/Produccion-Siderurgica-Argentina-1960-2026-.pdf",
+  "pagina": "https://www.acero.org.ar/estadisticas-locales/",
+  "frecuencia": "M",
+  "unidad": "Miles de toneladas",
+  "sha256": "41f55865571455d6aeb6e4aba235c6eae4bf81eccfa3156e24636f76761f93da",
+  "columnas": {
+    "arrabio": {
+      "nombre": "Producción de hierro primario: arrabio",
+      "tipo": "nivel",
+      "unidad": "Miles de toneladas"
+    },
+    "hierro_esponja": {
+      "nombre": "Producción de hierro primario: hierro esponja",
+      "tipo": "nivel",
+      "unidad": "Miles de toneladas"
+    },
+    "hierro_primario": {
+      "nombre": "Producción de hierro primario, total",
+      "tipo": "nivel",
+      "unidad": "Miles de toneladas"
+    },
+    "acero_crudo": {
+      "nombre": "Producción de acero crudo",
+      "tipo": "nivel",
+      "unidad": "Miles de toneladas"
+    },
+    "laminados_no_planos": {
+      "nombre": "Producción de laminados en caliente no planos",
+      "tipo": "nivel",
+      "unidad": "Miles de toneladas"
+    },
+    "laminados_planos": {
+      "nombre": "Producción de laminados en caliente planos",
+      "tipo": "nivel",
+      "unidad": "Miles de toneladas"
+    },
+    "laminados_caliente": {
+      "nombre": "Producción de laminados en caliente, total",
+      "tipo": "nivel",
+      "unidad": "Miles de toneladas"
+    },
+    "planos_frio": {
+      "nombre": "Producción de laminados planos en frío",
+      "tipo": "nivel",
+      "unidad": "Miles de toneladas"
+    },
+    "acero_crudo_var_ia": {
+      "nombre": "Producción de acero crudo, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-06T18:01:30Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 129,
+  "original_guardado": "data/raw/acero/2026-11-06_41f55865.pdf"
+}

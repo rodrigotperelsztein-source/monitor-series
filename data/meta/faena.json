@@ -1,0 +1,35 @@
+{
+  "id": "faena",
+  "nombre": "Faena de ganado vacuno, porcino y ovino (Secretaría de Agricultura)",
+  "url": "https://infra.datos.gob.ar/catalog/sspm/dataset/40/distribution/40.3/download/faena-pecuaria-por-especies-valores-mensuales.csv",
+  "pagina": "https://www.magyp.gob.ar/sitio/areas/bovinos/informacion_sectorial/",
+  "frecuencia": "M",
+  "unidad": "Cabezas",
+  "sha256": "8a4d8a64e7ceb3524d453304afda93b162091630b424b04f6e09700c7cd1466e",
+  "columnas": {
+    "vacunos": {
+      "nombre": "Faena de ganado vacuno",
+      "tipo": "nivel",
+      "unidad": "Cabezas"
+    },
+    "porcinos": {
+      "nombre": "Faena de ganado porcino",
+      "tipo": "nivel",
+      "unidad": "Cabezas"
+    },
+    "ovinos": {
+      "nombre": "Faena de ganado ovino",
+      "tipo": "nivel",
+      "unidad": "Cabezas"
+    },
+    "vacunos_var_ia": {
+      "nombre": "Faena de ganado vacuno, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-06T18:01:30Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 441,
+  "original_guardado": "data/raw/faena/2026-11-06_8a4d8a64.csv"
+}

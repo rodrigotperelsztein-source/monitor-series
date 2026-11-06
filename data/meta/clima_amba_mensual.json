@@ -5,7 +5,7 @@
   "pagina": "https://open-meteo.com/en/docs/historical-weather-api",
   "frecuencia": "M",
   "unidad": "°C, mm y días",
-  "sha256": "ddab76e9dd4d844f8ce1a31f07664e41976e71ac7d4d9cda52c583792adb3f16",
+  "sha256": "dd93696c06c525fe64a78fcbf82008ed78aa1f0792308d3a9728d69b89c5e79a",
   "derivada_de": [
     "clima_amba"
   ],
@@ -39,33 +39,108 @@
       "unidad": "días"
     },
     "amba_tmed": {
-      "nombre": "Temperatura media del mes (AMBA)",
+      "nombre": "Temperatura media del mes (AMBA, promedio de los partidos)",
       "tipo": "nivel",
       "unidad": "°C"
     },
     "amba_tmax": {
-      "nombre": "Promedio de las temperaturas máximas (AMBA)",
+      "nombre": "Promedio de las temperaturas máximas (AMBA, promedio de los partidos)",
       "tipo": "nivel",
       "unidad": "°C"
     },
     "amba_tmin": {
-      "nombre": "Promedio de las temperaturas mínimas (AMBA)",
+      "nombre": "Promedio de las temperaturas mínimas (AMBA, promedio de los partidos)",
       "tipo": "nivel",
       "unidad": "°C"
     },
     "amba_lluvia": {
-      "nombre": "Lluvia acumulada en el mes (AMBA)",
+      "nombre": "Lluvia acumulada en el mes (AMBA, promedio de los partidos)",
       "tipo": "nivel",
       "unidad": "mm"
     },
     "amba_dias_lluvia": {
-      "nombre": "Días con lluvia de 1 mm o más (AMBA)",
+      "nombre": "Días con lluvia de 1 mm o más (AMBA, promedio de los partidos)",
+      "tipo": "nivel",
+      "unidad": "días"
+    },
+    "norte_tmed": {
+      "nombre": "Temperatura media del mes (AMBA norte)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "norte_tmax": {
+      "nombre": "Promedio de las temperaturas máximas (AMBA norte)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "norte_tmin": {
+      "nombre": "Promedio de las temperaturas mínimas (AMBA norte)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "norte_lluvia": {
+      "nombre": "Lluvia acumulada en el mes (AMBA norte)",
+      "tipo": "nivel",
+      "unidad": "mm"
+    },
+    "norte_dias_lluvia": {
+      "nombre": "Días con lluvia de 1 mm o más (AMBA norte)",
+      "tipo": "nivel",
+      "unidad": "días"
+    },
+    "oeste_tmed": {
+      "nombre": "Temperatura media del mes (AMBA oeste)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "oeste_tmax": {
+      "nombre": "Promedio de las temperaturas máximas (AMBA oeste)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "oeste_tmin": {
+      "nombre": "Promedio de las temperaturas mínimas (AMBA oeste)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "oeste_lluvia": {
+      "nombre": "Lluvia acumulada en el mes (AMBA oeste)",
+      "tipo": "nivel",
+      "unidad": "mm"
+    },
+    "oeste_dias_lluvia": {
+      "nombre": "Días con lluvia de 1 mm o más (AMBA oeste)",
+      "tipo": "nivel",
+      "unidad": "días"
+    },
+    "sur_tmed": {
+      "nombre": "Temperatura media del mes (AMBA sur)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "sur_tmax": {
+      "nombre": "Promedio de las temperaturas máximas (AMBA sur)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "sur_tmin": {
+      "nombre": "Promedio de las temperaturas mínimas (AMBA sur)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "sur_lluvia": {
+      "nombre": "Lluvia acumulada en el mes (AMBA sur)",
+      "tipo": "nivel",
+      "unidad": "mm"
+    },
+    "sur_dias_lluvia": {
+      "nombre": "Días con lluvia de 1 mm o más (AMBA sur)",
       "tipo": "nivel",
       "unidad": "días"
     }
   },
-  "descargado": "2026-11-06T19:40:52Z",
-  "calculado": "2026-11-06T19:40:52Z",
+  "descargado": "2026-11-06T19:45:46Z",
+  "calculado": "2026-11-06T19:45:46Z",
   "ultimo_periodo": "2026-09",
   "observaciones": 23
 }

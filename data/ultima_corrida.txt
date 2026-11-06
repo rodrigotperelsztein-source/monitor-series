@@ -1,6 +1,6 @@
 [clima_amba]
-  actualizada: último período — → 2026-10-30; valores revisados: 0
+  actualizada: último período 2026-10 → 2026-10-30; valores revisados: 0
 [clima_amba_pronostico]
-  actualizada: último período — → 2026-11-21; valores revisados: 0
+  actualizada: último período 2026-11 → 2026-11-21; valores revisados: 0
 [clima_amba_mensual]
-  recalculada: último período — → 2026-09
+  recalculada: último período 2026-09 → 2026-09

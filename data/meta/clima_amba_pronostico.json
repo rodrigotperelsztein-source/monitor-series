@@ -5,7 +5,7 @@
   "pagina": "https://open-meteo.com/en/docs",
   "frecuencia": "D",
   "unidad": "°C, mm y %",
-  "sha256": "3ee01a9aec820689896fac0b6e5754c6a14368046ea467b6b385c559b2625fbd",
+  "sha256": "1ac9e6cbb57c4ffa96405c5d70400a8b84e2031a14e4cb9617247dd982039fb2",
   "columnas": {
     "caba_tmax": {
       "nombre": "Temperatura máxima pronosticada (CABA)",
@@ -56,9 +56,84 @@
       "nombre": "Probabilidad máxima de lluvia en el día (AMBA, promedio de los partidos)",
       "tipo": "nivel",
       "unidad": "%"
+    },
+    "norte_tmax": {
+      "nombre": "Temperatura máxima pronosticada (AMBA norte)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "norte_tmin": {
+      "nombre": "Temperatura mínima pronosticada (AMBA norte)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "norte_tmed": {
+      "nombre": "Temperatura media pronosticada (AMBA norte)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "norte_lluvia": {
+      "nombre": "Lluvia pronosticada en el día (AMBA norte)",
+      "tipo": "nivel",
+      "unidad": "mm"
+    },
+    "norte_prob_lluvia": {
+      "nombre": "Probabilidad máxima de lluvia en el día (AMBA norte)",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "oeste_tmax": {
+      "nombre": "Temperatura máxima pronosticada (AMBA oeste)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "oeste_tmin": {
+      "nombre": "Temperatura mínima pronosticada (AMBA oeste)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "oeste_tmed": {
+      "nombre": "Temperatura media pronosticada (AMBA oeste)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "oeste_lluvia": {
+      "nombre": "Lluvia pronosticada en el día (AMBA oeste)",
+      "tipo": "nivel",
+      "unidad": "mm"
+    },
+    "oeste_prob_lluvia": {
+      "nombre": "Probabilidad máxima de lluvia en el día (AMBA oeste)",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "sur_tmax": {
+      "nombre": "Temperatura máxima pronosticada (AMBA sur)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "sur_tmin": {
+      "nombre": "Temperatura mínima pronosticada (AMBA sur)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "sur_tmed": {
+      "nombre": "Temperatura media pronosticada (AMBA sur)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "sur_lluvia": {
+      "nombre": "Lluvia pronosticada en el día (AMBA sur)",
+      "tipo": "nivel",
+      "unidad": "mm"
+    },
+    "sur_prob_lluvia": {
+      "nombre": "Probabilidad máxima de lluvia en el día (AMBA sur)",
+      "tipo": "nivel",
+      "unidad": "%"
     }
   },
-  "descargado": "2026-11-06T19:40:52Z",
+  "descargado": "2026-11-06T19:45:46Z",
   "ultimo_periodo": "2026-11-21",
   "observaciones": 16,
   "original_guardado": null

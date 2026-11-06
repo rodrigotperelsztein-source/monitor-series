@@ -5,7 +5,7 @@
   "pagina": "https://open-meteo.com/en/docs/historical-weather-api",
   "frecuencia": "D",
   "unidad": "°C y mm",
-  "sha256": "e7533cf34a0e039ce10dd0f55999014055a42d63f7a5383d1d28857dffe2e886",
+  "sha256": "5be1675f81785c415c16f203d5eec4e6e624fb6beb28afa2af474a66d3775a7f",
   "columnas": {
     "caba_tmax": {
       "nombre": "Temperatura máxima (CABA)",
@@ -46,9 +46,69 @@
       "nombre": "Lluvia acumulada en el día (AMBA, promedio de los partidos)",
       "tipo": "nivel",
       "unidad": "mm"
+    },
+    "norte_tmax": {
+      "nombre": "Temperatura máxima (AMBA norte)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "norte_tmin": {
+      "nombre": "Temperatura mínima (AMBA norte)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "norte_tmed": {
+      "nombre": "Temperatura media (AMBA norte)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "norte_lluvia": {
+      "nombre": "Lluvia acumulada en el día (AMBA norte)",
+      "tipo": "nivel",
+      "unidad": "mm"
+    },
+    "oeste_tmax": {
+      "nombre": "Temperatura máxima (AMBA oeste)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "oeste_tmin": {
+      "nombre": "Temperatura mínima (AMBA oeste)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "oeste_tmed": {
+      "nombre": "Temperatura media (AMBA oeste)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "oeste_lluvia": {
+      "nombre": "Lluvia acumulada en el día (AMBA oeste)",
+      "tipo": "nivel",
+      "unidad": "mm"
+    },
+    "sur_tmax": {
+      "nombre": "Temperatura máxima (AMBA sur)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "sur_tmin": {
+      "nombre": "Temperatura mínima (AMBA sur)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "sur_tmed": {
+      "nombre": "Temperatura media (AMBA sur)",
+      "tipo": "nivel",
+      "unidad": "°C"
+    },
+    "sur_lluvia": {
+      "nombre": "Lluvia acumulada en el día (AMBA sur)",
+      "tipo": "nivel",
+      "unidad": "mm"
     }
   },
-  "descargado": "2026-11-06T19:40:52Z",
+  "descargado": "2026-11-06T19:45:46Z",
   "ultimo_periodo": "2026-10-30",
   "observaciones": 729,
   "original_guardado": null

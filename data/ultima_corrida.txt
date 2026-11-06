@@ -1,5 +1,3 @@
-/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/header_footer.py:48: UserWarning: Cannot parse header or footer so it will be ignored
-  warn("""Cannot parse header or footer so it will be ignored""")
 /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:118: UserWarning: Print area cannot be set to Defined name: 'La Rioja'!$1:$82.
   warn(f"Print area cannot be set to Defined name: {defn.value}.")
 /home/runner/work/monitor-series/monitor-series/pipeline/fuentes/_oede_ramas.py:93: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
@@ -51,7 +49,7 @@
 [comercio_exterior]
   archivo distinto pero mismos datos
 [bcra]
-  actualizada: último período 2026-11 → 2026-11-06; valores revisados: 0
+  archivo distinto pero mismos datos
 [gas_entregado]
   sin cambios en el archivo
 [canastas]
@@ -81,16 +79,17 @@
 [salarios]
   sin cambios en el archivo
 [sube]
-  sin cambios en el archivo
+  actualizada: último período 2026-11 → 2026-11-04; valores revisados: 0
 [petroleo]
   archivo distinto pero mismos datos
 [refinados]
   archivo distinto pero mismos datos
 [acciones_energia]
-  actualizada: último período 2026-11 → 2026-11-05; valores revisados: 0
+  archivo distinto pero mismos datos
 [came]
   archivo distinto pero mismos datos
 [camiones_puertos]
+  www.magyp.gob.ar no envía su certificado intermedio; se tomó de http://crt.sectigo.com/SectigoPublicServerAuthenticationCAOVR36.crt
   sin cambios en el archivo
 [cammesa_balance]
   sin cambios en el archivo
@@ -99,7 +98,7 @@
 [cammesa_gu_actividad]
   sin cambios en el archivo
 [rem]
-  actualizada: último período 2026-09 → 2026-10; valores revisados: 0
+  sin cambios en el archivo
 [remuneraciones_provincias]
   sin cambios en el archivo
 [salarios_ramas]
@@ -109,7 +108,7 @@
 [recaudacion_real]
   sin cambios en las series de base
 [bcra_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [bcra_real]
   sin cambios en las series de base
 [emae_letras_desest]
@@ -121,7 +120,7 @@
 [salarios_real]
   sin cambios en las series de base
 [sube_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-10 → 2026-10
 [sube_desest]
   sin cambios en las series de base
 [petroleo_mensual]
@@ -129,7 +128,7 @@
 [refinados_mensual]
   sin cambios en las series de base
 [acciones_energia_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [ventas_combustibles_desest]
   sin cambios en las series de base
 [camiones_puertos_mensual]

@@ -1,0 +1,70 @@
+{
+  "id": "utdt",
+  "nombre": "Índice Líder, confianza del consumidor y confianza en el gobierno (UTDT)",
+  "url": "https://www.utdt.edu/download.php?fname=_179259565376450900.xls https://www.utdt.edu/download.php?fname=_179267394518143000.xls https://www.utdt.edu/download.php?fname=_179304138461426300.xls",
+  "pagina": "https://www.utdt.edu/ver_contenido.php?id_contenido=27166&id_item_menu=44662",
+  "frecuencia": "M",
+  "unidad": "Según la serie",
+  "sha256": "16026a89b144fd76d41dd840eed7e0db71289083df9d9eb53ff6c64e75b04d37",
+  "columnas": {
+    "indice_lider": {
+      "nombre": "Índice Líder de la actividad (UTDT), desestacionalizado",
+      "tipo": "nivel",
+      "unidad": "Índice 2004=100"
+    },
+    "indice_lider_var_m": {
+      "nombre": "Índice Líder, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "difusion_lider": {
+      "nombre": "Índice de difusión del Índice Líder (% de series que suben)",
+      "tipo": "nivel",
+      "unidad": "%"
+    },
+    "confianza_consumidor": {
+      "nombre": "Índice de Confianza del Consumidor, nacional",
+      "tipo": "nivel",
+      "unidad": "Índice 0-100"
+    },
+    "confianza_consumidor_caba": {
+      "nombre": "Índice de Confianza del Consumidor: Capital Federal",
+      "tipo": "nivel",
+      "unidad": "Índice 0-100"
+    },
+    "confianza_consumidor_gba": {
+      "nombre": "Índice de Confianza del Consumidor: Gran Buenos Aires",
+      "tipo": "nivel",
+      "unidad": "Índice 0-100"
+    },
+    "confianza_consumidor_interior": {
+      "nombre": "Índice de Confianza del Consumidor: interior",
+      "tipo": "nivel",
+      "unidad": "Índice 0-100"
+    },
+    "confianza_situacion_personal": {
+      "nombre": "Confianza del consumidor: subíndice situación personal",
+      "tipo": "nivel",
+      "unidad": "Índice 0-100"
+    },
+    "confianza_situacion_macro": {
+      "nombre": "Confianza del consumidor: subíndice situación macroeconómica",
+      "tipo": "nivel",
+      "unidad": "Índice 0-100"
+    },
+    "confianza_durables": {
+      "nombre": "Confianza del consumidor: subíndice bienes durables e inmuebles",
+      "tipo": "nivel",
+      "unidad": "Índice 0-100"
+    },
+    "confianza_gobierno": {
+      "nombre": "Índice de Confianza en el Gobierno",
+      "tipo": "nivel",
+      "unidad": "Índice 0-5"
+    }
+  },
+  "descargado": "2026-11-06T18:03:48Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 406,
+  "original_guardado": "data/raw/utdt/2026-11-06_16026a89.zip"
+}

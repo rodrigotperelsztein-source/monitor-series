@@ -1,0 +1,95 @@
+{
+  "id": "empleo_sipa",
+  "nombre": "Trabajo registrado: total, por modalidad y asalariados privados (SIPA, Secretaría de Trabajo)",
+  "url": "https://www.argentina.gob.ar/sites/default/files/trabajoregistrado_2607_estadisticas.xlsx",
+  "pagina": "https://www.argentina.gob.ar/trabajo/estadisticas/situacion-y-evolucion-del-trabajo-registrado",
+  "frecuencia": "M",
+  "unidad": "Miles de personas",
+  "sha256": "5c080dab89b4afb6616db82032cd15dd8d68684f18037b9f7e82f6fe2c5d8639",
+  "columnas": {
+    "total": {
+      "nombre": "Personas con trabajo registrado",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "total_desest": {
+      "nombre": "Personas con trabajo registrado, desestacionalizada (Secretaría de Trabajo)",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "asalariados_privados": {
+      "nombre": "Asalariados registrados del sector privado",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "asalariados_privados_desest": {
+      "nombre": "Asalariados registrados del sector privado, desestacionalizada (Secretaría de Trabajo)",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "asalariados_publicos": {
+      "nombre": "Asalariados registrados del sector público",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "asalariados_publicos_desest": {
+      "nombre": "Asalariados registrados del sector público, desestacionalizada (Secretaría de Trabajo)",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "casas_particulares": {
+      "nombre": "Asalariados registrados de casas particulares",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "casas_particulares_desest": {
+      "nombre": "Asalariados registrados de casas particulares, desestacionalizada (Secretaría de Trabajo)",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "autonomos": {
+      "nombre": "Independientes autónomos",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "autonomos_desest": {
+      "nombre": "Independientes autónomos, desestacionalizada (Secretaría de Trabajo)",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "monotributo": {
+      "nombre": "Independientes monotributistas",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "monotributo_social": {
+      "nombre": "Monotributistas sociales",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "empleo_privado": {
+      "nombre": "Asalariados registrados del sector privado (serie larga, desde 2009)",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "empleo_privado_desest": {
+      "nombre": "Asalariados registrados del sector privado, desestacionalizada (serie larga)",
+      "tipo": "nivel",
+      "unidad": "Miles de personas"
+    },
+    "empleo_privado_var_ia": {
+      "nombre": "Asalariados registrados del sector privado, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "empleo_privado_desest_var_m": {
+      "nombre": "Asalariados registrados del sector privado, desestacionalizada, var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-06T18:03:48Z",
+  "ultimo_periodo": "2026-07",
+  "observaciones": 211,
+  "original_guardado": "data/raw/empleo_sipa/2026-11-06_5c080dab.xlsx"
+}

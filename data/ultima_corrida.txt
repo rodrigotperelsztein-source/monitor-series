@@ -1,24 +1,14 @@
-/home/runner/work/monitor-series/monitor-series/pipeline/fuentes/leche.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
-  fechas = pd.to_datetime(h.iloc[:, 1], errors="coerce")
-[adefa]
-  actualizada: último período — → 2026-10; valores revisados: 0
-[adimra]
-  actualizada: último período — → 2026-09; valores revisados: 0
-[acero]
-  actualizada: último período — → 2026-09; valores revisados: 0
-[cemento]
-  actualizada: último período — → 2026-10; valores revisados: 0
-[construya]
-  actualizada: último período — → 2026-10; valores revisados: 0
-[patentamientos]
-  actualizada: último período — → 2026-10; valores revisados: 0
+/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
 [empleo_sipa]
-  ERROR: No encontré en https://www.argentina.gob.ar/trabajo/estadisticas/situacion-y-evolucion-del-trabajo-registrado un enlace que cumpla '/sites/default/files/[\\w/-]*trabajoregistrado_\\d{4}_estadisticas\\.xlsx$'.
+  actualizada: último período — → 2026-07; valores revisados: 0
 [utdt]
-  ERROR: No encontré en https://www.utdt.edu/ver_contenido.php?id_contenido=3160&id_item_menu=6230 un enlace que cumpla 'download\\.php\\?fname=_\\d+\\.xls$'.
+  actualizada: último período — → 2026-10; valores revisados: 0
 [leche]
-  actualizada: último período — → 2026-09; valores revisados: 0
-[faena]
-  actualizada: último período — → 2026-09; valores revisados: 0
-[patentamientos_desest]
-  recalculada: último período — → 2026-10
+  sin cambios en el archivo

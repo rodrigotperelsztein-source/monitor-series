@@ -32,11 +32,13 @@ VARIABLES = {"tmax": "temperature_2m_max", "tmin": "temperature_2m_min", "tmed":
 NOMBRES = {"tmax": ("Temperatura máxima", "°C"), "tmin": ("Temperatura mínima", "°C"), "tmed": ("Temperatura media", "°C"),
            "lluvia": ("Lluvia acumulada en el día", "mm")}
 COLUMNAS = {f"{a}_{k}": Columna("", f"{n} ({A})", unidad=u)
-            for a, A in (("caba", "CABA"), ("amba", "AMBA, promedio de los partidos")) for k, (n, u) in NOMBRES.items()}
+            for a, A in _clima.AREAS.items() for k, (n, u) in NOMBRES.items()}
 
 
 def bajar(descargar, hoy: date) -> tuple[str, bytes]:
-    desde = PRIMER_PERIODO if not GUARDADO.exists() else f"{hoy - timedelta(days=60):%Y-%m-%d}"
+    completo = GUARDADO.exists() and set(COLUMNAS) <= set(GUARDADO.read_text(encoding="utf-8").split("\n", 1)[0].split(","))
+    # Sin archivo guardado, o si se agregó un área, se baja todo desde el inicio.
+    desde = f"{hoy - timedelta(days=60):%Y-%m-%d}" if completo else PRIMER_PERIODO
     url = API.format(coords=_clima.coordenadas(), desde=desde, hasta=f"{hoy - timedelta(days=1):%Y-%m-%d}", tz=_clima.TZ)
     return URL, descargar(url, minimo=2_000)
 
@@ -65,6 +67,6 @@ def validar(nuevo, anterior, columnas=COLUMNAS):
     t = nuevo[[c for c in columnas if "_t" in c]]
     if not t.stack().between(-15, 48).all():
         errores.append("Temperaturas fuera de rango.")
-    if not nuevo[["caba_lluvia", "amba_lluvia"]].stack().between(0, 400).all():
+    if not nuevo[[c for c in columnas if c.endswith("_lluvia")]].stack().between(0, 400).all():
         errores.append("Lluvia fuera de rango.")
     return errores

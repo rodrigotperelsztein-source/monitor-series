@@ -12,6 +12,9 @@ Los días se cuentan en hora argentina (de 0 a 24).
   - AMBA: promedio de un punto por cada uno de los 40 partidos del Gran Buenos Aires ampliado más los cuatro de CABA. El
     punto de cada partido es su centroide según el Servicio de Normalización de Datos Geográficos (georef). Cada partido
     pesa lo mismo sin importar su superficie; el de San Fernando y el de Tigre caen en la parte de islas del delta.
+  - AMBA norte, oeste y sur: el mismo promedio con los partidos de cada zona (sin CABA). Norte: 13 partidos, de Vicente
+    López a Zárate y Campana; oeste: 11, de Tres de Febrero a Luján y General Las Heras; sur: 16, de Avellaneda a La
+    Plata, Berisso, Ensenada y Brandsen.
 """
 
 import json
@@ -36,6 +39,12 @@ PARTIDOS = [
     ("Tigre", -34.3820, -58.5882), ("Tres de Febrero", -34.5960, -58.5792), ("Vicente López", -34.5265, -58.5045),
     ("Zárate", -33.9971, -59.1282)]
 PUNTOS = CABA + [(la, lo) for _, la, lo in PARTIDOS]
+NORTE = ['Vicente López', 'San Isidro', 'San Fernando', 'Tigre', 'Escobar', 'Pilar', 'Malvinas Argentinas', 'José C. Paz', 'San Miguel', 'General San Martín', 'Campana', 'Zárate', 'Exaltación de la Cruz']
+OESTE = ['Tres de Febrero', 'Hurlingham', 'Morón', 'Ituzaingó', 'Merlo', 'Moreno', 'La Matanza', 'Marcos Paz', 'General Rodríguez', 'Luján', 'General Las Heras']
+ZONAS = {p: "norte" if p in NORTE else "oeste" if p in OESTE else "sur" for p, _, _ in PARTIDOS}
+# Áreas que se publican: id -> nombre
+AREAS = {"caba": "CABA", "amba": "AMBA, promedio de los partidos", "norte": "AMBA norte", "oeste": "AMBA oeste",
+         "sur": "AMBA sur"}
 
 
 def coordenadas() -> str:
@@ -53,8 +62,12 @@ def promediar(contenido: bytes, variables: dict[str, str]) -> pd.DataFrame:
         d = p["daily"]
         tablas.append(pd.DataFrame({k: pd.to_numeric(pd.Series(d[v]), errors="coerce").values for k, v in variables.items()},
                                    index=pd.to_datetime(d["time"])))
-    caba = pd.concat(tablas[:len(CABA)]).groupby(level=0).mean()
-    amba = pd.concat(tablas).groupby(level=0).mean()
-    out = pd.concat([caba.add_prefix("caba_"), amba.add_prefix("amba_")], axis=1).round(2)
+    def media(ts):
+        return pd.concat(ts).groupby(level=0).mean()
+    partidos = dict(zip([p for p, _, _ in PARTIDOS], tablas[len(CABA):]))
+    areas = {"caba": media(tablas[:len(CABA)]), "amba": media(tablas)}
+    for z in ("norte", "oeste", "sur"):
+        areas[z] = media([t for p, t in partidos.items() if ZONAS[p] == z])
+    out = pd.concat([t.add_prefix(f"{a}_") for a, t in areas.items()], axis=1).round(2)
     out.index.name = "fecha"
     return out

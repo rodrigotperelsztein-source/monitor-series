@@ -4,7 +4,7 @@ lluvia acumulada y días con lluvia (1 mm o más). Solo meses completos.
 
 import pandas as pd
 
-from pipeline.fuentes import clima_amba
+from pipeline.fuentes import _clima, clima_amba
 from pipeline.fuentes._indec import Columna
 
 ID = "clima_amba_mensual"
@@ -19,7 +19,7 @@ CALENDARIO = ""
 VERSION = "2026-11-06"
 
 COLUMNAS = {}
-for _a, _A in (("caba", "CABA"), ("amba", "AMBA")):
+for _a, _A in _clima.AREAS.items():
     COLUMNAS[f"{_a}_tmed"] = Columna("", f"Temperatura media del mes ({_A})", unidad="°C")
     COLUMNAS[f"{_a}_tmax"] = Columna("", f"Promedio de las temperaturas máximas ({_A})", unidad="°C")
     COLUMNAS[f"{_a}_tmin"] = Columna("", f"Promedio de las temperaturas mínimas ({_A})", unidad="°C")
@@ -31,7 +31,7 @@ def calcular(diaria: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
     d = diaria.set_index("fecha")
     g = d.groupby(d.index.to_period("M"))
     out = pd.DataFrame(index=g.size().index)
-    for a in ("caba", "amba"):
+    for a in _clima.AREAS:
         for k in ("tmed", "tmax", "tmin"):
             out[f"{a}_{k}"] = g[f"{a}_{k}"].mean().round(2)
         out[f"{a}_lluvia"] = g[f"{a}_lluvia"].sum().round(1)

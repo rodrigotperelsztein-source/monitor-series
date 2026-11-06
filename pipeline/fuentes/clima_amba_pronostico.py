@@ -30,7 +30,7 @@ NOMBRES = {"tmax": ("Temperatura máxima pronosticada", "°C"), "tmin": ("Temper
            "tmed": ("Temperatura media pronosticada", "°C"), "lluvia": ("Lluvia pronosticada en el día", "mm"),
            "prob_lluvia": ("Probabilidad máxima de lluvia en el día", "%")}
 COLUMNAS = {f"{a}_{k}": Columna("", f"{n} ({A})", unidad=u)
-            for a, A in (("caba", "CABA"), ("amba", "AMBA, promedio de los partidos")) for k, (n, u) in NOMBRES.items()}
+            for a, A in _clima.AREAS.items() for k, (n, u) in NOMBRES.items()}
 
 
 def bajar(descargar, hoy: date) -> tuple[str, bytes]:

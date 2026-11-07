@@ -1,0 +1,69 @@
+URL: https://unsam.edu.ar/escuelas/eeyn/economia_regional/Efecto%20Precio%20Petroleo.pdf
+Bytes: 1938575
+
+Páginas: 15
+=== Página 1
+Mayo 2026 | Número 96 | ISSN: 2618-494X
+Efectos de los aumentos del precio del petróleo
+sobre la economía argentina.
+Evaluación de su impacto en precios internos
+Adrián Gutiérrez Cabello
+Mayo 2026
+=== Página 2
+Mayo 2026 | Número 96 | ISSN: 2618-494X
+Contenido
+Objetivos ............................................................................................................................................................... 2... .
+Metodología Aplicada ..................................................................................................................................... .2.
+Introducción ........................................................................................................................................................ 4.. ...
+Síntesis y Conclusiones ............................................................................................................................... 6... .
+Análisis del impacto de la suba del precio del petróleo en la economía ..................... .8... .
+Impacto sectorial .......................................................................................................................................... .8.
+Impacto en los precios al consumo final ..................................................................................... .1..1. .
+Fuentes Bibliográficas ................................................................................................................................. 1..4.
+1
+=== Página 3
+Mayo 2026 | Número 96 | ISSN: 2618-494X
+Objetivos
+El objetivo general de este trabajo es c uantificar el impacto del choque en los precios
+internacionales del petróleo y el gasoil sobre la estructura de costos de los sectores
+productivos y su traslación final al nivel general de precios en la economía argentina,
+mediante el uso de modelos de sim ulación basados cuadros Insumo -Producto.
+En tanto que se plantean como o bjetivos específicos
+• Analizar la propagación de costos intersectoriales: Identificar los canales
+de transmisión a través de los cuales el incremento en el petróleo y gasoil
+afecta a los distintos eslabones de la cadena de valor, distinguiendo entre
+efectos directos e indirectos.
+• Determinar la vulnerabilidad sectorial: Evaluar qué sectores de la economía
+presentan una mayor sensibilidad ante la suba de insumos energéticos.
+• Estimar el impacto en el Índice de Precios al Consumidor (IPC): Calcular la
+variación esperada en el nivel general de precios minoristas, derivada
+exclusivamente del aumento de costos de producción.
+• Proveer sustento para políticas públicas: Generar evidencia empírica que
+permita anticipar presiones inflacionarias y diseñar medidas de mitigación
+focalizadas en los sectores con mayor "efecto arrastre" en la economía real.
+Metodología Aplicada
+Para alcanzar estos objetivos, se ha optado por una metodología de simulación
+estática de precios. Esta técnica asume que los coeficientes técnicos de la Matriz
+Insumo -Producto son constantes en el corto plazo, lo que permite observar cómo un
+"impulso" en el precio se traslada a través de la matriz de transacciones
+intersectoriales.
+Al realizar la simulación, se aíslan otras las variables externas para obtener un
+resultado puramente técnico del impacto en los precios relativos domésticos.
+La utilización de la Matriz Insumo -Producto para este tipo de análisis es
+fundamental para la toma de decisiones económica por varios motivos; uno de ellos
+es a diferencia de modelos simples de regresión, captura la estructura completa de
+interdependencias.
+2
+=== Página 4
+Mayo 2026 | Número 96 | ISSN: 2618-494X
+Permite observar no solo el impacto inicial, sino los sucesiv os aumentos de precios
+a medida que se avanza en las distintas relaciones de compraventa de i nsumos
+(bienes y servicios) que circulan por la economía.
+También, p ermite identificar qué sectores, ante un aumento de costos, tienen mayor
+capacidad de absorción y cuáles tienen una traslación inmediata a precios,
+facilitando el diseño de políticas públicas de mitigación.
+Otro punto para considerar es que estas simulaciones son herramientas para
+evaluar la efectividad de medidas como subsidios focalizados o desgravaciones en
+insumos críticos, permitiendo estimar el impacto fiscal frente al beneficio de
+contención inflacionaria.
+3

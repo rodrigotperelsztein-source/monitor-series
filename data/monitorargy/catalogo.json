@@ -3230,7 +3230,7 @@
 "unidad": "millones_m3",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -3241,7 +3241,7 @@
 "unidad": "millones_m3",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -3252,7 +3252,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -3263,7 +3263,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -3274,7 +3274,7 @@
 "unidad": "millones_m3",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -4440,7 +4440,7 @@
 "unidad": "indice",
 "frecuencia": "M",
 "fuente": "INDEC",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -4451,7 +4451,7 @@
 "unidad": "indice",
 "frecuencia": "M",
 "fuente": "INDEC",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -4462,7 +4462,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -4473,7 +4473,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -4484,7 +4484,7 @@
 "unidad": "indice",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -4495,7 +4495,7 @@
 "unidad": "indice",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -4506,7 +4506,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -4517,7 +4517,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -4770,7 +4770,7 @@
 "unidad": "indice",
 "frecuencia": "M",
 "fuente": "INDEC",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -4781,7 +4781,7 @@
 "unidad": "indice",
 "frecuencia": "M",
 "fuente": "INDEC",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -4792,7 +4792,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -4803,7 +4803,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -5001,7 +5001,7 @@
 "unidad": "toneladas",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -5012,7 +5012,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -5023,7 +5023,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -5441,7 +5441,7 @@
 "unidad": "indice",
 "frecuencia": "M",
 "fuente": "INDEC — IPI manufacturero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -5452,7 +5452,7 @@
 "unidad": "indice",
 "frecuencia": "M",
 "fuente": "INDEC — IPI manufacturero · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -5463,7 +5463,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — IPI manufacturero · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -5474,7 +5474,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — IPI manufacturero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -5485,7 +5485,7 @@
 "unidad": "indice",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -5496,7 +5496,7 @@
 "unidad": "indice",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -5507,7 +5507,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -5518,7 +5518,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -6057,7 +6057,7 @@
 "unidad": "miles_m3",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -6068,7 +6068,7 @@
 "unidad": "miles_m3",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -6079,7 +6079,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero · desest. propia (X-13)",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -6090,7 +6090,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -6101,7 +6101,7 @@
 "unidad": "miles_m3",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -6112,7 +6112,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {
@@ -6123,7 +6123,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — IPI minero",
-"ultimo_periodo": "2026-08-01",
+"ultimo_periodo": "2026-09-01",
 "frescura": "vigente"
 },
 {

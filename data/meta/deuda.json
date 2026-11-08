@@ -5,7 +5,7 @@
   "pagina": "https://www.argentina.gob.ar/economia/finanzas/datos-mensuales",
   "frecuencia": "M",
   "unidad": "Millones de USD",
-  "sha256": "af427f7dc45c49d155f4b7278b1fe77b7ecdb4e8de5a60fcb2e09bb0e9c51ec4",
+  "sha256": "2bf7b278c5401360bd662eb17e88702ab988633025ad0ecb12860a9a593dd641",
   "columnas": {
     "deuda_bruta": {
       "nombre": "Deuda bruta de la Administración Central",

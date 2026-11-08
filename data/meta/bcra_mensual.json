@@ -5,7 +5,7 @@
   "pagina": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
   "frecuencia": "M",
   "unidad": "Según la serie",
-  "sha256": "ddcbf276580401eadffaa72bb3c1d2f362c39c7bdee6bcc8a0ec6976ba9db757",
+  "sha256": "b7198e110ad7c646da45db86b47e1c8091105b6c48be74da64a72c2bd7cbcad0",
   "derivada_de": [
     "bcra"
   ],
@@ -374,8 +374,8 @@
       "unidad": "Millones de $"
     }
   },
-  "descargado": "2026-11-07T06:39:44Z",
-  "calculado": "2026-11-07T06:39:44Z",
+  "descargado": "2026-11-08T06:45:26Z",
+  "calculado": "2026-11-08T06:45:26Z",
   "ultimo_periodo": "2026-10",
   "observaciones": 370
 }

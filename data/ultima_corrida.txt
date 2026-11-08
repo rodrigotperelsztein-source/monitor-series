@@ -13,9 +13,9 @@
 [estimaciones_agricolas]
   no se revisa hoy (solo los días 12 a fin de mes)
 [clima_amba]
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-10 → 2026-11-01; valores revisados: 0
 [clima_amba_pronostico]
-  actualizada: último período 2026-11 → 2026-11-22; valores revisados: 344
+  actualizada: último período 2026-11 → 2026-11-23; valores revisados: 338
 [adefa]
   sin cambios en el archivo
 [adimra]
@@ -73,7 +73,7 @@
 [comercio_exterior]
   archivo distinto pero mismos datos
 [bcra]
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-11 → 2026-11-08; valores revisados: 0
 [gas_entregado]
   sin cambios en el archivo
 [canastas]
@@ -103,7 +103,7 @@
 [salarios]
   sin cambios en el archivo
 [sube]
-  actualizada: último período 2026-11 → 2026-11-05; valores revisados: 0
+  sin cambios en el archivo
 [petroleo]
   archivo distinto pero mismos datos
 [refinados]
@@ -132,13 +132,13 @@
 [empleo_ramas]
   archivo distinto pero mismos datos
 [clima_amba_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-10 → 2026-10
 [patentamientos_desest]
   sin cambios en las series de base
 [recaudacion_real]
   sin cambios en las series de base
 [bcra_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-10 → 2026-10
 [bcra_real]
   sin cambios en las series de base
 [emae_letras_desest]
@@ -150,7 +150,7 @@
 [salarios_real]
   sin cambios en las series de base
 [sube_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [sube_desest]
   sin cambios en las series de base
 [petroleo_mensual]

@@ -13,9 +13,9 @@
 [estimaciones_agricolas]
   no se revisa hoy (solo los días 12 a fin de mes)
 [clima_amba]
-  actualizada: último período 2026-11 → 2026-11-03; valores revisados: 0
+  archivo distinto pero mismos datos
 [clima_amba_pronostico]
-  actualizada: último período 2026-11 → 2026-11-25; valores revisados: 362
+  actualizada: último período 2026-11 → 2026-11-25; valores revisados: 117
 [adefa]
   sin cambios en el archivo
 [adimra]
@@ -73,7 +73,7 @@
 [comercio_exterior]
   archivo distinto pero mismos datos
 [bcra]
-  actualizada: último período 2026-11 → 2026-11-10; valores revisados: 0
+  archivo distinto pero mismos datos
 [gas_entregado]
   sin cambios en el archivo
 [canastas]
@@ -103,13 +103,13 @@
 [salarios]
   sin cambios en el archivo
 [sube]
-  actualizada: último período 2026-11 → 2026-11-08; valores revisados: 0
+  sin cambios en el archivo
 [petroleo]
   archivo distinto pero mismos datos
 [refinados]
   archivo distinto pero mismos datos
 [acciones_energia]
-  actualizada: último período 2026-11 → 2026-11-09; valores revisados: 0
+  archivo distinto pero mismos datos
 [came]
   archivo distinto pero mismos datos
 [camiones_puertos]
@@ -132,13 +132,13 @@
 [empleo_ramas]
   archivo distinto pero mismos datos
 [clima_amba_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [patentamientos_desest]
   sin cambios en las series de base
 [recaudacion_real]
   sin cambios en las series de base
 [bcra_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [bcra_real]
   sin cambios en las series de base
 [emae_letras_desest]
@@ -150,7 +150,7 @@
 [salarios_real]
   sin cambios en las series de base
 [sube_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [sube_desest]
   sin cambios en las series de base
 [petroleo_mensual]
@@ -158,7 +158,7 @@
 [refinados_mensual]
   sin cambios en las series de base
 [acciones_energia_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [ventas_combustibles_desest]
   sin cambios en las series de base
 [camiones_puertos_mensual]

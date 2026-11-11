@@ -5,7 +5,7 @@
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-11-53",
   "frecuencia": "M",
   "unidad": "Índice base 2004=100",
-  "sha256": "e16d5cc4d78e5670975fe113f2468e7e6d28fe7cb244156aa568ad759fe00d59",
+  "sha256": "0ce098c207ebccbb26d0b7a45c88de64e86fbdac6caaaeecfba9b856f081b81f",
   "columnas": {
     "nivel_general": {
       "nombre": "ISSP, nivel general, serie original",
@@ -63,8 +63,8 @@
       "unidad": "Índice base 2004=100"
     }
   },
-  "descargado": "2026-11-05T18:56:24Z",
-  "ultimo_periodo": "2026-07",
-  "observaciones": 175,
-  "original_guardado": "data/raw/issp/2026-11-05_e16d5cc4.xls"
+  "descargado": "2026-11-11T21:16:20Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 176,
+  "original_guardado": "data/raw/issp/2026-11-11_0ce098c2.xls"
 }

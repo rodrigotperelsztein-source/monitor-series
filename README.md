@@ -10,6 +10,15 @@ abierta. Esas series no se procesan acá: se leen de su API tal como las publica
 y su origen es Monitor Argy y los organismos que cita en cada serie. Además, la desestacionalización propia del EMAE por
 sector replica su método. Gracias a Monitor Argy por abrir sus datos.
 
+**Documentación.** Esto que estás leyendo es toda la documentación del proyecto, junto con
+[`SECURITY.md`](SECURITY.md). Por partes: [qué series hay](#series-disponibles) ·
+[dónde están los datos](#dónde-están-los-datos) y [mapa del repositorio](#mapa-del-repositorio) ·
+[conectar Power BI, Excel, Sheets o Python](#conectar-power-bi-excel-google-sheets-o-python) ·
+[cómo funciona](#cómo-funciona) · [desestacionalización](#desestacionalización-propia) ·
+[cuándo corre](#cuándo-corre) · [cómo correrlo y probarlo](#uso) ·
+[agregar una serie nueva](#agregar-una-serie-nueva) · [seguridad](#seguridad).
+Cada archivo de `pipeline/fuentes/` explica arriba de todo de dónde sale ese dato y qué tiene de particular.
+
 ## Series disponibles
 
 | id | Serie | Fuente | Frecuencia | Desde |
@@ -117,6 +126,21 @@ próxima publicación según el calendario de INDEC y si está **al día**, **se
 
 > Para abrir los CSV en un Excel configurado en español, usá *Datos > Desde texto/CSV* y elegí el punto
 > como separador decimal; o abrí directamente el archivo de `data/excel/`.
+
+### Mapa del repositorio
+
+| Carpeta o archivo | Qué es |
+|---|---|
+| `pipeline/actualizar.py` | El proceso: baja, valida, guarda y arma los catálogos. Contiene `REGISTRO`, la lista de fuentes por tema. |
+| `pipeline/fuentes/<id>.py` | Una fuente: de dónde se baja, cómo se lee y cómo se valida. Cada módulo se explica a sí mismo arriba de todo. |
+| `pipeline/fuentes/_*.py` | Piezas compartidas: `_indec.py` (cuadros del INDEC), `_api_indec.py` (API), `_trimestral.py`, `_pivot.py`, `_csv_datos.py` (series de datos.gob.ar), `_enlace.py` (archivos cuyo nombre cambia), `_fechas.py`. |
+| `pipeline/calendario.py` | Calendario de difusión del INDEC: cuándo se espera cada publicación. |
+| `pipeline/desest.py` | Desestacionalización con X-13 y calendario argentino. |
+| `pipeline/indec_api.py` | Descarga de las tablas de la API del INDEC (único lugar que usa el token). |
+| `pipeline/monitorargy.py` | Copia de las series de Monitor Argy que todavía no tienen fuente propia. |
+| `tests/` | Controles que corren solos en cada cambio del código (ver [Uso](#uso)). |
+| `docs/` | Las dos páginas web. No tienen build: son HTML con su código adentro. |
+| `.github/workflows/` | `actualizar.yml` (la corrida de datos), `pruebas.yml` (los controles), `inspeccionar.yml` (ver un archivo nuevo). |
 
 ## Conectar Power BI, Excel, Google Sheets o Python
 
@@ -361,25 +385,66 @@ notificaciones, te avisa por mail. El detalle del error figura en el paso *Bajar
 ## Agregar una serie nueva
 
 **Para ver la estructura de un archivo nuevo:** pestaña *Actions* > *Inspeccionar archivo de origen* > *Run workflow*,
-con la URL del archivo. La descripción (hojas, encabezados, primeras y últimas filas) queda en la rama `inspeccion`.
+con la URL del archivo (solo `https`). La descripción (hojas, encabezados, primeras y últimas filas) queda en la rama
+`inspeccion`.
 
-Cada fuente es un módulo en `pipeline/fuentes/` con:
+Cada fuente es un módulo en `pipeline/fuentes/` que arranca con un comentario explicando de dónde sale el dato y
+qué tiene de particular. Después:
 
-- `ID`, `NOMBRE`, `URL`, `PAGINA`, `EXTENSION`, `FRECUENCIA`, `UNIDAD`, `ORGANISMO`, `CALENDARIO`
-- `COLUMNAS` (las series, con `Columna`) o, si dependen del archivo, `columnas(contenido)`
-- `leer(contenido, columnas) -> DataFrame` con la columna `fecha` y una columna por serie
-- `validar(nuevo, anterior, columnas) -> list[str]` con los errores encontrados
-- opcional, `urls(hoy)` si el nombre del archivo cambia (p. ej. lleva el año): se prueba cada URL en orden
+**Lo que describe la fuente**
 
-Los cuadros de INDEC con varias filas de encabezado se describen por el "camino" de encabezados de cada
-columna, por ejemplo `"Serie original | Variación porcentual | respecto al mismo mes"` (ver `ipi.py`).
-Para cuadros anchos (divisiones, insumos), `columnas_por_encabezado` arma una serie por columna; si INDEC
-agrega, quita o renombra una, la actualización frena.
+| | |
+|---|---|
+| `ID` | Igual al nombre del archivo, en minúsculas y con guión bajo. Es el prefijo de cada serie (`ipc.nacional_nivel_general_indice`). |
+| `NOMBRE`, `ORGANISMO`, `UNIDAD` | Para el catálogo y las páginas. |
+| `PAGINA` | La página del organismo donde se explica el dato (no el archivo). |
+| `FRECUENCIA` | `D`, `M`, `Q`, `S` o `A`. Define la tolerancia de atraso y cómo se escribe el período. |
+| `PRIMER_PERIODO` | Desde cuándo se guarda la serie. |
+| `CALENDARIO` | El título exacto con el que INDEC la anuncia, si está en su calendario. Con eso el proceso sabe qué día esperarla. |
+| `COLUMNAS` | Un `Columna` por serie: nombre, unidad y, en las variaciones, `tipo="variacion"` con `base` y `rezago` para que el proceso las recalcule y controle. Si las columnas dependen del archivo, se usa `columnas(contenido)`. |
 
-Después se suma a la lista `FUENTES` de `pipeline/actualizar.py`. Para los cuadros mensuales de INDEC,
-`pipeline/fuentes/_indec.py` ya resuelve la lectura y la validación: alcanza con describir las columnas
-(ver `emae.py` y `emae_letras.py`). En las variaciones que publica el organismo, el pipeline las recalcula
-desde los índices y frena si no coinciden.
+**De dónde se baja** (una de las tres):
+
+- `URL`, si es fija;
+- `urls(hoy)`, si el nombre lleva la fecha (se prueban en orden y se usa el primero que exista);
+- `bajar(descargar, hoy)`, si hay que buscar el enlace en una página o juntar varios archivos (ver `_enlace.py`).
+
+**Qué hace con él**
+
+- `leer(contenido, columnas)`: devuelve un DataFrame con `fecha` y una columna por serie.
+- `validar(nuevo, anterior, columnas)`: devuelve la lista de problemas. Si no está vacía, **no se guarda nada** de
+  esa fuente y la corrida termina en error. Acá va todo lo que se sabe del dato: rangos, sumas que tienen que
+  cerrar, períodos consecutivos, que no se pierda historia.
+- `combinar(nuevo, anterior)`, opcional: para fuentes que bajan solo una parte (el año en curso, los últimos meses)
+  y la suman a lo guardado.
+- `meta_extra(nuevo)`, opcional: datos sueltos que conviene dejar registrados (días sin dato, correcciones).
+
+**Banderas opcionales**
+
+| | |
+|---|---|
+| `GUARDAR_ORIGINAL = False` | No guarda el archivo bajado en `data/raw/` (para archivos muy grandes o que se arman juntando varios). |
+| `REGISTRAR_REVISIONES = False` | No anota las correcciones hacia atrás (para series que se reescriben por diseño). |
+| `TOL_REVISION` | Cuánto pueden diferir dos valores para considerarlos iguales (por redondeo del organismo). |
+| `DIAS_DEL_MES` | Días del mes en los que tiene sentido revisarla. |
+| `MAX_DIAS_SIN_NOVEDAD` | Cambia la tolerancia de atraso de esa fuente (ver [Cuándo corre](#cuándo-corre)). |
+| `TABLA_API` | Tabla del Catálogo API-INDEC que necesita, si sale de ahí. |
+
+**Series calculadas sobre otra** (variación real, promedio mensual, desestacionalización): en lugar de `leer` y
+`bajar` llevan `DERIVADA_DE` (el id de la base, o varios), `calcular(*bases)`, `validar(nuevo, *bases)` y `VERSION`.
+Se recalculan solas cuando cambia su base o cuando cambia `VERSION`. Tienen que ir **después** de su base.
+
+**Registrarla:** se agrega el módulo al tema que le corresponde en `REGISTRO`, en `pipeline/actualizar.py`. Ese es el
+único lugar: de ahí salen la lista de fuentes, la categoría con la que aparece en las páginas y el orden.
+
+**Probarla:** `python -m unittest discover -s tests` controla que esté bien registrada y completa; después,
+*Actions* > *Actualizar series* con su id en *fuentes* la corre de verdad.
+
+Para los cuadros mensuales de INDEC, `pipeline/fuentes/_indec.py` ya resuelve la lectura y la validación: alcanza con
+describir las columnas (ver `emae.py` y `emae_letras.py`). Las columnas se describen por el "camino" de encabezados,
+por ejemplo `"Serie original | Variación porcentual | respecto al mismo mes"` (ver `ipi.py`), no por posición. Para
+cuadros anchos (divisiones, insumos), `columnas_por_encabezado` arma una serie por columna; si INDEC agrega, quita o
+renombra una, la actualización frena.
 
 ## Seguridad
 

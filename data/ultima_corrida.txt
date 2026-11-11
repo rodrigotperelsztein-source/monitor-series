@@ -13,9 +13,9 @@
 [estimaciones_agricolas]
   no se revisa hoy (solo los días 12 a fin de mes)
 [clima_amba]
-  actualizada: último período 2026-11 → 2026-11-04; valores revisados: 0
+  archivo distinto pero mismos datos
 [clima_amba_pronostico]
-  actualizada: último período 2026-11 → 2026-11-26; valores revisados: 357
+  actualizada: último período 2026-11 → 2026-11-26; valores revisados: 107
 [adefa]
   sin cambios en el archivo
 [adimra]
@@ -73,7 +73,7 @@
 [comercio_exterior]
   ERROR: No están las tablas de la API del INDEC ['comercio_exterior_exportacion_bienes', 'comercio_exterior_importacion_bienes'] (¿token vencido o API caída?).
 [bcra]
-  actualizada: último período 2026-11 → 2026-11-11; valores revisados: 0
+  archivo distinto pero mismos datos
 [gas_entregado]
   sin cambios en el archivo
 [canastas]
@@ -86,12 +86,12 @@
   sin cambios en el archivo
 [emae]
   API del INDEC: no está estimador-mensual-de-actividad-economica-nivel-general; uso el archivo del sitio.
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [emae_letras]
   sin cambios en el archivo
 [ipc]
   API del INDEC: no está ipc_nacional; uso el archivo del sitio.
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [ipi]
   sin cambios en el archivo
 [ipi_minero]
@@ -104,15 +104,15 @@
   sin cambios en el archivo
 [salarios]
   API del INDEC: no está indice_salarios; uso el archivo del sitio.
-  archivo distinto pero mismos datos
-[sube]
   sin cambios en el archivo
+[sube]
+  actualizada: último período 2026-11 → 2026-11-09; valores revisados: 0
 [petroleo]
   archivo distinto pero mismos datos
 [refinados]
   archivo distinto pero mismos datos
 [acciones_energia]
-  actualizada: último período 2026-11 → 2026-11-10; valores revisados: 0
+  archivo distinto pero mismos datos
 [came]
   archivo distinto pero mismos datos
 [camiones_puertos]
@@ -135,13 +135,13 @@
 [empleo_ramas]
   archivo distinto pero mismos datos
 [clima_amba_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [patentamientos_desest]
   sin cambios en las series de base
 [recaudacion_real]
   sin cambios en las series de base
 [bcra_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [bcra_real]
   sin cambios en las series de base
 [emae_letras_desest]
@@ -153,7 +153,7 @@
 [salarios_real]
   sin cambios en las series de base
 [sube_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-10 → 2026-10
 [sube_desest]
   sin cambios en las series de base
 [petroleo_mensual]
@@ -161,7 +161,7 @@
 [refinados_mensual]
   sin cambios en las series de base
 [acciones_energia_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [ventas_combustibles_desest]
   sin cambios en las series de base
 [camiones_puertos_mensual]

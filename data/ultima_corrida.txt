@@ -1,8 +1,182 @@
+/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:118: UserWarning: Print area cannot be set to Defined name: 'La Rioja'!$1:$82.
+  warn(f"Print area cannot be set to Defined name: {defn.value}.")
+/home/runner/work/monitor-series/monitor-series/pipeline/fuentes/_oede_ramas.py:93: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  vals = pd.to_numeric(df.iloc[i, 2:].replace({"s.d.": np.nan}), errors="coerce").values
+/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:118: UserWarning: Print area cannot be set to Defined name: 'La Rioja'!$1:$82.
+  warn(f"Print area cannot be set to Defined name: {defn.value}.")
+/home/runner/work/monitor-series/monitor-series/pipeline/fuentes/_oede_ramas.py:93: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  vals = pd.to_numeric(df.iloc[i, 2:].replace({"s.d.": np.nan}), errors="coerce").values
+[calendario INDEC]
+  2.º sem. 2026: 174 publicaciones; 1.º sem. 2027: todavía no publicado
+[ventas_combustibles]
+  no se revisa hoy (solo los días 20 a fin de mes)
+[estimaciones_agricolas]
+  no se revisa hoy (solo los días 12 a fin de mes)
+[clima_amba]
+  actualizada: último período 2026-11 → 2026-11-04; valores revisados: 0
+[clima_amba_pronostico]
+  actualizada: último período 2026-11 → 2026-11-26; valores revisados: 357
+[adefa]
+  sin cambios en el archivo
+[adimra]
+  sin cambios en el archivo
+[acero]
+  sin cambios en el archivo
+[cemento]
+  sin cambios en el archivo
+[construya]
+  sin cambios en el archivo
+[patentamientos]
+  archivo distinto pero mismos datos
+[empleo_sipa]
+  sin cambios en el archivo
+[utdt]
+  archivo distinto pero mismos datos
+[leche]
+  sin cambios en el archivo
+[faena]
+  sin cambios en el archivo
+[provincias]
+  archivo distinto pero mismos datos
+[icc]
+  ERROR: No está la tabla icc_precios_construccion de la API del INDEC (¿token vencido o API caída?).
+[canasta_crianza]
+  ERROR: No está la tabla canasta-crianza de la API del INDEC (¿token vencido o API caída?).
+[pobreza]
+  ERROR: No está la tabla pobreza_eph de la API del INDEC (¿token vencido o API caída?).
+[mercado_trabajo]
+  ERROR: No está la tabla mercado_trabajo_eph de la API del INDEC (¿token vencido o API caída?).
+[imig]
+  sin cambios en el archivo
+[recaudacion]
+  archivo distinto pero mismos datos
+[deuda]
+  archivo distinto pero mismos datos
+[cuentas_nacionales]
+  sin cambios en el archivo
+[balanza_pagos]
+  sin cambios en el archivo
+[capacidad_instalada]
+  sin cambios en el archivo
+[mayoristas]
+  sin cambios en el archivo
+[shoppings]
+  sin cambios en el archivo
+[electrodomesticos]
+  sin cambios en el archivo
+[issp]
+  sin cambios en el archivo
+[comex_indices]
+  sin cambios en el archivo
+[turismo]
+  archivo distinto pero mismos datos
+[comercio_exterior]
+  ERROR: No están las tablas de la API del INDEC ['comercio_exterior_exportacion_bienes', 'comercio_exterior_importacion_bienes'] (¿token vencido o API caída?).
+[bcra]
+  actualizada: último período 2026-11 → 2026-11-11; valores revisados: 0
+[gas_entregado]
+  sin cambios en el archivo
+[canastas]
+  ERROR: No está la tabla de la API del INDEC (¿token vencido o API caída?).
+[precios_mayoristas]
+  ERROR: No está la tabla de la API del INDEC (¿token vencido o API caída?).
+[itcrm]
+  sin cambios en el archivo
+[itcrm_mensual]
+  sin cambios en el archivo
+[emae]
+  API del INDEC: no está estimador-mensual-de-actividad-economica-nivel-general; uso el archivo del sitio.
+  archivo distinto pero mismos datos
+[emae_letras]
+  sin cambios en el archivo
+[ipc]
+  API del INDEC: no está ipc_nacional; uso el archivo del sitio.
+  archivo distinto pero mismos datos
+[ipi]
+  sin cambios en el archivo
+[ipi_minero]
+  sin cambios en el archivo
+[isac]
+  sin cambios en el archivo
+[supermercados]
+  sin cambios en el archivo
+[ripte]
+  sin cambios en el archivo
+[salarios]
+  API del INDEC: no está indice_salarios; uso el archivo del sitio.
+  archivo distinto pero mismos datos
+[sube]
+  sin cambios en el archivo
 [petroleo]
   archivo distinto pero mismos datos
 [refinados]
   archivo distinto pero mismos datos
+[acciones_energia]
+  actualizada: último período 2026-11 → 2026-11-10; valores revisados: 0
+[came]
+  archivo distinto pero mismos datos
+[camiones_puertos]
+  aviso: 3 días sin dato en la fuente: ['2024-08-31', '2025-02-28', '2025-12-31']
+  aviso: en 1 días la suma por productos no da el total: ['2024-09-26']
+  ERROR: Validación fallida:
+  - El último día es anterior al de la versión guardada.
+[cammesa_balance]
+  sin cambios en el archivo
+[cammesa_diaria]
+  sin cambios en el archivo
+[cammesa_gu_actividad]
+  sin cambios en el archivo
+[rem]
+  sin cambios en el archivo
+[remuneraciones_provincias]
+  sin cambios en el archivo
+[salarios_ramas]
+  archivo distinto pero mismos datos
+[empleo_ramas]
+  archivo distinto pero mismos datos
+[clima_amba_mensual]
+  recalculada: último período 2026-10 → 2026-10
+[patentamientos_desest]
+  sin cambios en las series de base
+[recaudacion_real]
+  sin cambios en las series de base
+[bcra_mensual]
+  recalculada: último período 2026-10 → 2026-10
+[bcra_real]
+  sin cambios en las series de base
+[emae_letras_desest]
+  sin cambios en las series de base
+[ipi_minero_desest]
+  sin cambios en las series de base
+[ripte_real]
+  sin cambios en las series de base
+[salarios_real]
+  sin cambios en las series de base
+[sube_mensual]
+  sin cambios en las series de base
+[sube_desest]
+  sin cambios en las series de base
 [petroleo_mensual]
   sin cambios en las series de base
 [refinados_mensual]
   sin cambios en las series de base
+[acciones_energia_mensual]
+  recalculada: último período 2026-10 → 2026-10
+[ventas_combustibles_desest]
+  sin cambios en las series de base
+[camiones_puertos_mensual]
+  sin cambios en las series de base
+[cammesa_gu_actividad_mensual]
+  sin cambios en las series de base
+[remuneraciones_provincias_real]
+  sin cambios en las series de base
+[remuneraciones_provincias_desest]
+  sin cambios en las series de base
+[remuneraciones_provincias_real_desest]
+  sin cambios en las series de base
+[salarios_ramas_real]
+  sin cambios en las series de base
+[catálogo de Monitor Argy]
+  839 series
+[series de Monitor Argy (copia)]
+  3 de 3 series

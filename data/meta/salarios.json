@@ -1,11 +1,11 @@
 {
   "id": "salarios",
   "nombre": "Índice de salarios (INDEC)",
-  "url": "https://api.indec.gob.ar/v1/indice_salarios",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/sociedad/indice_salarios.csv",
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-31-61",
   "frecuencia": "M",
   "unidad": "Índice base oct-2016=100",
-  "sha256": "fb8a1cb356b9f9cec41fb296c843fe7f19ef93ddc97cbe3b13ca9f41adfae05a",
+  "sha256": "9c0f2aa39b571d7d7a6c8c54daf11e0f46b8d9a1679a714f4feb0e533cafb4b9",
   "columnas": {
     "privado_registrado": {
       "nombre": "Salarios del sector privado registrado, índice oct-2016=100",

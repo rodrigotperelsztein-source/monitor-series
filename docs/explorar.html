@@ -32,6 +32,14 @@ a { color: var(--acc); }
 nav { display: flex; gap: 4px; margin-left: auto; }
 nav a { color: var(--muted); text-decoration: none; padding: 6px 12px; border-radius: 999px; font-weight: 600; font-size: 13px; }
 nav a[aria-current="page"] { color: var(--bg); background: var(--acc); }
+/* En pantallas angostas el encabezado ocupa tres renglones: deja de ser fijo (si no, tapa el contenido) y
+   los enlaces pasan a una fila que se desliza. */
+@media (max-width: 760px) {
+  .top { position: static; }
+  nav { margin-left: 0; width: 100%; overflow-x: auto; scrollbar-width: none; }
+  nav::-webkit-scrollbar { display: none; }
+  nav a { white-space: nowrap; }
+}
 .live { display: inline-flex; align-items: center; gap: 7px; font: 600 11.5px var(--f-mono); color: var(--acc2); }
 .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--acc2); animation: pulso 2s infinite; }
 @keyframes pulso { 0% { box-shadow: 0 0 0 0 rgba(124,242,195,.6); } 70% { box-shadow: 0 0 0 9px rgba(124,242,195,0); } 100% { box-shadow: 0 0 0 0 rgba(124,242,195,0); } }

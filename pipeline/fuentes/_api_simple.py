@@ -6,8 +6,7 @@ from pipeline.fuentes import _api_indec as api
 
 
 def bajar(tabla: str) -> tuple[str, bytes]:
-    if not api.disponible(tabla):
-        raise ValueError(f"No está la tabla {tabla} de la API del INDEC (¿token vencido o API caída?).")
+    api.exigir(tabla)
     return api.contenido(tabla)
 
 

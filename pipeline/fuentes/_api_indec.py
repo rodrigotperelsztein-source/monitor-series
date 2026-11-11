@@ -15,6 +15,32 @@ from pipeline import indec_api
 MARCA = b"INDEC-API\n"
 
 
+class ApiNoDisponible(Exception):
+    """La tabla no se pudo bajar en esta corrida. `token` es True si el INDEC rechazó el token (hay que regenerarlo);
+    si no, la API estaba caída o saturada y alcanza con esperar a la próxima corrida."""
+
+    def __init__(self, tablas: list[str]):
+        self.token = any(motivo(t) == "token" for t in tablas)
+        causa = "el INDEC rechazó el token: hay que regenerarlo" if self.token else "la API no respondió"
+        super().__init__(f"API del INDEC sin {', '.join(tablas)} ({causa}); queda lo guardado.")
+
+
+def motivo(tabla: str) -> str:
+    """Por qué falta la tabla: "token", "caida" o "" si no se sabe (p. ej. una corrida local sin token)."""
+    p = indec_api.CARPETA / indec_api.ESTADO
+    try:
+        return json.loads(p.read_text(encoding="utf-8")).get(tabla, "") if p.exists() else ""
+    except ValueError:
+        return ""
+
+
+def exigir(*tablas: str) -> None:
+    """Para las fuentes que solo existen en la API: avisa con ApiNoDisponible si falta alguna tabla."""
+    faltan = [t for t in tablas if not disponible(t)]
+    if faltan:
+        raise ApiNoDisponible(faltan)
+
+
 def disponible(tabla: str) -> bool:
     return (indec_api.CARPETA / f"{tabla}.json").exists()
 

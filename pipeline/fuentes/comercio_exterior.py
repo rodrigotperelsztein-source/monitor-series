@@ -63,9 +63,7 @@ COLUMNAS["saldo"] = Columna("", "Saldo comercial (exportaciones - importaciones)
 
 
 def bajar(descargar, hoy) -> tuple[str, bytes]:
-    faltan = [t for t in TABLAS if not api.disponible(t)]
-    if faltan:
-        raise ValueError(f"No están las tablas de la API del INDEC {faltan} (¿token vencido o API caída?).")
+    api.exigir(*TABLAS)
     buf = io.BytesIO()
     with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
         for t in TABLAS:

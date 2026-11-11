@@ -130,6 +130,26 @@ def _filas(texto: str, anio: int, mes: int) -> list[dict]:
     return filas
 
 
+def _mes_de_la_tabla(tabla: str, anio: int, mes: int) -> tuple[int, int]:
+    """Año y mes de la tabla de la página. Manda el título, salvo que las filas digan otro mes.
+
+    Al cambiar de mes la página a veces sigue titulada con el mes anterior ("Octubre 2026") cuando las filas ya son
+    del nuevo ("1-nov", "2-nov"...): si la mayoría de las filas nombra otro mes, se usa ese (el siguiente al del
+    título; cualquier otra diferencia es un error).
+    """
+    nombrados = [MESES[x[:3]] for x in re.findall(r"(?<![\d.])\d{1,2}-([a-z]{3,})", tabla) if x[:3] in MESES]
+    if not nombrados:
+        return anio, mes
+    comun = max(set(nombrados), key=nombrados.count)
+    if comun == mes or nombrados.count(comun) <= len(nombrados) / 2:
+        return anio, mes
+    siguiente = pd.Period(f"{anio}-{mes:02d}", freq="M") + 1
+    if comun != siguiente.month:
+        raise ValueError(f"La tabla de la página se titula {anio}-{mes:02d} pero sus filas son del mes {comun}.")
+    print(f"  aviso: la página se titula {anio}-{mes:02d} pero sus filas son de {siguiente}; se usa {siguiente}.")
+    return siguiente.year, siguiente.month
+
+
 def _texto_html(html: str) -> str:
     t = re.sub(r"<script.*?</script>|<style.*?</style>", " ", html, flags=re.S | re.I)
     t = re.sub(r"<[^>]+>", " ", t)
@@ -158,7 +178,8 @@ def leer(contenido: bytes, columnas=COLUMNAS) -> pd.DataFrame:
         if not m:
             raise ValueError("No encontré el mes de la tabla en la página.")
         fin = texto.find("acumulados", m.end())
-        filas += _filas(texto[m.end(): fin if fin > 0 else None], int(m[2]), MESES[m[1][:3]])
+        tabla = texto[m.end(): fin if fin > 0 else None]
+        filas += _filas(tabla, *_mes_de_la_tabla(tabla, int(m[2]), MESES[m[1][:3]]))
     df = pd.DataFrame(filas)
     if df.empty:
         raise ValueError("No encontré datos.")

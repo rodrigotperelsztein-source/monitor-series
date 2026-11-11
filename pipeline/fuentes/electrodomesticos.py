@@ -21,6 +21,7 @@ ORGANISMO = "INDEC"
 UNIDAD = "Millones de $ corrientes"
 PRIMER_PERIODO = "2020-01-01"
 CALENDARIO = "Encuesta de comercios de electrodomésticos"
+MAX_DIAS_SIN_NOVEDAD = 130  # el INDEC la difunde una vez por trimestre
 
 RUBROS = {"televisores": "Televisores, video y fotografía", "audio": "Equipos de audio, radios y similares",
           "heladeras": "Heladeras y freezers", "aire_acondicionado": "Equipos de aire acondicionado y climatizadores",

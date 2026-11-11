@@ -64,6 +64,13 @@ class ErrorAPI(Exception):
     pass
 
 
+class TokenRechazado(ErrorAPI):
+    pass
+
+
+ESTADO = "_estado.json"  # qué tablas no se pudieron bajar en esta corrida y por qué ("token" o "caida")
+
+
 def _token() -> str:
     t = os.environ.get("INDEC_API_TOKEN", "").strip()
     if not t:
@@ -86,7 +93,10 @@ def _pedir(sesion: requests.Session, tabla: str, params: dict, token: str, inten
                            headers={"Authorization": f"Bearer {token}", "User-Agent": UA, "Accept": "application/json",
                                     "Prefer": "count=exact"})
             if r.status_code in (401, 403):
-                raise ErrorAPI(f"{tabla}: el INDEC rechazó el token ({r.status_code}). ¿Venció? Hay que regenerarlo.")
+                raise TokenRechazado(f"{tabla}: el INDEC rechazó el token ({r.status_code}). ¿Venció? Hay que regenerarlo.")
+            if r.status_code >= 500 or r.status_code == 429:
+                # Caída o saturación del servidor (502, 503, 504...): se reintenta.
+                raise ConnectionError(f"respuesta {r.status_code}")
             if r.status_code >= 300 and r.status_code not in (206,):
                 raise ErrorAPI(f"{tabla}: respuesta {r.status_code}: {_limpio(r.text[:300], token)}")
             return r
@@ -95,7 +105,8 @@ def _pedir(sesion: requests.Session, tabla: str, params: dict, token: str, inten
         except Exception as e:  # noqa: BLE001
             ultimo = _limpio(str(e), token)
             print(f"  {tabla}: intento {i + 1} falló: {ultimo}")
-            time.sleep(10 * (i + 1))
+            if i < intentos - 1:
+                time.sleep(20 * (i + 1))
     raise ErrorAPI(f"{tabla}: no pude descargar: {ultimo}")
 
 
@@ -132,10 +143,20 @@ def main(argv: list[str]) -> int:
         print(__doc__)
         return 2
     modo, pedidas = argv[0], argv[1:] or list(TABLAS)
-    token = _token()
     destino = CARPETA if modo == "bajar" else RAIZ / "inspeccion" / "indec_api"
     destino.mkdir(parents=True, exist_ok=True)
-    fallas = []
+    if modo == "bajar":
+        for viejo in destino.glob("*.json"):  # nada de una corrida anterior
+            viejo.unlink()
+    try:
+        token = _token()
+    except ErrorAPI as e:
+        print(f"ERROR {e}")
+        if modo == "bajar":
+            (destino / ESTADO).write_text(json.dumps({t: "token" for t in pedidas}), encoding="utf-8")
+        return 1
+    fallas, motivos = [], {}
+    caidas_seguidas = 0
     with requests.Session() as s:
         for t in pedidas:
             try:
@@ -146,9 +167,22 @@ def main(argv: list[str]) -> int:
                 else:
                     (destino / f"{t}.json").write_text(texto, encoding="utf-8")
                 print(f"{t}: {len(d['filas'])} filas (total {d['total']})")
+                caidas_seguidas = 0
             except ErrorAPI as e:
                 fallas.append(t)
+                motivos[t] = "token" if isinstance(e, TokenRechazado) else "caida"
+                caidas_seguidas += 1
                 print(f"{t}: ERROR {_limpio(str(e), token)}")
+                if isinstance(e, TokenRechazado) or caidas_seguidas >= 3:
+                    # Token rechazado o API caída: no tiene sentido esperar el tiempo de espera de cada tabla.
+                    resto = pedidas[pedidas.index(t) + 1:]
+                    if resto:
+                        print(f"No sigo con las {len(resto)} tablas que faltan.")
+                    fallas += resto
+                    motivos.update({x: motivos[t] for x in resto})
+                    break
+    if modo == "bajar":
+        (destino / ESTADO).write_text(json.dumps(motivos), encoding="utf-8")
     return 1 if fallas and len(fallas) == len(pedidas) else 0
 
 

@@ -28,12 +28,54 @@ import pandas as pd
 import requests
 
 from pipeline import calendario, monitorargy
-from pipeline.fuentes import clima_amba, clima_amba_mensual, clima_amba_pronostico, adefa, adimra, acero, cemento, construya, patentamientos, patentamientos_desest, empleo_sipa, utdt, leche, faena, provincias, icc, canasta_crianza, pobreza, mercado_trabajo, imig, recaudacion, recaudacion_real, deuda, cuentas_nacionales, balanza_pagos, capacidad_instalada, mayoristas, shoppings, electrodomesticos, issp, comex_indices, turismo, comercio_exterior, bcra, bcra_mensual, bcra_real, gas_entregado, canastas, precios_mayoristas, itcrm, itcrm_mensual, salarios_ramas, empleo_ramas, salarios_ramas_real, acciones_energia, acciones_energia_mensual, emae, emae_letras, emae_letras_desest, ipc, ipi, ipi_minero, ipi_minero_desest, isac, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, refinados, refinados_mensual, ventas_combustibles, ventas_combustibles_desest, came, supermercados, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual, estimaciones_agricolas, rem, remuneraciones_provincias, remuneraciones_provincias_real, remuneraciones_provincias_desest, remuneraciones_provincias_real_desest
+from pipeline.fuentes import (acciones_energia, acciones_energia_mensual, acero, adefa, adimra, balanza_pagos, bcra,
+    bcra_mensual, bcra_real, came, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria,
+    cammesa_gu_actividad, cammesa_gu_actividad_mensual, canasta_crianza, canastas, capacidad_instalada, cemento,
+    clima_amba, clima_amba_mensual, clima_amba_pronostico, comercio_exterior, comex_indices, construya,
+    cuentas_nacionales, deuda, electrodomesticos, emae, emae_letras, emae_letras_desest, empleo_ramas, empleo_sipa,
+    estimaciones_agricolas, faena, gas_entregado, icc, imig, ipc, ipi, ipi_minero, ipi_minero_desest, isac, issp,
+    itcrm, itcrm_mensual, leche, mayoristas, mercado_trabajo, patentamientos, patentamientos_desest, petroleo,
+    petroleo_mensual, pobreza, precios_mayoristas, provincias, recaudacion, recaudacion_real, refinados,
+    refinados_mensual, rem, remuneraciones_provincias, remuneraciones_provincias_desest,
+    remuneraciones_provincias_real, remuneraciones_provincias_real_desest, ripte, ripte_real, salarios,
+    salarios_ramas, salarios_ramas_real, salarios_real, shoppings, sube, sube_desest, sube_mensual, supermercados,
+    turismo, utdt, ventas_combustibles, ventas_combustibles_desest)
+from pipeline.fuentes._api_indec import ApiNoDisponible
 from pipeline.fuentes._indec import iguales
 
-FUENTES = {f.ID: f for f in [clima_amba, clima_amba_mensual, clima_amba_pronostico, adefa, adimra, acero, cemento, construya, patentamientos, patentamientos_desest, empleo_sipa, utdt, leche, faena, provincias, icc, canasta_crianza, pobreza, mercado_trabajo, imig, recaudacion, recaudacion_real, deuda, cuentas_nacionales, balanza_pagos, capacidad_instalada, mayoristas, shoppings, electrodomesticos, issp, comex_indices, turismo, comercio_exterior, bcra, bcra_mensual, bcra_real, gas_entregado, canastas, precios_mayoristas, itcrm, itcrm_mensual, emae, emae_letras, emae_letras_desest, ipc, ipi, ipi_minero, ipi_minero_desest, isac, supermercados, ripte, ripte_real, salarios, salarios_real, sube, sube_mensual, sube_desest, petroleo, petroleo_mensual, refinados, refinados_mensual, acciones_energia, acciones_energia_mensual, ventas_combustibles, ventas_combustibles_desest, came, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual, estimaciones_agricolas, rem, remuneraciones_provincias, remuneraciones_provincias_real, remuneraciones_provincias_desest, remuneraciones_provincias_real_desest, salarios_ramas, empleo_ramas, salarios_ramas_real]}
+# Catálogo: fuentes por tema, en el orden en que se muestran (dentro de cada tema, de lo general a lo particular, y
+# cada serie calculada después de su base). Este es el único lugar donde se registra una fuente y su categoría.
+REGISTRO = [
+    ("Actividad económica", [emae, emae_letras, emae_letras_desest, cuentas_nacionales, ipi, capacidad_instalada,
+        ipi_minero, ipi_minero_desest, isac, issp, adimra, adefa, acero, cemento, construya]),
+    ("Consumo y comercio", [supermercados, mayoristas, shoppings, electrodomesticos, came, patentamientos,
+        patentamientos_desest]),
+    ("Precios", [ipc, precios_mayoristas, icc, canastas, canasta_crianza]),
+    ("Salarios", [salarios, salarios_real, ripte, ripte_real, salarios_ramas, salarios_ramas_real,
+        remuneraciones_provincias, remuneraciones_provincias_real, remuneraciones_provincias_desest,
+        remuneraciones_provincias_real_desest]),
+    ("Empleo y pobreza", [empleo_sipa, empleo_ramas, mercado_trabajo, pobreza]),
+    ("Comercio exterior", [comercio_exterior, comex_indices, balanza_pagos]),
+    ("Tipo de cambio", [itcrm, itcrm_mensual]),
+    ("Dinero, bancos y tasas", [bcra, bcra_mensual, bcra_real]),
+    ("Finanzas públicas", [imig, recaudacion, recaudacion_real, deuda, provincias]),
+    ("Expectativas", [rem, utdt]),
+    ("Combustibles", [ventas_combustibles, ventas_combustibles_desest, gas_entregado]),
+    ("Petróleo y precios internacionales", [petroleo, petroleo_mensual, refinados, refinados_mensual,
+        acciones_energia, acciones_energia_mensual]),
+    ("Electricidad", [cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual]),
+    ("Transporte y turismo", [sube, sube_mensual, sube_desest, turismo]),
+    ("Agro y puertos", [estimaciones_agricolas, camiones_puertos, camiones_puertos_mensual, leche, faena]),
+    ("Clima", [clima_amba, clima_amba_mensual, clima_amba_pronostico]),
+]
+FUENTES = {f.ID: f for _, fuentes in REGISTRO for f in fuentes}
+CATEGORIAS = {f.ID: categoria for categoria, fuentes in REGISTRO for f in fuentes}
 # Series calculadas a partir de otra (DERIVADA_DE): no se bajan, se recalculan cuando cambia su base.
 DERIVADAS = {fid: f for fid, f in FUENTES.items() if hasattr(f, "DERIVADA_DE")}
+for _i, (_fid, _f) in enumerate(DERIVADAS.items()):
+    _bases = (_f.DERIVADA_DE,) if isinstance(_f.DERIVADA_DE, str) else _f.DERIVADA_DE
+    _despues = [b for b in _bases if b in DERIVADAS and list(DERIVADAS).index(b) > _i]
+    assert all(b in FUENTES for b in _bases) and not _despues, f"{_fid}: su base {_despues or _bases} tiene que ir antes"
 
 RAIZ = Path(__file__).resolve().parent.parent
 DATA = RAIZ / "data"
@@ -295,6 +337,25 @@ def fecha_cambio(fid: str) -> date | None:
     return datetime.fromisoformat(d.replace("Z", "+00:00")).astimezone(TZ).date() if d else None
 
 
+# Días que puede pasar una fuente sin datos nuevos, según su frecuencia, antes de avisar. Cubre lo que el calendario
+# del INDEC no ve: una cámara que cambia el archivo de lugar o un organismo que deja de actualizar una planilla (la
+# descarga sigue andando, pero trae siempre lo mismo). Una fuente puede fijar el suyo con MAX_DIAS_SIN_NOVEDAD.
+TOLERANCIA_DIAS = {"D": 10, "M": 50, "Q": 130, "S": 220, "A": 420}
+
+
+def atrasos(hoy: date) -> list[tuple[str, int, int]]:
+    """(fuente, días sin novedades, días tolerados) de las fuentes que pasaron su tolerancia."""
+    out = []
+    for fid, fuente in FUENTES.items():
+        cambio = fecha_cambio(fid)
+        if fid in DERIVADAS or cambio is None:
+            continue
+        tolerados = getattr(fuente, "MAX_DIAS_SIN_NOVEDAD", TOLERANCIA_DIAS.get(fuente.FRECUENCIA, 50))
+        if (hoy - cambio).days > tolerados:
+            out.append((fid, (hoy - cambio).days, tolerados))
+    return out
+
+
 def estado(fuente, cal, hoy: date) -> dict:
     """Estado de una fuente respecto del calendario de difusión."""
     fechas = calendario.fechas(getattr(fuente, "CALENDARIO", ""), cal)
@@ -326,44 +387,6 @@ def catalogo(cal, hoy: date) -> None:
         cols = ["id", "nombre", "frecuencia", "unidad", "ultimo_periodo", "observaciones", "estado",
                 "ultima_publicacion_prevista", "proxima_publicacion", "descargado", "pagina", "url"]
         pd.DataFrame(filas).reindex(columns=cols).to_csv(DATA / "catalogo.csv", index=False)
-
-
-CATEGORIAS = {  # fuente -> gran categoría (para buscar y filtrar en las páginas)
-    "emae": "Actividad económica", "emae_letras": "Actividad económica", "emae_letras_desest": "Actividad económica",
-    "ipi": "Actividad económica", "isac": "Actividad económica",
-    "ipi_minero": "Actividad económica", "ipi_minero_desest": "Actividad económica", "supermercados": "Actividad económica",
-    "came": "Actividad económica",
-    "ipc": "Precios", "precios_mayoristas": "Precios", "canastas": "Precios",
-    "ripte": "Salarios", "ripte_real": "Salarios", "salarios": "Salarios", "salarios_real": "Salarios",
-    "sube": "Transporte", "sube_mensual": "Transporte", "sube_desest": "Transporte",
-    "camiones_puertos": "Agro y puertos", "camiones_puertos_mensual": "Agro y puertos",
-    "estimaciones_agricolas": "Agro y puertos",
-    "rem": "Expectativas",
-    "comercio_exterior": "Comercio exterior", "comex_indices": "Comercio exterior", "balanza_pagos": "Comercio exterior",
-    "cuentas_nacionales": "Actividad económica", "capacidad_instalada": "Actividad económica",
-    "mayoristas": "Actividad económica", "shoppings": "Actividad económica", "electrodomesticos": "Actividad económica",
-    "issp": "Actividad económica", "turismo": "Transporte",
-    "imig": "Finanzas públicas", "recaudacion": "Finanzas públicas", "recaudacion_real": "Finanzas públicas",
-    "deuda": "Finanzas públicas", "provincias": "Finanzas públicas",
-    "icc": "Precios", "canasta_crianza": "Precios",
-    "adefa": "Actividad económica", "adimra": "Actividad económica", "acero": "Actividad económica",
-    "cemento": "Actividad económica", "construya": "Actividad económica", "patentamientos": "Actividad económica",
-    "patentamientos_desest": "Actividad económica", "empleo_sipa": "Pobreza y mercado de trabajo",
-    "clima_amba": "Clima", "clima_amba_mensual": "Clima", "clima_amba_pronostico": "Clima",
-    "utdt": "Expectativas", "leche": "Agro y puertos", "faena": "Agro y puertos",
-    "pobreza": "Pobreza y mercado de trabajo", "mercado_trabajo": "Pobreza y mercado de trabajo",
-    "bcra": "Dinero, bancos y tasas", "bcra_mensual": "Dinero, bancos y tasas", "bcra_real": "Dinero, bancos y tasas",
-    "itcrm": "Tipo de cambio", "itcrm_mensual": "Tipo de cambio",
-    "remuneraciones_provincias": "Salarios", "remuneraciones_provincias_real": "Salarios",
-    "remuneraciones_provincias_desest": "Salarios", "remuneraciones_provincias_real_desest": "Salarios",
-    "salarios_ramas": "Salarios", "salarios_ramas_real": "Salarios", "empleo_ramas": "Salarios",
-    "cammesa_balance": "Electricidad", "cammesa_diaria": "Electricidad", "cammesa_gu_actividad": "Electricidad",
-    "cammesa_gu_actividad_mensual": "Electricidad",
-    "ventas_combustibles": "Combustibles", "gas_entregado": "Combustibles", "ventas_combustibles_desest": "Combustibles",
-    "petroleo": "Petróleo y precios internacionales", "petroleo_mensual": "Petróleo y precios internacionales",
-    "refinados": "Petróleo y precios internacionales", "refinados_mensual": "Petróleo y precios internacionales",
-    "acciones_energia": "Petróleo y precios internacionales", "acciones_energia_mensual": "Petróleo y precios internacionales",
-}
 
 
 def clasificar(fid: str, cid: str, tipo: str) -> tuple[str, str]:
@@ -495,10 +518,18 @@ def catalogo_monitor_argy() -> str:
     return f"{len(filas)} series"
 
 
-def elegir(args, hoy: date, cal, avisar: bool = True) -> list[str]:
-    """Fuentes (no derivadas) que procesa esta corrida, según el modo, el calendario y el día del mes."""
+def elegir(args, hoy: date, cal, avisar: bool = True, hora: str = "23:59") -> list[str]:
+    """Fuentes (no derivadas) que procesa esta corrida, según el modo, el calendario y el día del mes.
+
+    `hora` es la hora de Buenos Aires ("HH:MM"): en modo calendario no se baja nada antes de la hora de publicación
+    del INDEC (las corridas programadas empiezan a la mañana por la demora de GitHub; ver el workflow).
+    """
     pedidas = args.fuentes or list(FUENTES)
     ids = [fid for fid in pedidas if fid not in DERIVADAS]
+    if args.modo == "calendario" and hora < calendario.HORA:
+        if avisar:
+            print(f"Son las {hora}: INDEC publica a las {calendario.HORA}. Nada para hacer todavía.")
+        return []
     if args.modo == "calendario":
         ids = [fid for fid in ids
                if hoy in calendario.fechas(getattr(FUENTES[fid], "CALENDARIO", ""), cal)
@@ -532,8 +563,9 @@ def main() -> int:
                if os.environ.get("MONITOR_AHORA") else datetime.now(timezone.utc))
     ahora = momento.strftime("%Y-%m-%dT%H:%M:%SZ")
     hoy = momento.astimezone(TZ).date()
+    hora = f"{momento.astimezone(TZ):%H:%M}"
     if args.tablas_api:
-        ids = elegir(args, hoy, calendario.cargar(), avisar=False)
+        ids = elegir(args, hoy, calendario.cargar(), avisar=False, hora=hora)
         tablas = set()
         for f in ids:
             t = getattr(FUENTES[f], "TABLA_API", None)
@@ -553,12 +585,18 @@ def main() -> int:
     cal = calendario.cargar()
 
     pedidas = args.fuentes or list(FUENTES)
-    ids = elegir(args, hoy, cal)
+    ids = elegir(args, hoy, cal, hora=hora)
 
     for fid in ids:
         print(f"[{fid}]")
+        inicio = time.monotonic()
         try:
             print("  " + procesar(FUENTES[fid], args.forzar, ahora, hoy))
+        except ApiNoDisponible as e:
+            # API del INDEC caída: no es una falla de la fuente (queda lo guardado y se reintenta en la próxima
+            # corrida; si había una publicación prevista, lo avisa el control del calendario). Token rechazado: sí.
+            print(f"  {'ERROR' if e.token else 'aviso'}: {e}")
+            fallas += e.token
         except DescargaError as e:
             print(f"  ERROR de descarga: {e}")
             if args.modo == "completo":
@@ -568,6 +606,8 @@ def main() -> int:
         except Exception as e:  # noqa: BLE001
             fallas += 1
             print(f"  ERROR: {e}")
+        if time.monotonic() - inicio > 30:
+            print(f"  (tardó {time.monotonic() - inicio:.0f} s)")
 
     # Derivadas: se recalculan si cambió su base (es una comparación de huellas, no cuesta nada).
     for fid, fuente in DERIVADAS.items():
@@ -594,6 +634,16 @@ def main() -> int:
             if recientes and (fecha_cambio(fid) or date.min) < recientes[-1]:
                 fallas += 1
                 print(f"AVISO: INDEC tenía previsto publicar {fid} el {recientes[-1]:%d/%m} y el dato todavía no entró.")
+
+        demoradas = atrasos(hoy)
+        if demoradas:
+            print("[control de atrasos]")
+        for fid, dias, tolerados in demoradas:
+            # Pasada la tolerancia, avisa; al doble, cuenta como falla (para que no pase inadvertido).
+            grave = dias > 2 * tolerados
+            fallas += grave
+            print(f"  {'ERROR' if grave else 'aviso'}: {fid} no tiene datos nuevos hace {dias} días "
+                  f"(lo habitual es que no pasen más de {tolerados}). Conviene revisar la fuente.")
 
     if args.modo == "completo" and not args.fuentes:
         print("[catálogo de Monitor Argy]")

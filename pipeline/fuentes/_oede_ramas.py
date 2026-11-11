@@ -90,7 +90,7 @@ def _tabla(df: pd.DataFrame, trimestral: bool) -> pd.DataFrame | None:
         if pd.isna(code):
             continue
         code = str(code).strip().removesuffix(".0")
-        vals = pd.to_numeric(df.iloc[i, 2:].replace({"s.d.": np.nan}), errors="coerce").values
+        vals = pd.to_numeric(df.iloc[i, 2:], errors="coerce").values  # "s.d." (sin dato) queda vacío
         out[code] = pd.Series(vals, index=per)
     t = pd.DataFrame(out)
     return t[t.index.notna()]

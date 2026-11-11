@@ -47,8 +47,7 @@ for _i, (_, _ni) in INDICES.items():
 
 
 def bajar(descargar, hoy) -> tuple[str, bytes]:
-    if not api.disponible(TABLA_API):
-        raise ValueError("No está la tabla de la API del INDEC (¿token vencido o API caída?).")
+    api.exigir(TABLA_API)
     return api.contenido(TABLA_API)
 
 

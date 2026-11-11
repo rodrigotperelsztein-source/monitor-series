@@ -312,15 +312,21 @@ La programación sigue el calendario de difusión de INDEC, que publica a las 16
 
 | Horario (Buenos Aires) | Qué hace |
 |---|---|
-| Días hábiles, 13 veces entre 16:23 y 20:37 | **Modo calendario.** Si INDEC prevé publicar ese día alguna de las series, baja solo esas, hasta que entre el dato nuevo. Si no hay nada previsto o ya entró, termina en segundos y no guarda nada. Si falla la descarga (la página de INDEC suele saturarse a las 16), no cuenta como error y se reintenta en la siguiente. |
-| Todas las noches 21:47 y 01:17 | **Control completo.** Actualiza el calendario (semestre actual y siguiente, cuando INDEC lo publica), revisa todas las fuentes para atrapar revisiones o publicaciones fuera de calendario, y **termina en error** si una publicación prevista no entró. El segundo horario es de respaldo. |
-| Días hábiles 10:12, 11:38 y 13:19 | **Petróleo y combustibles internacionales** (`petroleo`, `refinados`): cierre del día anterior de la EIA. |
+| Días hábiles, cada 20 minutos entre las 9:07 y las 20:47 | **Modo calendario.** Antes de las 16 no hace nada (INDEC todavía no publicó). Después, si INDEC prevé publicar ese día alguna de las series, baja solo esas, hasta que entre el dato nuevo. Si no hay nada previsto o ya entró, termina en segundos y no guarda nada. Si falla la descarga (la página de INDEC suele saturarse a las 16), no cuenta como error y se reintenta en la siguiente. La franja empieza temprano porque GitHub demora las corridas (ver abajo): así alguna cae justo después de las 16. |
+| Todas las noches 21:47 y 01:17 | **Control completo.** Actualiza el calendario (semestre actual y siguiente, cuando INDEC lo publica), revisa todas las fuentes para atrapar revisiones o publicaciones fuera de calendario, controla atrasos (fuentes que hace demasiado que no traen nada nuevo) y **termina en error** si una publicación prevista no entró. El segundo horario es de respaldo. |
+| Días hábiles, 5 horarios entre las 3:12 y las 13:19 | **Petróleo y combustibles internacionales** (`petroleo`, `refinados`): cierre del día anterior de la EIA. |
 
 La SUBE se actualiza casi todos los días y entra en el control de cada noche; solo se baja el archivo del
 año en curso (unos 50 MB), y la historia de años anteriores queda en `data/sube.csv`.
 
 El RIPTE no está en el calendario de INDEC: se publica sin fecha fija (en general, unos dos meses después
 del mes de referencia) y entra en el control de cada noche.
+
+**Control de atrasos.** Cada fuente tiene una tolerancia según su frecuencia (10 días las diarias, 50 las mensuales,
+130 las trimestrales, 420 las anuales; `MAX_DIAS_SIN_NOVEDAD` la cambia en una fuente puntual). Si pasa ese plazo sin
+datos nuevos, el control de la noche avisa; al doble, termina en error. Esto atrapa lo que el calendario de INDEC no
+ve: una cámara que mueve su archivo de lugar o un organismo que deja de actualizar una planilla, casos en los que la
+descarga sigue andando pero trae siempre lo mismo.
 
 GitHub no garantiza el horario de las tareas programadas: con carga alta las demora (se vieron atrasos de 3 a 4 horas)
 o las saltea, sobre todo en horas redondas. Por eso hay varios horarios, en minutos poco usados.
@@ -341,7 +347,13 @@ python -m pipeline.actualizar               # control completo
 python -m pipeline.actualizar --modo calendario   # solo lo que INDEC publica hoy
 python -m pipeline.actualizar emae_letras   # una sola
 python -m pipeline.actualizar --forzar
+python -m unittest discover -s tests       # controles que no tocan la red
 ```
+
+Las pruebas de `tests/` corren solas en cada cambio del código (workflow *Pruebas*): controlan que cada fuente esté
+bien registrada, la lógica que ya falló alguna vez (meses mal rotulados, horarios, API del INDEC caída) y las reglas
+de seguridad de `SECURITY.md` (permisos de los workflows, acciones fijadas por commit, política de contenido de las
+páginas).
 
 **Si falla:** GitHub marca la ejecución en rojo en la pestaña *Actions* y, según tu configuración de
 notificaciones, te avisa por mail. El detalle del error figura en el paso *Bajar, validar y procesar*.

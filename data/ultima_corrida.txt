@@ -4,7 +4,7 @@
 [ventas_combustibles]
   no se revisa hoy (solo los días 20 a fin de mes)
 [emae]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [emae_letras]
   sin cambios en el archivo
 [cuentas_nacionales]
@@ -42,7 +42,7 @@
 [patentamientos]
   archivo distinto pero mismos datos
 [ipc]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [precios_mayoristas]
   sin cambios en el archivo
 [icc]
@@ -52,7 +52,7 @@
 [canasta_crianza]
   sin cambios en el archivo
 [salarios]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [ripte]
   sin cambios en el archivo
 [salarios_ramas]
@@ -74,12 +74,12 @@
 [balanza_pagos]
   sin cambios en el archivo
 [itcrm]
-  actualizada: último período 2026-11 → 2026-11-11; valores revisados: 690
+  sin cambios en el archivo
 [itcrm_mensual]
-  actualizada: último período 2026-10 → 2026-10; valores revisados: 60
+  sin cambios en el archivo
 [bcra]
-  actualizada: último período 2026-11 → 2026-11-12; valores revisados: 143
-  (tardó 54 s)
+  archivo distinto pero mismos datos
+  (tardó 52 s)
 [imig]
   sin cambios en el archivo
 [recaudacion]
@@ -99,7 +99,7 @@
 [refinados]
   archivo distinto pero mismos datos
 [acciones_energia]
-  actualizada: último período 2026-11 → 2026-11-11; valores revisados: 0
+  archivo distinto pero mismos datos
 [cammesa_balance]
   sin cambios en el archivo
 [cammesa_diaria]
@@ -107,11 +107,11 @@
 [cammesa_gu_actividad]
   sin cambios en el archivo
 [sube]
-  actualizada: último período 2026-11 → 2026-11-10; valores revisados: 0
+  sin cambios en el archivo
 [turismo]
   archivo distinto pero mismos datos
 [estimaciones_agricolas]
-  actualizada: último período 2026-10 → 2026-10; valores revisados: 3
+  archivo distinto pero mismos datos
 [camiones_puertos]
   sin cambios en el archivo
 [leche]
@@ -119,9 +119,9 @@
 [faena]
   sin cambios en el archivo
 [clima_amba]
-  actualizada: último período 2026-11 → 2026-11-05; valores revisados: 0
+  archivo distinto pero mismos datos
 [clima_amba_pronostico]
-  actualizada: último período 2026-11 → 2026-11-27; valores revisados: 363
+  actualizada: último período 2026-11 → 2026-11-27; valores revisados: 234
 [emae_letras_desest]
   sin cambios en las series de base
 [ipi_minero_desest]
@@ -141,9 +141,9 @@
 [remuneraciones_provincias_real_desest]
   sin cambios en las series de base
 [bcra_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [bcra_real]
-  recalculada: último período 2026-09 → 2026-09
+  sin cambios en las series de base
 [recaudacion_real]
   sin cambios en las series de base
 [ventas_combustibles_desest]
@@ -153,17 +153,17 @@
 [refinados_mensual]
   sin cambios en las series de base
 [acciones_energia_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [cammesa_gu_actividad_mensual]
   sin cambios en las series de base
 [sube_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [sube_desest]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [camiones_puertos_mensual]
   sin cambios en las series de base
 [clima_amba_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [catálogo de Monitor Argy]
   839 series
 [series de Monitor Argy (copia)]

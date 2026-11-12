@@ -5,7 +5,7 @@
   "pagina": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
   "frecuencia": "D",
   "unidad": "Dólares por galón",
-  "sha256": "86399eef98bcfbcde63cf603387dd400041984e42e4b791a678da9f9acc7be34",
+  "sha256": "a2ef6ef50b59d387e67310c8c165b900a88637776383b0fa07161cf9f58b9b1c",
   "columnas": {
     "nafta_nyh": {
       "nombre": "Nafta convencional regular, puerto de Nueva York, spot",
@@ -53,9 +53,9 @@
       "unidad": "Dólares por galón"
     }
   },
-  "planillas_hasta": "2026-11-03",
-  "descargado": "2026-11-10T20:26:05Z",
-  "ultimo_periodo": "2026-11-09",
-  "observaciones": 10076,
+  "planillas_hasta": "2026-11-11",
+  "descargado": "2026-11-12T20:45:49Z",
+  "ultimo_periodo": "2026-11-11",
+  "observaciones": 10078,
   "original_guardado": null
 }

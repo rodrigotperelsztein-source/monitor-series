@@ -1,8 +1,8 @@
 [petroleo]
-  actualizada: último período 2026-11 → 2026-11-11; valores revisados: 0
+  archivo distinto pero mismos datos
 [refinados]
   archivo distinto pero mismos datos
 [petroleo_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [refinados_mensual]
   sin cambios en las series de base

@@ -5,7 +5,7 @@
   "pagina": "https://www.argentina.gob.ar/trabajo/estadisticas/oede-estadisticas-provinciales",
   "frecuencia": "M",
   "unidad": "Pesos corrientes por mes",
-  "sha256": "541b1bde2ca2af0d925882debba3d083f2a391087ed72991d00089958f4aea4e",
+  "sha256": "b25b8aced01d6caa1a795ab462d103f5dbf1fcd14dd682f049ac59360511ce5a",
   "columnas": {
     "total": {
       "nombre": "Remuneración promedio, asalariados registrados privados: total del país (promedio de las ramas)",

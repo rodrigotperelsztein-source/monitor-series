@@ -1,8 +1,170 @@
+[calendario INDEC]
+  ERROR (se conserva el calendario anterior): Calendario inválido:
+  - 3 fechas no coinciden con el día de la semana, p. ej. 2027-01-18 JU.
+[ventas_combustibles]
+  no se revisa hoy (solo los días 20 a fin de mes)
+[emae]
+  archivo distinto pero mismos datos
+[emae_letras]
+  sin cambios en el archivo
+[cuentas_nacionales]
+  sin cambios en el archivo
+[ipi]
+  sin cambios en el archivo
+[capacidad_instalada]
+  sin cambios en el archivo
+[ipi_minero]
+  sin cambios en el archivo
+[isac]
+  sin cambios en el archivo
+[issp]
+  sin cambios en el archivo
+[adimra]
+  sin cambios en el archivo
+[adefa]
+  sin cambios en el archivo
+[acero]
+  sin cambios en el archivo
+[cemento]
+  sin cambios en el archivo
+[construya]
+  sin cambios en el archivo
+[supermercados]
+  sin cambios en el archivo
+[mayoristas]
+  sin cambios en el archivo
+[shoppings]
+  sin cambios en el archivo
+[electrodomesticos]
+  sin cambios en el archivo
+[came]
+  archivo distinto pero mismos datos
+[patentamientos]
+  archivo distinto pero mismos datos
+[ipc]
+  archivo distinto pero mismos datos
+[precios_mayoristas]
+  sin cambios en el archivo
+[icc]
+  sin cambios en el archivo
+[canastas]
+  sin cambios en el archivo
+[canasta_crianza]
+  sin cambios en el archivo
+[salarios]
+  archivo distinto pero mismos datos
+[ripte]
+  sin cambios en el archivo
+[salarios_ramas]
+  archivo distinto pero mismos datos
+[remuneraciones_provincias]
+  sin cambios en el archivo
+[empleo_sipa]
+  sin cambios en el archivo
+[empleo_ramas]
+  archivo distinto pero mismos datos
+[mercado_trabajo]
+  sin cambios en el archivo
+[pobreza]
+  sin cambios en el archivo
+[comercio_exterior]
+  archivo distinto pero mismos datos
+[comex_indices]
+  sin cambios en el archivo
+[balanza_pagos]
+  sin cambios en el archivo
+[itcrm]
+  actualizada: último período 2026-11 → 2026-11-11; valores revisados: 690
+[itcrm_mensual]
+  actualizada: último período 2026-10 → 2026-10; valores revisados: 60
+[bcra]
+  actualizada: último período 2026-11 → 2026-11-12; valores revisados: 143
+  (tardó 54 s)
+[imig]
+  sin cambios en el archivo
+[recaudacion]
+  archivo distinto pero mismos datos
+[deuda]
+  archivo distinto pero mismos datos
+[provincias]
+  archivo distinto pero mismos datos
+[rem]
+  sin cambios en el archivo
+[utdt]
+  archivo distinto pero mismos datos
+[gas_entregado]
+  sin cambios en el archivo
 [petroleo]
   archivo distinto pero mismos datos
 [refinados]
   archivo distinto pero mismos datos
+[acciones_energia]
+  actualizada: último período 2026-11 → 2026-11-11; valores revisados: 0
+[cammesa_balance]
+  sin cambios en el archivo
+[cammesa_diaria]
+  sin cambios en el archivo
+[cammesa_gu_actividad]
+  sin cambios en el archivo
+[sube]
+  actualizada: último período 2026-11 → 2026-11-10; valores revisados: 0
+[turismo]
+  archivo distinto pero mismos datos
+[estimaciones_agricolas]
+  actualizada: último período 2026-10 → 2026-10; valores revisados: 3
+[camiones_puertos]
+  sin cambios en el archivo
+[leche]
+  sin cambios en el archivo
+[faena]
+  sin cambios en el archivo
+[clima_amba]
+  actualizada: último período 2026-11 → 2026-11-05; valores revisados: 0
+[clima_amba_pronostico]
+  actualizada: último período 2026-11 → 2026-11-27; valores revisados: 363
+[emae_letras_desest]
+  sin cambios en las series de base
+[ipi_minero_desest]
+  sin cambios en las series de base
+[patentamientos_desest]
+  sin cambios en las series de base
+[salarios_real]
+  sin cambios en las series de base
+[ripte_real]
+  sin cambios en las series de base
+[salarios_ramas_real]
+  sin cambios en las series de base
+[remuneraciones_provincias_real]
+  sin cambios en las series de base
+[remuneraciones_provincias_desest]
+  sin cambios en las series de base
+[remuneraciones_provincias_real_desest]
+  sin cambios en las series de base
+[bcra_mensual]
+  recalculada: último período 2026-10 → 2026-10
+[bcra_real]
+  recalculada: último período 2026-09 → 2026-09
+[recaudacion_real]
+  sin cambios en las series de base
+[ventas_combustibles_desest]
+  sin cambios en las series de base
 [petroleo_mensual]
   sin cambios en las series de base
 [refinados_mensual]
   sin cambios en las series de base
+[acciones_energia_mensual]
+  recalculada: último período 2026-10 → 2026-10
+[cammesa_gu_actividad_mensual]
+  sin cambios en las series de base
+[sube_mensual]
+  recalculada: último período 2026-10 → 2026-10
+[sube_desest]
+  recalculada: último período 2026-10 → 2026-10
+[camiones_puertos_mensual]
+  sin cambios en las series de base
+[clima_amba_mensual]
+  recalculada: último período 2026-10 → 2026-10
+[catálogo de Monitor Argy]
+  839 series
+[series de Monitor Argy (copia)]
+  3 de 3 series

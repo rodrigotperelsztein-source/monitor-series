@@ -1,11 +1,11 @@
 {
   "id": "acciones_energia",
   "nombre": "Acciones de energía en Nueva York: YPF, Vista, Pampa y TGS (cierre diario, dólares)",
-  "url": "https://api.nasdaq.com/api/quote/YPF/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-11-11&limit=9999 https://api.nasdaq.com/api/quote/VIST/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-11-11&limit=9999 https://api.nasdaq.com/api/quote/PAM/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-11-11&limit=9999 https://api.nasdaq.com/api/quote/TGS/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-11-11&limit=9999",
+  "url": "https://api.nasdaq.com/api/quote/YPF/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-11-12&limit=9999 https://api.nasdaq.com/api/quote/VIST/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-11-12&limit=9999 https://api.nasdaq.com/api/quote/PAM/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-11-12&limit=9999 https://api.nasdaq.com/api/quote/TGS/historical?assetclass=stocks&fromdate=2016-01-01&todate=2026-11-12&limit=9999",
   "pagina": "https://www.nasdaq.com/market-activity/stocks/ypf/historical",
   "frecuencia": "D",
   "unidad": "Dólares por acción (ADR)",
-  "sha256": "b65c1beafc7fd87fe6c99d8ef4677e59e5798f749366ce92d63735046c5a2ae5",
+  "sha256": "9a5e689cc49f3f29b160a98f38a3c29d59f9e003e73dc595d17c3ce61f2da522",
   "columnas": {
     "ypf": {
       "nombre": "YPF (YPF, Nueva York), precio de cierre en dólares",
@@ -28,8 +28,8 @@
       "unidad": "Dólares por acción (ADR)"
     }
   },
-  "descargado": "2026-11-11T07:21:22Z",
-  "ultimo_periodo": "2026-11-10",
-  "observaciones": 2522,
+  "descargado": "2026-11-12T07:46:42Z",
+  "ultimo_periodo": "2026-11-11",
+  "observaciones": 2523,
   "original_guardado": null
 }

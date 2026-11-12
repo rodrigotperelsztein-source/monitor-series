@@ -1,11 +1,11 @@
 {
   "id": "ipc",
   "nombre": "IPC: nivel general, divisiones y categorías, por región",
-  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv",
+  "url": "https://api.indec.gob.ar/v1/ipc_nacional",
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
   "frecuencia": "M",
   "unidad": "Índice base dic-2016=100",
-  "sha256": "1b1742354bcbcd53e85b15bb76311e5a607f94ab4497ebd3a91f00b426a40e38",
+  "sha256": "c333f606abf513e739a6bd4e5b4fd263139f120f168342ce1c413446c2850254",
   "columnas": {
     "nacional_nivel_general_indice": {
       "nombre": "IPC Nacional - Nivel general - índice",

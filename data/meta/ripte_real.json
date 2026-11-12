@@ -5,14 +5,14 @@
   "pagina": "https://www.argentina.gob.ar/trabajo/seguridadsocial/ripte",
   "frecuencia": "M",
   "unidad": "Pesos constantes",
-  "sha256": "534c7b0c7f34aa2a6b3457a9354538e172d45428170c2c8eb69d0204d6baf9c9",
+  "sha256": "fddab1ffed8bacc916fa3179a5496f82fade17a6b344251068783c2e4b05d412",
   "derivada_de": [
     "ripte",
     "ipc"
   ],
   "archivos_de_origen": [
     "https://www.argentina.gob.ar/sites/default/files/ripte_agosto_2026-mdch.pdf",
-    "https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv"
+    "https://api.indec.gob.ar/v1/ipc_nacional"
   ],
   "columnas": {
     "ripte_real": {
@@ -36,10 +36,10 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-10-19T18:02:04Z",
-  "calculado": "2026-10-19T18:20:00Z",
+  "descargado": "2026-11-12T19:51:27Z",
+  "calculado": "2026-11-12T19:51:27Z",
   "ultimo_periodo": "2026-08",
   "observaciones": 117,
   "deflactor": "IPC nacional, nivel general (ipc.nacional_nivel_general_indice), base dic-2016=100",
-  "precios_del_ultimo_mes": "2026-09"
+  "precios_del_ultimo_mes": "2026-10"
 }

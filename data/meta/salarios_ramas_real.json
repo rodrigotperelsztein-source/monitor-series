@@ -5,14 +5,14 @@
   "pagina": "https://www.argentina.gob.ar/trabajo/estadisticas/oede-estadisticas-provinciales",
   "frecuencia": "M",
   "unidad": "Pesos del último IPC publicado",
-  "sha256": "91781c1285b14e37bf9139bbab9126b2f010a8a54baf2029aaf356bd95220503",
+  "sha256": "0ca37c85dbc7e5a646cd6c54d025e4241c93966ee370268bfb1f2f29314a8a8f",
   "derivada_de": [
     "salarios_ramas",
     "ipc"
   ],
   "archivos_de_origen": [
     "https://www.argentina.gob.ar/sites/default/files/provinciales_serie_remuneraciones_mensual_2dig_9.xlsx https://www.argentina.gob.ar/sites/default/files/provinciales_serie_empleo_trimestral_2dig_7.xlsx",
-    "https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv"
+    "https://api.indec.gob.ar/v1/ipc_nacional"
   ],
   "columnas": {
     "total_real": {
@@ -286,10 +286,10 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-10-30T18:03:55Z",
-  "calculado": "2026-10-30T18:03:55Z",
+  "descargado": "2026-11-12T19:51:27Z",
+  "calculado": "2026-11-12T19:51:27Z",
   "ultimo_periodo": "2026-06",
   "observaciones": 115,
   "deflactor": "IPC nacional (ipc.nacional_nivel_general_indice)",
-  "precios_del_ultimo_mes": "2026-09"
+  "precios_del_ultimo_mes": "2026-10"
 }

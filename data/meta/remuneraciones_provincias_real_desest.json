@@ -5,7 +5,7 @@
   "pagina": "https://www.argentina.gob.ar/trabajo/estadisticas/oede-estadisticas-provinciales",
   "frecuencia": "M",
   "unidad": "Pesos del último IPC publicado",
-  "sha256": "b0630bfb6b6b94345bfd4858b8055148796a09091668eea0323bfdd093b5cd84",
+  "sha256": "6c46579f71df38bfa4fce65aede5b45ffcda55b2c1966a2040039bbb511d9094",
   "derivada_de": [
     "remuneraciones_provincias_real"
   ],
@@ -149,8 +149,8 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-10-26T18:24:15Z",
-  "calculado": "2026-10-26T18:42:01Z",
+  "descargado": "2026-11-12T19:51:27Z",
+  "calculado": "2026-11-12T19:51:27Z",
   "ultimo_periodo": "2026-06",
   "observaciones": 115,
   "desestacionalizacion": {
@@ -172,7 +172,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1070.69892480448,
+        "aicc": 1075.08195675817,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -210,7 +210,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1098.30401471541,
+        "aicc": 1102.68704693485,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -248,7 +248,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(1 1 0)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1111.51103479204,
+        "aicc": 1115.89407629957,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -286,7 +286,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1082.44699080248,
+        "aicc": 1086.83003697378,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -324,7 +324,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1134.28305615492,
+        "aicc": 1138.66609053641,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -367,7 +367,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1076.16217466113,
+        "aicc": 1080.54520563211,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -405,7 +405,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(2 1 0)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1053.21533990787,
+        "aicc": 1057.59837081074,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -443,7 +443,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1037.88860557867,
+        "aicc": 1042.2716350933,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -481,7 +481,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1273.26729377479,
+        "aicc": 1277.65031678942,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -523,7 +523,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(1 0 0)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1054.78982251574,
+        "aicc": 1059.21580926696,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -562,7 +562,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1085.09283763293,
+        "aicc": 1089.47586395776,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -597,7 +597,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1139.93395369443,
+        "aicc": 1144.31698905554,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -636,7 +636,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1091.50902911756,
+        "aicc": 1095.89206291856,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -671,7 +671,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1107.69839034123,
+        "aicc": 1112.0814270034,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -708,7 +708,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 0)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1060.90445873786,
+        "aicc": 1065.28750108341,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -743,7 +743,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 0)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1021.76539998642,
+        "aicc": 1026.14844915137,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -786,7 +786,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1309.95211920012,
+        "aicc": 1314.33514492408,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -827,7 +827,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 0)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1127.79320320058,
+        "aicc": 1132.1762281551,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -867,7 +867,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1051.97000109816,
+        "aicc": 1056.35303666802,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -902,7 +902,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1129.67356313752,
+        "aicc": 1134.05659477758,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -937,7 +937,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1101.53616950349,
+        "aicc": 1105.91919639062,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -975,7 +975,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(1 0 0)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1399.43615195794,
+        "aicc": 1403.86215361407,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -1023,7 +1023,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1068.41965464472,
+        "aicc": 1072.80267691637,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -1061,7 +1061,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1059.71213992328,
+        "aicc": 1064.0952014068,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -1096,7 +1096,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1067.56715130305,
+        "aicc": 1071.95017776911,
         "calendario": {
           "dias_semana": null,
           "feriados": null,
@@ -1133,7 +1133,7 @@
         "programa": "X-13ARIMA-SEATS 1.1, compilación 57 (Oficina del Censo de EE.UU.)",
         "modelo": "(0 1 1)(0 1 1)",
         "transformacion": "Log(y)",
-        "aicc": 1298.47640949963,
+        "aicc": 1302.85943217333,
         "calendario": {
           "dias_semana": null,
           "feriados": null,

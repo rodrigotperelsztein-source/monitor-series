@@ -1,8 +1,21 @@
-[petroleo]
-  archivo distinto pero mismos datos
-[refinados]
-  archivo distinto pero mismos datos
-[petroleo_mensual]
-  sin cambios en las series de base
-[refinados_mensual]
-  sin cambios en las series de base
+Publicaciones previstas hoy y todavía no descargadas: ipc, canastas, canasta_crianza
+[ipc]
+  actualizada: último período 2026-09 → 2026-10; valores revisados: 0
+[canastas]
+  actualizada: último período 2026-09 → 2026-10; valores revisados: 0
+[canasta_crianza]
+  sin cambios en el archivo
+[salarios_real]
+  recalculada: último período 2026-08 → 2026-08
+[ripte_real]
+  recalculada: último período 2026-08 → 2026-08
+[salarios_ramas_real]
+  recalculada: último período 2026-06 → 2026-06
+[remuneraciones_provincias_real]
+  recalculada: último período 2026-06 → 2026-06
+[remuneraciones_provincias_real_desest]
+  recalculada: último período 2026-06 → 2026-06
+[bcra_real]
+  recalculada: último período 2026-09 → 2026-10
+[recaudacion_real]
+  recalculada: último período 2026-09 → 2026-10

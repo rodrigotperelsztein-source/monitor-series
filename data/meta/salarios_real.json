@@ -5,14 +5,14 @@
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-31-61",
   "frecuencia": "M",
   "unidad": "Índice real (salarios oct-2016=100 / IPC dic-2016=100)",
-  "sha256": "c3247c48e3abfa0462d41eb1bc521841fe9c81c421919aa10651c3d275b87b80",
+  "sha256": "5fc5a10d0caf038980ca86311b38bb84e8a3511116fb1ea0813f3a9784be5d17",
   "derivada_de": [
     "salarios",
     "ipc"
   ],
   "archivos_de_origen": [
-    "https://www.indec.gob.ar/ftp/cuadros/sociedad/indice_salarios.csv",
-    "https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv"
+    "https://api.indec.gob.ar/v1/indice_salarios",
+    "https://api.indec.gob.ar/v1/ipc_nacional"
   ],
   "columnas": {
     "privado_registrado_real": {
@@ -91,8 +91,8 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-10-21T19:38:26Z",
-  "calculado": "2026-10-21T19:38:26Z",
+  "descargado": "2026-11-12T19:51:27Z",
+  "calculado": "2026-11-12T19:51:27Z",
   "ultimo_periodo": "2026-08",
   "observaciones": 117,
   "deflactor": "IPC nacional, nivel general (ipc.nacional_nivel_general_indice), base dic-2016=100"

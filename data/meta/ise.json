@@ -1,0 +1,55 @@
+{
+  "id": "ise",
+  "nombre": "Indicador sintético de energía (ISE, INDEC)",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_indicadores_energeticos.xls",
+  "pagina": "https://www.indec.gob.ar/Nivel4/Tema/3/36/145",
+  "frecuencia": "M",
+  "unidad": "Índice base 2004=100",
+  "sha256": "53a57e15bd58e76831a65a0dc43e7866644128fe06148c14ea12e8d71821945a",
+  "columnas": {
+    "ise": {
+      "nombre": "ISE, serie original",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "ise_var_ia": {
+      "nombre": "ISE, serie original, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ise_desest": {
+      "nombre": "ISE, serie desestacionalizada (INDEC)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "ise_desest_var_m": {
+      "nombre": "ISE, desestacionalizado (INDEC), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "ise_tendencia": {
+      "nombre": "ISE, serie tendencia-ciclo",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "generacion_electrica": {
+      "nombre": "ISE: generación neta de energía eléctrica",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "gas_centrales": {
+      "nombre": "ISE: gas entregado a centrales eléctricas",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "derivados_petroleo": {
+      "nombre": "ISE: derivados de petróleo seleccionados",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    }
+  },
+  "descargado": "2026-11-13T13:44:29Z",
+  "ultimo_periodo": "2026-06",
+  "observaciones": 138,
+  "original_guardado": "data/raw/ise/2026-11-13_53a57e15.xls"
+}

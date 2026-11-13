@@ -1,0 +1,50 @@
+{
+  "id": "biocombustibles",
+  "nombre": "Biodiésel y bioetanol: producción, mercado interno y exportaciones (INDEC)",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_indicadores_energeticos.xls",
+  "pagina": "https://www.indec.gob.ar/Nivel4/Tema/3/36/145",
+  "frecuencia": "M",
+  "unidad": "Toneladas (biodiésel) y m³ (bioetanol)",
+  "sha256": "53a57e15bd58e76831a65a0dc43e7866644128fe06148c14ea12e8d71821945a",
+  "columnas": {
+    "biodiesel_produccion": {
+      "nombre": "Biodiésel: producción",
+      "tipo": "nivel",
+      "unidad": "Toneladas"
+    },
+    "biodiesel_interno": {
+      "nombre": "Biodiésel: despachos al mercado interno",
+      "tipo": "nivel",
+      "unidad": "Toneladas"
+    },
+    "biodiesel_exportaciones": {
+      "nombre": "Biodiésel: exportaciones",
+      "tipo": "nivel",
+      "unidad": "Toneladas"
+    },
+    "bioetanol_produccion": {
+      "nombre": "Bioetanol: producción total",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "bioetanol_cana": {
+      "nombre": "Bioetanol: producción de caña",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "bioetanol_maiz": {
+      "nombre": "Bioetanol: producción de maíz",
+      "tipo": "nivel",
+      "unidad": "m³"
+    },
+    "bioetanol_interno": {
+      "nombre": "Bioetanol: despachos al mercado interno",
+      "tipo": "nivel",
+      "unidad": "m³"
+    }
+  },
+  "descargado": "2026-11-13T13:44:29Z",
+  "ultimo_periodo": "2026-06",
+  "observaciones": 200,
+  "original_guardado": "data/raw/biocombustibles/2026-11-13_53a57e15.xls"
+}

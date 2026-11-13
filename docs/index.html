@@ -224,6 +224,9 @@ details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
       <div class="row">
         <label class="count"><input type="checkbox" id="onlysel"> solo las elegidas</label>
         <button class="linklimpiar" id="limpiar" type="button">Limpiar filtros</button>
+        <!-- Tilda de una vez todo lo que dejaron los filtros: sirve para las aperturas (las letras del EMAE, las
+             divisiones del IPC, las ramas de empleo), donde elegirlas de a una es largo y es fácil saltearse alguna. -->
+        <button class="linklimpiar" id="todas" type="button" hidden></button>
         <span class="count" id="count" style="margin-left:auto">Cargando…</span>
       </div>
       <div class="tablewrap">
@@ -404,6 +407,11 @@ const CANASTAS = [
     "supermercados.ventas_constantes_var_ia", "ventas_combustibles_desest.gasoil_total_sin_usinas_bunker", "ventas_combustibles_desest.naftas_total",
     "ipc.nacional_nivel_general_var_m", "ipc.nacional_nucleo_var_m", "salarios_real.privado_registrado_real", "petroleo_mensual.brent",
     "ipi_minero.petroleo_m3", "ipi_minero.gas_m3", "rem.ipc_12m", "utdt.confianza_gobierno", "utdt.confianza_consumidor", "bcra_mensual.tc_mayorista", "monitorargy.riesgo_pais"] },
+  { nombre: "EMAE por sector (16 letras)", ids: ["emae_letras.a_agro", "emae_letras.b_pesca", "emae_letras.c_mineria", "emae_letras.d_industria",
+    "emae_letras.e_electricidad_gas_agua", "emae_letras.f_construccion", "emae_letras.g_comercio", "emae_letras.h_hoteles_restaurantes",
+    "emae_letras.i_transporte_comunicaciones", "emae_letras.j_intermediacion_financiera", "emae_letras.k_inmobiliarias_empresariales",
+    "emae_letras.l_administracion_publica", "emae_letras.m_ensenanza", "emae_letras.n_salud", "emae_letras.o_otros_servicios",
+    "emae_letras.impuestos_netos"] },
   { nombre: "Actividad por sector", ids: ["emae.desest", "ipi.desest", "ipi_minero.desest", "isac.desest", "supermercados.indice_desest"] },
   { nombre: "Precios", ids: ["ipc.nacional_nivel_general_var_m", "ipc.nacional_nucleo_var_m", "ipc.nacional_regulados_var_m", "ipc.nacional_estacionales_var_m", "ipc.nacional_nivel_general_var_ia", "rem.ipc_12m"] },
   { nombre: "Precios mayoristas y canastas", ids: ["precios_mayoristas.ipim_nivel_general_var_m", "precios_mayoristas.ipim_refinados_var_ia", "precios_mayoristas.ipim_petroleo_gas_var_ia", "canastas.cba", "canastas.cbt", "canastas.cbt_hogar_2"] },
@@ -466,6 +474,7 @@ async function cargar() {
 }
 
 let catSel = "";
+let visibles = [];  // las series que dejaron los filtros, para el botón de tildar todas
 function pasa(s, sinCat, sin) {
   const g = sin === "grupo" ? "" : $("grupo").value, f = sin === "freq" ? "" : $("freq").value,
     d = sin === "dato" ? "" : $("dato").value, aj = sin === "ajuste" ? "" : $("ajuste").value,
@@ -524,7 +533,25 @@ function render() {
       <td class="meta unidad hide-sm">${esc(s.unidad)}</td><td class="meta hide-sm">${esc(FREQ[s.frec] || s.frec)}</td><td class="meta" title="${esc(s.ultimo)}">${esc(periodo(s.ultimo, s.frec))}</td></tr>`);
   }
   $("rows").innerHTML = out.join("") || `<tr><td colspan="5" class="empty">No hay series con ese filtro.</td></tr>`;
+  visibles = lista;
+  botonTodas();
 }
+// Botón para tildar (o destildar) de una vez todo lo que dejaron los filtros. Aparece cuando la lista está
+// acotada: con el catálogo entero a la vista no tiene sentido, y arriba de 300 series tampoco.
+function botonTodas() {
+  const b = $("todas"), n = visibles.length;
+  if (n < 2 || n > 300 || n === SERIES.length) { b.hidden = true; return; }
+  const faltan = visibles.filter(s => !sel.includes(s.id)).length;
+  b.hidden = false;
+  b.textContent = faltan ? `Tildar las ${n} que se ven` : `Destildar las ${n}`;
+}
+$("todas").onclick = () => {
+  const ids = visibles.map(s => s.id), faltan = ids.filter(id => !sel.includes(id));
+  if (faltan.length) sel = sel.concat(faltan);
+  else sel = sel.filter(id => !ids.includes(id));
+  render();
+  update();
+};
 // Ficha: últimos valores, minigráfica y datos de la serie (se baja al abrirla).
 $("rows").addEventListener("click", async e => {
   const b = e.target.closest("[data-ficha]"); if (!b) return;
@@ -550,6 +577,7 @@ $("rows").addEventListener("change", e => {
   const id = e.target.dataset && e.target.dataset.id; if (!id) return;
   if (e.target.checked) { if (!sel.includes(id)) sel.push(id); } else sel = sel.filter(x => x !== id);
   e.target.closest("tr").classList.toggle("sel", e.target.checked);
+  botonTodas();
   update();
 });
 ["q", "grupo", "indic", "concepto", "freq", "dato", "ajuste", "onlysel"].forEach(id => $(id).addEventListener(id === "q" ? "input" : "change", render));

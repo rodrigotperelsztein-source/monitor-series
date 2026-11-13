@@ -79,6 +79,8 @@ select option:disabled { color: #5e7388; }
 .resultados button:hover, .resultados button:focus-visible { background: rgba(95,208,255,.1); }
 .resultados small { display: block; color: var(--muted); font-size: 11.5px; }
 .resultados .rg { padding: 7px 10px 4px; font-size: 10.5px; text-transform: uppercase; letter-spacing: .09em; color: var(--acc); font-weight: 700; background: rgba(95,208,255,.05); }
+.resultados .rg.todas { padding: 6px 8px; background: rgba(124,242,195,.07); }
+.resultados .rg.todas button { display: block; width: 100%; text-align: center; font: 700 11.5px var(--f-body); letter-spacing: .04em; text-transform: none; color: var(--acc2); background: rgba(124,242,195,.1); border: 1px solid rgba(124,242,195,.35); border-radius: 7px; padding: 6px 8px; cursor: pointer; }
 .resultados .tg { display: inline-block; margin-left: 6px; font-size: 10.5px; padding: 0 6px; border-radius: 999px; border: 1px solid rgba(140,190,240,.3); color: var(--muted); }
 .resultados .tg.des { border-color: rgba(124,242,195,.45); color: var(--acc2); }
 .resultados .tg.real { border-color: rgba(255,200,87,.45); color: var(--warn); }
@@ -424,7 +426,11 @@ function buscar() {
     && Object.entries(f).every(([c, v]) => !v || s[c] === v))
     .sort((a, b) => a.cat.localeCompare(b.cat, "es")).slice(0, 80);
   let ult = null;
-  box.innerHTML = r.length ? r.map(s => {
+  const lugar = 8 - E.sel.length;
+  const cab = r.length > 1 && lugar > 0
+    ? `<div class="rg todas"><button type="button" data-todas="1">${r.length > lugar ? `Agregar las primeras ${lugar} (el gráfico admite 8)` : `Agregar las ${r.length} de una vez`}</button></div>`
+    : "";
+  box.innerHTML = r.length ? cab + r.map(s => {
     const cab = s.cat !== ult ? `<div class="rg">${esc(s.cat)}</div>` : ""; ult = s.cat;
     const tg = (s.dato !== "Nivel" ? `<span class="tg">${esc(s.dato.replace("Variación", "var."))}</span>` : "")
       + (s.ajuste === "Desestacionalizada" ? '<span class="tg des">desest.</span>' : s.ajuste === "Tendencia-ciclo" ? '<span class="tg des">tendencia</span>' : s.ajuste === "Real (deflactada)" ? '<span class="tg real">real</span>' : "");
@@ -437,6 +443,16 @@ $("q").addEventListener("input", buscar);
 $("q").addEventListener("focus", buscar);
 document.addEventListener("click", e => { if (!e.target.closest(".buscador")) $("resultados").hidden = true; });
 $("resultados").addEventListener("click", e => {
+  // Agregar todas las que entren: útil para las aperturas (las letras del EMAE, las divisiones del IPC).
+  if (e.target.closest("[data-todas]")) {
+    const ids = [...$("resultados").querySelectorAll("[data-add]")].map(b => b.dataset.add);
+    const suman = ids.filter(id => !E.sel.includes(id)).slice(0, 8 - E.sel.length);
+    if (!suman.length) return toast("Hasta 8 series por gráfico.");
+    E.sel = E.sel.concat(suman);
+    if (ids.length > suman.length) toast(`Agregué ${suman.length}: el gráfico admite 8 series.`);
+    $("resultados").hidden = true; actualizar();
+    return;
+  }
   const b = e.target.closest("[data-add]"); if (!b) return;
   if (E.sel.length >= 8) return toast("Hasta 8 series por gráfico.");
   E.sel.push(b.dataset.add); $("q").value = ""; $("resultados").hidden = true; actualizar();

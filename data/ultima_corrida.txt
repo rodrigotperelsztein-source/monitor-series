@@ -54,7 +54,7 @@
 [salarios]
   sin cambios en el archivo
 [ripte]
-  actualizada: último período 2026-08 → 2026-09; valores revisados: 0
+  sin cambios en el archivo
 [salarios_ramas]
   archivo distinto pero mismos datos
 [remuneraciones_provincias]
@@ -78,8 +78,8 @@
 [itcrm_mensual]
   sin cambios en el archivo
 [bcra]
-  actualizada: último período 2026-11 → 2026-11-13; valores revisados: 82
-  (tardó 66 s)
+  archivo distinto pero mismos datos
+  (tardó 50 s)
 [imig]
   sin cambios en el archivo
 [recaudacion]
@@ -99,7 +99,7 @@
 [refinados]
   archivo distinto pero mismos datos
 [acciones_energia]
-  actualizada: último período 2026-11 → 2026-11-12; valores revisados: 0
+  archivo distinto pero mismos datos
 [cammesa_balance]
   sin cambios en el archivo
 [cammesa_diaria]
@@ -107,25 +107,21 @@
 [cammesa_gu_actividad]
   sin cambios en el archivo
 [sube]
-  sin cambios en el archivo
+  actualizada: último período 2026-11 → 2026-11-11; valores revisados: 0
 [turismo]
   archivo distinto pero mismos datos
 [estimaciones_agricolas]
   archivo distinto pero mismos datos
 [camiones_puertos]
-  aviso: la página se titula 2026-10 pero sus filas son de 2026-11; se usa 2026-11.
-  aviso: 3 días sin dato en la fuente: ['2024-08-31', '2025-02-28', '2025-12-31']
-  aviso: en 1 días la suma por zonas no da el total: ['2026-10-27']
-  aviso: en 1 días la suma por productos no da el total: ['2024-09-26']
-  actualizada: último período 2026-11 → 2026-11-12; valores revisados: 0
+  sin cambios en el archivo
 [leche]
   sin cambios en el archivo
 [faena]
   sin cambios en el archivo
 [clima_amba]
-  actualizada: último período 2026-11 → 2026-11-06; valores revisados: 0
+  archivo distinto pero mismos datos
 [clima_amba_pronostico]
-  actualizada: último período 2026-11 → 2026-11-28; valores revisados: 350
+  actualizada: último período 2026-11 → 2026-11-28; valores revisados: 376
 [emae_letras_desest]
   sin cambios en las series de base
 [ipi_minero_desest]
@@ -135,7 +131,7 @@
 [salarios_real]
   sin cambios en las series de base
 [ripte_real]
-  recalculada: último período 2026-08 → 2026-09
+  sin cambios en las series de base
 [salarios_ramas_real]
   sin cambios en las series de base
 [remuneraciones_provincias_real]
@@ -145,9 +141,9 @@
 [remuneraciones_provincias_real_desest]
   sin cambios en las series de base
 [bcra_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [bcra_real]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [recaudacion_real]
   sin cambios en las series de base
 [ventas_combustibles_desest]
@@ -157,17 +153,17 @@
 [refinados_mensual]
   sin cambios en las series de base
 [acciones_energia_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [cammesa_gu_actividad_mensual]
   sin cambios en las series de base
 [sube_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-10 → 2026-10
 [sube_desest]
   sin cambios en las series de base
 [camiones_puertos_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [clima_amba_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 AVISO: INDEC tenía previsto publicar canasta_crianza el 12/11 y el dato todavía no entró.
 [catálogo de Monitor Argy]
   839 series

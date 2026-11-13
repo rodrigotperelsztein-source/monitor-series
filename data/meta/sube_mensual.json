@@ -5,7 +5,7 @@
   "pagina": "https://datos.transporte.gob.ar/dataset/sube-cantidad-de-transacciones-usos-por-fecha",
   "frecuencia": "M",
   "unidad": "Transacciones por mes",
-  "sha256": "ed1fbd180148619916af43ce43b2ab2daf030503db4424cd7a35363696c163e1",
+  "sha256": "04df56c0a55f36246f504f0a8363a61906b701987ba771ae63d85bf6f93a8ff1",
   "derivada_de": [
     "sube"
   ],
@@ -134,8 +134,8 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-11-12T07:46:42Z",
-  "calculado": "2026-11-12T07:46:42Z",
+  "descargado": "2026-11-13T12:22:21Z",
+  "calculado": "2026-11-13T12:22:21Z",
   "ultimo_periodo": "2026-10",
   "observaciones": 82
 }

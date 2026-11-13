@@ -1,0 +1,5 @@
+URL: https://monitorargy.com/api/v1/series/gini_ingreso
+Bytes: 2440
+
+Texto:
+  {"id":"gini_ingreso","nombre":"Coeficiente de Gini","descripcion":"Coeficiente de Gini del ingreso per cápita familiar de las personas, EPH, total de aglomerados urbanos (0 = igualdad perfecta, 1 = máxima desigualdad)","panel":"pobreza","unidad":"indice","decimales":3,"frecuencia":"Q","fuente":{"nom

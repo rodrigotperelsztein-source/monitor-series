@@ -1,0 +1,5 @@
+URL: https://monitorargy.com/api/v1/series/accesos_internet
+Bytes: 3073
+
+Texto:
+  {"id":"accesos_internet","nombre":"Accesos a internet","descripcion":"Accesos a internet totales (fijos y móviles, residenciales y de organizaciones), total país, miles de accesos","panel":"actividad","unidad":"miles","decimales":0,"frecuencia":"M","fuente":{"nombre":"INDEC — Accesos a internet","we

@@ -15,12 +15,15 @@ import requests
 API = "https://monitorargy.com/api/v1/series/{}"
 DESDE_DIARIAS = "2020-01-01"
 
-# id de Monitor Argy -> para qué se usa (solo documentación). Quedan solo los precios de mercado que todavía no tienen
-# fuente propia: dólar contado con liquidación, brecha y riesgo país. El resto ya sale de los organismos (ver README).
+# id de Monitor Argy -> para qué se usa (solo documentación). Quedan los precios de mercado que todavía no tienen
+# fuente propia (dólar contado con liquidación, brecha y riesgo país) y la liquidación de divisas del agro, que
+# Monitor Argy toma del archivo de CIARA-CEC: va un mes adelante de datos.gob.ar y con la historia ya revisada.
+# El resto ya sale de los organismos (ver README).
 SERIES = {
     "tc_ccl": "Dólar contado con liquidación (diario)",
     "brecha_ccl": "Brecha CCL vs. mayorista (diario)",
     "riesgo_pais": "Riesgo país (diario)",
+    "liquidacion_agro": "Liquidación de divisas del agro, CIARA-CEC (mensual)",
 }
 
 

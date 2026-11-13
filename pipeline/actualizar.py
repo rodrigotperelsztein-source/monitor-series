@@ -28,13 +28,15 @@ import pandas as pd
 import requests
 
 from pipeline import calendario, monitorargy
-from pipeline.fuentes import (acciones_energia, acciones_energia_mensual, acero, adefa, adimra, balanza_pagos, bcra,
+from pipeline.fuentes import (acciones_energia, acciones_energia_mensual, acero, adefa, adimra, balance_cambiario,
+    balanza_pagos, bcra,
     bcra_mensual, bcra_real, came, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria,
     cammesa_gu_actividad, cammesa_gu_actividad_mensual, canasta_crianza, canastas, capacidad_instalada, cemento,
     clima_amba, clima_amba_mensual, clima_amba_pronostico, comercio_exterior, comex_indices, construya,
     cuentas_nacionales, deuda, electrodomesticos, emae, emae_letras, emae_letras_desest, empleo_ramas, empleo_sipa,
     estimaciones_agricolas, faena, gas_entregado, icc, imig, ipc, ipi, ipi_minero, ipi_minero_desest, isac, issp,
-    itcrm, itcrm_mensual, leche, mayoristas, mercado_trabajo, patentamientos, patentamientos_desest, petroleo,
+    itcrm, itcrm_mensual, leche, liquidacion_agro, mayoristas, mercado_trabajo, patentamientos, patentamientos_desest,
+    petroleo,
     petroleo_mensual, pobreza, precios_mayoristas, provincias, recaudacion, recaudacion_real, refinados,
     refinados_mensual, rem, remuneraciones_provincias, remuneraciones_provincias_desest,
     remuneraciones_provincias_real, remuneraciones_provincias_real_desest, ripte, ripte_real, salarios,
@@ -55,7 +57,7 @@ REGISTRO = [
         remuneraciones_provincias, remuneraciones_provincias_real, remuneraciones_provincias_desest,
         remuneraciones_provincias_real_desest]),
     ("Empleo y pobreza", [empleo_sipa, empleo_ramas, mercado_trabajo, pobreza]),
-    ("Comercio exterior", [comercio_exterior, comex_indices, balanza_pagos]),
+    ("Comercio exterior", [comercio_exterior, comex_indices, balanza_pagos, balance_cambiario, liquidacion_agro]),
     ("Tipo de cambio", [itcrm, itcrm_mensual]),
     ("Dinero, bancos y tasas", [bcra, bcra_mensual, bcra_real]),
     ("Finanzas públicas", [imig, recaudacion, recaudacion_real, deuda, provincias]),

@@ -93,6 +93,12 @@ def _periodo(fila: list, anio: int | None) -> tuple[pd.Timestamp | None, int | N
                     anio = int(m.group(1))
                     break
             return (pd.Timestamp(anio, mes, 1) if anio else None), anio
+    # Algunos cuadros (energía, accesos a internet) escriben el año en la fila del primer trimestre, no en la de
+    # enero: una fila sin mes que empiece con un año al ras fija el año de los meses que siguen.
+    for v in fila[:1]:
+        m = re.fullmatch(r"((?:19|20)\d\d)\*?", str(v).strip().split(".")[0]) if pd.notna(v) else None
+        if m:
+            return None, int(m.group(1))
     return None, anio
 
 

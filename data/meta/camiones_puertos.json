@@ -1,11 +1,11 @@
 {
   "id": "camiones_puertos",
   "nombre": "Entrada diaria de camiones con granos a puertos, fábricas y molinos",
-  "url": "https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/logistica/_archivos/000023_Posici%C3%B3n%20de%20Camiones%20y%20Vagones/000020_Entrada%20diaria%20de%20camiones%20y%20vagones%20a%20puertos,%20f%C3%A1bricas%20y%20molinos%20(por%20zona%20portuaria%20y%20por%20producto).php",
+  "url": "https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/logistica/_archivos/000023_Posici%C3%B3n%20de%20Camiones%20y%20Vagones/000020_Entrada%20diaria%20de%20camiones%20y%20vagones%20a%20puertos,%20f%C3%A1bricas%20y%20molinos%20(por%20zona%20portuaria%20y%20por%20producto).php https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/informes/entrada_camiones/2026/total_mensual_oct_2026.pdf",
   "pagina": "https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/logistica/_archivos/000023_Posici%C3%B3n%20de%20Camiones%20y%20Vagones/000020_Entrada%20diaria%20de%20camiones%20y%20vagones%20a%20puertos,%20f%C3%A1bricas%20y%20molinos%20(por%20zona%20portuaria%20y%20por%20producto).php",
   "frecuencia": "D",
   "unidad": "Camiones por día",
-  "sha256": "7d5b1b0e9f19224e595c3ba1279824283456fe91d2de13b252348d92407e54f7",
+  "sha256": "4c49fd57d4517e1b56d732d516bfec7bdd440bc3a0e8b22544b2682077a4d21a",
   "columnas": {
     "total": {
       "nombre": "Camiones descargados por día, total",
@@ -70,8 +70,8 @@
   },
   "dias_sin_dato_en_lo_bajado": [],
   "totales_corregidos_en_lo_bajado": [],
-  "descargado": "2026-11-11T14:03:57Z",
-  "ultimo_periodo": "2026-11-06",
-  "observaciones": 1041,
+  "descargado": "2026-11-13T07:23:03Z",
+  "ultimo_periodo": "2026-11-12",
+  "observaciones": 1047,
   "original_guardado": null
 }

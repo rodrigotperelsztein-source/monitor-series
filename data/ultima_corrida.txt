@@ -1,8 +1,9 @@
-[petroleo]
-  archivo distinto pero mismos datos
-[refinados]
-  archivo distinto pero mismos datos
-[petroleo_mensual]
-  sin cambios en las series de base
-[refinados_mensual]
-  sin cambios en las series de base
+Publicaciones previstas hoy y todavía no descargadas: capacidad_instalada, salarios
+[capacidad_instalada]
+Aviso: nivel_general tiene 1 meses revisados respecto de la versión guardada.
+Aviso: metalmecanica tiene 1 meses revisados respecto de la versión guardada.
+  actualizada: último período 2026-08 → 2026-09; valores revisados: 2
+[salarios]
+  actualizada: último período 2026-08 → 2026-09; valores revisados: 0
+[salarios_real]
+  recalculada: último período 2026-08 → 2026-09

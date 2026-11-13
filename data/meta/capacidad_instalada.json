@@ -1,11 +1,11 @@
 {
   "id": "capacidad_instalada",
   "nombre": "Utilización de la capacidad instalada en la industria (INDEC)",
-  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_capacidad_10_26.xls",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_capacidad_11_26.xls",
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-6-15",
   "frecuencia": "M",
   "unidad": "% de la capacidad instalada",
-  "sha256": "e70f40215b2ed45742eed643aca27870218ebd226990fdf67aa26e9eeebf2693",
+  "sha256": "2ca049c5047c79a8613cf199a86f13f3597c7064a74420d826e04b84103c0935",
   "columnas": {
     "nivel_general": {
       "nombre": "Capacidad instalada utilizada: nivel general",
@@ -73,8 +73,8 @@
       "unidad": "% de la capacidad instalada"
     }
   },
-  "descargado": "2026-11-05T18:58:10Z",
-  "ultimo_periodo": "2026-08",
-  "observaciones": 128,
-  "original_guardado": "data/raw/capacidad_instalada/2026-11-05_e70f4021.xls"
+  "descargado": "2026-11-13T19:33:26Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 129,
+  "original_guardado": "data/raw/capacidad_instalada/2026-11-13_2ca049c5.xls"
 }

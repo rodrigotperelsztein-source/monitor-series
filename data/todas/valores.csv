@@ -331770,6 +331770,7 @@ fecha,id_serie,valor
 2026-06-01,capacidad_instalada.alimentos,64.400000
 2026-07-01,capacidad_instalada.alimentos,66.000000
 2026-08-01,capacidad_instalada.alimentos,66.400000
+2026-09-01,capacidad_instalada.alimentos,69.500000
 2016-01-01,capacidad_instalada.automotriz,20.400000
 2016-02-01,capacidad_instalada.automotriz,43.100000
 2016-03-01,capacidad_instalada.automotriz,55.500000
@@ -331898,6 +331899,7 @@ fecha,id_serie,valor
 2026-06-01,capacidad_instalada.automotriz,45.500000
 2026-07-01,capacidad_instalada.automotriz,39.000000
 2026-08-01,capacidad_instalada.automotriz,46.200000
+2026-09-01,capacidad_instalada.automotriz,49.500000
 2016-01-01,capacidad_instalada.caucho_plastico,58.800000
 2016-02-01,capacidad_instalada.caucho_plastico,53.600000
 2016-03-01,capacidad_instalada.caucho_plastico,56.200000
@@ -332026,6 +332028,7 @@ fecha,id_serie,valor
 2026-06-01,capacidad_instalada.caucho_plastico,41.000000
 2026-07-01,capacidad_instalada.caucho_plastico,40.200000
 2026-08-01,capacidad_instalada.caucho_plastico,40.900000
+2026-09-01,capacidad_instalada.caucho_plastico,44.800000
 2016-01-01,capacidad_instalada.edicion,58.300000
 2016-02-01,capacidad_instalada.edicion,53.600000
 2016-03-01,capacidad_instalada.edicion,55.000000
@@ -332154,6 +332157,7 @@ fecha,id_serie,valor
 2026-06-01,capacidad_instalada.edicion,53.500000
 2026-07-01,capacidad_instalada.edicion,54.600000
 2026-08-01,capacidad_instalada.edicion,53.400000
+2026-09-01,capacidad_instalada.edicion,59.800000
 2016-01-01,capacidad_instalada.metalicas_basicas,65.200000
 2016-02-01,capacidad_instalada.metalicas_basicas,70.700000
 2016-03-01,capacidad_instalada.metalicas_basicas,63.600000
@@ -332282,6 +332286,7 @@ fecha,id_serie,valor
 2026-06-01,capacidad_instalada.metalicas_basicas,68.700000
 2026-07-01,capacidad_instalada.metalicas_basicas,71.800000
 2026-08-01,capacidad_instalada.metalicas_basicas,70.100000
+2026-09-01,capacidad_instalada.metalicas_basicas,69.200000
 2016-01-01,capacidad_instalada.metalmecanica,52.200000
 2016-02-01,capacidad_instalada.metalmecanica,51.100000
 2016-03-01,capacidad_instalada.metalmecanica,53.100000
@@ -332409,7 +332414,8 @@ fecha,id_serie,valor
 2026-05-01,capacidad_instalada.metalmecanica,38.700000
 2026-06-01,capacidad_instalada.metalmecanica,41.500000
 2026-07-01,capacidad_instalada.metalmecanica,38.300000
-2026-08-01,capacidad_instalada.metalmecanica,35.900000
+2026-08-01,capacidad_instalada.metalmecanica,39.600000
+2026-09-01,capacidad_instalada.metalmecanica,40.500000
 2016-01-01,capacidad_instalada.minerales_no_metalicos,63.200000
 2016-02-01,capacidad_instalada.minerales_no_metalicos,73.100000
 2016-03-01,capacidad_instalada.minerales_no_metalicos,75.400000
@@ -332538,6 +332544,7 @@ fecha,id_serie,valor
 2026-06-01,capacidad_instalada.minerales_no_metalicos,51.800000
 2026-07-01,capacidad_instalada.minerales_no_metalicos,48.600000
 2026-08-01,capacidad_instalada.minerales_no_metalicos,54.500000
+2026-09-01,capacidad_instalada.minerales_no_metalicos,61.400000
 2016-01-01,capacidad_instalada.nivel_general,62.900000
 2016-02-01,capacidad_instalada.nivel_general,64.200000
 2016-03-01,capacidad_instalada.nivel_general,64.800000
@@ -332665,7 +332672,8 @@ fecha,id_serie,valor
 2026-05-01,capacidad_instalada.nivel_general,58.300000
 2026-06-01,capacidad_instalada.nivel_general,59.100000
 2026-07-01,capacidad_instalada.nivel_general,58.200000
-2026-08-01,capacidad_instalada.nivel_general,58.500000
+2026-08-01,capacidad_instalada.nivel_general,59.100000
+2026-09-01,capacidad_instalada.nivel_general,60.100000
 2016-01-01,capacidad_instalada.papel,84.400000
 2016-02-01,capacidad_instalada.papel,79.000000
 2016-03-01,capacidad_instalada.papel,81.400000
@@ -332794,6 +332802,7 @@ fecha,id_serie,valor
 2026-06-01,capacidad_instalada.papel,66.200000
 2026-07-01,capacidad_instalada.papel,69.600000
 2026-08-01,capacidad_instalada.papel,61.300000
+2026-09-01,capacidad_instalada.papel,70.700000
 2016-01-01,capacidad_instalada.quimicos,66.100000
 2016-02-01,capacidad_instalada.quimicos,66.800000
 2016-03-01,capacidad_instalada.quimicos,66.300000
@@ -332922,6 +332931,7 @@ fecha,id_serie,valor
 2026-06-01,capacidad_instalada.quimicos,67.000000
 2026-07-01,capacidad_instalada.quimicos,61.400000
 2026-08-01,capacidad_instalada.quimicos,65.200000
+2026-09-01,capacidad_instalada.quimicos,60.000000
 2016-01-01,capacidad_instalada.refinacion_petroleo,85.100000
 2016-02-01,capacidad_instalada.refinacion_petroleo,86.800000
 2016-03-01,capacidad_instalada.refinacion_petroleo,83.400000
@@ -333050,6 +333060,7 @@ fecha,id_serie,valor
 2026-06-01,capacidad_instalada.refinacion_petroleo,86.700000
 2026-07-01,capacidad_instalada.refinacion_petroleo,89.900000
 2026-08-01,capacidad_instalada.refinacion_petroleo,88.800000
+2026-09-01,capacidad_instalada.refinacion_petroleo,82.900000
 2016-01-01,capacidad_instalada.tabaco,83.900000
 2016-02-01,capacidad_instalada.tabaco,81.300000
 2016-03-01,capacidad_instalada.tabaco,84.100000
@@ -333178,6 +333189,7 @@ fecha,id_serie,valor
 2026-06-01,capacidad_instalada.tabaco,46.300000
 2026-07-01,capacidad_instalada.tabaco,45.200000
 2026-08-01,capacidad_instalada.tabaco,44.400000
+2026-09-01,capacidad_instalada.tabaco,50.200000
 2016-01-01,capacidad_instalada.textiles,66.900000
 2016-02-01,capacidad_instalada.textiles,72.200000
 2016-03-01,capacidad_instalada.textiles,73.500000
@@ -333306,6 +333318,7 @@ fecha,id_serie,valor
 2026-06-01,capacidad_instalada.textiles,46.600000
 2026-07-01,capacidad_instalada.textiles,45.300000
 2026-08-01,capacidad_instalada.textiles,44.600000
+2026-09-01,capacidad_instalada.textiles,44.100000
 1994-01-01,cemento.asfalto,42.994000
 1994-02-01,cemento.asfalto,44.475000
 1994-03-01,cemento.asfalto,41.049000
@@ -802496,6 +802509,7 @@ fecha,id_serie,valor
 2026-06-01,salarios.no_registrado,11220.020000
 2026-07-01,salarios.no_registrado,11656.040000
 2026-08-01,salarios.no_registrado,12005.540000
+2026-09-01,salarios.no_registrado,11910.130000
 2017-10-01,salarios.no_registrado_var_ia,28.500000
 2017-11-01,salarios.no_registrado_var_ia,30.993746
 2017-12-01,salarios.no_registrado_var_ia,31.501938
@@ -802603,6 +802617,7 @@ fecha,id_serie,valor
 2026-06-01,salarios.no_registrado_var_ia,59.460224
 2026-07-01,salarios.no_registrado_var_ia,59.937540
 2026-08-01,salarios.no_registrado_var_ia,55.355211
+2026-09-01,salarios.no_registrado_var_ia,45.771510
 2016-11-01,salarios.no_registrado_var_m,0.730000
 2016-12-01,salarios.no_registrado_var_m,2.452100
 2017-01-01,salarios.no_registrado_var_m,-1.162791
@@ -802721,6 +802736,7 @@ fecha,id_serie,valor
 2026-06-01,salarios.no_registrado_var_m,4.434843
 2026-07-01,salarios.no_registrado_var_m,3.886089
 2026-08-01,salarios.no_registrado_var_m,2.998445
+2026-09-01,salarios.no_registrado_var_m,-0.794716
 2015-10-01,salarios.privado_registrado,73.970000
 2015-11-01,salarios.privado_registrado,75.950000
 2015-12-01,salarios.privado_registrado,77.360000
@@ -802852,6 +802868,7 @@ fecha,id_serie,valor
 2026-06-01,salarios.privado_registrado,9662.320000
 2026-07-01,salarios.privado_registrado,9879.870000
 2026-08-01,salarios.privado_registrado,10159.650000
+2026-09-01,salarios.privado_registrado,10357.140000
 2016-10-01,salarios.privado_registrado_var_ia,35.189942
 2016-11-01,salarios.privado_registrado_var_ia,34.035550
 2016-12-01,salarios.privado_registrado_var_ia,33.001551
@@ -802971,6 +802988,7 @@ fecha,id_serie,valor
 2026-06-01,salarios.privado_registrado_var_ia,29.573476
 2026-07-01,salarios.privado_registrado_var_ia,29.673934
 2026-08-01,salarios.privado_registrado_var_ia,30.420132
+2026-09-01,salarios.privado_registrado_var_ia,31.154504
 2015-11-01,salarios.privado_registrado_var_m,2.676761
 2015-12-01,salarios.privado_registrado_var_m,1.856485
 2016-01-01,salarios.privado_registrado_var_m,2.029473
@@ -803101,6 +803119,7 @@ fecha,id_serie,valor
 2026-06-01,salarios.privado_registrado_var_m,1.935680
 2026-07-01,salarios.privado_registrado_var_m,2.251530
 2026-08-01,salarios.privado_registrado_var_m,2.831819
+2026-09-01,salarios.privado_registrado_var_m,1.943866
 2015-10-01,salarios.publico,75.240000
 2015-11-01,salarios.publico,76.280000
 2015-12-01,salarios.publico,77.180000
@@ -803232,6 +803251,7 @@ fecha,id_serie,valor
 2026-06-01,salarios.publico,7889.420000
 2026-07-01,salarios.publico,8123.880000
 2026-08-01,salarios.publico,8307.480000
+2026-09-01,salarios.publico,8457.140000
 2016-10-01,salarios.publico_var_ia,32.908028
 2016-11-01,salarios.publico_var_ia,32.695333
 2016-12-01,salarios.publico_var_ia,32.637989
@@ -803351,6 +803371,7 @@ fecha,id_serie,valor
 2026-06-01,salarios.publico_var_ia,30.106220
 2026-07-01,salarios.publico_var_ia,30.985534
 2026-08-01,salarios.publico_var_ia,30.307075
+2026-09-01,salarios.publico_var_ia,31.160340
 2015-11-01,salarios.publico_var_m,1.382243
 2015-12-01,salarios.publico_var_m,1.179864
 2016-01-01,salarios.publico_var_m,0.362788
@@ -803481,6 +803502,7 @@ fecha,id_serie,valor
 2026-06-01,salarios.publico_var_m,3.423721
 2026-07-01,salarios.publico_var_m,2.971828
 2026-08-01,salarios.publico_var_m,2.260004
+2026-09-01,salarios.publico_var_m,1.801509
 2016-10-01,salarios.total,100.000000
 2016-11-01,salarios.total,101.410000
 2016-12-01,salarios.total,102.790000
@@ -803600,6 +803622,7 @@ fecha,id_serie,valor
 2026-06-01,salarios.total,9442.500000
 2026-07-01,salarios.total,9708.640000
 2026-08-01,salarios.total,9973.550000
+2026-09-01,salarios.total,10098.360000
 2015-10-01,salarios.total_registrado,74.440000
 2015-11-01,salarios.total_registrado,76.070000
 2015-12-01,salarios.total_registrado,77.290000
@@ -803731,6 +803754,7 @@ fecha,id_serie,valor
 2026-06-01,salarios.total_registrado,9000.060000
 2026-07-01,salarios.total_registrado,9223.920000
 2026-08-01,salarios.total_registrado,9467.780000
+2026-09-01,salarios.total_registrado,9647.400000
 2016-10-01,salarios.total_registrado_var_ia,34.336378
 2016-11-01,salarios.total_registrado_var_ia,33.534902
 2016-12-01,salarios.total_registrado_var_ia,32.863242
@@ -803850,6 +803874,7 @@ fecha,id_serie,valor
 2026-06-01,salarios.total_registrado_var_ia,29.747427
 2026-07-01,salarios.total_registrado_var_ia,30.102557
 2026-08-01,salarios.total_registrado_var_ia,30.383075
+2026-09-01,salarios.total_registrado_var_ia,31.156500
 2015-11-01,salarios.total_registrado_var_m,2.189683
 2015-12-01,salarios.total_registrado_var_m,1.603786
 2016-01-01,salarios.total_registrado_var_m,1.410273
@@ -803980,6 +804005,7 @@ fecha,id_serie,valor
 2026-06-01,salarios.total_registrado_var_m,2.418191
 2026-07-01,salarios.total_registrado_var_m,2.487317
 2026-08-01,salarios.total_registrado_var_m,2.643778
+2026-09-01,salarios.total_registrado_var_m,1.897171
 2017-10-01,salarios.total_var_ia,27.620000
 2017-11-01,salarios.total_var_ia,27.807908
 2017-12-01,salarios.total_var_ia,27.473490
@@ -804087,6 +804113,7 @@ fecha,id_serie,valor
 2026-06-01,salarios.total_var_ia,35.737142
 2026-07-01,salarios.total_var_ia,36.180957
 2026-08-01,salarios.total_var_ia,35.612637
+2026-09-01,salarios.total_var_ia,34.321890
 2016-11-01,salarios.total_var_m,1.410000
 2016-12-01,salarios.total_var_m,1.360813
 2017-01-01,salarios.total_var_m,1.546843
@@ -804205,6 +804232,7 @@ fecha,id_serie,valor
 2026-06-01,salarios.total_var_m,2.888730
 2026-07-01,salarios.total_var_m,2.818533
 2026-08-01,salarios.total_var_m,2.728601
+2026-09-01,salarios.total_var_m,1.251410
 1996-01-01,salarios_ramas.agro,394.214632
 1996-02-01,salarios_ramas.agro,395.064021
 1996-03-01,salarios_ramas.agro,392.908396
@@ -820017,6 +820045,7 @@ fecha,id_serie,valor
 2026-06-01,salarios_real.no_registrado_real,94.872575
 2026-07-01,salarios_real.no_registrado_real,96.519212
 2026-08-01,salarios_real.no_registrado_real,97.790737
+2026-09-01,salarios_real.no_registrado_real,95.173298
 2017-12-01,salarios_real.no_registrado_real_var_ia,5.373858
 2018-01-01,salarios_real.no_registrado_real_var_ia,7.108390
 2018-02-01,salarios_real.no_registrado_real_var_ia,4.980710
@@ -820122,6 +820151,7 @@ fecha,id_serie,valor
 2026-06-01,salarios_real.no_registrado_real_var_ia,19.403169
 2026-07-01,salarios_real.no_registrado_real_var_ia,19.511841
 2026-08-01,salarios_real.no_registrado_real_var_ia,16.335066
+2026-09-01,salarios_real.no_registrado_real_var_ia,9.310916
 2017-01-01,salarios_real.no_registrado_real_var_m,-2.705780
 2017-02-01,salarios_real.no_registrado_real_var_m,0.798628
 2017-03-01,salarios_real.no_registrado_real_var_m,2.465316
@@ -820238,6 +820268,7 @@ fecha,id_serie,valor
 2026-06-01,salarios_real.no_registrado_real_var_m,2.500785
 2026-07-01,salarios_real.no_registrado_real_var_m,1.735630
 2026-08-01,salarios_real.no_registrado_real_var_m,1.317381
+2026-09-01,salarios_real.no_registrado_real_var_m,-2.676572
 2016-12-01,salarios_real.privado_registrado_real,102.890000
 2017-01-01,salarios_real.privado_registrado_real,104.679882
 2017-02-01,salarios_real.privado_registrado_real,103.861759
@@ -820355,6 +820386,7 @@ fecha,id_serie,valor
 2026-06-01,salarios_real.privado_registrado_real,81.701207
 2026-07-01,salarios_real.privado_registrado_real,81.811427
 2026-08-01,salarios_real.privado_registrado_real,82.755100
+2026-09-01,salarios_real.privado_registrado_real,82.763427
 2017-12-01,salarios_real.privado_registrado_real_var_ia,2.030968
 2018-01-01,salarios_real.privado_registrado_real_var_ia,0.239506
 2018-02-01,salarios_real.privado_registrado_real_var_ia,-0.572408
@@ -820460,6 +820492,7 @@ fecha,id_serie,valor
 2026-06-01,salarios_real.privado_registrado_real_var_ia,-2.975907
 2026-07-01,salarios_real.privado_registrado_real_var_ia,-3.102358
 2026-08-01,salarios_real.privado_registrado_real_var_ia,-2.337138
+2026-09-01,salarios_real.privado_registrado_real_var_ia,-1.650062
 2017-01-01,salarios_real.privado_registrado_real_var_m,1.739607
 2017-02-01,salarios_real.privado_registrado_real_var_m,-0.781547
 2017-03-01,salarios_real.privado_registrado_real_var_m,-0.895051
@@ -820576,6 +820609,7 @@ fecha,id_serie,valor
 2026-06-01,salarios_real.privado_registrado_real_var_m,0.047905
 2026-07-01,salarios_real.privado_registrado_real_var_m,0.134906
 2026-08-01,salarios_real.privado_registrado_real_var_m,1.153474
+2026-09-01,salarios_real.privado_registrado_real_var_m,0.010061
 2016-12-01,salarios_real.publico_real,102.370000
 2017-01-01,salarios_real.publico_real,101.077020
 2017-02-01,salarios_real.publico_real,99.415639
@@ -820693,6 +820727,7 @@ fecha,id_serie,valor
 2026-06-01,salarios_real.publico_real,66.710183
 2026-07-01,salarios_real.publico_real,67.270745
 2026-08-01,salarios_real.publico_real,67.668309
+2026-09-01,salarios_real.publico_real,67.580614
 2017-12-01,salarios_real.publico_real_var_ia,0.146176
 2018-01-01,salarios_real.publico_real_var_ia,0.072927
 2018-02-01,salarios_real.publico_real_var_ia,0.015022
@@ -820798,6 +820833,7 @@ fecha,id_serie,valor
 2026-06-01,salarios_real.publico_real_var_ia,-2.576990
 2026-07-01,salarios_real.publico_real_var_ia,-2.122277
 2026-08-01,salarios_real.publico_real_var_ia,-2.421798
+2026-09-01,salarios_real.publico_real_var_ia,-1.645686
 2017-01-01,salarios_real.publico_real_var_m,-1.263046
 2017-02-01,salarios_real.publico_real_var_m,-1.643678
 2017-03-01,salarios_real.publico_real_var_m,1.622978
@@ -820914,6 +820950,7 @@ fecha,id_serie,valor
 2026-06-01,salarios_real.publico_real_var_m,1.508388
 2026-07-01,salarios_real.publico_real_var_m,0.840294
 2026-08-01,salarios_real.publico_real_var_m,0.590992
+2026-09-01,salarios_real.publico_real_var_m,-0.129595
 2016-12-01,salarios_real.total_real,102.790000
 2017-01-01,salarios_real.total_real,102.750480
 2017-02-01,salarios_real.total_real,102.000368
@@ -821031,6 +821068,7 @@ fecha,id_serie,valor
 2026-06-01,salarios_real.total_real,79.842486
 2026-07-01,salarios_real.total_real,80.393537
 2026-08-01,salarios_real.total_real,81.239229
+2026-09-01,salarios_real.total_real,80.695527
 2017-12-01,salarios_real.total_real_var_ia,2.145821
 2018-01-01,salarios_real.total_real_var_ia,1.531636
 2018-02-01,salarios_real.total_real_var_ia,0.699301
@@ -821136,6 +821174,7 @@ fecha,id_serie,valor
 2026-06-01,salarios_real.total_real_var_ia,1.639422
 2026-07-01,salarios_real.total_real_var_ia,1.759955
 2026-08-01,salarios_real.total_real_var_ia,1.551180
+2026-09-01,salarios_real.total_real_var_ia,0.725093
 2017-01-01,salarios_real.total_real_var_m,-0.038447
 2017-02-01,salarios_real.total_real_var_m,-0.730032
 2017-03-01,salarios_real.total_real_var_m,0.507114
@@ -821252,6 +821291,7 @@ fecha,id_serie,valor
 2026-06-01,salarios_real.total_real_var_m,0.983305
 2026-07-01,salarios_real.total_real_var_m,0.690172
 2026-08-01,salarios_real.total_real_var_m,1.051940
+2026-09-01,salarios_real.total_real_var_m,-0.669259
 2016-12-01,salarios_real.total_registrado_real,102.690000
 2017-01-01,salarios_real.total_registrado_real,103.341113
 2017-02-01,salarios_real.total_registrado_real,102.202903
@@ -821369,6 +821409,7 @@ fecha,id_serie,valor
 2026-06-01,salarios_real.total_registrado_real,76.101368
 2026-07-01,salarios_real.total_registrado_real,76.379756
 2026-08-01,salarios_real.total_registrado_real,77.119495
+2026-09-01,salarios_real.total_registrado_real,77.091927
 2017-12-01,salarios_real.total_registrado_real_var_ia,1.332317
 2018-01-01,salarios_real.total_registrado_real_var_ia,0.174092
 2018-02-01,salarios_real.total_registrado_real_var_ia,-0.365399
@@ -821474,6 +821515,7 @@ fecha,id_serie,valor
 2026-06-01,salarios_real.total_registrado_real_var_ia,-2.845653
 2026-07-01,salarios_real.total_registrado_real_var_ia,-2.782073
 2026-08-01,salarios_real.total_registrado_real_var_ia,-2.364887
+2026-09-01,salarios_real.total_registrado_real_var_ia,-1.648565
 2017-01-01,salarios_real.total_registrado_real_var_m,0.634057
 2017-02-01,salarios_real.total_registrado_real_var_m,-1.101411
 2017-03-01,salarios_real.total_registrado_real_var_m,0.012970
@@ -821590,6 +821632,7 @@ fecha,id_serie,valor
 2026-06-01,salarios_real.total_registrado_real_var_m,0.521480
 2026-07-01,salarios_real.total_registrado_real_var_m,0.365812
 2026-08-01,salarios_real.total_registrado_real_var_m,0.968502
+2026-09-01,salarios_real.total_registrado_real_var_m,-0.035748
 2017-01-01,shoppings.indice,85.431183
 2017-02-01,shoppings.indice,78.683914
 2017-03-01,shoppings.indice,86.594582

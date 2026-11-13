@@ -1,0 +1,60 @@
+{
+  "id": "balance_cambiario",
+  "nombre": "Cobros de exportaciones y pagos de importaciones de bienes (BCRA)",
+  "url": "https://infra.datos.gob.ar/catalog/sspm/dataset/183/distribution/183.1/download/cobros-pagos-bienes-modalidad.csv",
+  "pagina": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Mercado_de_cambios.asp",
+  "frecuencia": "M",
+  "unidad": "musd",
+  "sha256": "72046f675353e42fb02a38afaeaa86b40ed1d7129e4a5756a8c36bad8aeafe65",
+  "columnas": {
+    "cobros_expo": {
+      "nombre": "Cobros de exportaciones de bienes",
+      "tipo": "nivel",
+      "unidad": "musd"
+    },
+    "pagos_impo": {
+      "nombre": "Pagos de importaciones de bienes",
+      "tipo": "nivel",
+      "unidad": "musd"
+    },
+    "saldo_bienes": {
+      "nombre": "Saldo de bienes del balance cambiario (cobros menos pagos)",
+      "tipo": "nivel",
+      "unidad": "musd"
+    },
+    "cobros_expo_anticipados": {
+      "nombre": "Cobros anticipados de exportaciones",
+      "tipo": "nivel",
+      "unidad": "musd"
+    },
+    "cobros_expo_prefinanciaciones": {
+      "nombre": "Prefinanciaciones de exportaciones del exterior",
+      "tipo": "nivel",
+      "unidad": "musd"
+    },
+    "pagos_impo_anticipados": {
+      "nombre": "Pagos anticipados de importaciones",
+      "tipo": "nivel",
+      "unidad": "musd"
+    },
+    "pagos_impo_vista": {
+      "nombre": "Pagos a la vista de importaciones",
+      "tipo": "nivel",
+      "unidad": "musd"
+    },
+    "cobros_expo_var_ia": {
+      "nombre": "Cobros de exportaciones de bienes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "pct"
+    },
+    "pagos_impo_var_ia": {
+      "nombre": "Pagos de importaciones de bienes, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "pct"
+    }
+  },
+  "descargado": "2026-11-13T13:16:14Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 284,
+  "original_guardado": "data/raw/balance_cambiario/2026-11-13_72046f67.csv"
+}

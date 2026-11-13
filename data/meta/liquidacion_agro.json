@@ -1,0 +1,30 @@
+{
+  "id": "liquidacion_agro",
+  "nombre": "Liquidación de divisas del agro (CIARA-CEC)",
+  "url": "https://infra.datos.gob.ar/catalog/sspm/dataset/349/distribution/349.2/download/liquidacion-divisas-exportaciones-oleaginosas-cereales-mensual.csv",
+  "pagina": "https://www.ciaracec.com.ar/estadisticas/",
+  "frecuencia": "M",
+  "unidad": "musd",
+  "sha256": "cd6280da497efe15717dd1cc402c2215c117133eb108ebb90cc6d54f720c45ba",
+  "columnas": {
+    "liquidacion": {
+      "nombre": "Liquidación de divisas del agro, monto del mes",
+      "tipo": "nivel",
+      "unidad": "musd"
+    },
+    "liquidacion_promedio_diario": {
+      "nombre": "Liquidación de divisas del agro, promedio por día hábil",
+      "tipo": "nivel",
+      "unidad": "musd"
+    },
+    "liquidacion_var_ia": {
+      "nombre": "Liquidación de divisas del agro, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "pct"
+    }
+  },
+  "descargado": "2026-11-13T13:16:14Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 285,
+  "original_guardado": "data/raw/liquidacion_agro/2026-11-13_cd6280da.csv"
+}

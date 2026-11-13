@@ -169,16 +169,22 @@ compartir la vista. Usa Apache ECharts 5.5.1, alojado en el propio repositorio (
 
 ### Power BI: elegir solo algunas series (recomendado)
 
-`data/todas/series.csv` clasifica cada serie para buscarla y filtrarla: `categoria` (Actividad económica, Precios,
-Salarios, Transporte, Agro y puertos, Electricidad, Combustibles, Petróleo y precios internacionales),
-`organismo_corto` (la fuente), `dato` (Nivel, Variación mensual, interanual o acumulada) y `ajuste` (Original,
-Desestacionalizada, Tendencia-ciclo o Real). Las dos páginas usan esos campos en sus filtros.
+`data/todas/series.csv` clasifica cada serie para buscarla y filtrarla, de lo general a lo particular:
+`categoria` (Actividad económica, Precios, Salarios, Comercio exterior, Combustibles, Electricidad…),
+`organismo_corto` (el organismo: INDEC, BCRA, ARCA…), `fuente_nombre` (la publicación: «IPC: nivel general,
+divisiones y categorías, por región»), `concepto` (el dato, sin la medida ni el ajuste: «IPC Nacional -
+Educación»), `dato` (Nivel, Variación mensual, interanual o acumulada), `ajuste` (Original, Desestacionalizada,
+Tendencia-ciclo o Real) y `frecuencia`. Las dos páginas encadenan esos campos en sus selectores, así que se puede
+llegar a una serie sin leer una lista larga.
 
-La página **[Selector de series](https://rodrigotperelsztein-source.github.io/monitor-series/)** muestra el catálogo
-completo (las series de este repositorio y las de Monitor Argy), con buscador y filtros. Se tildan las series y la
-página arma la lista para pegar en el parámetro `SeriesElegidas` de Power BI; la consulta `Datos` baja solo esas
-(cada serie del repositorio tiene su archivo en `data/series/<id_serie>.csv`; las de Monitor Argy, prefijo `ma:`,
-salen de su API). La primera vez, la misma página da el código de las dos consultas.
+La página **[Selector de series](https://rodrigotperelsztein-source.github.io/monitor-series/)** muestra el catálogo,
+con buscador y filtros. Se tildan las series y la página arma la lista para pegar en el parámetro `SeriesElegidas`
+de Power BI; la consulta `Datos` baja solo esas, cada una de su archivo en `data/series/<id_serie>.csv`. La primera
+vez, la misma página da el código de las dos consultas.
+
+Las pocas series que todavía no tienen fuente propia se copian de Monitor Argy y entran en el mismo catálogo, con
+el prefijo `monitorargy.` y su origen indicado: se leen igual que cualquier otra. El catálogo completo de Monitor
+Argy no se ofrece acá, para no duplicar lo que ya está en su sitio.
 
 Para cambiar de series: elegir en la página, copiar la lista, pegarla en *Transformar datos > Administrar
 parámetros > SeriesElegidas* y actualizar.

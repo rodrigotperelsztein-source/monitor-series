@@ -416,6 +416,30 @@ def clasificar(fid: str, cid: str, tipo: str) -> tuple[str, str]:
     return dato, ajuste
 
 
+# Partes del nombre de una serie que describen la medida o el ajuste, no el dato: se sacan para quedarse con el
+# concepto, que es lo que se elige en los selectores de las páginas ("IPC Nacional - Educación", "IVA bruto").
+_PARENTESIS = re.compile(
+    r"(?i)\s*\((?:serie\s+)?(?:original|desestacionalizad[oa]|tendencia-?\s?ciclo|\d{4}\s*=\s*100)\)")
+_MEDIDA = re.compile(
+    r"(?i)^\(?\s*(?:"
+    r"(?:[ií]ndice|n[uú]meros? [ií]ndice)(?:\s+serie)?(?:\s+(?:original|desestacionalizad[oa]|tendencia-?\s?ciclo))?|"
+    r"nivel general|"
+    r"var\.?\s*%?\s*(?:mensual|interanual|acumulada(?:\s+del\s+a[ñn]o)?|anual|del mes|respecto.*)?|"
+    r"variaci[oó]n\s*%?\s*(?:mensual|interanual|acumulada|anual)?|"
+    r"(?:serie\s+)?(?:original|desestacionalizad[oa]|tendencia-?\s?ciclo)|"
+    r"en t[eé]rminos reales|a precios constantes|deflactad[oa]|reales?|"
+    r"promedio (?:mensual|diario|del mes)|total del mes"
+    r")\s*(?:\([^)]*\))?\s*\)?$")
+
+
+def concepto(nombre: str, fuente) -> str:
+    """El dato que mide la serie, sin la medida ni el ajuste. Si el nombre solo describe la medida (el EMAE, por
+    ejemplo, llama a sus columnas "Índice serie original"), se usa el nombre corto de la fuente."""
+    partes = re.split(r"\s+[-–]\s+|,\s+", _PARENTESIS.sub("", str(nombre)))
+    quedan = [p.strip() for p in partes if p.strip() and not _MEDIDA.match(p.strip())]
+    return " - ".join(quedan) or re.split(r"\s*[:(]", getattr(fuente, "NOMBRE", ""))[0].strip() or fuente.ID
+
+
 def organismo_corto(texto: str) -> str:
     """'INDEC (serie original); desestacionalización propia' -> 'INDEC'."""
     for sep in (" (", ";"):
@@ -459,6 +483,7 @@ def todas() -> None:
                 "serie": col["nombre"],
                 "tipo": col["tipo"],
                 "categoria": CATEGORIAS.get(fid, "Otras"),
+                "concepto": concepto(col["nombre"], fuente),
                 "dato": dato,
                 "ajuste": ajuste,
                 "original": "sí" if original else "no",
@@ -475,6 +500,7 @@ def todas() -> None:
                 "url_archivo": meta.get("url", ""),
                 "url_csv": f"{RAW}/data/series/{id_serie}.csv",
             })
+    series += espejo_ma(valores)
     if not series:
         return
     destino = DATA / "todas"
@@ -499,6 +525,60 @@ def todas() -> None:
     for viejo in carpeta.glob("*.csv"):
         if viejo.name not in vigentes:
             viejo.unlink()
+
+
+# Panel de Monitor Argy -> categoría de acá, para que las series copiadas aparezcan junto a las propias.
+_CAT_MA = {"Cambiario y reservas": "Tipo de cambio", "Tasas y riesgo país": "Dinero, bancos y tasas",
+           "Comercio exterior": "Comercio exterior"}
+
+
+def espejo_ma(valores: list) -> list[dict]:
+    """Las series copiadas de Monitor Argy, en el mismo catálogo que las propias.
+
+    Van con el prefijo "monitorargy." y se tratan como cualquier otra serie (se guardan en valores.csv y en
+    data/series/), así que las páginas y los ejemplos de Power BI no necesitan un caso aparte. Son las pocas que
+    todavía no tienen fuente propia: el catálogo completo de Monitor Argy no se ofrece acá, para no duplicar.
+    """
+    carpeta = DATA / "monitorargy" / "series"
+    meta = {s["id"]: s for s in leer_json(DATA / "monitorargy" / "catalogo.json") or []}
+    filas = []
+    for sid in monitorargy.SERIES:
+        p = carpeta / f"{sid}.csv"
+        if not p.exists():
+            continue
+        m = meta.get(sid, {})
+        puntos = pd.read_csv(p, parse_dates=["fecha"]).dropna()
+        if puntos.empty:
+            continue
+        id_serie = f"monitorargy.{sid}"
+        puntos.insert(1, "id_serie", id_serie)
+        valores.append(puntos[["fecha", "id_serie", "valor"]])
+        organismo = m.get("fuente", "Monitor Argy")
+        es_calculo = m.get("unidad") == "pct"  # la brecha es un cálculo de Monitor Argy; el resto, el dato publicado
+        filas.append({
+            "id_serie": id_serie,
+            "serie": m.get("nombre", sid),
+            "tipo": "variacion" if es_calculo else "nivel",
+            "categoria": _CAT_MA.get(m.get("panel", ""), "Otras"),
+            "concepto": m.get("nombre", sid),
+            "dato": "Otra variación" if es_calculo else "Nivel",
+            "ajuste": "Original",
+            "original": "no" if es_calculo else "sí",
+            "organismo_corto": organismo_corto(organismo),
+            "unidad": {"ars": "Pesos por dólar", "pb": "Puntos básicos", "pct": "%", "musd": "Millones de USD"}
+                      .get(m.get("unidad", ""), m.get("unidad", "")),
+            "frecuencia": m.get("frecuencia", "D"),
+            "fuente": "monitorargy",
+            "fuente_nombre": "Copiadas de Monitor Argy (sin fuente propia todavía)",
+            "organismo": organismo + " (vía Monitor Argy)",
+            "primer_periodo": f"{puntos['fecha'].min():%Y-%m-%d}",
+            "ultimo_periodo": f"{puntos['fecha'].max():%Y-%m-%d}",
+            "descargado": "",
+            "pagina": "https://monitorargy.com",
+            "url_archivo": f"https://monitorargy.com/api/v1/series/{sid}",
+            "url_csv": f"{RAW}/data/series/{id_serie}.csv",
+        })
+    return filas
 
 
 def catalogo_monitor_argy() -> str:

@@ -1,0 +1,25 @@
+{
+  "id": "etn",
+  "nombre": "Confianza empresarial: industria y supermercados (ETN, INDEC)",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_etn_im.xlsx https://www.indec.gob.ar/ftp/cuadros/economia/serie_etn_sam.xlsx",
+  "pagina": "https://www.indec.gob.ar/Nivel4/Tema/3/5/32",
+  "frecuencia": "M",
+  "unidad": "Saldo de respuestas (-100 a 100)",
+  "sha256": "a9ea3ee74e3c02b9e19938f055157fdc88664b2cd7d6db49ab54ce337a1d920c",
+  "columnas": {
+    "confianza_industria": {
+      "nombre": "Confianza empresarial en la industria manufacturera",
+      "tipo": "nivel",
+      "unidad": "Saldo de respuestas (-100 a 100)"
+    },
+    "confianza_supermercados": {
+      "nombre": "Confianza empresarial en supermercados y autoservicios mayoristas",
+      "tipo": "nivel",
+      "unidad": "Saldo de respuestas (-100 a 100)"
+    }
+  },
+  "descargado": "2026-11-13T13:36:49Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 81,
+  "original_guardado": "data/raw/etn/2026-11-13_a9ea3ee7.zip"
+}

@@ -1,4 +1,4 @@
-[liquidacion_agro]
+[ipi_pesquero]
   actualizada: último período — → 2026-09; valores revisados: 0
-[balance_cambiario]
-  actualizada: último período — → 2026-08; valores revisados: 0
+[etn]
+  actualizada: último período — → 2026-09; valores revisados: 0

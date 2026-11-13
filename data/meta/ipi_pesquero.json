@@ -1,0 +1,45 @@
+{
+  "id": "ipi_pesquero",
+  "nombre": "IPI pesquero: nivel general y aperturas (INDEC)",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipi_pesquero.xlsx",
+  "pagina": "https://www.indec.gob.ar/Nivel4/Tema/3/6/40",
+  "frecuencia": "M",
+  "unidad": "Índice base 2004=100",
+  "sha256": "5fb34ebfcaf00fb34f366a6aa380936dc907675a397d5808fe3f8f6517ef1e4c",
+  "columnas": {
+    "original": {
+      "nombre": "IPI pesquero, serie original",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "original_var_ia": {
+      "nombre": "IPI pesquero, serie original, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "desest": {
+      "nombre": "IPI pesquero, serie desestacionalizada (INDEC)",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "desest_var_m": {
+      "nombre": "IPI pesquero, desestacionalizado (INDEC), var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pesca_maritima": {
+      "nombre": "IPI pesquero: pesca marítima, serie original",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    },
+    "acuicultura": {
+      "nombre": "IPI pesquero: acuicultura, serie original",
+      "tipo": "nivel",
+      "unidad": "Índice base 2004=100"
+    }
+  },
+  "descargado": "2026-11-13T13:36:49Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 177,
+  "original_guardado": "data/raw/ipi_pesquero/2026-11-13_5fb34ebf.xlsx"
+}

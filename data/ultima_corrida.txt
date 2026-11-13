@@ -1,4 +1,8 @@
-[gini]
-  actualizada: último período — → 2026-04; valores revisados: 0
-[accesos_internet]
-  actualizada: último período — → 2026-06; valores revisados: 0
+[petroleo]
+  archivo distinto pero mismos datos
+[refinados]
+  archivo distinto pero mismos datos
+[petroleo_mensual]
+  sin cambios en las series de base
+[refinados_mensual]
+  sin cambios en las series de base

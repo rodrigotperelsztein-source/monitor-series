@@ -28,14 +28,14 @@ import pandas as pd
 import requests
 
 from pipeline import calendario, monitorargy
-from pipeline.fuentes import (acciones_energia, acciones_energia_mensual, acero, adefa, adimra, balance_cambiario,
-    biocombustibles,
-    balanza_pagos, bcra,
-    bcra_mensual, bcra_real, came, camiones_puertos, camiones_puertos_mensual, cammesa_balance, cammesa_diaria,
+from pipeline.fuentes import (accesos_internet, acciones_energia, acciones_energia_mensual, acero, adefa, adimra,
+    balance_cambiario, balanza_pagos, bcra,
+    bcra_mensual, bcra_real, biocombustibles, came, camiones_puertos, camiones_puertos_mensual, cammesa_balance,
+    cammesa_diaria,
     cammesa_gu_actividad, cammesa_gu_actividad_mensual, canasta_crianza, canastas, capacidad_instalada, cemento,
     clima_amba, clima_amba_mensual, clima_amba_pronostico, comercio_exterior, comex_indices, construya,
     cuentas_nacionales, deuda, electrodomesticos, emae, emae_letras, emae_letras_desest, empleo_ramas, empleo_sipa,
-    estimaciones_agricolas, etn, faena, gas_entregado, icc, imig, ipc, ipi, ipi_minero, ipi_minero_desest,
+    estimaciones_agricolas, etn, faena, gas_entregado, gini, icc, imig, ipc, ipi, ipi_minero, ipi_minero_desest,
     ipi_pesquero, isac, ise, issp,
     itcrm, itcrm_mensual, leche, mayoristas, mercado_trabajo, patentamientos, patentamientos_desest, petroleo,
     petroleo_mensual, pobreza, precios_mayoristas, provincias, recaudacion, recaudacion_real, refinados,
@@ -58,7 +58,7 @@ REGISTRO = [
     ("Salarios", [salarios, salarios_real, ripte, ripte_real, salarios_ramas, salarios_ramas_real,
         remuneraciones_provincias, remuneraciones_provincias_real, remuneraciones_provincias_desest,
         remuneraciones_provincias_real_desest]),
-    ("Empleo y pobreza", [empleo_sipa, empleo_ramas, mercado_trabajo, pobreza]),
+    ("Empleo y pobreza", [empleo_sipa, empleo_ramas, mercado_trabajo, pobreza, gini]),
     ("Comercio exterior", [comercio_exterior, comex_indices, balanza_pagos, balance_cambiario]),
     ("Tipo de cambio", [itcrm, itcrm_mensual]),
     ("Dinero, bancos y tasas", [bcra, bcra_mensual, bcra_real]),
@@ -68,7 +68,7 @@ REGISTRO = [
     ("Petróleo y precios internacionales", [petroleo, petroleo_mensual, refinados, refinados_mensual,
         acciones_energia, acciones_energia_mensual]),
     ("Electricidad", [cammesa_balance, cammesa_diaria, cammesa_gu_actividad, cammesa_gu_actividad_mensual]),
-    ("Transporte y turismo", [sube, sube_mensual, sube_desest, turismo]),
+    ("Transporte y turismo", [sube, sube_mensual, sube_desest, turismo, accesos_internet]),
     ("Agro y puertos", [estimaciones_agricolas, camiones_puertos, camiones_puertos_mensual, leche, faena]),
     ("Clima", [clima_amba, clima_amba_mensual, clima_amba_pronostico]),
 ]

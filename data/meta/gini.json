@@ -1,0 +1,20 @@
+{
+  "id": "gini",
+  "nombre": "Coeficiente de Gini del ingreso per cápita familiar (INDEC)",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/sociedad/serie_coeficiente_gini.xlsx",
+  "pagina": "https://www.indec.gob.ar/Nivel4/Tema/4/31/60",
+  "frecuencia": "Q",
+  "unidad": "Coeficiente de 0 a 1",
+  "sha256": "59a8bc026df41a98b94ec9e07ad19919cf87f6582f7c104df5e8f5fc82bdd98a",
+  "columnas": {
+    "gini": {
+      "nombre": "Coeficiente de Gini del ingreso per cápita familiar",
+      "tipo": "nivel",
+      "unidad": "Coeficiente"
+    }
+  },
+  "descargado": "2026-11-13T13:48:29Z",
+  "ultimo_periodo": "2026-04",
+  "observaciones": 86,
+  "original_guardado": "data/raw/gini/2026-11-13_59a8bc02.xlsx"
+}

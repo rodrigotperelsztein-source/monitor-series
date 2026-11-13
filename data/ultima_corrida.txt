@@ -1,44 +1,4 @@
-[ise]
+[gini]
+  actualizada: último período — → 2026-04; valores revisados: 0
+[accesos_internet]
   actualizada: último período — → 2026-06; valores revisados: 0
-[biocombustibles]
-  actualizada: último período — → 2026-06; valores revisados: 0
-[ipc]
-  sin cambios en el archivo
-[ipi]
-  sin cambios en el archivo
-[isac]
-  sin cambios en el archivo
-[issp]
-  sin cambios en el archivo
-[ipi_minero]
-  sin cambios en el archivo
-[supermercados]
-  sin cambios en el archivo
-[capacidad_instalada]
-  sin cambios en el archivo
-[mayoristas]
-  sin cambios en el archivo
-[shoppings]
-  sin cambios en el archivo
-[icc]
-  sin cambios en el archivo
-[canastas]
-  sin cambios en el archivo
-[electrodomesticos]
-  sin cambios en el archivo
-[ipi_pesquero]
-  sin cambios en el archivo
-[ipi_minero_desest]
-  sin cambios en las series de base
-[salarios_real]
-  sin cambios en las series de base
-[ripte_real]
-  sin cambios en las series de base
-[salarios_ramas_real]
-  sin cambios en las series de base
-[remuneraciones_provincias_real]
-  sin cambios en las series de base
-[bcra_real]
-  sin cambios en las series de base
-[recaudacion_real]
-  sin cambios en las series de base

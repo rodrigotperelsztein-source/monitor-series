@@ -1,0 +1,45 @@
+{
+  "id": "accesos_internet",
+  "nombre": "Accesos a internet: móviles, fijos y por categoría de usuario (INDEC)",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/sociedad/serie22_accesos_internet.xlsx",
+  "pagina": "https://www.indec.gob.ar/Nivel4/Tema/4/26/153",
+  "frecuencia": "M",
+  "unidad": "Accesos",
+  "sha256": "ab3d4d76797fd3d66fb63b086d0e84317ce45bc29f34f6e0ff406b3315a9f167",
+  "columnas": {
+    "total": {
+      "nombre": "Accesos a internet, total",
+      "tipo": "nivel",
+      "unidad": "Accesos"
+    },
+    "total_var_ia": {
+      "nombre": "Accesos a internet, var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "moviles": {
+      "nombre": "Accesos a internet móviles",
+      "tipo": "nivel",
+      "unidad": "Accesos"
+    },
+    "fijos": {
+      "nombre": "Accesos a internet fijos",
+      "tipo": "nivel",
+      "unidad": "Accesos"
+    },
+    "residenciales": {
+      "nombre": "Accesos a internet residenciales",
+      "tipo": "nivel",
+      "unidad": "Accesos"
+    },
+    "organizaciones": {
+      "nombre": "Accesos a internet de organizaciones",
+      "tipo": "nivel",
+      "unidad": "Accesos"
+    }
+  },
+  "descargado": "2026-11-13T13:48:29Z",
+  "ultimo_periodo": "2026-06",
+  "observaciones": 54,
+  "original_guardado": "data/raw/accesos_internet/2026-11-13_ab3d4d76.xlsx"
+}

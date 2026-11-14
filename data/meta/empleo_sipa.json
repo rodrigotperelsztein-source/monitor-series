@@ -1,11 +1,11 @@
 {
   "id": "empleo_sipa",
   "nombre": "Trabajo registrado: total, por modalidad y asalariados privados (SIPA, Secretaría de Trabajo)",
-  "url": "https://www.argentina.gob.ar/sites/default/files/trabajoregistrado_2607_estadisticas.xlsx",
+  "url": "https://www.argentina.gob.ar/sites/default/files/trabajoregistrado_2608_estadisticas.xlsx",
   "pagina": "https://www.argentina.gob.ar/trabajo/estadisticas/situacion-y-evolucion-del-trabajo-registrado",
   "frecuencia": "M",
   "unidad": "Miles de personas",
-  "sha256": "5c080dab89b4afb6616db82032cd15dd8d68684f18037b9f7e82f6fe2c5d8639",
+  "sha256": "98c3e8645049d93b17d71473854fe152ab59bf235691eb0de485de4a6bcbe852",
   "columnas": {
     "total": {
       "nombre": "Personas con trabajo registrado",
@@ -88,8 +88,8 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-11-06T18:03:48Z",
-  "ultimo_periodo": "2026-07",
-  "observaciones": 211,
-  "original_guardado": "data/raw/empleo_sipa/2026-11-06_5c080dab.xlsx"
+  "descargado": "2026-11-14T07:05:27Z",
+  "ultimo_periodo": "2026-08",
+  "observaciones": 212,
+  "original_guardado": "data/raw/empleo_sipa/2026-11-14_98c3e864.xlsx"
 }

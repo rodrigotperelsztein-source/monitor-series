@@ -5,7 +5,7 @@
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-11-53",
   "frecuencia": "M",
   "unidad": "Índice base 2004=100",
-  "sha256": "0ce098c207ebccbb26d0b7a45c88de64e86fbdac6caaaeecfba9b856f081b81f",
+  "sha256": "efe83d52ec1d25851ada56206059d09065a31b324c390505d67cbb6350e10c60",
   "columnas": {
     "nivel_general": {
       "nombre": "ISSP, nivel general, serie original",

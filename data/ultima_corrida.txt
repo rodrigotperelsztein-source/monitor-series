@@ -1,8 +1,204 @@
+[calendario INDEC]
+  ERROR (se conserva el calendario anterior): Calendario inválido:
+  - 3 fechas no coinciden con el día de la semana, p. ej. 2027-01-18 JU.
+[ventas_combustibles]
+  no se revisa hoy (solo los días 20 a fin de mes)
+[emae]
+  sin cambios en el archivo
+[emae_letras]
+  sin cambios en el archivo
+[cuentas_nacionales]
+  sin cambios en el archivo
+[ipi]
+  sin cambios en el archivo
+[capacidad_instalada]
+  sin cambios en el archivo
+[ipi_minero]
+  sin cambios en el archivo
+[ipi_pesquero]
+  sin cambios en el archivo
+[isac]
+  sin cambios en el archivo
+[ise]
+  sin cambios en el archivo
+[issp]
+  archivo distinto pero mismos datos
+[adimra]
+  sin cambios en el archivo
+[adefa]
+  sin cambios en el archivo
+[acero]
+  sin cambios en el archivo
+[cemento]
+  sin cambios en el archivo
+[construya]
+  sin cambios en el archivo
+[supermercados]
+  sin cambios en el archivo
+[mayoristas]
+  sin cambios en el archivo
+[shoppings]
+  sin cambios en el archivo
+[electrodomesticos]
+  sin cambios en el archivo
+[came]
+  archivo distinto pero mismos datos
+  (tardó 119 s)
+[patentamientos]
+  archivo distinto pero mismos datos
+[ipc]
+  sin cambios en el archivo
+[precios_mayoristas]
+  sin cambios en el archivo
+[icc]
+  sin cambios en el archivo
+[canastas]
+  sin cambios en el archivo
+[canasta_crianza]
+  sin cambios en el archivo
+[salarios]
+  sin cambios en el archivo
+[ripte]
+  sin cambios en el archivo
+[salarios_ramas]
+  archivo distinto pero mismos datos
+[remuneraciones_provincias]
+  sin cambios en el archivo
+[empleo_sipa]
+/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  actualizada: último período 2026-07 → 2026-08; valores revisados: 1287
+[empleo_ramas]
+  archivo distinto pero mismos datos
+[mercado_trabajo]
+  sin cambios en el archivo
+[pobreza]
+  sin cambios en el archivo
+[gini]
+  sin cambios en el archivo
+[comercio_exterior]
+  archivo distinto pero mismos datos
+[comex_indices]
+  sin cambios en el archivo
+[balanza_pagos]
+  sin cambios en el archivo
+[balance_cambiario]
+  sin cambios en el archivo
+[itcrm]
+  actualizada: último período 2026-11 → 2026-11-13; valores revisados: 0
+[itcrm_mensual]
+  archivo distinto pero mismos datos
+[bcra]
+  actualizada: último período 2026-11 → 2026-11-14; valores revisados: 86
+  (tardó 64 s)
+[imig]
+  sin cambios en el archivo
+[recaudacion]
+  archivo distinto pero mismos datos
+[deuda]
+  archivo distinto pero mismos datos
+[provincias]
+  archivo distinto pero mismos datos
+[rem]
+  sin cambios en el archivo
+[utdt]
+  archivo distinto pero mismos datos
+[etn]
+  ERROR: Validación fallida:
+  - confianza_supermercados: valores históricos cambiaron más de 25% respecto de la versión guardada.
+[gas_entregado]
+  sin cambios en el archivo
+[biocombustibles]
+  sin cambios en el archivo
 [petroleo]
   archivo distinto pero mismos datos
 [refinados]
   archivo distinto pero mismos datos
+[acciones_energia]
+  actualizada: último período 2026-11 → 2026-11-13; valores revisados: 0
+[cammesa_balance]
+  sin cambios en el archivo
+[cammesa_diaria]
+  actualizada: último período 2026-11 → 2026-11-11; valores revisados: 0
+[cammesa_gu_actividad]
+/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Sparkline Group extension is not supported and will be removed
+  warn(msg)
+  actualizada: último período 2026-11 → 2026-11-11; valores revisados: 0
+[sube]
+  sin cambios en el archivo
+[turismo]
+  archivo distinto pero mismos datos
+[accesos_internet]
+  sin cambios en el archivo
+[estimaciones_agricolas]
+  archivo distinto pero mismos datos
+[camiones_puertos]
+  aviso: la página se titula 2026-10 pero sus filas son de 2026-11; se usa 2026-11.
+  aviso: 3 días sin dato en la fuente: ['2024-08-31', '2025-02-28', '2025-12-31']
+  aviso: en 1 días la suma por zonas no da el total: ['2026-10-27']
+  aviso: en 1 días la suma por productos no da el total: ['2024-09-26']
+  actualizada: último período 2026-11 → 2026-11-13; valores revisados: 0
+[leche]
+  actualizada: último período 2026-09 → 2026-10; valores revisados: 0
+[faena]
+  sin cambios en el archivo
+[clima_amba]
+  actualizada: último período 2026-11 → 2026-11-07; valores revisados: 0
+[clima_amba_pronostico]
+  intento 1 falló: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=60)
+  intento 2 falló: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=60)
+  intento 3 falló: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=60)
+  ERROR de descarga: No pude descargar https://api.open-meteo.com/v1/forecast?latitude=-34.5700,-34.6000,-34.6200,-34.6600,-34.8356,-34.6782,-34.8182,-34.9094,-35.2225,-34.1384,-35.1448,-34.8421,-34.3287,-34.8312,-34.2951,-34.8761,-34.8777,-34.9094,-34.6506,-34.5528,-34.5993,-34.6361,-34.5119,-34.7703,-34.7057,-35.0038,-34.7550,-34.5673,-34.8140,-34.4873,-34.6107,-34.7110,-34.6494,-34.4482,-34.9298,-34.7350,-34.1558,-34.4869,-34.5521,-35.0715,-34.3820,-34.5960,-34.5265,-33.9971&longitude=-58.4600,-58.4000,-58.5000,-58.4500,-58.3674,-58.3411,-58.1555,-57.8284,-58.1752,-58.8830,-58.6911,-57.9791,-58.7712,-58.4769,-59.1559,-58.5647,-58.2586,-58.9954,-58.9878,-58.5643,-58.6495,-58.6888,-58.7776,-58.6254,-58.3947,-58.0178,-58.4241,-59.1585,-58.8478,-58.7121,-58.8109,-58.7420,-58.6198,-58.9033,-58.3981,-58.2769,-58.5346,-58.5372,-58.6918,-58.4318,-58.5882,-58.5792,-58.5045,-59.1282&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum,precipitation_probability_max&timezone=America%2FArgentina%2FBuenos_Aires&forecast_days=16: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=60)
+  (tardó 225 s)
+[emae_letras_desest]
+  sin cambios en las series de base
+[ipi_minero_desest]
+  sin cambios en las series de base
+[patentamientos_desest]
+  sin cambios en las series de base
+[salarios_real]
+  sin cambios en las series de base
+[ripte_real]
+  sin cambios en las series de base
+[salarios_ramas_real]
+  sin cambios en las series de base
+[remuneraciones_provincias_real]
+  sin cambios en las series de base
+[remuneraciones_provincias_desest]
+  sin cambios en las series de base
+[remuneraciones_provincias_real_desest]
+  sin cambios en las series de base
+[bcra_mensual]
+  recalculada: último período 2026-10 → 2026-10
+[bcra_real]
+  recalculada: último período 2026-10 → 2026-10
+[recaudacion_real]
+  sin cambios en las series de base
+[ventas_combustibles_desest]
+  sin cambios en las series de base
 [petroleo_mensual]
   sin cambios en las series de base
 [refinados_mensual]
   sin cambios en las series de base
+[acciones_energia_mensual]
+  recalculada: último período 2026-10 → 2026-10
+[cammesa_gu_actividad_mensual]
+  recalculada: último período 2026-10 → 2026-10
+[sube_mensual]
+  sin cambios en las series de base
+[sube_desest]
+  sin cambios en las series de base
+[camiones_puertos_mensual]
+  recalculada: último período 2026-10 → 2026-10
+[clima_amba_mensual]
+  recalculada: último período 2026-10 → 2026-10
+[catálogo de Monitor Argy]
+  839 series
+[series de Monitor Argy (copia)]
+  4 de 4 series

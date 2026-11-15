@@ -28,7 +28,7 @@
 [adefa]
   sin cambios en el archivo
 [acero]
-  sin cambios en el archivo
+  ERROR: No encontré en https://www.acero.org.ar/estadisticas-locales/ un enlace que cumpla '/wp-content/uploads/\\d{4}/\\d{2}/Produccion-Siderurgica-Argentina-[\\w-]*\\.pdf$'.
 [cemento]
   sin cambios en el archivo
 [construya]
@@ -43,7 +43,7 @@
   sin cambios en el archivo
 [came]
   archivo distinto pero mismos datos
-  (tardó 127 s)
+  (tardó 134 s)
 [patentamientos]
   archivo distinto pero mismos datos
 [ipc]
@@ -87,7 +87,7 @@
 [itcrm_mensual]
   sin cambios en el archivo
 [bcra]
-  actualizada: último período 2026-11 → 2026-11-15; valores revisados: 0
+  archivo distinto pero mismos datos
   (tardó 50 s)
 [imig]
   sin cambios en el archivo
@@ -121,7 +121,7 @@
 [cammesa_gu_actividad]
   sin cambios en el archivo
 [sube]
-  sin cambios en el archivo
+  actualizada: último período 2026-11 → 2026-11-13; valores revisados: 0
 [turismo]
   archivo distinto pero mismos datos
 [accesos_internet]
@@ -135,9 +135,9 @@
 [faena]
   sin cambios en el archivo
 [clima_amba]
-  actualizada: último período 2026-11 → 2026-11-08; valores revisados: 0
+  archivo distinto pero mismos datos
 [clima_amba_pronostico]
-  actualizada: último período 2026-11 → 2026-11-30; valores revisados: 344
+  actualizada: último período 2026-11 → 2026-11-30; valores revisados: 306
 [emae_letras_desest]
   sin cambios en las series de base
 [ipi_minero_desest]
@@ -157,7 +157,7 @@
 [remuneraciones_provincias_real_desest]
   sin cambios en las series de base
 [bcra_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [bcra_real]
   sin cambios en las series de base
 [recaudacion_real]
@@ -173,13 +173,13 @@
 [cammesa_gu_actividad_mensual]
   sin cambios en las series de base
 [sube_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-10 → 2026-10
 [sube_desest]
   sin cambios en las series de base
 [camiones_puertos_mensual]
   sin cambios en las series de base
 [clima_amba_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [catálogo de Monitor Argy]
   839 series
 [series de Monitor Argy (copia)]

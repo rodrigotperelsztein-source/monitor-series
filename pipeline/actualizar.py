@@ -435,8 +435,19 @@ _MEDIDA = re.compile(
 def concepto(nombre: str, fuente) -> str:
     """El dato que mide la serie, sin la medida ni el ajuste. Si el nombre solo describe la medida (el EMAE, por
     ejemplo, llama a sus columnas "Índice serie original"), se usa el nombre corto de la fuente."""
-    partes = re.split(r"\s+[-–]\s+|,\s+", _PARENTESIS.sub("", str(nombre)))
-    quedan = [p.strip() for p in partes if p.strip() and not _MEDIDA.match(p.strip())]
+    quedan = []
+    for parte in re.split(r"\s+[-–]\s+", _PARENTESIS.sub("", str(nombre))):
+        parte = parte.strip()
+        if not parte or _MEDIDA.match(parte):
+            continue
+        # La medida también puede venir después de una coma ("Nivel general, variación mensual"). Se cortan solo
+        # las del final: las comas de una enumeración ("Leche, productos lácteos y huevos") son parte del nombre.
+        trozos = re.split(r",\s+", parte)
+        while len(trozos) > 1 and _MEDIDA.match(trozos[-1]):
+            trozos.pop()
+        resto = ", ".join(trozos)
+        if not _MEDIDA.match(resto):
+            quedan.append(resto)
     return " - ".join(quedan) or re.split(r"\s*[:(]", getattr(fuente, "NOMBRE", ""))[0].strip() or fuente.ID
 
 

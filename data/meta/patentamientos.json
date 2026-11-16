@@ -5,7 +5,7 @@
   "pagina": "https://datos.jus.gob.ar/dataset/estadistica-de-tramites-de-automotores",
   "frecuencia": "M",
   "unidad": "Unidades",
-  "sha256": "3bf80be54be07f83b15b298a3c84da75f4eddc7a742be1ceaf3db7c787c4b9f1",
+  "sha256": "a862815e60b58a9b1441a218d85741113e9435697b598d4d82635b023ae2bcc1",
   "columnas": {
     "autos": {
       "nombre": "Patentamientos de automotores, total del país",

@@ -788,7 +788,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-13",
+"ultimo_periodo": "2026-11-16",
 "frescura": "vigente"
 },
 {
@@ -4697,6 +4697,39 @@
 "frescura": "vigente"
 },
 {
+"id": "ipip_came",
+"nombre": "Producción industrial pyme (CAME)",
+"descripcion": "Índice de producción industrial pyme (IPIP), base diciembre 2022=100, serie original (CAME)",
+"panel": "Industria",
+"unidad": "indice",
+"frecuencia": "M",
+"fuente": "CAME — Índice de Producción Industrial Pyme",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipip_came_desest_mensual",
+"nombre": "Producción industrial pyme desest. var. mensual",
+"descripcion": "Variación mensual del índice de producción industrial pyme (IPIP), desestacionalizada por CAME, en %",
+"panel": "Industria",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "CAME — Índice de Producción Industrial Pyme",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ipip_came_interanual",
+"nombre": "Producción industrial pyme var. interanual",
+"descripcion": "Variación interanual del índice de producción industrial pyme (IPIP) de CAME, contra el mismo mes del año anterior, sobre la serie original, en %",
+"panel": "Industria",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "CAME — Índice de Producción Industrial Pyme",
+"ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
 "id": "ipmp",
 "nombre": "Índice de precios de materias primas (BCRA)",
 "descripcion": "Precios internacionales de los productos que exporta Argentina (soja, maíz, trigo, petróleo, oro, litio…), ponderados por su peso en la canasta exportadora. Promedio mensual, dic-2001 = 100, en dólares corrientes",
@@ -6156,7 +6189,7 @@
 "unidad": "tasa",
 "frecuencia": "S",
 "fuente": "Universidad Torcuato Di Tella — Nowcast de pobreza",
-"ultimo_periodo": "2026-04-01",
+"ultimo_periodo": "2026-05-01",
 "frescura": "vigente"
 },
 {
@@ -8686,7 +8719,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-13",
+"ultimo_periodo": "2026-11-16",
 "frescura": "vigente"
 },
 {
@@ -8697,7 +8730,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-13",
+"ultimo_periodo": "2026-11-16",
 "frescura": "vigente"
 },
 {
@@ -8708,7 +8741,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-13",
+"ultimo_periodo": "2026-11-16",
 "frescura": "vigente"
 },
 {
@@ -8719,7 +8752,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-13",
+"ultimo_periodo": "2026-11-16",
 "frescura": "vigente"
 },
 {
@@ -8730,7 +8763,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-13",
+"ultimo_periodo": "2026-11-16",
 "frescura": "vigente"
 },
 {
@@ -8741,7 +8774,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-13",
+"ultimo_periodo": "2026-11-16",
 "frescura": "vigente"
 },
 {
@@ -8752,7 +8785,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-13",
+"ultimo_periodo": "2026-11-16",
 "frescura": "vigente"
 },
 {
@@ -8763,7 +8796,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-13",
+"ultimo_periodo": "2026-11-16",
 "frescura": "vigente"
 },
 {
@@ -8774,7 +8807,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-13",
+"ultimo_periodo": "2026-11-16",
 "frescura": "vigente"
 },
 {
@@ -8785,7 +8818,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-13",
+"ultimo_periodo": "2026-11-16",
 "frescura": "vigente"
 },
 {
@@ -8884,7 +8917,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-13",
+"ultimo_periodo": "2026-11-16",
 "frescura": "vigente"
 },
 {
@@ -8895,7 +8928,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-13",
+"ultimo_periodo": "2026-11-16",
 "frescura": "vigente"
 },
 {
@@ -8906,7 +8939,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-13",
+"ultimo_periodo": "2026-11-16",
 "frescura": "vigente"
 },
 {
@@ -9127,6 +9160,39 @@
 "frecuencia": "M",
 "fuente": "INDEC — Estadísticas de turismo internacional",
 "ultimo_periodo": "2026-09-01",
+"frescura": "vigente"
+},
+{
+"id": "ventas_minoristas_came",
+"nombre": "Ventas minoristas pyme (CAME)",
+"descripcion": "Índice de ventas minoristas pyme a precios constantes, base diciembre 2022=100, serie original (CAME)",
+"panel": "Consumo",
+"unidad": "indice",
+"frecuencia": "M",
+"fuente": "CAME — Índice de Ventas Minoristas Pyme",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "ventas_minoristas_came_desest_mensual",
+"nombre": "Ventas minoristas pyme desest. var. mensual",
+"descripcion": "Variación mensual del índice de ventas minoristas pyme a precios constantes, desestacionalizada por CAME, en %",
+"panel": "Consumo",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "CAME — Índice de Ventas Minoristas Pyme",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "ventas_minoristas_came_interanual",
+"nombre": "Ventas minoristas pyme var. interanual",
+"descripcion": "Variación interanual del índice de ventas minoristas pyme de CAME a precios constantes, contra el mismo mes del año anterior, sobre la serie original, en %",
+"panel": "Consumo",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "CAME — Índice de Ventas Minoristas Pyme",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {

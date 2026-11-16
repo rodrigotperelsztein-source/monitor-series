@@ -5,7 +5,7 @@
   "pagina": "https://open-meteo.com/en/docs/historical-weather-api",
   "frecuencia": "M",
   "unidad": "°C, mm y días",
-  "sha256": "f540b4109f270cf2b5f0af3a8051483bc203e49307aa18f4bd6badc47bfceed0",
+  "sha256": "dcd70bcaf2163f8586b2c64918104c78fe6b2f8a1dcbc2cb93ae3a8ba3fdc228",
   "derivada_de": [
     "clima_amba"
   ],
@@ -139,8 +139,8 @@
       "unidad": "días"
     }
   },
-  "descargado": "2026-11-15T07:15:42Z",
-  "calculado": "2026-11-15T07:15:42Z",
+  "descargado": "2026-11-16T07:20:42Z",
+  "calculado": "2026-11-16T07:20:42Z",
   "ultimo_periodo": "2026-10",
   "observaciones": 24
 }

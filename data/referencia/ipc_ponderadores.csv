@@ -1,0 +1,121 @@
+codigo,nivel,descripcion,gba,pampeana,noreste,noroeste,cuyo,patagonia,nacional
+0,Nivel general,Nivel general,100.0,100.0,100.0,100.0,100.0,100.0,100.0
+01,División,Alimentos y bebidas no alcohólicas,23.44,28.65,35.3,34.67,28.42,27.43,26.9694
+01.1,Grupo,Alimentos,20.33,25.73,31.66,30.31,25.47,24.77,23.8433
+01.1.1,Clase,Pan y cereales,4.05,5.02,6.59,6.49,5.21,4.61,4.7498
+01.1.2,Clase,Carnes y derivados,6.98,9.81,13.27,12.5,10.32,9.92,8.9188
+01.1.3,Clase,Pescados y Mariscos,0.51,0.47,0.29,0.34,0.45,0.48,0.4702
+01.1.4,Clase,"Leche, productos lácteos y huevos",3.45,3.73,4.1,3.69,3.55,3.68,3.6072
+01.1.5,Clase,"Aceites, grasas y manteca",0.55,0.76,0.9,0.64,0.66,0.63,0.6531
+01.1.6,Clase,Frutas,1.27,1.46,1.46,1.45,1.1,1.28,1.3475
+01.1.7,Clase,"Verduras, tubérculos y legumbres",2.23,2.9,3.59,3.58,2.79,2.68,2.6629
+01.1.8,Clase,"Azúcar, dulces, chocolate, golosinas, etc.",1.01,1.21,1.12,1.24,1.03,1.02,1.1006
+01.1.9,Clase,Otros alimentos,0.29,0.37,0.36,0.36,0.36,0.48,0.3377
+01.2,Grupo,Bebidas no alcohólicas,3.11,2.92,3.64,4.36,2.95,2.66,3.1261
+01.2.1,Clase,"Café, té, yerba y cacao",0.68,0.82,0.93,0.64,0.66,0.69,0.7357
+01.2.2,Clase,"Aguas minerales, bebidas gaseosas y jugos",2.43,2.1,2.71,3.72,2.29,1.97,2.3903
+02,División,Bebidas alcohólicas y tabaco,3.27,3.8,3.64,3.13,3.57,3.5,3.4842
+02.1,Grupo,Bebidas alcohólicas,1.42,1.79,2.04,1.37,1.42,1.4,1.5699
+02.1.1,Clase,"Bebidas espirituosas, destiladas y licores",0.06,0.06,0.03,0.07,0.05,0.09,0.0602
+02.1.2,Clase,Vinos,1.07,1.39,1.45,1.02,1.11,1.0,1.1918
+02.1.3,Clase,Cerveza,0.29,0.34,0.56,0.29,0.26,0.31,0.3186
+02.2,Grupo,Tabaco,1.85,2.01,1.6,1.76,2.15,2.1,1.9143
+03,División,Prendas de vestir y calzado,8.49,10.43,11.6,12.37,11.38,12.82,9.9092
+03.1,Grupo,Prendas de vestir y materiales,6.33,7.68,7.97,8.38,8.26,8.96,7.2274
+03.1.1,Clase,"Materiales textiles, telas e hilados",0.09,0.09,0.06,0.09,0.1,0.11,0.0901
+03.1.2,Clase,Prendas de vestir,5.76,7.26,7.62,7.95,7.82,8.5,6.74
+03.1.3,Clase,Otros artículos y accesorios para el vestir,0.25,0.22,0.23,0.25,0.23,0.25,0.2378
+03.1.4,Clase,"Limpieza, reparación, alquiler de ropa",0.25,0.11,0.06,0.08,0.11,0.09,0.1673
+03.2,Grupo,Calzado,2.15,2.75,3.63,4.0,3.12,3.86,2.678
+03.2.1,Clase,Zapatos y otros calzados,2.09,2.71,3.55,3.92,3.02,3.81,2.621
+03.2.2,Clase,"Limpieza, reparación, alquiler de calzados",0.06,0.04,0.08,0.08,0.1,0.05,0.0571
+04,División,"Vivienda, agua, electricidad, gas y otros combustibles",10.46,8.67,8.11,7.0,8.88,10.06,9.4038
+04.1,Grupo,Alquiler de la vivienda y gastos conexos,5.8,3.91,2.36,1.98,3.8,5.11,4.6007
+04.1.1,Clase,Alquiler de la vivienda,3.48,3.59,2.22,1.87,3.67,4.99,3.4292
+04.1.3,Clase,Gastos comunes por la vivienda y/o cochera y otros gastos,2.32,0.32,0.14,0.12,0.14,0.13,1.1731
+04.3,Grupo,Mantenimiento y reparación de la vivienda,1.23,1.16,1.12,0.71,1.17,1.03,1.153
+04.3.1,Clase,Materiales para la reparación de la vivienda,0.52,0.5,0.57,0.38,0.74,0.69,0.525
+04.3.2,Clase,Servicios para la reparación de la vivienda,0.7,0.67,0.55,0.33,0.43,0.34,0.6269
+04.4,Grupo,Suministro de agua,0.89,0.62,0.89,0.67,0.6,0.98,0.7717
+04.5,Grupo,"Electricidad, gas y otros combustibles",2.54,2.98,3.74,3.64,3.32,2.94,2.879
+04.5.1,Clase,Electricidad,1.03,1.08,2.76,1.78,1.28,1.81,1.2254
+04.5.2,Clase,Gas,1.51,1.9,0.98,1.86,2.03,1.13,1.6531
+05,División,Equipamiento y mantenimiento del hogar,6.27,6.34,7.78,6.12,6.28,6.55,6.3648
+05.1,Grupo,"Muebles, accesorios, alfombras y otros materiales para pisos",0.6,0.53,0.75,0.57,0.62,0.9,0.5956
+05.2,Grupo,Artículos textiles para el hogar,0.26,0.25,0.28,0.28,0.32,0.35,0.2661
+05.3,Grupo,Artefactos para el hogar,1.14,1.22,2.53,1.02,1.04,1.59,1.237
+05.4,Grupo,"Vajilla, utensilios, loza y cristalería",0.27,0.26,0.35,0.29,0.28,0.39,0.2776
+05.5,Grupo,Herramientas y equipos para el hogar y el jardín,0.33,0.27,0.31,0.26,0.34,0.3,0.3029
+05.6,Grupo,Bienes y servicios para la conservación del hogar,3.66,3.81,3.55,3.69,3.68,3.03,3.6805
+05.6.1,Clase,Bienes para el hogar no durables,1.67,2.12,2.09,2.04,2.05,1.79,1.8934
+05.6.2,Clase,Servicios domésticos y para el hogar,1.99,1.69,1.47,1.66,1.64,1.23,1.7883
+06,División,Salud,8.8,8.16,5.26,6.33,7.4,4.95,8.0023
+06.1,Grupo,"Productos medicinales, artefactos y equipos para la salud",3.95,4.76,3.38,4.01,4.98,2.63,4.1981
+06.1.1,Clase,Productos farmacéuticos,3.53,4.26,2.93,3.6,4.55,2.16,3.7473
+06.1.2,Clase,Otros productos medicinales,0.16,0.18,0.21,0.18,0.18,0.11,0.1692
+06.1.3,Clase,Artefactos y equipos terapéuticos y sus reparaciones,0.25,0.31,0.24,0.23,0.24,0.36,0.2732
+06.2,Grupo,Servicios para pacientes externos,1.68,1.61,1.19,1.57,1.42,1.49,1.6042
+06.2.1,Clase,Servicios médicos para pacientes externos,1.08,0.85,0.49,0.79,0.91,0.78,0.9323
+06.2.2,Clase,Servicios y tratamientos odontológicos,0.46,0.48,0.5,0.57,0.24,0.49,0.4662
+06.2.3,Clase,Servicios auxiliares para pacientes externos,0.14,0.28,0.19,0.21,0.27,0.23,0.2058
+06.4,Grupo,Gastos de prepagas y obras sociales,3.18,1.79,0.7,0.75,1.0,0.82,2.2044
+07,División,Transporte,11.59,10.41,9.63,8.41,12.1,13.42,10.9901
+07.1,Grupo,Adquisición de vehículos,2.48,2.89,2.76,1.58,2.95,4.92,2.7072
+07.1.1,Clase,Vehículos a motor,2.45,2.71,2.35,1.35,2.84,4.77,2.5854
+07.1.2,Clase,Motocicletas,0.02,0.15,0.33,0.18,0.09,0.08,0.0958
+07.1.3,Clase,Bicicletas,0.01,0.03,0.08,0.05,0.03,0.07,0.0265
+07.2,Grupo,Funcionamiento de equipos de transporte personal,5.08,5.54,4.91,4.48,6.9,6.07,5.3282
+07.2.1,Clase,Funcionamiento de equipos de transporte de uso del hogar,0.56,0.52,0.41,0.41,0.87,0.66,0.55
+07.2.2,Clase,Combustibles y lubricantes para vehículos de uso del hogar,3.78,4.59,4.26,3.8,5.63,5.12,4.2374
+07.2.3,Clase,Conservación y reparación de vehículos de uso del hogar,0.15,0.14,0.1,0.07,0.22,0.16,0.1429
+07.2.4,Clase,Otros servicios relativos al equipo de vehículos de uso del hogar,0.59,0.29,0.15,0.2,0.18,0.13,0.3984
+07.3,Grupo,Transporte público,4.02,1.98,1.96,2.35,2.25,2.44,2.9507
+07.3.1,Clase,Servicios de transporte automotor,3.32,1.93,1.91,2.33,2.1,2.17,2.5972
+07.3.3,Clase,Servicios de transporte aéreo,0.26,0.03,0.02,0.01,0.11,0.21,0.1433
+07.3.6,Clase,Otros servicios de transporte,0.04,0.02,0.02,0.01,0.05,0.06,0.0316
+08,División,Comunicación,2.81,2.86,2.82,2.59,2.53,3.19,2.8153
+08.1.1,Clase,Servicios postales,0.02,0.02,0.03,0.03,0.02,0.03,0.0216
+08.2,Grupo,Equipos telefónicos,0.08,0.05,0.05,0.08,0.07,0.03,0.0656
+08.2.1,Clase,Equipos teléfonicos fijos,0.02,0.0,0.0,0.0,0.0,0.0,0.0089
+08.2.2,Clase,Equipos telefónicos móviles,0.06,0.05,0.05,0.08,0.06,0.02,0.0557
+08.3,Grupo,Servicios de telefonía e internet,2.72,2.79,2.74,2.48,2.45,3.13,2.7331
+08.3.1,Clase,Servicio de teléfonos fijos,0.58,0.61,0.6,0.53,0.54,0.67,0.5898
+08.3.2,Clase,Servicio de telefonía móvil,1.39,1.47,1.43,1.28,1.31,1.61,1.4175
+08.3.3,Clase,Servicio de conexión a internet,0.76,0.71,0.71,0.67,0.6,0.85,0.7303
+09,División,Recreación y cultura,7.46,7.39,6.23,5.95,6.72,7.77,7.2525
+09.1,Grupo,"Equipos audiovisuales, fotográficos y de procesamiento de la información",1.34,1.19,1.34,1.06,1.08,1.72,1.2734
+09.1.1,Clase,"Equipos para la recepción, grabación y reproducción de sonidos e imágenes",0.42,0.46,0.83,0.52,0.47,0.73,0.4758
+09.1.2,Clase,Equipo fotográfico y cinematográfico e instrumentos ópticos,0.19,0.13,0.03,0.05,0.05,0.19,0.1454
+09.1.3,Clase,Equipos de procesamiento e información,0.44,0.39,0.33,0.31,0.3,0.51,0.405
+09.1.4,Clase,Medios para grabación,0.29,0.21,0.16,0.18,0.27,0.3,0.2487
+09.3,Grupo,"Otros artículos para la recreación, jardines y animales",1.07,0.97,0.59,0.83,1.14,1.04,1.0
+09.3.1,Clase,"Juegos, juguetes y hobbies",0.36,0.4,0.27,0.44,0.44,0.41,0.3816
+09.3.2,Clase,"Equipo para el deporte, campamento y recreación al aire libre",0.07,0.09,0.03,0.04,0.04,0.1,0.0728
+09.3.4,Clase,Mascotas y productos conexos,0.65,0.48,0.3,0.36,0.66,0.53,0.5512
+09.4,Grupo,Servicios recreativos y culturales,3.05,2.88,2.28,2.27,2.68,3.02,2.8829
+09.4.1,Clase,Servicios recreativos y deportivos,0.86,0.47,0.37,0.4,0.52,0.42,0.6351
+09.4.2,Clase,Servicios culturales,2.19,2.41,1.9,1.88,2.16,2.61,2.2485
+09.5,Grupo,"Periódicos, diarios, revistas, libros y artículos de papelería",1.49,1.62,1.84,1.58,1.52,1.83,1.5735
+09.5.1,Clase,Libros,0.69,0.6,0.86,0.64,0.8,0.91,0.6793
+09.5.2,Clase,Diarios y publicaciones periódicas,0.51,0.58,0.5,0.48,0.41,0.41,0.5216
+09.5.4,Clase,Papel y útiles de oficina y materiales de dibujo,0.3,0.44,0.48,0.45,0.31,0.51,0.3764
+09.6,Grupo,Paquete turístico,0.5,0.74,0.18,0.21,0.3,0.16,0.5216
+10,División,Educación,3.02,1.61,1.36,2.04,2.24,2.09,2.3128
+10.1,Grupo,Educación preescolar y primaria,1.3,0.66,0.34,0.89,0.7,0.76,0.9539
+10.2,Grupo,Educación secundaria,0.48,0.15,0.14,0.3,0.2,0.29,0.3163
+10.3,Grupo,"Educacioón postsecundaria, no terciaria",0.63,0.38,0.52,0.47,0.92,0.39,0.5326
+10.5,Grupo,Educación no atribuible a ningun nivel,0.61,0.42,0.36,0.39,0.41,0.65,0.5101
+11,División,Restaurantes y hoteles,10.84,8.1,4.96,7.99,6.85,5.08,8.9711
+11.1,Grupo,Restaurantes y comidas fuera del hogar,10.31,7.84,4.84,7.82,6.52,4.91,8.6035
+11.2,Grupo,Hoteles,0.53,0.26,0.11,0.16,0.32,0.16,0.3655
+12,División,Bienes y servicios varios,3.55,3.58,3.3,3.4,3.63,3.14,3.524
+12.1,Grupo,Cuidado personal,2.82,3.07,3.07,3.18,3.11,2.66,2.9492
+12.1.1,Clase,Salones de peluquería y establecimientos de cuidados personales,0.85,0.67,0.55,0.55,0.7,0.53,0.7318
+12.1.3,Clase,"Otros aparatos, artículos y productos para la atención personal",1.97,2.4,2.52,2.63,2.4,2.13,2.2168
+12.5,Grupo,Seguros,0.47,0.32,0.1,0.08,0.33,0.35,0.3624
+12.7,Grupo,Otros servicios,0.26,0.19,0.13,0.14,0.19,0.13,0.2124
+,Categoría,Estacional,10.3,12.0,12.5,12.8,11.7,12.4,11.3213
+,Categoría,Núcleo,67.0,68.7,69.9,69.3,67.5,67.6,67.9233
+,Categoría,Regulados,22.8,19.3,17.7,17.9,20.8,20.0,20.8046
+,Bienes y servicios,Bienes,59.3,70.1,77.4,75.2,71.2,71.3,66.0692
+,Bienes y servicios,Servicios,40.7,29.9,22.6,24.8,28.8,28.7,33.9308

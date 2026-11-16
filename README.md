@@ -4,11 +4,12 @@ Series económicas argentinas bajadas de sus fuentes oficiales, validadas y guar
 Una tarea de GitHub Actions corre todos los días, revisa si cambió cada archivo de origen y, si cambió,
 actualiza los datos y guarda la versión nueva.
 
-**Monitor Argy.** Las páginas de este repositorio también disponibilizan las series de
-[Monitor Argy](https://monitorargy.com), un sitio que publica indicadores macroeconómicos argentinos con una API
-abierta. Esas series no se procesan acá: se leen de su API tal como las publica (con el prefijo `ma:` en el selector),
-y su origen es Monitor Argy y los organismos que cita en cada serie. Además, la desestacionalización propia del EMAE por
-sector replica su método. Gracias a Monitor Argy por abrir sus datos.
+**Monitor Argy.** Unas pocas series se toman de [Monitor Argy](https://monitorargy.com), un sitio que publica
+indicadores macroeconómicos argentinos con una API abierta: las que no tienen una fuente oficial descargable
+(contado con liquidación, brecha, riesgo país) o que ahí están más actualizadas (liquidación de divisas del agro).
+Son las que lista `pipeline/monitorargy.py`; se copian tal como las publica, con el prefijo `monitorargy.` en el
+id, y su origen es Monitor Argy y los organismos que cita en cada serie. Además, la desestacionalización propia
+del EMAE por sector replica su método. Gracias a Monitor Argy por abrir sus datos.
 
 **Documentación.** Esto que estás leyendo es toda la documentación del proyecto, junto con
 [`SECURITY.md`](SECURITY.md). Por partes: [qué series hay](#series-disponibles) ·
@@ -30,6 +31,7 @@ Cada archivo de `pipeline/fuentes/` explica arriba de todo de dónde sale ese da
 | `emae_letras` | EMAE por sector de actividad (letras A a O e impuestos netos de subsidios), serie original, base 2004=100 | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48) | Mensual | 2004-01 |
 | `emae_letras_desest` | EMAE por sector, **desestacionalización propia** (X-13ARIMA-SEATS con calendario argentino) de las letras A, C, D, E, F, G, I y J, con su variación mensual. INDEC no las publica; ver [Desestacionalización propia](#desestacionalización-propia) | Cálculo propio sobre `emae_letras` | Mensual | 2004-01 |
 | `ipc` | IPC: nivel general, 12 divisiones, núcleo, regulados, estacionales, bienes y servicios, para el total nacional y las 6 regiones; índice (dic-2016=100), variación mensual e interanual (378 series) | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31) | Mensual | 2016-12 |
+| `ipc_aperturas` | IPC por apertura: 32 grupos y clases (combustibles y lubricantes, transporte público, alquiler, carnes, prendas…) para las 6 regiones; índice, variación mensual e interanual (546 series). El nombre de cada serie lleva la ponderación de la apertura en la canasta de su región | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31) | Mensual | 2016-12 |
 | `ipi` | IPI manufacturero: nivel general (original, desestacionalizado y tendencia-ciclo, con variaciones), divisiones y subclases (original) y divisiones (desestacionalizadas, con variación mensual); base 2004=100 | [INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-6-14) | Mensual | 2016-10 |
 | `ipi_minero` | IPI minero: nivel general (original, desestacionalizado de INDEC y tendencia-ciclo, con variaciones), 46 aperturas por categoría, división, grupo y producto (original), y extracción de petróleo y gas (convencional y no convencional) y de carbonato de litio en unidades físicas; base 2016=100 | [INDEC](https://www.indec.gob.ar/Nivel4/Tema/3/7/172) | Mensual | 2017-01 |
 | `ipi_minero_desest` | IPI minero: 16 aperturas y 6 series de petróleo y gas en unidades físicas, desestacionalizadas con X-13 (propia), con variación mensual | Cálculo propio sobre `ipi_minero` | Mensual | 2017-01 |
@@ -128,6 +130,7 @@ próxima publicación según el calendario de INDEC y si está **al día**, **se
 | `data/series/<id_serie>.csv` | Una serie sola (`fecha`, `valor`), para traer solo las que se necesitan. |
 | `data/monitorargy/catalogo.json` | Catálogo de series de Monitor Argy (se actualiza cada noche), para el selector. |
 | `data/monitorargy/series/<id>.csv` | Copia sin cambios de una selección de series de Monitor Argy (lista en `pipeline/monitorargy.py`), actualizada cada noche. |
+| `data/referencia/ipc_ponderadores.csv` | Ponderación de cada división, grupo, clase y categoría del IPC en la canasta de cada región y en la nacional. Es fija para toda la base dic-2016=100: sale de la metodología del IPC y la arma `pipeline/herramientas/ipc_ponderadores.py`. |
 | `data/calendario/indec.csv` | Calendario de difusión de INDEC (fecha y título de cada publicación), leído del PDF semestral. |
 | `data/todas/series.csv` | Una fila por serie: `id_serie`, nombre, tipo (nivel o variación), unidad, frecuencia, fuente, primer y último período. |
 

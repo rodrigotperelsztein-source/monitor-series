@@ -228,8 +228,8 @@ def validar_tabla(nuevo: pd.DataFrame, anterior: pd.DataFrame | None, columnas: 
                   vacios_permitidos: set[str] = frozenset()) -> list[str]:
     """Devuelve una lista de errores (vacía si todo está bien). Los avisos van por print.
 
-    vacios_permitidos: series de nivel que pueden tener meses sin dato (p. ej. subclases que
-    INDEC deja en blanco por confidencialidad).
+    vacios_permitidos: series que pueden tener meses sin dato (p. ej. subclases que INDEC deja en
+    blanco por confidencialidad, o rubros que no se pudieron relevar durante el aislamiento de 2020).
     """
     errores = []
     ids = list(columnas)
@@ -256,7 +256,7 @@ def validar_tabla(nuevo: pd.DataFrame, anterior: pd.DataFrame | None, columnas: 
     for c in variaciones:
         col = columnas[c]
         serie = nuevo[c]
-        if serie.iloc[col.rezago or 0:].isna().any():
+        if c not in vacios_permitidos and serie.iloc[col.rezago or 0:].isna().any():
             errores.append(f"{c}: valores vacíos después de los primeros {col.rezago} meses.")
         if (serie.abs() > max_variacion).any():
             errores.append(f"{c}: variaciones mayores a {max_variacion}%.")

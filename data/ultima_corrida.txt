@@ -1,8 +1,2 @@
-[petroleo]
-  archivo distinto pero mismos datos
-[refinados]
-  archivo distinto pero mismos datos
-[petroleo_mensual]
-  sin cambios en las series de base
-[refinados_mensual]
-  sin cambios en las series de base
+[ipc_aperturas]
+  actualizada: último período — → 2026-10; valores revisados: 0

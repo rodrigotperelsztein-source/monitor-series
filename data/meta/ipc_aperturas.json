@@ -1,0 +1,2745 @@
+{
+  "id": "ipc_aperturas",
+  "nombre": "IPC por apertura (grupos y clases), por región",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_aperturas.csv",
+  "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
+  "frecuencia": "M",
+  "unidad": "Índice base dic-2016=100",
+  "sha256": "76387fe7fe3b4a53a72e5359bf0fe0b4ea966af76bf6f0c14563e078fb2030b0",
+  "columnas": {
+    "gba_01_1_indice": {
+      "nombre": "IPC GBA - Alimentos (01.1 · pond. 20,33%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_01_1_var_m": {
+      "nombre": "IPC GBA - Alimentos (01.1 · pond. 20,33%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_1_var_ia": {
+      "nombre": "IPC GBA - Alimentos (01.1 · pond. 20,33%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_1_1_indice": {
+      "nombre": "IPC GBA - Pan y cereales (01.1.1 · pond. 4,05%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_01_1_1_var_m": {
+      "nombre": "IPC GBA - Pan y cereales (01.1.1 · pond. 4,05%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_1_1_var_ia": {
+      "nombre": "IPC GBA - Pan y cereales (01.1.1 · pond. 4,05%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_1_2_indice": {
+      "nombre": "IPC GBA - Carnes y derivados (01.1.2 · pond. 6,98%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_01_1_2_var_m": {
+      "nombre": "IPC GBA - Carnes y derivados (01.1.2 · pond. 6,98%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_1_2_var_ia": {
+      "nombre": "IPC GBA - Carnes y derivados (01.1.2 · pond. 6,98%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_1_4_indice": {
+      "nombre": "IPC GBA - Leche, productos lácteos y huevos (01.1.4 · pond. 3,45%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_01_1_4_var_m": {
+      "nombre": "IPC GBA - Leche, productos lácteos y huevos (01.1.4 · pond. 3,45%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_1_4_var_ia": {
+      "nombre": "IPC GBA - Leche, productos lácteos y huevos (01.1.4 · pond. 3,45%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_1_5_indice": {
+      "nombre": "IPC GBA - Aceites, grasas y manteca (01.1.5 · pond. 0,55%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_01_1_5_var_m": {
+      "nombre": "IPC GBA - Aceites, grasas y manteca (01.1.5 · pond. 0,55%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_1_5_var_ia": {
+      "nombre": "IPC GBA - Aceites, grasas y manteca (01.1.5 · pond. 0,55%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_1_6_indice": {
+      "nombre": "IPC GBA - Frutas (01.1.6 · pond. 1,27%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_01_1_6_var_m": {
+      "nombre": "IPC GBA - Frutas (01.1.6 · pond. 1,27%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_1_6_var_ia": {
+      "nombre": "IPC GBA - Frutas (01.1.6 · pond. 1,27%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_1_7_indice": {
+      "nombre": "IPC GBA - Verduras, tubérculos y legumbres (01.1.7 · pond. 2,23%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_01_1_7_var_m": {
+      "nombre": "IPC GBA - Verduras, tubérculos y legumbres (01.1.7 · pond. 2,23%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_1_7_var_ia": {
+      "nombre": "IPC GBA - Verduras, tubérculos y legumbres (01.1.7 · pond. 2,23%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_1_8_indice": {
+      "nombre": "IPC GBA - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,01%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_01_1_8_var_m": {
+      "nombre": "IPC GBA - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,01%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_1_8_var_ia": {
+      "nombre": "IPC GBA - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,01%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_2_indice": {
+      "nombre": "IPC GBA - Bebidas no alcohólicas (01.2 · pond. 3,11%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_01_2_var_m": {
+      "nombre": "IPC GBA - Bebidas no alcohólicas (01.2 · pond. 3,11%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_2_var_ia": {
+      "nombre": "IPC GBA - Bebidas no alcohólicas (01.2 · pond. 3,11%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_2_1_indice": {
+      "nombre": "IPC GBA - Café, té, yerba y cacao (01.2.1 · pond. 0,68%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_01_2_1_var_m": {
+      "nombre": "IPC GBA - Café, té, yerba y cacao (01.2.1 · pond. 0,68%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_2_1_var_ia": {
+      "nombre": "IPC GBA - Café, té, yerba y cacao (01.2.1 · pond. 0,68%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_2_2_indice": {
+      "nombre": "IPC GBA - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 2,43%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_01_2_2_var_m": {
+      "nombre": "IPC GBA - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 2,43%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_01_2_2_var_ia": {
+      "nombre": "IPC GBA - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 2,43%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_02_1_indice": {
+      "nombre": "IPC GBA - Bebidas alcohólicas (02.1 · pond. 1,42%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_02_1_var_m": {
+      "nombre": "IPC GBA - Bebidas alcohólicas (02.1 · pond. 1,42%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_02_1_var_ia": {
+      "nombre": "IPC GBA - Bebidas alcohólicas (02.1 · pond. 1,42%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_02_2_indice": {
+      "nombre": "IPC GBA - Tabaco (02.2 · pond. 1,85%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_02_2_var_m": {
+      "nombre": "IPC GBA - Tabaco (02.2 · pond. 1,85%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_02_2_var_ia": {
+      "nombre": "IPC GBA - Tabaco (02.2 · pond. 1,85%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_03_1_indice": {
+      "nombre": "IPC GBA - Prendas de vestir y materiales (03.1 · pond. 6,33%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_03_1_var_m": {
+      "nombre": "IPC GBA - Prendas de vestir y materiales (03.1 · pond. 6,33%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_03_1_var_ia": {
+      "nombre": "IPC GBA - Prendas de vestir y materiales (03.1 · pond. 6,33%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_03_2_indice": {
+      "nombre": "IPC GBA - Calzado (03.2 · pond. 2,15%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_03_2_var_m": {
+      "nombre": "IPC GBA - Calzado (03.2 · pond. 2,15%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_03_2_var_ia": {
+      "nombre": "IPC GBA - Calzado (03.2 · pond. 2,15%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_04_1_indice": {
+      "nombre": "IPC GBA - Alquiler de la vivienda y gastos conexos (04.1 · pond. 5,80%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_04_1_var_m": {
+      "nombre": "IPC GBA - Alquiler de la vivienda y gastos conexos (04.1 · pond. 5,80%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_04_1_var_ia": {
+      "nombre": "IPC GBA - Alquiler de la vivienda y gastos conexos (04.1 · pond. 5,80%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_04_1_1_indice": {
+      "nombre": "IPC GBA - Alquiler de la vivienda (04.1.1 · pond. 3,48%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_04_1_1_var_m": {
+      "nombre": "IPC GBA - Alquiler de la vivienda (04.1.1 · pond. 3,48%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_04_1_1_var_ia": {
+      "nombre": "IPC GBA - Alquiler de la vivienda (04.1.1 · pond. 3,48%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_04_3_indice": {
+      "nombre": "IPC GBA - Mantenimiento y reparación de la vivienda (04.3 · pond. 1,23%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_04_3_var_m": {
+      "nombre": "IPC GBA - Mantenimiento y reparación de la vivienda (04.3 · pond. 1,23%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_04_3_var_ia": {
+      "nombre": "IPC GBA - Mantenimiento y reparación de la vivienda (04.3 · pond. 1,23%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_04_5_indice": {
+      "nombre": "IPC GBA - Electricidad, gas y otros combustibles (04.5 · pond. 2,54%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_04_5_var_m": {
+      "nombre": "IPC GBA - Electricidad, gas y otros combustibles (04.5 · pond. 2,54%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_04_5_var_ia": {
+      "nombre": "IPC GBA - Electricidad, gas y otros combustibles (04.5 · pond. 2,54%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_05_6_indice": {
+      "nombre": "IPC GBA - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,66%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_05_6_var_m": {
+      "nombre": "IPC GBA - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,66%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_05_6_var_ia": {
+      "nombre": "IPC GBA - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,66%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_06_1_indice": {
+      "nombre": "IPC GBA - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 3,95%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_06_1_var_m": {
+      "nombre": "IPC GBA - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 3,95%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_06_1_var_ia": {
+      "nombre": "IPC GBA - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 3,95%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_06_4_1_indice": {
+      "nombre": "IPC GBA - Gastos de prepagas (06.4.1) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_06_4_1_var_m": {
+      "nombre": "IPC GBA - Gastos de prepagas (06.4.1) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_06_4_1_var_ia": {
+      "nombre": "IPC GBA - Gastos de prepagas (06.4.1) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_07_1_indice": {
+      "nombre": "IPC GBA - Adquisición de vehículos (07.1 · pond. 2,48%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_07_1_var_m": {
+      "nombre": "IPC GBA - Adquisición de vehículos (07.1 · pond. 2,48%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_07_1_var_ia": {
+      "nombre": "IPC GBA - Adquisición de vehículos (07.1 · pond. 2,48%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_07_2_indice": {
+      "nombre": "IPC GBA - Funcionamiento de equipos de transporte personal (07.2 · pond. 5,08%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_07_2_var_m": {
+      "nombre": "IPC GBA - Funcionamiento de equipos de transporte personal (07.2 · pond. 5,08%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_07_2_var_ia": {
+      "nombre": "IPC GBA - Funcionamiento de equipos de transporte personal (07.2 · pond. 5,08%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_07_2_2_indice": {
+      "nombre": "IPC GBA - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 3,78%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_07_2_2_var_m": {
+      "nombre": "IPC GBA - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 3,78%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_07_2_2_var_ia": {
+      "nombre": "IPC GBA - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 3,78%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_07_3_indice": {
+      "nombre": "IPC GBA - Transporte público (07.3 · pond. 4,02%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_07_3_var_m": {
+      "nombre": "IPC GBA - Transporte público (07.3 · pond. 4,02%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_07_3_var_ia": {
+      "nombre": "IPC GBA - Transporte público (07.3 · pond. 4,02%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_08_3_indice": {
+      "nombre": "IPC GBA - Servicios de telefonía e internet (08.3 · pond. 2,72%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_08_3_var_m": {
+      "nombre": "IPC GBA - Servicios de telefonía e internet (08.3 · pond. 2,72%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_08_3_var_ia": {
+      "nombre": "IPC GBA - Servicios de telefonía e internet (08.3 · pond. 2,72%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_09_1_indice": {
+      "nombre": "IPC GBA - Equipos audiovisuales, fotográficos y de procesamiento de la información (09.1 · pond. 1,34%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_09_1_var_m": {
+      "nombre": "IPC GBA - Equipos audiovisuales, fotográficos y de procesamiento de la información (09.1 · pond. 1,34%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_09_1_var_ia": {
+      "nombre": "IPC GBA - Equipos audiovisuales, fotográficos y de procesamiento de la información (09.1 · pond. 1,34%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_09_4_indice": {
+      "nombre": "IPC GBA - Servicios recreativos y culturales (09.4 · pond. 3,05%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_09_4_var_m": {
+      "nombre": "IPC GBA - Servicios recreativos y culturales (09.4 · pond. 3,05%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_09_4_var_ia": {
+      "nombre": "IPC GBA - Servicios recreativos y culturales (09.4 · pond. 3,05%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_09_5_indice": {
+      "nombre": "IPC GBA - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,49%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_09_5_var_m": {
+      "nombre": "IPC GBA - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,49%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_09_5_var_ia": {
+      "nombre": "IPC GBA - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,49%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_11_1_indice": {
+      "nombre": "IPC GBA - Restaurantes y comidas fuera del hogar (11.1 · pond. 10,31%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_11_1_var_m": {
+      "nombre": "IPC GBA - Restaurantes y comidas fuera del hogar (11.1 · pond. 10,31%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_11_1_var_ia": {
+      "nombre": "IPC GBA - Restaurantes y comidas fuera del hogar (11.1 · pond. 10,31%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_12_1_indice": {
+      "nombre": "IPC GBA - Cuidado personal (12.1 · pond. 2,82%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "gba_12_1_var_m": {
+      "nombre": "IPC GBA - Cuidado personal (12.1 · pond. 2,82%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "gba_12_1_var_ia": {
+      "nombre": "IPC GBA - Cuidado personal (12.1 · pond. 2,82%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_indice": {
+      "nombre": "IPC Pampeana - Alimentos (01.1 · pond. 25,73%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_01_1_var_m": {
+      "nombre": "IPC Pampeana - Alimentos (01.1 · pond. 25,73%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_var_ia": {
+      "nombre": "IPC Pampeana - Alimentos (01.1 · pond. 25,73%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_1_indice": {
+      "nombre": "IPC Pampeana - Pan y cereales (01.1.1 · pond. 5,02%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_01_1_1_var_m": {
+      "nombre": "IPC Pampeana - Pan y cereales (01.1.1 · pond. 5,02%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_1_var_ia": {
+      "nombre": "IPC Pampeana - Pan y cereales (01.1.1 · pond. 5,02%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_2_indice": {
+      "nombre": "IPC Pampeana - Carnes y derivados (01.1.2 · pond. 9,81%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_01_1_2_var_m": {
+      "nombre": "IPC Pampeana - Carnes y derivados (01.1.2 · pond. 9,81%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_2_var_ia": {
+      "nombre": "IPC Pampeana - Carnes y derivados (01.1.2 · pond. 9,81%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_4_indice": {
+      "nombre": "IPC Pampeana - Leche, productos lácteos y huevos (01.1.4 · pond. 3,73%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_01_1_4_var_m": {
+      "nombre": "IPC Pampeana - Leche, productos lácteos y huevos (01.1.4 · pond. 3,73%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_4_var_ia": {
+      "nombre": "IPC Pampeana - Leche, productos lácteos y huevos (01.1.4 · pond. 3,73%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_5_indice": {
+      "nombre": "IPC Pampeana - Aceites, grasas y manteca (01.1.5 · pond. 0,76%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_01_1_5_var_m": {
+      "nombre": "IPC Pampeana - Aceites, grasas y manteca (01.1.5 · pond. 0,76%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_5_var_ia": {
+      "nombre": "IPC Pampeana - Aceites, grasas y manteca (01.1.5 · pond. 0,76%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_6_indice": {
+      "nombre": "IPC Pampeana - Frutas (01.1.6 · pond. 1,46%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_01_1_6_var_m": {
+      "nombre": "IPC Pampeana - Frutas (01.1.6 · pond. 1,46%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_6_var_ia": {
+      "nombre": "IPC Pampeana - Frutas (01.1.6 · pond. 1,46%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_7_indice": {
+      "nombre": "IPC Pampeana - Verduras, tubérculos y legumbres (01.1.7 · pond. 2,90%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_01_1_7_var_m": {
+      "nombre": "IPC Pampeana - Verduras, tubérculos y legumbres (01.1.7 · pond. 2,90%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_7_var_ia": {
+      "nombre": "IPC Pampeana - Verduras, tubérculos y legumbres (01.1.7 · pond. 2,90%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_8_indice": {
+      "nombre": "IPC Pampeana - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,21%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_01_1_8_var_m": {
+      "nombre": "IPC Pampeana - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,21%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_1_8_var_ia": {
+      "nombre": "IPC Pampeana - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,21%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_2_indice": {
+      "nombre": "IPC Pampeana - Bebidas no alcohólicas (01.2 · pond. 2,92%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_01_2_var_m": {
+      "nombre": "IPC Pampeana - Bebidas no alcohólicas (01.2 · pond. 2,92%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_2_var_ia": {
+      "nombre": "IPC Pampeana - Bebidas no alcohólicas (01.2 · pond. 2,92%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_2_1_indice": {
+      "nombre": "IPC Pampeana - Café, té, yerba y cacao (01.2.1 · pond. 0,82%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_01_2_1_var_m": {
+      "nombre": "IPC Pampeana - Café, té, yerba y cacao (01.2.1 · pond. 0,82%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_2_1_var_ia": {
+      "nombre": "IPC Pampeana - Café, té, yerba y cacao (01.2.1 · pond. 0,82%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_2_2_indice": {
+      "nombre": "IPC Pampeana - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 2,10%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_01_2_2_var_m": {
+      "nombre": "IPC Pampeana - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 2,10%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_01_2_2_var_ia": {
+      "nombre": "IPC Pampeana - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 2,10%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_02_1_indice": {
+      "nombre": "IPC Pampeana - Bebidas alcohólicas (02.1 · pond. 1,79%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_02_1_var_m": {
+      "nombre": "IPC Pampeana - Bebidas alcohólicas (02.1 · pond. 1,79%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_02_1_var_ia": {
+      "nombre": "IPC Pampeana - Bebidas alcohólicas (02.1 · pond. 1,79%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_02_2_indice": {
+      "nombre": "IPC Pampeana - Tabaco (02.2 · pond. 2,01%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_02_2_var_m": {
+      "nombre": "IPC Pampeana - Tabaco (02.2 · pond. 2,01%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_02_2_var_ia": {
+      "nombre": "IPC Pampeana - Tabaco (02.2 · pond. 2,01%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_03_1_indice": {
+      "nombre": "IPC Pampeana - Prendas de vestir y materiales (03.1 · pond. 7,68%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_03_1_var_m": {
+      "nombre": "IPC Pampeana - Prendas de vestir y materiales (03.1 · pond. 7,68%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_03_1_var_ia": {
+      "nombre": "IPC Pampeana - Prendas de vestir y materiales (03.1 · pond. 7,68%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_03_2_indice": {
+      "nombre": "IPC Pampeana - Calzado (03.2 · pond. 2,75%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_03_2_var_m": {
+      "nombre": "IPC Pampeana - Calzado (03.2 · pond. 2,75%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_03_2_var_ia": {
+      "nombre": "IPC Pampeana - Calzado (03.2 · pond. 2,75%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_04_1_indice": {
+      "nombre": "IPC Pampeana - Alquiler de la vivienda y gastos conexos (04.1 · pond. 3,91%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_04_1_var_m": {
+      "nombre": "IPC Pampeana - Alquiler de la vivienda y gastos conexos (04.1 · pond. 3,91%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_04_1_var_ia": {
+      "nombre": "IPC Pampeana - Alquiler de la vivienda y gastos conexos (04.1 · pond. 3,91%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_04_1_1_indice": {
+      "nombre": "IPC Pampeana - Alquiler de la vivienda (04.1.1 · pond. 3,59%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_04_1_1_var_m": {
+      "nombre": "IPC Pampeana - Alquiler de la vivienda (04.1.1 · pond. 3,59%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_04_1_1_var_ia": {
+      "nombre": "IPC Pampeana - Alquiler de la vivienda (04.1.1 · pond. 3,59%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_04_5_indice": {
+      "nombre": "IPC Pampeana - Electricidad, gas y otros combustibles (04.5 · pond. 2,98%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_04_5_var_m": {
+      "nombre": "IPC Pampeana - Electricidad, gas y otros combustibles (04.5 · pond. 2,98%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_04_5_var_ia": {
+      "nombre": "IPC Pampeana - Electricidad, gas y otros combustibles (04.5 · pond. 2,98%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_05_6_indice": {
+      "nombre": "IPC Pampeana - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,81%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_05_6_var_m": {
+      "nombre": "IPC Pampeana - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,81%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_05_6_var_ia": {
+      "nombre": "IPC Pampeana - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,81%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_06_1_indice": {
+      "nombre": "IPC Pampeana - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 4,76%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_06_1_var_m": {
+      "nombre": "IPC Pampeana - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 4,76%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_06_1_var_ia": {
+      "nombre": "IPC Pampeana - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 4,76%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_06_4_1_indice": {
+      "nombre": "IPC Pampeana - Gastos de prepagas (06.4.1) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_06_4_1_var_m": {
+      "nombre": "IPC Pampeana - Gastos de prepagas (06.4.1) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_06_4_1_var_ia": {
+      "nombre": "IPC Pampeana - Gastos de prepagas (06.4.1) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_07_1_indice": {
+      "nombre": "IPC Pampeana - Adquisición de vehículos (07.1 · pond. 2,89%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_07_1_var_m": {
+      "nombre": "IPC Pampeana - Adquisición de vehículos (07.1 · pond. 2,89%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_07_1_var_ia": {
+      "nombre": "IPC Pampeana - Adquisición de vehículos (07.1 · pond. 2,89%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_07_2_indice": {
+      "nombre": "IPC Pampeana - Funcionamiento de equipos de transporte personal (07.2 · pond. 5,54%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_07_2_var_m": {
+      "nombre": "IPC Pampeana - Funcionamiento de equipos de transporte personal (07.2 · pond. 5,54%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_07_2_var_ia": {
+      "nombre": "IPC Pampeana - Funcionamiento de equipos de transporte personal (07.2 · pond. 5,54%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_07_2_2_indice": {
+      "nombre": "IPC Pampeana - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 4,59%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_07_2_2_var_m": {
+      "nombre": "IPC Pampeana - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 4,59%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_07_2_2_var_ia": {
+      "nombre": "IPC Pampeana - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 4,59%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_07_3_indice": {
+      "nombre": "IPC Pampeana - Transporte público (07.3 · pond. 1,98%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_07_3_var_m": {
+      "nombre": "IPC Pampeana - Transporte público (07.3 · pond. 1,98%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_07_3_var_ia": {
+      "nombre": "IPC Pampeana - Transporte público (07.3 · pond. 1,98%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_08_3_indice": {
+      "nombre": "IPC Pampeana - Servicios de telefonía e internet (08.3 · pond. 2,79%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_08_3_var_m": {
+      "nombre": "IPC Pampeana - Servicios de telefonía e internet (08.3 · pond. 2,79%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_08_3_var_ia": {
+      "nombre": "IPC Pampeana - Servicios de telefonía e internet (08.3 · pond. 2,79%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_09_4_indice": {
+      "nombre": "IPC Pampeana - Servicios recreativos y culturales (09.4 · pond. 2,88%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_09_4_var_m": {
+      "nombre": "IPC Pampeana - Servicios recreativos y culturales (09.4 · pond. 2,88%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_09_4_var_ia": {
+      "nombre": "IPC Pampeana - Servicios recreativos y culturales (09.4 · pond. 2,88%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_09_5_indice": {
+      "nombre": "IPC Pampeana - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,62%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_09_5_var_m": {
+      "nombre": "IPC Pampeana - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,62%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_09_5_var_ia": {
+      "nombre": "IPC Pampeana - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,62%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_11_1_indice": {
+      "nombre": "IPC Pampeana - Restaurantes y comidas fuera del hogar (11.1 · pond. 7,84%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_11_1_var_m": {
+      "nombre": "IPC Pampeana - Restaurantes y comidas fuera del hogar (11.1 · pond. 7,84%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_11_1_var_ia": {
+      "nombre": "IPC Pampeana - Restaurantes y comidas fuera del hogar (11.1 · pond. 7,84%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_12_1_indice": {
+      "nombre": "IPC Pampeana - Cuidado personal (12.1 · pond. 3,07%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "pampeana_12_1_var_m": {
+      "nombre": "IPC Pampeana - Cuidado personal (12.1 · pond. 3,07%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "pampeana_12_1_var_ia": {
+      "nombre": "IPC Pampeana - Cuidado personal (12.1 · pond. 3,07%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_indice": {
+      "nombre": "IPC Noreste - Alimentos (01.1 · pond. 31,66%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_01_1_var_m": {
+      "nombre": "IPC Noreste - Alimentos (01.1 · pond. 31,66%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_var_ia": {
+      "nombre": "IPC Noreste - Alimentos (01.1 · pond. 31,66%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_1_indice": {
+      "nombre": "IPC Noreste - Pan y cereales (01.1.1 · pond. 6,59%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_01_1_1_var_m": {
+      "nombre": "IPC Noreste - Pan y cereales (01.1.1 · pond. 6,59%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_1_var_ia": {
+      "nombre": "IPC Noreste - Pan y cereales (01.1.1 · pond. 6,59%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_2_indice": {
+      "nombre": "IPC Noreste - Carnes y derivados (01.1.2 · pond. 13,27%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_01_1_2_var_m": {
+      "nombre": "IPC Noreste - Carnes y derivados (01.1.2 · pond. 13,27%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_2_var_ia": {
+      "nombre": "IPC Noreste - Carnes y derivados (01.1.2 · pond. 13,27%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_4_indice": {
+      "nombre": "IPC Noreste - Leche, productos lácteos y huevos (01.1.4 · pond. 4,10%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_01_1_4_var_m": {
+      "nombre": "IPC Noreste - Leche, productos lácteos y huevos (01.1.4 · pond. 4,10%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_4_var_ia": {
+      "nombre": "IPC Noreste - Leche, productos lácteos y huevos (01.1.4 · pond. 4,10%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_5_indice": {
+      "nombre": "IPC Noreste - Aceites, grasas y manteca (01.1.5 · pond. 0,90%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_01_1_5_var_m": {
+      "nombre": "IPC Noreste - Aceites, grasas y manteca (01.1.5 · pond. 0,90%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_5_var_ia": {
+      "nombre": "IPC Noreste - Aceites, grasas y manteca (01.1.5 · pond. 0,90%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_6_indice": {
+      "nombre": "IPC Noreste - Frutas (01.1.6 · pond. 1,46%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_01_1_6_var_m": {
+      "nombre": "IPC Noreste - Frutas (01.1.6 · pond. 1,46%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_6_var_ia": {
+      "nombre": "IPC Noreste - Frutas (01.1.6 · pond. 1,46%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_7_indice": {
+      "nombre": "IPC Noreste - Verduras, tubérculos y legumbres (01.1.7 · pond. 3,59%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_01_1_7_var_m": {
+      "nombre": "IPC Noreste - Verduras, tubérculos y legumbres (01.1.7 · pond. 3,59%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_7_var_ia": {
+      "nombre": "IPC Noreste - Verduras, tubérculos y legumbres (01.1.7 · pond. 3,59%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_8_indice": {
+      "nombre": "IPC Noreste - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,12%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_01_1_8_var_m": {
+      "nombre": "IPC Noreste - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,12%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_1_8_var_ia": {
+      "nombre": "IPC Noreste - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,12%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_2_indice": {
+      "nombre": "IPC Noreste - Bebidas no alcohólicas (01.2 · pond. 3,64%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_01_2_var_m": {
+      "nombre": "IPC Noreste - Bebidas no alcohólicas (01.2 · pond. 3,64%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_2_var_ia": {
+      "nombre": "IPC Noreste - Bebidas no alcohólicas (01.2 · pond. 3,64%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_2_1_indice": {
+      "nombre": "IPC Noreste - Café, té, yerba y cacao (01.2.1 · pond. 0,93%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_01_2_1_var_m": {
+      "nombre": "IPC Noreste - Café, té, yerba y cacao (01.2.1 · pond. 0,93%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_2_1_var_ia": {
+      "nombre": "IPC Noreste - Café, té, yerba y cacao (01.2.1 · pond. 0,93%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_2_2_indice": {
+      "nombre": "IPC Noreste - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 2,71%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_01_2_2_var_m": {
+      "nombre": "IPC Noreste - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 2,71%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_01_2_2_var_ia": {
+      "nombre": "IPC Noreste - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 2,71%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_02_1_indice": {
+      "nombre": "IPC Noreste - Bebidas alcohólicas (02.1 · pond. 2,04%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_02_1_var_m": {
+      "nombre": "IPC Noreste - Bebidas alcohólicas (02.1 · pond. 2,04%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_02_1_var_ia": {
+      "nombre": "IPC Noreste - Bebidas alcohólicas (02.1 · pond. 2,04%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_02_2_indice": {
+      "nombre": "IPC Noreste - Tabaco (02.2 · pond. 1,60%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_02_2_var_m": {
+      "nombre": "IPC Noreste - Tabaco (02.2 · pond. 1,60%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_02_2_var_ia": {
+      "nombre": "IPC Noreste - Tabaco (02.2 · pond. 1,60%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_03_1_indice": {
+      "nombre": "IPC Noreste - Prendas de vestir y materiales (03.1 · pond. 7,97%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_03_1_var_m": {
+      "nombre": "IPC Noreste - Prendas de vestir y materiales (03.1 · pond. 7,97%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_03_1_var_ia": {
+      "nombre": "IPC Noreste - Prendas de vestir y materiales (03.1 · pond. 7,97%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_03_2_indice": {
+      "nombre": "IPC Noreste - Calzado (03.2 · pond. 3,63%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_03_2_var_m": {
+      "nombre": "IPC Noreste - Calzado (03.2 · pond. 3,63%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_03_2_var_ia": {
+      "nombre": "IPC Noreste - Calzado (03.2 · pond. 3,63%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_04_1_indice": {
+      "nombre": "IPC Noreste - Alquiler de la vivienda y gastos conexos (04.1 · pond. 2,36%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_04_1_var_m": {
+      "nombre": "IPC Noreste - Alquiler de la vivienda y gastos conexos (04.1 · pond. 2,36%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_04_1_var_ia": {
+      "nombre": "IPC Noreste - Alquiler de la vivienda y gastos conexos (04.1 · pond. 2,36%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_04_1_1_indice": {
+      "nombre": "IPC Noreste - Alquiler de la vivienda (04.1.1 · pond. 2,22%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_04_1_1_var_m": {
+      "nombre": "IPC Noreste - Alquiler de la vivienda (04.1.1 · pond. 2,22%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_04_1_1_var_ia": {
+      "nombre": "IPC Noreste - Alquiler de la vivienda (04.1.1 · pond. 2,22%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_04_5_indice": {
+      "nombre": "IPC Noreste - Electricidad, gas y otros combustibles (04.5 · pond. 3,74%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_04_5_var_m": {
+      "nombre": "IPC Noreste - Electricidad, gas y otros combustibles (04.5 · pond. 3,74%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_04_5_var_ia": {
+      "nombre": "IPC Noreste - Electricidad, gas y otros combustibles (04.5 · pond. 3,74%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_05_6_indice": {
+      "nombre": "IPC Noreste - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,55%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_05_6_var_m": {
+      "nombre": "IPC Noreste - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,55%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_05_6_var_ia": {
+      "nombre": "IPC Noreste - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,55%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_06_1_indice": {
+      "nombre": "IPC Noreste - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 3,38%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_06_1_var_m": {
+      "nombre": "IPC Noreste - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 3,38%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_06_1_var_ia": {
+      "nombre": "IPC Noreste - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 3,38%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_06_4_1_indice": {
+      "nombre": "IPC Noreste - Gastos de prepagas (06.4.1) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_06_4_1_var_m": {
+      "nombre": "IPC Noreste - Gastos de prepagas (06.4.1) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_06_4_1_var_ia": {
+      "nombre": "IPC Noreste - Gastos de prepagas (06.4.1) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_07_1_indice": {
+      "nombre": "IPC Noreste - Adquisición de vehículos (07.1 · pond. 2,76%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_07_1_var_m": {
+      "nombre": "IPC Noreste - Adquisición de vehículos (07.1 · pond. 2,76%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_07_1_var_ia": {
+      "nombre": "IPC Noreste - Adquisición de vehículos (07.1 · pond. 2,76%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_07_2_indice": {
+      "nombre": "IPC Noreste - Funcionamiento de equipos de transporte personal (07.2 · pond. 4,91%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_07_2_var_m": {
+      "nombre": "IPC Noreste - Funcionamiento de equipos de transporte personal (07.2 · pond. 4,91%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_07_2_var_ia": {
+      "nombre": "IPC Noreste - Funcionamiento de equipos de transporte personal (07.2 · pond. 4,91%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_07_2_2_indice": {
+      "nombre": "IPC Noreste - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 4,26%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_07_2_2_var_m": {
+      "nombre": "IPC Noreste - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 4,26%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_07_2_2_var_ia": {
+      "nombre": "IPC Noreste - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 4,26%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_07_3_indice": {
+      "nombre": "IPC Noreste - Transporte público (07.3 · pond. 1,96%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_07_3_var_m": {
+      "nombre": "IPC Noreste - Transporte público (07.3 · pond. 1,96%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_07_3_var_ia": {
+      "nombre": "IPC Noreste - Transporte público (07.3 · pond. 1,96%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_08_3_indice": {
+      "nombre": "IPC Noreste - Servicios de telefonía e internet (08.3 · pond. 2,74%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_08_3_var_m": {
+      "nombre": "IPC Noreste - Servicios de telefonía e internet (08.3 · pond. 2,74%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_08_3_var_ia": {
+      "nombre": "IPC Noreste - Servicios de telefonía e internet (08.3 · pond. 2,74%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_09_4_indice": {
+      "nombre": "IPC Noreste - Servicios recreativos y culturales (09.4 · pond. 2,28%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_09_4_var_m": {
+      "nombre": "IPC Noreste - Servicios recreativos y culturales (09.4 · pond. 2,28%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_09_4_var_ia": {
+      "nombre": "IPC Noreste - Servicios recreativos y culturales (09.4 · pond. 2,28%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_09_5_indice": {
+      "nombre": "IPC Noreste - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,84%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_09_5_var_m": {
+      "nombre": "IPC Noreste - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,84%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_09_5_var_ia": {
+      "nombre": "IPC Noreste - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,84%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_11_1_indice": {
+      "nombre": "IPC Noreste - Restaurantes y comidas fuera del hogar (11.1 · pond. 4,84%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_11_1_var_m": {
+      "nombre": "IPC Noreste - Restaurantes y comidas fuera del hogar (11.1 · pond. 4,84%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_11_1_var_ia": {
+      "nombre": "IPC Noreste - Restaurantes y comidas fuera del hogar (11.1 · pond. 4,84%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_12_1_indice": {
+      "nombre": "IPC Noreste - Cuidado personal (12.1 · pond. 3,07%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noreste_12_1_var_m": {
+      "nombre": "IPC Noreste - Cuidado personal (12.1 · pond. 3,07%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noreste_12_1_var_ia": {
+      "nombre": "IPC Noreste - Cuidado personal (12.1 · pond. 3,07%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_indice": {
+      "nombre": "IPC Noroeste - Alimentos (01.1 · pond. 30,31%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_01_1_var_m": {
+      "nombre": "IPC Noroeste - Alimentos (01.1 · pond. 30,31%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_var_ia": {
+      "nombre": "IPC Noroeste - Alimentos (01.1 · pond. 30,31%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_1_indice": {
+      "nombre": "IPC Noroeste - Pan y cereales (01.1.1 · pond. 6,49%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_01_1_1_var_m": {
+      "nombre": "IPC Noroeste - Pan y cereales (01.1.1 · pond. 6,49%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_1_var_ia": {
+      "nombre": "IPC Noroeste - Pan y cereales (01.1.1 · pond. 6,49%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_2_indice": {
+      "nombre": "IPC Noroeste - Carnes y derivados (01.1.2 · pond. 12,50%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_01_1_2_var_m": {
+      "nombre": "IPC Noroeste - Carnes y derivados (01.1.2 · pond. 12,50%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_2_var_ia": {
+      "nombre": "IPC Noroeste - Carnes y derivados (01.1.2 · pond. 12,50%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_4_indice": {
+      "nombre": "IPC Noroeste - Leche, productos lácteos y huevos (01.1.4 · pond. 3,69%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_01_1_4_var_m": {
+      "nombre": "IPC Noroeste - Leche, productos lácteos y huevos (01.1.4 · pond. 3,69%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_4_var_ia": {
+      "nombre": "IPC Noroeste - Leche, productos lácteos y huevos (01.1.4 · pond. 3,69%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_5_indice": {
+      "nombre": "IPC Noroeste - Aceites, grasas y manteca (01.1.5 · pond. 0,64%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_01_1_5_var_m": {
+      "nombre": "IPC Noroeste - Aceites, grasas y manteca (01.1.5 · pond. 0,64%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_5_var_ia": {
+      "nombre": "IPC Noroeste - Aceites, grasas y manteca (01.1.5 · pond. 0,64%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_6_indice": {
+      "nombre": "IPC Noroeste - Frutas (01.1.6 · pond. 1,45%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_01_1_6_var_m": {
+      "nombre": "IPC Noroeste - Frutas (01.1.6 · pond. 1,45%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_6_var_ia": {
+      "nombre": "IPC Noroeste - Frutas (01.1.6 · pond. 1,45%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_7_indice": {
+      "nombre": "IPC Noroeste - Verduras, tubérculos y legumbres (01.1.7 · pond. 3,58%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_01_1_7_var_m": {
+      "nombre": "IPC Noroeste - Verduras, tubérculos y legumbres (01.1.7 · pond. 3,58%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_7_var_ia": {
+      "nombre": "IPC Noroeste - Verduras, tubérculos y legumbres (01.1.7 · pond. 3,58%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_8_indice": {
+      "nombre": "IPC Noroeste - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,24%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_01_1_8_var_m": {
+      "nombre": "IPC Noroeste - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,24%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_1_8_var_ia": {
+      "nombre": "IPC Noroeste - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,24%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_2_indice": {
+      "nombre": "IPC Noroeste - Bebidas no alcohólicas (01.2 · pond. 4,36%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_01_2_var_m": {
+      "nombre": "IPC Noroeste - Bebidas no alcohólicas (01.2 · pond. 4,36%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_2_var_ia": {
+      "nombre": "IPC Noroeste - Bebidas no alcohólicas (01.2 · pond. 4,36%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_2_1_indice": {
+      "nombre": "IPC Noroeste - Café, té, yerba y cacao (01.2.1 · pond. 0,64%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_01_2_1_var_m": {
+      "nombre": "IPC Noroeste - Café, té, yerba y cacao (01.2.1 · pond. 0,64%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_2_1_var_ia": {
+      "nombre": "IPC Noroeste - Café, té, yerba y cacao (01.2.1 · pond. 0,64%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_2_2_indice": {
+      "nombre": "IPC Noroeste - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 3,72%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_01_2_2_var_m": {
+      "nombre": "IPC Noroeste - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 3,72%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_01_2_2_var_ia": {
+      "nombre": "IPC Noroeste - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 3,72%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_02_1_indice": {
+      "nombre": "IPC Noroeste - Bebidas alcohólicas (02.1 · pond. 1,37%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_02_1_var_m": {
+      "nombre": "IPC Noroeste - Bebidas alcohólicas (02.1 · pond. 1,37%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_02_1_var_ia": {
+      "nombre": "IPC Noroeste - Bebidas alcohólicas (02.1 · pond. 1,37%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_02_2_indice": {
+      "nombre": "IPC Noroeste - Tabaco (02.2 · pond. 1,76%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_02_2_var_m": {
+      "nombre": "IPC Noroeste - Tabaco (02.2 · pond. 1,76%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_02_2_var_ia": {
+      "nombre": "IPC Noroeste - Tabaco (02.2 · pond. 1,76%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_03_1_indice": {
+      "nombre": "IPC Noroeste - Prendas de vestir y materiales (03.1 · pond. 8,38%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_03_1_var_m": {
+      "nombre": "IPC Noroeste - Prendas de vestir y materiales (03.1 · pond. 8,38%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_03_1_var_ia": {
+      "nombre": "IPC Noroeste - Prendas de vestir y materiales (03.1 · pond. 8,38%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_03_2_indice": {
+      "nombre": "IPC Noroeste - Calzado (03.2 · pond. 4,00%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_03_2_var_m": {
+      "nombre": "IPC Noroeste - Calzado (03.2 · pond. 4,00%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_03_2_var_ia": {
+      "nombre": "IPC Noroeste - Calzado (03.2 · pond. 4,00%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_04_1_indice": {
+      "nombre": "IPC Noroeste - Alquiler de la vivienda y gastos conexos (04.1 · pond. 1,98%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_04_1_var_m": {
+      "nombre": "IPC Noroeste - Alquiler de la vivienda y gastos conexos (04.1 · pond. 1,98%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_04_1_var_ia": {
+      "nombre": "IPC Noroeste - Alquiler de la vivienda y gastos conexos (04.1 · pond. 1,98%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_04_1_1_indice": {
+      "nombre": "IPC Noroeste - Alquiler de la vivienda (04.1.1 · pond. 1,87%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_04_1_1_var_m": {
+      "nombre": "IPC Noroeste - Alquiler de la vivienda (04.1.1 · pond. 1,87%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_04_1_1_var_ia": {
+      "nombre": "IPC Noroeste - Alquiler de la vivienda (04.1.1 · pond. 1,87%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_04_5_indice": {
+      "nombre": "IPC Noroeste - Electricidad, gas y otros combustibles (04.5 · pond. 3,64%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_04_5_var_m": {
+      "nombre": "IPC Noroeste - Electricidad, gas y otros combustibles (04.5 · pond. 3,64%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_04_5_var_ia": {
+      "nombre": "IPC Noroeste - Electricidad, gas y otros combustibles (04.5 · pond. 3,64%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_05_6_indice": {
+      "nombre": "IPC Noroeste - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,69%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_05_6_var_m": {
+      "nombre": "IPC Noroeste - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,69%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_05_6_var_ia": {
+      "nombre": "IPC Noroeste - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,69%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_06_1_indice": {
+      "nombre": "IPC Noroeste - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 4,01%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_06_1_var_m": {
+      "nombre": "IPC Noroeste - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 4,01%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_06_1_var_ia": {
+      "nombre": "IPC Noroeste - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 4,01%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_06_4_1_indice": {
+      "nombre": "IPC Noroeste - Gastos de prepagas (06.4.1) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_06_4_1_var_m": {
+      "nombre": "IPC Noroeste - Gastos de prepagas (06.4.1) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_06_4_1_var_ia": {
+      "nombre": "IPC Noroeste - Gastos de prepagas (06.4.1) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_07_1_indice": {
+      "nombre": "IPC Noroeste - Adquisición de vehículos (07.1 · pond. 1,58%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_07_1_var_m": {
+      "nombre": "IPC Noroeste - Adquisición de vehículos (07.1 · pond. 1,58%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_07_1_var_ia": {
+      "nombre": "IPC Noroeste - Adquisición de vehículos (07.1 · pond. 1,58%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_07_2_indice": {
+      "nombre": "IPC Noroeste - Funcionamiento de equipos de transporte personal (07.2 · pond. 4,48%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_07_2_var_m": {
+      "nombre": "IPC Noroeste - Funcionamiento de equipos de transporte personal (07.2 · pond. 4,48%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_07_2_var_ia": {
+      "nombre": "IPC Noroeste - Funcionamiento de equipos de transporte personal (07.2 · pond. 4,48%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_07_2_2_indice": {
+      "nombre": "IPC Noroeste - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 3,80%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_07_2_2_var_m": {
+      "nombre": "IPC Noroeste - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 3,80%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_07_2_2_var_ia": {
+      "nombre": "IPC Noroeste - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 3,80%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_07_3_indice": {
+      "nombre": "IPC Noroeste - Transporte público (07.3 · pond. 2,35%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_07_3_var_m": {
+      "nombre": "IPC Noroeste - Transporte público (07.3 · pond. 2,35%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_07_3_var_ia": {
+      "nombre": "IPC Noroeste - Transporte público (07.3 · pond. 2,35%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_08_3_indice": {
+      "nombre": "IPC Noroeste - Servicios de telefonía e internet (08.3 · pond. 2,48%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_08_3_var_m": {
+      "nombre": "IPC Noroeste - Servicios de telefonía e internet (08.3 · pond. 2,48%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_08_3_var_ia": {
+      "nombre": "IPC Noroeste - Servicios de telefonía e internet (08.3 · pond. 2,48%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_09_4_indice": {
+      "nombre": "IPC Noroeste - Servicios recreativos y culturales (09.4 · pond. 2,27%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_09_4_var_m": {
+      "nombre": "IPC Noroeste - Servicios recreativos y culturales (09.4 · pond. 2,27%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_09_4_var_ia": {
+      "nombre": "IPC Noroeste - Servicios recreativos y culturales (09.4 · pond. 2,27%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_09_5_indice": {
+      "nombre": "IPC Noroeste - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,58%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_09_5_var_m": {
+      "nombre": "IPC Noroeste - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,58%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_09_5_var_ia": {
+      "nombre": "IPC Noroeste - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,58%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_11_1_indice": {
+      "nombre": "IPC Noroeste - Restaurantes y comidas fuera del hogar (11.1 · pond. 7,82%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_11_1_var_m": {
+      "nombre": "IPC Noroeste - Restaurantes y comidas fuera del hogar (11.1 · pond. 7,82%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_11_1_var_ia": {
+      "nombre": "IPC Noroeste - Restaurantes y comidas fuera del hogar (11.1 · pond. 7,82%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_12_1_indice": {
+      "nombre": "IPC Noroeste - Cuidado personal (12.1 · pond. 3,18%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "noroeste_12_1_var_m": {
+      "nombre": "IPC Noroeste - Cuidado personal (12.1 · pond. 3,18%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "noroeste_12_1_var_ia": {
+      "nombre": "IPC Noroeste - Cuidado personal (12.1 · pond. 3,18%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_indice": {
+      "nombre": "IPC Cuyo - Alimentos (01.1 · pond. 25,47%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_01_1_var_m": {
+      "nombre": "IPC Cuyo - Alimentos (01.1 · pond. 25,47%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_var_ia": {
+      "nombre": "IPC Cuyo - Alimentos (01.1 · pond. 25,47%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_1_indice": {
+      "nombre": "IPC Cuyo - Pan y cereales (01.1.1 · pond. 5,21%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_01_1_1_var_m": {
+      "nombre": "IPC Cuyo - Pan y cereales (01.1.1 · pond. 5,21%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_1_var_ia": {
+      "nombre": "IPC Cuyo - Pan y cereales (01.1.1 · pond. 5,21%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_2_indice": {
+      "nombre": "IPC Cuyo - Carnes y derivados (01.1.2 · pond. 10,32%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_01_1_2_var_m": {
+      "nombre": "IPC Cuyo - Carnes y derivados (01.1.2 · pond. 10,32%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_2_var_ia": {
+      "nombre": "IPC Cuyo - Carnes y derivados (01.1.2 · pond. 10,32%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_4_indice": {
+      "nombre": "IPC Cuyo - Leche, productos lácteos y huevos (01.1.4 · pond. 3,55%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_01_1_4_var_m": {
+      "nombre": "IPC Cuyo - Leche, productos lácteos y huevos (01.1.4 · pond. 3,55%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_4_var_ia": {
+      "nombre": "IPC Cuyo - Leche, productos lácteos y huevos (01.1.4 · pond. 3,55%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_5_indice": {
+      "nombre": "IPC Cuyo - Aceites, grasas y manteca (01.1.5 · pond. 0,66%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_01_1_5_var_m": {
+      "nombre": "IPC Cuyo - Aceites, grasas y manteca (01.1.5 · pond. 0,66%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_5_var_ia": {
+      "nombre": "IPC Cuyo - Aceites, grasas y manteca (01.1.5 · pond. 0,66%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_6_indice": {
+      "nombre": "IPC Cuyo - Frutas (01.1.6 · pond. 1,10%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_01_1_6_var_m": {
+      "nombre": "IPC Cuyo - Frutas (01.1.6 · pond. 1,10%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_6_var_ia": {
+      "nombre": "IPC Cuyo - Frutas (01.1.6 · pond. 1,10%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_7_indice": {
+      "nombre": "IPC Cuyo - Verduras, tubérculos y legumbres (01.1.7 · pond. 2,79%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_01_1_7_var_m": {
+      "nombre": "IPC Cuyo - Verduras, tubérculos y legumbres (01.1.7 · pond. 2,79%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_7_var_ia": {
+      "nombre": "IPC Cuyo - Verduras, tubérculos y legumbres (01.1.7 · pond. 2,79%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_8_indice": {
+      "nombre": "IPC Cuyo - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,03%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_01_1_8_var_m": {
+      "nombre": "IPC Cuyo - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,03%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_1_8_var_ia": {
+      "nombre": "IPC Cuyo - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,03%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_2_indice": {
+      "nombre": "IPC Cuyo - Bebidas no alcohólicas (01.2 · pond. 2,95%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_01_2_var_m": {
+      "nombre": "IPC Cuyo - Bebidas no alcohólicas (01.2 · pond. 2,95%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_2_var_ia": {
+      "nombre": "IPC Cuyo - Bebidas no alcohólicas (01.2 · pond. 2,95%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_2_1_indice": {
+      "nombre": "IPC Cuyo - Café, té, yerba y cacao (01.2.1 · pond. 0,66%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_01_2_1_var_m": {
+      "nombre": "IPC Cuyo - Café, té, yerba y cacao (01.2.1 · pond. 0,66%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_2_1_var_ia": {
+      "nombre": "IPC Cuyo - Café, té, yerba y cacao (01.2.1 · pond. 0,66%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_2_2_indice": {
+      "nombre": "IPC Cuyo - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 2,29%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_01_2_2_var_m": {
+      "nombre": "IPC Cuyo - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 2,29%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_01_2_2_var_ia": {
+      "nombre": "IPC Cuyo - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 2,29%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_02_1_indice": {
+      "nombre": "IPC Cuyo - Bebidas alcohólicas (02.1 · pond. 1,42%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_02_1_var_m": {
+      "nombre": "IPC Cuyo - Bebidas alcohólicas (02.1 · pond. 1,42%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_02_1_var_ia": {
+      "nombre": "IPC Cuyo - Bebidas alcohólicas (02.1 · pond. 1,42%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_02_2_indice": {
+      "nombre": "IPC Cuyo - Tabaco (02.2 · pond. 2,15%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_02_2_var_m": {
+      "nombre": "IPC Cuyo - Tabaco (02.2 · pond. 2,15%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_02_2_var_ia": {
+      "nombre": "IPC Cuyo - Tabaco (02.2 · pond. 2,15%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_03_1_indice": {
+      "nombre": "IPC Cuyo - Prendas de vestir y materiales (03.1 · pond. 8,26%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_03_1_var_m": {
+      "nombre": "IPC Cuyo - Prendas de vestir y materiales (03.1 · pond. 8,26%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_03_1_var_ia": {
+      "nombre": "IPC Cuyo - Prendas de vestir y materiales (03.1 · pond. 8,26%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_03_2_indice": {
+      "nombre": "IPC Cuyo - Calzado (03.2 · pond. 3,12%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_03_2_var_m": {
+      "nombre": "IPC Cuyo - Calzado (03.2 · pond. 3,12%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_03_2_var_ia": {
+      "nombre": "IPC Cuyo - Calzado (03.2 · pond. 3,12%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_04_1_indice": {
+      "nombre": "IPC Cuyo - Alquiler de la vivienda y gastos conexos (04.1 · pond. 3,80%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_04_1_var_m": {
+      "nombre": "IPC Cuyo - Alquiler de la vivienda y gastos conexos (04.1 · pond. 3,80%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_04_1_var_ia": {
+      "nombre": "IPC Cuyo - Alquiler de la vivienda y gastos conexos (04.1 · pond. 3,80%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_04_1_1_indice": {
+      "nombre": "IPC Cuyo - Alquiler de la vivienda (04.1.1 · pond. 3,67%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_04_1_1_var_m": {
+      "nombre": "IPC Cuyo - Alquiler de la vivienda (04.1.1 · pond. 3,67%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_04_1_1_var_ia": {
+      "nombre": "IPC Cuyo - Alquiler de la vivienda (04.1.1 · pond. 3,67%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_04_5_indice": {
+      "nombre": "IPC Cuyo - Electricidad, gas y otros combustibles (04.5 · pond. 3,32%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_04_5_var_m": {
+      "nombre": "IPC Cuyo - Electricidad, gas y otros combustibles (04.5 · pond. 3,32%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_04_5_var_ia": {
+      "nombre": "IPC Cuyo - Electricidad, gas y otros combustibles (04.5 · pond. 3,32%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_05_6_indice": {
+      "nombre": "IPC Cuyo - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,68%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_05_6_var_m": {
+      "nombre": "IPC Cuyo - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,68%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_05_6_var_ia": {
+      "nombre": "IPC Cuyo - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,68%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_06_1_indice": {
+      "nombre": "IPC Cuyo - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 4,98%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_06_1_var_m": {
+      "nombre": "IPC Cuyo - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 4,98%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_06_1_var_ia": {
+      "nombre": "IPC Cuyo - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 4,98%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_06_4_1_indice": {
+      "nombre": "IPC Cuyo - Gastos de prepagas (06.4.1) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_06_4_1_var_m": {
+      "nombre": "IPC Cuyo - Gastos de prepagas (06.4.1) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_06_4_1_var_ia": {
+      "nombre": "IPC Cuyo - Gastos de prepagas (06.4.1) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_07_1_indice": {
+      "nombre": "IPC Cuyo - Adquisición de vehículos (07.1 · pond. 2,95%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_07_1_var_m": {
+      "nombre": "IPC Cuyo - Adquisición de vehículos (07.1 · pond. 2,95%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_07_1_var_ia": {
+      "nombre": "IPC Cuyo - Adquisición de vehículos (07.1 · pond. 2,95%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_07_2_indice": {
+      "nombre": "IPC Cuyo - Funcionamiento de equipos de transporte personal (07.2 · pond. 6,90%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_07_2_var_m": {
+      "nombre": "IPC Cuyo - Funcionamiento de equipos de transporte personal (07.2 · pond. 6,90%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_07_2_var_ia": {
+      "nombre": "IPC Cuyo - Funcionamiento de equipos de transporte personal (07.2 · pond. 6,90%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_07_2_2_indice": {
+      "nombre": "IPC Cuyo - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 5,63%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_07_2_2_var_m": {
+      "nombre": "IPC Cuyo - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 5,63%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_07_2_2_var_ia": {
+      "nombre": "IPC Cuyo - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 5,63%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_07_3_indice": {
+      "nombre": "IPC Cuyo - Transporte público (07.3 · pond. 2,25%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_07_3_var_m": {
+      "nombre": "IPC Cuyo - Transporte público (07.3 · pond. 2,25%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_07_3_var_ia": {
+      "nombre": "IPC Cuyo - Transporte público (07.3 · pond. 2,25%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_08_3_indice": {
+      "nombre": "IPC Cuyo - Servicios de telefonía e internet (08.3 · pond. 2,45%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_08_3_var_m": {
+      "nombre": "IPC Cuyo - Servicios de telefonía e internet (08.3 · pond. 2,45%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_08_3_var_ia": {
+      "nombre": "IPC Cuyo - Servicios de telefonía e internet (08.3 · pond. 2,45%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_09_4_indice": {
+      "nombre": "IPC Cuyo - Servicios recreativos y culturales (09.4 · pond. 2,68%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_09_4_var_m": {
+      "nombre": "IPC Cuyo - Servicios recreativos y culturales (09.4 · pond. 2,68%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_09_4_var_ia": {
+      "nombre": "IPC Cuyo - Servicios recreativos y culturales (09.4 · pond. 2,68%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_09_5_indice": {
+      "nombre": "IPC Cuyo - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,52%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_09_5_var_m": {
+      "nombre": "IPC Cuyo - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,52%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_09_5_var_ia": {
+      "nombre": "IPC Cuyo - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,52%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_11_1_indice": {
+      "nombre": "IPC Cuyo - Restaurantes y comidas fuera del hogar (11.1 · pond. 6,52%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_11_1_var_m": {
+      "nombre": "IPC Cuyo - Restaurantes y comidas fuera del hogar (11.1 · pond. 6,52%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_11_1_var_ia": {
+      "nombre": "IPC Cuyo - Restaurantes y comidas fuera del hogar (11.1 · pond. 6,52%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_12_1_indice": {
+      "nombre": "IPC Cuyo - Cuidado personal (12.1 · pond. 3,11%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "cuyo_12_1_var_m": {
+      "nombre": "IPC Cuyo - Cuidado personal (12.1 · pond. 3,11%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "cuyo_12_1_var_ia": {
+      "nombre": "IPC Cuyo - Cuidado personal (12.1 · pond. 3,11%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_indice": {
+      "nombre": "IPC Patagonia - Alimentos (01.1 · pond. 24,77%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_01_1_var_m": {
+      "nombre": "IPC Patagonia - Alimentos (01.1 · pond. 24,77%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_var_ia": {
+      "nombre": "IPC Patagonia - Alimentos (01.1 · pond. 24,77%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_1_indice": {
+      "nombre": "IPC Patagonia - Pan y cereales (01.1.1 · pond. 4,61%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_01_1_1_var_m": {
+      "nombre": "IPC Patagonia - Pan y cereales (01.1.1 · pond. 4,61%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_1_var_ia": {
+      "nombre": "IPC Patagonia - Pan y cereales (01.1.1 · pond. 4,61%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_2_indice": {
+      "nombre": "IPC Patagonia - Carnes y derivados (01.1.2 · pond. 9,92%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_01_1_2_var_m": {
+      "nombre": "IPC Patagonia - Carnes y derivados (01.1.2 · pond. 9,92%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_2_var_ia": {
+      "nombre": "IPC Patagonia - Carnes y derivados (01.1.2 · pond. 9,92%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_4_indice": {
+      "nombre": "IPC Patagonia - Leche, productos lácteos y huevos (01.1.4 · pond. 3,68%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_01_1_4_var_m": {
+      "nombre": "IPC Patagonia - Leche, productos lácteos y huevos (01.1.4 · pond. 3,68%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_4_var_ia": {
+      "nombre": "IPC Patagonia - Leche, productos lácteos y huevos (01.1.4 · pond. 3,68%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_5_indice": {
+      "nombre": "IPC Patagonia - Aceites, grasas y manteca (01.1.5 · pond. 0,63%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_01_1_5_var_m": {
+      "nombre": "IPC Patagonia - Aceites, grasas y manteca (01.1.5 · pond. 0,63%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_5_var_ia": {
+      "nombre": "IPC Patagonia - Aceites, grasas y manteca (01.1.5 · pond. 0,63%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_6_indice": {
+      "nombre": "IPC Patagonia - Frutas (01.1.6 · pond. 1,28%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_01_1_6_var_m": {
+      "nombre": "IPC Patagonia - Frutas (01.1.6 · pond. 1,28%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_6_var_ia": {
+      "nombre": "IPC Patagonia - Frutas (01.1.6 · pond. 1,28%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_7_indice": {
+      "nombre": "IPC Patagonia - Verduras, tubérculos y legumbres (01.1.7 · pond. 2,68%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_01_1_7_var_m": {
+      "nombre": "IPC Patagonia - Verduras, tubérculos y legumbres (01.1.7 · pond. 2,68%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_7_var_ia": {
+      "nombre": "IPC Patagonia - Verduras, tubérculos y legumbres (01.1.7 · pond. 2,68%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_8_indice": {
+      "nombre": "IPC Patagonia - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,02%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_01_1_8_var_m": {
+      "nombre": "IPC Patagonia - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,02%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_1_8_var_ia": {
+      "nombre": "IPC Patagonia - Azúcar, dulces, chocolate, golosinas, etc. (01.1.8 · pond. 1,02%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_2_indice": {
+      "nombre": "IPC Patagonia - Bebidas no alcohólicas (01.2 · pond. 2,66%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_01_2_var_m": {
+      "nombre": "IPC Patagonia - Bebidas no alcohólicas (01.2 · pond. 2,66%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_2_var_ia": {
+      "nombre": "IPC Patagonia - Bebidas no alcohólicas (01.2 · pond. 2,66%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_2_1_indice": {
+      "nombre": "IPC Patagonia - Café, té, yerba y cacao (01.2.1 · pond. 0,69%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_01_2_1_var_m": {
+      "nombre": "IPC Patagonia - Café, té, yerba y cacao (01.2.1 · pond. 0,69%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_2_1_var_ia": {
+      "nombre": "IPC Patagonia - Café, té, yerba y cacao (01.2.1 · pond. 0,69%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_2_2_indice": {
+      "nombre": "IPC Patagonia - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 1,97%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_01_2_2_var_m": {
+      "nombre": "IPC Patagonia - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 1,97%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_01_2_2_var_ia": {
+      "nombre": "IPC Patagonia - Aguas minerales, bebidas gaseosas y jugos (01.2.2 · pond. 1,97%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_02_1_indice": {
+      "nombre": "IPC Patagonia - Bebidas alcohólicas (02.1 · pond. 1,40%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_02_1_var_m": {
+      "nombre": "IPC Patagonia - Bebidas alcohólicas (02.1 · pond. 1,40%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_02_1_var_ia": {
+      "nombre": "IPC Patagonia - Bebidas alcohólicas (02.1 · pond. 1,40%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_02_2_indice": {
+      "nombre": "IPC Patagonia - Tabaco (02.2 · pond. 2,10%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_02_2_var_m": {
+      "nombre": "IPC Patagonia - Tabaco (02.2 · pond. 2,10%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_02_2_var_ia": {
+      "nombre": "IPC Patagonia - Tabaco (02.2 · pond. 2,10%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_03_1_indice": {
+      "nombre": "IPC Patagonia - Prendas de vestir y materiales (03.1 · pond. 8,96%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_03_1_var_m": {
+      "nombre": "IPC Patagonia - Prendas de vestir y materiales (03.1 · pond. 8,96%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_03_1_var_ia": {
+      "nombre": "IPC Patagonia - Prendas de vestir y materiales (03.1 · pond. 8,96%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_03_2_indice": {
+      "nombre": "IPC Patagonia - Calzado (03.2 · pond. 3,86%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_03_2_var_m": {
+      "nombre": "IPC Patagonia - Calzado (03.2 · pond. 3,86%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_03_2_var_ia": {
+      "nombre": "IPC Patagonia - Calzado (03.2 · pond. 3,86%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_04_1_indice": {
+      "nombre": "IPC Patagonia - Alquiler de la vivienda y gastos conexos (04.1 · pond. 5,11%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_04_1_var_m": {
+      "nombre": "IPC Patagonia - Alquiler de la vivienda y gastos conexos (04.1 · pond. 5,11%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_04_1_var_ia": {
+      "nombre": "IPC Patagonia - Alquiler de la vivienda y gastos conexos (04.1 · pond. 5,11%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_04_1_1_indice": {
+      "nombre": "IPC Patagonia - Alquiler de la vivienda (04.1.1 · pond. 4,99%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_04_1_1_var_m": {
+      "nombre": "IPC Patagonia - Alquiler de la vivienda (04.1.1 · pond. 4,99%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_04_1_1_var_ia": {
+      "nombre": "IPC Patagonia - Alquiler de la vivienda (04.1.1 · pond. 4,99%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_04_5_indice": {
+      "nombre": "IPC Patagonia - Electricidad, gas y otros combustibles (04.5 · pond. 2,94%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_04_5_var_m": {
+      "nombre": "IPC Patagonia - Electricidad, gas y otros combustibles (04.5 · pond. 2,94%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_04_5_var_ia": {
+      "nombre": "IPC Patagonia - Electricidad, gas y otros combustibles (04.5 · pond. 2,94%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_05_6_indice": {
+      "nombre": "IPC Patagonia - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,03%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_05_6_var_m": {
+      "nombre": "IPC Patagonia - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,03%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_05_6_var_ia": {
+      "nombre": "IPC Patagonia - Bienes y servicios para la conservación del hogar (05.6 · pond. 3,03%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_06_1_indice": {
+      "nombre": "IPC Patagonia - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 2,63%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_06_1_var_m": {
+      "nombre": "IPC Patagonia - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 2,63%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_06_1_var_ia": {
+      "nombre": "IPC Patagonia - Productos medicinales, artefactos y equipos para la salud (06.1 · pond. 2,63%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_06_4_1_indice": {
+      "nombre": "IPC Patagonia - Gastos de prepagas (06.4.1) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_06_4_1_var_m": {
+      "nombre": "IPC Patagonia - Gastos de prepagas (06.4.1) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_06_4_1_var_ia": {
+      "nombre": "IPC Patagonia - Gastos de prepagas (06.4.1) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_07_1_indice": {
+      "nombre": "IPC Patagonia - Adquisición de vehículos (07.1 · pond. 4,92%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_07_1_var_m": {
+      "nombre": "IPC Patagonia - Adquisición de vehículos (07.1 · pond. 4,92%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_07_1_var_ia": {
+      "nombre": "IPC Patagonia - Adquisición de vehículos (07.1 · pond. 4,92%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_07_2_indice": {
+      "nombre": "IPC Patagonia - Funcionamiento de equipos de transporte personal (07.2 · pond. 6,07%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_07_2_var_m": {
+      "nombre": "IPC Patagonia - Funcionamiento de equipos de transporte personal (07.2 · pond. 6,07%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_07_2_var_ia": {
+      "nombre": "IPC Patagonia - Funcionamiento de equipos de transporte personal (07.2 · pond. 6,07%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_07_2_2_indice": {
+      "nombre": "IPC Patagonia - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 5,12%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_07_2_2_var_m": {
+      "nombre": "IPC Patagonia - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 5,12%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_07_2_2_var_ia": {
+      "nombre": "IPC Patagonia - Combustibles y lubricantes para vehículos de uso del hogar (07.2.2 · pond. 5,12%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_07_3_indice": {
+      "nombre": "IPC Patagonia - Transporte público (07.3 · pond. 2,44%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_07_3_var_m": {
+      "nombre": "IPC Patagonia - Transporte público (07.3 · pond. 2,44%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_07_3_var_ia": {
+      "nombre": "IPC Patagonia - Transporte público (07.3 · pond. 2,44%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_08_3_indice": {
+      "nombre": "IPC Patagonia - Servicios de telefonía e internet (08.3 · pond. 3,13%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_08_3_var_m": {
+      "nombre": "IPC Patagonia - Servicios de telefonía e internet (08.3 · pond. 3,13%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_08_3_var_ia": {
+      "nombre": "IPC Patagonia - Servicios de telefonía e internet (08.3 · pond. 3,13%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_09_4_indice": {
+      "nombre": "IPC Patagonia - Servicios recreativos y culturales (09.4 · pond. 3,02%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_09_4_var_m": {
+      "nombre": "IPC Patagonia - Servicios recreativos y culturales (09.4 · pond. 3,02%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_09_4_var_ia": {
+      "nombre": "IPC Patagonia - Servicios recreativos y culturales (09.4 · pond. 3,02%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_09_5_indice": {
+      "nombre": "IPC Patagonia - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,83%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_09_5_var_m": {
+      "nombre": "IPC Patagonia - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,83%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_09_5_var_ia": {
+      "nombre": "IPC Patagonia - Periódicos, diarios, revistas, libros y artículos de papelería (09.5 · pond. 1,83%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_11_1_indice": {
+      "nombre": "IPC Patagonia - Restaurantes y comidas fuera del hogar (11.1 · pond. 4,91%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_11_1_var_m": {
+      "nombre": "IPC Patagonia - Restaurantes y comidas fuera del hogar (11.1 · pond. 4,91%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_11_1_var_ia": {
+      "nombre": "IPC Patagonia - Restaurantes y comidas fuera del hogar (11.1 · pond. 4,91%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_12_1_indice": {
+      "nombre": "IPC Patagonia - Cuidado personal (12.1 · pond. 2,66%) - índice",
+      "tipo": "nivel",
+      "unidad": "Índice base dic-2016=100"
+    },
+    "patagonia_12_1_var_m": {
+      "nombre": "IPC Patagonia - Cuidado personal (12.1 · pond. 2,66%) - var. % mensual",
+      "tipo": "variacion",
+      "unidad": "%"
+    },
+    "patagonia_12_1_var_ia": {
+      "nombre": "IPC Patagonia - Cuidado personal (12.1 · pond. 2,66%) - var. % interanual",
+      "tipo": "variacion",
+      "unidad": "%"
+    }
+  },
+  "descargado": "2026-11-16T20:58:01Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 119,
+  "original_guardado": "data/raw/ipc_aperturas/2026-11-16_76387fe7.csv"
+}

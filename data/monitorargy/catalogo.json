@@ -788,7 +788,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-16",
+"ultimo_periodo": "2026-11-17",
 "frescura": "vigente"
 },
 {
@@ -1177,6 +1177,94 @@
 "frescura": "vigente"
 },
 {
+"id": "credito_empresas",
+"nombre": "Crédito a empresas",
+"descripcion": "Saldo de financiaciones a empresas a fin de mes, pesos y dólares valuados en pesos, millones de pesos",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "credito_empresas_real",
+"nombre": "Crédito a empresas real",
+"descripcion": "Saldo a fin de mes, millones de pesos de diciembre de 2016",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos · deflactado por IPC",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "credito_empresas_real_interanual",
+"nombre": "Crédito a empresas real var. interanual",
+"descripcion": "Variación interanual del saldo real de financiaciones a empresas (BCRA, Informe sobre Bancos · deflactado por IPC), en %",
+"panel": "Crédito",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos · deflactado por IPC",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "credito_empresas_real_mensual",
+"nombre": "Crédito a empresas real var. mensual",
+"descripcion": "Variación mensual del saldo real de financiaciones a empresas (BCRA, Informe sobre Bancos · deflactado por IPC), en %",
+"panel": "Crédito",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos · deflactado por IPC",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "credito_familias",
+"nombre": "Crédito a familias",
+"descripcion": "Saldo de financiaciones a familias a fin de mes, pesos y dólares valuados en pesos, millones de pesos",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "credito_familias_real",
+"nombre": "Crédito a familias real",
+"descripcion": "Saldo a fin de mes, millones de pesos de diciembre de 2016",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos · deflactado por IPC",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "credito_familias_real_interanual",
+"nombre": "Crédito a familias real var. interanual",
+"descripcion": "Variación interanual del saldo real de financiaciones a familias (BCRA, Informe sobre Bancos · deflactado por IPC), en %",
+"panel": "Crédito",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos · deflactado por IPC",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "credito_familias_real_mensual",
+"nombre": "Crédito a familias real var. mensual",
+"descripcion": "Variación mensual del saldo real de financiaciones a familias (BCRA, Informe sobre Bancos · deflactado por IPC), en %",
+"panel": "Crédito",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos · deflactado por IPC",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
 "id": "credito_interno_aporte_reservas",
 "nombre": "Aporte del crédito interno a las reservas",
 "descripcion": "Variación diaria de las reservas menos la de la base monetaria en dólares y la de los encajes en dólares: el crédito interno neto del BCRA con signo cambiado (positivo si lo redujo). Millones de dólares",
@@ -1331,6 +1419,28 @@
 "frescura": "vigente"
 },
 {
+"id": "cuenta_corriente_4t",
+"nombre": "Cuenta corriente, últimos cuatro trimestres",
+"descripcion": "Suma de los últimos cuatro trimestres del saldo de la cuenta corriente, millones de dólares",
+"panel": "Comercio exterior",
+"unidad": "musd",
+"frecuencia": "Q",
+"fuente": "INDEC — Balanza de pagos",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "cuenta_corriente_pbi",
+"nombre": "Cuenta corriente, % del PBI",
+"descripcion": "Saldo de la cuenta corriente de los últimos cuatro trimestres sobre el PBI en dólares del mismo período, en %",
+"panel": "Comercio exterior",
+"unidad": "pct",
+"frecuencia": "Q",
+"fuente": "INDEC y BCRA",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
 "id": "demanda_electrica",
 "nombre": "Demanda eléctrica",
 "descripcion": "Demanda total de energía eléctrica, GWh",
@@ -1405,6 +1515,17 @@
 "frecuencia": "D",
 "fuente": "BCRA",
 "ultimo_periodo": "2026-11-11",
+"frescura": "vigente"
+},
+{
+"id": "depositos_privados_pesos_m",
+"nombre": "Depósitos en pesos del sector privado (promedio mensual)",
+"descripcion": "Promedio mensual del saldo diario de depósitos en pesos del sector privado, millones de pesos",
+"panel": "Dinero",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -1591,7 +1712,7 @@
 "unidad": "tasa",
 "frecuencia": "M",
 "fuente": "Secretaría de Finanzas, BCRA e INDEC",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -1602,7 +1723,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Secretaría de Finanzas, BCRA e INDEC",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -1613,7 +1734,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Secretaría de Finanzas, BCRA e INDEC",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -1646,7 +1767,7 @@
 "unidad": "tasa",
 "frecuencia": "M",
 "fuente": "Secretaría de Finanzas, BCRA e INDEC",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -1668,7 +1789,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Secretaría de Finanzas, BCRA e INDEC",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -1679,7 +1800,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Secretaría de Finanzas, BCRA e INDEC",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -1734,6 +1855,17 @@
 "unidad": "pct",
 "frecuencia": "Q",
 "fuente": "INDEC — Balanza de pagos",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "deuda_externa_pbi",
+"nombre": "Deuda externa bruta, % del PBI",
+"descripcion": "Saldo de la deuda externa bruta a fin del trimestre sobre el PBI en dólares de los últimos cuatro trimestres, en %",
+"panel": "Comercio exterior",
+"unidad": "tasa",
+"frecuencia": "Q",
+"fuente": "INDEC y BCRA",
 "ultimo_periodo": "2026-04-01",
 "frescura": "vigente"
 },
@@ -4033,7 +4165,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Secretaría de Hacienda (IMIG) e INDEC",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -5511,6 +5643,105 @@
 "frescura": "vigente"
 },
 {
+"id": "mora_adelantos",
+"nombre": "Irregularidad de adelantos",
+"descripcion": "Adelantos a empresas en situación irregular (3 a 6), % del total",
+"panel": "Crédito",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "mora_documentos",
+"nombre": "Irregularidad de documentos",
+"descripcion": "Documentos de empresas en situación irregular (3 a 6), % del total",
+"panel": "Crédito",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "mora_empresas",
+"nombre": "Irregularidad del crédito a empresas",
+"descripcion": "Financiaciones a empresas en situación irregular (3 a 6), % del total",
+"panel": "Crédito",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "mora_familias",
+"nombre": "Irregularidad del crédito a familias",
+"descripcion": "Financiaciones a familias en situación irregular (3 a 6), % del total",
+"panel": "Crédito",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "mora_hipotecarios",
+"nombre": "Irregularidad de préstamos hipotecarios",
+"descripcion": "Préstamos hipotecarios a familias en situación irregular (3 a 6), % del total",
+"panel": "Crédito",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "mora_personales",
+"nombre": "Irregularidad de préstamos personales",
+"descripcion": "Préstamos personales a familias en situación irregular (3 a 6), % del total",
+"panel": "Crédito",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "mora_prendarios",
+"nombre": "Irregularidad de préstamos prendarios",
+"descripcion": "Préstamos prendarios a familias en situación irregular (3 a 6), % del total",
+"panel": "Crédito",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "mora_privada",
+"nombre": "Irregularidad del crédito al sector privado",
+"descripcion": "Financiaciones al sector privado no financiero en situación irregular (3 a 6), % del total, pesos y dólares",
+"panel": "Crédito",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
+"id": "mora_tarjetas",
+"nombre": "Irregularidad de tarjetas de crédito",
+"descripcion": "Financiaciones con tarjeta a familias en situación irregular (3 a 6), % del total",
+"panel": "Crédito",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA — Informe sobre Bancos",
+"ultimo_periodo": "2026-08-01",
+"frescura": "vigente"
+},
+{
 "id": "oro_plata",
 "nombre": "Producción de oro y plata",
 "descripcion": "IPI minero, subclase plata y oro y sus concentrados, base 2016=100",
@@ -5606,7 +5837,7 @@
 "unidad": "tasa",
 "frecuencia": "M",
 "fuente": "BCRA e INDEC",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -5617,7 +5848,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "BCRA e INDEC",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -5628,7 +5859,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "BCRA e INDEC",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -6046,7 +6277,7 @@
 "unidad": "mars",
 "frecuencia": "M",
 "fuente": "INDEC — Cuentas nacionales",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-11-01",
 "frescura": "vigente"
 },
 {
@@ -6074,12 +6305,34 @@
 {
 "id": "pbi_nominal_mensual",
 "nombre": "PBI a precios corrientes, por mes",
-"descripcion": "El PBI de cada trimestre (a tasa anual) en su mes central, interpolado en progresión geométrica entre trimestres; los tres meses posteriores al último publicado, con su variación interanual. Millones de pesos corrientes",
+"descripcion": "El PBI de cada trimestre (a tasa anual) en su mes central, interpolado en progresión geométrica entre trimestres; los cinco meses posteriores al último publicado, con su variación interanual. Millones de pesos corrientes",
 "panel": "Frente fiscal",
 "unidad": "mars",
 "frecuencia": "M",
 "fuente": "INDEC — Cuentas nacionales",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-11-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_usd",
+"nombre": "PBI en dólares",
+"descripcion": "PBI a precios corrientes de cada trimestre (a tasa anual) al tipo de cambio mayorista promedio del trimestre, millones de dólares",
+"panel": "Comercio exterior",
+"unidad": "musd",
+"frecuencia": "Q",
+"fuente": "INDEC y BCRA",
+"ultimo_periodo": "2026-04-01",
+"frescura": "vigente"
+},
+{
+"id": "pbi_usd_4t",
+"nombre": "PBI en dólares, últimos cuatro trimestres",
+"descripcion": "Promedio de los últimos cuatro trimestres del PBI en dólares (a tasa anual), millones de dólares",
+"panel": "Comercio exterior",
+"unidad": "musd",
+"frecuencia": "Q",
+"fuente": "INDEC y BCRA",
+"ultimo_periodo": "2026-04-01",
 "frescura": "vigente"
 },
 {
@@ -6251,7 +6504,7 @@
 "id": "prestamos_adelantos",
 "nombre": "Préstamos en adelantos en cuenta",
 "descripcion": "Saldo de adelantos en cuenta corriente al sector privado, millones de pesos",
-"panel": "Consumo",
+"panel": "Crédito",
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
@@ -6259,10 +6512,54 @@
 "frescura": "vigente"
 },
 {
+"id": "prestamos_adelantos_m",
+"nombre": "Préstamos en adelantos (promedio mensual)",
+"descripcion": "Promedio mensual del saldo diario de préstamos en adelantos en cuenta, millones de pesos",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_adelantos_peso",
+"nombre": "Préstamos en adelantos, % del total en pesos",
+"descripcion": "Parte del saldo de préstamos en pesos al sector privado que son adelantos en cuenta, promedio mensual, en %",
+"panel": "Crédito",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_adelantos_real",
+"nombre": "Préstamos en adelantos reales",
+"descripcion": "Promedio mensual, millones de pesos de diciembre de 2016",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_adelantos_real_interanual",
+"nombre": "Préstamos en adelantos reales var. interanual",
+"descripcion": "Variación interanual del saldo real de préstamos en adelantos en cuenta (BCRA · deflactado por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Crédito",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
 "id": "prestamos_comerciales",
 "nombre": "Préstamos comerciales en pesos",
 "descripcion": "Adelantos + documentos al sector privado, saldo diario en millones de pesos",
-"panel": "Consumo",
+"panel": "Crédito",
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
@@ -6273,7 +6570,7 @@
 "id": "prestamos_comerciales_m",
 "nombre": "Préstamos comerciales (promedio mensual)",
 "descripcion": "",
-"panel": "Consumo",
+"panel": "Crédito",
 "unidad": "mars",
 "frecuencia": "M",
 "fuente": "BCRA",
@@ -6284,7 +6581,7 @@
 "id": "prestamos_comerciales_real",
 "nombre": "Préstamos comerciales reales",
 "descripcion": "Promedio mensual, millones de pesos de diciembre de 2016",
-"panel": "Consumo",
+"panel": "Crédito",
 "unidad": "mars",
 "frecuencia": "M",
 "fuente": "BCRA · deflactado por IPC",
@@ -6295,7 +6592,7 @@
 "id": "prestamos_comerciales_real_desest",
 "nombre": "Préstamos comerciales reales desest. (propia)",
 "descripcion": "Serie desestacionalizada por Monitor Argy (X-13 con calendario argentino)",
-"panel": "Consumo",
+"panel": "Crédito",
 "unidad": "mars",
 "frecuencia": "M",
 "fuente": "BCRA · deflactado por IPC · desest. propia (X-13)",
@@ -6306,7 +6603,7 @@
 "id": "prestamos_comerciales_real_desest_mensual",
 "nombre": "Préstamos comerciales reales desest. var. mensual",
 "descripcion": "Variación mensual del saldo de préstamos comerciales en pesos al sector privado (adelantos y documentos, BCRA), deflactado por el IPC y desestacionalizado por Monitor Argy (X-13 con calendario argentino), en %",
-"panel": "Consumo",
+"panel": "Crédito",
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "BCRA · deflactado por IPC · desest. propia (X-13)",
@@ -6317,7 +6614,7 @@
 "id": "prestamos_comerciales_real_interanual",
 "nombre": "Préstamos comerciales reales var. interanual",
 "descripcion": "Variación interanual de la serie «Préstamos comerciales reales» (BCRA · deflactado por IPC), contra el mismo mes del año anterior, en %",
-"panel": "Consumo",
+"panel": "Crédito",
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "BCRA · deflactado por IPC",
@@ -6325,10 +6622,21 @@
 "frescura": "vigente"
 },
 {
+"id": "prestamos_depositos",
+"nombre": "Préstamos / depósitos en pesos",
+"descripcion": "Saldo de préstamos en pesos al sector privado como % de los depósitos en pesos del sector privado, promedios mensuales",
+"panel": "Crédito",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA · cálculo propio",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
 "id": "prestamos_documentos",
 "nombre": "Préstamos en documentos",
 "descripcion": "Saldo de préstamos mediante documentos al sector privado, millones de pesos",
-"panel": "Consumo",
+"panel": "Crédito",
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
@@ -6336,10 +6644,54 @@
 "frescura": "vigente"
 },
 {
+"id": "prestamos_documentos_m",
+"nombre": "Préstamos en documentos (promedio mensual)",
+"descripcion": "Promedio mensual del saldo diario de préstamos en documentos, millones de pesos",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_documentos_peso",
+"nombre": "Préstamos en documentos, % del total en pesos",
+"descripcion": "Parte del saldo de préstamos en pesos al sector privado que son préstamos en documentos, promedio mensual, en %",
+"panel": "Crédito",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_documentos_real",
+"nombre": "Préstamos en documentos reales",
+"descripcion": "Promedio mensual, millones de pesos de diciembre de 2016",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_documentos_real_interanual",
+"nombre": "Préstamos en documentos reales var. interanual",
+"descripcion": "Variación interanual del saldo real de préstamos en documentos (BCRA · deflactado por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Crédito",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
 "id": "prestamos_hipotecarios",
 "nombre": "Préstamos hipotecarios en pesos",
 "descripcion": "Saldo de préstamos hipotecarios al sector privado, millones de pesos",
-"panel": "Consumo",
+"panel": "Crédito",
 "unidad": "mars",
 "frecuencia": "D",
 "fuente": "BCRA",
@@ -6350,8 +6702,19 @@
 "id": "prestamos_hipotecarios_m",
 "nombre": "Préstamos hipotecarios (promedio mensual)",
 "descripcion": "",
-"panel": "Consumo",
+"panel": "Crédito",
 "unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_hipotecarios_peso",
+"nombre": "Préstamos hipotecarios, % del total en pesos",
+"descripcion": "Parte del saldo de préstamos en pesos al sector privado que son préstamos hipotecarios, promedio mensual, en %",
+"panel": "Crédito",
+"unidad": "tasa",
 "frecuencia": "M",
 "fuente": "BCRA",
 "ultimo_periodo": "2026-10-01",
@@ -6361,7 +6724,7 @@
 "id": "prestamos_hipotecarios_real",
 "nombre": "Préstamos hipotecarios reales",
 "descripcion": "Promedio mensual, millones de pesos de diciembre de 2016",
-"panel": "Consumo",
+"panel": "Crédito",
 "unidad": "mars",
 "frecuencia": "M",
 "fuente": "BCRA · deflactado por IPC",
@@ -6372,7 +6735,7 @@
 "id": "prestamos_hipotecarios_real_interanual",
 "nombre": "Préstamos hipotecarios reales var. interanual",
 "descripcion": "Variación interanual de la serie «Préstamos hipotecarios reales» (BCRA · deflactado por IPC), contra el mismo mes del año anterior, en %",
-"panel": "Consumo",
+"panel": "Crédito",
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "BCRA · deflactado por IPC",
@@ -6383,7 +6746,282 @@
 "id": "prestamos_hipotecarios_real_mensual",
 "nombre": "Préstamos hipotecarios reales var. mensual",
 "descripcion": "Variación mensual de la serie «Préstamos hipotecarios reales» (BCRA · deflactado por IPC), contra el mes anterior, en %",
-"panel": "Consumo",
+"panel": "Crédito",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_personales",
+"nombre": "Préstamos personales en pesos",
+"descripcion": "Saldo de préstamos personales al sector privado, millones de pesos",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "D",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-11-11",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_personales_m",
+"nombre": "Préstamos personales (promedio mensual)",
+"descripcion": "Promedio mensual del saldo diario de préstamos personales, millones de pesos",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_personales_peso",
+"nombre": "Préstamos personales, % del total en pesos",
+"descripcion": "Parte del saldo de préstamos en pesos al sector privado que son préstamos personales, promedio mensual, en %",
+"panel": "Crédito",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_personales_real",
+"nombre": "Préstamos personales reales",
+"descripcion": "Promedio mensual, millones de pesos de diciembre de 2016",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_personales_real_interanual",
+"nombre": "Préstamos personales reales var. interanual",
+"descripcion": "Variación interanual del saldo real de préstamos personales (BCRA · deflactado por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Crédito",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_prendarios",
+"nombre": "Préstamos prendarios en pesos",
+"descripcion": "Saldo de préstamos prendarios al sector privado, millones de pesos",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "D",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-11-11",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_prendarios_m",
+"nombre": "Préstamos prendarios (promedio mensual)",
+"descripcion": "Promedio mensual del saldo diario de préstamos prendarios, millones de pesos",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_prendarios_peso",
+"nombre": "Préstamos prendarios, % del total en pesos",
+"descripcion": "Parte del saldo de préstamos en pesos al sector privado que son préstamos prendarios, promedio mensual, en %",
+"panel": "Crédito",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_prendarios_real",
+"nombre": "Préstamos prendarios reales",
+"descripcion": "Promedio mensual, millones de pesos de diciembre de 2016",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_prendarios_real_interanual",
+"nombre": "Préstamos prendarios reales var. interanual",
+"descripcion": "Variación interanual del saldo real de préstamos prendarios (BCRA · deflactado por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Crédito",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_privados_pesos",
+"nombre": "Préstamos al sector privado en pesos",
+"descripcion": "Saldo total de préstamos en pesos al sector privado, millones de pesos",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "D",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-11-11",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_privados_pesos_m",
+"nombre": "Préstamos al sector privado en pesos (promedio mensual)",
+"descripcion": "Promedio mensual del saldo diario de préstamos al sector privado en pesos, millones de pesos",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_privados_pesos_real",
+"nombre": "Préstamos al sector privado en pesos reales",
+"descripcion": "Promedio mensual, millones de pesos de diciembre de 2016",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_privados_pesos_real_interanual",
+"nombre": "Préstamos al sector privado en pesos reales var. interanual",
+"descripcion": "Variación interanual del saldo real de préstamos al sector privado en pesos (BCRA · deflactado por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Crédito",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_privados_usd",
+"nombre": "Préstamos al sector privado en dólares",
+"descripcion": "Saldo total de préstamos en dólares al sector privado, millones de dólares",
+"panel": "Crédito",
+"unidad": "musd",
+"frecuencia": "D",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-11-11",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_privados_usd_interanual",
+"nombre": "Préstamos en dólares var. interanual",
+"descripcion": "Variación interanual del promedio del saldo de préstamos en dólares al sector privado (BCRA), contra el mismo mes del año anterior, en %",
+"panel": "Crédito",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_privados_usd_m",
+"nombre": "Préstamos en dólares (promedio mensual)",
+"descripcion": "Promedio mensual del saldo diario de préstamos en dólares al sector privado, millones de dólares",
+"panel": "Crédito",
+"unidad": "musd",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_privados_usd_mensual",
+"nombre": "Préstamos en dólares var. mensual",
+"descripcion": "Variación mensual del promedio del saldo de préstamos en dólares al sector privado (BCRA), en %",
+"panel": "Crédito",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_tarjetas",
+"nombre": "Préstamos con tarjeta de crédito en pesos",
+"descripcion": "Saldo de financiaciones con tarjeta de crédito al sector privado, millones de pesos",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "D",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-11-11",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_tarjetas_m",
+"nombre": "Préstamos con tarjeta (promedio mensual)",
+"descripcion": "Promedio mensual del saldo diario de préstamos con tarjeta de crédito, millones de pesos",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_tarjetas_peso",
+"nombre": "Préstamos con tarjeta, % del total en pesos",
+"descripcion": "Parte del saldo de préstamos en pesos al sector privado que son financiaciones con tarjeta de crédito, promedio mensual, en %",
+"panel": "Crédito",
+"unidad": "tasa",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_tarjetas_real",
+"nombre": "Préstamos con tarjeta reales",
+"descripcion": "Promedio mensual, millones de pesos de diciembre de 2016",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_tarjetas_real_desest",
+"nombre": "Préstamos con tarjeta reales desest. (propia)",
+"descripcion": "Serie desestacionalizada por Monitor Argy (X-13 con calendario argentino)",
+"panel": "Crédito",
+"unidad": "mars",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC · desest. propia (X-13)",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_tarjetas_real_desest_mensual",
+"nombre": "Préstamos con tarjeta reales desest. var. mensual",
+"descripcion": "Variación mensual del saldo real de préstamos con tarjeta de crédito (BCRA), deflactado por el IPC y desestacionalizado por Monitor Argy (X-13 con calendario argentino), en %",
+"panel": "Crédito",
+"unidad": "pct",
+"frecuencia": "M",
+"fuente": "BCRA · deflactado por IPC · desest. propia (X-13)",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "prestamos_tarjetas_real_interanual",
+"nombre": "Préstamos con tarjeta reales var. interanual",
+"descripcion": "Variación interanual del saldo real de préstamos con tarjeta de crédito (BCRA · deflactado por IPC), contra el mismo mes del año anterior, en %",
+"panel": "Crédito",
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "BCRA · deflactado por IPC",
@@ -8224,7 +8862,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Secretaría de Hacienda (IMIG) e INDEC",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -8279,7 +8917,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Secretaría de Hacienda (IMIG) e INDEC",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -8301,7 +8939,7 @@
 "unidad": "pb",
 "frecuencia": "D",
 "fuente": "JP Morgan (EMBI) vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-13",
+"ultimo_periodo": "2026-11-16",
 "frescura": "vigente"
 },
 {
@@ -8624,6 +9262,17 @@
 "frescura": "vigente"
 },
 {
+"id": "tasa_personales_real_ex_ante",
+"nombre": "Tasa de préstamos personales real ex ante",
+"descripcion": "Costo real de un préstamo personal a la tasa promedio del sistema, descontada la inflación que esperaba el REM vigente el día de tomarlo. % anual efectivo",
+"panel": "Tasas y riesgo país",
+"unidad": "tasa",
+"frecuencia": "D",
+"fuente": "BCRA, INDEC y REM · cálculo propio",
+"ultimo_periodo": "2026-11-13",
+"frescura": "vigente"
+},
+{
 "id": "tasa_plazo_fijo",
 "nombre": "Tasa de plazo fijo a 30 días",
 "descripcion": "Promedio de los depósitos a plazo fijo en pesos a 30 días, todos los montos y bancos, % nominal anual",
@@ -8719,7 +9368,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-16",
+"ultimo_periodo": "2026-11-17",
 "frescura": "vigente"
 },
 {
@@ -8730,7 +9379,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-16",
+"ultimo_periodo": "2026-11-17",
 "frescura": "vigente"
 },
 {
@@ -8741,7 +9390,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-16",
+"ultimo_periodo": "2026-11-17",
 "frescura": "vigente"
 },
 {
@@ -8752,7 +9401,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-16",
+"ultimo_periodo": "2026-11-17",
 "frescura": "vigente"
 },
 {
@@ -8763,7 +9412,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-16",
+"ultimo_periodo": "2026-11-17",
 "frescura": "vigente"
 },
 {
@@ -8774,7 +9423,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-16",
+"ultimo_periodo": "2026-11-17",
 "frescura": "vigente"
 },
 {
@@ -8785,7 +9434,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-16",
+"ultimo_periodo": "2026-11-17",
 "frescura": "vigente"
 },
 {
@@ -8796,7 +9445,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-16",
+"ultimo_periodo": "2026-11-17",
 "frescura": "vigente"
 },
 {
@@ -8807,7 +9456,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-16",
+"ultimo_periodo": "2026-11-17",
 "frescura": "vigente"
 },
 {
@@ -8818,7 +9467,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-16",
+"ultimo_periodo": "2026-11-17",
 "frescura": "vigente"
 },
 {
@@ -8910,6 +9559,28 @@
 "frescura": "vigente"
 },
 {
+"id": "tc_mayorista_promedio_mensual",
+"nombre": "Tipo de cambio mayorista, promedio mensual",
+"descripcion": "Promedio de los días hábiles de cada mes, pesos por dólar",
+"panel": "Comercio exterior",
+"unidad": "ars",
+"frecuencia": "M",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-10-01",
+"frescura": "vigente"
+},
+{
+"id": "tc_mayorista_promedio_trimestral",
+"nombre": "Tipo de cambio mayorista, promedio trimestral",
+"descripcion": "Promedio de los tres promedios mensuales de cada trimestre, pesos por dólar",
+"panel": "Comercio exterior",
+"unidad": "ars",
+"frecuencia": "Q",
+"fuente": "BCRA",
+"ultimo_periodo": "2026-07-01",
+"frescura": "vigente"
+},
+{
 "id": "tc_mep",
 "nombre": "Dólar MEP",
 "descripcion": "Dólar bolsa, implícito en la compraventa de bonos en pesos y en dólares",
@@ -8917,7 +9588,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-16",
+"ultimo_periodo": "2026-11-17",
 "frescura": "vigente"
 },
 {
@@ -8928,7 +9599,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-16",
+"ultimo_periodo": "2026-11-17",
 "frescura": "vigente"
 },
 {
@@ -8939,7 +9610,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-16",
+"ultimo_periodo": "2026-11-17",
 "frescura": "vigente"
 },
 {

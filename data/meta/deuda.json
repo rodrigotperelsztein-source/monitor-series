@@ -1,11 +1,11 @@
 {
   "id": "deuda",
   "nombre": "Deuda bruta de la Administración Central, por instrumento (Secretaría de Finanzas)",
-  "url": "https://www.argentina.gob.ar/sites/default/files/boletin_mensual_30_09_2026_0.xlsx",
+  "url": "https://www.argentina.gob.ar/sites/default/files/boletin_mensual_31_10_2026.xlsx",
   "pagina": "https://www.argentina.gob.ar/economia/finanzas/datos-mensuales",
   "frecuencia": "M",
   "unidad": "Millones de USD",
-  "sha256": "c2704beae7f0b7ca85614b6df5b7cecc0285561353880e18c25b4f72a798675e",
+  "sha256": "910f11ee5d4a65059c921f42642ba4cee4bdb53fcd7b410800b54c4756acd3af",
   "columnas": {
     "deuda_bruta": {
       "nombre": "Deuda bruta de la Administración Central",
@@ -68,8 +68,8 @@
       "unidad": "Millones de USD"
     }
   },
-  "descargado": "2026-11-05T18:56:24Z",
-  "ultimo_periodo": "2026-09",
-  "observaciones": 93,
-  "original_guardado": "data/raw/deuda/2026-11-05_191640f6.zip"
+  "descargado": "2026-11-17T08:33:19Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 94,
+  "original_guardado": "data/raw/deuda/2026-11-17_910f11ee.zip"
 }

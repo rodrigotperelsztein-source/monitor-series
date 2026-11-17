@@ -5,7 +5,7 @@
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-43-149",
   "frecuencia": "M",
   "unidad": "Pesos por mes",
-  "sha256": "6e2fc866ee03c0fbf9b2ddb2acf20064f6a386e09de59f2130f53e3192369523",
+  "sha256": "aac7ee465129d89c663e0fe8243267cf10ce776f2a058e982780942df7c39f18",
   "columnas": {
     "tot_men1": {
       "nombre": "Canasta de crianza, total, menores de 1 año",
@@ -68,8 +68,8 @@
       "unidad": "Pesos por mes"
     }
   },
-  "descargado": "2026-11-05T19:58:37Z",
-  "ultimo_periodo": "2026-09",
-  "observaciones": 81,
-  "original_guardado": "data/raw/canasta_crianza/2026-11-05_6e2fc866.json"
+  "descargado": "2026-11-17T08:33:19Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 82,
+  "original_guardado": "data/raw/canasta_crianza/2026-11-17_aac7ee46.json"
 }

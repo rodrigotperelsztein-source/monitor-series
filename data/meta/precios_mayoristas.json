@@ -5,7 +5,7 @@
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-32",
   "frecuencia": "M",
   "unidad": "Índice dic-2015=100",
-  "sha256": "c5c7776e0e82065098d17fc006948027cfc7bfc6be89f4fb382a59d1b52db32a",
+  "sha256": "d89deb4d396bbab98062a4db83b9cf19f292c3cab3dc027e5c0c205b75d67230",
   "columnas": {
     "ipim_nivel_general": {
       "nombre": "Precios internos al por mayor (IPIM), nivel general, índice",
@@ -293,8 +293,8 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-11-03T14:14:29Z",
-  "ultimo_periodo": "2026-09",
-  "observaciones": 130,
+  "descargado": "2026-11-17T20:46:57Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 131,
   "original_guardado": null
 }

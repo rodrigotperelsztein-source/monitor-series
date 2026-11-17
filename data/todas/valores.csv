@@ -399438,10 +399438,11 @@ fecha,id_serie,valor
 2026-03-01,icc.gastos_generales,1665.798900
 2026-04-01,icc.gastos_generales,1722.189400
 2026-05-01,icc.gastos_generales,1787.996400
-2026-06-01,icc.gastos_generales,1836.039200
-2026-07-01,icc.gastos_generales,1878.259400
-2026-08-01,icc.gastos_generales,1924.797600
-2026-09-01,icc.gastos_generales,1954.064000
+2026-06-01,icc.gastos_generales,1836.029500
+2026-07-01,icc.gastos_generales,1878.102000
+2026-08-01,icc.gastos_generales,1924.450500
+2026-09-01,icc.gastos_generales,1954.320700
+2026-10-01,icc.gastos_generales,1989.721400
 2016-11-01,icc.gastos_generales_var_ia,53.061363
 2016-12-01,icc.gastos_generales_var_ia,50.660378
 2017-01-01,icc.gastos_generales_var_ia,48.277325
@@ -399557,10 +399558,11 @@ fecha,id_serie,valor
 2026-03-01,icc.gastos_generales_var_ia,28.469998
 2026-04-01,icc.gastos_generales_var_ia,30.050938
 2026-05-01,icc.gastos_generales_var_ia,32.059337
-2026-06-01,icc.gastos_generales_var_ia,33.497065
-2026-07-01,icc.gastos_generales_var_ia,34.155502
-2026-08-01,icc.gastos_generales_var_ia,35.499507
-2026-09-01,icc.gastos_generales_var_ia,33.607623
+2026-06-01,icc.gastos_generales_var_ia,33.496360
+2026-07-01,icc.gastos_generales_var_ia,34.144260
+2026-08-01,icc.gastos_generales_var_ia,35.475073
+2026-09-01,icc.gastos_generales_var_ia,33.625175
+2026-10-01,icc.gastos_generales_var_ia,33.638847
 2015-12-01,icc.gastos_generales_var_m,1.884288
 2016-01-01,icc.gastos_generales_var_m,3.108390
 2016-02-01,icc.gastos_generales_var_m,9.357593
@@ -399687,10 +399689,11 @@ fecha,id_serie,valor
 2026-03-01,icc.gastos_generales_var_m,1.605890
 2026-04-01,icc.gastos_generales_var_m,3.385193
 2026-05-01,icc.gastos_generales_var_m,3.821124
-2026-06-01,icc.gastos_generales_var_m,2.686963
-2026-07-01,icc.gastos_generales_var_m,2.299526
-2026-08-01,icc.gastos_generales_var_m,2.477730
-2026-09-01,icc.gastos_generales_var_m,1.520492
+2026-06-01,icc.gastos_generales_var_m,2.686420
+2026-07-01,icc.gastos_generales_var_m,2.291494
+2026-08-01,icc.gastos_generales_var_m,2.467837
+2026-09-01,icc.gastos_generales_var_m,1.552142
+2026-10-01,icc.gastos_generales_var_m,1.811407
 2015-11-01,icc.mano_de_obra,14.845100
 2015-12-01,icc.mano_de_obra,14.883000
 2016-01-01,icc.mano_de_obra,14.916400
@@ -399818,10 +399821,11 @@ fecha,id_serie,valor
 2026-03-01,icc.mano_de_obra,1639.565900
 2026-04-01,icc.mano_de_obra,1719.924600
 2026-05-01,icc.mano_de_obra,1781.468200
-2026-06-01,icc.mano_de_obra,1834.701200
-2026-07-01,icc.mano_de_obra,1879.251200
-2026-08-01,icc.mano_de_obra,1939.514900
-2026-09-01,icc.mano_de_obra,1971.446200
+2026-06-01,icc.mano_de_obra,1834.717800
+2026-07-01,icc.mano_de_obra,1885.874500
+2026-08-01,icc.mano_de_obra,1953.016200
+2026-09-01,icc.mano_de_obra,1988.366600
+2026-10-01,icc.mano_de_obra,2024.687400
 2016-11-01,icc.mano_de_obra_var_ia,34.890301
 2016-12-01,icc.mano_de_obra_var_ia,35.244238
 2017-01-01,icc.mano_de_obra_var_ia,39.504170
@@ -399937,10 +399941,11 @@ fecha,id_serie,valor
 2026-03-01,icc.mano_de_obra_var_ia,30.192050
 2026-04-01,icc.mano_de_obra_var_ia,39.540831
 2026-05-01,icc.mano_de_obra_var_ia,35.545917
-2026-06-01,icc.mano_de_obra_var_ia,38.400256
-2026-07-01,icc.mano_de_obra_var_ia,38.656776
-2026-08-01,icc.mano_de_obra_var_ia,40.759890
-2026-09-01,icc.mano_de_obra_var_ia,38.662181
+2026-06-01,icc.mano_de_obra_var_ia,38.401509
+2026-07-01,icc.mano_de_obra_var_ia,39.145463
+2026-08-01,icc.mano_de_obra_var_ia,41.739744
+2026-09-01,icc.mano_de_obra_var_ia,39.852282
+2026-10-01,icc.mano_de_obra_var_ia,40.591517
 2015-12-01,icc.mano_de_obra_var_m,0.255303
 2016-01-01,icc.mano_de_obra_var_m,0.224417
 2016-02-01,icc.mano_de_obra_var_m,0.154863
@@ -400067,10 +400072,11 @@ fecha,id_serie,valor
 2026-03-01,icc.mano_de_obra_var_m,2.163136
 2026-04-01,icc.mano_de_obra_var_m,4.901218
 2026-05-01,icc.mano_de_obra_var_m,3.578273
-2026-06-01,icc.mano_de_obra_var_m,2.988153
-2026-07-01,icc.mano_de_obra_var_m,2.428188
-2026-08-01,icc.mano_de_obra_var_m,3.206793
-2026-09-01,icc.mano_de_obra_var_m,1.646355
+2026-06-01,icc.mano_de_obra_var_m,2.989085
+2026-07-01,icc.mano_de_obra_var_m,2.788260
+2026-08-01,icc.mano_de_obra_var_m,3.560242
+2026-09-01,icc.mano_de_obra_var_m,1.810041
+2026-10-01,icc.mano_de_obra_var_m,1.826665
 2015-11-01,icc.materiales,9.352600
 2015-12-01,icc.materiales,10.000500
 2016-01-01,icc.materiales,10.604900
@@ -400202,6 +400208,7 @@ fecha,id_serie,valor
 2026-07-01,icc.materiales,1511.574900
 2026-08-01,icc.materiales,1537.891700
 2026-09-01,icc.materiales,1558.205700
+2026-10-01,icc.materiales,1581.771700
 2016-11-01,icc.materiales_var_ia,34.519813
 2016-12-01,icc.materiales_var_ia,27.469627
 2017-01-01,icc.materiales_var_ia,22.440570
@@ -400321,6 +400328,7 @@ fecha,id_serie,valor
 2026-07-01,icc.materiales_var_ia,24.870553
 2026-08-01,icc.materiales_var_ia,24.676295
 2026-09-01,icc.materiales_var_ia,22.816266
+2026-10-01,icc.materiales_var_ia,22.164872
 2015-12-01,icc.materiales_var_m,6.927485
 2016-01-01,icc.materiales_var_m,6.043698
 2016-02-01,icc.materiales_var_m,3.037275
@@ -400451,6 +400459,7 @@ fecha,id_serie,valor
 2026-07-01,icc.materiales_var_m,1.583789
 2026-08-01,icc.materiales_var_m,1.741019
 2026-09-01,icc.materiales_var_m,1.320899
+2026-10-01,icc.materiales_var_m,1.512381
 2015-11-01,icc.nivel_general,11.892300
 2015-12-01,icc.nivel_general,12.225400
 2016-01-01,icc.nivel_general,12.549400
@@ -400578,10 +400587,11 @@ fecha,id_serie,valor
 2026-03-01,icc.nivel_general,1530.827400
 2026-04-01,icc.nivel_general,1590.918100
 2026-05-01,icc.nivel_general,1634.907600
-2026-06-01,icc.nivel_general,1675.352800
-2026-07-01,icc.nivel_general,1710.030500
-2026-08-01,icc.nivel_general,1753.386500
-2026-09-01,icc.nivel_general,1779.722700
+2026-06-01,icc.nivel_general,1675.359100
+2026-07-01,icc.nivel_general,1712.968500
+2026-08-01,icc.nivel_general,1759.372000
+2026-09-01,icc.nivel_general,1787.289400
+2026-10-01,icc.nivel_general,1817.656100
 2016-11-01,icc.nivel_general_var_ia,36.243620
 2016-12-01,icc.nivel_general_var_ia,33.567818
 2017-01-01,icc.nivel_general_var_ia,33.588857
@@ -400697,10 +400707,11 @@ fecha,id_serie,valor
 2026-03-01,icc.nivel_general_var_ia,26.655668
 2026-04-01,icc.nivel_general_var_ia,30.975324
 2026-05-01,icc.nivel_general_var_ia,30.081882
-2026-06-01,icc.nivel_general_var_ia,31.983961
-2026-07-01,icc.nivel_general_var_ia,32.260181
-2026-08-01,icc.nivel_general_var_ia,33.287416
-2026-09-01,icc.nivel_general_var_ia,31.324380
+2026-06-01,icc.nivel_general_var_ia,31.984458
+2026-07-01,icc.nivel_general_var_ia,32.487417
+2026-08-01,icc.nivel_general_var_ia,33.742417
+2026-09-01,icc.nivel_general_var_ia,31.882721
+2026-10-01,icc.nivel_general_var_ia,31.918521
 2015-12-01,icc.nivel_general_var_m,2.800972
 2016-01-01,icc.nivel_general_var_m,2.650220
 2016-02-01,icc.nivel_general_var_m,2.020017
@@ -400827,10 +400838,11 @@ fecha,id_serie,valor
 2026-03-01,icc.nivel_general_var_m,1.943328
 2026-04-01,icc.nivel_general_var_m,3.925374
 2026-05-01,icc.nivel_general_var_m,2.765039
-2026-06-01,icc.nivel_general_var_m,2.473852
-2026-07-01,icc.nivel_general_var_m,2.069874
-2026-08-01,icc.nivel_general_var_m,2.535393
-2026-09-01,icc.nivel_general_var_m,1.502019
+2026-06-01,icc.nivel_general_var_m,2.474238
+2026-07-01,icc.nivel_general_var_m,2.244856
+2026-08-01,icc.nivel_general_var_m,2.708952
+2026-09-01,icc.nivel_general_var_m,1.586782
+2026-10-01,icc.nivel_general_var_m,1.699037
 2016-01-01,imig.asignaciones,4999.700000
 2016-02-01,imig.asignaciones,5842.300000
 2016-03-01,imig.asignaciones,12033.600000
@@ -779463,6 +779475,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_importados,14309.593100
 2026-08-01,precios_mayoristas.ipib_importados,14734.685000
 2026-09-01,precios_mayoristas.ipib_importados,14784.768400
+2026-10-01,precios_mayoristas.ipib_importados,14916.145000
 2016-12-01,precios_mayoristas.ipib_importados_var_ia,32.800000
 2017-01-01,precios_mayoristas.ipib_importados_var_ia,13.700000
 2017-02-01,precios_mayoristas.ipib_importados_var_ia,4.900000
@@ -779581,6 +779594,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_importados_var_ia,21.500000
 2026-08-01,precios_mayoristas.ipib_importados_var_ia,21.600000
 2026-09-01,precios_mayoristas.ipib_importados_var_ia,12.000000
+2026-10-01,precios_mayoristas.ipib_importados_var_ia,14.500000
 2016-01-01,precios_mayoristas.ipib_importados_var_m,17.300000
 2016-02-01,precios_mayoristas.ipib_importados_var_m,8.200000
 2016-03-01,precios_mayoristas.ipib_importados_var_m,0.000000
@@ -779710,6 +779724,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_importados_var_m,0.600000
 2026-08-01,precios_mayoristas.ipib_importados_var_m,3.000000
 2026-09-01,precios_mayoristas.ipib_importados_var_m,0.300000
+2026-10-01,precios_mayoristas.ipib_importados_var_m,0.900000
 2015-12-01,precios_mayoristas.ipib_manufacturados_energia,100.000000
 2016-01-01,precios_mayoristas.ipib_manufacturados_energia,108.037300
 2016-02-01,precios_mayoristas.ipib_manufacturados_energia,112.871200
@@ -779840,6 +779855,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_manufacturados_energia,16006.880600
 2026-08-01,precios_mayoristas.ipib_manufacturados_energia,16209.852700
 2026-09-01,precios_mayoristas.ipib_manufacturados_energia,16536.037900
+2026-10-01,precios_mayoristas.ipib_manufacturados_energia,16840.304600
 2016-12-01,precios_mayoristas.ipib_manufacturados_energia_var_ia,33.600000
 2017-01-01,precios_mayoristas.ipib_manufacturados_energia_var_ia,25.600000
 2017-02-01,precios_mayoristas.ipib_manufacturados_energia_var_ia,22.100000
@@ -779958,6 +779974,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_manufacturados_energia_var_ia,28.000000
 2026-08-01,precios_mayoristas.ipib_manufacturados_energia_var_ia,26.400000
 2026-09-01,precios_mayoristas.ipib_manufacturados_energia_var_ia,24.900000
+2026-10-01,precios_mayoristas.ipib_manufacturados_energia_var_ia,26.000000
 2016-01-01,precios_mayoristas.ipib_manufacturados_energia_var_m,8.000000
 2016-02-01,precios_mayoristas.ipib_manufacturados_energia_var_m,4.500000
 2016-03-01,precios_mayoristas.ipib_manufacturados_energia_var_m,2.800000
@@ -780087,6 +780104,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_manufacturados_energia_var_m,1.600000
 2026-08-01,precios_mayoristas.ipib_manufacturados_energia_var_m,1.300000
 2026-09-01,precios_mayoristas.ipib_manufacturados_energia_var_m,2.000000
+2026-10-01,precios_mayoristas.ipib_manufacturados_energia_var_m,1.800000
 2015-12-01,precios_mayoristas.ipib_nacionales,100.000000
 2016-01-01,precios_mayoristas.ipib_nacionales,108.354000
 2016-02-01,precios_mayoristas.ipib_nacionales,113.573800
@@ -780217,6 +780235,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_nacionales,15857.171600
 2026-08-01,precios_mayoristas.ipib_nacionales,16209.919900
 2026-09-01,precios_mayoristas.ipib_nacionales,16803.902100
+2026-10-01,precios_mayoristas.ipib_nacionales,17054.636900
 2016-12-01,precios_mayoristas.ipib_nacionales_var_ia,33.100000
 2017-01-01,precios_mayoristas.ipib_nacionales_var_ia,24.900000
 2017-02-01,precios_mayoristas.ipib_nacionales_var_ia,20.800000
@@ -780335,6 +780354,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_nacionales_var_ia,30.900000
 2026-08-01,precios_mayoristas.ipib_nacionales_var_ia,29.400000
 2026-09-01,precios_mayoristas.ipib_nacionales_var_ia,29.400000
+2026-10-01,precios_mayoristas.ipib_nacionales_var_ia,29.400000
 2016-01-01,precios_mayoristas.ipib_nacionales_var_m,8.400000
 2016-02-01,precios_mayoristas.ipib_nacionales_var_m,4.800000
 2016-03-01,precios_mayoristas.ipib_nacionales_var_m,2.600000
@@ -780464,6 +780484,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_nacionales_var_m,0.900000
 2026-08-01,precios_mayoristas.ipib_nacionales_var_m,2.200000
 2026-09-01,precios_mayoristas.ipib_nacionales_var_m,3.700000
+2026-10-01,precios_mayoristas.ipib_nacionales_var_m,1.500000
 2015-12-01,precios_mayoristas.ipib_nivel_general,100.000000
 2016-01-01,precios_mayoristas.ipib_nivel_general,109.011900
 2016-02-01,precios_mayoristas.ipib_nivel_general,114.551800
@@ -780594,6 +780615,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_nivel_general,15743.682500
 2026-08-01,precios_mayoristas.ipib_nivel_general,16101.736000
 2026-09-01,precios_mayoristas.ipib_nivel_general,16655.832300
+2026-10-01,precios_mayoristas.ipib_nivel_general,16897.814100
 2016-12-01,precios_mayoristas.ipib_nivel_general_var_ia,33.000000
 2017-01-01,precios_mayoristas.ipib_nivel_general_var_ia,24.000000
 2017-02-01,precios_mayoristas.ipib_nivel_general_var_ia,19.500000
@@ -780712,6 +780734,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_nivel_general_var_ia,30.200000
 2026-08-01,precios_mayoristas.ipib_nivel_general_var_ia,28.900000
 2026-09-01,precios_mayoristas.ipib_nivel_general_var_ia,28.100000
+2026-10-01,precios_mayoristas.ipib_nivel_general_var_ia,28.300000
 2016-01-01,precios_mayoristas.ipib_nivel_general_var_m,9.000000
 2016-02-01,precios_mayoristas.ipib_nivel_general_var_m,5.100000
 2016-03-01,precios_mayoristas.ipib_nivel_general_var_m,2.400000
@@ -780841,6 +780864,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_nivel_general_var_m,0.800000
 2026-08-01,precios_mayoristas.ipib_nivel_general_var_m,2.300000
 2026-09-01,precios_mayoristas.ipib_nivel_general_var_m,3.400000
+2026-10-01,precios_mayoristas.ipib_nivel_general_var_m,1.500000
 2015-12-01,precios_mayoristas.ipib_petroleo_gas,100.000000
 2016-01-01,precios_mayoristas.ipib_petroleo_gas,116.463500
 2016-02-01,precios_mayoristas.ipib_petroleo_gas,121.758800
@@ -780971,6 +780995,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_petroleo_gas,13961.440700
 2026-08-01,precios_mayoristas.ipib_petroleo_gas,15073.359300
 2026-09-01,precios_mayoristas.ipib_petroleo_gas,17342.218900
+2026-10-01,precios_mayoristas.ipib_petroleo_gas,17653.860100
 2016-12-01,precios_mayoristas.ipib_petroleo_gas_var_ia,35.100000
 2017-01-01,precios_mayoristas.ipib_petroleo_gas_var_ia,16.100000
 2017-02-01,precios_mayoristas.ipib_petroleo_gas_var_ia,10.300000
@@ -781089,6 +781114,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_petroleo_gas_var_ia,45.700000
 2026-08-01,precios_mayoristas.ipib_petroleo_gas_var_ia,51.900000
 2026-09-01,precios_mayoristas.ipib_petroleo_gas_var_ia,67.800000
+2026-10-01,precios_mayoristas.ipib_petroleo_gas_var_ia,73.400000
 2016-01-01,precios_mayoristas.ipib_petroleo_gas_var_m,16.500000
 2016-02-01,precios_mayoristas.ipib_petroleo_gas_var_m,4.500000
 2016-03-01,precios_mayoristas.ipib_petroleo_gas_var_m,1.100000
@@ -781218,6 +781244,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_petroleo_gas_var_m,-9.200000
 2026-08-01,precios_mayoristas.ipib_petroleo_gas_var_m,8.000000
 2026-09-01,precios_mayoristas.ipib_petroleo_gas_var_m,15.100000
+2026-10-01,precios_mayoristas.ipib_petroleo_gas_var_m,1.800000
 2015-12-01,precios_mayoristas.ipib_primarios,100.000000
 2016-01-01,precios_mayoristas.ipib_primarios,109.127400
 2016-02-01,precios_mayoristas.ipib_primarios,115.289100
@@ -781348,6 +781375,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_primarios,15491.622400
 2026-08-01,precios_mayoristas.ipib_primarios,16210.084000
 2026-09-01,precios_mayoristas.ipib_primarios,17457.955000
+2026-10-01,precios_mayoristas.ipib_primarios,17577.979000
 2016-12-01,precios_mayoristas.ipib_primarios_var_ia,31.700000
 2017-01-01,precios_mayoristas.ipib_primarios_var_ia,23.000000
 2017-02-01,precios_mayoristas.ipib_primarios_var_ia,17.700000
@@ -781466,6 +781494,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_primarios_var_ia,38.800000
 2026-08-01,precios_mayoristas.ipib_primarios_var_ia,37.500000
 2026-09-01,precios_mayoristas.ipib_primarios_var_ia,41.200000
+2026-10-01,precios_mayoristas.ipib_primarios_var_ia,38.300000
 2016-01-01,precios_mayoristas.ipib_primarios_var_m,9.100000
 2016-02-01,precios_mayoristas.ipib_primarios_var_m,5.600000
 2016-03-01,precios_mayoristas.ipib_primarios_var_m,2.100000
@@ -781595,6 +781624,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_primarios_var_m,-1.100000
 2026-08-01,precios_mayoristas.ipib_primarios_var_m,4.600000
 2026-09-01,precios_mayoristas.ipib_primarios_var_m,7.700000
+2026-10-01,precios_mayoristas.ipib_primarios_var_m,0.700000
 2015-12-01,precios_mayoristas.ipib_refinados,100.000000
 2016-01-01,precios_mayoristas.ipib_refinados,106.241500
 2016-02-01,precios_mayoristas.ipib_refinados,108.645300
@@ -781725,6 +781755,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_refinados,19299.281100
 2026-08-01,precios_mayoristas.ipib_refinados,19418.042600
 2026-09-01,precios_mayoristas.ipib_refinados,19978.466900
+2026-10-01,precios_mayoristas.ipib_refinados,21216.331200
 2016-12-01,precios_mayoristas.ipib_refinados_var_ia,32.000000
 2017-01-01,precios_mayoristas.ipib_refinados_var_ia,28.400000
 2017-02-01,precios_mayoristas.ipib_refinados_var_ia,28.200000
@@ -781843,6 +781874,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_refinados_var_ia,58.000000
 2026-08-01,precios_mayoristas.ipib_refinados_var_ia,50.600000
 2026-09-01,precios_mayoristas.ipib_refinados_var_ia,50.100000
+2026-10-01,precios_mayoristas.ipib_refinados_var_ia,55.500000
 2016-01-01,precios_mayoristas.ipib_refinados_var_m,6.200000
 2016-02-01,precios_mayoristas.ipib_refinados_var_m,2.300000
 2016-03-01,precios_mayoristas.ipib_refinados_var_m,4.900000
@@ -781972,6 +782004,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipib_refinados_var_m,-0.500000
 2026-08-01,precios_mayoristas.ipib_refinados_var_m,0.600000
 2026-09-01,precios_mayoristas.ipib_refinados_var_m,2.900000
+2026-10-01,precios_mayoristas.ipib_refinados_var_m,6.200000
 2015-12-01,precios_mayoristas.ipim_importados,100.000000
 2016-01-01,precios_mayoristas.ipim_importados,117.409000
 2016-02-01,precios_mayoristas.ipim_importados,126.847800
@@ -782102,6 +782135,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_importados,14209.985700
 2026-08-01,precios_mayoristas.ipim_importados,14624.581900
 2026-09-01,precios_mayoristas.ipim_importados,14684.650700
+2026-10-01,precios_mayoristas.ipim_importados,14815.725700
 2016-12-01,precios_mayoristas.ipim_importados_var_ia,32.700000
 2017-01-01,precios_mayoristas.ipim_importados_var_ia,13.500000
 2017-02-01,precios_mayoristas.ipim_importados_var_ia,4.900000
@@ -782220,6 +782254,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_importados_var_ia,21.300000
 2026-08-01,precios_mayoristas.ipim_importados_var_ia,21.300000
 2026-09-01,precios_mayoristas.ipim_importados_var_ia,11.800000
+2026-10-01,precios_mayoristas.ipim_importados_var_ia,14.400000
 2016-01-01,precios_mayoristas.ipim_importados_var_m,17.400000
 2016-02-01,precios_mayoristas.ipim_importados_var_m,8.000000
 2016-03-01,precios_mayoristas.ipim_importados_var_m,0.000000
@@ -782349,6 +782384,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_importados_var_m,0.500000
 2026-08-01,precios_mayoristas.ipim_importados_var_m,2.900000
 2026-09-01,precios_mayoristas.ipim_importados_var_m,0.400000
+2026-10-01,precios_mayoristas.ipim_importados_var_m,0.900000
 2015-12-01,precios_mayoristas.ipim_manufacturados_energia,100.000000
 2016-01-01,precios_mayoristas.ipim_manufacturados_energia,107.729700
 2016-02-01,precios_mayoristas.ipim_manufacturados_energia,112.643400
@@ -782479,6 +782515,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_manufacturados_energia,16804.342000
 2026-08-01,precios_mayoristas.ipim_manufacturados_energia,17029.912700
 2026-09-01,precios_mayoristas.ipim_manufacturados_energia,17362.692700
+2026-10-01,precios_mayoristas.ipim_manufacturados_energia,17672.376500
 2016-12-01,precios_mayoristas.ipim_manufacturados_energia_var_ia,36.100000
 2017-01-01,precios_mayoristas.ipim_manufacturados_energia_var_ia,28.400000
 2017-02-01,precios_mayoristas.ipim_manufacturados_energia_var_ia,25.000000
@@ -782597,6 +782634,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_manufacturados_energia_var_ia,29.900000
 2026-08-01,precios_mayoristas.ipim_manufacturados_energia_var_ia,28.100000
 2026-09-01,precios_mayoristas.ipim_manufacturados_energia_var_ia,26.700000
+2026-10-01,precios_mayoristas.ipim_manufacturados_energia_var_ia,27.600000
 2016-01-01,precios_mayoristas.ipim_manufacturados_energia_var_m,7.700000
 2016-02-01,precios_mayoristas.ipim_manufacturados_energia_var_m,4.600000
 2016-03-01,precios_mayoristas.ipim_manufacturados_energia_var_m,2.800000
@@ -782726,6 +782764,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_manufacturados_energia_var_m,1.800000
 2026-08-01,precios_mayoristas.ipim_manufacturados_energia_var_m,1.300000
 2026-09-01,precios_mayoristas.ipim_manufacturados_energia_var_m,2.000000
+2026-10-01,precios_mayoristas.ipim_manufacturados_energia_var_m,1.800000
 2015-12-01,precios_mayoristas.ipim_nacionales,100.000000
 2016-01-01,precios_mayoristas.ipim_nacionales,108.098600
 2016-02-01,precios_mayoristas.ipim_nacionales,113.158500
@@ -782856,6 +782895,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_nacionales,16395.330300
 2026-08-01,precios_mayoristas.ipim_nacionales,16736.514300
 2026-09-01,precios_mayoristas.ipim_nacionales,17297.234800
+2026-10-01,precios_mayoristas.ipim_nacionales,17578.718300
 2016-12-01,precios_mayoristas.ipim_nacionales_var_ia,34.700000
 2017-01-01,precios_mayoristas.ipim_nacionales_var_ia,26.600000
 2017-02-01,precios_mayoristas.ipim_nacionales_var_ia,23.100000
@@ -782974,6 +783014,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_nacionales_var_ia,31.800000
 2026-08-01,precios_mayoristas.ipim_nacionales_var_ia,30.500000
 2026-09-01,precios_mayoristas.ipim_nacionales_var_ia,30.500000
+2026-10-01,precios_mayoristas.ipim_nacionales_var_ia,31.000000
 2016-01-01,precios_mayoristas.ipim_nacionales_var_m,8.100000
 2016-02-01,precios_mayoristas.ipim_nacionales_var_m,4.700000
 2016-03-01,precios_mayoristas.ipim_nacionales_var_m,2.700000
@@ -783103,6 +783144,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_nacionales_var_m,0.800000
 2026-08-01,precios_mayoristas.ipim_nacionales_var_m,2.100000
 2026-09-01,precios_mayoristas.ipim_nacionales_var_m,3.400000
+2026-10-01,precios_mayoristas.ipim_nacionales_var_m,1.600000
 2015-12-01,precios_mayoristas.ipim_nivel_general,100.000000
 2016-01-01,precios_mayoristas.ipim_nivel_general,108.787200
 2016-02-01,precios_mayoristas.ipim_nivel_general,114.170900
@@ -783233,6 +783275,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_nivel_general,16233.714900
 2026-08-01,precios_mayoristas.ipim_nivel_general,16580.328100
 2026-09-01,precios_mayoristas.ipim_nivel_general,17104.023300
+2026-10-01,precios_mayoristas.ipim_nivel_general,17374.383600
 2016-12-01,precios_mayoristas.ipim_nivel_general_var_ia,34.500000
 2017-01-01,precios_mayoristas.ipim_nivel_general_var_ia,25.500000
 2017-02-01,precios_mayoristas.ipim_nivel_general_var_ia,21.600000
@@ -783351,6 +783394,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_nivel_general_var_ia,31.100000
 2026-08-01,precios_mayoristas.ipim_nivel_general_var_ia,29.800000
 2026-09-01,precios_mayoristas.ipim_nivel_general_var_ia,29.200000
+2026-10-01,precios_mayoristas.ipim_nivel_general_var_ia,29.800000
 2016-01-01,precios_mayoristas.ipim_nivel_general_var_m,8.800000
 2016-02-01,precios_mayoristas.ipim_nivel_general_var_m,4.900000
 2016-03-01,precios_mayoristas.ipim_nivel_general_var_m,2.500000
@@ -783480,6 +783524,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_nivel_general_var_m,0.800000
 2026-08-01,precios_mayoristas.ipim_nivel_general_var_m,2.100000
 2026-09-01,precios_mayoristas.ipim_nivel_general_var_m,3.200000
+2026-10-01,precios_mayoristas.ipim_nivel_general_var_m,1.600000
 2015-12-01,precios_mayoristas.ipim_petroleo_gas,100.000000
 2016-01-01,precios_mayoristas.ipim_petroleo_gas,116.461600
 2016-02-01,precios_mayoristas.ipim_petroleo_gas,121.758900
@@ -783610,6 +783655,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_petroleo_gas,13965.053800
 2026-08-01,precios_mayoristas.ipim_petroleo_gas,15076.664700
 2026-09-01,precios_mayoristas.ipim_petroleo_gas,17345.080200
+2026-10-01,precios_mayoristas.ipim_petroleo_gas,17655.875600
 2016-12-01,precios_mayoristas.ipim_petroleo_gas_var_ia,35.100000
 2017-01-01,precios_mayoristas.ipim_petroleo_gas_var_ia,16.100000
 2017-02-01,precios_mayoristas.ipim_petroleo_gas_var_ia,10.300000
@@ -783728,6 +783774,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_petroleo_gas_var_ia,45.700000
 2026-08-01,precios_mayoristas.ipim_petroleo_gas_var_ia,51.900000
 2026-09-01,precios_mayoristas.ipim_petroleo_gas_var_ia,67.700000
+2026-10-01,precios_mayoristas.ipim_petroleo_gas_var_ia,73.300000
 2016-01-01,precios_mayoristas.ipim_petroleo_gas_var_m,16.500000
 2016-02-01,precios_mayoristas.ipim_petroleo_gas_var_m,4.500000
 2016-03-01,precios_mayoristas.ipim_petroleo_gas_var_m,1.100000
@@ -783857,6 +783904,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_petroleo_gas_var_m,-9.200000
 2026-08-01,precios_mayoristas.ipim_petroleo_gas_var_m,8.000000
 2026-09-01,precios_mayoristas.ipim_petroleo_gas_var_m,15.000000
+2026-10-01,precios_mayoristas.ipim_petroleo_gas_var_m,1.800000
 2015-12-01,precios_mayoristas.ipim_primarios,100.000000
 2016-01-01,precios_mayoristas.ipim_primarios,109.221800
 2016-02-01,precios_mayoristas.ipim_primarios,114.726600
@@ -783987,6 +784035,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_primarios,15150.240300
 2026-08-01,precios_mayoristas.ipim_primarios,15843.368000
 2026-09-01,precios_mayoristas.ipim_primarios,17097.971600
+2026-10-01,precios_mayoristas.ipim_primarios,17293.609600
 2016-12-01,precios_mayoristas.ipim_primarios_var_ia,30.400000
 2017-01-01,precios_mayoristas.ipim_primarios_var_ia,21.100000
 2017-02-01,precios_mayoristas.ipim_primarios_var_ia,17.300000
@@ -784105,6 +784154,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_primarios_var_ia,38.600000
 2026-08-01,precios_mayoristas.ipim_primarios_var_ia,38.800000
 2026-09-01,precios_mayoristas.ipim_primarios_var_ia,44.100000
+2026-10-01,precios_mayoristas.ipim_primarios_var_ia,42.800000
 2016-01-01,precios_mayoristas.ipim_primarios_var_m,9.200000
 2016-02-01,precios_mayoristas.ipim_primarios_var_m,5.000000
 2016-03-01,precios_mayoristas.ipim_primarios_var_m,2.500000
@@ -784234,6 +784284,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_primarios_var_m,-2.200000
 2026-08-01,precios_mayoristas.ipim_primarios_var_m,4.600000
 2026-09-01,precios_mayoristas.ipim_primarios_var_m,7.900000
+2026-10-01,precios_mayoristas.ipim_primarios_var_m,1.100000
 2015-12-01,precios_mayoristas.ipim_refinados,100.000000
 2016-01-01,precios_mayoristas.ipim_refinados,105.853600
 2016-02-01,precios_mayoristas.ipim_refinados,107.897600
@@ -784364,6 +784415,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_refinados,23223.522200
 2026-08-01,precios_mayoristas.ipim_refinados,23466.179500
 2026-09-01,precios_mayoristas.ipim_refinados,23981.320100
+2026-10-01,precios_mayoristas.ipim_refinados,25083.990800
 2016-12-01,precios_mayoristas.ipim_refinados_var_ia,31.900000
 2017-01-01,precios_mayoristas.ipim_refinados_var_ia,28.900000
 2017-02-01,precios_mayoristas.ipim_refinados_var_ia,29.300000
@@ -784482,6 +784534,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_refinados_var_ia,59.000000
 2026-08-01,precios_mayoristas.ipim_refinados_var_ia,52.800000
 2026-09-01,precios_mayoristas.ipim_refinados_var_ia,51.100000
+2026-10-01,precios_mayoristas.ipim_refinados_var_ia,54.800000
 2016-01-01,precios_mayoristas.ipim_refinados_var_m,5.900000
 2016-02-01,precios_mayoristas.ipim_refinados_var_m,1.900000
 2016-03-01,precios_mayoristas.ipim_refinados_var_m,5.300000
@@ -784611,6 +784664,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipim_refinados_var_m,0.700000
 2026-08-01,precios_mayoristas.ipim_refinados_var_m,1.000000
 2026-09-01,precios_mayoristas.ipim_refinados_var_m,2.200000
+2026-10-01,precios_mayoristas.ipim_refinados_var_m,4.600000
 2015-12-01,precios_mayoristas.ipp_manufacturados_energia,100.000000
 2016-01-01,precios_mayoristas.ipp_manufacturados_energia,108.710600
 2016-02-01,precios_mayoristas.ipp_manufacturados_energia,113.648200
@@ -784741,6 +784795,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipp_manufacturados_energia,16018.825300
 2026-08-01,precios_mayoristas.ipp_manufacturados_energia,16226.662200
 2026-09-01,precios_mayoristas.ipp_manufacturados_energia,16571.790000
+2026-10-01,precios_mayoristas.ipp_manufacturados_energia,16879.817700
 2016-12-01,precios_mayoristas.ipp_manufacturados_energia_var_ia,34.400000
 2017-01-01,precios_mayoristas.ipp_manufacturados_energia_var_ia,25.600000
 2017-02-01,precios_mayoristas.ipp_manufacturados_energia_var_ia,21.800000
@@ -784859,6 +784914,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipp_manufacturados_energia_var_ia,28.400000
 2026-08-01,precios_mayoristas.ipp_manufacturados_energia_var_ia,26.700000
 2026-09-01,precios_mayoristas.ipp_manufacturados_energia_var_ia,25.000000
+2026-10-01,precios_mayoristas.ipp_manufacturados_energia_var_ia,25.900000
 2016-01-01,precios_mayoristas.ipp_manufacturados_energia_var_m,8.700000
 2016-02-01,precios_mayoristas.ipp_manufacturados_energia_var_m,4.500000
 2016-03-01,precios_mayoristas.ipp_manufacturados_energia_var_m,2.700000
@@ -784988,6 +785044,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipp_manufacturados_energia_var_m,1.700000
 2026-08-01,precios_mayoristas.ipp_manufacturados_energia_var_m,1.300000
 2026-09-01,precios_mayoristas.ipp_manufacturados_energia_var_m,2.100000
+2026-10-01,precios_mayoristas.ipp_manufacturados_energia_var_m,1.900000
 2015-12-01,precios_mayoristas.ipp_nivel_general,100.000000
 2016-01-01,precios_mayoristas.ipp_nivel_general,109.104900
 2016-02-01,precios_mayoristas.ipp_nivel_general,114.574400
@@ -785118,6 +785175,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipp_nivel_general,15898.543800
 2026-08-01,precios_mayoristas.ipp_nivel_general,16258.501900
 2026-09-01,precios_mayoristas.ipp_nivel_general,16883.244900
+2026-10-01,precios_mayoristas.ipp_nivel_general,17132.831900
 2016-12-01,precios_mayoristas.ipp_nivel_general_var_ia,34.000000
 2017-01-01,precios_mayoristas.ipp_nivel_general_var_ia,24.900000
 2017-02-01,precios_mayoristas.ipp_nivel_general_var_ia,20.400000
@@ -785236,6 +785294,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipp_nivel_general_var_ia,31.300000
 2026-08-01,precios_mayoristas.ipp_nivel_general_var_ia,29.700000
 2026-09-01,precios_mayoristas.ipp_nivel_general_var_ia,29.500000
+2026-10-01,precios_mayoristas.ipp_nivel_general_var_ia,29.200000
 2016-01-01,precios_mayoristas.ipp_nivel_general_var_m,9.100000
 2016-02-01,precios_mayoristas.ipp_nivel_general_var_m,5.000000
 2016-03-01,precios_mayoristas.ipp_nivel_general_var_m,2.500000
@@ -785365,6 +785424,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipp_nivel_general_var_m,0.900000
 2026-08-01,precios_mayoristas.ipp_nivel_general_var_m,2.300000
 2026-09-01,precios_mayoristas.ipp_nivel_general_var_m,3.800000
+2026-10-01,precios_mayoristas.ipp_nivel_general_var_m,1.500000
 2015-12-01,precios_mayoristas.ipp_petroleo_gas,100.000000
 2016-01-01,precios_mayoristas.ipp_petroleo_gas,116.463500
 2016-02-01,precios_mayoristas.ipp_petroleo_gas,121.758800
@@ -785495,6 +785555,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipp_petroleo_gas,13961.440700
 2026-08-01,precios_mayoristas.ipp_petroleo_gas,15073.359300
 2026-09-01,precios_mayoristas.ipp_petroleo_gas,17342.218900
+2026-10-01,precios_mayoristas.ipp_petroleo_gas,17653.860100
 2016-12-01,precios_mayoristas.ipp_petroleo_gas_var_ia,35.100000
 2017-01-01,precios_mayoristas.ipp_petroleo_gas_var_ia,16.100000
 2017-02-01,precios_mayoristas.ipp_petroleo_gas_var_ia,10.300000
@@ -785613,6 +785674,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipp_petroleo_gas_var_ia,45.700000
 2026-08-01,precios_mayoristas.ipp_petroleo_gas_var_ia,51.900000
 2026-09-01,precios_mayoristas.ipp_petroleo_gas_var_ia,67.800000
+2026-10-01,precios_mayoristas.ipp_petroleo_gas_var_ia,73.400000
 2016-01-01,precios_mayoristas.ipp_petroleo_gas_var_m,16.500000
 2016-02-01,precios_mayoristas.ipp_petroleo_gas_var_m,4.500000
 2016-03-01,precios_mayoristas.ipp_petroleo_gas_var_m,1.100000
@@ -785742,6 +785804,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipp_petroleo_gas_var_m,-9.200000
 2026-08-01,precios_mayoristas.ipp_petroleo_gas_var_m,8.000000
 2026-09-01,precios_mayoristas.ipp_petroleo_gas_var_m,15.100000
+2026-10-01,precios_mayoristas.ipp_petroleo_gas_var_m,1.800000
 2015-12-01,precios_mayoristas.ipp_primarios,100.000000
 2016-01-01,precios_mayoristas.ipp_primarios,110.051700
 2016-02-01,precios_mayoristas.ipp_primarios,116.798300
@@ -785872,6 +785935,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipp_primarios,15609.748600
 2026-08-01,precios_mayoristas.ipp_primarios,16334.948800
 2026-09-01,precios_mayoristas.ipp_primarios,17631.045800
+2026-10-01,precios_mayoristas.ipp_primarios,17740.317100
 2016-12-01,precios_mayoristas.ipp_primarios_var_ia,33.000000
 2017-01-01,precios_mayoristas.ipp_primarios_var_ia,23.400000
 2017-02-01,precios_mayoristas.ipp_primarios_var_ia,17.000000
@@ -785990,6 +786054,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipp_primarios_var_ia,39.100000
 2026-08-01,precios_mayoristas.ipp_primarios_var_ia,37.500000
 2026-09-01,precios_mayoristas.ipp_primarios_var_ia,41.100000
+2026-10-01,precios_mayoristas.ipp_primarios_var_ia,37.600000
 2016-01-01,precios_mayoristas.ipp_primarios_var_m,10.100000
 2016-02-01,precios_mayoristas.ipp_primarios_var_m,6.100000
 2016-03-01,precios_mayoristas.ipp_primarios_var_m,2.000000
@@ -786119,6 +786184,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipp_primarios_var_m,-1.000000
 2026-08-01,precios_mayoristas.ipp_primarios_var_m,4.600000
 2026-09-01,precios_mayoristas.ipp_primarios_var_m,7.900000
+2026-10-01,precios_mayoristas.ipp_primarios_var_m,0.600000
 2015-12-01,precios_mayoristas.ipp_refinados,100.000000
 2016-01-01,precios_mayoristas.ipp_refinados,106.241500
 2016-02-01,precios_mayoristas.ipp_refinados,108.645300
@@ -786249,6 +786315,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipp_refinados,19299.281100
 2026-08-01,precios_mayoristas.ipp_refinados,19418.042600
 2026-09-01,precios_mayoristas.ipp_refinados,19978.466900
+2026-10-01,precios_mayoristas.ipp_refinados,21216.331200
 2016-12-01,precios_mayoristas.ipp_refinados_var_ia,32.000000
 2017-01-01,precios_mayoristas.ipp_refinados_var_ia,28.400000
 2017-02-01,precios_mayoristas.ipp_refinados_var_ia,28.200000
@@ -786367,6 +786434,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipp_refinados_var_ia,58.000000
 2026-08-01,precios_mayoristas.ipp_refinados_var_ia,50.600000
 2026-09-01,precios_mayoristas.ipp_refinados_var_ia,50.100000
+2026-10-01,precios_mayoristas.ipp_refinados_var_ia,55.500000
 2016-01-01,precios_mayoristas.ipp_refinados_var_m,6.200000
 2016-02-01,precios_mayoristas.ipp_refinados_var_m,2.300000
 2016-03-01,precios_mayoristas.ipp_refinados_var_m,4.900000
@@ -786496,6 +786564,7 @@ fecha,id_serie,valor
 2026-07-01,precios_mayoristas.ipp_refinados_var_m,-0.500000
 2026-08-01,precios_mayoristas.ipp_refinados_var_m,0.600000
 2026-09-01,precios_mayoristas.ipp_refinados_var_m,2.900000
+2026-10-01,precios_mayoristas.ipp_refinados_var_m,6.200000
 2005-01-01,provincias.buenos_aires_ingresos_totales,21793.544008
 2006-01-01,provincias.buenos_aires_ingresos_totales,26731.502933
 2007-01-01,provincias.buenos_aires_ingresos_totales,33494.482386

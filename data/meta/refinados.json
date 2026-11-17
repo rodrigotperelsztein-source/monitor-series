@@ -5,7 +5,7 @@
   "pagina": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
   "frecuencia": "D",
   "unidad": "Dólares por galón",
-  "sha256": "970e548a86437b94aeae16d0be469d59d9e75d014363db184515db7698791458",
+  "sha256": "dc7d5751565792582e8be63c3abf672eee8bcce84c44d72ae7786e930f5301cd",
   "columnas": {
     "nafta_nyh": {
       "nombre": "Nafta convencional regular, puerto de Nueva York, spot",

@@ -5,7 +5,7 @@
   "pagina": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
   "frecuencia": "M",
   "unidad": "Dólares por barril",
-  "sha256": "0fecc3faacfacb85db44b80914176cdc7894c1bb4beb26f9b1d34ca146f84698",
+  "sha256": "36b5d45ae463d8a052dcedd2bfb4e4b530d9526d8766311f8f0fbbdb4c484748",
   "derivada_de": [
     "petroleo"
   ],
@@ -49,8 +49,8 @@
       "unidad": "Dólares por barril"
     }
   },
-  "descargado": "2026-11-17T15:54:19Z",
-  "calculado": "2026-11-17T15:54:19Z",
+  "descargado": "2026-11-18T15:32:33Z",
+  "calculado": "2026-11-18T15:32:33Z",
   "ultimo_periodo": "2026-10",
   "observaciones": 490
 }

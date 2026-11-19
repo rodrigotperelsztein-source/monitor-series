@@ -28,7 +28,7 @@
 [adefa]
   sin cambios en el archivo
 [acero]
-  actualizada: último período 2026-09 → 2026-10; valores revisados: 0
+  sin cambios en el archivo
 [cemento]
   sin cambios en el archivo
 [construya]
@@ -85,13 +85,13 @@
 [balance_cambiario]
   sin cambios en el archivo
 [itcrm]
-  actualizada: último período 2026-11 → 2026-11-18; valores revisados: 0
+  sin cambios en el archivo
 [itcrm_mensual]
   ERROR: Validación fallida:
   - El último dato tiene más de 45 días.
 [bcra]
-  actualizada: último período 2026-11 → 2026-11-19; valores revisados: 94
-  (tardó 43 s)
+  archivo distinto pero mismos datos
+  (tardó 56 s)
 [imig]
   sin cambios en el archivo
 [recaudacion]
@@ -103,7 +103,7 @@
 [rem]
   sin cambios en el archivo
 [utdt]
-  actualizada: último período 2026-10 → 2026-10; valores revisados: 821
+  actualizada: último período 2026-10 → 2026-11; valores revisados: 0
 [etn]
   ERROR: Validación fallida:
   - confianza_supermercados: valores históricos cambiaron más de 25% respecto de la versión guardada.
@@ -116,31 +116,43 @@
 [refinados]
   archivo distinto pero mismos datos
 [acciones_energia]
-  actualizada: último período 2026-11 → 2026-11-18; valores revisados: 0
+  archivo distinto pero mismos datos
 [cammesa_balance]
-  actualizada: último período 2026-09 → 2026-10; valores revisados: 20
+  sin cambios en el archivo
 [cammesa_diaria]
   sin cambios en el archivo
 [cammesa_gu_actividad]
   sin cambios en el archivo
 [sube]
-  actualizada: último período 2026-11 → 2026-11-17; valores revisados: 0
+  sin cambios en el archivo
 [turismo]
   archivo distinto pero mismos datos
 [accesos_internet]
   sin cambios en el archivo
 [estimaciones_agricolas]
-  archivo distinto pero mismos datos
+  intento 1 falló: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+  intento 2 falló: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+  intento 3 falló: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+  ERROR de descarga: No pude descargar https://www.magyp.gob.ar/sitio/areas/estimaciones/estimaciones/informes/: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+  (tardó 47 s)
 [camiones_puertos]
-  sin cambios en el archivo
+  intento 1 falló: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+  intento 2 falló: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+  intento 3 falló: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+  ERROR de descarga: No pude descargar https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/logistica/_archivos/000023_Posici%C3%B3n%20de%20Camiones%20y%20Vagones/000020_Entrada%20diaria%20de%20camiones%20y%20vagones%20a%20puertos,%20f%C3%A1bricas%20y%20molinos%20(por%20zona%20portuaria%20y%20por%20producto).php: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+  (tardó 47 s)
 [leche]
-  sin cambios en el archivo
+  intento 1 falló: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+  intento 2 falló: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+  intento 3 falló: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+  ERROR de descarga: No pude descargar https://www.magyp.gob.ar/sitio/areas/ss_lecheria/estadisticas/_01_primaria/_archivos/PPV021_PPV022.xlsx: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+  (tardó 46 s)
 [faena]
   sin cambios en el archivo
 [clima_amba]
-  actualizada: último período 2026-11 → 2026-11-12; valores revisados: 0
+  archivo distinto pero mismos datos
 [clima_amba_pronostico]
-  actualizada: último período 2026-12 → 2026-12-04; valores revisados: 341
+  actualizada: último período 2026-12 → 2026-12-04; valores revisados: 233
 [emae_letras_desest]
   sin cambios en las series de base
 [ipi_minero_desest]
@@ -160,9 +172,9 @@
 [remuneraciones_provincias_real_desest]
   sin cambios en las series de base
 [bcra_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [bcra_real]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [recaudacion_real]
   sin cambios en las series de base
 [ventas_combustibles_desest]
@@ -172,17 +184,17 @@
 [refinados_mensual]
   sin cambios en las series de base
 [acciones_energia_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [cammesa_gu_actividad_mensual]
   sin cambios en las series de base
 [sube_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [sube_desest]
   sin cambios en las series de base
 [camiones_puertos_mensual]
   sin cambios en las series de base
 [clima_amba_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [catálogo de Monitor Argy]
   1053 series
 [series de Monitor Argy (copia)]

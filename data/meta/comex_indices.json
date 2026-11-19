@@ -5,7 +5,7 @@
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-2-41",
   "frecuencia": "M",
   "unidad": "Índice base 2004=100",
-  "sha256": "3ec2d48ff94966220b820ab26e30ca0bb008d9ee5ea5374117e006f5f5cacf2d",
+  "sha256": "0174af5830f9681f65824957e0cf6f100a17c46d3d80944f90e979b415834b12",
   "columnas": {
     "expo_valor": {
       "nombre": "Exportaciones: índice de valor",
@@ -43,8 +43,8 @@
       "unidad": "Índice base 2004=100"
     }
   },
-  "descargado": "2026-11-05T18:56:24Z",
-  "ultimo_periodo": "2026-09",
-  "observaciones": 273,
-  "original_guardado": "data/raw/comex_indices/2026-11-05_3ec2d48f.xls"
+  "descargado": "2026-11-19T20:27:46Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 274,
+  "original_guardado": "data/raw/comex_indices/2026-11-19_0174af58.xls"
 }

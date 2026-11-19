@@ -361744,6 +361744,7 @@ fecha,id_serie,valor
 2026-07-01,comex_indices.expo_cantidad,150.573616
 2026-08-01,comex_indices.expo_cantidad,147.719174
 2026-09-01,comex_indices.expo_cantidad,167.672119
+2026-10-01,comex_indices.expo_cantidad,162.258123
 2004-01-01,comex_indices.expo_precio,97.863194
 2004-02-01,comex_indices.expo_precio,98.637791
 2004-03-01,comex_indices.expo_precio,98.699014
@@ -362017,6 +362018,7 @@ fecha,id_serie,valor
 2026-07-01,comex_indices.expo_precio,204.085905
 2026-08-01,comex_indices.expo_precio,208.358677
 2026-09-01,comex_indices.expo_precio,207.753437
+2026-10-01,comex_indices.expo_precio,215.207843
 2004-01-01,comex_indices.expo_valor,80.603953
 2004-02-01,comex_indices.expo_valor,83.123100
 2004-03-01,comex_indices.expo_valor,92.234875
@@ -362290,6 +362292,7 @@ fecha,id_serie,valor
 2026-07-01,comex_indices.expo_valor,307.285784
 2026-08-01,comex_indices.expo_valor,307.703137
 2026-09-01,comex_indices.expo_valor,348.312789
+2026-10-01,comex_indices.expo_valor,349.192206
 2004-01-01,comex_indices.impo_cantidad,90.765480
 2004-02-01,comex_indices.impo_cantidad,76.453102
 2004-03-01,comex_indices.impo_cantidad,93.481418
@@ -362563,6 +362566,7 @@ fecha,id_serie,valor
 2026-07-01,comex_indices.impo_cantidad,246.678271
 2026-08-01,comex_indices.impo_cantidad,249.658450
 2026-09-01,comex_indices.impo_cantidad,267.175750
+2026-10-01,comex_indices.impo_cantidad,248.453621
 2004-01-01,comex_indices.impo_precio,94.747514
 2004-02-01,comex_indices.impo_precio,95.365049
 2004-03-01,comex_indices.impo_precio,96.687437
@@ -362836,6 +362840,7 @@ fecha,id_serie,valor
 2026-07-01,comex_indices.impo_precio,146.373034
 2026-08-01,comex_indices.impo_precio,143.551715
 2026-09-01,comex_indices.impo_precio,141.174536
+2026-10-01,comex_indices.impo_precio,143.479669
 2004-01-01,comex_indices.impo_valor,85.999816
 2004-02-01,comex_indices.impo_valor,72.909655
 2004-03-01,comex_indices.impo_valor,90.356176
@@ -363109,6 +363114,7 @@ fecha,id_serie,valor
 2026-07-01,comex_indices.impo_valor,361.184054
 2026-08-01,comex_indices.impo_valor,358.556944
 2026-09-01,comex_indices.impo_valor,377.424603
+2026-10-01,comex_indices.impo_valor,356.480434
 2004-01-01,comex_indices.terminos_intercambio,103.288403
 2004-02-01,comex_indices.terminos_intercambio,103.431805
 2004-03-01,comex_indices.terminos_intercambio,102.080495
@@ -363382,6 +363388,7 @@ fecha,id_serie,valor
 2026-07-01,comex_indices.terminos_intercambio,139.428623
 2026-08-01,comex_indices.terminos_intercambio,145.145376
 2026-09-01,comex_indices.terminos_intercambio,147.160701
+2026-10-01,comex_indices.terminos_intercambio,149.991873
 2017-01-01,construya.indice,304.900000
 2017-02-01,construya.indice,281.000000
 2017-03-01,construya.indice,343.900000

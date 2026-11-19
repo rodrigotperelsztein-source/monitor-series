@@ -185,8 +185,8 @@ details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
       <li><b>Listo para usar</b><span>Power BI, Excel, Google Sheets o Python, con un link fijo por serie</span></li>
     </ul>
     <dl class="stats">
-      <div><dt>Series originales propias</dt><dd id="st-propias">…</dd></div>
-      <div><dt>Copiadas de Monitor Argy</dt><dd id="st-ma">…</dd></div>
+      <div><dt>Series</dt><dd id="st-propias">…</dd></div>
+      <div><dt>Replicadas de Monitor Argy</dt><dd id="st-ma">…</dd></div>
       <div><dt>Fuentes</dt><dd id="st-fuentes">…</dd></div>
     </dl>
     <p class="nota-stats" id="st-nota"></p>
@@ -448,7 +448,7 @@ async function cargar() {
     $("st-propias").textContent = n(orig.length);
     $("st-ma").textContent = n(ma.length);
     $("st-fuentes").textContent = new Set(orig.map(s => s.fuente)).size;
-    $("st-nota").textContent = `Las originales son el dato tal como lo publica cada organismo; además hay ${n(propias.length - orig.length)} calculadas sobre ellas (variaciones, desestacionalizadas, a precios constantes, promedios), que no se cuentan aparte. Las ${n(ma.length)} copiadas de Monitor Argy son las que todavía no tienen fuente propia.`;
+    $("st-nota").textContent = `El número de arriba cuenta las series originales: el dato tal como lo publica cada organismo. Además hay ${n(propias.length - orig.length)} calculadas sobre ellas (variaciones, desestacionalizadas, a precios constantes, promedios), que no se cuentan aparte. Las ${n(ma.length)} replicadas de Monitor Argy son las que todavía no tienen fuente propia.`;
     const desc = filas.map(s => s.descargado).filter(Boolean).sort().pop();
     $("st-fecha").textContent = desc ? "último dato bajado el " + new Date(desc).toLocaleString("es-AR",
       { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "—";

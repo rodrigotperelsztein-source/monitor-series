@@ -5,7 +5,7 @@
   "pagina": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
   "frecuencia": "M",
   "unidad": "Millones de $ de dic-2016",
-  "sha256": "31740d7f1ec6fd6a44857facf1c517eb9e7cd041830bed1be9f27be4602ca8a1",
+  "sha256": "c2dd99965baa3b5485d3b01667a609ce9e24fefedc485a10dc7a05df6cc31e2e",
   "derivada_de": [
     "bcra_mensual",
     "ipc"
@@ -171,8 +171,8 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-11-18T07:59:33Z",
-  "calculado": "2026-11-18T07:59:33Z",
+  "descargado": "2026-11-19T07:59:13Z",
+  "calculado": "2026-11-19T07:59:13Z",
   "ultimo_periodo": "2026-10",
   "observaciones": 119,
   "deflactor": "IPC nacional, nivel general (ipc.nacional_nivel_general_indice), base dic-2016=100"

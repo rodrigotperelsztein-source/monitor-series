@@ -1,11 +1,11 @@
 {
   "id": "utdt",
   "nombre": "Índice Líder, confianza del consumidor y confianza en el gobierno (UTDT)",
-  "url": "https://www.utdt.edu/download.php?fname=_179259565376450900.xls https://www.utdt.edu/download.php?fname=_179267394518143000.xls https://www.utdt.edu/download.php?fname=_179304138461426300.xls",
+  "url": "https://www.utdt.edu/download.php?fname=_179501656472052500.xls https://www.utdt.edu/download.php?fname=_179267394518143000.xls https://www.utdt.edu/download.php?fname=_179304138461426300.xls",
   "pagina": "https://www.utdt.edu/ver_contenido.php?id_contenido=27166&id_item_menu=44662",
   "frecuencia": "M",
   "unidad": "Según la serie",
-  "sha256": "41fca6555b81ec2daaa8b5ae3727a6219bca6fc417a6e7a400edafbda0ed7ee2",
+  "sha256": "37e961cc39b0be26b228288dd48db8120e7f9e0f18e7e58554a6a0f1bc965d5e",
   "columnas": {
     "indice_lider": {
       "nombre": "Índice Líder de la actividad (UTDT), desestacionalizado",
@@ -63,8 +63,8 @@
       "unidad": "Índice 0-5"
     }
   },
-  "descargado": "2026-11-06T18:03:48Z",
+  "descargado": "2026-11-19T07:59:13Z",
   "ultimo_periodo": "2026-10",
   "observaciones": 406,
-  "original_guardado": "data/raw/utdt/2026-11-06_16026a89.zip"
+  "original_guardado": "data/raw/utdt/2026-11-19_37e961cc.zip"
 }

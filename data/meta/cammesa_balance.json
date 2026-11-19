@@ -5,7 +5,7 @@
   "pagina": "https://cammesaweb.cammesa.com/informe-sintesis-mensual/",
   "frecuencia": "M",
   "unidad": "GWh",
-  "sha256": "c7a98b055fe585214cf2458cc9ce8bb4ae3efa77957992e1e54b82bee345a5c3",
+  "sha256": "f847df73b84db1d54f8b9b23bbf1a4e7f05ce73624723d0eaa4c2307da330572",
   "columnas": {
     "demanda_mercado": {
       "nombre": "Demanda de energía eléctrica: distribuidoras + grandes usuarios",
@@ -83,8 +83,8 @@
       "unidad": "GWh"
     }
   },
-  "descargado": "2026-10-20T18:08:31Z",
-  "ultimo_periodo": "2026-09",
-  "observaciones": 45,
-  "original_guardado": "data/raw/cammesa_balance/2026-10-20_3c082cf2.xlsx"
+  "descargado": "2026-11-19T07:59:13Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 46,
+  "original_guardado": "data/raw/cammesa_balance/2026-11-19_f847df73.xlsx"
 }

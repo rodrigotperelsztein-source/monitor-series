@@ -1,9 +1,8 @@
-Publicaciones previstas hoy y todavía no descargadas: comercio_exterior, comex_indices, etn
-[comercio_exterior]
-  ERROR: Validación fallida:
-  - Los rubros o usos no suman importaciones (diferencia máxima 79.9 millones de USD).
-[comex_indices]
-  actualizada: último período 2026-09 → 2026-10; valores revisados: 0
-[etn]
-  ERROR: Validación fallida:
-  - confianza_supermercados: valores históricos cambiaron más de 25% respecto de la versión guardada.
+[petroleo]
+  archivo distinto pero mismos datos
+[refinados]
+  archivo distinto pero mismos datos
+[petroleo_mensual]
+  sin cambios en las series de base
+[refinados_mensual]
+  sin cambios en las series de base

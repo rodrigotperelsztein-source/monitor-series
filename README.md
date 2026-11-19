@@ -181,16 +181,17 @@ Tendencia-ciclo o Real) y `frecuencia`. Las dos páginas encadenan esos campos e
 llegar a una serie sin leer una lista larga.
 
 La página **[Selector de series](https://rodrigotperelsztein-source.github.io/monitor-series/)** muestra el catálogo,
-con buscador y filtros. Se tildan las series y la página arma la lista para pegar en el parámetro `SeriesElegidas`
-de Power BI; la consulta `Datos` baja solo esas, cada una de su archivo en `data/series/<id_serie>.csv`. La primera
-vez, la misma página da el código de las dos consultas.
+con buscador y filtros. Se tildan las series y la página arma un único bloque de Power Query con esa lista adentro:
+se pega en una consulta en blanco y la consulta `Datos` baja solo esas series, cada una de su archivo en
+`data/series/<id_serie>.csv`. La misma página también arma un `.xlsx` con las series elegidas, en el navegador y sin
+librerías de terceros, para quien prefiere los números de una vez en lugar de una conexión viva.
 
 Las pocas series que todavía no tienen fuente propia se copian de Monitor Argy y entran en el mismo catálogo, con
 el prefijo `monitorargy.` y su origen indicado: se leen igual que cualquier otra. El catálogo completo de Monitor
 Argy no se ofrece acá, para no duplicar lo que ya está en su sitio.
 
-Para cambiar de series: elegir en la página, copiar la lista, pegarla en *Transformar datos > Administrar
-parámetros > SeriesElegidas* y actualizar.
+Para cambiar de series: elegirlas de nuevo en la página y pegar el código nuevo, o editar a mano la lista
+`SeriesElegidas` que encabeza la consulta.
 
 ### Power BI: todas las series
 

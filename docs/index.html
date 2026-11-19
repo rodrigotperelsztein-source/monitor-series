@@ -246,19 +246,20 @@ details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
         <div class="selected" id="selected"><span class="empty">Todavía no elegiste ninguna.</span></div>
         <div class="aviso" id="aviso" role="status"></div>
         <div class="guardar"><input id="nombre-canasta" placeholder="Nombre para guardar esta selección" maxlength="40"><button class="btn sec" id="guardar" disabled>Guardar canasta</button></div>
-        <h3>Valor del parámetro <code>SeriesElegidas</code></h3>
-        <pre id="lista"></pre>
         <div class="btns">
-          <button class="btn" id="copylista" disabled>Copiar la lista</button>
+          <button class="btn" id="bajar" disabled>Descargar Excel</button>
           <button class="btn sec" id="compartir" disabled>Copiar link con la selección</button>
           <button class="btn sec" id="clear" disabled>Vaciar</button>
         </div>
+        <p class="hint" style="margin:0">El Excel se arma en tu navegador con los datos de las series elegidas: una
+          hoja con una columna por serie y otra con sus nombres, unidades y fuentes. Son los números del momento,
+          sin conexión viva; para que se actualicen solos, usá el código de Power Query de abajo.</p>
+        <h3>Lista de series elegidas</h3>
+        <pre id="lista"></pre>
+        <div class="btns">
+          <button class="btn sec" id="copylista" disabled>Copiar la lista</button>
+        </div>
         <div class="toast" id="toast1" role="status"></div>
-        <ol class="hint">
-          <li>En Power BI: <i>Transformar datos &gt; Administrar parámetros</i> &gt; <code>SeriesElegidas</code>.</li>
-          <li>Pegá la lista en <i>Valor actual</i> y aceptá.</li>
-          <li><i>Cerrar y aplicar</i> (o <i>Actualizar</i>).</li>
-        </ol>
       </div>
       <div class="card" id="usar">
         <h2>Usar las series elegidas</h2>
@@ -273,35 +274,27 @@ details summary { cursor: pointer; font-weight: 600; font-size: 13px; }
         <div class="panel" data-p="pbi">
           <p class="hint">Se arma una vez. Después, para cambiar de series, se pega la lista nueva en el parámetro.</p>
           <ol class="hint">
-            <li><i>Obtener datos &gt; Consulta en blanco &gt; Editor avanzado</i>: pegá el código 1 y llamá a la consulta <code>SeriesElegidas</code>. Queda como parámetro.</li>
-            <li>Otra consulta en blanco con el código 2; llamala <code>Datos</code>. Devuelve una tabla larga: <code>fecha</code>, <code>id_serie</code>, <code>serie</code>, <code>unidad</code>, <code>dato</code> (nivel o variación), <code>ajuste</code> (original, desestacionalizada…), <code>frecuencia</code> y <code>valor</code>.</li>
-            <li>Conexión <b>Anónima</b> (no hace falta ningún usuario). Si pregunta por privacidad, los dos orígenes como <b>Público</b>. Conviene tener estas consultas en un archivo o flujo de datos aparte de los que leen bases internas.</li>
+            <li><i>Obtener datos &gt; Consulta en blanco &gt; Editor avanzado</i>: pegá el código y llamá a la consulta <code>Datos</code>.</li>
+            <li>Devuelve una tabla larga: <code>fecha</code>, <code>id_serie</code>, <code>serie</code>, <code>unidad</code>, <code>dato</code> (nivel o variación), <code>ajuste</code> (original, desestacionalizada…), <code>frecuencia</code> y <code>valor</code>.</li>
+            <li>Conexión <b>Anónima</b> (no hace falta ningún usuario). Si pregunta por privacidad, los dos orígenes como <b>Público</b>. Conviene tener esta consulta en un archivo o flujo de datos aparte de los que leen bases internas.</li>
+            <li>Para cambiar de series: volvé acá, elegí otras y pegá el código nuevo; o editá a mano la lista que está arriba de todo en el código.</li>
           </ol>
-          <h3>1 · SeriesElegidas (parámetro)</h3>
-          <pre id="code1"></pre>
-          <div class="btns"><button class="btn sec" data-copy="code1">Copiar código 1</button></div>
-          <h3>2 · Datos</h3>
           <pre id="code2"></pre>
-          <div class="btns"><button class="btn sec" data-copy="code2">Copiar código 2</button></div>
+          <div class="btns"><button class="btn sec" data-copy="code2">Copiar el código</button></div>
         </div>
 
         <div class="panel" data-p="xls" hidden>
           <p class="hint">Un dato vivo en tu planilla: con <i>Datos &gt; Actualizar todo</i> (o al abrir el archivo) se traen los valores nuevos. La lista de series va en un parámetro de la consulta, no en una celda: así ningún dato del libro sale en los pedidos a la web.</p>
           <ol class="hint">
-            <li><i>Datos &gt; Obtener datos &gt; De otras fuentes &gt; Consulta en blanco &gt; Editor avanzado</i>: pegá el código 1 y llamá a la consulta <code>SeriesElegidas</code>. Queda como parámetro.</li>
-            <li>Otra consulta en blanco con el código 2; llamala <code>Datos</code>. Trae una columna por serie, con la fecha en la primera.</li>
+            <li><i>Datos &gt; Obtener datos &gt; De otras fuentes &gt; Consulta en blanco &gt; Editor avanzado</i>: pegá el código y llamá a la consulta <code>Datos</code>. Trae una columna por serie, con la fecha en la primera.</li>
             <li><i>Inicio &gt; Cerrar y cargar en…</i> &gt; Tabla, en la hoja que quieras. Tus fórmulas pueden apuntar a esa tabla.</li>
             <li>Para que se actualice sola: <i>Datos &gt; Consultas y conexiones</i>, clic derecho en <code>Datos</code> &gt; <i>Propiedades</i> &gt; <b>Actualizar al abrir el archivo</b> (y, si querés, cada tantos minutos).</li>
-            <li>Para cambiar de series: <i>Datos &gt; Obtener datos &gt; Iniciar el Editor de Power Query</i> &gt; <code>SeriesElegidas</code>, pegá la lista nueva y <i>Cerrar y cargar</i>.</li>
+            <li>Para cambiar de series: volvé acá, elegí otras y pegá el código nuevo; o editá a mano la lista que está arriba de todo en el código.</li>
             <li>Si pregunta cómo conectarse: <b>Anónimo</b>. Si pregunta por niveles de privacidad: los dos orígenes como <b>Público</b>. No elijas "ignorar los niveles de privacidad".</li>
           </ol>
-          <h3>1 · SeriesElegidas (parámetro)</h3>
-          <pre id="xls1"></pre>
-          <div class="btns"><button class="btn sec" data-copy="xls1">Copiar código 1</button></div>
-          <h3>2 · Datos (una columna por serie)</h3>
           <pre id="xls2"></pre>
-          <div class="btns"><button class="btn sec" data-copy="xls2">Copiar código 2</button></div>
-          <p class="hint">Para una sola serie alcanza con <i>Datos &gt; Desde la web</i> y el link de la pestaña <i>Links</i>.</p>
+          <div class="btns"><button class="btn sec" data-copy="xls2">Copiar el código</button></div>
+          <p class="hint">Si solo querés los números una vez, sin conexión viva, está el botón <b>Descargar Excel</b> de la columna de al lado. Para una sola serie alcanza con <i>Datos &gt; Desde la web</i> y el link de la pestaña <i>Links</i>.</p>
         </div>
 
         <div class="panel" data-p="py" hidden>
@@ -583,7 +576,20 @@ $("rows").addEventListener("change", e => {
 ["q", "grupo", "indic", "concepto", "freq", "dato", "ajuste", "onlysel"].forEach(id => $(id).addEventListener(id === "q" ? "input" : "change", render));
 
 const lista = () => sel.join(", ");
-const code1 = () => `"${lista() || "emae.desest"}" meta [IsParameterQuery = true, Type = "Text", IsParameterQueryRequired = true]`;
+
+// Un solo bloque: la lista de series va adentro del código, no en un parámetro aparte.
+function unBloque(codigo) {
+  const ids = sel.length ? sel : ["emae.desest"];
+  return codigo
+    .replace(/^let\n/, `let
+    // Las series elegidas. Para cambiarlas, editá esta lista (o copiá el código de nuevo desde la página).
+    SeriesElegidas = {
+${ids.map(i => `        "${i}"`).join(",\n")}
+    },
+
+`)
+    .replace(/\n    \/\/ Acepta la lista[\s\S]*?each _ <> ""\),/, "\n    Ids = SeriesElegidas,");
+}
 const CODE2 = `let
     Raw = "https://raw.githubusercontent.com",
     Repo = "rodrigotperelsztein-source/monitor-series/main/data/",
@@ -658,8 +664,8 @@ document.querySelectorAll(".seg button").forEach(b => b.onclick = () => {
   document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-selected", x === b));
   document.querySelectorAll(".panel").forEach(p => p.hidden = p.dataset.p !== b.dataset.p);
 });
-// Aviso de cada botón, armado con su texto ("Copiar código 1" -> "Código 1 copiado").
-const COPIADO = { "fórmulas": "Fórmulas copiadas", "links": "Links copiados" };
+// Aviso de cada botón, armado con su texto ("Copiar el código" -> "Código copiado").
+const COPIADO = { "fórmulas": "Fórmulas copiadas", "links": "Links copiados", "el código": "Código copiado" };
 document.querySelectorAll("[data-copy]").forEach(b => {
   const que = b.textContent.replace(/^Copiar\s*/, "").trim();
   const msg = "✓ " + (COPIADO[que] || que.replace(/^./, c => c.toUpperCase()) + " copiado") + ". Ya lo podés pegar.";
@@ -673,14 +679,13 @@ function update() {
     ? sel.map(id => `<span class="tag">${esc(id)}<button type="button" data-rm="${esc(id)}" aria-label="Quitar ${esc(id)}">×</button></span>`).join("")
     : `<span class="empty">Todavía no elegiste ninguna.</span>`;
   $("lista").textContent = lista() || "—";
-  $("code1").textContent = code1();
-  $("code2").textContent = CODE2;
-  $("xls1").textContent = code1();
-  $("xls2").textContent = XLS2;
+  $("code2").textContent = unBloque(CODE2);
+  $("xls2").textContent = unBloque(XLS2);
   $("py").textContent = codigoPython();
   $("gs").textContent = formulasSheets();
   $("urls").textContent = links();
-  $("copylista").disabled = $("clear").disabled = $("compartir").disabled = $("guardar").disabled = !sel.length;
+  $("copylista").disabled = $("clear").disabled = $("compartir").disabled = $("guardar").disabled =
+    $("bajar").disabled = !sel.length;
   $("aviso").innerHTML = avisos();
 }
 // Avisos al combinar series que no conviene graficar o sumar juntas tal cual.
@@ -744,7 +749,133 @@ function copiar(texto, boton, msg) {
   };
   try { navigator.clipboard.writeText(texto).then(ok, plan_b); } catch (e) { plan_b(); }
 }
-$("copylista").onclick = () => copiar(lista(), $("copylista"), "✓ Lista copiada. Pegala en el parámetro SeriesElegidas.");
+$("copylista").onclick = () => copiar(lista(), $("copylista"), "✓ Lista copiada.");
+
+// ---------- Descargar un Excel con las series elegidas ----------
+// El .xlsx es un zip de archivos XML. Se arma acá a mano, byte por byte, para no cargar ninguna librería de
+// terceros: la página sigue sin pedirle nada a nadie más que a raw.githubusercontent.com.
+const TABLA_CRC = (() => {
+  const t = new Uint32Array(256);
+  for (let n = 0; n < 256; n++) {
+    let c = n;
+    for (let k = 0; k < 8; k++) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1;
+    t[n] = c >>> 0;
+  }
+  return t;
+})();
+const crc32 = (b) => {
+  let c = 0xffffffff;
+  for (let i = 0; i < b.length; i++) c = TABLA_CRC[(c ^ b[i]) & 0xff] ^ (c >>> 8);
+  return (c ^ 0xffffffff) >>> 0;
+};
+
+// Zip sin compresión (método "store"): alcanza para que Excel lo abra y evita implementar deflate.
+function zip(archivos) {
+  const cod = new TextEncoder();
+  const partes = [], central = [];
+  let desplazamiento = 0;
+  const u16 = (v) => [v & 255, (v >> 8) & 255];
+  const u32 = (v) => [v & 255, (v >> 8) & 255, (v >> 16) & 255, (v >>> 24) & 255];
+  for (const [nombre, texto] of archivos) {
+    const datos = cod.encode(texto), nom = cod.encode(nombre), c = crc32(datos);
+    const cabecera = [...u32(0x04034b50), ...u16(20), ...u16(0x800), ...u16(0), ...u16(0), ...u16(0),
+      ...u32(c), ...u32(datos.length), ...u32(datos.length), ...u16(nom.length), ...u16(0)];
+    partes.push(new Uint8Array(cabecera), nom, datos);
+    central.push([...u32(0x02014b50), ...u16(20), ...u16(20), ...u16(0x800), ...u16(0), ...u16(0), ...u16(0),
+      ...u32(c), ...u32(datos.length), ...u32(datos.length), ...u16(nom.length), ...u16(0), ...u16(0),
+      ...u16(0), ...u16(0), ...u32(0), ...u32(desplazamiento), ...Array.from(nom)]);
+    desplazamiento += cabecera.length + nom.length + datos.length;
+  }
+  const dir = central.flat(), inicio = desplazamiento;
+  const fin = [...u32(0x06054b50), ...u16(0), ...u16(0), ...u16(archivos.length), ...u16(archivos.length),
+    ...u32(dir.length), ...u32(inicio), ...u16(0)];
+  const total = partes.reduce((a, x) => a + x.length, 0) + dir.length + fin.length;
+  const salida = new Uint8Array(total);
+  let i = 0;
+  for (const parte of partes) { salida.set(parte, i); i += parte.length; }
+  salida.set(new Uint8Array(dir), i); i += dir.length;
+  salida.set(new Uint8Array(fin), i);
+  return salida;
+}
+
+const xmlEsc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const colLetra = (n) => { let s = ""; n++; while (n > 0) { const r = (n - 1) % 26; s = String.fromCharCode(65 + r) + s; n = (n - 1 - r) / 26; } return s; };
+// Excel cuenta los días desde el 30/12/1899.
+const serieFecha = (iso) => Math.round((Date.UTC(+iso.slice(0, 4), +iso.slice(5, 7) - 1, +iso.slice(8, 10)) -
+  Date.UTC(1899, 11, 30)) / 86400000);
+
+function hoja(filas) {
+  const cuerpo = filas.map((fila, f) => {
+    const celdas = fila.map((c, k) => {
+      if (c === null || c === undefined || c === "") return "";
+      const ref = colLetra(k) + (f + 1);
+      if (c && c.fecha) return `<c r="${ref}" s="1"><v>${serieFecha(c.fecha)}</v></c>`;
+      if (typeof c === "number") return isFinite(c) ? `<c r="${ref}"><v>${c}</v></c>` : "";
+      return `<c r="${ref}" s="${f === 0 ? 2 : 0}" t="inlineStr"><is><t xml:space="preserve">${xmlEsc(c)}</t></is></c>`;
+    }).join("");
+    return `<row r="${f + 1}">${celdas}</row>`;
+  }).join("");
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetData>${cuerpo}</sheetData></worksheet>`;
+}
+
+function libro(hojas) {
+  const ns = "http://schemas.openxmlformats.org/officeDocument/2006/relationships";
+  return zip([
+    ["[Content_Types].xml", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>${hojas.map((h, i) => `<Override PartName="/xl/worksheets/sheet${i + 1}.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>`).join("")}<Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>`],
+    ["_rels/.rels", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="${ns}/officeDocument" Target="xl/workbook.xml"/></Relationships>`],
+    ["xl/workbook.xml", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="${ns}"><sheets>${hojas.map((h, i) => `<sheet name="${xmlEsc(h[0])}" sheetId="${i + 1}" r:id="rId${i + 1}"/>`).join("")}</sheets></workbook>`],
+    ["xl/_rels/workbook.xml.rels", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">${hojas.map((h, i) => `<Relationship Id="rId${i + 1}" Type="${ns}/worksheet" Target="worksheets/sheet${i + 1}.xml"/>`).join("")}<Relationship Id="rId${hojas.length + 1}" Type="${ns}/styles" Target="styles.xml"/></Relationships>`],
+    ["xl/styles.xml", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="2"><font><sz val="11"/><name val="Calibri"/></font><font><b/><sz val="11"/><name val="Calibri"/></font></fonts><fills count="2"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill></fills><borders count="1"><border/></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="3"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/><xf numFmtId="14" fontId="0" fillId="0" borderId="0" xfId="0" applyNumberFormat="1"/><xf numFmtId="0" fontId="1" fillId="0" borderId="0" xfId="0" applyFont="1"/></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>`],
+    ...hojas.map((h, i) => [`xl/worksheets/sheet${i + 1}.xml`, hoja(h[1])]),
+  ]);
+}
+
+$("bajar").onclick = async (e) => {
+  const b = e.currentTarget, rotulo = b.textContent;
+  b.disabled = true;
+  const elegidas = sel.map(id => SERIES.find(s => s.id === id)).filter(Boolean);
+  try {
+    const columnas = [];
+    for (let i = 0; i < elegidas.length; i++) {
+      b.textContent = `Bajando ${i + 1} de ${elegidas.length}…`;
+      const s = elegidas[i];
+      const texto = await fetch(`${RAW}/data/series/${s.id}.csv`, { cache: "no-cache" })
+        .then(r => r.ok ? r.text() : Promise.reject(r.status));
+      const mapa = new Map();
+      parseCSV(texto).forEach(f => { const v = parseFloat(f.valor); if (!isNaN(v)) mapa.set(f.fecha, v); });
+      columnas.push({ s, mapa });
+    }
+    b.textContent = "Armando el archivo…";
+    const fechas = [...new Set(columnas.flatMap(c => [...c.mapa.keys()]))].sort();
+    const datos = [["fecha", ...columnas.map(c => c.s.id)],
+      ...fechas.map(f => [{ fecha: f }, ...columnas.map(c => c.mapa.has(f) ? c.mapa.get(f) : "")])];
+    const catalogo = [["id_serie", "serie", "dato", "ajuste", "unidad", "frecuencia", "organismo", "fuente"],
+      ...columnas.map(c => [c.s.id, c.s.nombre, c.s.dato, c.s.ajuste, c.s.unidad,
+        FREQ[c.s.frec] || c.s.frec, c.s.org, c.s.fuente || ""])];
+    const bytes = libro([["Datos", datos], ["Series", catalogo]]);
+    const url = URL.createObjectURL(new Blob([bytes],
+      { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" }));
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `monitor_series_${new Date().toISOString().slice(0, 10)}.xlsx`;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+    b.textContent = "✓ Descargado";
+    setTimeout(() => { b.textContent = rotulo; }, 3000);
+  } catch (err) {
+    b.textContent = rotulo;
+    $("toast1").textContent = "No se pudo armar el Excel. Probá con menos series o reintentá.";
+    $("toast1").classList.add("on");
+    setTimeout(() => $("toast1").classList.remove("on"), 5000);
+  }
+  b.disabled = !sel.length;
+};
 
 // ---------- Ticker con los últimos datos reales ----------
 const TICKER = [

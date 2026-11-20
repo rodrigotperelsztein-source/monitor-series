@@ -1,2 +1,8 @@
-[comercio_exterior]
-  actualizada: último período 2026-09 → 2026-10; valores revisados: 8
+[petroleo]
+  actualizada: último período 2026-11 → 2026-11-19; valores revisados: 0
+[refinados]
+  actualizada: último período 2026-11 → 2026-11-19; valores revisados: 0
+[petroleo_mensual]
+  recalculada: último período 2026-10 → 2026-10
+[refinados_mensual]
+  recalculada: último período 2026-10 → 2026-10

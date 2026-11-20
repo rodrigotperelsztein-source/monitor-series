@@ -351342,7 +351342,8 @@ fecha,id_serie,valor
 2026-06-01,comercio_exterior.expo_brasil,1177.501178
 2026-07-01,comercio_exterior.expo_brasil,1131.499239
 2026-08-01,comercio_exterior.expo_brasil,1167.504559
-2026-09-01,comercio_exterior.expo_brasil,1203.460366
+2026-09-01,comercio_exterior.expo_brasil,1206.533096
+2026-10-01,comercio_exterior.expo_brasil,1213.673727
 1986-01-01,comercio_exterior.expo_china,41.869372
 1986-02-01,comercio_exterior.expo_china,19.439138
 1986-03-01,comercio_exterior.expo_china,5.408922
@@ -351831,7 +351832,8 @@ fecha,id_serie,valor
 2026-06-01,comercio_exterior.expo_china,940.303775
 2026-07-01,comercio_exterior.expo_china,602.899179
 2026-08-01,comercio_exterior.expo_china,522.953757
-2026-09-01,comercio_exterior.expo_china,917.315086
+2026-09-01,comercio_exterior.expo_china,920.418623
+2026-10-01,comercio_exterior.expo_china,1287.151564
 1986-01-01,comercio_exterior.expo_combustibles,51.057986
 1986-02-01,comercio_exterior.expo_combustibles,21.405093
 1986-03-01,comercio_exterior.expo_combustibles,10.725591
@@ -352809,7 +352811,8 @@ fecha,id_serie,valor
 2026-06-01,comercio_exterior.expo_eeuu,861.964741
 2026-07-01,comercio_exterior.expo_eeuu,1078.170049
 2026-08-01,comercio_exterior.expo_eeuu,706.231267
-2026-09-01,comercio_exterior.expo_eeuu,992.008970
+2026-09-01,comercio_exterior.expo_eeuu,996.873819
+2026-10-01,comercio_exterior.expo_eeuu,804.403993
 1986-01-01,comercio_exterior.expo_moa,187.517595
 1986-02-01,comercio_exterior.expo_moa,191.000779
 1986-03-01,comercio_exterior.expo_moa,192.073293
@@ -354765,7 +354768,8 @@ fecha,id_serie,valor
 2026-06-01,comercio_exterior.expo_ue,718.293062
 2026-07-01,comercio_exterior.expo_ue,727.741472
 2026-08-01,comercio_exterior.expo_ue,925.870529
-2026-09-01,comercio_exterior.expo_ue,831.146382
+2026-09-01,comercio_exterior.expo_ue,844.412869
+2026-10-01,comercio_exterior.expo_ue,987.839648
 1986-01-01,comercio_exterior.exportaciones,503.517866
 1986-02-01,comercio_exterior.exportaciones,479.158015
 1986-03-01,comercio_exterior.exportaciones,529.830168
@@ -355254,7 +355258,8 @@ fecha,id_serie,valor
 2026-06-01,comercio_exterior.exportaciones,9111.849807
 2026-07-01,comercio_exterior.exportaciones,8853.859533
 2026-08-01,comercio_exterior.exportaciones,8865.884766
-2026-09-01,comercio_exterior.exportaciones,10035.975188
+2026-09-01,comercio_exterior.exportaciones,10035.645532
+2026-10-01,comercio_exterior.exportaciones,10061.313931
 1986-01-01,comercio_exterior.impo_brasil,45.405745
 1986-02-01,comercio_exterior.impo_brasil,39.291498
 1986-03-01,comercio_exterior.impo_brasil,42.935493
@@ -355743,7 +355748,8 @@ fecha,id_serie,valor
 2026-06-01,comercio_exterior.impo_brasil,1426.461868
 2026-07-01,comercio_exterior.impo_brasil,1476.104678
 2026-08-01,comercio_exterior.impo_brasil,1494.408369
-2026-09-01,comercio_exterior.impo_brasil,1375.013294
+2026-09-01,comercio_exterior.impo_brasil,1384.515912
+2026-10-01,comercio_exterior.impo_brasil,1425.224614
 1986-01-01,comercio_exterior.impo_capital,65.410235
 1986-02-01,comercio_exterior.impo_capital,41.207727
 1986-03-01,comercio_exterior.impo_capital,47.056440
@@ -356722,6 +356728,7 @@ fecha,id_serie,valor
 2026-07-01,comercio_exterior.impo_china,1510.463604
 2026-08-01,comercio_exterior.impo_china,1734.577661
 2026-09-01,comercio_exterior.impo_china,1815.507325
+2026-10-01,comercio_exterior.impo_china,1725.634718
 1986-01-01,comercio_exterior.impo_combustibles,27.431294
 1986-02-01,comercio_exterior.impo_combustibles,33.810313
 1986-03-01,comercio_exterior.impo_combustibles,36.281082
@@ -358189,6 +358196,7 @@ fecha,id_serie,valor
 2026-07-01,comercio_exterior.impo_eeuu,674.833127
 2026-08-01,comercio_exterior.impo_eeuu,558.293126
 2026-09-01,comercio_exterior.impo_eeuu,626.535958
+2026-10-01,comercio_exterior.impo_eeuu,560.068575
 1986-01-01,comercio_exterior.impo_intermedios,157.432419
 1986-02-01,comercio_exterior.impo_intermedios,135.145893
 1986-03-01,comercio_exterior.impo_intermedios,146.005946
@@ -360073,6 +360081,7 @@ fecha,id_serie,valor
 2026-07-01,comercio_exterior.impo_ue,764.961743
 2026-08-01,comercio_exterior.impo_ue,843.216268
 2026-09-01,comercio_exterior.impo_ue,1016.544843
+2026-10-01,comercio_exterior.impo_ue,864.403212
 1986-01-01,comercio_exterior.impo_vehiculos,0.363704
 1986-02-01,comercio_exterior.impo_vehiculos,0.285727
 1986-03-01,comercio_exterior.impo_vehiculos,0.718947
@@ -361050,7 +361059,8 @@ fecha,id_serie,valor
 2026-06-01,comercio_exterior.importaciones,6876.661623
 2026-07-01,comercio_exterior.importaciones,6755.731447
 2026-08-01,comercio_exterior.importaciones,6706.592916
-2026-09-01,comercio_exterior.importaciones,7059.501178
+2026-09-01,comercio_exterior.importaciones,7083.188725
+2026-10-01,comercio_exterior.importaciones,6667.753040
 1986-01-01,comercio_exterior.saldo,171.017171
 1986-02-01,comercio_exterior.saldo,200.261528
 1986-03-01,comercio_exterior.saldo,220.665582
@@ -361539,7 +361549,8 @@ fecha,id_serie,valor
 2026-06-01,comercio_exterior.saldo,2235.188183
 2026-07-01,comercio_exterior.saldo,2098.128087
 2026-08-01,comercio_exterior.saldo,2159.291849
-2026-09-01,comercio_exterior.saldo,2976.474010
+2026-09-01,comercio_exterior.saldo,2952.456807
+2026-10-01,comercio_exterior.saldo,3393.560892
 2004-01-01,comex_indices.expo_cantidad,82.338631
 2004-02-01,comex_indices.expo_cantidad,84.271048
 2004-03-01,comex_indices.expo_cantidad,93.490321

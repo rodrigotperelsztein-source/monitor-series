@@ -125,10 +125,16 @@ def validar(nuevo: pd.DataFrame, anterior: pd.DataFrame | None, columnas=COLUMNA
         errores.append("Los meses no son consecutivos (¿falta bajar la historia completa?).")
     for partes, total in (([f"expo_{k}" for k in RUBROS], "exportaciones"), ([f"impo_{k}" for k in USOS], "importaciones")):
         d = nuevo.dropna(subset=partes + [total])
-        dif = (d[partes].sum(axis=1) - d[total]).abs()
+        bruto = d[partes].sum(axis=1) - d[total]
+        dif = bruto.abs()
         # En 2016-2017 y 2022-2023 el total de la API (revisado) difiere hasta 2% del de los cuadros del ICA.
-        if (dif.tail(24) > 1).any() or (dif / d[total] > 0.03).any():
-            errores.append(f"Los rubros o usos no suman {total} (diferencia máxima {dif.max():.1f} millones de USD).")
+        reciente = d["fecha"] >= d["fecha"].iloc[-min(24, len(d))]
+        culpa = ((dif > 1) & reciente) | (dif / d[total] > 0.03)
+        if culpa.any():
+            peores = dif[culpa].sort_values(ascending=False).head(6).index
+            detalle = ", ".join(f"{d.loc[i, 'fecha']:%Y-%m} {bruto[i]:+.1f}" for i in peores)
+            mas = f" y {int(culpa.sum()) - len(peores)} mes(es) más" if culpa.sum() > len(peores) else ""
+            errores.append(f"Los rubros o usos no suman {total}; diferencia en millones de USD por mes: {detalle}{mas}.")
         if nuevo[partes].iloc[:-2].loc[nuevo["fecha"] >= "1992-01-01"].isna().any().any():
             errores.append(f"Faltan rubros o usos de {total} antes de los dos últimos meses.")
     if not nuevo["exportaciones"].between(100, 20_000).all():

@@ -127,9 +127,13 @@ def validar(nuevo: pd.DataFrame, anterior: pd.DataFrame | None, columnas=COLUMNA
         d = nuevo.dropna(subset=partes + [total])
         bruto = d[partes].sum(axis=1) - d[total]
         dif = bruto.abs()
-        # En 2016-2017 y 2022-2023 el total de la API (revisado) difiere hasta 2% del de los cuadros del ICA.
+        # El total sale de la API del INDEC y los rubros de los cuadros del ICA que replica Economía en
+        # datos.gob.ar: son dos publicaciones del mismo dato y Economía puede tardar días en reflejar una
+        # revisión del INDEC, así que se tolera hasta 1% en los meses recientes. En 2016-2017 y 2022-2023 el
+        # total revisado de la API difiere hasta 2% del de los cuadros, y ahí el límite es 3%.
+        rel = dif / d[total]
         reciente = d["fecha"] >= d["fecha"].iloc[-min(24, len(d))]
-        culpa = ((dif > 1) & reciente) | (dif / d[total] > 0.03)
+        culpa = ((rel > 0.01) & reciente) | (rel > 0.03)
         if culpa.any():
             peores = dif[culpa].sort_values(ascending=False).head(6).index
             detalle = ", ".join(f"{d.loc[i, 'fecha']:%Y-%m} {bruto[i]:+.1f}" for i in peores)

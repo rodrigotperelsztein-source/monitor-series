@@ -1,11 +1,11 @@
 {
   "id": "estimaciones_agricolas",
   "nombre": "Estimación de la campaña agrícola en curso: trigo, maíz, soja y girasol (Secretaría de Agricultura)",
-  "url": "https://www.magyp.gob.ar/sitio/areas/estimaciones/_archivos/estimaciones/260000_2026/261000_Octubre/261015%20Informe%20Mensual%20al%2015_10_2026.pdf https://www.magyp.gob.ar/sitio/areas/estimaciones/_archivos/estimaciones/260000_2026/261100_Noviembre/261112_Informe%20Semanal%20al%2012_11_2026.pdf",
+  "url": "https://www.magyp.gob.ar/sitio/areas/estimaciones/_archivos/estimaciones/260000_2026/261100_Noviembre/261119_%20Informe%20Mensual%20al%2019_11_2026.pdf https://www.magyp.gob.ar/sitio/areas/estimaciones/_archivos/estimaciones/260000_2026/261100_Noviembre/261119_Informe%20Semanal%20al%2019_11_2026.pdf",
   "pagina": "https://www.magyp.gob.ar/sitio/areas/estimaciones/estimaciones/informes/",
   "frecuencia": "M",
   "unidad": "Toneladas",
-  "sha256": "4a5a3301cf6f081972808cba1837af8cd17cd84d668c37a3d9a144dc2f146808",
+  "sha256": "2401926c4b81f8eaa97dac132b798c75ecf10d0055d6b870727069731804aeb3",
   "columnas": {
     "trigo_campania": {
       "nombre": "Trigo: año de inicio de la campaña estimada",
@@ -88,8 +88,8 @@
       "unidad": "Toneladas"
     }
   },
-  "descargado": "2026-11-12T07:46:42Z",
-  "ultimo_periodo": "2026-10",
-  "observaciones": 1,
+  "descargado": "2026-11-20T07:48:18Z",
+  "ultimo_periodo": "2026-11",
+  "observaciones": 2,
   "original_guardado": null
 }

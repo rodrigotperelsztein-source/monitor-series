@@ -5,7 +5,7 @@
   "pagina": "https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/logistica/_archivos/000023_Posici%C3%B3n%20de%20Camiones%20y%20Vagones/000020_Entrada%20diaria%20de%20camiones%20y%20vagones%20a%20puertos,%20f%C3%A1bricas%20y%20molinos%20(por%20zona%20portuaria%20y%20por%20producto).php",
   "frecuencia": "M",
   "unidad": "Camiones por mes",
-  "sha256": "68f5728e6bb3bff038cf71048dfa43981787f3187cf6c546b6d70f62ae73cde6",
+  "sha256": "d2002fd8ce6430ad2e15e9dfe605740e529c1cec4ab34b84aa7d87edbdfc487a",
   "derivada_de": [
     "camiones_puertos"
   ],
@@ -134,8 +134,8 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-11-18T07:59:33Z",
-  "calculado": "2026-11-18T07:59:33Z",
+  "descargado": "2026-11-20T07:48:18Z",
+  "calculado": "2026-11-20T07:48:18Z",
   "ultimo_periodo": "2026-10",
   "observaciones": 34
 }

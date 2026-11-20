@@ -5,7 +5,7 @@
   "pagina": "https://www.argentina.gob.ar/economia/sechacienda/infoestadistica",
   "frecuencia": "M",
   "unidad": "Millones de $",
-  "sha256": "cfb206c2ae85a4ae318124399b780a1616b8e91cd3e7a3f3b553b8ffb8747e68",
+  "sha256": "0af87290b21601fcd11fc586d5ce0463cc5ab4d64e8746e0a38d1357d2237c88",
   "columnas": {
     "ingresos_totales": {
       "nombre": "Ingresos totales",
@@ -118,8 +118,8 @@
       "unidad": "Millones de $"
     }
   },
-  "descargado": "2026-11-05T18:56:24Z",
-  "ultimo_periodo": "2026-09",
-  "observaciones": 129,
-  "original_guardado": "data/raw/imig/2026-11-05_cfb206c2.csv"
+  "descargado": "2026-11-20T07:48:18Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 130,
+  "original_guardado": "data/raw/imig/2026-11-20_0af87290.csv"
 }

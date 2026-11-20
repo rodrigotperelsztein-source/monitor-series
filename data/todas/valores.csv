@@ -731723,6 +731723,7 @@ fecha,id_serie,valor
 2026-11-16,monitorargy.riesgo_pais,855.000000
 2026-11-17,monitorargy.riesgo_pais,854.000000
 2026-11-18,monitorargy.riesgo_pais,848.000000
+2026-11-19,monitorargy.riesgo_pais,931.000000
 2020-01-01,monitorargy.tc_ccl,73.550000
 2020-01-02,monitorargy.tc_ccl,74.410000
 2020-01-03,monitorargy.tc_ccl,75.060000
@@ -733520,6 +733521,7 @@ fecha,id_serie,valor
 2026-11-17,monitorargy.tc_ccl,1682.900000
 2026-11-18,monitorargy.tc_ccl,1697.200000
 2026-11-19,monitorargy.tc_ccl,1724.100000
+2026-11-20,monitorargy.tc_ccl,1748.200000
 2000-01-01,patentamientos.autos,46926.000000
 2000-02-01,patentamientos.autos,32798.000000
 2000-03-01,patentamientos.autos,32504.000000

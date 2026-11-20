@@ -5,7 +5,7 @@
   "pagina": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
   "frecuencia": "D",
   "unidad": "Según la serie",
-  "sha256": "45380fc71a0abad104176cf48fd5180446ffe3e7ba68594c103c2421d0f8362f",
+  "sha256": "f03a414b42873df9c5756791a25a61a882c738011355dfe4ae3786e9c195798e",
   "columnas": {
     "reservas": {
       "nombre": "Reservas internacionales",

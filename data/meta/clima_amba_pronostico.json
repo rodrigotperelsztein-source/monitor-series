@@ -5,7 +5,7 @@
   "pagina": "https://open-meteo.com/en/docs",
   "frecuencia": "D",
   "unidad": "°C, mm y %",
-  "sha256": "be8408474aebb0695335394ae2492860f4a6c7e78fae9cbf989bd94452648973",
+  "sha256": "972cb9889ba0194974435d6ed85f84126ed3c6bcbe6425a160e2c8305ad11541",
   "columnas": {
     "caba_tmax": {
       "nombre": "Temperatura máxima pronosticada (CABA)",
@@ -133,7 +133,7 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-11-22T07:30:27Z",
+  "descargado": "2026-11-22T12:42:53Z",
   "ultimo_periodo": "2026-12-07",
   "observaciones": 16,
   "original_guardado": null

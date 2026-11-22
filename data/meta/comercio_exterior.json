@@ -5,7 +5,7 @@
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-2-40",
   "frecuencia": "M",
   "unidad": "Millones de USD",
-  "sha256": "df30eb4c5aa6b1f9947676de5262290fb858382ebed1239ccfddf799ea7cd8cd",
+  "sha256": "d16e43954ece428deb0a465f52ab8ca74705bce05bd3d236536fac1e734ce277",
   "columnas": {
     "exportaciones": {
       "nombre": "Exportaciones de bienes (FOB)",

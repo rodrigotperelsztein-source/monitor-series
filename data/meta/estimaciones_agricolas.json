@@ -5,7 +5,7 @@
   "pagina": "https://www.magyp.gob.ar/sitio/areas/estimaciones/estimaciones/informes/",
   "frecuencia": "M",
   "unidad": "Toneladas",
-  "sha256": "bb34cf7d8994927c85befc9da67e7d0fdb37bfcdc81099de599f4031d0469bb5",
+  "sha256": "c7fdb5064d8db227b37873f293bc2831e45775038f6b0451667cbb3eca85745a",
   "columnas": {
     "trigo_campania": {
       "nombre": "Trigo: año de inicio de la campaña estimada",

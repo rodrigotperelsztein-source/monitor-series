@@ -39,4 +39,7 @@ def leer(contenido: bytes, columnas=COLUMNAS) -> pd.DataFrame:
 
 
 def validar(nuevo: pd.DataFrame, anterior: pd.DataFrame | None, columnas=COLUMNAS) -> list[str]:
-    return itcrm.validar(nuevo, anterior, columnas, minimo=300, dias=45, base_diaria=False)
+    # La fecha de cada dato es el primer día del mes, así que un mes recién cerrado ya nace con 30 días:
+    # el plazo tiene que dejar lugar para eso (75 días = unos 45 desde que el mes terminó), como en las
+    # demás fuentes mensuales. Con 45 fallaba todos los meses a partir del día 16.
+    return itcrm.validar(nuevo, anterior, columnas, minimo=300, dias=75, base_diaria=False)

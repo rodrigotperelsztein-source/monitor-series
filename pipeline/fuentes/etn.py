@@ -61,7 +61,11 @@ def leer(contenido: bytes, columnas=COLUMNAS) -> pd.DataFrame:
 def validar(nuevo: pd.DataFrame, anterior: pd.DataFrame | None, columnas=COLUMNAS) -> list[str]:
     errores = validar_tabla(nuevo, anterior, columnas, PRIMER_PERIODO, set(columnas),
                             rango_nivel=(-100, 100), max_variacion=200,
-                            vacios_permitidos={"confianza_industria"})
+                            vacios_permitidos={"confianza_industria"},
+                            # Es un saldo de respuestas que pasa por cero (agosto de 2026 dio 0,0): contra un
+                            # valor casi nulo, cualquier revisión mínima es un cambio porcentual enorme. Se exige
+                            # además que el cambio supere 2 puntos del saldo, que sigue atrapando un corte real.
+                            piso_revision=2.0)
     for c in columnas:
         u = nuevo[c].dropna()
         if u.empty:

@@ -225,7 +225,7 @@ def iguales(a: pd.Series, b: pd.Series, tol: float = 1e-6) -> np.ndarray:
 def validar_tabla(nuevo: pd.DataFrame, anterior: pd.DataFrame | None, columnas: dict[str, Columna],
                   primer_periodo: str, sin_control_interanual: set[str] = frozenset(),
                   rango_nivel=(0, 2000), max_variacion=100, tol_variacion=0.05,
-                  vacios_permitidos: set[str] = frozenset()) -> list[str]:
+                  vacios_permitidos: set[str] = frozenset(), piso_revision: float = 0.0) -> list[str]:
     """Devuelve una lista de errores (vacía si todo está bien). Los avisos van por print.
 
     vacios_permitidos: series que pueden tener meses sin dato (p. ej. subclases que INDEC deja en
@@ -280,9 +280,13 @@ def validar_tabla(nuevo: pd.DataFrame, anterior: pd.DataFrame | None, columnas: 
         for c in niveles:
             if f"{c}_ant" not in comunes:
                 continue
-            dif = (comunes[c] / comunes[f"{c}_ant"] - 1).abs()
-            if (dif > 0.25).any():
-                errores.append(f"{c}: valores históricos cambiaron más de 25% respecto de la versión guardada.")
+            ant, act = comunes[f"{c}_ant"], comunes[c]
+            dif = (act / ant - 1).abs()
+            malos = (dif > 0.25) & ((act - ant).abs() > piso_revision)
+            if malos.any():
+                i = (act - ant).abs()[malos].idxmax()
+                errores.append(f"{c}: valores históricos cambiaron más de 25% respecto de la versión guardada, "
+                               f"p. ej. {comunes.loc[i, 'fecha']:%Y-%m}: {ant[i]:.4g} → {act[i]:.4g}.")
             elif (dif > 0.0005).any():
                 print(f"Aviso: {c} tiene {(dif > 0.0005).sum()} meses revisados respecto de la versión guardada.")
 

@@ -95,8 +95,14 @@ def validar(df: pd.DataFrame, anio: int, s: int) -> list[str]:
         errores.append(f"Meses leídos {sorted(vistos)}, esperaba {sorted(meses)}.")
     mal = df[[d.weekday() != DIAS[a] for d, a in zip(df["fecha"], df["dia_semana"])]]
     if len(mal):
-        errores.append(f"{len(mal)} fechas no coinciden con el día de la semana, p. ej. "
-                       f"{mal.iloc[0]['fecha']} {mal.iloc[0]['dia_semana']}.")
+        detalle = ", ".join(f"{d} {a}" for d, a in zip(mal["fecha"], mal["dia_semana"]))
+        # La fecha es el dato; el día de la semana que la acompaña es decorativo y el INDEC a veces lo
+        # escribe mal (en el calendario de 2027-S1 hay tres). Solo delata una lectura mal hecha si se
+        # equivoca en muchas filas a la vez: ahí sí se rechaza y se conserva el calendario anterior.
+        if len(mal) > max(3, len(df) // 20):
+            errores.append(f"{len(mal)} de {len(df)} fechas no coinciden con el día de la semana: {detalle}")
+        else:
+            print(f"  aviso: {len(mal)} fecha(s) del calendario traen mal el día de la semana: {detalle}")
     return errores
 
 

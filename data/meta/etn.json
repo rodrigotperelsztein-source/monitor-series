@@ -5,7 +5,7 @@
   "pagina": "https://www.indec.gob.ar/Nivel4/Tema/3/5/32",
   "frecuencia": "M",
   "unidad": "Saldo de respuestas (-100 a 100)",
-  "sha256": "b4452057deea27952866b3cfd7e3d2f0a70cf8a9a6d641f58bd074571e864282",
+  "sha256": "71a2da2c224e9e2bdf56141c3fcd4c8453ca5cebb7a36a39eaefe3d510798592",
   "columnas": {
     "confianza_industria": {
       "nombre": "Confianza empresarial en la industria manufacturera",

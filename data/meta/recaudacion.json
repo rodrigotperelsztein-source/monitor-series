@@ -5,7 +5,7 @@
   "pagina": "https://www.arca.gob.ar/institucional/estudios/recaudacion/series.asp",
   "frecuencia": "M",
   "unidad": "Millones de $",
-  "sha256": "0c235ec355aee0582f33985e99ebe1209ae843292ac45269232016f07fdcb292",
+  "sha256": "3fc5fcbf75b18817d4aa25fb957a77f04b4fea355b23261f7c99f46379e7c6b6",
   "columnas": {
     "total": {
       "nombre": "Recaudación tributaria total",

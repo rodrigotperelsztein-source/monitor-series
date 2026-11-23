@@ -5,7 +5,7 @@
   "pagina": "https://open-meteo.com/en/docs/historical-weather-api",
   "frecuencia": "D",
   "unidad": "°C y mm",
-  "sha256": "eddf279f198ddd8f84fd8a444adb39ae5fcb00d943c80ddf26e39d770dddbdce",
+  "sha256": "59aeb5639ea868c0fa90ab535deeb48fdd10a85c15ce40b8dd9ea9a9fe88f893",
   "columnas": {
     "caba_tmax": {
       "nombre": "Temperatura máxima (CABA)",
@@ -108,8 +108,8 @@
       "unidad": "mm"
     }
   },
-  "descargado": "2026-11-22T07:30:27Z",
-  "ultimo_periodo": "2026-11-15",
-  "observaciones": 745,
+  "descargado": "2026-11-23T08:17:33Z",
+  "ultimo_periodo": "2026-11-16",
+  "observaciones": 746,
   "original_guardado": null
 }

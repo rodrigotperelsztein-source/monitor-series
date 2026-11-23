@@ -2,103 +2,94 @@
   aviso: 3 fecha(s) del calendario traen mal el día de la semana: 2027-01-18 JU, 2027-04-30 JU, 2027-04-30 JU
   2.º sem. 2026: 174 publicaciones; 1.º sem. 2027: 176 publicaciones
 [emae]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [emae_letras]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [cuentas_nacionales]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [ipi]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [capacidad_instalada]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [ipi_minero]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [ipi_pesquero]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [isac]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [ise]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [issp]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [adimra]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [adefa]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [acero]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [cemento]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [construya]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [supermercados]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [mayoristas]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [shoppings]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [electrodomesticos]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [came]
   archivo distinto pero mismos datos
-  (tardó 63 s)
 [patentamientos]
   archivo distinto pero mismos datos
 [ipc]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [ipc_aperturas]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [precios_mayoristas]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [icc]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [canastas]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [canasta_crianza]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [salarios]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [ripte]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [salarios_ramas]
   archivo distinto pero mismos datos
 [remuneraciones_provincias]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [empleo_sipa]
-/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
-  warn(msg)
-/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
-  warn(msg)
-/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
-  warn(msg)
-/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
-  warn(msg)
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [empleo_ramas]
   archivo distinto pero mismos datos
 [mercado_trabajo]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [pobreza]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [gini]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [comercio_exterior]
   archivo distinto pero mismos datos
 [comex_indices]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [balanza_pagos]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [balance_cambiario]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [itcrm]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [itcrm_mensual]
-  actualizada: último período 2026-10 → 2026-10; valores revisados: 2162
+  sin cambios en el archivo
 [bcra]
-  archivo distinto pero mismos datos
-  (tardó 43 s)
+  actualizada: último período 2026-11 → 2026-11-23; valores revisados: 0
+  (tardó 50 s)
 [imig]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [recaudacion]
   archivo distinto pero mismos datos
 [deuda]
@@ -106,24 +97,22 @@
 [provincias]
   archivo distinto pero mismos datos
 [rem]
-/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/header_footer.py:48: UserWarning: Cannot parse header or footer so it will be ignored
-  warn("""Cannot parse header or footer so it will be ignored""")
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [utdt]
   archivo distinto pero mismos datos
 [etn]
 Aviso: confianza_supermercados tiene 2 meses revisados respecto de la versión guardada.
-  actualizada: último período 2026-09 → 2026-10; valores revisados: 0
+  archivo distinto pero mismos datos
 [ventas_combustibles]
-  intento 1 falló: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x74b5685b5be0>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
-  intento 2 falló: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x74b5685b6d80>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
-  intento 3 falló: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x74b5685b5880>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
-  ERROR de descarga: No pude descargar https://www.energia.gob.ar/contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x74b5685b5880>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
-  (tardó 226 s)
+  intento 1 falló: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x75e12fc0da00>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
+  intento 2 falló: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x75e131583800>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
+  intento 3 falló: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x75e131580140>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
+  ERROR de descarga: No pude descargar https://www.energia.gob.ar/contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x75e131580140>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
+  (tardó 227 s)
 [gas_entregado]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [biocombustibles]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [petroleo]
   archivo distinto pero mismos datos
 [refinados]
@@ -131,79 +120,69 @@ Aviso: confianza_supermercados tiene 2 meses revisados respecto de la versión g
 [acciones_energia]
   archivo distinto pero mismos datos
 [cammesa_balance]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [cammesa_diaria]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [cammesa_gu_actividad]
-/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Sparkline Group extension is not supported and will be removed
-  warn(msg)
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [sube]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [turismo]
   archivo distinto pero mismos datos
 [accesos_internet]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [estimaciones_agricolas]
   archivo distinto pero mismos datos
 [camiones_puertos]
-  aviso: la página se titula 2026-10 pero sus filas son de 2026-11; se usa 2026-11.
-  aviso: 3 días sin dato en la fuente: ['2024-08-31', '2025-02-28', '2025-12-31']
-  aviso: en 1 días la suma por zonas no da el total: ['2026-10-27']
-  aviso: en 1 días la suma por productos no da el total: ['2024-09-26']
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [leche]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [faena]
-  archivo distinto pero mismos datos
+  sin cambios en el archivo
 [clima_amba]
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-11 → 2026-11-16; valores revisados: 0
 [clima_amba_pronostico]
-  intento 1 falló: 429 Client Error: Too Many Requests for url: https://api.open-meteo.com/v1/forecast?latitude=-34.5700,-34.6000,-34.6200,-34.6600,-34.8356,-34.6782,-34.8182,-34.9094,-35.2225,-34.1384,-35.1448,-34.8421,-34.3287,-34.8312,-34.2951,-34.8761,-34.8777,-34.9094,-34.6506,-34.5528,-34.5993,-34.6361,-34.5119,-34.7703,-34.7057,-35.0038,-34.7550,-34.5673,-34.8140,-34.4873,-34.6107,-34.7110,-34.6494,-34.4482,-34.9298,-34.7350,-34.1558,-34.4869,-34.5521,-35.0715,-34.3820,-34.5960,-34.5265,-33.9971&longitude=-58.4600,-58.4000,-58.5000,-58.4500,-58.3674,-58.3411,-58.1555,-57.8284,-58.1752,-58.8830,-58.6911,-57.9791,-58.7712,-58.4769,-59.1559,-58.5647,-58.2586,-58.9954,-58.9878,-58.5643,-58.6495,-58.6888,-58.7776,-58.6254,-58.3947,-58.0178,-58.4241,-59.1585,-58.8478,-58.7121,-58.8109,-58.7420,-58.6198,-58.9033,-58.3981,-58.2769,-58.5346,-58.5372,-58.6918,-58.4318,-58.5882,-58.5792,-58.5045,-59.1282&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum,precipitation_probability_max&timezone=America%2FArgentina%2FBuenos_Aires&forecast_days=16
-  intento 2 falló: 429 Client Error: Too Many Requests for url: https://api.open-meteo.com/v1/forecast?latitude=-34.5700,-34.6000,-34.6200,-34.6600,-34.8356,-34.6782,-34.8182,-34.9094,-35.2225,-34.1384,-35.1448,-34.8421,-34.3287,-34.8312,-34.2951,-34.8761,-34.8777,-34.9094,-34.6506,-34.5528,-34.5993,-34.6361,-34.5119,-34.7703,-34.7057,-35.0038,-34.7550,-34.5673,-34.8140,-34.4873,-34.6107,-34.7110,-34.6494,-34.4482,-34.9298,-34.7350,-34.1558,-34.4869,-34.5521,-35.0715,-34.3820,-34.5960,-34.5265,-33.9971&longitude=-58.4600,-58.4000,-58.5000,-58.4500,-58.3674,-58.3411,-58.1555,-57.8284,-58.1752,-58.8830,-58.6911,-57.9791,-58.7712,-58.4769,-59.1559,-58.5647,-58.2586,-58.9954,-58.9878,-58.5643,-58.6495,-58.6888,-58.7776,-58.6254,-58.3947,-58.0178,-58.4241,-59.1585,-58.8478,-58.7121,-58.8109,-58.7420,-58.6198,-58.9033,-58.3981,-58.2769,-58.5346,-58.5372,-58.6918,-58.4318,-58.5882,-58.5792,-58.5045,-59.1282&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum,precipitation_probability_max&timezone=America%2FArgentina%2FBuenos_Aires&forecast_days=16
-  intento 3 falló: 429 Client Error: Too Many Requests for url: https://api.open-meteo.com/v1/forecast?latitude=-34.5700,-34.6000,-34.6200,-34.6600,-34.8356,-34.6782,-34.8182,-34.9094,-35.2225,-34.1384,-35.1448,-34.8421,-34.3287,-34.8312,-34.2951,-34.8761,-34.8777,-34.9094,-34.6506,-34.5528,-34.5993,-34.6361,-34.5119,-34.7703,-34.7057,-35.0038,-34.7550,-34.5673,-34.8140,-34.4873,-34.6107,-34.7110,-34.6494,-34.4482,-34.9298,-34.7350,-34.1558,-34.4869,-34.5521,-35.0715,-34.3820,-34.5960,-34.5265,-33.9971&longitude=-58.4600,-58.4000,-58.5000,-58.4500,-58.3674,-58.3411,-58.1555,-57.8284,-58.1752,-58.8830,-58.6911,-57.9791,-58.7712,-58.4769,-59.1559,-58.5647,-58.2586,-58.9954,-58.9878,-58.5643,-58.6495,-58.6888,-58.7776,-58.6254,-58.3947,-58.0178,-58.4241,-59.1585,-58.8478,-58.7121,-58.8109,-58.7420,-58.6198,-58.9033,-58.3981,-58.2769,-58.5346,-58.5372,-58.6918,-58.4318,-58.5882,-58.5792,-58.5045,-59.1282&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum,precipitation_probability_max&timezone=America%2FArgentina%2FBuenos_Aires&forecast_days=16
-  ERROR de descarga: No pude descargar https://api.open-meteo.com/v1/forecast?latitude=-34.5700,-34.6000,-34.6200,-34.6600,-34.8356,-34.6782,-34.8182,-34.9094,-35.2225,-34.1384,-35.1448,-34.8421,-34.3287,-34.8312,-34.2951,-34.8761,-34.8777,-34.9094,-34.6506,-34.5528,-34.5993,-34.6361,-34.5119,-34.7703,-34.7057,-35.0038,-34.7550,-34.5673,-34.8140,-34.4873,-34.6107,-34.7110,-34.6494,-34.4482,-34.9298,-34.7350,-34.1558,-34.4869,-34.5521,-35.0715,-34.3820,-34.5960,-34.5265,-33.9971&longitude=-58.4600,-58.4000,-58.5000,-58.4500,-58.3674,-58.3411,-58.1555,-57.8284,-58.1752,-58.8830,-58.6911,-57.9791,-58.7712,-58.4769,-59.1559,-58.5647,-58.2586,-58.9954,-58.9878,-58.5643,-58.6495,-58.6888,-58.7776,-58.6254,-58.3947,-58.0178,-58.4241,-59.1585,-58.8478,-58.7121,-58.8109,-58.7420,-58.6198,-58.9033,-58.3981,-58.2769,-58.5346,-58.5372,-58.6918,-58.4318,-58.5882,-58.5792,-58.5045,-59.1282&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum,precipitation_probability_max&timezone=America%2FArgentina%2FBuenos_Aires&forecast_days=16: 429 Client Error: Too Many Requests for url: https://api.open-meteo.com/v1/forecast?latitude=-34.5700,-34.6000,-34.6200,-34.6600,-34.8356,-34.6782,-34.8182,-34.9094,-35.2225,-34.1384,-35.1448,-34.8421,-34.3287,-34.8312,-34.2951,-34.8761,-34.8777,-34.9094,-34.6506,-34.5528,-34.5993,-34.6361,-34.5119,-34.7703,-34.7057,-35.0038,-34.7550,-34.5673,-34.8140,-34.4873,-34.6107,-34.7110,-34.6494,-34.4482,-34.9298,-34.7350,-34.1558,-34.4869,-34.5521,-35.0715,-34.3820,-34.5960,-34.5265,-33.9971&longitude=-58.4600,-58.4000,-58.5000,-58.4500,-58.3674,-58.3411,-58.1555,-57.8284,-58.1752,-58.8830,-58.6911,-57.9791,-58.7712,-58.4769,-59.1559,-58.5647,-58.2586,-58.9954,-58.9878,-58.5643,-58.6495,-58.6888,-58.7776,-58.6254,-58.3947,-58.0178,-58.4241,-59.1585,-58.8478,-58.7121,-58.8109,-58.7420,-58.6198,-58.9033,-58.3981,-58.2769,-58.5346,-58.5372,-58.6918,-58.4318,-58.5882,-58.5792,-58.5045,-59.1282&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum,precipitation_probability_max&timezone=America%2FArgentina%2FBuenos_Aires&forecast_days=16
-  (tardó 45 s)
+  actualizada: último período 2026-12 → 2026-12-08; valores revisados: 346
 [emae_letras_desest]
-  recalculada: último período 2026-08 → 2026-08
+  sin cambios en las series de base
 [ipi_minero_desest]
-  recalculada: último período 2026-09 → 2026-09
+  sin cambios en las series de base
 [patentamientos_desest]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [salarios_real]
-  recalculada: último período 2026-09 → 2026-09
+  sin cambios en las series de base
 [ripte_real]
-  recalculada: último período 2026-09 → 2026-09
+  sin cambios en las series de base
 [salarios_ramas_real]
-  recalculada: último período 2026-06 → 2026-06
+  sin cambios en las series de base
 [remuneraciones_provincias_real]
-  recalculada: último período 2026-06 → 2026-06
+  sin cambios en las series de base
 [remuneraciones_provincias_desest]
-  recalculada: último período 2026-06 → 2026-06
+  sin cambios en las series de base
 [remuneraciones_provincias_real_desest]
-  recalculada: último período 2026-06 → 2026-06
+  sin cambios en las series de base
 [bcra_mensual]
   recalculada: último período 2026-10 → 2026-10
 [bcra_real]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [recaudacion_real]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [ventas_combustibles_desest]
-  recalculada: último período 2026-09 → 2026-09
+  sin cambios en las series de base
 [petroleo_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [refinados_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [acciones_energia_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [cammesa_gu_actividad_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [sube_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [sube_desest]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [camiones_puertos_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [clima_amba_mensual]
   recalculada: último período 2026-10 → 2026-10
 [catálogo de Monitor Argy]

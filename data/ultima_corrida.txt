@@ -1,8 +1,23 @@
-[petroleo]
-  archivo distinto pero mismos datos
-[refinados]
-  archivo distinto pero mismos datos
-[petroleo_mensual]
-  sin cambios en las series de base
-[refinados_mensual]
-  sin cambios en las series de base
+Publicaciones previstas hoy y todavía no descargadas: emae, emae_letras
+[emae]
+Aviso: original tiene 2 meses revisados respecto de la versión guardada.
+Aviso: desest tiene 49 meses revisados respecto de la versión guardada.
+Aviso: tendencia tiene 60 meses revisados respecto de la versión guardada.
+  actualizada: último período 2026-08 → 2026-09; valores revisados: 1129
+[emae_letras]
+Aviso: a_agro tiene 6 meses revisados respecto de la versión guardada.
+Aviso: b_pesca tiene 2 meses revisados respecto de la versión guardada.
+Aviso: d_industria tiene 4 meses revisados respecto de la versión guardada.
+Aviso: e_electricidad_gas_agua tiene 2 meses revisados respecto de la versión guardada.
+Aviso: f_construccion tiene 2 meses revisados respecto de la versión guardada.
+Aviso: g_comercio tiene 2 meses revisados respecto de la versión guardada.
+Aviso: h_hoteles_restaurantes tiene 3 meses revisados respecto de la versión guardada.
+Aviso: i_transporte_comunicaciones tiene 2 meses revisados respecto de la versión guardada.
+Aviso: k_inmobiliarias_empresariales tiene 2 meses revisados respecto de la versión guardada.
+Aviso: m_ensenanza tiene 1 meses revisados respecto de la versión guardada.
+Aviso: n_salud tiene 2 meses revisados respecto de la versión guardada.
+Aviso: o_otros_servicios tiene 4 meses revisados respecto de la versión guardada.
+Aviso: impuestos_netos tiene 1 meses revisados respecto de la versión guardada.
+  actualizada: último período 2026-08 → 2026-09; valores revisados: 122
+[emae_letras_desest]
+  recalculada: último período 2026-08 → 2026-09

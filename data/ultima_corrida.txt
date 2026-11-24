@@ -86,8 +86,8 @@
 [itcrm_mensual]
   sin cambios en el archivo
 [bcra]
-  actualizada: último período 2026-11 → 2026-11-24; valores revisados: 0
-  (tardó 62 s)
+  archivo distinto pero mismos datos
+  (tardó 45 s)
 [imig]
   sin cambios en el archivo
 [recaudacion]
@@ -99,26 +99,26 @@
 [rem]
   sin cambios en el archivo
 [utdt]
-  actualizada: último período 2026-11 → 2026-11; valores revisados: 1
+  archivo distinto pero mismos datos
 [etn]
 Aviso: confianza_supermercados tiene 2 meses revisados respecto de la versión guardada.
   archivo distinto pero mismos datos
 [ventas_combustibles]
-  intento 1 falló: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x7504e1f53f50>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
-  intento 2 falló: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x7504e1f537d0>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
-  intento 3 falló: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x7504c5ed0a70>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
-  ERROR de descarga: No pude descargar https://www.energia.gob.ar/contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x7504c5ed0a70>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
+  intento 1 falló: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x723b014ba630>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
+  intento 2 falló: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x723b014b9b50>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
+  intento 3 falló: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x723b014b9d30>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
+  ERROR de descarga: No pude descargar https://www.energia.gob.ar/contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip: HTTPSConnectionPool(host='www.energia.gob.ar', port=443): Max retries exceeded with url: /contenidos/archivos/Reorganizacion/informacion_del_mercado/mercado_hidrocarburos/tablas_dinamicas/dowstream/individuales/TD_ventas_mercado.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.energia.gob.ar', port=443) at 0x723b014b9d30>, 'Connection to www.energia.gob.ar timed out. (connect timeout=60)'))
   (tardó 227 s)
 [gas_entregado]
   sin cambios en el archivo
 [biocombustibles]
   sin cambios en el archivo
 [petroleo]
-  archivo distinto pero mismos datos
-[refinados]
-  archivo distinto pero mismos datos
-[acciones_energia]
   actualizada: último período 2026-11 → 2026-11-23; valores revisados: 0
+[refinados]
+  actualizada: último período 2026-11 → 2026-11-23; valores revisados: 0
+[acciones_energia]
+  archivo distinto pero mismos datos
 [cammesa_balance]
   sin cambios en el archivo
 [cammesa_diaria]
@@ -126,7 +126,7 @@ Aviso: confianza_supermercados tiene 2 meses revisados respecto de la versión g
 [cammesa_gu_actividad]
   sin cambios en el archivo
 [sube]
-  actualizada: último período 2026-11 → 2026-11-21; valores revisados: 0
+  sin cambios en el archivo
 [turismo]
   archivo distinto pero mismos datos
 [accesos_internet]
@@ -140,9 +140,9 @@ Aviso: confianza_supermercados tiene 2 meses revisados respecto de la versión g
 [faena]
   sin cambios en el archivo
 [clima_amba]
-  actualizada: último período 2026-11 → 2026-11-17; valores revisados: 0
+  archivo distinto pero mismos datos
 [clima_amba_pronostico]
-  actualizada: último período 2026-12 → 2026-12-09; valores revisados: 347
+  actualizada: último período 2026-12 → 2026-12-09; valores revisados: 221
 [emae_letras_desest]
   sin cambios en las series de base
 [ipi_minero_desest]
@@ -162,7 +162,7 @@ Aviso: confianza_supermercados tiene 2 meses revisados respecto de la versión g
 [remuneraciones_provincias_real_desest]
   sin cambios en las series de base
 [bcra_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [bcra_real]
   sin cambios en las series de base
 [recaudacion_real]
@@ -170,21 +170,21 @@ Aviso: confianza_supermercados tiene 2 meses revisados respecto de la versión g
 [ventas_combustibles_desest]
   sin cambios en las series de base
 [petroleo_mensual]
-  sin cambios en las series de base
-[refinados_mensual]
-  sin cambios en las series de base
-[acciones_energia_mensual]
   recalculada: último período 2026-10 → 2026-10
+[refinados_mensual]
+  recalculada: último período 2026-10 → 2026-10
+[acciones_energia_mensual]
+  sin cambios en las series de base
 [cammesa_gu_actividad_mensual]
   sin cambios en las series de base
 [sube_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [sube_desest]
   sin cambios en las series de base
 [camiones_puertos_mensual]
   sin cambios en las series de base
 [clima_amba_mensual]
-  recalculada: último período 2026-10 → 2026-10
+  sin cambios en las series de base
 [catálogo de Monitor Argy]
   1053 series
 [series de Monitor Argy (copia)]

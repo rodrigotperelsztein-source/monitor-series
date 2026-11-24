@@ -788,7 +788,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-20",
+"ultimo_periodo": "2026-11-23",
 "frescura": "vigente"
 },
 {
@@ -1129,7 +1129,7 @@
 "unidad": "indice",
 "frecuencia": "M",
 "fuente": "Universidad Torcuato Di Tella — Escuela de Gobierno",
-"ultimo_periodo": "2026-10-01",
+"ultimo_periodo": "2026-11-01",
 "frescura": "vigente"
 },
 {
@@ -1140,7 +1140,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "Universidad Torcuato Di Tella",
-"ultimo_periodo": "2026-10-01",
+"ultimo_periodo": "2026-11-01",
 "frescura": "vigente"
 },
 {
@@ -2966,7 +2966,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -2977,7 +2977,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -2988,7 +2988,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -2999,7 +2999,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -3010,7 +3010,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -3021,7 +3021,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -3065,7 +3065,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -3076,7 +3076,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -3087,7 +3087,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -3252,7 +3252,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -3263,7 +3263,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -3274,7 +3274,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -3901,7 +3901,7 @@
 "unidad": "musd",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -3912,7 +3912,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -3923,7 +3923,7 @@
 "unidad": "pct",
 "frecuencia": "M",
 "fuente": "INDEC — ICA",
-"ultimo_periodo": "2026-09-01",
+"ultimo_periodo": "2026-10-01",
 "frescura": "vigente"
 },
 {
@@ -10380,7 +10380,7 @@
 "unidad": "pb",
 "frecuencia": "D",
 "fuente": "JP Morgan (EMBI) vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-19",
+"ultimo_periodo": "2026-11-20",
 "frescura": "vigente"
 },
 {
@@ -10985,7 +10985,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-20",
+"ultimo_periodo": "2026-11-23",
 "frescura": "vigente"
 },
 {
@@ -10996,7 +10996,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-20",
+"ultimo_periodo": "2026-11-23",
 "frescura": "vigente"
 },
 {
@@ -11007,7 +11007,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-20",
+"ultimo_periodo": "2026-11-23",
 "frescura": "vigente"
 },
 {
@@ -11018,7 +11018,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-20",
+"ultimo_periodo": "2026-11-23",
 "frescura": "vigente"
 },
 {
@@ -11029,7 +11029,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-20",
+"ultimo_periodo": "2026-11-23",
 "frescura": "vigente"
 },
 {
@@ -11040,7 +11040,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "BNA vía ArgentinaDatos",
-"ultimo_periodo": "2026-11-20",
+"ultimo_periodo": "2026-11-23",
 "frescura": "vigente"
 },
 {
@@ -11051,7 +11051,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-20",
+"ultimo_periodo": "2026-11-23",
 "frescura": "vigente"
 },
 {
@@ -11062,7 +11062,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-20",
+"ultimo_periodo": "2026-11-23",
 "frescura": "vigente"
 },
 {
@@ -11073,7 +11073,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-20",
+"ultimo_periodo": "2026-11-23",
 "frescura": "vigente"
 },
 {
@@ -11084,7 +11084,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-20",
+"ultimo_periodo": "2026-11-23",
 "frescura": "vigente"
 },
 {
@@ -11205,7 +11205,7 @@
 "unidad": "ars",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-20",
+"ultimo_periodo": "2026-11-23",
 "frescura": "vigente"
 },
 {
@@ -11216,7 +11216,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-20",
+"ultimo_periodo": "2026-11-23",
 "frescura": "vigente"
 },
 {
@@ -11227,7 +11227,7 @@
 "unidad": "pct",
 "frecuencia": "D",
 "fuente": "ArgentinaDatos",
-"ultimo_periodo": "2026-11-20",
+"ultimo_periodo": "2026-11-23",
 "frescura": "vigente"
 },
 {

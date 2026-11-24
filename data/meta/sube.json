@@ -5,7 +5,7 @@
   "pagina": "https://datos.transporte.gob.ar/dataset/sube-cantidad-de-transacciones-usos-por-fecha",
   "frecuencia": "D",
   "unidad": "Transacciones por día",
-  "sha256": "face3ad5d04bffd5be37a3815bda37d9b92a2e65cd45f6203889a0372d775abd",
+  "sha256": "e7e2cd085b1fbf486af104f79d08cc74840e0809fbe315c6d5f7d982032e2d3b",
   "columnas": {
     "total": {
       "nombre": "SUBE, transacciones por día, total del país",
@@ -49,8 +49,8 @@
     }
   },
   "preliminar_desde": "2026-02-01",
-  "descargado": "2026-11-22T12:42:53Z",
-  "ultimo_periodo": "2026-11-20",
-  "observaciones": 2516,
+  "descargado": "2026-11-24T10:28:35Z",
+  "ultimo_periodo": "2026-11-21",
+  "observaciones": 2517,
   "original_guardado": null
 }

@@ -5,7 +5,7 @@
   "pagina": "https://www.argentina.gob.ar/trabajo/estadisticas/oede-estadisticas-provinciales",
   "frecuencia": "Q",
   "unidad": "Puestos de trabajo",
-  "sha256": "63761a1189aec95d38e0226e2a73a6f31b63bc099ebeaec35a3e92e4a77076f3",
+  "sha256": "19f9d5c884a2d6620af3ff71b4b60ee924d009d9e1a21f0baeff0bcb7b6a0064",
   "columnas": {
     "total": {
       "nombre": "Puestos asalariados registrados privados: total del país (suma de las ramas)",

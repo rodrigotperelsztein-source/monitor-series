@@ -1,8 +1,12 @@
-[petroleo]
-  archivo distinto pero mismos datos
-[refinados]
-  actualizada: último período 2026-11 → 2026-11-24; valores revisados: 30
-[petroleo_mensual]
-  sin cambios en las series de base
-[refinados_mensual]
-  recalculada: último período 2026-10 → 2026-10
+Publicaciones previstas hoy y todavía no descargadas: supermercados, mayoristas, electrodomesticos
+[supermercados]
+Aviso: indice_desest tiene 23 meses revisados respecto de la versión guardada.
+Aviso: indice_tendencia tiene 41 meses revisados respecto de la versión guardada.
+  actualizada: último período 2026-08 → 2026-09; valores revisados: 462
+[mayoristas]
+Aviso: indice_desest tiene 67 meses revisados respecto de la versión guardada.
+  actualizada: último período 2026-08 → 2026-09; valores revisados: 231
+[electrodomesticos]
+Aviso: ventas_pequenos tiene 2 meses revisados respecto de la versión guardada.
+Aviso: ventas_otros tiene 2 meses revisados respecto de la versión guardada.
+  actualizada: último período 2026-06 → 2026-09; valores revisados: 7

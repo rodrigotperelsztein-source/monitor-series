@@ -5,7 +5,7 @@
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-1-168",
   "frecuencia": "M",
   "unidad": "Índice de ventas a precios constantes",
-  "sha256": "e647d32aee03df61202438ca12be934b2bc0a960de3a132609a798794cd62ad4",
+  "sha256": "3a324e5f6e00a188f49c53743b82ee9fc7cc3031b756d7ca43f48fb51b6c19d7",
   "columnas": {
     "indice": {
       "nombre": "Índice de ventas a precios constantes, serie original",
@@ -38,8 +38,8 @@
       "unidad": "Millones de $"
     }
   },
-  "descargado": "2026-11-05T18:56:24Z",
-  "ultimo_periodo": "2026-08",
-  "observaciones": 116,
-  "original_guardado": "data/raw/mayoristas/2026-11-05_e647d32a.xlsx"
+  "descargado": "2026-11-25T21:35:31Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 117,
+  "original_guardado": "data/raw/mayoristas/2026-11-25_3a324e5f.xlsx"
 }

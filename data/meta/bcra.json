@@ -5,7 +5,7 @@
   "pagina": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
   "frecuencia": "D",
   "unidad": "Según la serie",
-  "sha256": "d6398a7e4c6a338675a865333c8878994b9c437b8ffd8578219e84a684b6ff3b",
+  "sha256": "06942b1c87dbc223f8801435b642b725876b7921f3debc0a00018391b29e6b7f",
   "columnas": {
     "reservas": {
       "nombre": "Reservas internacionales",
@@ -213,8 +213,8 @@
       "unidad": "Millones de $"
     }
   },
-  "descargado": "2026-11-24T10:28:35Z",
-  "ultimo_periodo": "2026-11-24",
-  "observaciones": 10586,
+  "descargado": "2026-11-25T09:12:37Z",
+  "ultimo_periodo": "2026-11-25",
+  "observaciones": 10587,
   "original_guardado": null
 }

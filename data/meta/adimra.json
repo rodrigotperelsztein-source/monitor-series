@@ -5,7 +5,7 @@
   "pagina": "https://www.adimra.org.ar/datos",
   "frecuencia": "M",
   "unidad": "Índice 2015=100",
-  "sha256": "45e94ecfd05a95310c1ef6a5d2cf7193042aef7c9e0e1eb50ebbe391455fc80e",
+  "sha256": "75cb6e68b9e49e9a9a599d6de89fed41cb9c9e2b2627fec30a59345d3592a610",
   "columnas": {
     "indice": {
       "nombre": "Índice de producción metalúrgica, serie original",
@@ -28,8 +28,8 @@
       "unidad": "%"
     }
   },
-  "descargado": "2026-11-06T18:01:30Z",
-  "ultimo_periodo": "2026-09",
-  "observaciones": 129,
-  "original_guardado": "data/raw/adimra/2026-11-06_45e94ecf.xlsx"
+  "descargado": "2026-11-25T14:35:01Z",
+  "ultimo_periodo": "2026-10",
+  "observaciones": 130,
+  "original_guardado": "data/raw/adimra/2026-11-25_75cb6e68.xlsx"
 }

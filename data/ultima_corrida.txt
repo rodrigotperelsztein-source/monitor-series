@@ -1,8 +1,8 @@
 [petroleo]
   archivo distinto pero mismos datos
 [refinados]
-  archivo distinto pero mismos datos
+  actualizada: último período 2026-11 → 2026-11-24; valores revisados: 30
 [petroleo_mensual]
   sin cambios en las series de base
 [refinados_mensual]
-  sin cambios en las series de base
+  recalculada: último período 2026-10 → 2026-10

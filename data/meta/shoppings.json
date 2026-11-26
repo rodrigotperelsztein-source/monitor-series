@@ -1,11 +1,11 @@
 {
   "id": "shoppings",
   "nombre": "Encuesta de centros de compras: índice de ventas y ventas por rubro (INDEC)",
-  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_compras_10_26.xls",
+  "url": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_compras_11_26.xls",
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-1-36",
   "frecuencia": "M",
   "unidad": "Según la serie",
-  "sha256": "b8467a5c28f517bfbb33d9a304c72cf8a1a283d97a040f3ce2475ee183d959b5",
+  "sha256": "be462bd6afc2ae1a3d0c80acc9e72af86cba083189240d552c6dace7a92c0451",
   "columnas": {
     "indice": {
       "nombre": "Índice de ventas a precios constantes, serie original",
@@ -83,8 +83,8 @@
       "unidad": "Millones de $"
     }
   },
-  "descargado": "2026-11-05T18:58:10Z",
-  "ultimo_periodo": "2026-08",
-  "observaciones": 116,
-  "original_guardado": "data/raw/shoppings/2026-11-05_b8467a5c.xls"
+  "descargado": "2026-11-26T08:56:44Z",
+  "ultimo_periodo": "2026-09",
+  "observaciones": 117,
+  "original_guardado": "data/raw/shoppings/2026-11-26_be462bd6.xls"
 }

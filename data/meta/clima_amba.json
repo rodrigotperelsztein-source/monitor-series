@@ -5,7 +5,7 @@
   "pagina": "https://open-meteo.com/en/docs/historical-weather-api",
   "frecuencia": "D",
   "unidad": "°C y mm",
-  "sha256": "d58c19e64d6e76f52d6adaf0c473098c4f8e73799dada88a5a12f8843512bba6",
+  "sha256": "06390c39d76e26920b1909b703328e82eda0aee99ca8743a96d8673db9e1cda6",
   "columnas": {
     "caba_tmax": {
       "nombre": "Temperatura máxima (CABA)",

@@ -917494,6 +917494,7 @@ fecha,id_serie,valor
 2026-07-01,turismo.emisivo_aerea,388.680000
 2026-08-01,turismo.emisivo_aerea,398.156000
 2026-09-01,turismo.emisivo_aerea,364.290000
+2026-10-01,turismo.emisivo_aerea,382.100000
 2022-01-01,turismo.emisivo_fluvial,50.445000
 2022-02-01,turismo.emisivo_fluvial,50.900000
 2022-03-01,turismo.emisivo_fluvial,40.554000
@@ -917551,6 +917552,7 @@ fecha,id_serie,valor
 2026-07-01,turismo.emisivo_fluvial,54.854000
 2026-08-01,turismo.emisivo_fluvial,49.632000
 2026-09-01,turismo.emisivo_fluvial,47.288000
+2026-10-01,turismo.emisivo_fluvial,49.835000
 2022-01-01,turismo.emisivo_terrestre,231.766000
 2022-02-01,turismo.emisivo_terrestre,254.897000
 2022-03-01,turismo.emisivo_terrestre,169.236000
@@ -917608,6 +917610,7 @@ fecha,id_serie,valor
 2026-07-01,turismo.emisivo_terrestre,253.616000
 2026-08-01,turismo.emisivo_terrestre,204.267000
 2026-09-01,turismo.emisivo_terrestre,201.476000
+2026-10-01,turismo.emisivo_terrestre,209.716000
 2022-01-01,turismo.emisivo_total,417.974000
 2022-02-01,turismo.emisivo_total,468.235000
 2022-03-01,turismo.emisivo_total,381.952000
@@ -917665,6 +917668,7 @@ fecha,id_serie,valor
 2026-07-01,turismo.emisivo_total,697.150000
 2026-08-01,turismo.emisivo_total,652.055000
 2026-09-01,turismo.emisivo_total,613.054000
+2026-10-01,turismo.emisivo_total,641.651000
 2022-01-01,turismo.receptivo_aerea,117.130000
 2022-02-01,turismo.receptivo_aerea,85.720000
 2022-03-01,turismo.receptivo_aerea,119.686000
@@ -917722,6 +917726,7 @@ fecha,id_serie,valor
 2026-07-01,turismo.receptivo_aerea,252.459000
 2026-08-01,turismo.receptivo_aerea,262.420000
 2026-09-01,turismo.receptivo_aerea,228.465000
+2026-10-01,turismo.receptivo_aerea,239.137000
 2022-01-01,turismo.receptivo_fluvial,8.056000
 2022-02-01,turismo.receptivo_fluvial,10.303000
 2022-03-01,turismo.receptivo_fluvial,20.088000
@@ -917779,6 +917784,7 @@ fecha,id_serie,valor
 2026-07-01,turismo.receptivo_fluvial,54.090000
 2026-08-01,turismo.receptivo_fluvial,48.940000
 2026-09-01,turismo.receptivo_fluvial,53.498000
+2026-10-01,turismo.receptivo_fluvial,53.135000
 2022-01-01,turismo.receptivo_terrestre,45.708000
 2022-02-01,turismo.receptivo_terrestre,47.634000
 2022-03-01,turismo.receptivo_terrestre,61.086000
@@ -917836,6 +917842,7 @@ fecha,id_serie,valor
 2026-07-01,turismo.receptivo_terrestre,159.685000
 2026-08-01,turismo.receptivo_terrestre,121.523000
 2026-09-01,turismo.receptivo_terrestre,150.243000
+2026-10-01,turismo.receptivo_terrestre,151.106000
 2022-01-01,turismo.receptivo_total,170.894000
 2022-02-01,turismo.receptivo_total,143.657000
 2022-03-01,turismo.receptivo_total,200.860000
@@ -917893,6 +917900,7 @@ fecha,id_serie,valor
 2026-07-01,turismo.receptivo_total,466.234000
 2026-08-01,turismo.receptivo_total,432.883000
 2026-09-01,turismo.receptivo_total,432.206000
+2026-10-01,turismo.receptivo_total,443.378000
 2001-03-01,utdt.confianza_consumidor,38.989879
 2001-04-01,utdt.confianza_consumidor,40.693876
 2001-05-01,utdt.confianza_consumidor,38.171114

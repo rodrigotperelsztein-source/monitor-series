@@ -5,7 +5,7 @@
   "pagina": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-13-55",
   "frecuencia": "M",
   "unidad": "Miles de personas",
-  "sha256": "40b5abc47114ff7ed410d49a0a8554f05ce37d95523ebd18e79a2502b21192bb",
+  "sha256": "3b769c915ce11e4379f8288f8260f047c2f3c1d2cd1a264a8b4cde8b023798a2",
   "columnas": {
     "emisivo_total": {
       "nombre": "Turistas residentes que viajaron al exterior",

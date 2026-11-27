@@ -5,7 +5,7 @@
   "pagina": "https://www.argentina.gob.ar/economia/sechacienda/coordinacion-fiscal-provincial/ejecucion-presupuestaria-provincial/ejecuciones",
   "frecuencia": "A",
   "unidad": "Millones de $",
-  "sha256": "aef16cc856f08f39a6a9d98041bc2386cda7e8aaebd524d9fa6139bdca69a249",
+  "sha256": "c49dc53f67ac00bdc8a7ce9d2a36dc38c7cf729abf3a1277a8a9259cf4aa6b13",
   "columnas": {
     "ingresos_totales": {
       "nombre": "24 jurisdicciones: ingresos totales",

@@ -1,3 +1,8 @@
-Publicaciones previstas hoy y todavía no descargadas: turismo
-[turismo]
-  actualizada: último período 2026-09 → 2026-10; valores revisados: 0
+[petroleo]
+  archivo distinto pero mismos datos
+[refinados]
+  archivo distinto pero mismos datos
+[petroleo_mensual]
+  sin cambios en las series de base
+[refinados_mensual]
+  sin cambios en las series de base
